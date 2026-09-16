@@ -1,0 +1,16 @@
+# Netlify headers — see https://docs.netlify.com/routing/headers/
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# css/js are not content-hashed: short cache, always revalidate
+/css/*
+  Cache-Control: public, max-age=3600, must-revalidate
+/js/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# photos, fonts, logos change rarely
+/assets/*
+  Cache-Control: public, max-age=2592000

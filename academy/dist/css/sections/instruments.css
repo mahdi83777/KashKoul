@@ -1,0 +1,51 @@
+.instruments .intro { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: end; margin-bottom: 48px; }
+.instruments .intro p { font-size: 17px; max-width: 46ch; color: #4b4a4e; }
+.instruments .note { margin-top: 28px; font-size: 14px; color: #6b6a6e; max-width: 62ch; }
+
+/* cards (rendered by js/instruments.js) */
+.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.card { position: relative; aspect-ratio: 3/4; padding: 22px; display: flex; flex-direction: column; justify-content: space-between; border: 2px solid var(--ink); overflow: hidden; transition: transform .25s, box-shadow .25s; }
+.card:hover { transform: translateY(-6px) rotate(-1deg); box-shadow: 6px 6px 0 var(--ink); }
+.card .idx { font-family: var(--font-en); font-weight: 800; font-size: 52px; line-height: 1; }
+.card .t { font-family: var(--font-en); font-weight: 700; font-size: 28px; line-height: 1; }
+.card .t .ar { display: block; font-size: 24px; margin-top: 8px; font-weight: 800; text-align: left; }
+.card .s { font-size: 13px; opacity: .95; margin-top: 8px; font-weight: 500; }
+.card .go { position: absolute; top: 18px; right: 18px; width: 34px; height: 34px; border-radius: 50%; border: 2px solid currentColor; display: grid; place-items: center; font-family: var(--font-en); font-weight: 700; opacity: 0; transform: translateX(-6px); transition: .25s; }
+.card:hover .go { opacity: 1; transform: none; }
+
+/* colour variants — the `c` field in js/config.js */
+.card.mustard { background: var(--mustard); color: var(--brick); }
+.card.terra { background: var(--terra); color: var(--paper); border-color: var(--brick); }
+.card.green { background: var(--green); color: var(--mustard); border-color: var(--green); }
+.card.sand { background: var(--sand); color: var(--brick); }
+.card.paper { background: var(--paper); color: var(--ink); }
+.card.pine { background: var(--pine); color: var(--paper); border-color: var(--green); }
+.card.wide { grid-column: span 2; aspect-ratio: auto; min-height: 240px; background: var(--pine); color: var(--paper); border-color: var(--green); }
+.card.wide .t { font-size: 38px; }
+
+/* photo treatment: duotone over the card colour + a scrim for the text */
+.card.photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; opacity: .5; filter: grayscale(1) contrast(1.3); transition: transform .4s; }
+.card.photo:hover img { transform: scale(1.04); }
+.card.green.photo img, .card.pine.photo img { mix-blend-mode: luminosity; opacity: .35; }
+.card.wide img { object-position: 50% 45%; mix-blend-mode: multiply; opacity: .75; filter: grayscale(1) contrast(1.4); }
+.card.paper.photo img { opacity: .4; }
+.card.photo::before { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 58%; background: linear-gradient(to top, rgba(31,30,33,.45), rgba(31,30,33,0)); pointer-events: none; }
+.card.photo.paper::before, .card.photo.sand::before, .card.photo.mustard::before { background: linear-gradient(to top, rgba(244,235,226,.55), rgba(244,235,226,0)); }
+.card.photo > * { position: relative; }
+
+@media (max-width: 1000px) {
+  .instruments .intro { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: repeat(3, 1fr); }
+  .card.wide { grid-column: span 3; }
+}
+@media (max-width: 760px) {
+  .cards { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .card { padding: 16px; }
+  .card .idx { font-size: 40px; }
+  .card .t { font-size: 22px; }
+  .card .t .ar { font-size: 20px; }
+  .card.wide { grid-column: span 2; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card { transition: none; }
+}

@@ -1,0 +1,30 @@
+.site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 50; color: var(--paper); transition: background .25s, box-shadow .25s; }
+.site-header.scrolled { background: #9b4a39d1; box-shadow: 0 2px 0 var(--brick); }
+
+.nav { display: flex; align-items: center; justify-content: space-between; height: var(--nav-h); gap: 20px; }
+.nav .brand img { height: 50px; width: auto; }
+.nav ul { display: flex; gap: 28px; list-style: none; padding: 0; font-family: var(--font-en); font-weight: 600; font-size: 14px; letter-spacing: .04em; text-transform: uppercase; }
+.nav ul a { position: relative; padding: 6px 0; }
+.nav ul a::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--mustard); transform: scaleX(0); transform-origin: left; transition: transform .2s; }
+.nav ul a:hover::after { transform: scaleX(1); }
+.nav .btn { padding: 11px 18px; font-size: 14px; }
+
+/* burger + mobile menu */
+.burger { display: none; width: 44px; height: 44px; border: 0; background: transparent; color: inherit; padding: 8px; }
+.burger span { display: block; height: 2px; background: currentColor; margin: 6px 0; transition: transform .25s, opacity .25s; }
+.burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+.mobile-menu { display: none; }
+
+@media (max-width: 760px) {
+  .nav ul, .nav > .btn { display: none; }
+  .nav .brand img { height: 40px; }
+  .burger { display: block; }
+  .site-header.open { background: var(--terra); }
+  .mobile-menu { background: var(--terra); color: var(--paper); border-top: 1px solid rgba(244,235,226,.25); }
+  .site-header.open .mobile-menu { display: block; }
+  .mobile-menu ul { list-style: none; padding: 12px 0 20px; font-family: var(--font-en); font-weight: 700; font-size: 22px; }
+  .mobile-menu li a { display: block; padding: 12px 0; border-bottom: 1px solid rgba(244,235,226,.15); }
+  .mobile-menu .btn { margin-top: 18px; }
+}

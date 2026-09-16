@@ -1,0 +1,23 @@
+/* ==========================================================
+   Kashkoul Academy — stylesheet entry point
+   Order matters: tokens → base → components → sections.
+   Each section file owns its own responsive rules.
+   ========================================================== */
+
+@import "base/tokens.css";
+@import "base/fonts.css";
+@import "base/reset.css";
+@import "base/utilities.css";
+
+@import "components/buttons.css";
+@import "components/header.css";
+
+@import "sections/hero.css";
+@import "sections/hero-notebook.css";
+@import "sections/hero-intro.css";
+@import "sections/instruments.css";
+@import "sections/how-it-works.css";
+@import "sections/manifesto.css";
+@import "sections/teacher.css";
+@import "sections/visit.css";
+@import "sections/footer.css";
