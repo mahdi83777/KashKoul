@@ -1,0 +1,17 @@
+.manifesto { background: var(--green); color: var(--paper); overflow: hidden; }
+.manifesto::before { content: ""; position: absolute; inset: 0; background: url("../../assets/patterns/Pattern_03.svg") center/420px; opacity: .16; mix-blend-mode: screen; }
+.manifesto .wrap { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+.manifesto h2 { font-size: clamp(44px, 7vw, 110px); font-weight: 300; letter-spacing: -.03em; line-height: .95; color: var(--mustard); }
+.manifesto h2 b { font-weight: 800; }
+.manifesto .meaning { margin-top: 28px; font-size: 16px; opacity: .8; max-width: 44ch; }
+.manifesto .meaning .ar { color: var(--mustard); font-weight: 800; }
+.manifesto ol { list-style: none; padding: 0; counter-reset: m; }
+.manifesto li { counter-increment: m; padding: 22px 0; border-top: 1px solid rgba(244,235,226,.25); display: grid; grid-template-columns: 56px 1fr; gap: 16px; }
+.manifesto li:last-child { border-bottom: 1px solid rgba(244,235,226,.25); }
+.manifesto li::before { content: "0" counter(m); font-family: var(--font-en); font-weight: 800; color: var(--mustard); font-size: 22px; }
+.manifesto li strong { display: block; font-family: var(--font-en); font-size: 22px; font-weight: 600; margin-bottom: 6px; }
+.manifesto li p { opacity: .8; font-size: 15px; }
+
+@media (max-width: 1000px) {
+  .manifesto .wrap { grid-template-columns: 1fr; }
+}

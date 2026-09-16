@@ -1,0 +1,9 @@
+.btn { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-en); font-weight: 700; font-size: 15px; padding: 14px 22px; border-radius: 4px; transition: transform .2s, background .2s, color .2s; border: 2px solid transparent; }
+.btn svg { width: 18px; height: 18px; flex: none; }
+.btn-wa { background: var(--mustard); color: var(--brick); transform: rotate(-1.5deg); }
+.btn-wa:hover { transform: rotate(0) scale(1.03); background: #e5cb6f; }
+.btn-lg { font-size: 20px; padding: 20px 32px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .btn { transition: none; }
+}

@@ -1,0 +1,43 @@
+<!-- Hero: the logo writes itself, the notebook flutters onto the desk, the stamp presses on, the definition is typed.
+     The choreography lives in css/sections/hero-intro.css and js/hero.js -->
+<section class="hero grain" id="top" aria-label="Kashkoul">
+  <div class="photo">
+    <img src="assets/photos/ney-duotone.jpg" alt="" fetchpriority="high">
+    <img class="pass2" src="assets/photos/ney-duotone.jpg" alt="" aria-hidden="true">
+  </div>
+  <div class="reveal" aria-hidden="true"><img src="assets/photos/ney-photo.jpg" alt=""></div>
+
+  <div class="wrap content">
+    <div class="logo-col">
+      <h1 class="sr">Kashkoul Academy of Arts — music studio in Khaldeh, Lebanon</h1>
+      <!-- @include partials/icons/logo-hero.svg -->
+    </div>
+
+    <div class="right">
+      <div class="stamp" aria-hidden="true">
+        <svg viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="1"/>
+          <path id="stamp-path" d="M50,50 m-39,0 a39,39 0 1,1 78,0 a39,39 0 1,1 -78,0" fill="none"/>
+          <text font-size="7.1"><textPath href="#stamp-path" startOffset="0">KASHKOUL ACADEMY OF ARTS - EST.2026 -</textPath></text>
+          <text class="center" x="50" y="55" text-anchor="middle" font-size="13">كشكول</text>
+        </svg>
+      </div>
+
+      <article class="entry" id="entry">
+        <span class="back" aria-hidden="true"></span>
+        <span class="tape" aria-hidden="true"></span>
+        <header>
+          <span class="word ar">كشكول</span>
+          <span class="pron">kash·koul <i>· noun</i></span>
+        </header>
+        <p class="def ar" data-type="كلمة «كشكول» تعني دفتراً يُجْمَع فيه أفكار وقصص وإبداعات متنوعة."></p>
+        <div class="cta">
+          <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener">Book a first lesson →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <p class="place label" aria-hidden="true">Khaldeh · Lebanon · <span class="ar">خلدة، لبنان</span></p>
+</section>

@@ -1,0 +1,12 @@
+{
+  "name": "kashkoul-academy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kashkoul Academy of Arts — single-page website",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.js",
+    "dev": "node tools/build.js --serve",
+    "dist": "node tools/build.js --dist"
+  }
+}

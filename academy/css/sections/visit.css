@@ -1,0 +1,21 @@
+.visit { background: var(--terra); color: var(--paper); overflow: hidden; }
+.visit::after { content: ""; position: absolute; right: -60px; bottom: -120px; width: 560px; height: 560px; background: url("../../assets/logo/logo-badge-paper.svg") center/contain no-repeat; opacity: .1; transform: rotate(-8deg); }
+.visit .wrap { position: relative; z-index: 2; display: grid; grid-template-columns: 1.1fr .9fr; gap: 64px; align-items: center; }
+.visit h2 { font-size: clamp(48px, 7vw, 110px); font-weight: 800; font-stretch: 85%; letter-spacing: -.035em; line-height: .9; margin-top: 14px; }
+.visit dl { display: grid; grid-template-columns: 110px 1fr; row-gap: 14px; margin: 36px 0 0; font-size: 16px; max-width: 560px; }
+.visit dt { font-family: var(--font-en); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: var(--mustard); padding-top: 4px; }
+.visit dd { margin: 0; }
+.visit dd .ar { font-weight: 700; color: var(--sand); }
+.visit dd a { border-bottom: 2px solid var(--mustard); padding-bottom: 2px; }
+.visit dd a:hover { color: var(--mustard); }
+.visit .btn-lg { margin-top: 40px; }
+
+/* storefront print */
+.visit .shot { margin: 0; justify-self: end; width: min(480px, 100%); background: #fbf5ec; padding: 12px 12px 44px; transform: rotate(2deg); box-shadow: 0 24px 50px rgba(102,38,28,.4); position: relative; }
+.visit .shot img { width: 100%; aspect-ratio: 4/3; object-fit: cover; filter: sepia(.2) contrast(1.05); }
+.visit .shot figcaption { position: absolute; left: 16px; bottom: 12px; font-family: var(--font-en); font-weight: 600; font-size: 14px; color: var(--ink); }
+
+@media (max-width: 1000px) {
+  .visit .wrap { grid-template-columns: 1fr; }
+  .visit .shot { justify-self: start; }
+}

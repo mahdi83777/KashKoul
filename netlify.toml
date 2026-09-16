@@ -1,0 +1,8 @@
+# Netlify builds from the repo root; the site lives in academy/.
+[build]
+  base    = "academy"
+  command = "npm run dist"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"

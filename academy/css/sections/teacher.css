@@ -1,0 +1,21 @@
+.teacher .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.teacher h2 { font-size: clamp(36px, 5vw, 64px); font-weight: 700; letter-spacing: -.03em; line-height: 1; margin: 16px 0 24px; }
+.teacher p { font-size: 17px; color: #4b4a4e; }
+.teacher p + p { margin-top: 14px; }
+.teacher mark { background: var(--mustard); color: var(--brick); padding: 0 4px; }
+.teacher .facts { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+.teacher .facts span { font-family: var(--font-en); font-weight: 600; font-size: 13px; border: 2px solid var(--ink); padding: 6px 12px; border-radius: 999px; }
+
+/* polaroid */
+.polaroid { position: relative; background: #fffaf3; padding: 14px 14px 56px; box-shadow: 0 20px 50px rgba(31,30,33,.18); transform: rotate(-3deg); width: min(440px, 100%); margin-inline: auto; }
+.polaroid img { aspect-ratio: 4/5; object-fit: cover; filter: sepia(.3) contrast(1.1); width: 100%; }
+.polaroid .tape { position: absolute; top: -14px; left: 50%; width: 120px; height: 30px; background: rgba(218,189,92,.75); transform: translateX(-50%) rotate(2deg); }
+.polaroid figcaption { position: absolute; bottom: 16px; left: 18px; font-family: var(--font-en); font-weight: 600; font-size: 14px; }
+.polaroid .sticker { position: absolute; right: -24px; bottom: 40px; background: var(--terra); color: var(--paper); font-family: var(--font-en); font-weight: 800; padding: 10px 16px; transform: rotate(8deg); font-size: 14px; text-transform: uppercase; letter-spacing: .06em; }
+
+@media (max-width: 1000px) {
+  .teacher .wrap { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .polaroid { transform: rotate(-2deg); }
+}

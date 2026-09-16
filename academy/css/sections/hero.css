@@ -1,0 +1,42 @@
+/* Hero layout: duotone photo, logo column, right column (stamp + notebook), corner label.
+   The notebook/stamp styles are in hero-notebook.css, the opening animation in hero-intro.css. */
+
+.hero { position: relative; min-height: 100svh; background: var(--terra); color: var(--paper); overflow: hidden; display: flex; align-items: center; --x: 70%; --y: 50%; --px: 0; --py: 0; }
+
+/* duotone photo (its own terracotta base so the multiply blend survives clip-path) */
+.hero .photo { position: absolute; inset: 0; background: var(--terra); }
+.hero .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 78% 50%; mix-blend-mode: multiply; opacity: .8; filter: contrast(1.2); }
+.hero .photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to right, var(--terra) 0%, rgba(155,74,57,.6) 40%, rgba(155,74,57,.05) 100%); }
+
+/* the colour photo, revealed under the cursor like rubbing ink off a print (--x/--y set by js/hero.js) */
+.hero .reveal { position: absolute; inset: 0; z-index: 1; opacity: 0; transition: opacity .5s; pointer-events: none;
+  -webkit-mask-image: radial-gradient(circle 240px at var(--x) var(--y), #000 0%, rgba(0,0,0,.6) 55%, transparent 100%);
+  mask-image: radial-gradient(circle 240px at var(--x) var(--y), #000 0%, rgba(0,0,0,.6) 55%, transparent 100%); }
+.hero .reveal img { width: 100%; height: 100%; object-fit: cover; object-position: 78% 50%; filter: saturate(1.1) contrast(1.05); }
+.hero.lit .reveal { opacity: 1; }
+
+/* columns */
+.hero .content { position: relative; z-index: 2; width: 100%; padding: calc(var(--nav-h) + 40px) 0 88px; display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; }
+.hero .logo-col { display: flex; justify-content: center; }
+.hero .logo { width: min(640px, 100%); height: auto; display: block; filter: drop-shadow(0 8px 0 rgba(102,38,28,.35)); }
+.hero .right { justify-self: end; margin-right: clamp(24px, 5vw, 80px); display: flex; flex-direction: column; align-items: flex-end; gap: 22px; width: min(460px, 100%); align-self: stretch; justify-content: space-between; padding-top: 8px; perspective: 1400px; }
+
+/* corner label */
+.hero .place { position: absolute; left: var(--gutter); bottom: 28px; z-index: 2; color: var(--mustard); opacity: .9; }
+.hero .place .ar { font-size: 13px; font-weight: 700; }
+
+/* the scene follows the cursor (--px/--py in -1…1, set by js/hero.js) */
+.hero .logo-col, .hero .right, .hero .photo img:first-child { transition: transform .35s var(--ease-out); }
+.hero .logo-col { transform: translate(calc(var(--px) * -10px), calc(var(--py) * -8px)); }
+.hero .right { transform: translate(calc(var(--px) * 16px), calc(var(--py) * 12px)); }
+.hero .photo img:first-child { transform: translate(calc(var(--px) * 8px), calc(var(--py) * 6px)) scale(1.04); }
+
+@media (max-width: 760px) {
+  .hero .content { grid-template-columns: 1fr; padding-bottom: 80px; gap: 36px; }
+  .hero .logo { width: min(380px, 88%); }
+  .hero .right { align-items: center; margin-right: 0; align-self: auto; justify-content: flex-start; padding-top: 0; }
+  .hero .reveal { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero .logo-col, .hero .right, .hero .photo img:first-child { transform: none; }
+}
