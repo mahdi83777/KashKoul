@@ -1,6 +1,8 @@
 .site-footer { padding: 10px 0; }
 .site-footer .wrap { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; font-family: var(--font-en); font-size: 13px; }
 .site-footer img { height: 44px; width: auto; }
+.site-footer .badge { display: inline-block; transition: transform .25s var(--ease); }
+.site-footer .badge:hover { transform: translateY(-2px) rotate(-3deg); }
 .site-footer .links { display: flex; gap: 20px; align-items: center; }
 .site-footer .made-by { font-size: 12px; color: #8a8890; transition: color .2s; }
 .site-footer .made-by:hover { color: var(--terra); }
@@ -14,3 +16,11 @@
   .site-footer .links { justify-content: center; }
   .site-footer .credits { text-align: center; }
 }
+
+/* sibling-site strip: the Academy teaches, the Studio rents the space */
+.site-footer .family { border-top: 1px solid rgba(31,30,33,.12); border-bottom: 1px solid rgba(31,30,33,.12); margin-bottom: 10px; padding: 12px 0; font-size: 12px; letter-spacing: .04em; text-transform: uppercase; }
+.site-footer .family-label { color: #8a8890; }
+.site-footer .family-links { display: flex; gap: 18px; flex-wrap: wrap; justify-content: center; }
+.site-footer .family .here { font-weight: 700; color: var(--terra); }
+.site-footer .family a { font-weight: 600; border-bottom: 1px solid var(--mustard); transition: color .2s; }
+.site-footer .family a:hover { color: var(--terra); }

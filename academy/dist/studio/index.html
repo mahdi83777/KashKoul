@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kashkoul Studio — prototypes</title>
+<link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+<style>
+@font-face { font-family: "Bricolage Grotesque"; src: url("assets/fonts/BricolageGrotesque.ttf") format("truetype"); font-weight: 200 800; font-stretch: 75% 100%; }
+@font-face { font-family: "Fustat"; src: url("assets/fonts/Fustat.ttf") format("truetype"); font-weight: 200 800; }
+:root { --paper:#f4ebe2; --ink:#1f1e21; --mustard:#dabd5c; --terra:#9b4a39; --green:#142b26; --pine:#2e4c46; }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { background:var(--paper); color:var(--ink); font-family:"Fustat","Helvetica Neue",Arial,sans-serif; font-size:17px; line-height:1.55; padding:40px 24px 80px; }
+.wrap { max-width:1180px; margin:0 auto; }
+h1, h2, h3 { font-family:"Bricolage Grotesque",sans-serif; letter-spacing:-.03em; line-height:1; }
+h1 { font-size:clamp(40px, 6vw, 80px); font-weight:800; }
+h1 .light { font-weight:200; }
+.kicker { font-family:"Bricolage Grotesque",sans-serif; font-size:12px; letter-spacing:.2em; text-transform:uppercase; font-weight:700; color:var(--terra); }
+.lede { max-width:680px; margin-top:20px; font-size:18px; color:rgba(31,30,33,.72); }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:44px; }
+.card { display:block; border-radius:16px; overflow:hidden; background:#fff; border:1px solid rgba(31,30,33,.1); color:inherit; text-decoration:none; transition:transform .25s cubic-bezier(.22,1,.36,1), box-shadow .25s; }
+.card:hover { transform:translateY(-4px); box-shadow:0 20px 40px rgba(102,38,28,.18); }
+.card .thumb { aspect-ratio:16/10; position:relative; overflow:hidden; display:flex; align-items:flex-end; padding:20px; color:var(--paper); }
+.card .thumb img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.card .thumb::after { content:""; position:absolute; inset:0; }
+.card.set .thumb::after { background:linear-gradient(0deg, rgba(20,43,38,.95), rgba(20,43,38,.2)); }
+.card.paper .thumb::after { background:linear-gradient(0deg, rgba(155,74,57,.95), rgba(155,74,57,.15)); }
+.card.terra .thumb::after { background:linear-gradient(0deg, rgba(31,30,33,.95), rgba(155,74,57,.35)); }
+.card .thumb b { position:relative; z-index:1; font-family:"Bricolage Grotesque",sans-serif; font-size:34px; font-weight:800; letter-spacing:-.03em; line-height:1; }
+.card .thumb b small { display:block; font-size:12px; letter-spacing:.2em; text-transform:uppercase; font-weight:700; color:var(--mustard); margin-bottom:8px; }
+.card .body { padding:20px 22px 24px; }
+.card p { font-size:15px; color:rgba(31,30,33,.72); }
+.card ul { margin:14px 0 0; padding:0; list-style:none; font-family:"Bricolage Grotesque",sans-serif; font-size:13px; font-weight:600; display:flex; flex-wrap:wrap; gap:6px; }
+.card li { padding:5px 10px; border-radius:999px; border:1px solid rgba(31,30,33,.15); }
+.notes { margin-top:56px; display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+.notes h2 { font-size:22px; margin-bottom:12px; }
+.notes ul { padding-left:20px; color:rgba(31,30,33,.78); font-size:15.5px; display:grid; gap:6px; }
+.ph { border-bottom:1px dotted var(--terra); }
+.family { margin-top:56px; padding-top:18px; border-top:1px solid rgba(31,30,33,.15); font-family:"Bricolage Grotesque",sans-serif; font-size:13px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+.family a { color:var(--terra); font-weight:700; }
+@media (max-width: 900px) { .grid, .notes { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">Kashkoul Studio · استوديو كشكول · website prototypes</p>
+  <h1 style="margin-top:14px">Three doors<br><span class="light">into the same room.</span></h1>
+  <p class="lede">Three directions for the Kashkoul Studio site. All three share the Academy's palette, fonts, badge logo and footer "family strip", so anyone landing on either site knows they're related — but each has a different mood and a different booking idea. Open them side by side with the <a href="../" style="color:var(--terra);font-weight:700">Academy site</a>.</p>
+
+  <div class="grid">
+    <a class="card set" href="01-the-set.html">
+      <div class="thumb"><img src="assets/photos/library-armchairs.jpg" alt=""><b><small>Prototype 1</small>The Set</b></div>
+      <div class="body">
+        <p>Dark, cinematic, production-first. Full-bleed hero, a "now booking" REC badge, a walk-through of the rooms, gear list, three rate cards. The most "studio" of the three.</p>
+        <ul><li>Dark green + mustard</li><li>Rooms walk-through</li><li>Rate cards</li><li>Masonry gallery</li></ul>
+      </div>
+    </a>
+    <a class="card paper" href="02-paper.html">
+      <div class="thumb"><img src="assets/photos/salon-wide-softbox.jpg" alt=""><b><small>Prototype 2</small>Paper</b></div>
+      <div class="body">
+        <p>The Academy's closest sibling: paper background, terra hero with the brand pattern, taped polaroids, a dictionary-card for "studio". Includes a tap-a-slot weekly availability grid.</p>
+        <ul><li>Paper + terra</li><li>Notebook motifs</li><li>Weekly slot picker</li><li>Magazine spreads</li></ul>
+      </div>
+    </a>
+    <a class="card terra" href="03-terra.html">
+      <div class="thumb"><img src="assets/photos/balcony-2a.jpg" alt=""><b><small>Prototype 3</small>Terra</b></div>
+      <div class="body">
+        <p>Bold poster: huge type on terracotta, hard ink borders, a drag-to-scroll photo strip, a space picker with a sticky preview, and a 4-tap "build your booking" estimator that writes the WhatsApp message.</p>
+        <ul><li>Terra + ink + mustard</li><li>Booking builder</li><li>FAQ</li><li>Poster type</li></ul>
+      </div>
+    </a>
+  </div>
+
+  <div class="notes">
+    <div>
+      <h2>What's real</h2>
+      <ul>
+        <li>All photos come from <code>docs/Kashkoul_Space.pdf</code> (resized to 1800px).</li>
+        <li>Venue specs and gear list are from page 2 of that PDF: open-plan salon, 3 production rooms (3×4 m, 4×5 m), 3×3 m acoustic room, kitchen, 2 balconies, 3 restrooms; Canon EOS R8, Amaran 550, 2× Mars softbox, 3 backdrops, reflector set, Eco PowerStation, tripod.</li>
+        <li>Colours, fonts and logo lockups follow <code>KashkoulBrandGuides.pdf</code>.</li>
+        <li>WhatsApp number and map pin are the Academy's.</li>
+      </ul>
+    </div>
+    <div>
+      <h2>What's a placeholder</h2>
+      <ul>
+        <li>Every page has a <b>"Show placeholders"</b> button (bottom corner) that highlights everything still to confirm: <span class="ph">dotted underline</span>.</li>
+        <li>Prices, minimum booking, deposit and cancellation policy, hours, capacity, parking, audio gear, Instagram handle, studio email, building/floor.</li>
+        <li>The acoustic room has no photo yet — the curtain shot stands in.</li>
+        <li>The availability grid (Paper) and the price estimator (Terra) use demo numbers.</li>
+        <li>Suggested sub-brand: <b>Kashkoul Studio · استوديو كشكول</b>, at <span class="ph">studio.kashkoul.org</span>; the same badge logo with "Studio" as the descriptor.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="family">
+    <span>Kashkoul is two doors, one house</span>
+    <span><a href="../">Kashkoul Academy · lessons →</a> &nbsp;·&nbsp; Kashkoul Studio · rent the space (these prototypes)</span>
+  </div>
+</div>
+</body>
+</html>
