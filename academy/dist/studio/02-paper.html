@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kashkoul Studio — The other door of Kashkoul, Khaldeh</title>
+<meta name="description" content="Kashkoul Studio: rent a warm, furnished, camera-ready space in Khaldeh for your podcast, session, shoot or workshop. The Academy teaches; the Studio records.">
+<meta name="theme-color" content="#9b4a39">
+<link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+<style>
+/* ---------- Prototype 2 · "Paper" · light, notebook-like — the Academy's closest sibling ---------- */
+@font-face { font-family: "Bricolage Grotesque"; src: url("assets/fonts/BricolageGrotesque.ttf") format("truetype"); font-weight: 200 800; font-stretch: 75% 100%; font-display: swap; }
+@font-face { font-family: "Fustat"; src: url("assets/fonts/Fustat.ttf") format("truetype"); font-weight: 200 800; font-display: swap; }
+
+:root {
+  --paper:#f4ebe2; --paper-2:#fbf5ec; --sand:#c49da2; --ink:#1f1e21; --mustard:#dabd5c; --mustard-2:#b68c2d;
+  --terra:#9b4a39; --brick:#66261c; --green:#142b26; --pine:#2e4c46;
+  --font-en:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --font-ar:"Fustat","Noto Sans Arabic",Tahoma,sans-serif;
+  --font-body:"Fustat","Helvetica Neue",Arial,sans-serif;
+  --wrap:1240px; --gutter:24px; --nav-h:84px; --ease:cubic-bezier(.22,1,.36,1);
+}
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html { scroll-behavior:smooth; }
+body { background:var(--paper); color:var(--ink); font-family:var(--font-body); font-size:17px; line-height:1.55; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+img { display:block; max-width:100%; }
+a { color:inherit; text-decoration:none; }
+button { font:inherit; color:inherit; }
+.ar { font-family:var(--font-ar); direction:rtl; }
+.wrap { width:min(var(--wrap), 100% - var(--gutter)*2); margin-inline:auto; }
+.sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+h1,h2,h3 { font-family:var(--font-en); line-height:1.02; letter-spacing:-.02em; }
+h2 { font-size:clamp(34px, 5vw, 64px); font-weight:700; }
+h2.display { font-size:clamp(40px, 6vw, 88px); font-weight:800; font-stretch:90%; letter-spacing:-.03em; line-height:.95; }
+h2 .light { font-weight:300; font-stretch:100%; }
+h3 { font-size:22px; font-weight:700; }
+.label { font-family:var(--font-en); font-size:12px; letter-spacing:.18em; text-transform:uppercase; font-weight:700; }
+.label-terra { color:var(--terra); } .label-mustard { color:var(--mustard-2); } .label-green { color:var(--pine); }
+.sec { padding:110px 0; }
+mark { background:linear-gradient(transparent 55%, rgba(218,189,92,.7) 55%); color:inherit; padding:0 2px; }
+
+/* grain */
+.grain { position:relative; }
+.grain::after { content:""; position:absolute; inset:0; pointer-events:none; opacity:.14; mix-blend-mode:multiply; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='160' height='160' filter='url(%23n)' opacity='.6'/></svg>"); }
+
+/* placeholders */
+.ph { border-bottom:1px dotted var(--terra); cursor:help; }
+body.show-ph .ph { background:rgba(218,189,92,.35); border-bottom-style:solid; }
+.ph-toggle { position:fixed; right:14px; bottom:14px; z-index:80; background:var(--ink); color:var(--paper); border:0; border-radius:999px; padding:9px 14px; font-family:var(--font-en); font-size:12px; letter-spacing:.06em; text-transform:uppercase; cursor:pointer; opacity:.85; }
+.ph-toggle:hover { opacity:1; }
+
+/* buttons */
+.btn { display:inline-flex; align-items:center; gap:10px; padding:15px 24px; border-radius:999px; font-family:var(--font-en); font-weight:700; font-size:15px; border:1.5px solid transparent; transition:transform .25s var(--ease), background .2s, color .2s, border-color .2s; white-space:nowrap; }
+.btn:hover { transform:translateY(-2px); }
+.btn-wa { background:var(--terra); color:var(--paper); }
+.btn-wa:hover { background:var(--brick); }
+.btn-ink { background:var(--ink); color:var(--paper); }
+.btn-ink:hover { background:#000; }
+.btn-outline { border-color:rgba(31,30,33,.35); }
+.btn-outline:hover { border-color:var(--ink); }
+.btn-lg { padding:19px 30px; font-size:17px; }
+.btn svg { width:18px; height:18px; }
+
+/* header — same recipe as the Academy: transparent over the hero, terra when scrolled */
+.site-header { position:fixed; inset:0 0 auto 0; z-index:50; color:var(--paper); transition:background .25s, box-shadow .25s; }
+.site-header.scrolled { background:rgba(155,74,57,.86); backdrop-filter:blur(8px); box-shadow:0 2px 0 var(--brick); }
+.nav { display:flex; align-items:center; justify-content:space-between; height:var(--nav-h); gap:20px; }
+.brand { display:flex; align-items:center; gap:12px; }
+.brand img { height:46px; width:auto; }
+.brand-text { display:flex; flex-direction:column; line-height:1; font-family:var(--font-en); }
+.brand-text b { font-size:22px; font-weight:800; letter-spacing:-.02em; }
+.brand-text small { font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--mustard); margin-top:4px; font-weight:700; }
+.brand-text small .ar { text-transform:none; letter-spacing:0; font-size:12px; }
+.nav ul { display:flex; gap:28px; list-style:none; font-family:var(--font-en); font-weight:600; font-size:13px; letter-spacing:.06em; text-transform:uppercase; }
+.nav ul a { position:relative; padding:6px 0; }
+.nav ul a::after { content:""; position:absolute; left:0; right:0; bottom:0; height:2px; background:var(--mustard); transform:scaleX(0); transform-origin:left; transition:transform .2s; }
+.nav ul a:hover::after { transform:scaleX(1); }
+.nav .btn { padding:11px 18px; font-size:14px; background:var(--mustard); color:var(--ink); }
+.nav .btn:hover { background:#e6cc74; }
+.burger { display:none; width:44px; height:44px; border:0; background:transparent; padding:8px; }
+.burger span { display:block; height:2px; background:currentColor; margin:6px 0; transition:.25s; }
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+.mobile-menu { display:none; }
+
+/* hero */
+.hero { position:relative; background:var(--terra); color:var(--paper); overflow:hidden; min-height:100svh; display:grid; align-items:center; }
+.hero::before { content:""; position:absolute; inset:0; background:url("assets/patterns/Pattern_01.svg") center/520px; opacity:.55; mix-blend-mode:multiply; }
+.hero .wrap { position:relative; display:grid; grid-template-columns:1.05fr .95fr; gap:60px; align-items:center; padding:140px 0 90px; }
+.hero .kicker { display:inline-flex; align-items:center; gap:12px; font-family:var(--font-en); font-size:12px; letter-spacing:.2em; text-transform:uppercase; font-weight:700; color:var(--mustard); }
+.hero .kicker::before { content:""; width:28px; height:2px; background:currentColor; }
+.hero h1 { font-size:clamp(46px, 7.2vw, 108px); font-weight:800; letter-spacing:-.04em; line-height:.95; margin-top:22px; }
+.hero h1 .light { font-weight:200; }
+.hero h1 .ar { display:block; font-size:.5em; font-weight:700; margin-top:.3em; color:var(--mustard); text-align:left; }
+.hero .lede { font-size:19px; max-width:520px; margin-top:26px; color:rgba(244,235,226,.88); }
+.hero .ctas { display:flex; gap:14px; flex-wrap:wrap; margin-top:30px; }
+.hero .ctas .btn-wa { background:var(--mustard); color:var(--ink); }
+.hero .ctas .btn-wa:hover { background:#e6cc74; }
+.hero .ctas .btn-outline { border-color:rgba(244,235,226,.5); color:var(--paper); }
+
+/* the collage: three photos, taped */
+.collage { position:relative; aspect-ratio:1/1.05; }
+.polaroid { position:absolute; background:var(--paper-2); padding:12px 12px 40px; box-shadow:0 24px 50px rgba(102,38,28,.4), 0 2px 0 var(--brick); color:var(--ink); transition:transform .5s var(--ease); }
+.polaroid img { aspect-ratio:4/3; object-fit:cover; width:100%; }
+.polaroid figcaption { position:absolute; left:14px; bottom:11px; font-family:var(--font-en); font-size:12px; font-weight:600; letter-spacing:.06em; color:#6b6a6e; }
+.polaroid .tape { position:absolute; top:-12px; left:50%; width:96px; height:26px; background:rgba(218,189,92,.85); transform:translateX(-50%) rotate(-3deg); }
+.polaroid:nth-child(1) { width:58%; left:0; top:4%; transform:rotate(-4deg); z-index:1; }
+.polaroid:nth-child(2) { width:56%; right:0; top:26%; transform:rotate(3deg); z-index:2; }
+.polaroid:nth-child(3) { width:52%; left:14%; bottom:0; transform:rotate(-1.5deg); z-index:3; }
+.collage:hover .polaroid:nth-child(1) { transform:rotate(-6deg) translateY(-6px); }
+.collage:hover .polaroid:nth-child(2) { transform:rotate(5deg) translateX(6px); }
+.collage:hover .polaroid:nth-child(3) { transform:rotate(-.5deg) translateY(6px); }
+.stamp { position:absolute; right:-10px; top:-30px; width:150px; height:150px; color:var(--mustard); animation:spin 26s linear infinite; z-index:4; }
+.stamp svg { width:100%; height:100%; }
+.stamp text { font-family:var(--font-en); font-weight:700; letter-spacing:.14em; fill:var(--mustard); }
+.stamp text.center { font-family:var(--font-ar); font-weight:800; }
+@keyframes spin { to { transform:rotate(360deg); } }
+
+/* notebook entry: what "studio" means here */
+.entry-sec { padding:0; margin-top:-40px; position:relative; z-index:5; }
+.entry { max-width:820px; margin:0 auto; background:var(--paper-2); padding:34px 36px 30px; transform:rotate(-.6deg); box-shadow:0 24px 50px rgba(102,38,28,.25), 0 2px 0 var(--brick);
+  background-image:repeating-linear-gradient(to bottom, transparent 0 31px, rgba(155,74,57,.16) 31px 32px); background-origin:content-box; position:relative; }
+.entry::before { content:""; position:absolute; left:26px; top:0; bottom:0; width:1px; background:rgba(155,74,57,.35); }
+.entry header { display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; margin-bottom:14px; border-bottom:2px solid var(--ink); padding-bottom:10px; }
+.entry .word { font-family:var(--font-en); font-weight:800; font-size:44px; line-height:1; color:var(--terra); letter-spacing:-.03em; }
+.entry .pron { font-family:var(--font-en); font-weight:600; font-size:15px; }
+.entry .pron i { font-style:italic; font-weight:400; color:#6b6a6e; }
+.entry .def { font-size:16.5px; line-height:32px; }
+.entry .def .ar { display:block; font-weight:700; font-size:19px; color:var(--brick); text-align:right; }
+
+/* rooms as magazine spreads */
+.spreads .intro { max-width:640px; margin-bottom:56px; }
+.spreads .intro p { font-size:19px; color:rgba(31,30,33,.72); margin-top:16px; }
+.spread-grid { display:grid; grid-template-columns:repeat(6,1fr); gap:16px; }
+.spread { position:relative; border-radius:6px; overflow:hidden; background:var(--ink); color:var(--paper); isolation:isolate; min-height:300px; display:flex; align-items:flex-end; }
+.spread img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:-1; transition:transform .9s var(--ease); }
+.spread:hover img { transform:scale(1.04); }
+.spread .body { padding:22px; width:100%; background:linear-gradient(0deg, rgba(31,30,33,.85), rgba(31,30,33,0)); }
+.spread .n { font-family:var(--font-en); font-weight:200; font-size:40px; letter-spacing:-.04em; line-height:1; color:var(--mustard); }
+.spread h3 { font-size:24px; margin:4px 0; }
+.spread p { font-size:14.5px; color:rgba(244,235,226,.85); }
+.spread.s-4 { grid-column:span 4; min-height:420px; }
+.spread.s-2 { grid-column:span 2; }
+.spread.s-3 { grid-column:span 3; }
+.spread.text { background:var(--green); align-items:center; padding:30px; }
+.spread.text .body { background:none; padding:0; }
+.spread.text dl { display:grid; grid-template-columns:auto 1fr; column-gap:18px; row-gap:8px; font-size:15px; margin-top:14px; }
+.spread.text dt { color:var(--mustard); font-family:var(--font-en); font-size:11px; letter-spacing:.14em; text-transform:uppercase; padding-top:4px; }
+.spread.text dd { font-weight:600; font-family:var(--font-en); }
+
+/* for */
+.for { background:var(--green); color:var(--paper); }
+.for .wrap { display:grid; grid-template-columns:.9fr 1.1fr; gap:60px; }
+.for h2 { margin-top:14px; }
+.for .lede { margin-top:18px; color:rgba(244,235,226,.75); max-width:400px; }
+.for ol { list-style:none; counter-reset:u; display:grid; gap:0; border-top:1px solid rgba(244,235,226,.15); }
+.for li { counter-increment:u; display:grid; grid-template-columns:56px 1fr auto; gap:16px; align-items:center; padding:20px 0; border-bottom:1px solid rgba(244,235,226,.15); transition:padding-left .3s var(--ease); }
+.for li:hover { padding-left:8px; }
+.for li::before { content:"0" counter(u); font-family:var(--font-en); font-weight:200; font-size:30px; color:var(--mustard); letter-spacing:-.04em; }
+.for li b { font-family:var(--font-en); font-size:20px; display:block; }
+.for li span { color:rgba(244,235,226,.7); font-size:15px; }
+.for li a { font-family:var(--font-en); font-size:13px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--mustard); white-space:nowrap; }
+
+/* week grid */
+.week .head { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:end; margin-bottom:40px; }
+.week .head p { color:rgba(31,30,33,.72); font-size:18px; }
+.grid { display:grid; grid-template-columns:110px repeat(7,1fr); gap:6px; font-family:var(--font-en); }
+.grid .h { font-size:12px; letter-spacing:.12em; text-transform:uppercase; font-weight:700; color:rgba(31,30,33,.55); padding:8px 4px; text-align:center; }
+.grid .rh { font-size:13px; font-weight:600; padding:0 8px; display:flex; align-items:center; color:rgba(31,30,33,.75); }
+.grid .rh small { display:block; font-weight:400; color:rgba(31,30,33,.5); font-size:11px; }
+.slot { height:64px; border-radius:8px; border:1.5px solid rgba(31,30,33,.12); background:var(--paper-2); cursor:pointer; transition:transform .2s var(--ease), background .2s, border-color .2s; font-size:12px; font-weight:600; display:flex; align-items:center; justify-content:center; color:rgba(31,30,33,.4); }
+.slot:hover { transform:translateY(-2px); border-color:var(--terra); color:var(--terra); }
+.slot.booked { background:repeating-linear-gradient(-45deg, rgba(31,30,33,.06) 0 6px, transparent 6px 12px); cursor:not-allowed; color:rgba(31,30,33,.35); }
+.slot.booked:hover { transform:none; border-color:rgba(31,30,33,.12); color:rgba(31,30,33,.35); }
+.slot.selected { background:var(--terra); border-color:var(--terra); color:var(--paper); }
+.slot.gold { border-color:var(--mustard); }
+.week .legend { display:flex; gap:22px; flex-wrap:wrap; margin-top:16px; font-family:var(--font-en); font-size:13px; color:rgba(31,30,33,.65); }
+.week .legend i { display:inline-block; width:14px; height:14px; border-radius:4px; vertical-align:-2px; margin-right:6px; border:1.5px solid rgba(31,30,33,.15); background:var(--paper-2); }
+.week .legend i.b { background:repeating-linear-gradient(-45deg, rgba(31,30,33,.08) 0 3px, transparent 3px 6px); }
+.week .legend i.g { border-color:var(--mustard); }
+.week .legend i.s { background:var(--terra); border-color:var(--terra); }
+.week .bar { margin-top:26px; display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; padding:18px 22px; border-radius:14px; background:var(--paper-2); border:1px solid rgba(31,30,33,.1); }
+.week .bar .sel { font-family:var(--font-en); font-weight:600; }
+.week .bar .sel small { display:block; font-weight:400; color:rgba(31,30,33,.6); font-size:13px; }
+
+/* rates */
+.rates .head { display:flex; justify-content:space-between; align-items:end; gap:40px; margin-bottom:40px; }
+.rates .head p { max-width:420px; color:rgba(31,30,33,.7); }
+.rate-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+.rate { padding:30px 28px; border-radius:6px; display:flex; flex-direction:column; gap:12px; min-height:340px; position:relative; overflow:hidden; }
+.rate.terra { background:var(--terra); color:var(--paper); }
+.rate.mustard { background:var(--mustard); color:var(--ink); }
+.rate.green { background:var(--green); color:var(--paper); }
+.rate::after { content:""; position:absolute; right:-40px; bottom:-40px; width:180px; height:180px; background:url("assets/patterns/Pattern_03.svg") center/360px; opacity:.18; border-radius:50%; mix-blend-mode:multiply; }
+.rate .tag { font-family:var(--font-en); font-size:12px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; opacity:.85; }
+.rate h3 { font-size:32px; }
+.rate .price { font-family:var(--font-en); font-weight:800; font-size:48px; letter-spacing:-.04em; line-height:1; }
+.rate .price small { font-size:14px; font-weight:500; letter-spacing:0; margin-left:6px; opacity:.75; }
+.rate ul { list-style:none; display:grid; gap:7px; font-size:15px; }
+.rate ul li::before { content:"—"; margin-right:10px; opacity:.6; }
+.rate .btn { margin-top:auto; justify-content:center; background:rgba(0,0,0,.18); color:inherit; }
+.rate.mustard .btn { background:var(--ink); color:var(--paper); }
+.rates .fine { margin-top:22px; font-size:14px; color:rgba(31,30,33,.6); }
+
+/* how */
+.how { background:var(--paper-2); }
+.how .wrap { display:grid; grid-template-columns:1fr 2fr; gap:60px; }
+.steps { display:grid; gap:0; }
+.step { display:grid; grid-template-columns:70px 1fr; gap:20px; padding:26px 0; border-top:1px solid rgba(31,30,33,.12); }
+.step:last-child { border-bottom:1px solid rgba(31,30,33,.12); }
+.step .n { font-family:var(--font-en); font-weight:200; font-size:48px; color:var(--terra); letter-spacing:-.04em; line-height:1; }
+.step h3 { margin-bottom:6px; }
+.step p { color:rgba(31,30,33,.72); font-size:16px; }
+
+/* visit */
+.visit .wrap { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
+.visit dl { display:grid; grid-template-columns:auto 1fr; column-gap:24px; row-gap:12px; margin:28px 0 30px; font-size:16px; }
+.visit dt { font-family:var(--font-en); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--terra); padding-top:4px; font-weight:700; }
+.visit dd a { border-bottom:1px solid rgba(31,30,33,.35); }
+.visit .shot { position:relative; background:var(--paper-2); padding:14px 14px 48px; transform:rotate(1.5deg); box-shadow:0 24px 50px rgba(102,38,28,.25), 0 2px 0 var(--brick); }
+.visit .shot img { aspect-ratio:4/3; object-fit:cover; width:100%; }
+.visit .shot figcaption { position:absolute; left:16px; bottom:14px; font-family:var(--font-en); font-size:13px; color:#6b6a6e; font-weight:600; }
+.visit .shot .tape { position:absolute; top:-12px; left:50%; width:110px; height:26px; background:rgba(218,189,92,.85); transform:translateX(-50%) rotate(2deg); }
+
+/* footer */
+.site-footer { padding:10px 0 26px; font-family:var(--font-en); font-size:13px; }
+.family { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; padding:14px 0; margin-bottom:14px; border-top:1px solid rgba(31,30,33,.12); border-bottom:1px solid rgba(31,30,33,.12); font-size:12px; letter-spacing:.04em; text-transform:uppercase; }
+.family .lbl { color:#8a8890; }
+.family .links { display:flex; gap:18px; flex-wrap:wrap; }
+.family .here { color:var(--terra); font-weight:700; }
+.family a { border-bottom:1px solid var(--mustard); font-weight:600; }
+.site-footer .row { display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; }
+.site-footer .row img { height:44px; }
+.site-footer .row .left { display:flex; align-items:center; gap:14px; }
+
+@media (max-width: 980px) {
+  .hero .wrap, .for .wrap, .week .head, .how .wrap, .visit .wrap { grid-template-columns:1fr; }
+  .collage { max-width:520px; }
+  .spread-grid { grid-template-columns:1fr 1fr; }
+  .spread.s-4, .spread.s-3, .spread.s-2 { grid-column:span 2; min-height:320px; }
+  .rate-grid { grid-template-columns:1fr; }
+  .grid { grid-template-columns:80px repeat(7,1fr); }
+}
+@media (max-width: 760px) {
+  :root { --nav-h:64px; }
+  .nav ul, .nav > .btn { display:none; }
+  .brand img { height:38px; }
+  .burger { display:block; }
+  .site-header.open { background:var(--terra); }
+  .site-header.open .mobile-menu { display:block; background:var(--terra); border-top:1px solid rgba(244,235,226,.25); }
+  .mobile-menu ul { list-style:none; padding:12px 0 20px; font-family:var(--font-en); font-weight:700; font-size:22px; }
+  .mobile-menu li a { display:block; padding:12px 0; border-bottom:1px solid rgba(244,235,226,.15); }
+  .mobile-menu .btn { margin:18px 0 22px; }
+  .sec { padding:70px 0; }
+  .hero .wrap { padding:120px 0 80px; }
+  .entry { padding:24px 20px 22px; }
+  .entry .word { font-size:34px; }
+  .spread-grid { grid-template-columns:1fr; }
+  .spread.s-4, .spread.s-3, .spread.s-2 { grid-column:auto; }
+  .grid { grid-template-columns:64px repeat(7,1fr); gap:4px; }
+  .slot { height:48px; font-size:0; }
+  .grid .h { font-size:10px; letter-spacing:.04em; }
+  .for li { grid-template-columns:44px 1fr; }
+  .for li a { grid-column:2; }
+  .step { grid-template-columns:50px 1fr; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation:none !important; transition:none !important; } }
+</style>
+</head>
+<body>
+<a class="sr" href="#rooms">Skip to content</a>
+
+<header class="site-header" id="header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="#top" aria-label="Kashkoul Studio — home">
+      <img src="assets/logo/logo-badge-paper.svg" alt="" width="40" height="43">
+      <span class="brand-text"><b>Kashkoul</b><small>Studio · <span class="ar">استوديو</span></small></span>
+    </a>
+    <ul>
+      <li><a href="#rooms">Rooms</a></li>
+      <li><a href="#for">What for</a></li>
+      <li><a href="#week">This week</a></li>
+      <li><a href="#rates">Rates</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn" data-wa href="#" target="_blank" rel="noopener">Book the room</a>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="wrap">
+      <ul>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#for">What people book it for</a></li>
+        <li><a href="#week">This week</a></li>
+        <li><a href="#rates">Rates</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+      <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener">Book the room on WhatsApp →</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero grain" id="top">
+  <div class="wrap">
+    <div>
+      <span class="kicker">Kashkoul Studio · Khaldeh</span>
+      <h1>The room<br>is ready.<br><span class="light">Bring the idea.</span><span class="ar">الغرفة جاهزة. هات الفكرة.</span></h1>
+      <p class="lede">A warm, furnished, camera-ready apartment by the sea. Podcasts, sessions, shoots and workshops — by the hour or the day. The Academy teaches here; the Studio records.</p>
+      <div class="ctas">
+        <a class="btn btn-wa btn-lg" data-wa href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.5 3.9 1.7.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>
+          Book on WhatsApp
+        </a>
+        <a class="btn btn-outline btn-lg" href="#week">See this week's slots</a>
+      </div>
+    </div>
+    <div class="collage" aria-hidden="true">
+      <div class="stamp"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="1"/><path id="sp" d="M50,50 m-39,0 a39,39 0 1,1 78,0 a39,39 0 1,1 -78,0" fill="none"/><text font-size="7.4"><textPath href="#sp">KASHKOUL STUDIO · KHALDEH · SEA SIDE · </textPath></text><text class="center" x="50" y="55" text-anchor="middle" font-size="13">كشكول</text></svg></div>
+      <figure class="polaroid"><span class="tape"></span><img src="assets/photos/library-armchairs.jpg" alt=""><figcaption>The library set</figcaption></figure>
+      <figure class="polaroid"><span class="tape"></span><img src="assets/photos/balcony-1b.jpg" alt=""><figcaption>Balcony, 5:40pm</figcaption></figure>
+      <figure class="polaroid"><span class="tape"></span><img src="assets/photos/oud-corner.jpg" alt=""><figcaption>Room B</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- NOTEBOOK ENTRY -->
+<section class="entry-sec" aria-label="What the studio is">
+  <div class="wrap">
+    <article class="entry">
+      <header><span class="word">studio</span><span class="pron">stu·di·o <i>· noun · the other door of Kashkoul</i></span></header>
+      <p class="def">The same house where the Academy teaches the oud and the ney — rented, by the hour, to anyone with something to record. A podcast, a song, a product, a talk. <mark>You bring the idea; the room is already lit.</mark>
+        <span class="ar">نفس البيت الذي تُدرَّس فيه الموسيقى — تستأجره بالساعة لتسجّل ما تريد.</span></p>
+    </article>
+  </div>
+</section>
+
+<!-- ROOMS -->
+<section class="sec spreads" id="rooms">
+  <div class="wrap">
+    <div class="intro">
+      <p class="label label-terra">The rooms</p>
+      <h2 class="display" style="margin-top:14px">One floor.<br><span class="light">Five ways in.</span></h2>
+      <p>Everything is furnished and lit. Rent a single corner or the whole floor — the kitchen and balconies come with every booking.</p>
+    </div>
+    <div class="spread-grid">
+      <a class="spread s-4" data-wa="I'd like to book the library set." href="#" target="_blank" rel="noopener"><img src="assets/photos/library-set-lights.jpg" alt=""><div class="body"><span class="n">01</span><h3>The library set</h3><p>Two wing chairs, a wall of books, two softboxes already up. Podcasts and interviews, framed in ten minutes.</p></div></a>
+      <div class="spread s-2 text"><div class="body"><span class="label label-mustard">Spec sheet</span><dl><dt>Salon</dt><dd>Open-plan set</dd><dt>Rooms</dt><dd>3 · 3×4 m &amp; 4×5 m</dd><dt>Acoustic</dt><dd>1 · 3×3 m isolated</dd><dt>Balconies</dt><dd>2 · sea view</dd><dt>Kitchen</dt><dd>1 · full</dd><dt>Restrooms</dt><dd>3 · private</dd></dl></div></div>
+      <a class="spread s-2" data-wa="I'd like to book the salon." href="#" target="_blank" rel="noopener"><img src="assets/photos/salon-sofa.jpg" alt=""><div class="body"><span class="n">02</span><h3>The salon</h3><p>Sofa, armchairs, sheer light. The wide shot.</p></div></a>
+      <a class="spread s-2" data-wa="I'd like to book a production room." href="#" target="_blank" rel="noopener"><img src="assets/photos/oud-chair-wide.jpg" alt=""><div class="body"><span class="n">03</span><h3>Production rooms</h3><p>Three rooms, three moods. Sets, green rooms, changing.</p></div></a>
+      <a class="spread s-2" data-wa="I'd like to book the acoustic room." href="#" target="_blank" rel="noopener"><img src="assets/photos/curtain.jpg" alt=""><div class="body"><span class="n">04</span><h3>Acoustic room</h3><p>3×3 m, isolated. Vocals, VO, tracking. <span class="ph" title="Placeholder — need a photo of the acoustic room">[photo]</span></p></div></a>
+      <a class="spread s-3" data-wa="I'd like to book a balcony shoot." href="#" target="_blank" rel="noopener"><img src="assets/photos/balcony-1a.jpg" alt=""><div class="body"><span class="n">05</span><h3>Two balconies</h3><p>West-facing, over the sea. Book the last two hours of light.</p></div></a>
+      <a class="spread s-3" data-wa="I'd like to ask about props and instruments." href="#" target="_blank" rel="noopener"><img src="assets/photos/turntable.jpg" alt=""><div class="body"><span class="n">+</span><h3>Props &amp; instruments</h3><p>Turntable, books, an oud on the wall — and the Academy's instruments on request.</p></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT FOR -->
+<section class="sec for" id="for">
+  <div class="wrap">
+    <div>
+      <p class="label label-mustard">What people book it for</p>
+      <h2>Made for the<br>talking, playing,<br>filming kind.</h2>
+      <p class="lede">It's an apartment, not a warehouse — warm light, real furniture, books on the wall. That's the look people come for.</p>
+    </div>
+    <ol>
+      <li><div><b>Podcasts &amp; interviews</b><span>Library set, two mics, two lights. Most-booked corner.</span></div><a data-wa="I'd like to book the studio for a podcast." href="#" target="_blank" rel="noopener">Ask →</a></li>
+      <li><div><b>Music sessions</b><span>Live takes in the salon, tracking in the acoustic room.</span></div><a data-wa="I'd like to book the studio for a music session." href="#" target="_blank" rel="noopener">Ask →</a></li>
+      <li><div><b>Brand &amp; product content</b><span>Three backdrops, a Canon R8 on site, natural light all day.</span></div><a data-wa="I'd like to book the studio for brand content." href="#" target="_blank" rel="noopener">Ask →</a></li>
+      <li><div><b>Talks &amp; workshops</b><span>Salon seating for <span class="ph" title="Placeholder — seated capacity">[12–15]</span>, kitchen next door.</span></div><a data-wa="I'd like to book the studio for a workshop." href="#" target="_blank" rel="noopener">Ask →</a></li>
+      <li><div><b>Rehearsals</b><span>Bands, ensembles, Academy students before a show.</span></div><a data-wa="I'd like to book the studio for a rehearsal." href="#" target="_blank" rel="noopener">Ask →</a></li>
+      <li><div><b>Golden-hour shoots</b><span>Two sea-facing balconies. Bring the outfit.</span></div><a data-wa="I'd like to book a balcony golden-hour shoot." href="#" target="_blank" rel="noopener">Ask →</a></li>
+    </ol>
+  </div>
+</section>
+
+<!-- THIS WEEK -->
+<section class="sec week" id="week">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label label-terra">This week</p>
+        <h2 style="margin-top:14px">Pick a slot.<br><span class="light">We'll confirm on WhatsApp.</span></h2>
+      </div>
+      <p>Tap a free slot and we'll pre-write the message for you. <span class="ph" title="Placeholder — this grid is a mock; would connect to a real calendar (Google Calendar / Cal.com) later">Availability shown is a demo</span> — the real site would read a shared calendar.</p>
+    </div>
+    <div class="grid" id="grid" role="grid" aria-label="Weekly availability"></div>
+    <div class="legend"><span><i></i>Free</span><span><i class="b"></i>Booked</span><span><i class="g"></i>Golden hour</span><span><i class="s"></i>Your pick</span></div>
+    <div class="bar">
+      <div class="sel" id="sel">No slot picked yet<small>Slots are 4-hour blocks · <span class="ph" title="Placeholder — confirm minimum booking">2-hour minimum</span> for hourly bookings</small></div>
+      <a class="btn btn-wa" id="sel-btn" href="#" target="_blank" rel="noopener">Request this slot →</a>
+    </div>
+  </div>
+</section>
+
+<!-- RATES -->
+<section class="sec rates" id="rates">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="label label-terra">Rates</p><h2 style="margin-top:14px">Three sizes of day.</h2></div>
+      <p>Furniture, lights, backdrops, kitchen and balconies are always included. Numbers are <span class="ph" title="Placeholder — real rates needed">placeholders</span> until confirmed.</p>
+    </div>
+    <div class="rate-grid">
+      <div class="rate mustard"><span class="tag">Hourly</span><h3>The Hour</h3><div class="price"><span class="ph">$—</span><small>/ h · 2h min</small></div><ul><li>One room</li><li>Lights &amp; backdrops</li><li>Kitchen &amp; restrooms</li></ul><a class="btn" data-wa="I'd like to book by the hour." href="#" target="_blank" rel="noopener">Ask about hours</a></div>
+      <div class="rate terra"><span class="tag">Most booked</span><h3>Half day</h3><div class="price"><span class="ph">$—</span><small>/ 4 hours</small></div><ul><li>Whole floor</li><li>Camera &amp; light kit</li><li>One free reschedule</li></ul><a class="btn" data-wa="I'd like to book a half day." href="#" target="_blank" rel="noopener">Book a half day</a></div>
+      <div class="rate green"><span class="tag">Full production</span><h3>Full day</h3><div class="price"><span class="ph">$—</span><small>/ 8 hours</small></div><ul><li>Everything in half day</li><li>Early crew access</li><li>Late wrap by arrangement</li></ul><a class="btn" data-wa="I'd like to book a full day." href="#" target="_blank" rel="noopener">Book a full day</a></div>
+    </div>
+    <p class="fine">Add-ons: camera operator, sound engineer, editing — <span class="ph">$— / h</span>. Academy students &amp; teachers get <span class="ph">[—]%</span> off. Deposit <span class="ph">[—]%</span> · free cancellation up to <span class="ph">[48h]</span> before.</p>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="sec how" id="how">
+  <div class="wrap">
+    <div><p class="label label-terra">How it works</p><h2 style="margin-top:14px">Three steps.<br>No forms.</h2></div>
+    <div class="steps">
+      <div class="step"><span class="n">01</span><div><h3>Message us</h3><p>Date, rough hours, what you're making. WhatsApp is fastest; we answer the same day.</p></div></div>
+      <div class="step"><span class="n">02</span><div><h3>We dress the set</h3><p>Tell us the corner and send a reference. It'll be lit and framed before you arrive.</p></div></div>
+      <div class="step"><span class="n">03</span><div><h3>Walk in, press record</h3><p>Coffee in the kitchen, balcony open. Running over? If the next slot is free, it's yours.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="sec visit grain" id="visit">
+  <div class="wrap">
+    <div>
+      <p class="label label-terra">Visit</p>
+      <h2 style="margin-top:14px">Come by.<br>See the light.</h2>
+      <dl>
+        <dt>Where</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=33.7890334,35.4807347" target="_blank" rel="noopener">Kashkoul, Khaldeh, Lebanon</a> · <span class="ar">خلدة، لبنان</span> — <span class="ph" title="Placeholder — building / floor">[building, floor]</span></dd>
+        <dt>Hours</dt><dd><span class="ph" title="Placeholder — studio hours">[Daily 9am – 10pm · late wraps by arrangement]</span></dd>
+        <dt>WhatsApp</dt><dd><a data-wa href="#" target="_blank" rel="noopener">+961 71 257 082</a> <span class="ph" title="Placeholder — shared with the Academy for now">(shared with the Academy)</span></dd>
+        <dt>Instagram</dt><dd><a href="#" class="ph" title="Placeholder — studio Instagram">@kashkoul.studio</a></dd>
+      </dl>
+      <a class="btn btn-wa btn-lg" data-wa="I'd like to visit the studio before booking." href="#" target="_blank" rel="noopener">Ask for a visit</a>
+    </div>
+    <figure class="shot"><span class="tape"></span><img src="assets/photos/salon-wide-softbox.jpg" alt="The salon with a softbox set up" loading="lazy"><figcaption>The salon, Khaldeh — the afternoon light</figcaption></figure>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="family">
+      <span class="lbl">Kashkoul is two doors, one house</span>
+      <span class="links"><a href="../">Kashkoul Academy · lessons →</a><span class="here">Kashkoul Studio · rent the space</span></span>
+    </div>
+    <div class="row">
+      <div class="left"><img src="assets/logo/logo-badge-ink.svg" alt=""><span>Kashkoul Studio · <span class="ar">استوديو كشكول</span> · Khaldeh, Lebanon</span></div>
+      <span>© 2026 · Prototype 2 — "Paper"</span>
+    </div>
+  </div>
+</footer>
+
+<button class="ph-toggle" id="ph-toggle" type="button">Show placeholders</button>
+
+<script>
+  const WA_NUMBER = '96171257082';
+  const WA_DEFAULT = "Hi Kashkoul Studio! I'd like to book the room.";
+  const wa = msg => `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg.startsWith('Hi') ? msg : 'Hi Kashkoul Studio! ' + msg)}`;
+  document.querySelectorAll('[data-wa]').forEach(a => a.href = wa(a.getAttribute('data-wa') || WA_DEFAULT));
+
+  // header
+  const header = document.getElementById('header');
+  const onScroll = () => header.classList.toggle('scrolled', scrollY > 40);
+  addEventListener('scroll', onScroll, { passive:true }); onScroll();
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => burger.setAttribute('aria-expanded', header.classList.toggle('open')));
+  document.querySelectorAll('.mobile-menu a').forEach(a => a.addEventListener('click', () => { header.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }));
+
+  // week grid (demo data — a real build would read a shared calendar)
+  const days = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+  const blocks = [['Morning','9–1'],['Afternoon','1–5'],['Evening','5–9']];
+  const booked = new Set(['0-1','1-0','2-2','3-1','4-0','4-1','5-2']);
+  const grid = document.getElementById('grid');
+  const today = new Date(); const monday = new Date(today); monday.setDate(today.getDate() - ((today.getDay()+6)%7));
+  let html = '<div class="h"></div>' + days.map((d,i) => { const dt = new Date(monday); dt.setDate(monday.getDate()+i); return `<div class="h">${d}<br><span style="font-weight:400">${dt.getDate()}</span></div>`; }).join('');
+  blocks.forEach((b,r) => {
+    html += `<div class="rh">${b[0]}<small>${b[1]}</small></div>`;
+    days.forEach((d,c) => { const k = `${c}-${r}`; const isB = booked.has(k); html += `<button class="slot${isB?' booked':''}${r===2?' gold':''}" data-k="${k}" data-label="${d} ${b[0].toLowerCase()} (${b[1]})" ${isB?'disabled':''}>${isB?'Booked':'Free'}</button>`; });
+  });
+  grid.innerHTML = html;
+  const sel = document.getElementById('sel'), selBtn = document.getElementById('sel-btn');
+  selBtn.href = wa(WA_DEFAULT);
+  grid.addEventListener('click', e => {
+    const s = e.target.closest('.slot'); if (!s || s.disabled) return;
+    grid.querySelectorAll('.selected').forEach(x => x.classList.remove('selected')); s.classList.add('selected');
+    sel.innerHTML = `${s.dataset.label}<small>Tap "Request" — we'll confirm on WhatsApp</small>`;
+    selBtn.href = wa(`I'd like to book the studio on ${s.dataset.label} this week.`);
+  });
+
+  // placeholders
+  const n = document.querySelectorAll('.ph').length, t = document.getElementById('ph-toggle');
+  t.textContent = `Show placeholders (${n})`;
+  t.addEventListener('click', () => { const on = document.body.classList.toggle('show-ph'); t.textContent = (on ? 'Hide' : 'Show') + ` placeholders (${n})`; });
+</script>
+</body>
+</html>

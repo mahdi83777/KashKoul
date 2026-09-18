@@ -11,6 +11,8 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = join(ROOT, 'src');
+// The Studio prototypes ship with the Academy site under /studio/ (footer badge links there) until the Studio has its own site.
+const STUDIO = resolve(ROOT, '../studio/prototype');
 const OUT = join(ROOT, 'index.html');
 // 8765 is unique among the Miqvaro projects (3000/808x/909x backends, 5173/5174 Vite)
 const PORT = Number(process.env.PORT) || 8765;
@@ -41,7 +43,8 @@ if (process.argv.includes('--dist')) {
   mkdirSync(DIST);
   for (const f of ['index.html', 'css', 'js', 'assets', 'robots.txt', 'sitemap.xml', '_headers']) cpSync(join(ROOT, f), join(DIST, f), { recursive: true });
   rmSync(join(DIST, 'assets/photos/CREDITS.md'), { force: true });
-  console.log('[dist] → dist/ (runtime files only)');
+  cpSync(STUDIO, join(DIST, 'studio'), { recursive: true });
+  console.log('[dist] → dist/ (runtime files only) + studio/ (prototypes)');
 }
 
 if (process.argv.includes('--watch') || process.argv.includes('--serve')) {
@@ -52,7 +55,8 @@ if (process.argv.includes('--watch') || process.argv.includes('--serve')) {
 if (process.argv.includes('--serve')) {
   const TYPES = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.jpg': 'image/jpeg', '.png': 'image/png', '.ttf': 'font/ttf', '.md': 'text/plain' };
   createServer((req, res) => {
-    let p = join(ROOT, decodeURIComponent(req.url.split('?')[0]));
+    const url = decodeURIComponent(req.url.split('?')[0]);
+    let p = url.startsWith('/studio/') ? join(STUDIO, url.slice(8)) : join(ROOT, url);
     if (existsSync(p) && statSync(p).isDirectory()) p = join(p, 'index.html');
     if (!existsSync(p)) { res.writeHead(404); return res.end('not found'); }
     res.writeHead(200, { 'content-type': TYPES[extname(p)] || 'application/octet-stream', 'cache-control': 'no-store' });

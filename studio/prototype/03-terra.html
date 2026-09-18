@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kashkoul Studio — Book the room. Khaldeh, Lebanon</title>
+<meta name="description" content="Kashkoul Studio: a furnished, lit, sea-side set in Khaldeh. Build your booking — pick a room, hours and add-ons — and send it on WhatsApp.">
+<meta name="theme-color" content="#9b4a39">
+<link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+<style>
+/* ---------- Prototype 3 · "Terra" · bold poster, terracotta-forward, booking builder ---------- */
+@font-face { font-family: "Bricolage Grotesque"; src: url("assets/fonts/BricolageGrotesque.ttf") format("truetype"); font-weight: 200 800; font-stretch: 75% 100%; font-display: swap; }
+@font-face { font-family: "Fustat"; src: url("assets/fonts/Fustat.ttf") format("truetype"); font-weight: 200 800; font-display: swap; }
+
+:root {
+  --paper:#f4ebe2; --sand:#c49da2; --ink:#1f1e21; --mustard:#dabd5c; --mustard-2:#b68c2d;
+  --terra:#9b4a39; --brick:#66261c; --green:#142b26; --pine:#2e4c46;
+  --font-en:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --font-ar:"Fustat","Noto Sans Arabic",Tahoma,sans-serif;
+  --font-body:"Fustat","Helvetica Neue",Arial,sans-serif;
+  --wrap:1280px; --gutter:24px; --nav-h:80px; --ease:cubic-bezier(.22,1,.36,1);
+}
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html { scroll-behavior:smooth; }
+body { background:var(--terra); color:var(--paper); font-family:var(--font-body); font-size:17px; line-height:1.55; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+img { display:block; max-width:100%; }
+a { color:inherit; text-decoration:none; }
+button { font:inherit; color:inherit; cursor:pointer; }
+.ar { font-family:var(--font-ar); direction:rtl; }
+.wrap { width:min(var(--wrap), 100% - var(--gutter)*2); margin-inline:auto; }
+.sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+h1,h2,h3 { font-family:var(--font-en); line-height:1; letter-spacing:-.03em; }
+h2 { font-size:clamp(40px, 6.5vw, 96px); font-weight:800; font-stretch:88%; }
+h2 .light { font-weight:200; font-stretch:100%; }
+h3 { font-size:22px; font-weight:700; }
+.label { font-family:var(--font-en); font-size:12px; letter-spacing:.2em; text-transform:uppercase; font-weight:700; }
+.sec { padding:100px 0; }
+
+/* placeholders */
+.ph { border-bottom:1px dotted currentColor; cursor:help; opacity:.95; }
+body.show-ph .ph { background:rgba(218,189,92,.35); border-bottom-style:solid; }
+.ph-toggle { position:fixed; left:14px; bottom:14px; z-index:80; background:var(--ink); color:var(--paper); border:0; border-radius:999px; padding:9px 14px; font-family:var(--font-en); font-size:12px; letter-spacing:.06em; text-transform:uppercase; cursor:pointer; opacity:.85; }
+
+/* buttons */
+.btn { display:inline-flex; align-items:center; gap:10px; padding:15px 24px; border-radius:4px; font-family:var(--font-en); font-weight:800; font-size:15px; letter-spacing:.02em; text-transform:uppercase; border:2px solid transparent; transition:transform .25s var(--ease), background .2s, color .2s, border-color .2s; white-space:nowrap; }
+.btn:hover { transform:translate(-2px,-2px); box-shadow:4px 4px 0 var(--ink); }
+.btn-mustard { background:var(--mustard); color:var(--ink); }
+.btn-ink { background:var(--ink); color:var(--paper); }
+.btn-ink:hover { box-shadow:4px 4px 0 var(--mustard); }
+.btn-outline { border-color:currentColor; }
+.btn-lg { padding:19px 30px; font-size:17px; }
+
+/* header — a bar, not a float: poster feel */
+.site-header { position:sticky; top:0; z-index:50; background:var(--terra); border-bottom:2px solid var(--ink); }
+.nav { display:flex; align-items:center; justify-content:space-between; height:var(--nav-h); gap:20px; }
+.brand { display:flex; align-items:center; gap:12px; }
+.brand img { height:44px; width:auto; }
+.brand-text { display:flex; flex-direction:column; line-height:1; font-family:var(--font-en); }
+.brand-text b { font-size:22px; font-weight:800; letter-spacing:-.02em; }
+.brand-text small { font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--mustard); margin-top:4px; font-weight:700; }
+.brand-text small .ar { text-transform:none; letter-spacing:0; font-size:12px; }
+.nav ul { display:flex; gap:26px; list-style:none; font-family:var(--font-en); font-weight:700; font-size:13px; letter-spacing:.08em; text-transform:uppercase; }
+.nav ul a { border-bottom:2px solid transparent; padding:4px 0; }
+.nav ul a:hover { border-color:var(--mustard); }
+.nav .btn { padding:11px 16px; font-size:13px; }
+.burger { display:none; width:44px; height:44px; border:0; background:transparent; padding:8px; }
+.burger span { display:block; height:2px; background:currentColor; margin:6px 0; transition:.25s; }
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+.mobile-menu { display:none; }
+
+/* hero — poster */
+.hero { position:relative; overflow:hidden; border-bottom:2px solid var(--ink); }
+.hero::before { content:""; position:absolute; inset:0; background:url("assets/patterns/Pattern_01.svg") center/600px; opacity:.5; mix-blend-mode:multiply; pointer-events:none; }
+.hero .wrap { position:relative; padding:70px 0 0; }
+.hero .top { display:grid; grid-template-columns:1fr auto; gap:30px; align-items:end; }
+.hero .kicker { display:flex; gap:14px; align-items:center; font-family:var(--font-en); font-size:12px; letter-spacing:.2em; text-transform:uppercase; font-weight:700; color:var(--mustard); }
+.hero .kicker i { width:10px; height:10px; background:var(--mustard); border-radius:50%; animation:pulse 1.6s infinite; }
+@keyframes pulse { 50% { opacity:.3; } }
+.hero h1 { font-size:clamp(64px, 13.5vw, 220px); font-weight:800; font-stretch:80%; letter-spacing:-.05em; line-height:.85; margin-top:18px; text-transform:uppercase; }
+.hero h1 .o { font-weight:200; font-stretch:100%; }
+.hero h1 .ar { display:block; font-size:.34em; font-weight:800; letter-spacing:0; text-transform:none; margin-top:.2em; color:var(--mustard); text-align:left; line-height:1.1; }
+.hero .lede { max-width:420px; font-size:18px; color:rgba(244,235,226,.9); justify-self:end; padding-bottom:12px; }
+.hero .lede .btn { margin-top:20px; }
+.strip { margin-top:50px; display:flex; gap:10px; overflow-x:auto; scroll-snap-type:x mandatory; padding:0 0 30px; scrollbar-width:none; cursor:grab; }
+.strip::-webkit-scrollbar { display:none; }
+.strip figure { flex:0 0 auto; width:min(520px, 78vw); aspect-ratio:16/10; scroll-snap-align:start; border:2px solid var(--ink); position:relative; background:var(--ink); }
+.strip figure:nth-child(even) { width:min(360px, 60vw); aspect-ratio:4/5; margin-top:40px; }
+.strip img { width:100%; height:100%; object-fit:cover; }
+.strip figcaption { position:absolute; left:0; bottom:0; background:var(--ink); color:var(--paper); padding:6px 12px; font-family:var(--font-en); font-size:12px; letter-spacing:.14em; text-transform:uppercase; font-weight:700; }
+.strip .hint { flex:0 0 auto; align-self:center; font-family:var(--font-en); font-size:12px; letter-spacing:.2em; text-transform:uppercase; writing-mode:vertical-rl; transform:rotate(180deg); color:rgba(244,235,226,.6); padding:0 6px; }
+
+/* marquee */
+.marquee { background:var(--ink); border-bottom:2px solid var(--ink); overflow:hidden; }
+.marquee .track { display:flex; gap:0; width:max-content; padding:14px 0; animation:mq 30s linear infinite; font-family:var(--font-en); font-weight:800; font-size:20px; letter-spacing:.04em; text-transform:uppercase; }
+.marquee .track span { padding:0 28px; }
+.marquee .track span:nth-child(odd) { color:var(--mustard); }
+@keyframes mq { to { transform:translateX(-50%); } }
+
+/* spaces — numbered list with hover image */
+.spaces { background:var(--paper); color:var(--ink); border-bottom:2px solid var(--ink); }
+.spaces .wrap { display:grid; grid-template-columns:1.1fr .9fr; gap:50px; }
+.spaces h2 { margin-bottom:34px; }
+.slist { list-style:none; border-top:2px solid var(--ink); }
+.slist li { border-bottom:2px solid var(--ink); }
+.slist button { width:100%; display:grid; grid-template-columns:70px 1fr auto; align-items:center; gap:16px; padding:22px 0; background:none; border:0; text-align:left; font-family:var(--font-en); transition:padding-left .3s var(--ease); }
+.slist button:hover, .slist li.active button { padding-left:10px; }
+.slist .n { font-weight:200; font-size:34px; letter-spacing:-.04em; color:var(--terra); }
+.slist .t { font-size:clamp(24px, 3vw, 38px); font-weight:800; letter-spacing:-.03em; line-height:1; }
+.slist .t small { display:block; font-family:var(--font-body); font-weight:400; font-size:15px; letter-spacing:0; color:rgba(31,30,33,.65); margin-top:6px; }
+.slist .m { font-size:12px; letter-spacing:.14em; text-transform:uppercase; font-weight:700; color:var(--terra); }
+.slist li.active .m { color:var(--ink); }
+.sview { position:sticky; top:calc(var(--nav-h) + 24px); align-self:start; }
+.sview .frame { border:2px solid var(--ink); background:var(--ink); aspect-ratio:4/3.4; position:relative; overflow:hidden; box-shadow:10px 10px 0 var(--terra); }
+.sview img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity .45s; }
+.sview img.on { opacity:1; }
+.sview .cap { margin-top:22px; display:flex; justify-content:space-between; align-items:flex-start; gap:20px; }
+.sview .cap p { color:rgba(31,30,33,.75); font-size:16px; max-width:380px; }
+.sview .chips { display:flex; flex-wrap:wrap; gap:6px; justify-content:flex-end; }
+.sview .chips span { font-family:var(--font-en); font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:6px 10px; border:2px solid var(--ink); }
+
+/* builder */
+.builder { background:var(--mustard); color:var(--ink); border-bottom:2px solid var(--ink); }
+.builder .head { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:end; margin-bottom:44px; }
+.builder .head p { font-size:18px; color:rgba(31,30,33,.75); }
+.bgrid { display:grid; grid-template-columns:1.4fr 1fr; gap:24px; align-items:start; }
+.bpanel { background:var(--paper); border:2px solid var(--ink); padding:28px; display:grid; gap:28px; }
+.bq { display:grid; gap:12px; }
+.bq .q { font-family:var(--font-en); font-size:12px; letter-spacing:.2em; text-transform:uppercase; font-weight:800; display:flex; justify-content:space-between; }
+.bq .q small { font-weight:600; color:rgba(31,30,33,.55); letter-spacing:.06em; }
+.opts { display:flex; flex-wrap:wrap; gap:8px; }
+.opt { border:2px solid var(--ink); background:transparent; padding:12px 16px; font-family:var(--font-en); font-weight:700; font-size:15px; transition:background .15s, color .15s, transform .15s; display:flex; flex-direction:column; align-items:flex-start; gap:2px; }
+.opt small { font-weight:500; font-size:12px; opacity:.65; }
+.opt:hover { transform:translate(-1px,-1px); box-shadow:2px 2px 0 var(--ink); }
+.opt[aria-pressed="true"] { background:var(--ink); color:var(--paper); }
+.opt[aria-pressed="true"] small { opacity:.75; }
+.bsum { background:var(--ink); color:var(--paper); border:2px solid var(--ink); padding:28px; position:sticky; top:calc(var(--nav-h) + 24px); display:grid; gap:18px; }
+.bsum .label { color:var(--mustard); }
+.bsum ul { list-style:none; display:grid; gap:10px; font-family:var(--font-en); font-size:15px; border-top:1px solid rgba(244,235,226,.15); padding-top:14px; }
+.bsum li { display:flex; justify-content:space-between; gap:16px; }
+.bsum li span:last-child { color:var(--mustard); font-weight:700; }
+.bsum .total { border-top:1px solid rgba(244,235,226,.15); padding-top:14px; display:flex; justify-content:space-between; align-items:baseline; }
+.bsum .total b { font-family:var(--font-en); font-size:44px; font-weight:800; letter-spacing:-.04em; line-height:1; }
+.bsum .total b small { font-size:14px; font-weight:500; letter-spacing:0; margin-left:4px; opacity:.7; }
+.bsum .note { font-size:13px; color:rgba(244,235,226,.6); }
+.bsum .btn { justify-content:center; }
+
+/* gear */
+.gear { background:var(--green); border-bottom:2px solid var(--ink); }
+.gear .wrap { display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:start; }
+.gear .label { color:var(--mustard); }
+.gear h2 { margin-top:14px; }
+.gear p.lede { margin-top:20px; color:rgba(244,235,226,.75); max-width:420px; }
+.ggrid { display:grid; grid-template-columns:1fr 1fr; gap:2px; border:2px solid var(--ink); background:var(--ink); }
+.gcell { background:var(--pine); padding:22px; min-height:140px; display:flex; flex-direction:column; justify-content:space-between; gap:12px; }
+.gcell .k { font-family:var(--font-en); font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--mustard); font-weight:700; }
+.gcell b { font-family:var(--font-en); font-size:19px; font-weight:700; line-height:1.15; }
+.gcell.photo { padding:0; grid-column:span 2; min-height:260px; }
+.gcell.photo img { width:100%; height:100%; object-fit:cover; }
+
+/* faq */
+.faq { background:var(--paper); color:var(--ink); border-bottom:2px solid var(--ink); }
+.faq .wrap { display:grid; grid-template-columns:.8fr 1.2fr; gap:50px; }
+.faq details { border-top:2px solid var(--ink); }
+.faq details:last-child { border-bottom:2px solid var(--ink); }
+.faq summary { list-style:none; cursor:pointer; padding:22px 0; font-family:var(--font-en); font-weight:800; font-size:clamp(18px, 2vw, 24px); letter-spacing:-.02em; display:flex; justify-content:space-between; align-items:center; gap:20px; }
+.faq summary::-webkit-details-marker { display:none; }
+.faq summary::after { content:"+"; font-weight:200; font-size:34px; line-height:1; color:var(--terra); transition:transform .25s; }
+.faq details[open] summary::after { transform:rotate(45deg); }
+.faq details p { padding:0 0 22px; color:rgba(31,30,33,.75); max-width:620px; }
+
+/* visit */
+.visit .wrap { display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center; }
+.visit dl { display:grid; grid-template-columns:auto 1fr; column-gap:24px; row-gap:12px; margin:28px 0 30px; font-size:16px; }
+.visit dt { font-family:var(--font-en); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--mustard); padding-top:4px; font-weight:700; }
+.visit dd a { border-bottom:1px solid rgba(244,235,226,.5); }
+.visit .frame { border:2px solid var(--ink); box-shadow:10px 10px 0 var(--ink); }
+
+/* footer */
+.site-footer { background:var(--ink); padding:26px 0; font-family:var(--font-en); font-size:13px; }
+.family { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; padding-bottom:16px; margin-bottom:16px; border-bottom:1px solid rgba(244,235,226,.15); font-size:12px; letter-spacing:.06em; text-transform:uppercase; }
+.family .lbl { color:rgba(244,235,226,.5); }
+.family .links { display:flex; gap:20px; flex-wrap:wrap; }
+.family .here { color:var(--mustard); font-weight:800; }
+.family a { border-bottom:2px solid var(--mustard); font-weight:700; }
+.site-footer .row { display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; }
+.site-footer .row img { height:40px; }
+.site-footer .row .left { display:flex; align-items:center; gap:14px; }
+
+@media (max-width: 980px) {
+  .hero .top, .spaces .wrap, .builder .head, .bgrid, .gear .wrap, .faq .wrap, .visit .wrap { grid-template-columns:1fr; }
+  .hero .lede { justify-self:start; }
+  .sview { position:static; }
+  .bsum { position:static; }
+}
+@media (max-width: 760px) {
+  :root { --nav-h:64px; }
+  .nav ul, .nav > .btn { display:none; }
+  .brand img { height:36px; }
+  .burger { display:block; }
+  .site-header.open .mobile-menu { display:block; border-top:2px solid var(--ink); padding-bottom:20px; }
+  .mobile-menu ul { list-style:none; padding:12px 0 10px; font-family:var(--font-en); font-weight:800; font-size:22px; text-transform:uppercase; }
+  .mobile-menu li a { display:block; padding:12px 0; border-bottom:1px solid rgba(31,30,33,.4); }
+  .sec { padding:64px 0; }
+  .hero .wrap { padding-top:40px; }
+  .slist button { grid-template-columns:44px 1fr; }
+  .slist .m { grid-column:2; }
+  .ggrid { grid-template-columns:1fr; }
+  .gcell.photo { grid-column:auto; }
+  .bpanel, .bsum { padding:20px; }
+  .btn:hover { transform:none; box-shadow:none; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation:none !important; transition:none !important; } }
+</style>
+</head>
+<body>
+<a class="sr" href="#spaces">Skip to content</a>
+
+<header class="site-header" id="header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="#top" aria-label="Kashkoul Studio — home">
+      <img src="assets/logo/logo-badge-paper.svg" alt="" width="40" height="43">
+      <span class="brand-text"><b>Kashkoul</b><small>Studio · <span class="ar">استوديو</span></small></span>
+    </a>
+    <ul>
+      <li><a href="#spaces">Spaces</a></li>
+      <li><a href="#build">Build a booking</a></li>
+      <li><a href="#gear">Gear</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn btn-mustard" href="#build">Book the room</a>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="wrap">
+      <ul>
+        <li><a href="#spaces">Spaces</a></li>
+        <li><a href="#build">Build a booking</a></li>
+        <li><a href="#gear">Gear</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+      <a class="btn btn-ink" style="margin-top:16px" href="#build">Build a booking ↓</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <span class="kicker"><i></i> Kashkoul Studio · Khaldeh · Sea side</span>
+        <h1>Book<br>the r<span class="o">oo</span>m.<span class="ar">احجز الغرفة. سجّل الفكرة.</span></h1>
+      </div>
+      <div class="lede">
+        <p>A furnished, lit, camera-ready home-studio by the sea. Podcasts, sessions, shoots, workshops — by the hour or the day. Same house as the Academy; different door.</p>
+        <a class="btn btn-mustard btn-lg" href="#build">Build your booking ↓</a>
+      </div>
+    </div>
+    <div class="strip" id="strip" aria-label="Photos of the studio">
+      <span class="hint">Drag →</span>
+      <figure><img src="assets/photos/library-set-lights.jpg" alt="Library set with two armchairs and softboxes"><figcaption>01 · Library set</figcaption></figure>
+      <figure><img src="assets/photos/balcony-2a.jpg" alt="Balcony over the sea"><figcaption>05 · Balcony</figcaption></figure>
+      <figure><img src="assets/photos/salon-wide-softbox.jpg" alt="The salon"><figcaption>02 · Salon</figcaption></figure>
+      <figure><img src="assets/photos/oud-chair.jpg" alt="Wooden chair and oud"><figcaption>03 · Room B</figcaption></figure>
+      <figure><img src="assets/photos/library-armchairs.jpg" alt="Two wing chairs"><figcaption>01 · Framed &amp; ready</figcaption></figure>
+      <figure><img src="assets/photos/balcony-2b.jpg" alt="Balcony two"><figcaption>05 · Golden hour</figcaption></figure>
+      <figure><img src="assets/photos/turntable.jpg" alt="Turntable"><figcaption>+ · Props</figcaption></figure>
+    </div>
+  </div>
+</section>
+<div class="marquee" aria-hidden="true"><div class="track" id="mq"></div></div>
+
+<!-- SPACES -->
+<section class="sec spaces" id="spaces">
+  <div class="wrap">
+    <div>
+      <p class="label" style="color:var(--terra)">The spaces</p>
+      <h2 style="margin-top:14px">Pick a<br><span class="light">corner.</span></h2>
+      <ul class="slist" id="slist">
+        <li class="active" data-img="0" data-desc="Two wing chairs, a wall of books, two softboxes already up. Podcasts and interviews, framed in ten minutes." data-chips="Podcast-ready|2 chairs|Lights rigged"><button><span class="n">01</span><span class="t">Library set<small>Podcasts · interviews · talking to camera</small></span><span class="m">Most booked</span></button></li>
+        <li data-img="1" data-desc="Open-plan living set with sofa, armchairs, a rug and sheer curtains that turn the afternoon into a softbox." data-chips="Open plan|Natural light|Backdrop rail"><button><span class="n">02</span><span class="t">The salon<small>Wide shots · workshops · live sessions</small></span><span class="m">Up to <span class="ph" title="Placeholder — capacity">15</span></button></li>
+        <li data-img="2" data-desc="Three rooms — 3×4 m and 4×5 m — each with its own mood: wooden chairs and an oud, a writing desk, a bare wall for backdrops." data-chips="3 rooms|3×4 m|4×5 m"><button><span class="n">03</span><span class="t">Production rooms<small>Sets · green rooms · changing</small></span><span class="m">×3</span></button></li>
+        <li data-img="3" data-desc="A dedicated 3×3 m isolation room for vocals, voice-over and instrument tracking. The sea stays outside." data-chips="3×3 m|Isolated|VO · vocals"><button><span class="n">04</span><span class="t">Acoustic room<small>Vocals · voice-over · tracking</small></span><span class="m">Quiet</span></button></li>
+        <li data-img="4" data-desc="Two west-facing balconies over Khaldeh's coast. Book the last two hours of light." data-chips="Sea view|West-facing|Golden hour"><button><span class="n">05</span><span class="t">Two balconies<small>Golden hour · portraits · B-roll</small></span><span class="m">Sea view</span></button></li>
+      </ul>
+    </div>
+    <div class="sview">
+      <div class="frame" id="sframe">
+        <img class="on" src="assets/photos/library-armchairs.jpg" alt="">
+        <img src="assets/photos/salon-sofa.jpg" alt="">
+        <img src="assets/photos/oud-corner.jpg" alt="">
+        <img src="assets/photos/curtain.jpg" alt="">
+        <img src="assets/photos/balcony-1a.jpg" alt="">
+      </div>
+      <div class="cap"><p id="sdesc"></p><div class="chips" id="schips"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BUILDER -->
+<section class="sec builder" id="build">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="label">Build a booking</p><h2 style="margin-top:14px">Four taps.<br><span class="light">One message.</span></h2></div>
+      <p>Pick a space, a length and what you need. We'll write the WhatsApp message; you press send. Rates shown are <span class="ph" title="Placeholder — sample rates; replace with real ones">sample numbers</span> until Kashkoul confirms them.</p>
+    </div>
+    <div class="bgrid">
+      <div class="bpanel">
+        <div class="bq"><div class="q"><span>1 · Space</span><small>pick one</small></div><div class="opts" data-group="space" data-single>
+          <button class="opt" data-v="Library set" data-p="1" aria-pressed="true">Library set<small>podcast · interview</small></button>
+          <button class="opt" data-v="Salon" data-p="1.2">Salon<small>wide · workshop</small></button>
+          <button class="opt" data-v="Production room" data-p="0.8">Production room<small>3×4 or 4×5 m</small></button>
+          <button class="opt" data-v="Acoustic room" data-p="0.9">Acoustic room<small>3×3 m</small></button>
+          <button class="opt" data-v="Whole floor" data-p="2.2">Whole floor<small>everything</small></button>
+        </div></div>
+        <div class="bq"><div class="q"><span>2 · How long</span><small>pick one</small></div><div class="opts" data-group="dur" data-single>
+          <button class="opt" data-v="2 hours" data-h="2">2 hours<small>the minimum</small></button>
+          <button class="opt" data-v="Half day (4h)" data-h="4" aria-pressed="true">Half day<small>4 hours</small></button>
+          <button class="opt" data-v="Full day (8h)" data-h="8">Full day<small>8 hours</small></button>
+        </div></div>
+        <div class="bq"><div class="q"><span>3 · Add-ons</span><small>any</small></div><div class="opts" data-group="add">
+          <button class="opt" data-v="Camera operator" data-a="25">Camera operator<small>with our Canon R8</small></button>
+          <button class="opt" data-v="Sound engineer" data-a="25">Sound engineer<small>acoustic room</small></button>
+          <button class="opt" data-v="Editing" data-a="60">Edit &amp; deliver<small>cut · colour · captions</small></button>
+          <button class="opt" data-v="Backdrop" data-a="10">Backdrop<small>white · black · green</small></button>
+          <button class="opt" data-v="Instruments" data-a="0">Instruments<small>from the Academy · free</small></button>
+        </div></div>
+        <div class="bq"><div class="q"><span>4 · When</span><small>rough is fine</small></div><div class="opts" data-group="when" data-single>
+          <button class="opt" data-v="this week" aria-pressed="true">This week</button>
+          <button class="opt" data-v="next week">Next week</button>
+          <button class="opt" data-v="a weekend">A weekend</button>
+          <button class="opt" data-v="a golden-hour slot">Golden hour</button>
+        </div></div>
+      </div>
+      <aside class="bsum" aria-live="polite">
+        <span class="label">Your booking</span>
+        <ul id="sum"></ul>
+        <div class="total"><span class="label">Estimate</span><b id="total">$—</b></div>
+        <p class="note">Estimate only, using <span class="ph" title="Placeholder — base hourly rate">sample base rate $40/h</span>. Final quote on WhatsApp. Academy students get <span class="ph">[—]%</span> off.</p>
+        <a class="btn btn-mustard btn-lg" id="send" href="#" target="_blank" rel="noopener">Send on WhatsApp →</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- GEAR -->
+<section class="sec gear" id="gear">
+  <div class="wrap">
+    <div>
+      <p class="label">On-site gear</p>
+      <h2>Bring<br>nothing.</h2>
+      <p class="lede">Everything below is in the room and included in every booking. Own crew and own kit are always welcome at no extra cost.</p>
+      <a class="btn btn-mustard" style="margin-top:26px" href="#build">Add an operator ↑</a>
+    </div>
+    <div class="ggrid">
+      <div class="gcell"><span class="k">Camera</span><b>Canon EOS R8 + lens</b></div>
+      <div class="gcell"><span class="k">Key light</span><b>Amaran 550-power continuous</b></div>
+      <div class="gcell"><span class="k">Softboxes</span><b>2× Mars softbox + light kit</b></div>
+      <div class="gcell"><span class="k">Backdrops</span><b>White · Black · Green</b></div>
+      <div class="gcell photo"><img src="assets/photos/library-corner-light.jpg" alt="Light stand beside the library set" loading="lazy"></div>
+      <div class="gcell"><span class="k">Modifiers</span><b>Multi-surface reflector set</b></div>
+      <div class="gcell"><span class="k">Power</span><b>Eco PowerStation — no grid, no problem</b></div>
+      <div class="gcell"><span class="k">Support</span><b>Heavy-duty studio tripod</b></div>
+      <div class="gcell"><span class="k">Audio</span><b><span class="ph" title="Placeholder — confirm mics / interface">[Mics &amp; interface — to confirm]</span></b></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec faq" id="faq">
+  <div class="wrap">
+    <div><p class="label" style="color:var(--terra)">Questions</p><h2 style="margin-top:14px">Before<br><span class="light">you ask.</span></h2></div>
+    <div>
+      <details open><summary>What's the minimum booking?</summary><p><span class="ph" title="Placeholder — confirm">Two hours</span> for a single room. Half and full days cover the whole floor.</p></details>
+      <details><summary>Can I bring my own crew and camera?</summary><p>Yes, always, at no extra cost. Our gear stays available to you either way.</p></details>
+      <details><summary>Do I need a deposit?</summary><p><span class="ph" title="Placeholder — confirm deposit policy">A [—]% deposit</span> holds the slot. Free cancellation up to <span class="ph">[48 hours]</span> before; after that the deposit is kept.</p></details>
+      <details><summary>Is there parking?</summary><p><span class="ph" title="Placeholder — confirm parking">[Two] spots</span> in front of the building, more on the street. Loading at the door is fine.</p></details>
+      <details><summary>Can I use the instruments?</summary><p>Yes — the Academy's oud, percussion, guitar and keyboard can be added to any booking. Say so when you book so we have them in the room.</p></details>
+      <details><summary>What about food and breaks?</summary><p>There's a full kitchen and two balconies. Order in, or ask us — <span class="ph" title="Placeholder — catering partner?">[we have a café down the street]</span>.</p></details>
+      <details><summary>How is this related to Kashkoul Academy?</summary><p>Same house, same people. The Academy teaches music in these rooms; the Studio rents them out when the lessons are done. Students and teachers get a discount here.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="sec visit" id="visit">
+  <div class="wrap">
+    <div>
+      <p class="label" style="color:var(--mustard)">Visit</p>
+      <h2 style="margin-top:14px">See it<br><span class="light">first.</span></h2>
+      <dl>
+        <dt>Where</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=33.7890334,35.4807347" target="_blank" rel="noopener">Kashkoul, Khaldeh, Lebanon</a> · <span class="ar">خلدة، لبنان</span> — <span class="ph" title="Placeholder — building / floor">[building, floor]</span></dd>
+        <dt>Hours</dt><dd><span class="ph" title="Placeholder — studio hours">[Daily 9am – 10pm · late wraps by arrangement]</span></dd>
+        <dt>WhatsApp</dt><dd><a data-wa href="#" target="_blank" rel="noopener">+961 71 257 082</a> <span class="ph" title="Placeholder — shared with the Academy for now">(shared with the Academy)</span></dd>
+        <dt>Instagram</dt><dd><a href="#" class="ph" title="Placeholder — studio Instagram">@kashkoul.studio</a></dd>
+      </dl>
+      <a class="btn btn-ink btn-lg" data-wa="I'd like to visit the studio before booking." href="#" target="_blank" rel="noopener">Ask for a visit</a>
+    </div>
+    <figure class="frame"><img src="assets/photos/balcony-1b.jpg" alt="Balcony with bistro tables and the sea" loading="lazy"></figure>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="family">
+      <span class="lbl">Kashkoul is two doors, one house</span>
+      <span class="links"><a href="../">Kashkoul Academy · learn →</a><span class="here">Kashkoul Studio · book</span></span>
+    </div>
+    <div class="row">
+      <div class="left"><img src="assets/logo/logo-badge-paper.svg" alt=""><span>Kashkoul Studio · <span class="ar">استوديو كشكول</span> · Khaldeh, Lebanon</span></div>
+      <span>© 2026 · Prototype 3 — "Terra"</span>
+    </div>
+  </div>
+</footer>
+
+<button class="ph-toggle" id="ph-toggle" type="button">Show placeholders</button>
+
+<script>
+  const WA_NUMBER = '96171257082';
+  const wa = msg => `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg.startsWith('Hi') ? msg : 'Hi Kashkoul Studio! ' + msg)}`;
+  document.querySelectorAll('[data-wa]').forEach(a => a.href = wa(a.getAttribute('data-wa') || "I'd like to book the room."));
+
+  // header
+  const header = document.getElementById('header'), burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => burger.setAttribute('aria-expanded', header.classList.toggle('open')));
+  document.querySelectorAll('.mobile-menu a').forEach(a => a.addEventListener('click', () => { header.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }));
+
+  // marquee
+  const words = ['Podcast','Interview','Session','Shoot','Workshop','Rehearsal','Golden hour','Voice-over','Live take','Product','Portrait'];
+  document.getElementById('mq').innerHTML = [...words, ...words].map(w => `<span>${w} ✦</span>`).join('');
+
+  // spaces
+  const slist = document.getElementById('slist'), imgs = document.querySelectorAll('#sframe img'), sdesc = document.getElementById('sdesc'), schips = document.getElementById('schips');
+  const showSpace = li => {
+    slist.querySelectorAll('li').forEach(x => x.classList.remove('active')); li.classList.add('active');
+    imgs.forEach((im,i) => im.classList.toggle('on', i == li.dataset.img));
+    sdesc.textContent = li.dataset.desc; schips.innerHTML = li.dataset.chips.split('|').map(c => `<span>${c}</span>`).join('');
+  };
+  slist.querySelectorAll('li').forEach(li => { li.addEventListener('click', () => showSpace(li)); li.addEventListener('mouseenter', () => showSpace(li)); });
+  showSpace(slist.querySelector('li'));
+
+  // booking builder — sample rates, clearly marked as placeholders on the page
+  const BASE = 40;
+  const groups = document.querySelectorAll('.opts');
+  groups.forEach(g => g.addEventListener('click', e => {
+    const b = e.target.closest('.opt'); if (!b) return;
+    if (g.hasAttribute('data-single')) g.querySelectorAll('.opt').forEach(x => x.setAttribute('aria-pressed','false'));
+    b.setAttribute('aria-pressed', b.getAttribute('aria-pressed') === 'true' && !g.hasAttribute('data-single') ? 'false' : 'true');
+    update();
+  }));
+  const on = name => [...document.querySelectorAll(`.opts[data-group="${name}"] .opt[aria-pressed="true"]`)];
+  const sum = document.getElementById('sum'), total = document.getElementById('total'), send = document.getElementById('send');
+  function update() {
+    const space = on('space')[0], dur = on('dur')[0], adds = on('add'), when = on('when')[0];
+    const h = +dur.dataset.h, mult = +space.dataset.p;
+    let est = Math.round(BASE * mult * h);
+    const rows = [[space.dataset.v, `$${Math.round(BASE*mult)}/h`], [dur.dataset.v, `${h}h`]];
+    adds.forEach(a => { const v = +a.dataset.a; est += v === 60 ? v : v * h; rows.push([a.dataset.v, v === 0 ? 'free' : v === 60 ? `+$${v}` : `+$${v}/h`]); });
+    rows.push([`When: ${when.dataset.v}`, '']);
+    sum.innerHTML = rows.map(r => `<li><span>${r[0]}</span><span>${r[1]}</span></li>`).join('');
+    total.innerHTML = `$${est}<small>est.</small>`;
+    send.href = wa(`I'd like to book the ${space.dataset.v.toLowerCase()} for a ${dur.dataset.v.toLowerCase()}, ${when.dataset.v}.${adds.length ? ' Add-ons: ' + adds.map(a => a.dataset.v.toLowerCase()).join(', ') + '.' : ''} (Site estimate: ~$${est})`);
+  }
+  update();
+
+  // placeholders
+  const n = document.querySelectorAll('.ph').length, t = document.getElementById('ph-toggle');
+  t.textContent = `Show placeholders (${n})`;
+  t.addEventListener('click', () => { const o = document.body.classList.toggle('show-ph'); t.textContent = (o ? 'Hide' : 'Show') + ` placeholders (${n})`; });
+</script>
+</body>
+</html>
