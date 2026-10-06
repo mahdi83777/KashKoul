@@ -1,0 +1,34 @@
+/* What people book it for — a list that swaps the photo beside it as you move down. */
+.uses { background: var(--green); color: var(--paper); }
+.uses .wrap { display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: start; }
+.uses .lede { margin-top: 18px; color: rgba(244,235,226,.76); max-width: 420px; }
+
+.uses ol { list-style: none; counter-reset: u; margin-top: 34px; border-top: 1px solid rgba(244,235,226,.18); }
+.uses li { counter-increment: u; border-bottom: 1px solid rgba(244,235,226,.18); }
+.uses li a { display: grid; grid-template-columns: 54px 1fr auto; gap: 16px; align-items: center; padding: 20px 0;
+  transition: padding-left .3s var(--ease-out), color .2s; }
+.uses li a::before { content: "0" counter(u); font-family: var(--font-en); font-weight: 200; font-size: 30px; color: var(--mustard); letter-spacing: -.04em; }
+.uses li a:hover, .uses li.active a { padding-left: 10px; }
+.uses li b { font-family: var(--font-en); font-size: 20px; display: block; }
+.uses li span { color: rgba(244,235,226,.72); font-size: 15px; }
+.uses li em { font-style: normal; font-family: var(--font-en); font-size: 12px; font-weight: 700; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--mustard); opacity: 0; transition: opacity .25s; white-space: nowrap; }
+.uses li a:hover em, .uses li.active em { opacity: 1; }
+
+/* the preview frame */
+.uses .viewer { position: sticky; top: calc(var(--nav-h) + 30px); }
+.uses .frame { position: relative; overflow: hidden; aspect-ratio: 4/3.2; background: var(--pine); box-shadow: 0 30px 60px rgba(0,0,0,.35); }
+.uses .frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.04); transition: opacity .5s, transform .8s var(--ease-out); }
+.uses .frame img.on { opacity: 1; transform: none; }
+.uses .frame figcaption { position: absolute; left: 16px; bottom: 16px; background: rgba(31,30,33,.72); backdrop-filter: blur(6px);
+  padding: 7px 13px; font-family: var(--font-en); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+
+@media (max-width: 980px) {
+  .uses .wrap { grid-template-columns: 1fr; gap: 36px; }
+  .uses .viewer { position: static; order: -1; }
+  .uses .lede { max-width: none; }
+}
+@media (max-width: 760px) {
+  .uses li a { grid-template-columns: 42px 1fr; }
+  .uses li em { display: none; }
+}

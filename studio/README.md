@@ -1,47 +1,91 @@
 # Kashkoul Studio — website
 
-The sibling of the Academy site: the same rooms in Khaldeh, rented as a furnished, lit, camera-ready set
-(podcasts, interviews, music sessions, brand content, workshops).
+The Academy's sibling: the same rooms in Khaldeh, rented as a furnished, lit, camera-ready space
+(podcasts, interviews, music sessions, brand content, workshops). Same structure as `academy/`, so
+both sites share one toolchain and one set of brand tokens.
 
 ```
 studio/
-└── prototype/
-    ├── index.html          picker — opens the three prototypes side by side, lists what's real vs placeholder
-    ├── 01-the-set.html     dark, cinematic, production-first
-    ├── 02-paper.html       light, notebook-like — the Academy's closest sibling; weekly slot picker
-    ├── 03-terra.html       bold poster on terracotta; "build your booking" estimator → WhatsApp
-    └── assets/
-        ├── photos/         from docs/Kashkoul_Space.pdf, resized to 1800px
-        ├── logo/ fonts/ patterns/   copied from academy/assets + docs/Kashkoul_Deliverables
+├── index.html            GENERATED — do not edit (built from src/)
+├── src/
+│   ├── index.html        page shell: <head>, then one @include per section
+│   └── partials/
+│       ├── header.html · hero.html · ticker.html · entry.html · spaces.html · uses.html
+│       ├── gear.html · how.html · gallery.html · faq.html · visit.html
+│       ├── footer.html · lightbox.html
+│       └── icons/        whatsapp.svg
+├── css/
+│   ├── main.css          entry point — imports everything below, in cascade order
+│   ├── base/             tokens (shared with the Academy) · fonts · reset · utilities
+│   ├── components/       buttons · header (nav, progress, mobile menu) · lightbox
+│   └── sections/         hero · hero-desk · hero-intro (the opening) · ticker · entry · spaces ·
+│                         uses · gear · how · gallery · faq · visit · footer
+├── js/
+│   ├── main.js           entry point — wires the modules below
+│   ├── config.js         WhatsApp number, ticker facts, the "what for" list, the contact sheet  ← most edits happen here
+│   ├── hero.js           the opening sequence, the cursor light, the typed definition
+│   ├── uses.js           renders the "what people book it for" list + its preview photo
+│   ├── gallery.js        renders the contact sheet, drag-to-scroll
+│   ├── lightbox.js       click any photo to see it full size
+│   ├── nav.js            solid header on scroll, reading progress, current section, mobile menu
+│   ├── reveal.js         sections rise as they enter the viewport
+│   ├── ticker.js · whatsapp.js · placeholders.js · motion.js
+├── assets/               photos (from docs/Kashkoul_Space.pdf) · fonts · logo · patterns
+└── prototype/            the two other first drafts, kept for reference → /studio/prototypes/
 ```
 
-Each prototype is a single self-contained HTML file (inline CSS + JS, no build step). Open any of them
-directly in a browser, or serve the folder:
+## Working on it
+
+Both sites are built and served by one script, from `academy/`:
 
 ```
-cd studio/prototype && python3 -m http.server 8766     # → http://localhost:8766
+cd academy && npm run dev      # → http://localhost:8765  ·  Studio at /studio/
+npm run build                  # one-off build of both sites
 ```
 
-## Shared with the Academy (so the two sites read as one family)
+CSS and JS load directly in the browser (`@import` / ES modules), so only the HTML partials are built.
+The site must be served over HTTP (not opened as a `file://`) because of the ES modules.
 
-- Palette, Bricolage Grotesque + Fustat, the badge logo, the WhatsApp-first booking flow.
-- The header lockup is the badge + **Kashkoul** + a small **Studio · استوديو** descriptor
-  (the Academy shows "Academy of Arts" in its lockup).
-- Footer "Kashkoul is two doors, one house" strip linking Academy ↔ Studio — the Academy site has the same strip.
+## The opening animation
+
+Carried over from the Academy, restaged for the Studio — `css/sections/hero-intro.css` + `js/hero.js`:
+
+| act | what happens | where |
+|---|---|---|
+| 1 | the photo prints, with a misregistered riso pass | `@keyframes print` / `misregister` |
+| 2 | the headline writes itself, line by line (Latin →, Arabic ←) | `wipe-ltr` / `wipe-rtl` |
+| 3 | three polaroids flutter onto the desk | `@keyframes flutter` |
+| 4 | the buttons arrive | `rise-in` |
+| 5 | the strip of uses is typed out | `js/hero.js` |
+
+Everything is skipped when the visitor asks for reduced motion. The dictionary card types itself
+separately, when it scrolls into view.
+
+## Common edits
+
+| Change | Where |
+|---|---|
+| WhatsApp number or default message | `js/config.js` |
+| The "what people book it for" rows and their photos | `js/config.js` → `USES` |
+| The fact strip under the hero | `js/config.js` → `TICKER` |
+| The contact sheet at the bottom | `js/config.js` → `SHEET` |
+| Section copy | `src/partials/<section>.html`, then `npm run build` |
+| Hours, policies, capacity | `src/partials/faq.html`, `visit.html` (all marked `.ph`) |
+| Colours, fonts, nav height | `css/base/tokens.css` |
+| Animation timings | `css/sections/hero-intro.css` (each act is one `animation:` line) |
 
 ## Placeholders
 
-Every page has a **Show placeholders** button that highlights everything still to confirm
-(prices, hours, minimum booking, deposit/cancellation, capacity, parking, audio gear, Instagram, email,
-building/floor, an acoustic-room photo). The WhatsApp number is the Academy's for now.
+Every page carries a **Show placeholders** button that highlights what's still to confirm: minimum
+booking, hours, capacity, parking, audio gear, Instagram, email, building and floor, and a photo of
+the acoustic room. The WhatsApp number is the Academy's for now.
 
-## Where to see them online
+There are **no prices or payment terms on the site** — rates are discussed on WhatsApp.
 
-They ship with the Academy site: `academy/tools/build.js --dist` copies `studio/prototype/` into `academy/dist/studio/`,
-so after a push to `main` they're live at **kashkoul.org/studio/** — click the badge logo in the Academy footer.
-`robots.txt` disallows `/studio/` so search engines ignore the prototypes.
+There is deliberately **no online booking** — every call to action opens WhatsApp with a message
+already written.
 
-## Next step
+## Deploy
 
-Pick a direction (or a mix), then it moves out of `prototype/` into the same partials/build structure
-as `academy/` so both sites share one toolchain.
+Published with the Academy: `npm run dist` (in `academy/`) puts the Academy at the root and this site
+at `/studio/`, with the earlier drafts at `/studio/prototypes/`. See `academy/README.md`.

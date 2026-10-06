@@ -1,0 +1,23 @@
+/* The dictionary card — the Academy's notebook motif, defining "studio" instead of "kashkoul".
+   The definition is typed in by js/hero.js when the card scrolls into view. */
+.entry-sec { position: relative; z-index: 5; padding: 84px 0 0; }
+.entry { max-width: 840px; margin-inline: auto; background: var(--paper-2); padding: 34px 38px 30px; transform: rotate(-.6deg);
+  box-shadow: 0 24px 50px rgba(102,38,28,.25), 0 2px 0 var(--brick); position: relative;
+  background-image: repeating-linear-gradient(to bottom, transparent 0 31px, rgba(155,74,57,.16) 31px 32px); background-origin: content-box; }
+.entry::before { content: ""; position: absolute; left: 26px; top: 0; bottom: 0; width: 1px; background: rgba(155,74,57,.35); }
+.entry .tape { position: absolute; top: -14px; left: 50%; width: 118px; height: 28px; background: rgba(218,189,92,.82); transform: translateX(-50%) rotate(2deg); }
+.entry header { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 14px; border-bottom: 2px solid var(--ink); padding-bottom: 10px; }
+.entry .word { font-family: var(--font-en); font-weight: 800; font-size: 44px; line-height: 1; color: var(--terra); letter-spacing: -.03em; }
+.entry .pron { font-family: var(--font-en); font-weight: 600; font-size: 15px; }
+.entry .pron i { font-style: italic; font-weight: 400; color: #6b6a6e; }
+.entry .def { font-size: 16.5px; line-height: 32px; min-height: 32px; }
+.entry .def.ar { display: block; font-weight: 700; font-size: 19px; line-height: 32px; color: var(--brick); text-align: right; margin-top: 4px; }
+.entry .def.typing::after { content: ""; display: inline-block; width: 2px; height: 1em; background: var(--terra); vertical-align: -.15em; margin-inline-start: 2px; animation: caret .8s steps(1) infinite; }
+
+@media (max-width: 760px) {
+  .entry-sec { padding-top: 56px; }
+  .entry { padding: 24px 20px 20px; transform: rotate(-.4deg); }
+  .entry .word { font-size: 34px; }
+  .entry .def { font-size: 15.5px; line-height: 30px; }
+  .entry .def.ar { font-size: 17px; }
+}

@@ -1,0 +1,71 @@
+/* Hero layout: duotone photo + cursor "softbox" reveal, headline column, the desk (polaroids).
+   The opening choreography lives in hero-intro.css, the pointer wiring in js/hero.js. */
+
+.hero { position: relative; min-height: 100svh; background: var(--terra); color: var(--paper); overflow: hidden;
+  display: flex; align-items: center; --x: 70%; --y: 40%; --px: 0; --py: 0; }
+
+/* duotone photo of the room, printed over the terracotta */
+.hero .photo { position: absolute; inset: 0; background: var(--terra); }
+.hero .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%; mix-blend-mode: multiply; opacity: .78; filter: contrast(1.18); }
+.hero .photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to right, var(--terra) 0%, rgba(155,74,57,.72) 42%, rgba(155,74,57,.15) 100%); }
+.hero .pattern { position: absolute; inset: 0; background: url("../../assets/patterns/Pattern_01.svg") center/520px; opacity: .4; mix-blend-mode: multiply; pointer-events: none; }
+
+/* the light follows the cursor: the colour photo shows through a soft circle, like a softbox sweeping the room */
+.hero .reveal { position: absolute; inset: 0; z-index: 1; opacity: 0; transition: opacity .5s; pointer-events: none;
+  -webkit-mask-image: radial-gradient(circle 260px at var(--x) var(--y), #000 0%, rgba(0,0,0,.55) 55%, transparent 100%);
+  mask-image: radial-gradient(circle 260px at var(--x) var(--y), #000 0%, rgba(0,0,0,.55) 55%, transparent 100%); }
+.hero .reveal img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%; filter: saturate(1.08) contrast(1.04) brightness(1.06); }
+.hero.lit .reveal { opacity: 1; }
+
+/* columns */
+.hero .content { position: relative; z-index: 2; padding: calc(var(--nav-h) + 48px) 0 96px;
+  display: grid; grid-template-columns: 1.06fr .94fr; gap: 48px; align-items: center; }
+.hero .lead { max-width: 620px; }
+
+/* the "now booking" pill */
+.rec { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-en); font-size: 12px; letter-spacing: .2em;
+  text-transform: uppercase; font-weight: 700; border: 1px solid rgba(244,235,226,.34); border-radius: 999px; padding: 8px 15px;
+  background: rgba(102,38,28,.28); backdrop-filter: blur(6px); }
+.rec i { width: 9px; height: 9px; border-radius: 50%; background: var(--mustard); animation: rec-blink 1.7s infinite; }
+@keyframes rec-blink { 50% { opacity: .25; } }
+
+.hero h1 { font-size: clamp(44px, 7vw, 104px); font-weight: 800; letter-spacing: -.04em; line-height: .96; margin-top: 22px; }
+.hero h1 .line { display: block; }
+.hero h1 .ar { display: block; font-size: .48em; font-weight: 700; letter-spacing: 0; margin-top: .26em; color: var(--mustard); text-align: left; }
+
+.hero .lede { font-size: 19px; max-width: 520px; margin-top: 24px; color: rgba(244,235,226,.9); }
+
+/* the strip of uses types itself out (act 5) */
+.hero .typed { font-family: var(--font-en); font-size: 13.5px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--mustard); margin-top: 22px; min-height: 22px; }
+.hero .typed.typing::after { content: ""; display: inline-block; width: 2px; height: 1em; background: var(--mustard); vertical-align: -.15em; margin-inline-start: 3px; animation: caret .8s steps(1) infinite; }
+@keyframes caret { 50% { opacity: 0; } }
+
+.hero .ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+
+/* corner label + scroll cue */
+.hero .place { position: absolute; left: var(--gutter); bottom: 26px; z-index: 2; font-family: var(--font-en); font-size: 12px;
+  letter-spacing: .2em; text-transform: uppercase; color: var(--mustard); opacity: .9; }
+.hero .cue { position: absolute; right: var(--gutter); bottom: 26px; z-index: 2; display: flex; align-items: center; gap: 10px;
+  font-family: var(--font-en); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: rgba(244,235,226,.7); }
+.hero .cue i { width: 1px; height: 34px; background: linear-gradient(var(--mustard), transparent); animation: cue 2s var(--ease-out) infinite; transform-origin: top; }
+@keyframes cue { 0% { transform: scaleY(0); opacity: 0; } 40% { transform: scaleY(1); opacity: 1; } 100% { transform: scaleY(1) translateY(34px); opacity: 0; } }
+
+/* the scene drifts with the cursor (--px/--py in -1…1) */
+.hero .lead, .hero .desk, .hero .photo img:first-child { transition: transform .35s var(--ease-out); }
+.hero .lead { transform: translate(calc(var(--px) * -8px), calc(var(--py) * -6px)); }
+.hero .photo img:first-child { transform: translate(calc(var(--px) * 8px), calc(var(--py) * 6px)) scale(1.05); }
+
+@media (max-width: 980px) {
+  .hero .content { grid-template-columns: 1fr; gap: 44px; padding-bottom: 110px; }
+  .hero .cue { display: none; }
+}
+@media (max-width: 760px) {
+  .hero .reveal { display: none; }
+  .hero .content { padding-top: calc(var(--nav-h) + 30px); }
+  .hero .lede { font-size: 17px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero .lead, .hero .desk, .hero .photo img:first-child { transform: none; }
+  .hero .cue i, .rec i { animation: none; }
+}

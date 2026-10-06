@@ -1,0 +1,9 @@
+/* A strip of hard facts that slides past, just under the hero. */
+.ticker { background: var(--ink); color: var(--paper); overflow: hidden; }
+.ticker .track { display: flex; width: max-content; padding: 13px 0; font-family: var(--font-en); font-weight: 600;
+  font-size: 13px; letter-spacing: .14em; text-transform: uppercase; animation: ticker 44s linear infinite; }
+.ticker .track span { padding: 0 26px; display: inline-flex; align-items: center; gap: 26px; white-space: nowrap; }
+.ticker .track span::after { content: "◆"; font-size: 8px; color: var(--mustard); }
+.ticker:hover .track { animation-play-state: paused; }
+@keyframes ticker { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .ticker .track { animation: none; } }
