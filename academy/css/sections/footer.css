@@ -1,26 +1,19 @@
-.site-footer { padding: 10px 0; }
-.site-footer .wrap { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; font-family: var(--font-en); font-size: 13px; }
-.site-footer img { height: 44px; width: auto; }
-.site-footer .badge { display: inline-block; transition: transform .25s var(--ease); }
-.site-footer .badge:hover { transform: translateY(-2px) rotate(-3deg); }
-.site-footer .links { display: flex; gap: 20px; align-items: center; }
+.site-footer { padding: 10px 0 26px; font-family: var(--font-en); font-size: 13px; }
+.site-footer .row { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+.site-footer .row .left { display: flex; align-items: center; gap: 14px; }
+.site-footer .row img { height: 44px; width: auto; }
 .site-footer .made-by { font-size: 12px; color: #8a8890; transition: color .2s; }
 .site-footer .made-by:hover { color: var(--terra); }
-.site-footer .credits { width: min(var(--wrap), 100% - var(--gutter) * 2); margin: 10px auto 0; padding-bottom: 6px; font-family: var(--font-en); font-size: 11px; color: #8a8890; }
+.site-footer .links { display: flex; gap: 20px; align-items: center; }
+
+/* courtesy credit line for the CC photos (js/credits.js) */
+.site-footer .credits { width: min(var(--wrap), 100% - var(--gutter) * 2); margin: 10px auto 0; padding-bottom: 6px; font-size: 11px; color: #8a8890; }
 .site-footer .credits:empty { display: none; }
 .site-footer .credits a { border-bottom: 1px solid rgba(31,30,33,.25); }
 .site-footer .credits a:hover { color: var(--terra); }
 
 @media (max-width: 760px) {
-  .site-footer .wrap { flex-direction: column; text-align: center; gap: 14px; }
+  .site-footer .row { flex-direction: column; text-align: center; gap: 14px; }
   .site-footer .links { justify-content: center; }
   .site-footer .credits { text-align: center; }
 }
-
-/* sibling-site strip: the Academy teaches, the Studio rents the space */
-.site-footer .family { border-top: 1px solid rgba(31,30,33,.12); border-bottom: 1px solid rgba(31,30,33,.12); margin-bottom: 10px; padding: 12px 0; font-size: 12px; letter-spacing: .04em; text-transform: uppercase; }
-.site-footer .family-label { color: #8a8890; }
-.site-footer .family-links { display: flex; gap: 18px; flex-wrap: wrap; justify-content: center; }
-.site-footer .family .here { font-weight: 700; color: var(--terra); }
-.site-footer .family a { font-weight: 600; border-bottom: 1px solid var(--mustard); transition: color .2s; }
-.site-footer .family a:hover { color: var(--terra); }

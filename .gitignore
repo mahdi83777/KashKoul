@@ -1,2 +1,5 @@
 # Social media launch package — local working files, not part of the site
 social/
+
+# Build output — Netlify runs `npm run dist` on every deploy (netlify.toml)
+academy/dist/

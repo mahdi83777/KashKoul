@@ -1,0 +1,61 @@
+/* ==========================================================
+   Opening sequence — the Academy's choreography, restaged for the Studio.
+   Driven by body.enter (js/hero.js); without those classes the hero is static.
+
+   act 1  the photo prints (riso pass)                0.00s → 1.2s
+   act 2  the headline writes itself, line by line    0.55s → 2.9s
+   act 3  the polaroids flutter onto the desk         1.70s → 4.1s   (body.enter)
+   act 4  the strip of uses is typed                  js/hero.js
+   ========================================================== */
+
+/* before the intro starts, keep the moving pieces hidden */
+body:not(.enter) .polaroid,
+body:not(.enter) .hero h1 .line { opacity: 0; }
+
+/* act 1 — the riso print pass, with a misregistered mustard layer that snaps into place */
+.hero .photo .pass2 { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 50%;
+  mix-blend-mode: screen; opacity: 0; filter: sepia(1) saturate(4) hue-rotate(6deg) contrast(1.2); pointer-events: none; }
+body.enter .hero .photo { animation: print 1.15s cubic-bezier(.65, 0, .2, 1) both; }
+body.enter .hero .photo .pass2 { animation: misregister 1.5s var(--ease-out) .15s both; }
+@keyframes print { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+@keyframes misregister { 0% { opacity: .5; transform: translate(22px, -14px); } 70% { opacity: .32; transform: translate(4px, -3px); } 100% { opacity: 0; transform: none; } }
+
+/* act 2 — each line is uncovered by a wipe: Latin left-to-right, Arabic right-to-left */
+body.enter .hero h1 .line { animation: wipe-ltr 1s cubic-bezier(.5, 0, .3, 1) both; }
+body.enter .hero h1 .line:nth-child(1) { animation-delay: .55s; }
+body.enter .hero h1 .line:nth-child(2) { animation-delay: 1.15s; }
+body.enter .hero h1 .ar { animation: wipe-rtl .9s cubic-bezier(.5, 0, .3, 1) 1.8s both; }
+@keyframes wipe-ltr { from { opacity: 1; clip-path: inset(0 100% -18% 0); transform: translateY(8px); } to { opacity: 1; clip-path: inset(0 -6% -18% 0); transform: none; } }
+@keyframes wipe-rtl { from { opacity: 1; clip-path: inset(0 0 -18% 100%); transform: translateY(6px); } to { opacity: 1; clip-path: inset(0 0 -18% -6%); transform: none; } }
+
+/* the kicker, lede and the rest of the furniture ease in with it */
+body.enter .hero .rec { animation: drop .7s var(--ease-out) .25s both; }
+body.enter .hero .lede { animation: drop .8s var(--ease-out) 2.1s both; }
+body.enter .hero .place { animation: drop .8s var(--ease-out) 2.6s both; }
+body.enter .site-header .nav > * { animation: drop .7s var(--ease-out) both; }
+body.enter .site-header .nav > *:nth-child(2) { animation-delay: .12s; }
+body.enter .site-header .nav > *:nth-child(3) { animation-delay: .24s; }
+@keyframes drop { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: none; } }
+
+/* act 3 — sheets of paper falling onto the desk: they tilt, drift and settle, never edge-on */
+body.enter .polaroid { animation: flutter 2.1s linear both; }
+body.enter .polaroid:nth-of-type(1) { animation-delay: 1.70s; }
+body.enter .polaroid:nth-of-type(2) { animation-delay: 1.98s; --from-x: 78vw; }
+body.enter .polaroid:nth-of-type(3) { animation-delay: 2.26s; }
+.polaroid { --from-x: -75vw; }
+@keyframes flutter {
+  0%   { opacity: 0; transform: translate(var(--from-x), -82vh) rotateX(72deg) rotateY(-28deg) rotate(-38deg) scale(.66); box-shadow: 0 120px 120px rgba(102,38,28,.35), 0 2px 0 var(--brick); animation-timing-function: cubic-bezier(.3, .6, .6, 1); }
+  10%  { opacity: 1; }
+  34%  { transform: translate(calc(var(--from-x) * .56), -34vh) rotateX(50deg) rotateY(26deg) rotate(-22deg) scale(.8); box-shadow: 0 90px 100px rgba(102,38,28,.4), 0 2px 0 var(--brick); animation-timing-function: cubic-bezier(.4, .2, .6, 1); }
+  62%  { transform: translate(calc(var(--from-x) * .19), -9vh) rotateX(26deg) rotateY(-16deg) rotate(-9deg) scale(.93); box-shadow: 0 50px 70px rgba(102,38,28,.4), 0 2px 0 var(--brick); animation-timing-function: cubic-bezier(.4, .2, .6, 1); }
+  84%  { transform: translate(calc(var(--from-x) * .02), 1.2vh) rotateX(-6deg) rotateY(5deg) rotate(calc(var(--rot) - 1.5deg)) scale(1.015); box-shadow: 0 10px 20px rgba(102,38,28,.35), 0 2px 0 var(--brick); animation-timing-function: cubic-bezier(.3, .3, .5, 1); }
+  100% { transform: translate(0, 0) rotateX(0) rotateY(0) rotate(var(--rot)) scale(1); box-shadow: 0 24px 50px rgba(102,38,28,.42), 0 2px 0 var(--brick); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body:not(.enter) .polaroid, body:not(.enter) .hero h1 .line { opacity: 1; }
+  body.enter .hero .photo, body.enter .hero .photo .pass2, body.enter .hero h1 .line, body.enter .hero h1 .ar,
+  body.enter .hero .rec, body.enter .hero .lede, body.enter .hero .place,
+  body.enter .polaroid,
+  body.enter .site-header .nav > * { animation: none !important; }
+}

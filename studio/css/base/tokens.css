@@ -1,0 +1,33 @@
+/* Brand tokens — shared with the Academy (KashkoulBrandGuides.pdf: colours p.12, type p.14–16).
+   Keep these in sync with academy/css/base/tokens.css; the Studio only adds --paper-2 and --nav-h-sm. */
+:root {
+  /* palette */
+  --paper: #f4ebe2;
+  --paper-2: #fbf5ec;
+  --sand: #c49da2;
+  --ink: #1f1e21;
+  --mustard: #dabd5c;
+  --mustard-2: #b68c2d;
+  --terra: #9b4a39;
+  --brick: #66261c;
+  --green: #142b26;
+  --pine: #2e4c46;
+
+  /* type */
+  --font-en: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Gloock", Georgia, "Times New Roman", serif;   /* the big section titles only — one weight */
+  --font-ar: "Fustat", "Noto Sans Arabic", Tahoma, sans-serif;
+  --font-body: "Fustat", "Helvetica Neue", Arial, sans-serif;
+
+  /* layout */
+  --wrap: 1240px;
+  --gutter: 24px;
+  --nav-h: 84px;
+
+  /* motion */
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+}
+
+@media (max-width: 760px) {
+  :root { --nav-h: 64px; }
+}
