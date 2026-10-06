@@ -1,11 +1,16 @@
 .how { background: var(--paper); border-top: 2px solid var(--ink); }
 .how .wrap { display: grid; grid-template-columns: 1fr 2fr; gap: 56px; }
-.how h2 { font-size: clamp(32px, 4vw, 52px); font-weight: 700; letter-spacing: -.03em; line-height: 1; margin-top: 12px; }
+.how h2 { font-size: clamp(36px, 4vw, 52px); letter-spacing: -.015em; line-height: 1; margin-top: 12px; }
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; counter-reset: s; }
 .step { counter-increment: s; border-top: 2px solid var(--ink); padding-top: 18px; }
 .step::before { content: "0" counter(s); display: block; font-family: var(--font-en); font-weight: 800; font-size: 40px; color: var(--terra); line-height: 1; margin-bottom: 14px; }
 .step h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
 .step p { font-size: 15px; color: #4b4a4e; }
+
+/* the free first lesson: a mustard tag pinned to the step's heading */
+.step-free { border-top-color: var(--terra); }
+.step .free { display: inline-block; vertical-align: .15em; margin-inline-start: 6px; padding: 4px 10px 3px; background: var(--mustard); color: var(--brick);
+  font-family: var(--font-en); font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; line-height: 1.2; transform: rotate(-3deg); box-shadow: 0 2px 0 var(--brick); }
 
 @media (max-width: 1000px) {
   .how .wrap { grid-template-columns: 1fr; }

@@ -11,7 +11,7 @@ academy/
 │   └── partials/
 │       ├── header.html · hero.html · instruments.html · how-it-works.html
 │       ├── why.html · faq.html · visit.html · footer.html
-│       └── icons/        whatsapp.svg, logo-hero.svg (the inline logo, split into 3 masked parts)
+│       └── icons/        whatsapp.svg, logo-hero.svg (the inline arched logo, swept in by one mask)
 ├── css/
 │   ├── main.css          entry point — imports everything below, in cascade order
 │   ├── base/             tokens (colours, fonts, layout vars) · fonts · reset · utilities
@@ -55,6 +55,7 @@ Because of ES modules the site must be served over HTTP (not opened as a `file:/
 | Add / reorder / rename an instrument | `js/config.js` → `INSTRUMENTS` (card colour = `color`, photo = `assets/photos/<img>`) |
 | WhatsApp number or prefilled message | `js/config.js` |
 | Section copy | `src/partials/<section>.html`, then `npm run build` |
+| Links to the other Kashkoul sites (Studio, Market) | `../shared/sites.json`; placed by `<!-- @house strip / doors -->` in the partials |
 | Colours, fonts, nav height | `css/base/tokens.css` |
 | Opening animation timings | `css/sections/hero-intro.css` (each act is one `animation:` line) |
 | Questions & answers | `src/partials/faq.html` — one `<details>` per question |
@@ -70,6 +71,7 @@ Link repository). `netlify.toml` at the repo root tells Netlify to run `npm run 
 **Manual:** `npm run dist`, then drag the `academy/dist/` folder onto the site's *Deploys* page.
 
 `dist/` contains only runtime files (`index.html`, `css/`, `js/`, `assets/`, `robots.txt`, `sitemap.xml`, `_headers`)
-plus `studio/` — the Kashkoul Studio site built from `../studio/`, reachable from the footer badge at
+plus `studio/` — the Kashkoul Studio site built from `../studio/`, reachable from the Kashkoul links in the header and footer at
 `kashkoul.org/studio/`, with the early drafts at `/studio/prototypes/` (both kept out of search engines
-via `robots.txt` while the owner reviews). `_headers` sets the security and cache headers.
+via `robots.txt` while the owner reviews), and `shared/house.css`, the style of the links between the sites.
+`_headers` sets the security and cache headers.

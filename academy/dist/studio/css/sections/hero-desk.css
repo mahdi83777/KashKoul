@@ -1,4 +1,4 @@
-/* The desk: three taped polaroids under a rotating stamp. They flutter in (hero-intro.css),
+/* The desk: three taped polaroids. They flutter in (hero-intro.css),
    then spread apart when you hover the stack. */
 .hero .desk { position: relative; aspect-ratio: 1/1.02; perspective: 1400px; justify-self: end; width: min(520px, 100%);
   transform: translate(calc(var(--px) * 14px), calc(var(--py) * 10px)); }
@@ -19,20 +19,11 @@
 .desk:hover .polaroid:nth-of-type(3) { transform: rotate(-.5deg) translateY(12px); }
 .polaroid:hover { box-shadow: 0 34px 60px rgba(102,38,28,.5), 0 2px 0 var(--brick); z-index: 5 !important; }
 
-/* the stamp: ink seal that thuds on, then turns slowly */
-.stamp { position: absolute; right: -6px; top: -34px; z-index: 4; width: 154px; height: 154px; color: var(--mustard); pointer-events: none; }
-.stamp svg { width: 100%; height: 100%; }
-.stamp text { font-family: var(--font-en); font-weight: 700; letter-spacing: .14em; fill: var(--mustard); }
-.stamp text.center { font-family: var(--font-ar); font-weight: 800; }
-.stamp::after { content: ""; position: absolute; inset: -6%; border-radius: 50%; border: 2px solid var(--mustard); opacity: 0; }
-@keyframes spin { to { transform: rotate(360deg); } }
-
 @media (max-width: 980px) {
   .hero .desk { justify-self: center; width: min(460px, 92%); aspect-ratio: 1/1.05; }
 }
 @media (max-width: 760px) {
   .hero .desk { width: min(380px, 100%); }
-  .stamp { width: 104px; height: 104px; top: -24px; right: -4px; }
   .polaroid { padding: 9px 9px 32px; }
   .polaroid figcaption { font-size: 11px; left: 11px; bottom: 9px; }
 }

@@ -8,8 +8,9 @@
 .label-terra { color: var(--terra); }
 .label-mustard { color: var(--mustard); }
 
-h2.display { font-size: clamp(40px, 6vw, 88px); font-weight: 800; font-stretch: 90%; letter-spacing: -.03em; line-height: .95; }
-h2.display .light { font-weight: 300; font-stretch: 100%; }
+/* Gloock has one weight, so the "light" half of a title is set apart by tone */
+h2.display { font-size: clamp(40px, 6vw, 88px); letter-spacing: -.015em; line-height: .98; }
+h2.display .light { opacity: .72; }
 
 /* risograph grain overlay — add .grain to any positioned block */
 .grain::after {

@@ -1,0 +1,9 @@
+{
+  "_readme": "The Kashkoul family of sites. tools/build.js turns this list into the house strip, the mobile-menu block and the footer doors on every site. To launch a site: set its status to \"live\". newTab: open the other sites in a new tab.",
+  "newTab": true,
+  "sites": [
+    { "id": "academy", "en": "Academy", "ar": "الأكاديمية", "blurb": "Music lessons in Khaldeh",                  "path": "/",        "status": "live" },
+    { "id": "studio",  "en": "Studio",  "ar": "الاستوديو",  "blurb": "The rooms, rented by the hour or the day",  "path": "/studio/", "status": "live" },
+    { "id": "market",  "en": "Market",  "ar": "السوق",      "blurb": "Instruments and art supplies, sourced for you", "path": "/market/", "status": "soon" }
+  ]
+}

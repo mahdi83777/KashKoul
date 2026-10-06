@@ -1,7 +1,7 @@
 // Site content that changes more often than the markup. Most edits happen here.
 
 // Shared with the Academy until the Studio has its own line.
-export const WHATSAPP_NUMBER = '96171257082';
+export const WHATSAPP_NUMBER = '96178721968';
 export const WHATSAPP_DEFAULT_MESSAGE = "Hi Kashkoul Studio! I'd like to check availability.";
 
 /** The strip of facts that slides past under the hero. */

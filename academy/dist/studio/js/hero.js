@@ -38,28 +38,24 @@ const typeInto = (el, text, speed) => new Promise(resolve => {
 });
 
 /**
- * The opening sequence. Acts 1–3 and 5 are pure CSS keyed off body.enter, act 4 off body.landed
- * (see css/sections/hero-intro.css); this function only sets the classes at the right moments and
- * types the strip of uses at the end.
+ * The opening sequence. Acts 1–4 are pure CSS keyed off body.enter (see css/sections/hero-intro.css);
+ * this function only sets the class and types the strip of uses at the end.
  */
 export async function playOpening() {
   const last = document.querySelector('.polaroid:nth-of-type(3)');
-  const stamp = document.querySelector('.stamp');
   const typed = document.querySelector('.hero .typed');
-  if (!last || !stamp) return;
+  if (!last) return;
 
   if (prefersReducedMotion) {
     if (typed) typed.textContent = HERO_TYPED;
-    document.body.classList.add('enter', 'landed');
+    document.body.classList.add('enter');
     return;
   }
 
   document.body.classList.add('enter');              // acts 1–3
   await animationEnded(last, 'flutter', 4600);       // the last polaroid has landed
-  document.body.classList.add('landed');             // act 4: the stamp thuds on
-  await animationEnded(stamp, 'thud', 1200);
   await wait(180);
-  if (typed) await typeInto(typed, HERO_TYPED, 38);  // act 6
+  if (typed) await typeInto(typed, HERO_TYPED, 38);  // act 5
 }
 
 /** The dictionary card writes itself the first time it comes into view. */

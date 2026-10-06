@@ -1,0 +1,55 @@
+/* ==========================================================
+   The Kashkoul house — links between the sister sites.
+   Shared by every site (served at /shared/house.css); the markup is generated
+   from shared/sites.json by academy/tools/build.js.
+     .house        thin strip above the main nav, on every screen size; folds away once the header turns solid
+     .house-doors  one card per site above the footer
+   Uses the brand tokens every site defines (base/tokens.css).
+   ========================================================== */
+
+:root { --house-h: 34px; }
+
+/* ---- strip ---- */
+.house { height: var(--house-h); overflow: hidden; background: rgba(102,38,28,.42); border-bottom: 1px solid rgba(244,235,226,.14);
+  font-family: var(--font-en); font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
+  transition: height .3s var(--ease-out), opacity .2s, border-color .2s; }
+.site-header.scrolled .house { height: 0; opacity: 0; border-color: transparent; }
+.house-in { display: flex; align-items: center; justify-content: center; gap: 22px; height: var(--house-h); }
+.house-site { display: inline-flex; align-items: center; gap: 7px; color: rgba(244,235,226,.78); }
+.house a.house-site { transition: color .2s; }
+.house a.house-site:hover { color: var(--paper); }
+.house a.house-site:hover .go { transform: translate(2px, -2px); }
+.house .go { display: inline-block; transition: transform .2s var(--ease-out); }
+.house-site.is-current { color: var(--paper); }
+.house-site.is-current::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--mustard); }
+.house-site.is-soon { color: rgba(244,235,226,.45); }
+.soon { font-style: normal; font-size: 9px; letter-spacing: .12em; padding: 2px 6px 1px; border-radius: 3px; background: var(--mustard); color: var(--brick); }
+
+/* ---- footer doors: the "How it works" steps pattern — columns under a rule, no boxes ---- */
+.house-doors { padding: 64px 0 40px; }
+.doors { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.door { display: flex; flex-direction: column; gap: 6px; padding-top: 18px; border-top: 2px solid var(--ink); color: var(--ink); }
+.door-name { font-family: var(--font-en); font-size: 22px; font-weight: 700; letter-spacing: -.02em; line-height: 1.1; }
+.door-name .ar { font-family: var(--font-ar); font-size: 16px; font-weight: 700; color: var(--terra); margin-inline-start: 6px; }
+.door-blurb { font-family: var(--font-body); font-size: 15px; color: #4b4a4e; }
+.door-tag { margin-top: 8px; font-family: var(--font-en); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--terra); }
+a.door .go { display: inline-block; transition: transform .2s var(--ease-out); }
+a.door:hover .door-name { color: var(--terra); }
+a.door:hover .go { transform: translate(2px, -2px); }
+a.door:focus-visible { outline: 2px solid var(--terra); outline-offset: 6px; }
+.door.is-current { border-top-color: var(--terra); }
+.door.is-current .door-tag { color: var(--mustard-2); }
+.door.is-soon { border-top: 2px dashed rgba(31,30,33,.35); }
+.door.is-soon .door-name, .door.is-soon .door-blurb { opacity: .5; }
+.door.is-soon .door-tag { color: #8a8890; }
+
+@media (max-width: 760px) {
+  :root { --house-h: 30px; }
+  .house { font-size: 10px; letter-spacing: .12em; }
+  .house-in { gap: 18px; }
+  .doors { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .house-doors { padding: 48px 0 28px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .house, .house .go, a.door .go { transition: none; }
+}

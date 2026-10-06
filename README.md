@@ -5,11 +5,14 @@ Two sibling websites and the brand material behind them:
 - **Kashkoul Academy of Arts** — a music academy in Khaldeh, Lebanon. Lessons.
 - **Kashkoul Studio** — the same rooms, rented out as a furnished, lit, camera-ready space.
 
-They share a palette, a typeface, a logo and a footer strip linking one to the other.
+They share a palette, a typeface and a logo. Every page carries the **Kashkoul house** links: a thin strip above the
+menu (phones included) and one card per site above the footer, with **Kashkoul Market** shown as
+"coming soon". All three are generated from one list, `shared/sites.json`; to launch the Market, set its `status` to `"live"`.
 
 ```
 academy/      Kashkoul Academy website — kashkoul.org        (Netlify publishes academy/dist)
 studio/       Kashkoul Studio website  — kashkoul.org/studio/ (built and published with it)
+shared/       The links between the sites: sites.json (the list) + house.css (their style) — used by both
 docs/         Brand guide, logos, fonts and source files from the designer
 ```
 

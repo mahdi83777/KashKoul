@@ -6,10 +6,6 @@
 .site-footer .made-by:hover { color: var(--terra); }
 .site-footer .links { display: flex; gap: 20px; align-items: center; }
 
-/* the badge is the way across to the Studio */
-.site-footer .badge { display: inline-block; transition: transform .25s var(--ease-out); }
-.site-footer .badge:hover { transform: translateY(-2px) rotate(-3deg); }
-
 /* courtesy credit line for the CC photos (js/credits.js) */
 .site-footer .credits { width: min(var(--wrap), 100% - var(--gutter) * 2); margin: 10px auto 0; padding-bottom: 6px; font-size: 11px; color: #8a8890; }
 .site-footer .credits:empty { display: none; }

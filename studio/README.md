@@ -70,6 +70,7 @@ separately, when it scrolls into view.
 | The fact strip under the hero | `js/config.js` → `TICKER` |
 | The contact sheet at the bottom | `js/config.js` → `SHEET` |
 | Section copy | `src/partials/<section>.html`, then `npm run build` |
+| Links to the other Kashkoul sites (Academy, Market) | `../shared/sites.json` |
 | Hours, policies, capacity | `src/partials/faq.html`, `visit.html` (all marked `.ph`) |
 | Colours, fonts, nav height | `css/base/tokens.css` |
 | Animation timings | `css/sections/hero-intro.css` (each act is one `animation:` line) |

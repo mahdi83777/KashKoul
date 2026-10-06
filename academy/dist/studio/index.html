@@ -26,6 +26,13 @@
 <div class="progress" aria-hidden="true"></div>
 
 <header class="site-header">
+  <nav class="house" aria-label="Kashkoul sites">
+    <div class="wrap house-in">
+      <a class="house-site" href="/" target="_blank" rel="noopener">Academy <span class="go" aria-hidden="true">↗</span><span class="sr"> (opens in a new tab)</span></a>
+      <span class="house-site is-current" aria-current="page">Studio</span>
+      <span class="house-site is-soon">Market <em class="soon">Soon</em></span>
+    </div>
+  </nav>
   <nav class="wrap nav" aria-label="Main">
     <a class="brand" href="#top" aria-label="Kashkoul Studio — home">
       <img src="assets/logo/logo-badge-paper.svg" alt="" width="42" height="46">
@@ -53,8 +60,8 @@
     </div>
   </div>
 </header>
-<!-- Hero: the photo prints, the headline writes itself, the polaroids flutter onto the desk, the stamp
-     presses on, the strip of uses is typed. Choreography: css/sections/hero-intro.css + js/hero.js -->
+<!-- Hero: the photo prints, the headline writes itself, the polaroids flutter onto the desk, the strip
+     of uses is typed. Choreography: css/sections/hero-intro.css + js/hero.js -->
 <section class="hero grain" id="top" aria-label="Kashkoul Studio">
   <div class="photo">
     <img src="assets/photos/salon-wide-softbox.jpg" alt="" fetchpriority="high">
@@ -84,15 +91,6 @@
     </div>
 
     <div class="desk">
-      <div class="stamp" aria-hidden="true">
-        <svg viewBox="0 0 100 100">
-          <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" stroke-width="1.5"/>
-          <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="1"/>
-          <path id="stamp-path" d="M50,50 m-39,0 a39,39 0 1,1 78,0 a39,39 0 1,1 -78,0" fill="none"/>
-          <text font-size="7.1"><textPath href="#stamp-path" startOffset="0">KASHKOUL STUDIO · KHALDEH · SEA SIDE ·</textPath></text>
-          <text class="center" x="50" y="55" text-anchor="middle" font-size="13">كشكول</text>
-        </svg>
-      </div>
       <figure class="polaroid" data-zoom="assets/photos/library-armchairs.jpg" data-caption="The library set" tabindex="0" role="button" aria-label="Enlarge: the library set">
         <span class="tape" aria-hidden="true"></span>
         <img src="assets/photos/library-armchairs.jpg" alt="Two wing chairs in front of a wall of books">
@@ -282,7 +280,7 @@
       <p class="label label-terra">The Studio · Rent it by the hour or the day</p>
       <h2 class="display" style="margin-top:14px">Come by.<br><span class="light">See the light.</span></h2>
       <dl>
-        <dt>Where</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=33.7890334,35.4807347" target="_blank" rel="noopener">Kashkoul Studio, Khaldeh, Lebanon</a> <span class="ar">خلدة، لبنان</span></dd>
+        <dt>Where</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=33.788639,35.478889" target="_blank" rel="noopener">Kashkoul Studio, Khaldeh, Lebanon</a> <span class="ar">خلدة، لبنان</span></dd>
         <dt>Hours</dt><dd><span class="ph" title="Placeholder — these are the Academy's hours; confirm whether the Studio's differ">Mon – Sat, 2pm – 9pm · Sundays by appointment</span></dd>
         <dt>Instagram</dt><dd><a href="https://www.instagram.com/kashkoul.academy" target="_blank" rel="noopener">@kashkoul.academy</a> <span class="ph" title="Placeholder — the Studio can have its own handle later">(shared with the Academy)</span></dd>
       </dl>
@@ -299,6 +297,13 @@
   </div>
 </section>
 <footer class="site-footer">
+  <nav class="wrap house-doors" aria-label="Kashkoul sites">
+    <div class="doors">
+      <a class="door" href="/" target="_blank" rel="noopener"><span class="door-name">Academy <span class="ar">الأكاديمية</span></span><span class="door-blurb">Music lessons in Khaldeh</span><span class="door-tag">Visit the Academy <span class="go" aria-hidden="true">↗</span></span><span class="sr"> (opens in a new tab)</span></a>
+      <div class="door is-current" aria-current="page"><span class="door-name">Studio <span class="ar">الاستوديو</span></span><span class="door-blurb">The rooms, rented by the hour or the day</span><span class="door-tag">You're here</span></div>
+      <div class="door is-soon"><span class="door-name">Market <span class="ar">السوق</span></span><span class="door-blurb">Instruments and art supplies, sourced for you</span><span class="door-tag">Coming soon</span></div>
+    </div>
+  </nav>
   <div class="wrap">
     <div class="row">
       <div class="left">
