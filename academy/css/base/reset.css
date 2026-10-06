@@ -4,6 +4,7 @@ body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
 h1, h2, h3, h4 { font-family: var(--font-en); margin: 0; line-height: 1.05; }
+h2 { font-family: var(--font-display); font-weight: 400; }
 p, ul, ol { margin: 0; }
 button { font: inherit; cursor: pointer; }
 section { position: relative; }
