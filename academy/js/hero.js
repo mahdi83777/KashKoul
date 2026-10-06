@@ -47,6 +47,9 @@ export async function playOpening() {
 
   const finish = () => entry.classList.add('done');
 
+  // phones hide the note (css/sections/hero.css): play the rest of the opening, skip the note's acts
+  if (!entry.offsetParent) { document.body.classList.add('enter'); return; }
+
   if (prefersReducedMotion) {
     defs.forEach(el => { el.textContent = el.dataset.type; });
     document.body.classList.add('enter');

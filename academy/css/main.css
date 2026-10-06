@@ -12,6 +12,7 @@
 @import "components/buttons.css";
 @import "components/header.css";
 @import "/shared/house.css";        /* links between the Kashkoul sites — ../shared/ */
+@import "/shared/whatsapp-float.css"; /* the floating WhatsApp button — ../shared/ */
 
 @import "sections/hero.css";
 @import "sections/hero-notebook.css";

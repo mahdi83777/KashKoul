@@ -34,7 +34,7 @@
 @media (max-width: 760px) {
   .hero .content { grid-template-columns: 1fr; padding-bottom: 80px; gap: 36px; }
   .hero .logo { width: min(300px, 72%); }
-  .hero .right { align-items: center; margin-right: 0; align-self: auto; justify-content: flex-start; padding-top: 0; }
+  .hero .right { display: none; }   /* the notebook note is desktop and tablet only */
   .hero .reveal { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {

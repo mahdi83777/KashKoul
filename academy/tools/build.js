@@ -9,7 +9,7 @@
 //   dist/                 Kashkoul Academy          (academy/)
 //   dist/studio/          Kashkoul Studio           (studio/)
 //   dist/studio/prototypes/   the two other design directions, kept for reference
-//   dist/shared/          house.css — the links between the sites, used by both (from ../shared/)
+//   dist/shared/          house.css + whatsapp-float.css — used by both sites (from ../shared/)
 import { readFileSync, writeFileSync, watch, existsSync, statSync, rmSync, mkdirSync, cpSync } from 'node:fs';
 import { createServer } from 'node:http';
 import { join, dirname, resolve, extname } from 'node:path';
@@ -31,11 +31,12 @@ const SITES = [
 const RUNTIME = ['index.html', 'css', 'js', 'assets'];           // every site has these
 const ACADEMY_EXTRA = ['robots.txt', 'sitemap.xml', '_headers']; // …the Academy also publishes these
 
-/** Replaces every `<!-- @include path -->` (path relative to the site's src/) with the file, keeping the indent. */
+/** Replaces every `<!-- @include path -->` with the file, keeping the indent. The path is relative to the site's src/,
+ *  or to ../shared/ when it starts with `@shared/` (pieces every Kashkoul site uses). */
 function render(src, file, depth = 0) {
   if (depth > 10) throw new Error(`include loop at ${file}`);
   return readFileSync(file, 'utf8').replace(INCLUDE, (_, indent, path) => {
-    const inc = join(src, path);
+    const inc = path.startsWith('@shared/') ? join(SHARED, path.slice(8)) : join(src, path);
     if (!existsSync(inc)) throw new Error(`missing include: ${path} (from ${file})`);
     return render(src, inc, depth + 1).trimEnd().split('\n').map(l => indent + l).join('\n');
   });
@@ -97,7 +98,8 @@ if (process.argv.includes('--dist')) {
   for (const f of [...RUNTIME, ...ACADEMY_EXTRA]) cpSync(join(ROOT, f), join(DIST, f), { recursive: true });
   rmSync(join(DIST, 'assets/photos/CREDITS.md'), { force: true });
   for (const f of RUNTIME) cpSync(join(STUDIO, f), join(DIST, 'studio', f), { recursive: true });
-  cpSync(join(SHARED, 'house.css'), join(DIST, 'shared/house.css'));
+  mkdirSync(join(DIST, 'shared'));
+  for (const f of ['house.css', 'whatsapp-float.css']) cpSync(join(SHARED, f), join(DIST, 'shared', f));
   cpSync(join(STUDIO, 'prototype'), join(DIST, 'studio/prototypes'), { recursive: true });
   console.log('[dist] → dist/ (Academy) + dist/studio/ (Studio) + dist/studio/prototypes/ + dist/shared/');
 }

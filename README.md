@@ -12,7 +12,8 @@ menu (phones included) and one card per site above the footer, with **Kashkoul M
 ```
 academy/      Kashkoul Academy website — kashkoul.org        (Netlify publishes academy/dist)
 studio/       Kashkoul Studio website  — kashkoul.org/studio/ (built and published with it)
-shared/       The links between the sites: sites.json (the list) + house.css (their style) — used by both
+shared/       Used by both sites: sites.json + house.css (the links between the sites),
+              whatsapp-float.html/.css (the floating WhatsApp button)
 docs/         Brand guide, logos, fonts and source files from the designer
 ```
 
