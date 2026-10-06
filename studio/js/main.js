@@ -8,6 +8,7 @@ import { initPlaceholders } from './placeholders.js';
 
 initUses();
 initWhatsAppLinks();   // after the sections that render their own [data-wa] links
+document.querySelectorAll('[data-year]').forEach(el => { el.textContent = new Date().getFullYear(); });   // footer © year
 initLightbox();
 initNav();
 initReveal();
