@@ -24,7 +24,7 @@ academy/
 │   ├── whatsapp.js       wa.me links for every [data-wa] element
 │   ├── instruments.js    renders the cards from config
 │   ├── hero.js           cursor reveal / parallax + the opening sequence
-│   ├── nav.js            solid header on scroll, logo → top, mobile menu
+│   ├── nav.js            solid header, reading progress, current section, logo → top, mobile menu (same file as the Studio's)
 │   ├── credits.js        courtesy photo-credit line in the footer (from config)
 │   └── motion.js         reduced-motion flag + small async helpers
 ├── tools/build.js        builds BOTH sites: src → index.html  (--watch, --serve, --dist)

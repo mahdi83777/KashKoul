@@ -10,27 +10,26 @@ studio/
 ├── src/
 │   ├── index.html        page shell: <head>, then one @include per section
 │   └── partials/
-│       ├── header.html · hero.html · ticker.html · entry.html · spaces.html · uses.html
-│       ├── gear.html · how.html · gallery.html · faq.html · visit.html
+│       ├── header.html · hero.html · entry.html · spaces.html · uses.html
+│       ├── how.html · faq.html · visit.html
 │       ├── footer.html · lightbox.html
 │       └── icons/        whatsapp.svg
 ├── css/
 │   ├── main.css          entry point — imports everything below, in cascade order
 │   ├── base/             tokens (shared with the Academy) · fonts · reset · utilities
 │   ├── components/       buttons · header (nav, progress, mobile menu) · lightbox
-│   └── sections/         hero · hero-desk · hero-intro (the opening) · ticker · entry · spaces ·
-│                         uses · gear · how · gallery · faq · visit · footer
+│   └── sections/         hero · hero-desk · hero-intro (the opening) · entry · spaces ·
+│                         uses · how · faq · visit · footer
 ├── js/
 │   ├── main.js           entry point — wires the modules below
-│   ├── config.js         WhatsApp number, ticker facts, the "what for" list, the contact sheet  ← most edits happen here
+│   ├── config.js         WhatsApp number, the "what for" list  ← most edits happen here
 │   ├── hero.js           the opening sequence, the cursor light, the typed definition
 │   ├── uses.js           renders the "what people book it for" list + its preview photo
-│   ├── gallery.js        renders the contact sheet, drag-to-scroll
 │   ├── lightbox.js       click any photo to see it full size
-│   ├── nav.js            solid header on scroll, reading progress, current section, mobile menu
+│   ├── nav.js            solid header, reading progress, current section, logo → top, mobile menu (same file as the Academy's)
 │   ├── reveal.js         sections rise as they enter the viewport
-│   ├── ticker.js · whatsapp.js · placeholders.js · motion.js
-├── assets/               photos (from docs/Kashkoul_Space.pdf) · fonts · logo · patterns
+│   ├── whatsapp.js · placeholders.js · motion.js
+├── assets/               photos (from docs/Kashkoul_Space.pdf) · fonts (Bricolage, Fustat, Gloock for titles) · logo · patterns
 └── prototype/            the two other first drafts, kept for reference → /studio/prototypes/
 ```
 
@@ -55,8 +54,7 @@ Carried over from the Academy, restaged for the Studio — `css/sections/hero-in
 | 1 | the photo prints, with a misregistered riso pass | `@keyframes print` / `misregister` |
 | 2 | the headline writes itself, line by line (Latin →, Arabic ←) | `wipe-ltr` / `wipe-rtl` |
 | 3 | three polaroids flutter onto the desk | `@keyframes flutter` |
-| 4 | the buttons arrive | `rise-in` |
-| 5 | the strip of uses is typed out | `js/hero.js` |
+| 4 | the strip of uses is typed out | `js/hero.js` |
 
 Everything is skipped when the visitor asks for reduced motion. The dictionary card types itself
 separately, when it scrolls into view.
@@ -67,8 +65,6 @@ separately, when it scrolls into view.
 |---|---|
 | WhatsApp number or default message | `js/config.js` |
 | The "what people book it for" rows and their photos | `js/config.js` → `USES` |
-| The fact strip under the hero | `js/config.js` → `TICKER` |
-| The contact sheet at the bottom | `js/config.js` → `SHEET` |
 | Section copy | `src/partials/<section>.html`, then `npm run build` |
 | Links to the other Kashkoul sites (Academy, Market) | `../shared/sites.json` |
 | Hours, policies, capacity | `src/partials/faq.html`, `visit.html` (all marked `.ph`) |
@@ -78,7 +74,7 @@ separately, when it scrolls into view.
 ## Placeholders
 
 Every page carries a **Show placeholders** button that highlights what's still to confirm: minimum
-booking, hours, capacity, parking, audio gear, Instagram, email, building and floor, and a photo of
+booking, hours, capacity, parking, Instagram, email, building and floor, and a photo of
 the acoustic room. The WhatsApp number is the Academy's for now.
 
 There are **no prices or payment terms on the site** — rates are discussed on WhatsApp.

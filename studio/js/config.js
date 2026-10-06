@@ -4,13 +4,6 @@
 export const WHATSAPP_NUMBER = '96178721968';
 export const WHATSAPP_DEFAULT_MESSAGE = "Hi Kashkoul Studio! I'd like to check availability.";
 
-/** The strip of facts that slides past under the hero. */
-export const TICKER = [
-  '1 open-plan salon', '3 production rooms', '3×3 m acoustic room', '2 sea-view balconies',
-  'Canon EOS R8', 'Amaran 550 key light', '2× Mars softbox', '3 backdrops',
-  'Kitchen for the crew', '3 private restrooms', 'Khaldeh · Lebanon',
-];
-
 /** Typed out under the hero headline, one phrase after another. */
 export const HERO_TYPED = 'Podcasts · Sessions · Shoots · Workshops';
 
@@ -28,20 +21,4 @@ export const USES = [
   { title: 'Talks & workshops',     note: 'Salon seating for <span class="ph" title="Placeholder — confirm seated capacity">[12–15]</span>, kitchen next door.', img: 'salon-sofa.jpg', caption: 'The salon, seated', wa: "I'd like to book the studio for a workshop." },
   { title: 'Rehearsals',            note: 'Bands, ensembles, Academy students before a show.',             img: 'oud-chair-wide.jpg',    caption: 'Room B', wa: "I'd like to book the studio for a rehearsal." },
   { title: 'Golden-hour shoots',    note: 'Two sea-facing balconies. Bring the outfit.',                   img: 'balcony-1a.jpg',        caption: 'Balcony one · 5:40pm', wa: "I'd like to book a balcony golden-hour shoot." },
-];
-
-/** The contact sheet at the bottom of the page. */
-export const SHEET = [
-  { img: 'library-wall.jpg',          caption: 'Library wall' },
-  { img: 'library-armchairs.jpg',     caption: 'Two wing chairs' },
-  { img: 'turntable.jpg',             caption: 'The turntable' },
-  { img: 'balcony-2a.jpg',            caption: 'Balcony two' },
-  { img: 'oud-chair.jpg',             caption: 'Room B' },
-  { img: 'salon-armchair.jpg',        caption: 'Salon armchair' },
-  { img: 'library-projector.jpg',     caption: 'Wing chairs, lit' },
-  { img: 'desk-corner.jpg',           caption: 'The writing desk' },
-  { img: 'bistro-chairs.jpg',         caption: 'The hallway pair' },
-  { img: 'balcony-1b.jpg',            caption: 'Balcony one' },
-  { img: 'library-corner-light.jpg',  caption: 'Key light' },
-  { img: 'salon-sofa.jpg',            caption: 'The salon' },
 ];

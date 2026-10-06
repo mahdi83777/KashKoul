@@ -55,7 +55,7 @@ export async function playOpening() {
   document.body.classList.add('enter');              // acts 1–3
   await animationEnded(last, 'flutter', 4600);       // the last polaroid has landed
   await wait(180);
-  if (typed) await typeInto(typed, HERO_TYPED, 38);  // act 5
+  if (typed) await typeInto(typed, HERO_TYPED, 38);  // act 4
 }
 
 /** The dictionary card writes itself the first time it comes into view. */

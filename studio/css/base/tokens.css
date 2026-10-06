@@ -15,6 +15,7 @@
 
   /* type */
   --font-en: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Gloock", Georgia, "Times New Roman", serif;   /* the big section titles only — one weight */
   --font-ar: "Fustat", "Noto Sans Arabic", Tahoma, sans-serif;
   --font-body: "Fustat", "Helvetica Neue", Arial, sans-serif;
 

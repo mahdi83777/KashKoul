@@ -41,15 +41,9 @@
 .hero .typed.typing::after { content: ""; display: inline-block; width: 2px; height: 1em; background: var(--mustard); vertical-align: -.15em; margin-inline-start: 3px; animation: caret .8s steps(1) infinite; }
 @keyframes caret { 50% { opacity: 0; } }
 
-.hero .ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
-
-/* corner label + scroll cue */
+/* corner label */
 .hero .place { position: absolute; left: var(--gutter); bottom: 26px; z-index: 2; font-family: var(--font-en); font-size: 12px;
   letter-spacing: .2em; text-transform: uppercase; color: var(--mustard); opacity: .9; }
-.hero .cue { position: absolute; right: var(--gutter); bottom: 26px; z-index: 2; display: flex; align-items: center; gap: 10px;
-  font-family: var(--font-en); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: rgba(244,235,226,.7); }
-.hero .cue i { width: 1px; height: 34px; background: linear-gradient(var(--mustard), transparent); animation: cue 2s var(--ease-out) infinite; transform-origin: top; }
-@keyframes cue { 0% { transform: scaleY(0); opacity: 0; } 40% { transform: scaleY(1); opacity: 1; } 100% { transform: scaleY(1) translateY(34px); opacity: 0; } }
 
 /* the scene drifts with the cursor (--px/--py in -1…1) */
 .hero .lead, .hero .desk, .hero .photo img:first-child { transition: transform .35s var(--ease-out); }
@@ -58,7 +52,6 @@
 
 @media (max-width: 980px) {
   .hero .content { grid-template-columns: 1fr; gap: 44px; padding-bottom: 110px; }
-  .hero .cue { display: none; }
 }
 @media (max-width: 760px) {
   .hero .reveal { display: none; }
@@ -67,5 +60,5 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .hero .lead, .hero .desk, .hero .photo img:first-child { transform: none; }
-  .hero .cue i, .rec i { animation: none; }
+  .rec i { animation: none; }
 }

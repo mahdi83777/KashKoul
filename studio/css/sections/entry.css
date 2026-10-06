@@ -15,9 +15,5 @@
 .entry .def.typing::after { content: ""; display: inline-block; width: 2px; height: 1em; background: var(--terra); vertical-align: -.15em; margin-inline-start: 2px; animation: caret .8s steps(1) infinite; }
 
 @media (max-width: 760px) {
-  .entry-sec { padding-top: 56px; }
-  .entry { padding: 24px 20px 20px; transform: rotate(-.4deg); }
-  .entry .word { font-size: 34px; }
-  .entry .def { font-size: 15.5px; line-height: 30px; }
-  .entry .def.ar { font-size: 17px; }
+  .entry-sec { display: none; }   /* desktop and tablet only, like the Academy's hero note */
 }

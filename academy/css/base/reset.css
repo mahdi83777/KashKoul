@@ -9,6 +9,7 @@ p, ul, ol { margin: 0; }
 button { font: inherit; cursor: pointer; }
 section { position: relative; }
 :focus-visible { outline: 3px solid var(--mustard); outline-offset: 3px; }
+::selection { background: var(--mustard); color: var(--ink); }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
