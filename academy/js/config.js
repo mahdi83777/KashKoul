@@ -1,6 +1,6 @@
 // Site content that changes more often than the markup.
 
-export const WHATSAPP_NUMBER = '96171257082';
+export const WHATSAPP_NUMBER = '96178721968';
 export const WHATSAPP_DEFAULT_MESSAGE = "Hi Kashkoul Academy! I'd like to book a free first lesson.";
 
 /**

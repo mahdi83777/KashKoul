@@ -15,3 +15,7 @@
 @media (max-width: 1000px) {
   .manifesto .wrap { grid-template-columns: 1fr; }
 }
+/* desktop and tablet only — hidden on phones (its link is left out of the mobile menu too) */
+@media (max-width: 760px) {
+  .manifesto { display: none; }
+}
