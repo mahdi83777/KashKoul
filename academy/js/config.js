@@ -18,7 +18,7 @@ export const INSTRUMENTS = [
   { en: 'Buzuq',      ar: 'بزق',       blurb: 'Levantine long-neck lute',       color: 'sand',    img: 'buzuq.jpg' },
   { en: 'Guitar',     ar: 'غيتار',     blurb: 'Classical & fingerstyle',        color: 'paper',   img: 'guitar.jpg' },
   { en: 'Piano',      ar: 'بيانو',     blurb: 'Keys · theory · harmony',        color: 'pine',    img: 'piano.jpg' },
-  { en: 'Qanun',      ar: 'قانون',     blurb: '26 courses · mandal technique',  color: 'mustard', img: 'qanun.jpg' },
+  { en: 'Qanun',      ar: 'قانون',     blurb: 'Plucking · maqam · ornamentation', color: 'mustard', img: 'qanun.jpg' },
   { en: 'Trumpet',    ar: 'ترومبيت',   blurb: 'Brass · breath · tone',          color: 'terra',   img: 'trumpet.jpg' },
   { en: 'Ney',        ar: 'ناي',       blurb: 'Breath · tone · the seven neys', color: 'wide',    img: 'ney.jpg' },
   { en: 'Saxophone',  ar: 'ساكسفون',   blurb: 'Jazz & Arabic phrasing',         color: 'green',   img: 'saxophone.jpg' },

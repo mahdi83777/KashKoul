@@ -7,6 +7,7 @@
   "scripts": {
     "build": "node tools/build.js",
     "dev": "node tools/build.js --serve",
-    "dist": "node tools/build.js --dist"
+    "dist": "node tools/build.js --dist",
+    "export-cards": "node tools/export-cards.js"
   }
 }
