@@ -79,6 +79,7 @@ function buildSite({ name, root }) {
   const banner = '<!-- GENERATED from src/ by academy/tools/build.js — edit the partials, not this file -->\n';
   const html = render(src, join(src, 'index.html'))
     .replace(HOUSE, (_, indent, kind) => house(kind, name).split('\n').map(l => indent + l).join('\n'))
+    .replace(/(<span data-year>)\d{4}(<\/span>)/g, `$1${new Date().getFullYear()}$2`)   // footer © year; js/main.js keeps it current
     .replace('<!doctype html>\n', '<!doctype html>\n' + banner);
   writeFileSync(join(root, 'index.html'), html);
   return `${name} (${(html.length / 1024).toFixed(1)} kB)`;
