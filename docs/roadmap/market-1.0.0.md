@@ -127,7 +127,7 @@ Preview: https://kashkoul-market-fhsuuq5c.myshopify.com/?preview_theme_id=189216
       page), main menu, Arabic translations, Arabic published (`node market/tools/setup-store.mjs`)
 - [x] Checked on a computer in English and Arabic, and on a phone (by you)
 - [x] Store name "Kashkoul Market"; customer account links hidden
-- [ ] Store currency → US dollars (Shopify admin → Settings → General), if not done yet
+- [x] Store currency → US dollars
 
 **3b — Designed help pages** ✅ (approved 2026-10-15; committed `d376a5e`)
 

@@ -106,11 +106,13 @@ No Contact page: the WhatsApp number is on every page (changed 2026-10-15).
    order** buttons, the qanun photo toned brick and mustard (hidden on phones)
 5. **Shop by category**: four cards
 6. **New in the Market**: latest products
-7. **Delivery & pickup**: the $5 / Free cards from the Delivery & pickup page, with a link to it
-8. **Three steps, no card**: the step cards from How to order, with a link to it
-9. **Photo + panel**: "From the people behind Kashkoul Academy"
-10. **Can't find it here?** WhatsApp band
+7. **Can't find it here?** WhatsApp band, right under the products (special requests from an Amazon link)
+8. **Delivery & pickup**: the $5 / Free cards from the Delivery & pickup page, with a link to it
+9. **Three steps, no card**: the step cards from How to order, with a link to it
+10. **Photo + panel**: "From the people behind Kashkoul Academy"
 11. **Footer A** (below)
+
+No "Home" item in the menu: the logo links home, as on the Academy and Studio.
 
 (Homepage v2, 2026-10-15: the homepage stays about the Market and uses the pages' style; it doesn't preview other pages.
 Page width: content up to 1440px, with 40px side margins on computers and 16px on phones.)

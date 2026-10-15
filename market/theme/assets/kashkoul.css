@@ -156,6 +156,8 @@ html[lang='ar'] .kk-page-hero .kk-title { line-height: 1.3; }
 
 /* ---- mustard WhatsApp band ---- */
 .kk-cta { background: var(--kk-mustard); color: var(--kk-brick); }
+/* on the homepage it follows Horizon's product grid, which has no space under it */
+.ui-test-product-list + .kk-cta-section .kk-cta { margin-block-start: var(--kk-sec); }
 .kk-cta__in { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; padding-block: 36px; }
 @media (min-width: 750px) { .kk-cta__in { flex-direction: row; align-items: center; justify-content: space-between; gap: 48px; padding-block: 48px; } }
 .kk-cta__text { display: flex; flex-direction: column; gap: 10px; max-width: 40em; }
