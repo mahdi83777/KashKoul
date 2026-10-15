@@ -202,6 +202,7 @@ Preview: https://kashkoul-market-fhsuuq5c.myshopify.com/?preview_theme_id=189216
 
 With the owner.
 
+- [ ] Bulk import (2026-10-16): Spreadr couldn't be used (Shopify doesn't let a development store approve paid app subscriptions; it was uninstalled, nothing charged). Using **Ryviu Amazon Importer, free plan** (500 variants/month, one product link at a time; its "Import Amazon Store" failed on Donner's store). Ryviu imports as Draft, at Amazon's price, stock 0, Amazon link and variant ASINs kept on the product. First batch: 50 best sellers in `market/store/import-batch-1.json`, links checklist `market/store/import-batch-1-links.md` (Mohamad imports them). Then our script cleans them (English/Arabic texts, options, photos), prices them and publishes them. Pricing decided: option 2 by **real weight only**, (Amazon price + kg × $15) × 1.2, rounded up to .99; Amazon price kept in "Cost per item", weight in "Weight". Bundles that include a clip-on tuner (coin battery) are fine.
 - [ ] Get the list of products from the owner (Amazon links or wishlist)
 - [ ] Choose an Amazon importer app (used for the samples: Reputon Amazon Importer, free plan, 5 at a time; other candidates: Ryviu, GD Amazon Importer, Importio, Amazon Channel)
 - [ ] Pricing rule per category: Amazon price + shipping to Lebanon (by weight) + customs + margin
@@ -228,4 +229,4 @@ With the owner.
 
 ## Open questions
 
-None right now.
+- **"Request a product" page** (to discuss; added 2026-10-16): a page where a customer fills in the Amazon link, a photo (optional), the variation (size, color…) and their name and WhatsApp number. Sending it emails the request to the shop and opens WhatsApp with the same details pre-filled, which the customer sends from their own phone. Builds on the agreed "special requests" (Amazon link on WhatsApp, optional photo and variation). Bilingual, mobile first; to decide where it lives (its own page, linked from the "Can't find it here?" band, the menu and the footer) and how the photo is sent (Shopify forms can't attach files, so a photo may go through WhatsApp only).
