@@ -55,14 +55,26 @@
     {% endif %}
     data-testid="header-logo"
   >
-    {% render 'image',
-      image: settings.logo,
-      class: 'header-logo__image',
-      height: settings.logo_height,
-      alt_text_fallback: alt_text_fallback,
-      text_fallback: shop.name,
-      style: logo_style
-    %}
+    {%- comment -%} Kashkoul: with no logo uploaded, show the Market logo shipped with the theme. {%- endcomment -%}
+    {% if settings.logo == blank %}
+      <img
+        class="kk-logo"
+        src="{{ 'kashkoul-market-logo-arch-mustard.svg' | asset_url }}"
+        alt="{{ alt_text_fallback | escape }}"
+        width="303"
+        height="184"
+        style="--header-logo-image-height: {{ settings.logo_height }}px; --header-logo-image-height-mobile: {{ settings.logo_height_mobile }}px;"
+      >
+    {% else %}
+      {% render 'image',
+        image: settings.logo,
+        class: 'header-logo__image',
+        height: settings.logo_height,
+        alt_text_fallback: alt_text_fallback,
+        text_fallback: shop.name,
+        style: logo_style
+      %}
+    {% endif %}
   </span>
 
   {% if use_inverse_logo %}

@@ -1,0 +1,68 @@
+{%- comment -%}
+  A photo beside a colored panel with a title, a few words and a button (Studio's image-with-panel).
+  Empty text settings show the approved text in the visitor's language.
+{%- endcomment -%}
+{%- liquid
+  assign kk_title = section.settings.title | escape
+  if kk_title == blank
+    assign kk_title = 'kashkoul.home.panel_title' | t
+  endif
+  assign kk_text = section.settings.text | escape
+  if kk_text == blank
+    assign kk_text = 'kashkoul.home.panel_text' | t
+  endif
+  assign kk_button = section.settings.button_label | escape
+  if kk_button == blank
+    assign kk_button = 'kashkoul.home.panel_button' | t
+  endif
+  assign kk_link = section.settings.button_link
+  if kk_link == blank
+    capture kk_link
+      render 'kashkoul-url', path: '/pages/about'
+    endcapture
+  endif
+  assign kk_alt = section.settings.image.alt
+  if kk_alt == blank
+    assign kk_alt = 'kashkoul.home.panel_photo_alt' | t
+  endif
+-%}
+<section class="kk-panel">
+  <div class="kk-wrap">
+    <div class="kk-panel__in">
+      <div class="kk-panel__media">
+        {%- if section.settings.image != blank -%}
+          {{ section.settings.image | image_url: width: 1600 | image_tag: widths: '600, 900, 1200, 1600', sizes: '(min-width: 990px) 800px, 100vw', loading: 'lazy', alt: kk_alt }}
+        {%- else -%}
+          <img src="{{ 'kashkoul-photo-storefront.jpg' | asset_url }}" alt="{{ kk_alt | escape }}" width="1240" height="899" loading="lazy">
+        {%- endif -%}
+      </div>
+      <div class="kk-panel__box" style="background: {{ section.settings.panel_color }}; color: {{ section.settings.text_color }}">
+        <h2 class="kk-title" style="color: inherit">{{ kk_title }}</h2>
+        <p class="kk-panel__text">{{ kk_text }}</p>
+        {%- if section.settings.show_button -%}
+          <a class="kk-button" href="{{ kk_link }}">{{ kk_button }}</a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kashkoul photo + panel",
+  "tag": "div",
+  "class": "kk-panel-section",
+  "settings": [
+    { "type": "paragraph", "content": "Leave the text fields empty to show the approved English and Arabic text." },
+    { "type": "image_picker", "id": "image", "label": "Photo", "info": "Leave empty for the Kashkoul storefront photo." },
+    { "type": "text", "id": "title", "label": "Title" },
+    { "type": "textarea", "id": "text", "label": "Text" },
+    { "type": "checkbox", "id": "show_button", "label": "Show button", "default": true },
+    { "type": "text", "id": "button_label", "label": "Button text" },
+    { "type": "url", "id": "button_link", "label": "Button link", "info": "Leave empty for the About page." },
+    { "type": "color", "id": "panel_color", "label": "Panel color", "default": "#dabd5c" },
+    { "type": "color", "id": "text_color", "label": "Panel text color", "default": "#66261c" }
+  ],
+  "presets": [{ "name": "Kashkoul photo + panel" }]
+}
+{% endschema %}

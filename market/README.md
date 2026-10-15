@@ -20,8 +20,34 @@ market/
     └── assets/     CSS, JS, icons, fonts
 ```
 
-As of step 0 the theme is still plain Horizon. Kashkoul changes will go into new files (named `kashkoul-…`)
-wherever possible, so Horizon updates can still be applied.
+Kashkoul changes live in new files named `kashkoul-…` wherever possible, so Horizon updates can still be applied.
+The few edits to Horizon's own files are marked with a "Kashkoul:" comment (`layout/theme.liquid`,
+`blocks/_header-logo.liquid`, `sections/header.liquid`).
+
+## The Kashkoul layer
+
+```
+market/
+├── strings.json            English + Arabic text for the Kashkoul sections (from docs/market/content.md)
+├── store/content.json      store content: categories, pages, main menu, their Arabic, published languages
+├── PHOTO-CREDITS.md        where the theme's photos come from
+├── .theme-check.yml        Theme Check config (English + Arabic only)
+├── tools/
+│   ├── sync-strings.mjs    strings.json → theme/locales/en.default.json + ar.json ("kashkoul" key)
+│   ├── sync-house.mjs      shared/sites.json → theme/snippets/kashkoul-house.liquid (links between the sites)
+│   └── setup-store.mjs     store/content.json → the store, through `shopify store execute` (safe to re-run)
+└── theme/
+    ├── snippets/kashkoul-head.liquid   fonts, colors, type scale (--kk-fs-*), spacing (--kk-sec)
+    ├── assets/kashkoul.css             styles for every Kashkoul section
+    ├── sections/kashkoul-*.liquid      homepage, help pages, header strip, announcement, footer
+    └── templates/page.*.json           the designed pages: how-to-order, delivery-pickup, returns, faq, about
+```
+
+- **Text:** sections show the standard English or Arabic text from `strings.json` when their settings are empty;
+  a setting the owner fills in wins (and is translated in Translate & Adapt).
+- **Numbers** (delivery fee, delivery times, deposit, discount, return window) are in Theme settings → Kashkoul and
+  flow into every page in both languages.
+- **After editing** `strings.json` or `shared/sites.json`, run the matching sync script, then push the theme.
 
 ## Who edits what
 
@@ -43,7 +69,7 @@ Needs Node (already used for the Academy) and Shopify's command-line tool:
 ```
 npm install -g @shopify/cli@latest
 shopify theme dev   --path market/theme --store kashkoul-market-fhsuuq5c   # live preview at http://127.0.0.1:9292, reloads on save
-shopify theme check --path market/theme                             # lint: Liquid errors, missing translations, …
+shopify theme check --path market/theme --config market/.theme-check.yml   # lint: Liquid errors, …
 shopify theme push  --path market/theme --unpublished               # upload as a new, unpublished theme for review
 ```
 

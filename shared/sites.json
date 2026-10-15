@@ -1,9 +1,10 @@
 {
-  "_readme": "The Kashkoul family of sites. tools/build.js turns this list into the house strip, the mobile-menu block and the footer doors on every site. To launch a site: set its status to \"live\". newTab: open the other sites in a new tab.",
+  "_readme": "The Kashkoul family of sites. tools/build.js turns this list into the house strip, the mobile-menu block and the footer doors on every site; market/tools/sync-house.mjs does the same for the Market's Shopify theme (which lives on its own domain, so it prefixes paths with origin). To launch a site: set its status to \"live\". newTab: open the other sites in a new tab. blurb_ar: the Arabic blurb, used by the Market.",
   "newTab": true,
+  "origin": "https://kashkoul.org",
   "sites": [
-    { "id": "academy", "en": "Academy", "ar": "الأكاديمية", "blurb": "Music lessons in Khaldeh",                  "path": "/",        "status": "live" },
-    { "id": "studio",  "en": "Studio",  "ar": "الاستوديو",  "blurb": "The rooms, rented by the hour or the day",  "path": "/studio/", "status": "live" },
-    { "id": "market",  "en": "Market",  "ar": "السوق",      "blurb": "Instruments and art supplies, sourced for you", "path": "/market/", "status": "soon" }
+    { "id": "academy", "en": "Academy", "ar": "الأكاديمية", "blurb": "Music lessons in Khaldeh",                  "blurb_ar": "دروس موسيقى في خلدة",                "path": "/",        "status": "live" },
+    { "id": "studio",  "en": "Studio",  "ar": "الاستوديو",  "blurb": "The rooms, rented by the hour or the day",  "blurb_ar": "الغرف للإيجار بالساعة أو باليوم",     "path": "/studio/", "status": "live" },
+    { "id": "market",  "en": "Market",  "ar": "السوق",      "blurb": "Instruments and art supplies, sourced for you", "blurb_ar": "آلات موسيقية ولوازم فنية، نؤمّنها لك", "path": "/market/", "status": "soon" }
   ]
 }

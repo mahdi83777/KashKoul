@@ -1,0 +1,51 @@
+{%- comment -%}
+  A section title with an optional link on the other side, e.g. "New in the Market · View all" above the
+  product grid. Empty settings show the standard text in the visitor's language.
+{%- endcomment -%}
+{%- liquid
+  assign kk_title = section.settings.title | escape
+  if kk_title == blank
+    assign kk_key = 'kashkoul.home.' | append: section.settings.default_text
+    assign kk_title = kk_key | t
+  endif
+  assign kk_label = section.settings.link_label | escape
+  if kk_label == blank
+    assign kk_label = 'kashkoul.home.view_all' | t
+  endif
+  assign kk_link = section.settings.link | default: routes.all_products_collection_url
+-%}
+<div class="kk-wrap">
+  <div class="kk-heading{% if section.settings.center %} kk-heading--center{% endif %}">
+    <h2 class="kk-title">{{ kk_title }}</h2>
+    {%- if section.settings.show_link -%}
+      <a class="kk-link" href="{{ kk_link }}">{{ kk_label }}</a>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Kashkoul heading",
+  "tag": "div",
+  "class": "kk-heading-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "default_text",
+      "label": "Standard title",
+      "options": [
+        { "value": "new_in_title", "label": "New in the Market" },
+        { "value": "categories_title", "label": "Shop by category" }
+      ],
+      "default": "new_in_title",
+      "info": "Shown in English or Arabic when Title is empty."
+    },
+    { "type": "text", "id": "title", "label": "Title" },
+    { "type": "checkbox", "id": "center", "label": "Center", "default": false },
+    { "type": "checkbox", "id": "show_link", "label": "Show link", "default": true },
+    { "type": "text", "id": "link_label", "label": "Link text", "info": "Leave empty for \"View all\"." },
+    { "type": "url", "id": "link", "label": "Link", "info": "Leave empty for all products." }
+  ],
+  "presets": [{ "name": "Kashkoul heading" }]
+}
+{% endschema %}

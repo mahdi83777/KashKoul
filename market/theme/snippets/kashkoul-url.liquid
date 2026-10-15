@@ -1,0 +1,5 @@
+{%- comment -%}
+  Outputs a store path in the visitor's language: '/pages/about' → '/pages/about' in English, '/ar/pages/about' in Arabic.
+  Accepts: path (string, starting with '/')
+{%- endcomment -%}
+{%- if routes.root_url == '/' -%}{{ path }}{%- else -%}{{ routes.root_url | append: path }}{%- endif -%}

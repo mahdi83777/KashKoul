@@ -1,0 +1,77 @@
+{%- comment -%}
+  Footer, after the Academy and Studio footers (brick section + the Kashkoul house on paper):
+  1. Brick section: label, title, and two rows (Shop · Help), with the storefront photo faded into the brick.
+     (Address, hours, WhatsApp and Instagram were taken out on purpose: WhatsApp is the floating button on every page.)
+  2. Paper band: the Academy / Studio / Market cards, then the Market logo and name, and the Miqvaro credit.
+  Shop and Help use the menus picked in the editor; with none picked they list the four categories and the help pages.
+  All labels in the visitor's language.
+{%- endcomment -%}
+<footer class="kk-footer">
+  <section class="kk-visit" aria-labelledby="kk-visit-title">
+    <img class="kk-visit__bg" src="{{ 'kashkoul-photo-storefront.jpg' | asset_url }}" alt="" aria-hidden="true" width="1240" height="899" loading="lazy">
+    <div class="kk-wrap kk-visit__in">
+      <p class="kk-visit__eyebrow">{{ 'kashkoul.footer.eyebrow' | t }}</p>
+      <h2 class="kk-visit__title" id="kk-visit-title">{{ 'kashkoul.footer.title' | t }}</h2>
+      <dl class="kk-visit__list">
+        <dt>{{ 'kashkoul.footer.shop' | t }}</dt>
+        <dd class="kk-visit__links">
+          {%- if section.settings.shop_menu != blank -%}
+            {%- for link in section.settings.shop_menu.links -%}
+              <a href="{{ link.url }}">{{ link.title | escape }}</a>
+            {%- endfor -%}
+          {%- else -%}
+            <a href="{{ routes.collections_url }}/instruments">{{ 'kashkoul.categories.instruments' | t }}</a>
+            <a href="{{ routes.collections_url }}/strings-accessories">{{ 'kashkoul.categories.strings' | t }}</a>
+            <a href="{{ routes.collections_url }}/art-supplies">{{ 'kashkoul.categories.art' | t }}</a>
+            <a href="{{ routes.collections_url }}/books-sheet-music">{{ 'kashkoul.categories.books' | t }}</a>
+          {%- endif -%}
+        </dd>
+        <dt>{{ 'kashkoul.footer.help' | t }}</dt>
+        <dd class="kk-visit__links">
+          {%- if section.settings.help_menu != blank -%}
+            {%- for link in section.settings.help_menu.links -%}
+              <a href="{{ link.url }}">{{ link.title | escape }}</a>
+            {%- endfor -%}
+          {%- else -%}
+            {%- assign pages = 'how-to-order:how_to_order,delivery-pickup:delivery,returns:returns,faq:faq' | split: ',' -%}
+            {%- for p in pages -%}
+              {%- assign parts = p | split: ':' -%}
+              {%- assign path = '/pages/' | append: parts[0] -%}
+              {%- assign label_key = 'kashkoul.footer.' | append: parts[1] -%}
+              <a href="{% render 'kashkoul-url', path: path %}">{{ label_key | t }}</a>
+            {%- endfor -%}
+          {%- endif -%}
+        </dd>
+      </dl>
+    </div>
+  </section>
+
+  <div class="kk-house-band">
+    <div class="kk-wrap">
+      {% render 'kashkoul-house', kind: 'doors' %}
+
+      <div class="kk-footer__bottom">
+        <a class="kk-footer__brand" href="{{ routes.root_url }}">
+          <img src="{{ 'kashkoul-market-logo-arch-brick.svg' | asset_url }}" alt="" width="303" height="184" loading="lazy">
+          <span>{{ 'kashkoul.footer.name' | t }}</span>
+        </a>
+        <span class="kk-footer__credit" lang="en" dir="ltr"><a href="https://miqvaro.com" target="_blank" rel="noopener noreferrer">{{ 'kashkoul.footer.credit' | t }} Miqvaro</a> <span>© {{ 'now' | date: '%Y' }}</span></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Kashkoul footer",
+  "tag": "div",
+  "class": "kk-footer-section",
+  "enabled_on": { "groups": ["footer"] },
+  "settings": [
+    { "type": "link_list", "id": "shop_menu", "label": "Shop links", "info": "Leave empty for the four categories." },
+    { "type": "link_list", "id": "help_menu", "label": "Help links", "info": "Leave empty for How to order, Delivery & pickup, Returns and FAQ." },
+    { "type": "paragraph", "content": "The Kashkoul sites cards come from shared/sites.json in the code." }
+  ],
+  "presets": [{ "name": "Kashkoul footer" }]
+}
+{% endschema %}

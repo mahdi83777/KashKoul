@@ -1,0 +1,138 @@
+{%- comment -%}
+  "Shop by category": one card per block. A card links to its collection and shows, in order of preference:
+  the photo picked on the card, the collection's own image, the theme's photo for that kind of card, or a colored
+  tile with an icon. The kind (instruments, strings, art, books) sets the defaults. Photos are toned brick-and-mustard
+  (setting "duotone") so every card looks like one family.
+{%- endcomment -%}
+{%- liquid
+  assign kk_title = section.settings.title | escape
+  if kk_title == blank
+    assign kk_title = 'kashkoul.home.categories_title' | t
+  endif
+-%}
+<section class="kk-cats">
+  <div class="kk-wrap">
+    <div class="kk-heading kk-heading--center">
+      <h2 class="kk-title">{{ kk_title }}</h2>
+    </div>
+    <div class="kk-cats__grid">
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign kind = block.settings.kind
+          assign c = block.settings.collection
+          case kind
+            when 'instruments'
+              assign kk_handle = 'instruments'
+              assign kk_photo = 'kashkoul-photo-daf.jpg'
+              assign kk_photo_w = 1083
+              assign kk_photo_h = 1600
+              assign kk_bg = '#66261c'
+              assign kk_fg = '#dabd5c'
+            when 'strings'
+              assign kk_handle = 'strings-accessories'
+              assign kk_photo = 'kashkoul-photo-strings.jpg'
+              assign kk_photo_w = 960
+              assign kk_photo_h = 1200
+              assign kk_bg = '#dabd5c'
+              assign kk_fg = '#66261c'
+            when 'art'
+              assign kk_handle = 'art-supplies'
+              assign kk_photo = 'kashkoul-photo-art.jpg'
+              assign kk_photo_w = 800
+              assign kk_photo_h = 1000
+              assign kk_bg = '#9b4a39'
+              assign kk_fg = '#f4ebe2'
+            else
+              assign kk_handle = 'books-sheet-music'
+              assign kk_photo = 'kashkoul-photo-books.jpg'
+              assign kk_photo_w = 960
+              assign kk_photo_h = 1200
+              assign kk_bg = '#e2d6c8'
+              assign kk_fg = '#66261c'
+          endcase
+          assign kk_name = block.settings.name | escape
+          if kk_name == blank
+            assign kk_key = 'kashkoul.categories.' | append: kind
+            assign kk_name = kk_key | t
+          endif
+          if c != blank
+            assign kk_url = c.url
+          else
+            assign kk_url = routes.collections_url | append: '/' | append: kk_handle
+          endif
+          assign kk_image = block.settings.image | default: c.featured_image
+        -%}
+        <a class="kk-cat" href="{{ kk_url }}" {{ block.shopify_attributes }}>
+          <span class="kk-cat__media{% if section.settings.duotone %} kk-cat__media--duotone{% endif %}" style="background: {{ kk_bg }}; color: {{ kk_fg }}">
+            {%- if kk_image != blank -%}
+              {{ kk_image | image_url: width: 900 | image_tag: widths: '300, 450, 600, 900', sizes: '(min-width: 990px) 280px, 50vw', loading: 'lazy', alt: '' }}
+            {%- elsif block.settings.use_photo -%}
+              <img src="{{ kk_photo | asset_url }}" alt="" width="{{ kk_photo_w }}" height="{{ kk_photo_h }}" loading="lazy">
+            {%- else -%}
+              {%- case kind -%}
+                {%- when 'instruments' -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".9" aria-hidden="true"><circle cx="9" cy="15" r="5"/><circle cx="9" cy="15" r="1.4"/><path d="M12.5 11.5l6.5-6.5M17.5 3.5l3 3"/></svg>
+                {%- when 'strings' -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".9" aria-hidden="true"><path d="M8 3v18M12 3v18M16 3v18"/><circle cx="8" cy="5" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="16" cy="5" r="1"/></svg>
+                {%- when 'art' -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".9" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 2-2s-1-1.5-1-2.5 1-1.5 2-1.5h2a4 4 0 0 0 4-4c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7" r="1"/></svg>
+                {%- else -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".9" aria-hidden="true"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H11v16H5.5c-.8 0-1.5-.7-1.5-1.5z"/><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H13v16h5.5c.8 0 1.5-.7 1.5-1.5z"/><path d="M15.5 8.5v4.2a1.3 1.3 0 1 1-.8-1.2V8l2.3-.5"/></svg>
+              {%- endcase -%}
+            {%- endif -%}
+          </span>
+          <span class="kk-cat__name">{{ kk_name }}</span>
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kashkoul categories",
+  "tag": "div",
+  "class": "kk-cats-section",
+  "max_blocks": 8,
+  "settings": [
+    { "type": "text", "id": "title", "label": "Title", "info": "Leave empty for \"Shop by category\" (Arabic shown automatically)." },
+    { "type": "checkbox", "id": "duotone", "label": "Tone photos in brick and mustard", "default": true, "info": "Keeps every card's photo in the Kashkoul colors, whatever photo is used." }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category",
+      "settings": [
+        {
+          "type": "select",
+          "id": "kind",
+          "label": "Kind",
+          "options": [
+            { "value": "instruments", "label": "Instruments" },
+            { "value": "strings", "label": "Strings & accessories" },
+            { "value": "art", "label": "Art supplies" },
+            { "value": "books", "label": "Books & sheet music" }
+          ],
+          "default": "instruments",
+          "info": "Sets the default name, icon and tile color."
+        },
+        { "type": "collection", "id": "collection", "label": "Collection" },
+        { "type": "text", "id": "name", "label": "Name", "info": "Leave empty for the standard name in English and Arabic." },
+        { "type": "image_picker", "id": "image", "label": "Photo", "info": "Leave empty for the collection's image, or a colored tile." },
+        { "type": "checkbox", "id": "use_photo", "label": "Use the theme's photo when there's no image", "default": true, "info": "Off: a colored tile with an icon." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kashkoul categories",
+      "blocks": [
+        { "type": "category", "settings": { "kind": "instruments" } },
+        { "type": "category", "settings": { "kind": "strings" } },
+        { "type": "category", "settings": { "kind": "art" } },
+        { "type": "category", "settings": { "kind": "books" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

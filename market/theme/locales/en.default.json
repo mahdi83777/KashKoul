@@ -371,5 +371,209 @@
       "default_title": "Default Title",
       "sticky_add_to_cart": "Quick add to cart bar"
     }
+  },
+  "kashkoul": {
+    "announcement": {
+      "text": "Cash on delivery, or pay with Whish",
+      "link": "Questions? Message us on WhatsApp",
+      "text_short": "Cash on delivery or Whish",
+      "link_short": "WhatsApp us"
+    },
+    "home": {
+      "headline": "Instruments and art supplies, sourced for you.",
+      "subline": "Brought in from the US and delivered anywhere in Lebanon. You pay when it arrives.",
+      "shop_now": "Shop now",
+      "photo_alt": "Hands playing a qanun",
+      "categories_title": "Shop by category",
+      "new_in_title": "New in the Market",
+      "view_all": "View all",
+      "panel_title": "From the people behind Kashkoul Academy",
+      "panel_text": "Kashkoul Academy teaches music in Khaldeh. The Market is its shop: instruments, accessories, art supplies and books, brought in from the US and delivered to your door.",
+      "panel_button": "About the Market",
+      "panel_photo_alt": "The Kashkoul storefront in Khaldeh",
+      "order_title": "How ordering works",
+      "order_intro": "Three steps. No card needed.",
+      "step_1_title": "Order on the site.",
+      "step_1_text": "Add what you need to your cart and place your order.",
+      "step_2_title": "We confirm on WhatsApp.",
+      "step_2_text": "We message you to confirm your order and the delivery day.",
+      "step_3_title": "Pay when it arrives.",
+      "step_3_text": "In cash or with Whish. Or pick it up free from Kashkoul in Khaldeh.",
+      "order_link": "How to order, in detail"
+    },
+    "categories": {
+      "instruments": "Instruments",
+      "strings": "Strings & accessories",
+      "art": "Art supplies",
+      "books": "Books & sheet music",
+      "all": "All products"
+    },
+    "footer": {
+      "shop": "Shop",
+      "help": "Help",
+      "how_to_order": "How to order",
+      "delivery": "Delivery & pickup",
+      "returns": "Returns",
+      "faq": "FAQ",
+      "about": "About",
+      "credit": "Website by",
+      "name": "Kashkoul Market",
+      "eyebrow": "Kashkoul Market · Delivered anywhere in Lebanon",
+      "title": "Sourced for you."
+    },
+    "whatsapp": {
+      "label": "Message us on WhatsApp",
+      "message": "Hi Kashkoul Market! I have a question."
+    },
+    "new_tab": "(opens in a new tab)",
+    "pages": {
+      "how_to_order": {
+        "eyebrow": "Help · How to order",
+        "title": "How to order",
+        "intro": "Three steps, and you never need a card. Order here, we confirm on WhatsApp, and you pay when it arrives.",
+        "photo_alt": "Hands playing a ney",
+        "steps_title": "Three steps, no card",
+        "step_1_title": "Order on the site",
+        "step_1_text": "Add what you need to your cart, check out, and leave a phone number we can reach on WhatsApp.",
+        "step_2_title": "We confirm on WhatsApp",
+        "step_2_text": "We message you to confirm the items, the price and the delivery day.",
+        "step_3_title": "Pay when it arrives",
+        "step_3_text": "In cash or with Whish. Or pick up your order free from Kashkoul in Khaldeh."
+      },
+      "delivery_pickup": {
+        "eyebrow": "Help · Delivery & pickup",
+        "title": "Delivery & pickup",
+        "intro": "We deliver anywhere in Lebanon for one flat fee, or you pick up your order free from Kashkoul in Khaldeh.",
+        "photo_alt": "Hands on a piano",
+        "delivery_label": "Delivery",
+        "delivery_big": "${{ fee }}",
+        "delivery_sub": "per order, anywhere in Lebanon",
+        "delivery_text": "We confirm the delivery day with you on WhatsApp. From time to time we run free-delivery offers; they're shown at the top of the site.",
+        "pickup_label": "Pickup",
+        "pickup_big": "Free",
+        "pickup_sub": "from Kashkoul in Khaldeh",
+        "pickup_text": "Mon–Sat, 12pm–8pm · Sundays by appointment. We'll tell you when your order is ready.",
+        "pickup_map": "See it on the map"
+      },
+      "returns": {
+        "eyebrow": "Help · Returns",
+        "title": "Returns",
+        "intro": "If something arrives damaged or isn't what you ordered, we'll make it right.",
+        "photo_alt": "Hands playing a guitar",
+        "window_big": "{{ hours }} hours",
+        "window_text": "to tell us, from the moment you receive your order.",
+        "case_1_title": "It arrived damaged",
+        "case_1_text": "Broken, scratched or not working when it reached you.",
+        "case_2_title": "It's not what you ordered",
+        "case_2_text": "A different item, size, color or version from your order.",
+        "case_result": "We'll exchange it or refund you, in cash or by Whish.",
+        "steps_title": "How to return something",
+        "step_1_title": "Message us on WhatsApp",
+        "step_1_text": "Within {{ hours }} hours of receiving it, with a photo of the item.",
+        "step_2_title": "We check and reply",
+        "step_2_text": "We answer the same day and agree with you on an exchange or a refund.",
+        "step_3_title": "Exchange or refund",
+        "step_3_text": "We swap the item, or refund you in cash or by Whish.",
+        "not_covered_title": "Change of mind",
+        "not_covered_text": "We can't take back items because of a change of mind, since most are ordered from the US especially for you.",
+        "warranty_title": "No warranty",
+        "warranty_text": "We don't offer a warranty beyond this {{ hours }}-hour check, so please look your order over when it arrives."
+      },
+      "faq": {
+        "eyebrow": "Help · FAQ",
+        "title": "Questions",
+        "intro": "Quick answers about ordering, paying, delivery and returns.",
+        "photo_alt": "Sheet music on a piano"
+      },
+      "about": {
+        "eyebrow": "About",
+        "title": "About the Market",
+        "intro": "Kashkoul Market is the shop of Kashkoul Academy, the music academy in Khaldeh.",
+        "photo_alt": "The Kashkoul storefront in Khaldeh"
+      }
+    },
+    "availability": {
+      "title": "In stock or on order?",
+      "intro": "Every product shows one of these two labels.",
+      "in_stock": "In stock",
+      "in_stock_time": "{{ days }} days",
+      "in_stock_text": "Already in Lebanon. Delivered anywhere in the country, or ready for free pickup in Khaldeh.",
+      "on_order": "On order",
+      "on_order_time": "{{ weeks }} weeks",
+      "on_order_text": "Ordered from the US after you order. We confirm the delivery date with you on WhatsApp.",
+      "delivered_in": "Delivered in"
+    },
+    "notes": {
+      "deposit_title": "Deposits on special orders",
+      "deposit_big": "{{ percent }}%",
+      "deposit_text": "For on-order items, when the order is over ${{ over }}, we ask for a {{ percent }}% deposit by Whish before we order it for you. You pay the rest on delivery.",
+      "discount_title": "Academy students and teachers",
+      "discount_big": "{{ percent }}% off",
+      "discount_text": "Ask us for your code on WhatsApp, and use it at checkout."
+    },
+    "cta": {
+      "request": {
+        "eyebrow": "Special requests",
+        "title": "Can't find it here?",
+        "text": "Send us the Amazon link on WhatsApp, with a photo if you like, and the size, color or version you want. We'll reply with a price.",
+        "button": "Send us a link on WhatsApp",
+        "message": "Hi Kashkoul Market! Can you get this for me? "
+      },
+      "question": {
+        "eyebrow": "Questions",
+        "title": "Still have a question?",
+        "text": "Message us on WhatsApp. We answer the same day.",
+        "button": "Ask us on WhatsApp",
+        "message": "Hi Kashkoul Market! I have a question: "
+      },
+      "returns": {
+        "eyebrow": "Returns",
+        "title": "Something wrong with your order?",
+        "text": "Message us on WhatsApp within {{ hours }} hours of receiving it, with a photo. We'll make it right.",
+        "button": "Tell us on WhatsApp",
+        "message": "Hi Kashkoul Market! There's a problem with my order: "
+      }
+    },
+    "faq": {
+      "ordering": "Ordering & payment",
+      "card_q": "Do I need a card to order?",
+      "card_a": "No. You pay on delivery, in cash or with Whish.",
+      "source_q": "Where do the products come from?",
+      "source_a": "They're new, bought from Amazon in the US and brought to Lebanon.",
+      "deposit_q": "Why is there sometimes a deposit?",
+      "deposit_a": "On-order items are bought for you before they ship. For orders over ${{ over }} we ask for {{ percent }}% first, by Whish.",
+      "discount_q": "I study at Kashkoul Academy. Is there a discount?",
+      "discount_a": "Yes. Students and teachers get {{ percent }}% off with a code; ask us on WhatsApp.",
+      "delivery": "Delivery",
+      "time_q": "How long does delivery take?",
+      "time_a": "In-stock items: {{ days }} days. On-order items: {{ weeks }} weeks.",
+      "where_q": "Do you deliver everywhere in Lebanon?",
+      "where_a": "Yes, for one flat fee of ${{ fee }}. Or pick up free in Khaldeh.",
+      "returns": "Returns",
+      "return_q": "Can I return something?",
+      "return_a": "Yes, if it arrives damaged or isn't what you ordered. Tell us within {{ hours }} hours.",
+      "warranty_q": "Is there a warranty?",
+      "warranty_a": "No, we don't offer a warranty. If an item arrives damaged or isn't what you ordered, tell us within {{ hours }} hours and we'll exchange or refund it.",
+      "requests": "Special requests",
+      "request_q": "Can you get something that isn't on the site?",
+      "request_a": "Yes. Send us the Amazon link on WhatsApp, with a photo if you like, and the size, color or version you want. We'll reply with a price."
+    },
+    "about": {
+      "statement": "We bring in instruments, accessories, art supplies and books from the US, and deliver them anywhere in Lebanon.",
+      "fact_1_title": "Brought in from the US",
+      "fact_1_text": "New products, bought from Amazon in the US. Can't find something here? Send us the link.",
+      "fact_2_title": "Delivered anywhere in Lebanon",
+      "fact_2_text": "${{ fee }} per order, or free pickup from Kashkoul in Khaldeh.",
+      "fact_3_title": "You pay when it arrives",
+      "fact_3_text": "Order online, we confirm on WhatsApp, and you pay in cash or with Whish. No card needed.",
+      "house_title": "One house, three doors",
+      "house_intro": "Kashkoul is one house in Khaldeh, with three doors.",
+      "academy_line": "The Academy teaches",
+      "academy_text": "Music lessons in Khaldeh, from complete beginner to advanced.",
+      "studio_line": "The Studio rents out the rooms",
+      "studio_text": "The same rooms, furnished and lit, by the hour or the day.",
+      "market_line": "The Market brings you what you need",
+      "market_text": "Instruments, strings, art supplies and books, to play and to make."
+    }
   }
 }

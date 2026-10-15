@@ -53,7 +53,6 @@ in the store.
 | Returns | Page | Also used as Shopify's refund policy |
 | FAQ | Page | |
 | About | Page | |
-| Contact | Page | WhatsApp, Instagram, map, hours |
 | Shipping, refund, privacy, terms | Shopify policies | Filled in step 7. Shipping and refund reuse the pages above. |
 
 **No customer accounts.** Customers order as guests with their name and phone number, which is simpler on a
@@ -63,26 +62,31 @@ phone. Shopify keeps their order history either way.
 
 ## 2. Menus
 
-**Main menu** (header on computers; the ☰ drawer on phones, which also gets About and Contact):
+**Main menu** (header on computers; the ☰ drawer on phones). "Shop" opens a dropdown with the categories.
+No Contact page: the WhatsApp number is on every page (changed 2026-10-15).
 
 | English | Arabic |
 |---|---|
-| Instruments | آلات موسيقية |
-| Strings & accessories | أوتار وإكسسوارات |
-| Art supplies | لوازم فنية |
-| Books & sheet music | كتب ونوتات موسيقية |
+| **Shop** ▾ | **تسوّق** ▾ |
+| — Instruments | — آلات موسيقية |
+| — Strings & accessories | — أوتار وإكسسوارات |
+| — Art supplies | — لوازم فنية |
+| — Books & sheet music | — كتب ونوتات موسيقية |
+| — All products | — كل المنتجات |
 | How to order | كيف تطلب |
 | About | عن السوق |
-| Contact | تواصل معنا |
 
-**Footer:**
+**Footer** (after the Academy and Studio footers; changed 2026-10-15):
 
-| Column | English | Arabic |
+| Part | English | Arabic |
 |---|---|---|
-| Shop | Instruments · Strings & accessories · Art supplies · Books & sheet music | آلات موسيقية · أوتار وإكسسوارات · لوازم فنية · كتب ونوتات موسيقية |
-| Help | How to order · Delivery & pickup · Returns · FAQ | كيف تطلب · التوصيل والاستلام · الاسترجاع · أسئلة شائعة |
-| Visit | Kashkoul, Khaldeh ↗ (map) · Mon–Sat, 12pm–8pm · Sundays by appointment · WhatsApp +961 78 721 968 · Instagram @kashkoul.academy | كشكول، خلدة ↗ · الاثنين–السبت، 12 ظهرًا–8 مساءً · الأحد بموعد مسبق · واتساب ‎+961 78 721 968 · إنستغرام ‎@kashkoul.academy |
-| Bottom line | Cash on delivery · Whish — Website by Miqvaro © [year] | الدفع عند الاستلام · Whish — Website by Miqvaro © [year] |
+| Brick section, label | Kashkoul Market · Delivered anywhere in Lebanon | سوق كشكول · نوصل إلى أي مكان في لبنان |
+| Brick section, title | Sourced for you. | نؤمّنها لك. |
+| Row: Shop | Instruments · Strings & accessories · Art supplies · Books & sheet music | آلات موسيقية · أوتار وإكسسوارات · لوازم فنية · كتب ونوتات موسيقية |
+| Row: Help | How to order · Delivery & pickup · Returns · FAQ | كيف تطلب · التوصيل والاستلام · الاسترجاع · أسئلة شائعة |
+| Paper band | The Academy / Studio / Market cards (below), then the Market logo + "Kashkoul Market" — Website by Miqvaro © [year] | البطاقات الثلاث، ثم شعار السوق + "سوق كشكول" — Website by Miqvaro © [year] |
+
+No address, hours, WhatsApp number or Instagram in the footer: WhatsApp is the floating button on every page.
 
 **Kashkoul house** (the strip above the header, and the three cards in the footer, as on the Academy and Studio):
 
@@ -97,8 +101,9 @@ phone. Shopify keeps their order history either way.
 ## 3. Homepage, in order
 
 1. **Kashkoul house strip**: Academy · Studio · Market
-2. **Announcement bar** (mustard)
-3. **Header**: search · logo · language · cart, menu below
+2. **Header**, one row as on the Academy and Studio: logo on the left · menu · search, language, cart on the right
+   (mirrored in Arabic). Menu items that don't fit fold into "More".
+3. **Announcement bar** (mustard), under the header, so the strip + header match the Academy and Studio exactly
 4. **Headline + photo**
 5. **Shop by category**: four cards
 6. **New in the Market**: latest products
@@ -111,6 +116,7 @@ phone. Shopify keeps their order history either way.
 | | English | Arabic |
 |---|---|---|
 | Default | Cash on delivery, or pay with Whish · Questions? Message us on WhatsApp | الدفع عند الاستلام أو عبر Whish · لأي سؤال، راسلنا على واتساب |
+| Default, on phones (one line) | Cash on delivery or Whish · WhatsApp us | الدفع عند الاستلام أو Whish · راسلنا على واتساب |
 | During a free-delivery offer | Free delivery on orders over $[X], until [date] | توصيل مجاني للطلبات فوق [X]$، حتى [التاريخ] |
 
 ### 3.4 Headline
@@ -239,121 +245,84 @@ Order emails and their wording come in step 5.
 
 ### How to order · كيف تطلب
 
-**English**
+Built as a designed page (theme template `page.how-to-order`), not a text page. Sections, in order; the text lives
+in `market/strings.json` (`kashkoul.pages.how_to_order`, `availability`, `notes`, `cta`). Numbers come from
+Theme settings → Kashkoul, so changing a number there changes every page in both languages.
 
-Ordering takes three steps, and you never need a card.
+| Section | English | Arabic |
+|---|---|---|
+| Title band (with the ney photo) | Help · How to order — **How to order** — Three steps, and you never need a card. Order here, we confirm on WhatsApp, and you pay when it arrives. | مساعدة · كيف تطلب — **كيف تطلب** — ثلاث خطوات، ولا حاجة لبطاقة أبدًا. تطلب من هنا، نؤكّد على واتساب، وتدفع عند الاستلام. |
+| Step cards: title | Three steps, no card | ثلاث خطوات، بلا بطاقة |
+| Step 1 | **Order on the site** — Add what you need to your cart, check out, and leave a phone number we can reach on WhatsApp. | **اطلب من الموقع** — أضف ما تحتاجه إلى السلة، أكمل الطلب، واترك رقم هاتف نتواصل معك عليه عبر واتساب. |
+| Step 2 | **We confirm on WhatsApp** — We message you to confirm the items, the price and the delivery day. | **نؤكّد على واتساب** — نراسلك لتأكيد القطع والسعر وموعد التوصيل. |
+| Step 3 | **Pay when it arrives** — In cash or with Whish. Or pick up your order free from Kashkoul in Khaldeh. | **ادفع عند الاستلام** — نقدًا أو عبر Whish، أو استلم طلبك مجانًا من كشكول في خلدة. |
+| In stock or on order? | Every product shows one of these two labels. | كل منتج يحمل إحدى هاتين العلامتين. |
+| — In stock card | In stock · Delivered in **[1–3] days** · Already in Lebanon. Delivered anywhere in the country, or ready for free pickup in Khaldeh. | متوفر · يصل خلال **[1–3] أيام** · موجود في لبنان. نوصله إلى أي مكان في البلد، أو يكون جاهزًا للاستلام المجاني من خلدة. |
+| — On order card | On order · Delivered in **[2–4] weeks** · Ordered from the US after you order. We confirm the delivery date with you on WhatsApp. | حسب الطلب · يصل خلال **[2–4] أسابيع** · نطلبه من الولايات المتحدة بعد طلبك، ونؤكّد معك موعد التوصيل على واتساب. |
+| Note: deposit | **[30]%** — Deposits on special orders — For on-order items, when the order is over $[100], we ask for a [30]% deposit by Whish before we order it for you. You pay the rest on delivery. | **[30]%** — العربون على الطلبات الخاصة — للقطع حسب الطلب، إذا تجاوز الطلب [100]$، نطلب عربونًا بنسبة [30]% عبر Whish قبل أن نطلبها لك، وتدفع الباقي عند الاستلام. |
+| Note: discount | **[10]% off** — Academy students and teachers — Ask us for your code on WhatsApp, and use it at checkout. | **خصم [10]%** — طلاب وأساتذة الأكاديمية — اطلبوا الرمز منّا على واتساب، واستعملوه عند إتمام الطلب. |
+| Mustard band | Special requests — **Can't find it here?** — Send us the Amazon link on WhatsApp, with a photo if you like, and the size, color or version you want. We'll reply with a price. — [Send us a link on WhatsApp] | طلبات خاصة — **لم تجد ما تبحث عنه؟** — أرسل لنا رابط المنتج على أمازون عبر واتساب، مع صورة إن أردت، والمقاس أو اللون أو النوع الذي تريده، ونرسل لك السعر. — [أرسل لنا رابطًا على واتساب] |
 
-1. **Order on the site.** Add what you need to your cart, check out, and leave a phone number we can reach on
-   WhatsApp.
-2. **We confirm on WhatsApp.** We message you to confirm the items, the price and the delivery day.
-3. **Pay when it arrives.** In cash or with Whish. Or pick up your order free from Kashkoul in Khaldeh.
-
-**In stock or on order?** Items marked *In stock* are already in Lebanon and arrive in 1–3 days. Items marked
-*On order* are ordered from the US after you order, and arrive in 2–4 weeks.
-
-**Deposits.** For on-order items, when the order is over $100, we ask for a 30% deposit by Whish before we
-order it for you. You pay the rest on delivery.
-
-**Academy students and teachers** get 10% off. Ask us for your code on WhatsApp.
-
-**Can't find it here?** Send us the Amazon link on WhatsApp, with a photo if you like, and the size, color or
-version you want. We'll reply with a price.
-
-**Arabic**
-
-الطلب في ثلاث خطوات، ولا حاجة لبطاقة أبدًا.
-
-1. **اطلب من الموقع.** أضف ما تحتاجه إلى السلة، أكمل الطلب، واترك رقم هاتف نتواصل معك عليه عبر واتساب.
-2. **نؤكّد على واتساب.** نراسلك لتأكيد القطع والسعر وموعد التوصيل.
-3. **ادفع عند الاستلام.** نقدًا أو عبر Whish، أو استلم طلبك مجانًا من كشكول في خلدة.
-
-**متوفر أم حسب الطلب؟** القطع المعلّمة *متوفر* موجودة في لبنان وتصل خلال 1–3 أيام. القطع المعلّمة *حسب الطلب*
-نطلبها من الولايات المتحدة بعد طلبك، وتصل خلال 2–4 أسابيع.
-
-**العربون.** للقطع حسب الطلب، إذا تجاوز الطلب 100$، نطلب عربونًا بنسبة 30% عبر Whish قبل أن نطلبها لك،
-وتدفع الباقي عند الاستلام.
-
-**طلاب وأساتذة الأكاديمية** لهم خصم 10%. اطلب رمزك منّا على واتساب.
-
-**لم تجد ما تبحث عنه؟** أرسل لنا رابط المنتج على أمازون عبر واتساب، مع صورة إن أردت، والمقاس أو اللون أو
-النوع الذي تريده، ونرسل لك السعر.
+Numbers in [brackets] are the Theme settings → Kashkoul values.
 
 ### Delivery & pickup · التوصيل والاستلام
 
-**English**
+Designed page (template `page.delivery-pickup`). Exact English and Arabic text: `market/strings.json` →
+`kashkoul.pages.delivery_pickup` (title band and the two cards), `availability`, `cta.question`.
 
-- **Delivery** anywhere in Lebanon: $5 per order.
-- **When:** in-stock items in 1–3 days, on-order items in 2–4 weeks. We confirm the day with you on WhatsApp.
-- **Free pickup** from Kashkoul in Khaldeh, Mon–Sat 12pm–8pm, Sundays by appointment. We'll tell you when it's
-  ready. [Map link]
-- **Offers:** from time to time we run free-delivery offers. They're shown at the top of the site.
-
-**Arabic**
-
-- **التوصيل** إلى أي مكان في لبنان: 5$ للطلب.
-- **المدة:** القطع المتوفرة خلال 1–3 أيام، والقطع حسب الطلب خلال 2–4 أسابيع. نؤكّد معك موعد التوصيل على واتساب.
-- **الاستلام المجاني** من كشكول في خلدة، الاثنين–السبت 12 ظهرًا–8 مساءً، والأحد بموعد مسبق. نخبرك عندما يصبح
-  طلبك جاهزًا. [رابط الخريطة]
-- **العروض:** نقدّم أحيانًا عروض توصيل مجاني، وتظهر في أعلى الموقع.
+1. **Title band** with the storefront photo: "Delivery & pickup" — We deliver anywhere in Lebanon for one flat fee, or
+   you pick up your order free from Kashkoul in Khaldeh.
+2. **Two cards:** brick **$[5]** per order, anywhere in Lebanon (we confirm the day on WhatsApp; free-delivery offers
+   are shown at the top of the site) · mustard **Free** pickup from Kashkoul in Khaldeh (hours, "we'll tell you when
+   it's ready", map button).
+3. **In stock or on order?** — the same two cards as on How to order.
+4. **Mustard band:** Still have a question? Message us on WhatsApp. We answer the same day.
 
 ### Returns · الاسترجاع
 
-**English**
+Designed page (template `page.returns`). Exact text: `kashkoul.pages.returns`, `cta.returns`.
 
-If an item arrives **damaged**, or **isn't what you ordered**, message us on WhatsApp **within 48 hours** of
-receiving it, with a photo. We'll exchange it or refund you, in cash or by Whish.
-
-We can't take back items because of a change of mind, since most are ordered from the US especially for you.
-
-**Arabic**
-
-إذا وصلتك القطعة **متضرّرة** أو **مختلفة عمّا طلبته**، راسلنا على واتساب **خلال 48 ساعة** من استلامها مع صورة لها،
-ونستبدلها أو نعيد لك المبلغ نقدًا أو عبر Whish.
-
-لا يمكننا استرجاع القطع بسبب تغيير الرأي، لأن معظمها نطلبه من الولايات المتحدة خصيصًا لك.
+1. **Title band** with the guitar photo: "Returns" — If something arrives damaged or isn't what you ordered, we'll
+   make it right.
+2. **[48] hours** to tell us (big brick card), beside the two cases we take back: it arrived damaged · it's not what
+   you ordered — "We'll exchange it or refund you, in cash or by Whish."
+3. **How to return something:** message us on WhatsApp with a photo → we check and reply the same day → exchange or
+   refund.
+4. **Two notes:** change of mind isn't covered (most items are ordered from the US especially for you) · no warranty
+   beyond the [48]-hour check.
+5. **Mustard band:** Something wrong with your order? Message us within [48] hours, with a photo.
 
 ### FAQ · أسئلة شائعة
 
-| English | Arabic |
+Designed page (template `page.faq`). Exact text: `kashkoul.pages.faq`, `kashkoul.faq`, `cta.question`. Questions and
+answers are the ones approved above in step 2, with numbers from Theme settings → Kashkoul, grouped and opening on tap:
+
+| Group | Questions |
 |---|---|
-| **Do I need a card to order?** No. You pay on delivery, in cash or with Whish. | **هل أحتاج إلى بطاقة للطلب؟** لا. تدفع عند الاستلام، نقدًا أو عبر Whish. |
-| **Where do the products come from?** They're new, bought from Amazon in the US and brought to Lebanon. | **من أين تأتي المنتجات؟** منتجات جديدة نشتريها من أمازون في الولايات المتحدة ونحضرها إلى لبنان. |
-| **How long does delivery take?** In-stock items: 1–3 days. On-order items: 2–4 weeks. | **كم يستغرق التوصيل؟** القطع المتوفرة: 1–3 أيام. القطع حسب الطلب: 2–4 أسابيع. |
-| **Do you deliver everywhere in Lebanon?** Yes, for one flat fee of $5. Or pick up free in Khaldeh. | **هل توصلون إلى كل لبنان؟** نعم، مقابل 5$ فقط، أو استلمه مجانًا من خلدة. |
-| **Why is there sometimes a deposit?** On-order items are bought for you before they ship. For orders over $100 we ask for 30% first, by Whish. | **لماذا يُطلب عربون أحيانًا؟** القطع حسب الطلب نشتريها لك قبل شحنها، لذلك نطلب 30% مسبقًا عبر Whish للطلبات فوق 100$. |
-| **Can I return something?** Yes, if it arrives damaged or isn't what you ordered. Tell us within 48 hours. | **هل يمكنني إرجاع قطعة؟** نعم، إذا وصلت متضرّرة أو مختلفة عمّا طلبته. أخبرنا خلال 48 ساعة. |
-| **Can you get something that isn't on the site?** Yes. Send us the Amazon link on WhatsApp, with a photo if you like, and the size, color or version you want. We'll reply with a price. | **هل يمكنكم إحضار منتج غير موجود على الموقع؟** نعم. أرسل لنا رابط المنتج على أمازون عبر واتساب، مع صورة إن أردت، والمقاس أو اللون أو النوع الذي تريده، ونرسل لك السعر. |
-| **Is there a warranty?** No, we don't offer a warranty. If an item arrives damaged or isn't what you ordered, tell us within 48 hours and we'll exchange or refund it. | **هل هناك كفالة؟** لا، لا نقدّم كفالة. إذا وصلت القطعة متضرّرة أو مختلفة عمّا طلبته، أخبرنا خلال 48 ساعة ونستبدلها أو نعيد لك المبلغ. |
-| **I study at Kashkoul Academy. Is there a discount?** Yes. Students and teachers get 10% off with a code; ask us on WhatsApp. | **أدرس في أكاديمية كشكول، هل من خصم؟** نعم، لطلاب وأساتذة الأكاديمية خصم 10% برمز خاص. اطلبه منّا على واتساب. |
+| Ordering & payment · الطلب والدفع | Do I need a card? · Where do the products come from? · Why is there sometimes a deposit? · Academy discount? |
+| Delivery · التوصيل | How long does delivery take? · Do you deliver everywhere in Lebanon? |
+| Returns · الاسترجاع | Can I return something? · Is there a warranty? |
+| Special requests · طلبات خاصة | Can you get something that isn't on the site? |
+
+Then the mustard band: Still have a question?
 
 ### About · عن السوق
 
-**English**
+Designed page (template `page.about`). Exact English and Arabic text: `market/strings.json` → `kashkoul.pages.about`,
+`kashkoul.about`, `cta.request`.
 
-Kashkoul Market is the shop of Kashkoul Academy, the music academy in Khaldeh. We bring in instruments,
-accessories, art supplies and books from the US, and deliver them anywhere in Lebanon. You order online, we
-confirm with you on WhatsApp, and you pay when it arrives.
+1. **Title band** with the storefront photo: "About the Market" — Kashkoul Market is the shop of Kashkoul Academy, the
+   music academy in Khaldeh.
+2. **Statement:** We bring in instruments, accessories, art supplies and books from the US, and deliver them anywhere
+   in Lebanon.
+3. **Three fact cards:** Brought in from the US · Delivered anywhere in Lebanon ($[5], or free pickup) · You pay when it
+   arrives (cash or Whish, no card).
+4. **One house, three doors:** a colored panel per site — The Academy teaches · The Studio rents out the rooms · The
+   Market brings you what you need — with links (from `shared/sites.json`).
+5. **Mustard band:** Can't find it here? Send us an Amazon link.
 
-Kashkoul is one house with three doors: the **Academy** teaches, the **Studio** rents out the rooms, and the
-**Market** brings you what you need to play and make.
-
-**Arabic**
-
-سوق كشكول هو متجر أكاديمية كشكول للموسيقى في خلدة. نستورد الآلات الموسيقية والإكسسوارات واللوازم الفنية والكتب
-من الولايات المتحدة، ونوصلها إلى أي مكان في لبنان. تطلب أونلاين، نؤكّد معك على واتساب، وتدفع عند الاستلام.
-
-كشكول بيت واحد بثلاثة أبواب: **الأكاديمية** تعلّم، و**الاستوديو** يؤجّر الغرف، و**السوق** يحضر لك ما تحتاجه
-للعزف والإبداع.
-
-### Contact · تواصل معنا
-
-| | English | Arabic |
-|---|---|---|
-| Title | Message us | راسلنا |
-| Line | WhatsApp is the fastest way to reach us. We answer the same day. | واتساب أسرع طريقة للتواصل معنا، ونردّ في اليوم نفسه. |
-| WhatsApp | +961 78 721 968 | ‎+961 78 721 968 |
-| Visit | Kashkoul, Khaldeh ↗ · Mon–Sat, 12pm–8pm · Sundays by appointment | كشكول، خلدة ↗ · الاثنين–السبت، 12 ظهرًا–8 مساءً · الأحد بموعد مسبق |
-| Instagram | @kashkoul.academy | ‎@kashkoul.academy |
+All help pages share one type scale and spacing (`--kk-fs-*`, `--kk-sec` in `snippets/kashkoul-head.liquid`). On
+phones and small tablets the title band shows no photo.
 
 ---
 

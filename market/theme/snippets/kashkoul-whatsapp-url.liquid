@@ -1,0 +1,14 @@
+{%- comment -%}
+  Outputs a wa.me link to the Kashkoul WhatsApp number (Theme settings → Kashkoul), with a pre-filled message.
+  Accepts: message (optional; defaults to the "Hi Kashkoul Market! I have a question." text in the visitor's language)
+{%- endcomment -%}
+{%- liquid
+  assign kk_number = settings.kashkoul_whatsapp | remove: '+' | remove: ' ' | remove: '-'
+  if message != blank
+    assign kk_message = message
+  else
+    assign kk_message = 'kashkoul.whatsapp.message' | t
+  endif
+  assign kk_text = kk_message | url_encode
+  echo 'https://wa.me/' | append: kk_number | append: '?text=' | append: kk_text
+-%}

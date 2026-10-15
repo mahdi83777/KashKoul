@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "title": { "type": "kashkoul-page-hero", "settings": { "page": "about", "title": "", "intro": "" } },
+    "about": { "type": "kashkoul-about", "settings": {} },
+    "house": { "type": "kashkoul-house-panels", "settings": {} },
+    "cta": { "type": "kashkoul-cta", "settings": { "variant": "request" } }
+  },
+  "order": ["title", "about", "house", "cta"]
+}

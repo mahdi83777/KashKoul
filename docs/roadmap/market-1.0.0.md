@@ -86,7 +86,7 @@ Style board: https://claude.ai/artifact/MxEH1FuL4xXiR77TH9PGaQ
 | Footer logo | Full lockup (Kashkoul · Market · EST 2026), mustard, on brick |
 | Buttons | Pill-shaped (fully rounded) |
 | Product cards | Photo on white, category label, name in Gloock, price; centered, no rounded corners |
-| Layout | After Shopify's Studio theme: centered logo with the menu below, big serif headline, photo next to a colored panel |
+| Layout | After Shopify's Studio theme: big serif headline, photo next to a colored panel. Header in one row with the logo on the left, as on the Academy and Studio (changed from the centered logo on 2026-10-15). |
 
 **Review:** colors, fonts, logo. → Approved 2026-10-15: option B, fonts and pieces as shown.
 
@@ -105,14 +105,23 @@ Agree on what the site contains and every sentence on it, before any page is bui
 
 **Review:** the structure and every sentence. → Approved 2026-10-15.
 
-## Step 3 — Homepage ⬜
+## Step 3 — Homepage 👀
 
-- [ ] Header with the Market logo, menu, language switch, search and cart
-- [ ] Strip linking to Academy and Studio, as on the other two sites
-- [ ] Homepage sections from step 2
-- [ ] Footer with the cards linking to the three sites, contact details, "Website by Miqvaro © year"
-- [ ] Floating WhatsApp button
-- [ ] Checked on phone and computer, in English and Arabic
+Preview: https://kashkoul-market-fhsuuq5c.myshopify.com/?preview_theme_id=189216391398 (Arabic: `/ar?preview_theme_id=…`)
+
+- [x] Header with the Market logo, menu, language switch, search and cart — one row, logo on the left (as on the
+      Academy and Studio), mirrored in Arabic
+- [x] Strip linking to Academy and Studio, as on the other two sites (generated from `shared/sites.json`)
+- [x] Homepage sections from step 2 (Kashkoul sections in `market/theme/sections/kashkoul-*.liquid`; English and
+      Arabic text from `market/strings.json`)
+- [x] Footer with the cards linking to the three sites, contact details, "Website by Miqvaro © year"
+- [x] Floating WhatsApp button
+- [x] Store content from `market/store/content.json`: 4 categories, 6 pages, main menu, Arabic translations,
+      Arabic published (`node market/tools/setup-store.mjs`)
+- [x] Checked on a computer in English and Arabic
+- [ ] Checked on a phone
+- [ ] Store settings (owner/you, in Shopify admin): currency USD, store name "Kashkoul Market", hide customer
+      account links
 
 **Review:** the homepage on the preview link.
 

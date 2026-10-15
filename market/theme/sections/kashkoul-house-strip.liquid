@@ -1,0 +1,21 @@
+{%- comment -%}
+  The thin strip linking the Kashkoul sites (Academy · Studio · Market), as on kashkoul.org.
+  Markup comes from shared/sites.json via market/tools/sync-house.mjs → snippets/kashkoul-house.liquid.
+{%- endcomment -%}
+{% render 'kashkoul-house', kind: 'strip' %}
+
+{% schema %}
+{
+  "name": "Kashkoul sites strip",
+  "tag": "div",
+  "class": "kk-house-section",
+  "enabled_on": { "groups": ["header"] },
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Links to the Kashkoul Academy and Studio. Edited in shared/sites.json in the code, not here."
+    }
+  ],
+  "presets": [{ "name": "Kashkoul sites strip" }]
+}
+{% endschema %}

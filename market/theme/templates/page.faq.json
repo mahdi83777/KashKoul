@@ -1,0 +1,27 @@
+{
+  "sections": {
+    "title": {
+      "type": "kashkoul-page-hero",
+      "settings": {
+        "page": "faq",
+        "title": "",
+        "intro": ""
+      }
+    },
+    "faq": {
+      "type": "kashkoul-faq",
+      "settings": {}
+    },
+    "cta": {
+      "type": "kashkoul-cta",
+      "settings": {
+        "variant": "question"
+      }
+    }
+  },
+  "order": [
+    "title",
+    "faq",
+    "cta"
+  ]
+}

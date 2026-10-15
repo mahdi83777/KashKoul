@@ -1,0 +1,77 @@
+{%- comment -%}
+  Homepage opening, after Studio: centered serif headline, a line below, a button, then a wide photo.
+  Empty text settings show the approved text in the visitor's language (market/strings.json → kashkoul.home).
+{%- endcomment -%}
+{%- liquid
+  assign kk_heading = section.settings.heading | escape
+  if kk_heading == blank
+    assign kk_heading = 'kashkoul.home.headline' | t
+  endif
+  assign kk_sub = section.settings.subheading | escape
+  if kk_sub == blank
+    assign kk_sub = 'kashkoul.home.subline' | t
+  endif
+  assign kk_button = section.settings.button_label | escape
+  if kk_button == blank
+    assign kk_button = 'kashkoul.home.shop_now' | t
+  endif
+  assign kk_link = section.settings.button_link | default: routes.all_products_collection_url
+  assign kk_alt = section.settings.image.alt
+  if kk_alt == blank
+    assign kk_alt = 'kashkoul.home.photo_alt' | t
+  endif
+-%}
+<section class="kk-hero">
+  <div class="kk-wrap">
+    <div class="kk-hero__text">
+      <h1 class="kk-title">{{ kk_heading }}</h1>
+      <p class="kk-hero__sub">{{ kk_sub }}</p>
+      {%- if section.settings.show_button -%}
+        <a class="kk-button" href="{{ kk_link }}">{{ kk_button }}</a>
+      {%- endif -%}
+    </div>
+    <div class="kk-hero__media">
+      {%- if section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 2400 | image_tag:
+          widths: '600, 900, 1200, 1600, 2000, 2400',
+          sizes: '(min-width: 1232px) 1152px, (min-width: 750px) calc(100vw - 80px), calc(100vw - 32px)',
+          loading: 'eager',
+          fetchpriority: 'high',
+          alt: kk_alt,
+          style: 'object-position: 50% 45%'
+        }}
+      {%- else -%}
+        <img
+          src="{{ 'kashkoul-photo-qanun.jpg' | asset_url }}"
+          alt="{{ kk_alt | escape }}"
+          width="1066"
+          height="1600"
+          loading="eager"
+          fetchpriority="high"
+          style="object-position: 50% 45%"
+        >
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kashkoul headline",
+  "tag": "div",
+  "class": "kk-hero-section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Leave the text fields empty to show the approved English and Arabic text."
+    },
+    { "type": "text", "id": "heading", "label": "Headline" },
+    { "type": "textarea", "id": "subheading", "label": "Line below the headline" },
+    { "type": "checkbox", "id": "show_button", "label": "Show button", "default": true },
+    { "type": "text", "id": "button_label", "label": "Button text" },
+    { "type": "url", "id": "button_link", "label": "Button link", "info": "Leave empty for all products." },
+    { "type": "image_picker", "id": "image", "label": "Photo", "info": "Wide photo. Leave empty for the Kashkoul qanun photo." }
+  ],
+  "presets": [{ "name": "Kashkoul headline" }]
+}
+{% endschema %}

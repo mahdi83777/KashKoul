@@ -2116,5 +2116,88 @@
         "default": "equal-width-buttons"
       }
     ]
+  },
+  {
+    "name": "Kashkoul",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Kashkoul Market settings. Text for the homepage, footer and messages comes in English and Arabic from the theme (market/strings.json); fill a section's text in the editor only to override it."
+      },
+      {
+        "type": "text",
+        "id": "kashkoul_whatsapp",
+        "label": "WhatsApp number",
+        "info": "Country code and number, digits only, e.g. 96178721968. Used by every WhatsApp button and link.",
+        "default": "96178721968"
+      },
+      {
+        "type": "text",
+        "id": "kashkoul_instagram",
+        "label": "Instagram handle",
+        "info": "Without the @.",
+        "default": "kashkoul.academy"
+      },
+      {
+        "type": "url",
+        "id": "kashkoul_map",
+        "label": "Map link (Kashkoul, Khaldeh)"
+      },
+      {
+        "type": "checkbox",
+        "id": "kashkoul_brand_fonts",
+        "label": "Use the Kashkoul fonts",
+        "info": "Gloock, Bricolage Grotesque and Fustat. Turn off to use the fonts chosen under Typography instead.",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "kashkoul_whatsapp_float",
+        "label": "Show the floating WhatsApp button",
+        "default": true
+      },
+      {
+        "type": "number",
+        "id": "kashkoul_delivery_fee",
+        "label": "Delivery fee ($)",
+        "default": 5
+      },
+      {
+        "type": "text",
+        "id": "kashkoul_days_in_stock",
+        "label": "Delivery time for in-stock items (days)",
+        "default": "1–3"
+      },
+      {
+        "type": "text",
+        "id": "kashkoul_weeks_on_order",
+        "label": "Delivery time for on-order items (weeks)",
+        "default": "2–4"
+      },
+      {
+        "type": "number",
+        "id": "kashkoul_deposit_over",
+        "label": "Deposit applies to orders over ($)",
+        "default": 100
+      },
+      {
+        "type": "number",
+        "id": "kashkoul_deposit_percent",
+        "label": "Deposit (%)",
+        "default": 30
+      },
+      {
+        "type": "number",
+        "id": "kashkoul_discount_percent",
+        "label": "Academy students and teachers discount (%)",
+        "default": 10
+      },
+      {
+        "type": "number",
+        "id": "kashkoul_return_hours",
+        "label": "Report damaged or wrong items within (hours)",
+        "default": 48
+      }
+    ]
   }
 ]
