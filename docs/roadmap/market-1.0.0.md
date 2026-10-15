@@ -25,6 +25,8 @@ approved, and approved steps are marked ✅ here with the date.
 | 2026-10-15 | **Colors: brick & mustard** (option B), Kashkoul fonts (Gloock, Bricolage Grotesque, Fustat), Studio-style layout | Chosen on the step 1 style board over deep green & sand pink. |
 | 2026-10-15 | **Running the shop:** Academy WhatsApp (+961 78 721 968); items in stock *and* on order; one flat delivery fee everywhere in Lebanon, with time-limited offers through Shopify Discounts; free pickup in Khaldeh; delivery 1–3 days (in stock) / 2–4 weeks (on order); deposit by Whish on on-order items above an amount (amount and % are editable settings); returns only for damaged or wrong items within 48 hours; prices in USD only; discount code for Academy students and teachers; Arabic in simple standard Arabic; Arabic name سوق كشكول | Answered in step 2, with Academy and Studio sites as the source for contact, hours and tone. Details in `docs/market/content.md`. |
 | 2026-10-15 | **Numbers:** delivery $5 flat; deposit 30% on on-order items when the order is over $100; Academy students and teachers 10% off; no warranty; special requests yes (Amazon link on WhatsApp, optional photo and variation) | Answered after the step 2 draft. |
+| 2026-10-15 | **Help pages are designed pages**, not text pages; all wording in `market/strings.json`, all shop numbers in theme settings | Text-only pages looked poor; one set of pieces (cards, big numbers, bands) keeps every page consistent and lets the owner change a number once. |
+| 2026-10-15 | **Header and menu:** logo left like the Academy and Studio; one "Shop" dropdown instead of four category tabs; one-tap language switch; no Contact page | The menu was crowded; WhatsApp is on every page, so a Contact page added nothing. |
 | 2026-10-15 | **English and Arabic** on every page, **mobile first** | Customers order from their phones, in either language. |
 | 2026-10-15 | **Build on a free development store** and move to a paid plan at launch | Costs nothing while building. Created as a "client transfer" store, so it becomes the real store at launch with nothing rebuilt. |
 | 2026-10-15 | **Theme base: Horizon** (Shopify's free theme, v4.3.0), **styled to look like Shopify's "Studio" theme** | Studio's look was the favorite (Atelier, Tinker and Horizon were also compared), but Studio has no Arabic support: no right-to-left layout and no Arabic text file. Horizon has both built in, and Studio's look is mostly settings (serif type, deep ink color on near-white, colored panels, pill buttons), which Horizon can reproduce. If the step 1 style board doesn't convince, the fallback is Studio with Arabic added by hand. |
@@ -105,25 +107,42 @@ Agree on what the site contains and every sentence on it, before any page is bui
 
 **Review:** the structure and every sentence. → Approved 2026-10-15.
 
-## Step 3 — Homepage 👀
+## Step 3 — Homepage, help pages & footer 🔄
 
 Preview: https://kashkoul-market-fhsuuq5c.myshopify.com/?preview_theme_id=189216391398 (Arabic: `/ar?preview_theme_id=…`)
 
-- [x] Header with the Market logo, menu, language switch, search and cart — one row, logo on the left (as on the
-      Academy and Studio), mirrored in Arabic
-- [x] Strip linking to Academy and Studio, as on the other two sites (generated from `shared/sites.json`)
-- [x] Homepage sections from step 2 (Kashkoul sections in `market/theme/sections/kashkoul-*.liquid`; English and
-      Arabic text from `market/strings.json`)
-- [x] Footer with the cards linking to the three sites, contact details, "Website by Miqvaro © year"
-- [x] Floating WhatsApp button
-- [x] Store content from `market/store/content.json`: 4 categories, 6 pages, main menu, Arabic translations,
-      Arabic published (`node market/tools/setup-store.mjs`)
-- [x] Checked on a computer in English and Arabic
-- [ ] Checked on a phone
-- [ ] Store settings (owner/you, in Shopify admin): currency USD, store name "Kashkoul Market", hide customer
-      account links
+**3a — Homepage and site frame** ✅ (built and reviewed 2026-10-15; committed `d376a5e`)
 
-**Review:** the homepage on the preview link.
+- [x] Header: Market logo on the left (as on the Academy and Studio), **Shop ▾** dropdown (the four categories + All
+      products) · How to order · About, one-tap language switch (عربي / English), search, cart; mirrored in Arabic
+- [x] Kashkoul strip (Academy · Studio · Market) above the header, mustard announcement under it (short wording on
+      phones)
+- [x] Homepage: headline + qanun photo, category cards (all four photos toned brick and mustard), New in the Market,
+      storefront photo + panel, how ordering works
+- [x] Footer: "Sourced for you." with Shop / Help rows, then the Academy / Studio / Market cards on paper
+- [x] Floating WhatsApp button
+- [x] Store content from `market/store/content.json`: 4 categories, 5 pages (Contact removed: WhatsApp is on every
+      page), main menu, Arabic translations, Arabic published (`node market/tools/setup-store.mjs`)
+- [x] Checked on a computer in English and Arabic, and on a phone (by you)
+- [x] Store name "Kashkoul Market"; customer account links hidden
+- [ ] Store currency → US dollars (Shopify admin → Settings → General), if not done yet
+
+**3b — Designed help pages** ✅ (approved 2026-10-15; committed `d376a5e`)
+
+- [x] How to order, Delivery & pickup, Returns, FAQ, About — each a designed page (title band with a toned photo,
+      icon cards, big-number cards, notes, tap-to-open FAQ, mustard WhatsApp band), English and Arabic
+- [x] Shop numbers are theme settings (Theme settings → Kashkoul): delivery fee, delivery times, deposit amount and %,
+      Academy discount, return window — they flow into every page in both languages
+- [x] One type scale and one section spacing for every page; title-band photo hidden on phones
+
+**3c — Homepage v2 and a new footer** 🔄
+
+- [ ] Mockup board: the homepage using the pages' pieces (big-number tiles, step cards, top questions, WhatsApp band)
+      and three footer directions (compact brick · logo statement · light and calm), English and Arabic
+- [ ] Your choice of footer and homepage changes
+- [ ] Build, check on computer and phone, in English and Arabic
+
+**Review:** the board first, then the built homepage and footer.
 
 ## Step 4 — Category & product pages ⬜
 
