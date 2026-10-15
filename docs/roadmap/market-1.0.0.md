@@ -109,7 +109,7 @@ Agree on what the site contains and every sentence on it, before any page is bui
 
 **Review:** the structure and every sentence. → Approved 2026-10-15.
 
-## Step 3 — Homepage, help pages & footer 🔄
+## Step 3 — Homepage, help pages & footer ✅ (2026-10-15)
 
 Preview: https://kashkoul-market-fhsuuq5c.myshopify.com/?preview_theme_id=189216391398 (Arabic: `/ar?preview_theme_id=…`)
 
@@ -137,18 +137,18 @@ Preview: https://kashkoul-market-fhsuuq5c.myshopify.com/?preview_theme_id=189216
       Academy discount, return window — they flow into every page in both languages
 - [x] One type scale and one section spacing for every page; title-band photo hidden on phones
 
-**3c — Homepage v2 and a new footer** 🔄
+**3c — Homepage v2 and a new footer** ✅ (committed `0a90f4c`, `40576fb`)
 
 - [x] Mockup board (https://claude.ai/artifact/6hPXdz2CKwWz1qK1gXjQ5b): the homepage using the pages' pieces (big-number tiles, step cards, top questions, WhatsApp band)
       and three footer directions (compact brick · logo statement · light and calm), English and Arabic
 - [x] Your choice: **footer A** (compact brick); the homepage stays about the Market and takes the pages' style (title band, delivery cards, step cards), not previews of the pages
 - [x] Built and checked on a computer, in English and Arabic
 - [x] Page width: content up to 1440px ("Wider", compared with 1152px and full width on the board)
-- [ ] Check on a phone
+- [x] Checked on a phone (by you)
 
-**Review:** the built homepage and footer.
+**Review:** the built homepage and footer. → Approved 2026-10-15.
 
-## Step 4 — Category & product pages ⬜
+## Step 4 — Category & product pages 🔄
 
 - [ ] 5–10 sample products added by hand, in English and Arabic
 - [ ] Category page: grid, filters, sorting
