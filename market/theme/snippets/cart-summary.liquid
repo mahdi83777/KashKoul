@@ -227,7 +227,8 @@
       class="cart-totals__item cart-totals__total"
       role="status"
     >
-      <span class="cart-totals__total-label cart-primary-typography">{{ 'content.cart_estimated_total' | t }}</span>
+      {%- comment -%} Kashkoul: "Subtotal", since delivery is added at checkout {%- endcomment -%}
+      <span class="cart-totals__total-label cart-primary-typography">{{ 'kashkoul.cart.subtotal' | t }}</span>
       <text-component
         ref="cartTotal"
         value="{{ total_price | strip_html }}"
@@ -247,7 +248,8 @@
       </span>
     {% endif %}
     <div class="cart-totals__item cart-totals__tax-note cart-primary-typography">
-      {% render 'tax-info', has_discounts_enabled: settings.show_add_discount_code %}
+      {%- comment -%} Kashkoul: delivery is added at checkout, nothing is paid now {%- endcomment -%}
+      {{ 'kashkoul.cart.note' | t }}
     </div>
   </div>
 </div>
@@ -264,7 +266,8 @@
     form="cart-form"
   >
     <span class="button-text">
-      {{ 'content.checkout' | t }}
+      {%- comment -%} Kashkoul: "Check out" / "إتمام الطلب" (Shopify's Arabic says "complete payment") {%- endcomment -%}
+      {{ 'kashkoul.cart.checkout' | t }}
     </span>
   </button>
 
@@ -279,6 +282,8 @@
     </div>
   {% endif %}
 </div>
+{%- comment -%} Kashkoul: delivery, deposit rule and Academy discount {%- endcomment -%}
+{%- render 'kashkoul-cart-info' -%}
 
 {% stylesheet %}
   .cart-actions {

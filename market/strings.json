@@ -240,6 +240,16 @@
         "one": "{{ count }} product",
         "other": "{{ count }} products"
       }
+    },
+    "cart": {
+      "title": "Your cart",
+      "subtotal": "Subtotal",
+      "checkout": "Check out",
+      "note": "Delivery is added at checkout. You won't pay now: we confirm on WhatsApp and you pay on delivery.",
+      "academy_html": "<strong>Academy student or teacher?</strong> Ask us for your discount code.",
+      "days": "{{ days }} days",
+      "weeks": "{{ weeks }} weeks",
+      "view_full": "View full cart"
     }
   },
   "ar": {
@@ -486,6 +496,16 @@
         "many": "{{ count }} منتجًا",
         "other": "{{ count }} منتج"
       }
+    },
+    "cart": {
+      "title": "سلّتك",
+      "subtotal": "المجموع",
+      "checkout": "إتمام الطلب",
+      "note": "تُضاف كلفة التوصيل عند إتمام الطلب. لن تدفع الآن: نؤكّد على واتساب وتدفع عند الاستلام.",
+      "academy_html": "<strong>طالب أو أستاذ في الأكاديمية؟</strong> اطلب منّا رمز الخصم.",
+      "days": "{{ days }} أيام",
+      "weeks": "{{ weeks }} أسابيع",
+      "view_full": "عرض السلّة كاملة"
     }
   }
 }

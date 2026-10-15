@@ -299,6 +299,8 @@
                       {%- endif -%}
                     {%- endif -%}
                   </div>
+                  {%- comment -%} Kashkoul: In stock / On order line for each item {%- endcomment -%}
+                  {%- render 'kashkoul-cart-line', item: item -%}
 
                   <div class="cart-items__unit-price-wrapper">
                     <div>

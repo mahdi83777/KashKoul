@@ -109,7 +109,9 @@
     "palette_selected_variant_background": "#66261c",
     "palette_selected_variant_text": "#f4ebe2",
     "palette_selected_variant_border": "#66261c",
-    "kashkoul_map": "https://www.google.com/maps/search/?api=1&query=33.788639,35.478889"
+    "kashkoul_map": "https://www.google.com/maps/search/?api=1&query=33.788639,35.478889",
+    "quick_add": true,
+    "mobile_quick_add": true
   },
   "presets": {
     "Default": {

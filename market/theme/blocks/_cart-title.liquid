@@ -25,7 +25,14 @@
     {%- if cart.empty? or force_empty -%}
       {{ 'content.your_cart_is_empty' | t }}
     {%- else -%}
-      {{ block_settings.title }}
+      {%- comment -%} Kashkoul: an empty title shows "Your cart" in the visitor's language {%- endcomment -%}
+      {%- liquid
+        assign kk_title = block_settings.title
+        if kk_title == blank
+          assign kk_title = 'kashkoul.cart.title' | t
+        endif
+      -%}
+      {{ kk_title }}
       {%- if block_settings.show_count -%}{% render 'cart-bubble' %}{%- endif -%}
     {%- endif -%}
   </h1>

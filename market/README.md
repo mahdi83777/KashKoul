@@ -24,7 +24,9 @@ Kashkoul changes live in new files named `kashkoul-…` wherever possible, so Ho
 The few edits to Horizon's own files are marked with a "Kashkoul:" comment (`layout/theme.liquid`,
 `blocks/_header-logo.liquid`, `sections/header.liquid`; `snippets/list-filter.liquid` and `snippets/price-filter.liquid`,
 where the phone filter drawer starts with every filter collapsed and each filter choice shows its product count; `blocks/filters.liquid`, for the full-width
-"Filter & sort" row on phones and the product count in proper English/Arabic plurals). One can't carry a comment because it's inside a JSON
+"Filter & sort" row on phones and the product count in proper English/Arabic plurals; the cart files
+`snippets/cart-products.liquid`, `snippets/cart-summary.liquid`, `snippets/cart-drawer.liquid` and `blocks/_cart-title.liquid`,
+for our cart wording, the availability line on each item and `snippets/kashkoul-cart-info.liquid` under Check out). One can't carry a comment because it's inside a JSON
 schema: `blocks/_product-card.liquid` lists `kashkoul-card-meta` among the blocks a product card accepts.
 
 ## The Kashkoul layer
@@ -52,6 +54,7 @@ market/
     ├── sections/kashkoul-collection-head  shop/category page header with category chips
     ├── snippets/kashkoul-stock-state   in stock / on order / sold out, from the stock count
     ├── assets/kashkoul-product.js      keeps the availability and deposit lines in step with the chosen option
+    ├── assets/kashkoul.js              site-wide: a click outside the open cart (computers) closes it
     └── templates/page.*.json           the designed pages: how-to-order, delivery-pickup, returns, faq, about
 ```
 

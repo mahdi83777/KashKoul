@@ -229,8 +229,11 @@ names (step 4c) are in `market/store/products.json`; the pattern is one short pa
 | Subtotal | Subtotal | المجموع |
 | Note | Delivery is added at checkout. You won't pay now: we confirm on WhatsApp and you pay on delivery. | تُضاف كلفة التوصيل عند إتمام الطلب. لن تدفع الآن: نؤكّد على واتساب وتدفع عند الاستلام. |
 | Discount line | Academy student or teacher? Ask us for your discount code. | طالب أو أستاذ في الأكاديمية؟ اطلب منّا رمز الخصم. |
-| Button | Check out | إتمام الطلب |
+| Button | Check out | إتمام الطلب (Shopify's own Arabic, "إتمام الدفع", says "complete payment", so the theme uses ours) |
 | Remove | Remove | إزالة |
+| Slide-out cart link | View full cart → | عرض السلّة كاملة ← |
+| Item line | In stock · 3–5 days · On order · 2–4 weeks | متوفر · ‎3–5 أيام · حسب الطلب · ‎2–4 أسابيع |
+| Under the button | Delivery line · deposit line (only with an on-order item in a cart over $100) · Academy discount line | the same lines, in Arabic |
 
 ---
 

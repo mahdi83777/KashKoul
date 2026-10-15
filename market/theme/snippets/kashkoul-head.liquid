@@ -3,6 +3,7 @@
   variables (theme-styles-variables, color-palette), so the overrides below win.
   Fonts are self-hosted woff2 files in assets/ (Latin, Latin Extended, Arabic subsets from Google Fonts, OFL).
 {%- endcomment -%}
+<script src="{{ 'kashkoul.js' | asset_url }}" defer></script>
 {%- if settings.favicon == blank -%}
   <link rel="icon" type="image/svg+xml" href="{{ 'kashkoul-favicon.svg' | asset_url }}">
 {%- endif -%}

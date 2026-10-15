@@ -187,7 +187,7 @@ Preview: https://kashkoul-market-fhsuuq5c.myshopify.com/?preview_theme_id=189216
 
 ## Step 5 — Ordering 🔄
 
-- [ ] Cart
+- [x] Cart (5a, waiting for approval): page and slide-out cart in English and Arabic. "Your cart" title; each item with its brand and an In stock / On order line; "Subtotal" with "Delivery is added at checkout. You won't pay now: we confirm on WhatsApp and you pay on delivery."; "Check out" / "إتمام الطلب" (Shopify's Arabic said "complete payment"); under the button: delivery $5 or free pickup, the deposit rule when it applies, the Academy discount line; the summary as a white card; "You may also like" in Arabic too. No payment icons or express-checkout buttons. The slide-out cart has a "View full cart" link to the cart page and closes on a click outside it (computers); product cards show the add-to-cart icon on phones too.
 - [ ] Checkout with two manual payment methods: "Cash on delivery" and "Whish (we'll contact you on WhatsApp)"
 - [ ] Ask for a phone number at checkout, and only the address fields that matter in Lebanon
 - [ ] Delivery fees and areas

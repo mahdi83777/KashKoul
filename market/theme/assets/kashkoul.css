@@ -531,3 +531,35 @@ product-card.product-card:hover { transform: translateY(-3px); box-shadow: 0 14p
 .kk-fcount { flex: none; min-width: 26px; padding: 2px 8px; border-radius: 100px; background: var(--kk-paper); color: var(--kk-muted);
   font-family: var(--kk-font-label); font-size: 12px; font-weight: 600; text-align: center; font-variant-numeric: tabular-nums; }
 .facets__inputs-list-item--disabled .kk-fcount { opacity: .5; }
+
+/* ---- cart (page and slide-out): Kashkoul edits in snippets/cart-products, cart-summary, cart-drawer, blocks/_cart-title ---- */
+.cart-page__title { padding-block: 40px 20px; }
+.cart-title h1 { font-family: var(--kk-font-title) !important; font-weight: var(--kk-title-weight) !important; font-size: var(--kk-fs-h2) !important; color: var(--kk-brick) !important; line-height: 1.05; }
+.cart-items__media img, .cart-items__media .placeholder-svg { background: #fff; object-fit: contain !important; border-radius: 12px; }
+.cart-items__media { background: #fff; border-radius: 12px; overflow: hidden; }
+.cart-items__title-row + p { margin: 2px 0 0; font-family: var(--kk-font-label); font-size: var(--kk-fs-label); font-weight: 700; letter-spacing: var(--kk-ls-label); text-transform: uppercase; color: var(--kk-terra); }
+html[lang='ar'] .cart-items__title-row + p { text-transform: none; letter-spacing: 0; }
+.cart-items__title { font-weight: 600; }
+.kk-cline { display: flex; align-items: center; gap: 6px; margin: 4px 0 0; font-family: var(--kk-font-label); font-size: 13px; font-weight: 600; color: var(--kk-muted); }
+.kk-cline__dot { width: 8px; height: 8px; border-radius: 50%; flex: none; background: var(--kk-line); }
+.kk-cline--in_stock .kk-cline__dot { background: var(--kk-brick); }
+.kk-cline--on_order .kk-cline__dot { background: var(--kk-mustard-2); }
+/* summary as a white card on the cart page */
+.cart-page__summary .cart-summary { background: #fff !important; border-radius: 16px; padding: 24px !important; }
+@media (max-width: 749px) { .cart-page__summary .cart-summary { padding: 18px; border-radius: 14px; } }
+.cart-totals__total-label { font-family: var(--kk-font-label); font-weight: 700; }
+.cart-totals__total-value { font-family: var(--kk-font-label); font-weight: 700; font-size: 22px !important; color: var(--kk-brick); }
+.cart-totals__tax-note { font-size: 14px; line-height: 1.5; color: var(--kk-muted); }
+.cart__checkout-button { min-height: 44px; height: 44px; padding-block: 0; font-size: 15px; }
+.kk-cinfo { margin-block-start: 18px; padding-block-start: 16px; border-block-start: 1px solid var(--kk-line); }
+@media (min-width: 750px) {
+  /* the summary is a card beside the items, not a full-height panel */
+  .cart-page .cart-page__summary { grid-row: 2 / -1 !important; height: auto !important; align-self: start !important; display: block !important; }
+  .cart-page .cart-page__title { grid-column: 1; grid-row: 1; }
+  .cart-page .cart-page__items { grid-column: 1; grid-row: 2; }
+  .cart-page .cart-page__more-blocks { grid-column: 1; grid-row: 3; }
+  .cart-page__summary .cart-summary { display: block; grid-row: auto; }
+  .cart-page__summary .cart-summary__inner { padding-block: 0 !important; }
+}
+.kk-cfull { display: flex; justify-content: center; align-items: center; gap: 6px; min-height: 40px; margin-block-start: 6px; font-weight: 700; font-size: 14px; }
+[dir="rtl"] .kk-cfull span { display: inline-block; transform: scaleX(-1); }

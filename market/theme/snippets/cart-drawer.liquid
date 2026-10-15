@@ -93,7 +93,8 @@
                 </span>
               {% endif %}
             {% endcapture %}
-            {% assign cart_drawer_title = 'content.cart_title' | t %}
+            {%- comment -%} Kashkoul: "Your cart" / "سلّتك" {%- endcomment -%}
+            {% assign cart_drawer_title = 'kashkoul.cart.title' | t %}
             {% render 'theme-drawer-header',
               title: cart_drawer_title,
               drawer_id: 'cart-drawer',

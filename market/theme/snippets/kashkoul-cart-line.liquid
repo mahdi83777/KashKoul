@@ -1,0 +1,20 @@
+{%- comment -%}
+  Cart item: "In stock · 3–5 days" / "On order · 2–4 weeks" / "Sold out", for the item's variant
+  (snippets/kashkoul-stock-state.liquid). Times from Theme settings → Kashkoul.
+  Accepts: item
+{%- endcomment -%}
+{%- liquid
+  capture state
+    render 'kashkoul-stock-state', variant: item.variant
+  endcapture
+  assign days = settings.kashkoul_days_in_stock | default: '3–5' | prepend: '⁦' | append: '⁩'
+  assign weeks = settings.kashkoul_weeks_on_order | default: '2–4' | prepend: '⁦' | append: '⁩'
+  assign label_key = 'kashkoul.product.' | append: state
+-%}
+{%- if state != 'none' -%}
+  <p class="kk-cline kk-cline--{{ state }}">
+    <span class="kk-cline__dot" aria-hidden="true"></span>
+    {{- label_key | t -}}
+    {%- if state == 'in_stock' %} · {{ 'kashkoul.cart.days' | t: days: days }}{% elsif state == 'on_order' %} · {{ 'kashkoul.cart.weeks' | t: weeks: weeks }}{% endif -%}
+  </p>
+{%- endif -%}
