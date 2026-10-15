@@ -1,0 +1,169 @@
+# Kashkoul Market 1.0.0 — roadmap
+
+**Goal:** launch Kashkoul Market, an online shop for instruments and art supplies bought from Amazon US and
+delivered in Lebanon, at `market.kashkoul.org`. English and Arabic, built for phones first.
+
+**How we work:** one step at a time. Each step ends with a review. Nothing moves to the next step until it's
+approved, and approved steps are marked ✅ here with the date.
+
+| Status | Meaning |
+|---|---|
+| ⬜ | Not started |
+| 🔄 | In progress |
+| 👀 | Ready for review |
+| ✅ | Approved |
+
+---
+
+## Decisions so far
+
+| Date | Decision | Why |
+|---|---|---|
+| 2026-10-15 | **Shopify**, not WordPress/WooCommerce or a custom build | Admin is easy for the owner, with orders, emails, analytics and a phone app included. No servers, updates or security work. Amazon importer apps exist if the catalog grows to thousands. |
+| 2026-10-15 | **Resell model.** We buy from Amazon US, then sell and deliver in Lebanon | Not affiliate links: Amazon US doesn't ship most items to Lebanon. |
+| 2026-10-15 | **No online payment.** Cash on delivery, or Whish arranged over WhatsApp | How customers in Lebanon already pay. Set up as Shopify "manual payment methods". |
+| 2026-10-15 | **Colors: brick & mustard** (option B), Kashkoul fonts (Gloock, Bricolage Grotesque, Fustat), Studio-style layout | Chosen on the step 1 style board over deep green & sand pink. |
+| 2026-10-15 | **English and Arabic** on every page, **mobile first** | Customers order from their phones, in either language. |
+| 2026-10-15 | **Build on a free development store** and move to a paid plan at launch | Costs nothing while building. Created as a "client transfer" store, so it becomes the real store at launch with nothing rebuilt. |
+| 2026-10-15 | **Theme base: Horizon** (Shopify's free theme, v4.3.0), **styled to look like Shopify's "Studio" theme** | Studio's look was the favorite (Atelier, Tinker and Horizon were also compared), but Studio has no Arabic support: no right-to-left layout and no Arabic text file. Horizon has both built in, and Studio's look is mostly settings (serif type, deep ink color on near-white, colored panels, pill buttons), which Horizon can reproduce. If the step 1 style board doesn't convince, the fallback is Studio with Arabic added by hand. |
+
+## Costs to expect
+
+| Item | Cost | When |
+|---|---|---|
+| Development store | Free | Now until launch |
+| Shopify Basic plan | $39/month, or $29/month paid yearly. New stores have usually had a few months at $1. | From launch |
+| Amazon importer app | Free for a few hundred products. About $10–30/month for thousands with automatic price sync. | Step 6 |
+| Domain | $0. Uses a subdomain of kashkoul.org, which we already own. | Launch |
+| Theme | $0 (Horizon is free) | — |
+| Card processing fees | None, because there's no online payment | — |
+
+Check prices on Shopify's site before paying. They change.
+
+---
+
+## Step 0 — Setup ✅ (2026-10-15)
+
+Store: `kashkoul-market-fhsuuq5c.myshopify.com` (created 2026-10-15 as a client transfer store, Basic plan).
+
+Get the development store running with the base theme so there is something to look at.
+
+- [x] Create a Shopify Partner account and a development store (client transfer, Basic plan) — *you*
+- [x] Share the store's `….myshopify.com` address
+- [x] Install Shopify's command-line tool and connect it to the store — *me*
+- [x] Upload Horizon unchanged and share a preview link — *me* (theme "Kashkoul Market — Horizon base", id 189216391398, unpublished)
+- [x] Turn on Arabic as a second language in the store settings (added, not yet published; translate in step 2)
+- [x] Optional: browse Shopify's other free themes in case one fits better (compared Studio, Atelier, Tinker, Horizon)
+
+**Review:** is Horizon the right base? → Yes, styled after Studio (see decisions).
+
+## Step 1 — Look & feel ✅ (2026-10-15)
+
+Style board: https://claude.ai/artifact/MxEH1FuL4xXiR77TH9PGaQ
+
+- [x] Color options: deep green + sand pink, brick + mustard, or both → **brick + mustard (option B)**
+- [x] Fonts: Bricolage Grotesque (English), Fustat (Arabic and body text), Gloock (titles), as on the Academy and Studio
+- [x] Logo: which Market lockup goes in the header, which in the footer, and the browser tab icon
+- [x] Buttons, product cards and price style
+- [x] Shown in English and Arabic, on a phone and on a computer
+
+**Approved look:**
+
+| Part | Choice |
+|---|---|
+| Page background | Paper `#f4ebe2` |
+| Behind product photos | White `#ffffff` |
+| Header, footer, buttons, titles | Brick `#66261c` (paper text on brick) |
+| Announcement bar, panels, highlights | Mustard `#dabd5c` (brick text on mustard) |
+| Small labels, links, second panel | Terracotta `#9b4a39` |
+| Body text | Ink `#1f1e21` |
+| Titles (English) | Gloock |
+| Menu, buttons, labels (English) | Bricolage Grotesque |
+| Body text, and all Arabic | Fustat (bold for Arabic titles) |
+| Header logo | Arched "Market" lockup, mustard, on the brick header |
+| Footer logo | Full lockup (Kashkoul · Market · EST 2026), mustard, on brick |
+| Buttons | Pill-shaped (fully rounded) |
+| Product cards | Photo on white, category label, name in Gloock, price; centered, no rounded corners |
+| Layout | After Shopify's Studio theme: centered logo with the menu below, big serif headline, photo next to a colored panel |
+
+**Review:** colors, fonts, logo. → Approved 2026-10-15: option B, fonts and pieces as shown.
+
+## Step 2 — Structure & words ⬜
+
+Agree on what the site contains and every sentence on it, before any page is built.
+
+- [ ] Site map: home, categories, product page, cart, about, how ordering works, delivery, FAQ, contact
+- [ ] Product categories, e.g. instruments, strings & accessories, art supplies (to be decided with the owner)
+- [ ] Homepage sections, in order
+- [ ] All text in English and Arabic: headline, how ordering works, delivery times and areas, cash on
+      delivery / Whish, returns, FAQ, footer
+- [ ] Menu labels and button text in both languages
+
+**Review:** the structure and every sentence.
+
+## Step 3 — Homepage ⬜
+
+- [ ] Header with the Market logo, menu, language switch, search and cart
+- [ ] Strip linking to Academy and Studio, as on the other two sites
+- [ ] Homepage sections from step 2
+- [ ] Footer with the cards linking to the three sites, contact details, "Website by Miqvaro © year"
+- [ ] Floating WhatsApp button
+- [ ] Checked on phone and computer, in English and Arabic
+
+**Review:** the homepage on the preview link.
+
+## Step 4 — Category & product pages ⬜
+
+- [ ] 5–10 sample products added by hand, in English and Arabic
+- [ ] Category page: grid, filters, sorting
+- [ ] Product page: photos, price, availability ("in stock" or "ships in about 2 weeks"), description
+- [ ] On every product: how to pay (cash on delivery or Whish) and the delivery time
+- [ ] Checked on phone and computer, in English and Arabic
+
+**Review:** how a product looks and reads.
+
+## Step 5 — Ordering ⬜
+
+- [ ] Cart
+- [ ] Checkout with two manual payment methods: "Cash on delivery" and "Whish (we'll contact you on WhatsApp)"
+- [ ] Ask for a phone number at checkout, and only the address fields that matter in Lebanon
+- [ ] Delivery fees and areas
+- [ ] Order emails (confirmation, shipped, delivered) written in English and Arabic
+- [ ] WhatsApp message templates for confirming an order
+- [ ] A full test order from a phone
+
+**Review:** the ordering experience and email text.
+
+## Step 6 — Products ⬜
+
+With the owner.
+
+- [ ] Get the list of products from the owner (Amazon links or wishlist)
+- [ ] Choose an Amazon importer app (candidates: Ryviu, GD Amazon Importer, Importio, Amazon Channel)
+- [ ] Pricing rule per category: Amazon price + shipping to Lebanon (by weight) + customs + margin
+- [ ] Check items can be shipped to Lebanon (no lithium batteries, liquids or oversized items via forwarder)
+- [ ] Import or add the first ~100 products. Arabic titles, and our own descriptions rather than Amazon's text.
+- [ ] Organize products into categories
+
+**Review:** prices and the catalog.
+
+## Step 7 — Launch ⬜
+
+- [ ] Choose the paid plan and transfer the store to the owner's account
+- [ ] Connect `market.kashkoul.org`
+- [ ] Policies: shipping, returns, privacy, terms, in English and Arabic
+- [ ] Analytics and Google/Meta sales channels (optional)
+- [ ] Set Market to `"live"` in `shared/sites.json` with its new address, then redeploy Academy and Studio
+- [ ] Remove the store password and launch
+
+**Review:** go live.
+
+---
+
+## Open questions
+
+- Which WhatsApp number receives Market orders? Is it the Academy's?
+- Delivery: which areas, what fee, how long from order to door?
+- Returns: what happens if an item arrives damaged or is the wrong one?
+- Which US freight forwarder brings the items to Lebanon? This sets the shipping cost per kg for pricing.
+- Prices in USD only, or also in LBP?
