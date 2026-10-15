@@ -55,9 +55,10 @@
     --kk-fs-label: 11px;                     /* small capital labels */
     --kk-ls-label: .14em;
     --kk-sec: 56px;                          /* space between sections */
-    /* One content width for Horizon's sections and ours: 1152px of content, 16px / 40px side margins (Horizon's). */
-    --narrow-page-width: 72rem;
-    --kk-content: 72rem;
+    /* One content width for Horizon's sections and ours: up to 1440px of content ("Wider", chosen 2026-10-15),
+       with Horizon's 16px / 40px side margins. Reading text keeps its own shorter measure. */
+    --narrow-page-width: 90rem;
+    --kk-content: 90rem;
     --kk-gutter: 16px;
   }
 {%- if settings.kashkoul_brand_fonts %}

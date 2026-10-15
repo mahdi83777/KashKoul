@@ -47,6 +47,9 @@
         </li>
       {%- endfor -%}
     </ol>
+    {%- if section.settings.show_link -%}
+      <div class="kk-steps__more"><a class="kk-button kk-button--outline" href="{% render 'kashkoul-url', path: '/pages/how-to-order' %}">{{ 'kashkoul.home.order_link' | t }}</a></div>
+    {%- endif -%}
   </div>
 </section>
 
@@ -65,7 +68,8 @@
         { "value": "returns", "label": "Returns" }
       ],
       "default": "how_to_order"
-    }
+    },
+    { "type": "checkbox", "id": "show_link", "label": "Show link to the How to order page", "default": false, "info": "For the homepage." }
   ],
   "presets": [{ "name": "Kashkoul step cards" }]
 }

@@ -399,7 +399,10 @@
       "step_2_text": "We message you to confirm your order and the delivery day.",
       "step_3_title": "Pay when it arrives.",
       "step_3_text": "In cash or with Whish. Or pick it up free from Kashkoul in Khaldeh.",
-      "order_link": "How to order, in detail"
+      "order_link": "How to order, in detail",
+      "eyebrow": "Kashkoul Market",
+      "how_to_order": "How to order",
+      "delivery_link": "Delivery & pickup, in detail"
     },
     "categories": {
       "instruments": "Instruments",
@@ -418,8 +421,10 @@
       "about": "About",
       "credit": "Website by",
       "name": "Kashkoul Market",
-      "eyebrow": "Kashkoul Market · Delivered anywhere in Lebanon",
-      "title": "Sourced for you."
+      "tagline": "Instruments and art supplies, sourced for you. Delivered anywhere in Lebanon; cash on delivery or Whish.",
+      "kashkoul": "Kashkoul",
+      "wa_button": "Message us on WhatsApp",
+      "copyright": "Kashkoul Market · Khaldeh, Lebanon"
     },
     "whatsapp": {
       "label": "Message us on WhatsApp",

@@ -76,17 +76,15 @@ No Contact page: the WhatsApp number is on every page (changed 2026-10-15).
 | How to order | كيف تطلب |
 | About | عن السوق |
 
-**Footer** (after the Academy and Studio footers; changed 2026-10-15):
+**Footer A, "compact brick"** (chosen 2026-10-15 on the homepage v2 board):
 
 | Part | English | Arabic |
 |---|---|---|
-| Brick section, label | Kashkoul Market · Delivered anywhere in Lebanon | سوق كشكول · نوصل إلى أي مكان في لبنان |
-| Brick section, title | Sourced for you. | نؤمّنها لك. |
-| Row: Shop | Instruments · Strings & accessories · Art supplies · Books & sheet music | آلات موسيقية · أوتار وإكسسوارات · لوازم فنية · كتب ونوتات موسيقية |
-| Row: Help | How to order · Delivery & pickup · Returns · FAQ | كيف تطلب · التوصيل والاستلام · الاسترجاع · أسئلة شائعة |
-| Paper band | The Academy / Studio / Market cards (below), then the Market logo + "Kashkoul Market" — Website by Miqvaro © [year] | البطاقات الثلاث، ثم شعار السوق + "سوق كشكول" — Website by Miqvaro © [year] |
-
-No address, hours, WhatsApp number or Instagram in the footer: WhatsApp is the floating button on every page.
+| Brand | Full Market logo · "Instruments and art supplies, sourced for you. Delivered anywhere in Lebanon; cash on delivery or Whish." · [Message us on WhatsApp] | الشعار · "آلات موسيقية ولوازم فنية، نؤمّنها لك. نوصل إلى أي مكان في لبنان، والدفع عند الاستلام أو عبر Whish." · [راسلنا على واتساب] |
+| Shop | Instruments · Strings & accessories · Art supplies · Books & sheet music · All products | آلات موسيقية · أوتار وإكسسوارات · لوازم فنية · كتب ونوتات موسيقية · كل المنتجات |
+| Help | How to order · Delivery & pickup · Returns · FAQ · About | كيف تطلب · التوصيل والاستلام · الاسترجاع · أسئلة شائعة · عن السوق |
+| Kashkoul | Academy ↗ · Studio ↗ · ● Market | الأكاديمية ↗ · الاستوديو ↗ · ● السوق |
+| Bar | © [year] Kashkoul Market · Khaldeh, Lebanon — Website by Miqvaro | © [year] سوق كشكول · خلدة، لبنان — Website by Miqvaro |
 
 **Kashkoul house** (the strip above the header, and the three cards in the footer, as on the Academy and Studio):
 
@@ -104,12 +102,18 @@ No address, hours, WhatsApp number or Instagram in the footer: WhatsApp is the f
 2. **Header**, one row as on the Academy and Studio: logo on the left · menu · search, language, cart on the right
    (mirrored in Arabic). Menu items that don't fit fold into "More".
 3. **Announcement bar** (mustard), under the header, so the strip + header match the Academy and Studio exactly
-4. **Headline + photo**
+4. **Headline**, in the help pages' title-band style: label "Kashkoul Market", title, intro, **Shop now** and **How to
+   order** buttons, the qanun photo toned brick and mustard (hidden on phones)
 5. **Shop by category**: four cards
 6. **New in the Market**: latest products
-7. **Photo + panel**: "From the people behind Kashkoul Academy"
-8. **How ordering works**: three steps
-9. **Footer**, with the Kashkoul house cards
+7. **Delivery & pickup**: the $5 / Free cards from the Delivery & pickup page, with a link to it
+8. **Three steps, no card**: the step cards from How to order, with a link to it
+9. **Photo + panel**: "From the people behind Kashkoul Academy"
+10. **Can't find it here?** WhatsApp band
+11. **Footer A** (below)
+
+(Homepage v2, 2026-10-15: the homepage stays about the Market and uses the pages' style; it doesn't preview other pages.
+Page width: content up to 1440px, with 40px side margins on computers and 16px on phones.)
 
 ### 3.2 Announcement bar
 

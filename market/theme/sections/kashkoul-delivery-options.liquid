@@ -6,6 +6,14 @@
   assign fee = settings.kashkoul_delivery_fee | default: 5
 -%}
 <section class="kk-options">
+  {%- if section.settings.show_title -%}
+    <div class="kk-wrap">
+      <div class="kk-heading kk-options__head">
+        <h2 class="kk-title">{{ 'kashkoul.pages.delivery_pickup.title' | t }}</h2>
+        <a class="kk-link" href="{% render 'kashkoul-url', path: '/pages/delivery-pickup' %}">{{ 'kashkoul.home.delivery_link' | t }} <span class="kk-house__go" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  {%- endif -%}
   <div class="kk-wrap kk-options__grid">
     <div class="kk-option kk-option--delivery">
       <span class="kk-option__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span>
@@ -33,6 +41,7 @@
   "tag": "div",
   "class": "kk-options-section",
   "settings": [
+    { "type": "checkbox", "id": "show_title", "label": "Show title and link to the Delivery & pickup page", "default": false, "info": "For the homepage." },
     { "type": "paragraph", "content": "The fee and the map link come from Theme settings → Kashkoul. Text in English and Arabic from the theme." }
   ],
   "presets": [{ "name": "Delivery and pickup" }]

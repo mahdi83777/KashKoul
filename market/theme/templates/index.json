@@ -16,7 +16,8 @@
         "subheading": "",
         "show_button": true,
         "button_label": "",
-        "button_link": ""
+        "button_link": "",
+        "show_order_button": true
       }
     },
     "kashkoul_categories": {
@@ -232,14 +233,23 @@
         "text_color": "#66261c"
       }
     },
-    "kashkoul_steps": {
-      "type": "kashkoul-steps",
+    "kashkoul_delivery": {
+      "type": "kashkoul-delivery-options",
       "settings": {
-        "title": "",
-        "intro": "",
-        "show_link": true,
-        "link_label": "",
-        "link": ""
+        "show_title": true
+      }
+    },
+    "kashkoul_how": {
+      "type": "kashkoul-step-cards",
+      "settings": {
+        "page": "how_to_order",
+        "show_link": true
+      }
+    },
+    "kashkoul_cta": {
+      "type": "kashkoul-cta",
+      "settings": {
+        "variant": "request"
       }
     }
   },
@@ -248,7 +258,9 @@
     "kashkoul_categories",
     "kashkoul_new_in",
     "product_list",
+    "kashkoul_delivery",
+    "kashkoul_how",
     "kashkoul_panel",
-    "kashkoul_steps"
+    "kashkoul_cta"
   ]
 }

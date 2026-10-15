@@ -27,6 +27,8 @@ approved, and approved steps are marked ✅ here with the date.
 | 2026-10-15 | **Numbers:** delivery $5 flat; deposit 30% on on-order items when the order is over $100; Academy students and teachers 10% off; no warranty; special requests yes (Amazon link on WhatsApp, optional photo and variation) | Answered after the step 2 draft. |
 | 2026-10-15 | **Help pages are designed pages**, not text pages; all wording in `market/strings.json`, all shop numbers in theme settings | Text-only pages looked poor; one set of pieces (cards, big numbers, bands) keeps every page consistent and lets the owner change a number once. |
 | 2026-10-15 | **Header and menu:** logo left like the Academy and Studio; one "Shop" dropdown instead of four category tabs; one-tap language switch; no Contact page | The menu was crowded; WhatsApp is on every page, so a Contact page added nothing. |
+| 2026-10-15 | **Homepage v2 and footer A:** the homepage stays about the Market (categories, products) in the pages' style, plus short Delivery and How-to-order sections; footer A "compact brick" | Chosen on the homepage v2 board; previews of other pages on the homepage were too much. |
+| 2026-10-15 | **Page width:** content up to 1440px, centered, 40px side margins; full width below that | Full width on laptops, comfortable line lengths on big monitors (full width compared and rejected). |
 | 2026-10-15 | **English and Arabic** on every page, **mobile first** | Customers order from their phones, in either language. |
 | 2026-10-15 | **Build on a free development store** and move to a paid plan at launch | Costs nothing while building. Created as a "client transfer" store, so it becomes the real store at launch with nothing rebuilt. |
 | 2026-10-15 | **Theme base: Horizon** (Shopify's free theme, v4.3.0), **styled to look like Shopify's "Studio" theme** | Studio's look was the favorite (Atelier, Tinker and Horizon were also compared), but Studio has no Arabic support: no right-to-left layout and no Arabic text file. Horizon has both built in, and Studio's look is mostly settings (serif type, deep ink color on near-white, colored panels, pill buttons), which Horizon can reproduce. If the step 1 style board doesn't convince, the fallback is Studio with Arabic added by hand. |
@@ -137,12 +139,14 @@ Preview: https://kashkoul-market-fhsuuq5c.myshopify.com/?preview_theme_id=189216
 
 **3c — Homepage v2 and a new footer** 🔄
 
-- [ ] Mockup board: the homepage using the pages' pieces (big-number tiles, step cards, top questions, WhatsApp band)
+- [x] Mockup board (https://claude.ai/artifact/6hPXdz2CKwWz1qK1gXjQ5b): the homepage using the pages' pieces (big-number tiles, step cards, top questions, WhatsApp band)
       and three footer directions (compact brick · logo statement · light and calm), English and Arabic
-- [ ] Your choice of footer and homepage changes
-- [ ] Build, check on computer and phone, in English and Arabic
+- [x] Your choice: **footer A** (compact brick); the homepage stays about the Market and takes the pages' style (title band, delivery cards, step cards), not previews of the pages
+- [x] Built and checked on a computer, in English and Arabic
+- [x] Page width: content up to 1440px ("Wider", compared with 1152px and full width on the board)
+- [ ] Check on a phone
 
-**Review:** the board first, then the built homepage and footer.
+**Review:** the built homepage and footer.
 
 ## Step 4 — Category & product pages ⬜
 

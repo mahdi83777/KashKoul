@@ -27,7 +27,10 @@
       "step_2_text": "We message you to confirm your order and the delivery day.",
       "step_3_title": "Pay when it arrives.",
       "step_3_text": "In cash or with Whish. Or pick it up free from Kashkoul in Khaldeh.",
-      "order_link": "How to order, in detail"
+      "order_link": "How to order, in detail",
+      "eyebrow": "Kashkoul Market",
+      "how_to_order": "How to order",
+      "delivery_link": "Delivery & pickup, in detail"
     },
     "categories": {
       "instruments": "Instruments",
@@ -46,8 +49,10 @@
       "about": "About",
       "credit": "Website by",
       "name": "Kashkoul Market",
-      "eyebrow": "Kashkoul Market · Delivered anywhere in Lebanon",
-      "title": "Sourced for you."
+      "tagline": "Instruments and art supplies, sourced for you. Delivered anywhere in Lebanon; cash on delivery or Whish.",
+      "kashkoul": "Kashkoul",
+      "wa_button": "Message us on WhatsApp",
+      "copyright": "Kashkoul Market · Khaldeh, Lebanon"
     },
     "whatsapp": {
       "label": "Message us on WhatsApp",
@@ -231,7 +236,10 @@
       "step_2_text": "نراسلك لتأكيد طلبك وموعد التوصيل.",
       "step_3_title": "ادفع عند الاستلام.",
       "step_3_text": "نقدًا أو عبر Whish، أو استلمه مجانًا من كشكول في خلدة.",
-      "order_link": "تفاصيل الطلب"
+      "order_link": "تفاصيل الطلب",
+      "eyebrow": "سوق كشكول",
+      "how_to_order": "كيف تطلب",
+      "delivery_link": "تفاصيل التوصيل والاستلام"
     },
     "categories": {
       "instruments": "آلات موسيقية",
@@ -250,8 +258,10 @@
       "about": "عن السوق",
       "credit": "Website by",
       "name": "سوق كشكول",
-      "eyebrow": "سوق كشكول · نوصل إلى أي مكان في لبنان",
-      "title": "نؤمّنها لك."
+      "tagline": "آلات موسيقية ولوازم فنية، نؤمّنها لك. نوصل إلى أي مكان في لبنان، والدفع عند الاستلام أو عبر Whish.",
+      "kashkoul": "كشكول",
+      "wa_button": "راسلنا على واتساب",
+      "copyright": "سوق كشكول · خلدة، لبنان"
     },
     "whatsapp": {
       "label": "راسلنا على واتساب",
