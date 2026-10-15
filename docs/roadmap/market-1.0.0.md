@@ -185,15 +185,16 @@ Preview: https://kashkoul-market-fhsuuq5c.myshopify.com/?preview_theme_id=189216
 
 **Review:** how a product looks and reads.
 
-## Step 5 — Ordering 🔄
+## Step 5 — Ordering 🔄 (built 2026-10-15; two checks left for Mohamad)
 
-- [x] Cart (5a, waiting for approval): page and slide-out cart in English and Arabic. "Your cart" title; each item with its brand and an In stock / On order line; "Subtotal" with "Delivery is added at checkout. You won't pay now: we confirm on WhatsApp and you pay on delivery."; "Check out" / "إتمام الطلب" (Shopify's Arabic said "complete payment"); under the button: delivery $5 or free pickup, the deposit rule when it applies, the Academy discount line; the summary as a white card; "You may also like" in Arabic too. No payment icons or express-checkout buttons. The slide-out cart has a "View full cart" link to the cart page and closes on a click outside it (computers); product cards show the add-to-cart icon on phones too.
-- [ ] Checkout with two manual payment methods: "Cash on delivery" and "Whish (we'll contact you on WhatsApp)"
-- [ ] Ask for a phone number at checkout, and only the address fields that matter in Lebanon
-- [ ] Delivery fees and areas
-- [ ] Order emails (confirmation, shipped, delivered) written in English and Arabic
-- [ ] WhatsApp message templates for confirming an order
-- [ ] A full test order from a phone
+- [x] **5a Cart** ✅: page and slide-out cart in English and Arabic. "Your cart" title; each item with its brand and an In stock / On order line; "Subtotal" with "Delivery is added at checkout. You won't pay now: we confirm on WhatsApp and you pay on delivery."; "Check out" / "إتمام الطلب" (Shopify's Arabic said "complete payment"); under the button: delivery $5 or free pickup, the deposit rule when it applies, the Academy discount line; the summary as a white card; "You may also like" in Arabic too. No payment icons or express-checkout buttons. The slide-out cart has a "View full cart" link to the cart page and closes on a click outside it (computers); product cards show the add-to-cart icon on phones too.
+- [x] **5b Checkout** with two manual payment methods: Shopify's "Cash on Delivery (COD)" and "Whish (we'll contact you on WhatsApp)", each with our instructions, in English and Arabic. No card provider. The note under Payment says nothing is paid online.
+- [x] Phone required in the address and labelled "WhatsApp number"; customers can leave a WhatsApp number or an email as contact; company name hidden; apartment and postal code optional; Shop-app link off.
+- [x] Delivery: Lebanon only, "Delivery anywhere in Lebanon" $5 flat (In stock: 3–5 days · On order: 2–4 weeks), no free-over-$45 rule; free pickup at "Kashkoul, Khaldeh" (usually ready in 2–4 days, with a pickup-ready message). The unused "International" zone was removed. The location's address is "Kashkoul Academy of Arts, Khaldeh": the owner should add the street.
+- [x] Checkout look: brick logo, brick buttons and links, paper order summary, Gloock headings, Fustat text. Checked in English and Arabic up to "Complete order" (no order placed).
+- [ ] **5c Order emails**: Shopify's own emails in English and Arabic with our logo and brick color, plus our payment instructions (in the order confirmation) — done. Our extra "what happens next" lines (`docs/market/order-emails.md`) wait for **Mohamad to verify the sender email** (Settings → Notifications → Sender email); Shopify locks template edits until then.
+- [x] **5d WhatsApp messages** for each moment of an order, in English and Arabic: `docs/market/whatsapp-templates.md`.
+- [ ] **5e A full test order from a phone** (Mohamad), English and Arabic: cash on delivery once, Whish once, delivery once, pickup once; then check the thank-you page and the email.
 
 **Review:** the ordering experience and email text.
 

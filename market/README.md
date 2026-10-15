@@ -33,7 +33,8 @@ schema: `blocks/_product-card.liquid` lists `kashkoul-card-meta` among the block
 
 ```
 market/
-├── strings.json            English + Arabic text for the Kashkoul sections (from docs/market/content.md)
+├── strings.json            English + Arabic text for the Kashkoul sections (from docs/market/content.md), plus
+│                           "shopify_overrides": our wording for some of Shopify's checkout text (contact/phone labels, payment note)
 ├── store/content.json      store content: categories, pages, main menu, their Arabic, published languages
 ├── store/products.json     sample products' clean-up: titles, descriptions, Arabic, options, photos to keep, stock
 ├── PHOTO-CREDITS.md        where the theme's photos come from

@@ -239,17 +239,29 @@ names (step 4c) are in `market/store/products.json`; the pattern is one short pa
 
 ## 7. Checkout (Shopify settings, not the theme)
 
+Set up in the Shopify admin on 2026-10-15 (step 5b). Arabic is registered as translations, so the Arabic checkout
+shows it automatically.
+
 | Setting | English | Arabic |
 |---|---|---|
-| Payment method 1 (manual) | Cash on delivery | الدفع عند الاستلام |
-| — its instructions | Pay in cash when your order arrives, or when you pick it up. | ادفع نقدًا عند وصول طلبك أو عند استلامه. |
-| Payment method 2 (manual) | Whish | Whish |
-| — its instructions | We'll send you the Whish details on WhatsApp after we confirm your order. | سنرسل لك تفاصيل Whish على واتساب بعد تأكيد طلبك. |
-| Delivery rate | Delivery anywhere in Lebanon — $5 | توصيل إلى أي مكان في لبنان — 5$ |
-| Pickup option | Free pickup at Kashkoul, Khaldeh (Mon–Sat, 12pm–8pm) | استلام مجاني من كشكول، خلدة (الاثنين–السبت، 12 ظهرًا–8 مساءً) |
-| Phone field | Phone (WhatsApp) — required | الهاتف (واتساب) — إلزامي |
+| Payment method 1 (manual, Shopify's Cash on Delivery) | Cash on Delivery (COD) | الدفع عند الاستلام |
+| — shown while choosing | Pay in cash when your order arrives, or when you pick it up. | ادفع نقدًا عند وصول طلبك أو عند استلامه. |
+| — shown after ordering | Thank you! We'll confirm your order with you on WhatsApp, then pay in cash when it arrives or when you pick it up. For items we order from the US, on orders over $100, we ask for a 30% deposit by Whish first. | شكرًا لك! سنؤكّد طلبك معك على واتساب، ثم تدفع نقدًا عند وصوله أو عند استلامه. للقطع التي نطلبها من الولايات المتحدة، في الطلبات فوق 100$، نطلب عربونًا بنسبة 30% عبر Whish أولًا. |
+| Payment method 2 (manual, custom) | Whish (we'll contact you on WhatsApp) | Whish (نتواصل معك على واتساب) |
+| — shown while choosing | We'll send you the Whish details on WhatsApp after we confirm your order. | سنرسل لك تفاصيل Whish على واتساب بعد تأكيد طلبك. |
+| — shown after ordering | Thank you! We'll message you on WhatsApp to confirm your order and send you the Whish details. Nothing is paid until we confirm. | شكرًا لك! سنراسلك على واتساب لتأكيد طلبك وإرسال تفاصيل Whish. لا تدفع شيئًا قبل أن نؤكّد. |
+| Note under "Payment" (replaces "All transactions are secure and encrypted") | Nothing is paid online. Pay on delivery, or by Whish after we confirm your order on WhatsApp. | لا دفع عبر الإنترنت. ادفع عند الاستلام، أو عبر Whish بعد أن نؤكّد طلبك على واتساب. |
+| Delivery rate (Lebanon only, $5 flat, no free-over rule; offers go through Discounts) | Delivery anywhere in Lebanon · In stock: 3–5 days · On order: 2–4 weeks | توصيل إلى أي مكان في لبنان · متوفر: 3–5 أيام · حسب الطلب: 2–4 أسابيع |
+| Pickup (free, location "Kashkoul, Khaldeh", usually ready in 2–4 days) | Pickup | استلام مجاني من كشكول، خلدة |
+| Pickup-ready message | Your order is ready! Pick it up free at Kashkoul in Khaldeh, Mon–Sat 12pm–8pm. Pay in cash or with Whish when you collect it. Questions? WhatsApp +961 78 721 968. | (one text only; Shopify has no Arabic version of it) |
+| Contact field (contact by phone or email) | WhatsApp number or email | رقم واتساب أو البريد الإلكتروني |
+| Phone field (required in the address) | WhatsApp number · tooltip: We confirm every order with you on WhatsApp. | رقم واتساب · نؤكّد كل طلب معك على واتساب. |
+| Other fields | Company name hidden · apartment optional · postal code optional (Lebanon's format) | |
+| Look | Brick logo, brick buttons and links, paper order summary, Gloock headings, Fustat text | |
 
-Order emails and their wording come in step 5.
+The contact, phone and payment-note wording lives in `market/strings.json` → `shopify_overrides` (our theme's
+language files), so it goes live with our theme. Order emails: `docs/market/order-emails.md`. WhatsApp messages:
+`docs/market/whatsapp-templates.md`.
 
 ---
 

@@ -1,5 +1,5 @@
 {
-  "_readme": "Kashkoul text used by the theme's own sections, in English and Arabic — from docs/market/content.md. Run `node market/tools/sync-strings.mjs` after editing; it copies each language into theme/locales/ (en.default.json, ar.json) under the \"kashkoul\" key. Section settings left empty in the theme editor show this text; a setting the owner fills in wins.",
+  "_readme": "Kashkoul text used by the theme's own sections, in English and Arabic — from docs/market/content.md. Run `node market/tools/sync-strings.mjs` after editing; it copies each language into theme/locales/ (en.default.json, ar.json) under the \"kashkoul\" key. Section settings left empty in the theme editor show this text; a setting the owner fills in wins. \"shopify_overrides\" holds our wording for some of Shopify's own checkout text (contact field labels), written under the \"shopify\" key.",
   "en": {
     "announcement": {
       "text": "Cash on delivery, or pay with Whish",
@@ -506,6 +506,42 @@
       "days": "{{ days }} أيام",
       "weeks": "{{ weeks }} أسابيع",
       "view_full": "عرض السلّة كاملة"
+    }
+  },
+  "shopify_overrides": {
+    "en": {
+      "checkout": {
+        "contact": {
+          "email_or_phone_label": "WhatsApp number or email",
+          "email_or_phone_placeholder": "WhatsApp number or email",
+          "phone_label": "WhatsApp number",
+          "phone_placeholder": "WhatsApp number",
+          "phone_tooltip": "We confirm every order with you on WhatsApp."
+        },
+        "shipping": {
+          "shipping_line_phone_label": "WhatsApp number (required)"
+        },
+        "payment": {
+          "card_security_notice": "Nothing is paid online. Pay on delivery, or by Whish after we confirm your order on WhatsApp."
+        }
+      }
+    },
+    "ar": {
+      "checkout": {
+        "contact": {
+          "email_or_phone_label": "رقم واتساب أو البريد الإلكتروني",
+          "email_or_phone_placeholder": "رقم واتساب أو البريد الإلكتروني",
+          "phone_label": "رقم واتساب",
+          "phone_placeholder": "رقم واتساب",
+          "phone_tooltip": "نؤكّد كل طلب معك على واتساب."
+        },
+        "shipping": {
+          "shipping_line_phone_label": "رقم واتساب (إلزامي)"
+        },
+        "payment": {
+          "card_security_notice": "لا دفع عبر الإنترنت. ادفع عند الاستلام، أو عبر Whish بعد أن نؤكّد طلبك على واتساب."
+        }
+      }
     }
   }
 }
