@@ -23,6 +23,8 @@ approved, and approved steps are marked ✅ here with the date.
 | 2026-10-15 | **Resell model.** We buy from Amazon US, then sell and deliver in Lebanon | Not affiliate links: Amazon US doesn't ship most items to Lebanon. |
 | 2026-10-15 | **No online payment.** Cash on delivery, or Whish arranged over WhatsApp | How customers in Lebanon already pay. Set up as Shopify "manual payment methods". |
 | 2026-10-15 | **Colors: brick & mustard** (option B), Kashkoul fonts (Gloock, Bricolage Grotesque, Fustat), Studio-style layout | Chosen on the step 1 style board over deep green & sand pink. |
+| 2026-10-15 | **Running the shop:** Academy WhatsApp (+961 78 721 968); items in stock *and* on order; one flat delivery fee everywhere in Lebanon, with time-limited offers through Shopify Discounts; free pickup in Khaldeh; delivery 1–3 days (in stock) / 2–4 weeks (on order); deposit by Whish on on-order items above an amount (amount and % are editable settings); returns only for damaged or wrong items within 48 hours; prices in USD only; discount code for Academy students and teachers; Arabic in simple standard Arabic; Arabic name سوق كشكول | Answered in step 2, with Academy and Studio sites as the source for contact, hours and tone. Details in `docs/market/content.md`. |
+| 2026-10-15 | **Numbers:** delivery $5 flat; deposit 30% on on-order items when the order is over $100; Academy students and teachers 10% off; no warranty; special requests yes (Amazon link on WhatsApp, optional photo and variation) | Answered after the step 2 draft. |
 | 2026-10-15 | **English and Arabic** on every page, **mobile first** | Customers order from their phones, in either language. |
 | 2026-10-15 | **Build on a free development store** and move to a paid plan at launch | Costs nothing while building. Created as a "client transfer" store, so it becomes the real store at launch with nothing rebuilt. |
 | 2026-10-15 | **Theme base: Horizon** (Shopify's free theme, v4.3.0), **styled to look like Shopify's "Studio" theme** | Studio's look was the favorite (Atelier, Tinker and Horizon were also compared), but Studio has no Arabic support: no right-to-left layout and no Arabic text file. Horizon has both built in, and Studio's look is mostly settings (serif type, deep ink color on near-white, colored panels, pill buttons), which Horizon can reproduce. If the step 1 style board doesn't convince, the fallback is Studio with Arabic added by hand. |
@@ -88,18 +90,20 @@ Style board: https://claude.ai/artifact/MxEH1FuL4xXiR77TH9PGaQ
 
 **Review:** colors, fonts, logo. → Approved 2026-10-15: option B, fonts and pieces as shown.
 
-## Step 2 — Structure & words ⬜
+## Step 2 — Structure & words ✅ (2026-10-15)
+
+Approved text: `docs/market/content.md`.
 
 Agree on what the site contains and every sentence on it, before any page is built.
 
-- [ ] Site map: home, categories, product page, cart, about, how ordering works, delivery, FAQ, contact
-- [ ] Product categories, e.g. instruments, strings & accessories, art supplies (to be decided with the owner)
-- [ ] Homepage sections, in order
-- [ ] All text in English and Arabic: headline, how ordering works, delivery times and areas, cash on
+- [x] Site map: home, categories, product page, cart, about, how ordering works, delivery, FAQ, contact
+- [x] Product categories: instruments, strings & accessories, art supplies, books & sheet music
+- [x] Homepage sections, in order
+- [x] All text in English and Arabic: headline, how ordering works, delivery times and areas, cash on
       delivery / Whish, returns, FAQ, footer
-- [ ] Menu labels and button text in both languages
+- [x] Menu labels and button text in both languages
 
-**Review:** the structure and every sentence.
+**Review:** the structure and every sentence. → Approved 2026-10-15.
 
 ## Step 3 — Homepage ⬜
 
@@ -141,7 +145,7 @@ With the owner.
 - [ ] Get the list of products from the owner (Amazon links or wishlist)
 - [ ] Choose an Amazon importer app (candidates: Ryviu, GD Amazon Importer, Importio, Amazon Channel)
 - [ ] Pricing rule per category: Amazon price + shipping to Lebanon (by weight) + customs + margin
-- [ ] Check items can be shipped to Lebanon (no lithium batteries, liquids or oversized items via forwarder)
+- [ ] Check items can be shipped to Lebanon (no lithium batteries, liquids or oversized items)
 - [ ] Import or add the first ~100 products. Arabic titles, and our own descriptions rather than Amazon's text.
 - [ ] Organize products into categories
 
@@ -162,8 +166,4 @@ With the owner.
 
 ## Open questions
 
-- Which WhatsApp number receives Market orders? Is it the Academy's?
-- Delivery: which areas, what fee, how long from order to door?
-- Returns: what happens if an item arrives damaged or is the wrong one?
-- Which US freight forwarder brings the items to Lebanon? This sets the shipping cost per kg for pricing.
-- Prices in USD only, or also in LBP?
+None right now.
