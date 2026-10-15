@@ -1,7 +1,8 @@
 {%- comment -%}
   Shop / category page header: "Shop" label, the category title and description, then the categories as chips for
   one-tap switching. The chips are the links under "Shop" in the main menu (Online Store → Navigation), so the owner
-  manages them there; the current category is highlighted.
+  manages them there; the current category is highlighted. A category with links under it (e.g. Instruments → Oud &
+  saz, Violin…) shows them as a second, smaller row while you're in it or in one of them.
 {%- endcomment -%}
 {%- liquid
   assign kk_menu = linklists[section.settings.menu]
@@ -13,6 +14,21 @@
     endif
   endfor
   assign kk_title = collection.title | default: page_title
+
+  assign kk_parent = null
+  for link in kk_links
+    if link.links.size == 0
+      continue
+    endif
+    if link.url == collection.url or link.active or link.child_active
+      assign kk_parent = link
+    endif
+    for sub in link.links
+      if sub.url == collection.url
+        assign kk_parent = link
+      endif
+    endfor
+  endfor
 -%}
 <div class="kk-wrap">
   <header class="kk-chead">
@@ -26,11 +42,24 @@
         {%- for link in kk_links -%}
           {%- liquid
             assign kk_on = false
-            if link.active or link.url == collection.url
+            if link.active or link.child_active or link.url == collection.url or link.url == kk_parent.url
               assign kk_on = true
             endif
           -%}
           <a class="kk-chip{% if kk_on %} is-on{% endif %}" href="{{ link.url }}"{% if kk_on %} aria-current="page"{% endif %}>{{ link.title | escape }}</a>
+        {%- endfor -%}
+      </nav>
+    {%- endif -%}
+    {%- if kk_parent -%}
+      <nav class="kk-chips kk-chips--sub" aria-label="{{ kk_parent.title | escape }}">
+        {%- for sub in kk_parent.links -%}
+          {%- liquid
+            assign kk_on = false
+            if sub.active or sub.url == collection.url
+              assign kk_on = true
+            endif
+          -%}
+          <a class="kk-chip kk-chip--sub{% if kk_on %} is-on{% endif %}" href="{{ sub.url }}"{% if kk_on %} aria-current="page"{% endif %}>{{ sub.title | escape }}</a>
         {%- endfor -%}
       </nav>
     {%- endif -%}

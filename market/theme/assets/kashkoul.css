@@ -422,7 +422,7 @@ media-gallery .product-media-container { aspect-ratio: auto !important; height: 
   box-shadow: 0 14px 30px rgba(31,30,33,.16);
 }
 #header-component .menu-list__list-item:not([slot='overflow']) > .menu-list__submenu .menu-list__submenu-inner { transform: none; padding: 12px 22px 16px; max-height: none; opacity: 1; }
-#header-component .menu-list__list-item:not([slot='overflow']) > .menu-list__submenu .mega-menu { width: auto; margin: 0; padding: 0; display: block; }
+#header-component .menu-list__list-item:not([slot='overflow']) > .menu-list__submenu .mega-menu { flex: 1 1 auto; width: auto; margin: 0; padding: 0; display: block; }
 #header-component .menu-list__list-item:not([slot='overflow']) > .menu-list__submenu .mega-menu__grid { display: block; }
 #header-component .menu-list__list-item:not([slot='overflow']) > .menu-list__submenu .mega-menu__list { display: flex; flex-direction: column; gap: 0; }
 #header-component .menu-list__list-item:not([slot='overflow']) > .menu-list__submenu .mega-menu__link {
@@ -430,6 +430,21 @@ media-gallery .product-media-container { aspect-ratio: auto !important; height: 
   letter-spacing: .02em; text-transform: none; color: var(--kk-brick); }
 #header-component .menu-list__list-item:not([slot='overflow']) > .menu-list__submenu .mega-menu__link:hover { color: var(--kk-terra); }
 html[lang='ar'] #header-component .menu-list__list-item:not([slot='overflow']) > .menu-list__submenu .mega-menu__link { font-size: 16px; letter-spacing: 0; }
+/* a category with sub-categories: its name, then a +/− that opens them (closed by default) */
+#header-component .menu-list__list-item:not([slot='overflow']) > .menu-list__submenu .mega-menu__column > div:has(> .kk-subtoggle) {
+  display: grid; grid-template-columns: 1fr auto; align-items: center; column-gap: 12px; width: 100%; }
+#header-component .menu-list__list-item:not([slot='overflow']) > .menu-list__submenu .mega-menu__list > .mega-menu__column { width: 100%; }
+#header-component .menu-list__list-item:not([slot='overflow']) > .menu-list__submenu .mega-menu__column > div:has(> .kk-subtoggle) > ul { grid-column: 1 / -1; }
+.kk-subtoggle { position: relative; width: 32px; height: 32px; padding: 0; border: 0; border-radius: 50%; background: transparent; color: var(--kk-brick); cursor: pointer; }
+.kk-subtoggle:hover { background: var(--kk-paper-2); }
+.kk-subtoggle::before, .kk-subtoggle::after { content: ''; position: absolute; inset-block-start: 50%; inset-inline-start: 50%; width: 12px; height: 2px; margin: -1px 0 0 -6px; background: currentColor; border-radius: 1px; transition: transform .15s; }
+.kk-subtoggle::after { transform: rotate(90deg); }
+.kk-subtoggle[aria-expanded='true']::after { transform: rotate(0deg); }
+.kk-subtoggle[aria-expanded='false'] + ul { display: none; }
+/* sub-categories (e.g. Instruments → Oud & saz): indented under their category, lighter */
+#header-component .menu-list__list-item:not([slot='overflow']) > .menu-list__submenu .mega-menu__column ul .mega-menu__link {
+  min-height: 32px; padding-inline-start: 14px; font-weight: 500; color: var(--kk-ink); }
+#header-component .menu-list__list-item:not([slot='overflow']) > .menu-list__submenu .mega-menu__column > div + ul { padding-block-end: 6px; }
 
 /* ---- brand touches on Horizon ---- */
 /* Phone menu (drawer): calmer than Horizon's 28px capitals. */
@@ -499,6 +514,11 @@ product-card.product-card { position: relative; }
   font-family: var(--kk-font-label); font-size: 15px; font-weight: 600; color: var(--kk-ink); text-decoration: none; white-space: nowrap; transition: background-color .15s, border-color .15s, color .15s; }
 .kk-chip:hover { border-color: var(--kk-brick); }
 .kk-chip.is-on { background: var(--kk-brick); border-color: var(--kk-brick); color: var(--kk-paper); }
+/* sub-categories (e.g. under Instruments): a second, lighter row */
+.kk-chips--sub { margin-block-start: 12px; gap: 6px; }
+.kk-chip--sub { min-height: 34px; padding: 0 14px; font-size: 14px; background: transparent; border-color: transparent; color: var(--kk-muted); }
+.kk-chip--sub:hover { border-color: #cdbcaa; color: var(--kk-ink); }
+.kk-chip--sub.is-on { background: var(--kk-paper-2); border-color: var(--kk-brick); color: var(--kk-brick); }
 @media (max-width: 749px) {
   .kk-chead { padding-block: 24px 18px; margin-block-end: 16px; }
   .kk-chips { margin-block-start: 18px; margin-inline: calc(-1 * var(--kk-gutter, 20px)); padding-inline: var(--kk-gutter, 20px); }
@@ -520,6 +540,11 @@ product-card.product-card:hover { transform: translateY(-3px); box-shadow: 0 14p
 /* phones: one full-width "Filter & sort" row with the item count on the other side (Kashkoul edit in blocks/filters.liquid) */
 @media (max-width: 749px) {
   .facets-toggle__wrapper { width: 100%; }
+  /* with the sidebar style, Horizon drops the row's spacing on phones: keep a gap before the products, and line the
+     row up with the product grid (its styles load after this file and zero the margin with a two-class selector, hence the
+     longer selector here) */
+  body .collection-wrapper .facets-toggle { height: auto; margin: 0 0 16px; padding-block: 0; }
+  body .facets-toggle__wrapper { margin-inline-start: 0; }
   .facets-toggle__button { width: 100%; justify-content: flex-start; gap: 10px; min-height: 44px; padding-inline: 16px; }
   .facets-toggle__button .kk-ftoggle__count { margin-inline-start: auto; font-weight: 500; font-size: 14px; color: var(--kk-muted); }
 }

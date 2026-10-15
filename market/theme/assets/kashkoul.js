@@ -15,3 +15,11 @@ document.addEventListener('click', (event) => {
 
   drawer.close();
 });
+
+// The header's Shop menu: the +/− next to a category opens or closes its sub-categories (snippets/mega-menu-list.liquid).
+document.addEventListener('click', (event) => {
+  const toggle = event.target instanceof Element ? event.target.closest('.kk-subtoggle') : null;
+  if (!toggle) return;
+  event.preventDefault();
+  toggle.setAttribute('aria-expanded', String(toggle.getAttribute('aria-expanded') !== 'true'));
+});

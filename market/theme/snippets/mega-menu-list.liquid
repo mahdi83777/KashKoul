@@ -136,7 +136,16 @@
         </span>
       </a>
       {% if link.links != blank %}
+        {%- # Kashkoul: a +/− button opens the sub-categories (always closed at first); kashkoul.js -%}
+        <button
+          type="button"
+          class="kk-subtoggle"
+          aria-expanded="false"
+          aria-controls="{{ id }}-sub-{{ forloop.index }}"
+          aria-label="{{ link.title | escape }}"
+        ></button>
         <ul
+          id="{{ id }}-sub-{{ forloop.index }}"
           class="list-unstyled"
           {% if should_break_columns %}
             style="column-count: {{ column_span }};"
