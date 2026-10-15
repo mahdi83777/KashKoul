@@ -385,7 +385,9 @@
         "shipping_line_phone_label": "WhatsApp number (required)"
       },
       "payment": {
-        "card_security_notice": "Nothing is paid online. Pay on delivery, or by Whish after we confirm your order on WhatsApp."
+        "card_security_notice": "Nothing is paid online. Pay on delivery, or by Whish after we confirm your order on WhatsApp.",
+        "billing_must_match_shipping_notice": "",
+        "billing_address_title": "Your details"
       }
     }
   },

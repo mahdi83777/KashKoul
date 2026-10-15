@@ -385,7 +385,9 @@
         "shipping_line_phone_label": "رقم واتساب (إلزامي)"
       },
       "payment": {
-        "card_security_notice": "لا دفع عبر الإنترنت. ادفع عند الاستلام، أو عبر Whish بعد أن نؤكّد طلبك على واتساب."
+        "card_security_notice": "لا دفع عبر الإنترنت. ادفع عند الاستلام، أو عبر Whish بعد أن نؤكّد طلبك على واتساب.",
+        "billing_must_match_shipping_notice": "",
+        "billing_address_title": "بياناتك"
       }
     }
   },

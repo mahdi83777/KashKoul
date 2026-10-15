@@ -257,6 +257,7 @@ shows it automatically.
 | Contact field (contact by phone or email) | WhatsApp number or email | رقم واتساب أو البريد الإلكتروني |
 | Phone field (required in the address) | WhatsApp number · tooltip: We confirm every order with you on WhatsApp. | رقم واتساب · نؤكّد كل طلب معك على واتساب. |
 | Other fields | Company name hidden · apartment optional · postal code optional (Lebanon's format) | |
+| Billing address | Not asked on delivery orders (must match the delivery address); on pickup orders titled "Your details", and Shopify's "billing address must match" line is blanked | بياناتك |
 | Look | Brick logo, brick buttons and links, paper order summary, Gloock headings, Fustat text | |
 
 The contact, phone and payment-note wording lives in `market/strings.json` → `shopify_overrides` (our theme's
