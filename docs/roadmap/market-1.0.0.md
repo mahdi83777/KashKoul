@@ -161,9 +161,9 @@ Preview: https://kashkoul-market-fhsuuq5c.myshopify.com/?preview_theme_id=189216
 
 **4a — Product page** ✅
 - "Shop · Instruments · Product" above the product, in the Market's label style (Bricolage capitals, terracotta, mustard dots); on phones only "‹ Instruments" (`sections/kashkoul-breadcrumbs.liquid`). No separate Back button.
-- Photo and details side by side: the photo's column is as wide as the photo, which fits the window height, and the details take the rest; every photo in the same square white frame, whole (Amazon photos aren't cropped); all colors in the gallery; choosing a size or color shows its photo at once.
+- Photo and details side by side: a big photo (about 58% of the width) in a white frame as wide as its column and 3/4 as tall, never taller than the window, whole (Amazon photos aren't cropped); the details in a column of at most 500px with a 40px title; all colors in the gallery; choosing a size or color shows its photo at once.
 - Size and Color side by side; quantity, Add to cart and Buy it now in one row of 40px buttons (Buy it now on its own row on phones); "Ask about this on WhatsApp" as a small link; the photo sits next to the details and the column starts level with it.
-- Brand, title, price, availability line ("In stock · delivered in 3–5 days" / "On order · delivered in 2–4 weeks" / "Sold out"), options as dropdowns (Size ▾, Color ▾), Add to cart (solid) and Buy it now (outlined), "Ask about this on WhatsApp" link (with the product's name and link), info box (pay on delivery · delivery $5 or free pickup · we confirm on WhatsApp · deposit on on-order items), tabs: Description, Delivery & pickup, Returns.
+- Brand, title, price, availability line ("In stock · delivered in 3–5 days" / "On order · delivered in 2–4 weeks" / "Sold out"), options as dropdowns (Size ▾, Color ▾), Add to cart (solid) and Buy it now (outlined), "Ask about this on WhatsApp" link (with the product's name and link), short icon lines (pay on delivery · delivery $5 or free pickup · we confirm on WhatsApp · a quiet deposit note on on-order items), tabs: Description, Delivery & pickup, Returns.
 - Availability and deposit lines follow the chosen option (`assets/kashkoul-product.js`).
 - "You may also like" with the Kashkoul heading.
 - In-stock delivery changed from 1–3 to **3–5 days** (theme setting default, help pages, docs).
@@ -174,6 +174,7 @@ Preview: https://kashkoul-market-fhsuuq5c.myshopify.com/?preview_theme_id=189216
 - [x] One product card everywhere (shop page, homepage, "You may also like", search, cart): white tile with rounded corners, square photo, In stock / On order / Sold out badge, brand, title of at most 2 lines, bold brick price (`blocks/kashkoul-card-meta.liquid`)
 - [x] Same side margins on phones as the homepage; products load 24 at a time as you scroll; no grid-size switch
 - [x] Phones: one full-width "Filter & sort" row with the product count; the drawer opens with every filter collapsed; counts in proper Arabic plurals (10 منتجات)
+- [x] Each filter choice shows how many products it has (e.g. Strings 2), on computers and phones
 
 **4c — Sample products** ✅ imported from Amazon with the Reputon app (free plan, 5 at a time), then cleaned up by `market/tools/setup-products.mjs` from `market/store/products.json`: our own English/Arabic title and description, short handle, brand, type, tag `sample`, no "compare at" price, option names and values in Arabic, 1–7 clean photos (no advert slides), and only the variants that belong to the product (the importer brings Amazon's whole family, e.g. 17 different pedals under one delay pedal).
 - [x] Fender FA-25 guitar, Fender Venice ukulele, Eastar violin set, Akai MPK Mini MK3, D'Addario oud strings
@@ -201,11 +202,12 @@ Preview: https://kashkoul-market-fhsuuq5c.myshopify.com/?preview_theme_id=189216
 With the owner.
 
 - [ ] Get the list of products from the owner (Amazon links or wishlist)
-- [ ] Choose an Amazon importer app (candidates: Ryviu, GD Amazon Importer, Importio, Amazon Channel)
+- [ ] Choose an Amazon importer app (used for the samples: Reputon Amazon Importer, free plan, 5 at a time; other candidates: Ryviu, GD Amazon Importer, Importio, Amazon Channel)
 - [ ] Pricing rule per category: Amazon price + shipping to Lebanon (by weight) + customs + margin
 - [ ] Check items can be shipped to Lebanon (no lithium batteries, liquids or oversized items)
 - [ ] Import or add the first ~100 products. Arabic titles, and our own descriptions rather than Amazon's text.
 - [ ] Organize products into categories
+- [ ] Shop page with the real catalog: switch the filters to a **sidebar on computers** (always open, tick boxes with product counts) once there are about 40+ products or more filters (e.g. size, level). It's Horizon's built-in "vertical" filter style, so a setting rather than a rebuild. Idea taken from Mohamad's earlier shop template; kept as pills while the catalog is small.
 
 **Review:** prices and the catalog.
 

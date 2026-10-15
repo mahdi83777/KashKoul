@@ -383,6 +383,8 @@
                       inputRef: 'facetInputs[]',
                       events: 'on:pointerenter="/prefetchPage" on:pointerleave="/cancelPrefetchPage" on:pointerdown="/prefetchPageImmediate"'
                     %}
+                    {%- comment -%} Kashkoul: how many products each choice has {%- endcomment -%}
+                    <span class="kk-fcount" aria-hidden="true">{{ value.count }}</span>
                   {% endif %}
                 {% endif %}
               </li>

@@ -271,12 +271,6 @@ html[lang='ar'] .kk-crumbs__list { text-transform: none; letter-spacing: 0; font
   .kk-crumbs__arrow { display: block; }
   .kk-crumbs__list a { min-height: 44px; }
 }
-/* product page: the photo fits the window (square, never taller than the screen below the header) */
-@media (min-width: 750px) {
-  .product-information media-gallery, .product-information__media media-gallery, media-gallery.media-gallery--carousel {
-    width: 100%; max-width: max(360px, calc(100svh - 250px)); margin-inline: auto;
-  }
-}
 /* product page options: compact dropdowns (Size ▾, Color ▾), side by side when there are two or more */
 .product-details .variant-picker__form { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); gap: 14px 16px; }
 .product-details .variant-picker__form > script { display: none; }
@@ -324,18 +318,21 @@ html[lang='ar'] .kk-crumbs__list { text-transform: none; letter-spacing: 0; font
   .kk-avail-line__badge { font-size: 12px; padding: 5px 11px 4px; }
   .kk-avail-line__time { font-size: 14px; }
 }
-/* computers: the photo's column is only as wide as the photo (which fits the window height), the details take the
-   rest, so there's no empty band beside a smaller photo */
-@media (min-width: 750px) {
+/* product page layout: a big photo (about 58% of the width) in a white frame as wide as its column and 3/4 as tall,
+   never taller than the window; the details beside it in a calm column of at most 500px */
+media-gallery { container-type: inline-size; }
+media-gallery .product-media-container { aspect-ratio: auto !important; height: min(75cqw, max(320px, 100svh - 250px)); }
+@media (min-width: 990px) {
   .product-information .product-information__grid.product-information__grid--half.product-information--media-left {
-    --kk-media-col: min(calc(var(--full-page-grid-central-column-width) / 2), calc(max(360px, 100svh - 250px) + var(--gap, 0px) / 2));
     grid-template-columns:
       var(--full-page-grid-margin)
-      var(--kk-media-col)
-      calc(var(--full-page-grid-central-column-width) - var(--kk-media-col))
+      calc(var(--full-page-grid-central-column-width) * .58)
+      calc(var(--full-page-grid-central-column-width) * .42)
       var(--full-page-grid-margin);
   }
-  .product-information media-gallery, .product-information__media media-gallery, media-gallery.media-gallery--carousel { margin-inline: 0; }
+  .product-details { padding-inline-start: 16px !important; }
+  .product-details > * { max-width: 500px; margin-inline: 0 auto !important; }
+  .product-details :is(h1, h2) { font-size: 40px !important; line-height: 1.08 !important; }
 }
 /* option values keep their own direction (English "2-Color Sunburst" on the Arabic page, Arabic on the English one) */
 .variant-option__button-label__text, .variant-option__select option { unicode-bidi: plaintext; }
@@ -345,12 +342,13 @@ html[lang='ar'] .kk-crumbs__list { text-transform: none; letter-spacing: 0; font
 .kk-avail-line--on_order .kk-avail-line__badge { background: var(--kk-mustard); color: var(--kk-brick); }
 .kk-avail-line--sold_out .kk-avail-line__badge { background: var(--kk-line); color: var(--kk-ink); }
 .kk-avail-line__time { font-size: 15px; color: var(--kk-muted); }
-.kk-pinfo { margin: 0; padding: 4px 18px; list-style: none; background: var(--kk-paper-2); border: 1px solid rgba(102,38,28,.18); }
-.kk-pinfo li { display: flex; align-items: flex-start; gap: 12px; padding: 12px 0; border-block-end: 1px solid rgba(102,38,28,.12); font-size: 15px; line-height: 1.5; }
-.kk-pinfo li:last-child { border-block-end: 0; }
-.kk-pinfo svg { flex: 0 0 auto; width: 22px; height: 22px; color: var(--kk-brick); }
+.kk-pinfo { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.kk-pinfo li { display: flex; align-items: flex-start; gap: 10px; font-size: 14.5px; line-height: 1.45; color: var(--kk-ink); }
+.kk-pinfo svg { flex: 0 0 auto; width: 20px; height: 20px; margin-block-start: 1px; color: var(--kk-brick); }
 .kk-pinfo strong { color: var(--kk-brick); }
-.kk-pinfo .kk-pinfo__deposit { margin-inline: -18px; padding-inline: 18px; background: rgba(218,189,92,.35); }
+.kk-pinfo .kk-pinfo__deposit { color: var(--kk-muted); }
+.kk-pinfo .kk-pinfo__deposit svg { color: var(--kk-mustard-2); }
+.kk-pinfo .kk-pinfo__deposit strong { color: var(--kk-ink); }
 .kk-ptabs { border-block-start: 2px solid var(--kk-brick); }
 .kk-ptab { border-block-end: 1px solid rgba(102,38,28,.22); }
 .kk-ptab__q { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 56px; cursor: pointer; list-style: none;
@@ -526,3 +524,10 @@ product-card.product-card:hover { transform: translateY(-3px); box-shadow: 0 14p
   .facets-toggle__button .kk-ftoggle__count { margin-inline-start: auto; font-weight: 500; font-size: 14px; color: var(--kk-muted); }
 }
 @media (min-width: 750px) { .kk-ftoggle__count { display: none; } }
+
+/* filter choices show how many products they have (Kashkoul edit in snippets/list-filter.liquid) */
+.facets__inputs-list-item:has(.kk-fcount) { display: flex; align-items: center; gap: 12px; }
+.facets__inputs-list-item:has(.kk-fcount) > :first-child { flex: 1 1 auto; min-width: 0; }
+.kk-fcount { flex: none; min-width: 26px; padding: 2px 8px; border-radius: 100px; background: var(--kk-paper); color: var(--kk-muted);
+  font-family: var(--kk-font-label); font-size: 12px; font-weight: 600; text-align: center; font-variant-numeric: tabular-nums; }
+.facets__inputs-list-item--disabled .kk-fcount { opacity: .5; }

@@ -23,7 +23,7 @@ market/
 Kashkoul changes live in new files named `kashkoul-…` wherever possible, so Horizon updates can still be applied.
 The few edits to Horizon's own files are marked with a "Kashkoul:" comment (`layout/theme.liquid`,
 `blocks/_header-logo.liquid`, `sections/header.liquid`; `snippets/list-filter.liquid` and `snippets/price-filter.liquid`,
-where the phone filter drawer starts with every filter collapsed; `blocks/filters.liquid`, for the full-width
+where the phone filter drawer starts with every filter collapsed and each filter choice shows its product count; `blocks/filters.liquid`, for the full-width
 "Filter & sort" row on phones and the product count in proper English/Arabic plurals). One can't carry a comment because it's inside a JSON
 schema: `blocks/_product-card.liquid` lists `kashkoul-card-meta` among the blocks a product card accepts.
 
