@@ -44,8 +44,8 @@ academy/
 ```
 npm run dev      # builds, watches src/, serves http://localhost:8765  (PORT=9000 npm run dev to change)
 npm run build    # one-off build → index.html
-npm run export-cards                       # every instrument card as a 2160×2700 PNG (+ text-free backgrounds)
-npm run export-cards -- --format=square    # or story; --scale=1 for 1080 px wide
+npm run export-cards                       # every instrument card as a PNG, shaped as on the site (+ text-free backgrounds)
+npm run export-cards -- --format=portrait  # or square / story — every card the same shape; --scale=1 for half size
 ```
 
 CSS and JS are loaded directly by the browser (`@import` / ES modules), so they need no build — only the HTML partials do.
