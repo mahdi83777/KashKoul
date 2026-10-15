@@ -22,7 +22,7 @@ in the store.
 | Stock | Both: some items in stock, the rest ordered from Amazon US after the customer orders ("on order") |
 | Delivery | One flat fee anywhere in Lebanon: $5. Time-limited offers (e.g. free delivery above $X) are set up in Shopify → Discounts. |
 | Pickup | Free, from Kashkoul in Khaldeh, Mon–Sat 12pm–8pm · Sundays by appointment |
-| Delivery time | In stock: 1–3 days · On order: 2–4 weeks |
+| Delivery time | In stock: 3–5 days · On order: 2–4 weeks |
 | Payment | Cash on delivery, or Whish arranged on WhatsApp. No card payment. |
 | Deposit | On-order items, when the order is above $100: 30% deposit by Whish before we order from Amazon. Both numbers ($100 and 30%) are theme settings the owner can change any time. |
 | Returns | Exchange or refund only if an item arrives damaged or isn't what was ordered, reported within 48 hours |
@@ -182,11 +182,13 @@ Page width: content up to 1440px, with 40px side margins on computers and 16px o
 
 | Label | English | Arabic |
 |---|---|---|
-| Filter | Filter | تصفية |
-| Availability filter | In stock · On order | متوفر · حسب الطلب |
-| Price filter | Price | السعر |
+| Header label | Shop | تسوّق |
+| Category chips | the links under "Shop" in the main menu | the same, in Arabic |
+| Filter & sort button (phones) | Filter & sort | التصفية والترتيب |
+| Filters (Search & Discovery app) | Type · Brand · Price | النوع · الماركة · السعر |
+| Card badge | In stock · On order · Sold out | متوفر · حسب الطلب · نفدت الكمية |
 | Sort | Sort by: Featured · Newest · Price, low to high · Price, high to low | ترتيب حسب: المميّز · الأحدث · السعر من الأقل · السعر من الأعلى |
-| Count | [N] products | [N] منتج |
+| Count | 1 product · [N] products | منتج واحد · منتجان · [3–10] منتجات · [11–99] منتجًا · [100+] منتج |
 | Empty | Nothing here yet. Send us an Amazon link on WhatsApp and we'll get it for you. | لا منتجات هنا بعد. أرسل لنا رابط أمازون على واتساب ونحضره لك. |
 
 ---
@@ -195,7 +197,7 @@ Page width: content up to 1440px, with 40px side margins on computers and 16px o
 
 | Part | English | Arabic |
 |---|---|---|
-| In stock | In stock · delivered in 1–3 days | متوفر · يصل خلال 1–3 أيام |
+| In stock | In stock · delivered in 3–5 days | متوفر · يصل خلال 3–5 أيام |
 | On order | On order · delivered in 2–4 weeks | حسب الطلب · يصل خلال 2–4 أسابيع |
 | Sold out | Sold out | نفدت الكمية |
 | Quantity | Quantity | الكمية |
@@ -207,12 +209,13 @@ Page width: content up to 1440px, with 40px side margins on computers and 16px o
 | Info: confirmation | **We confirm every order** with you on WhatsApp before it's on its way. | **نؤكّد كل طلب** معك على واتساب قبل إرساله. |
 | Info: deposit (on-order items only) | **Ordered specially for you.** For orders over $100, we ask for a 30% deposit by Whish before we order it. The rest is paid on delivery. | **نطلبه خصيصًا لك.** للطلبات فوق 100$، نطلب عربونًا بنسبة 30% عبر Whish قبل أن نطلبه، والباقي عند الاستلام. |
 | Tab | Description | الوصف |
-| Tab | Delivery & pickup — Delivered anywhere in Lebanon for $5: in-stock items in 1–3 days, on-order items in 2–4 weeks. Or pick up free from Kashkoul in Khaldeh, Mon–Sat 12pm–8pm. | التوصيل والاستلام — نوصل إلى أي مكان في لبنان مقابل 5$: القطع المتوفرة خلال 1–3 أيام، والقطع حسب الطلب خلال 2–4 أسابيع. أو استلمه مجانًا من كشكول في خلدة، الاثنين–السبت 12 ظهرًا–8 مساءً. |
+| Tab | Delivery & pickup — Delivered anywhere in Lebanon for $5: in-stock items in 3–5 days, on-order items in 2–4 weeks. Or pick up free from Kashkoul in Khaldeh, Mon–Sat 12pm–8pm. | التوصيل والاستلام — نوصل إلى أي مكان في لبنان مقابل 5$: القطع المتوفرة خلال 3–5 أيام، والقطع حسب الطلب خلال 2–4 أسابيع. أو استلمه مجانًا من كشكول في خلدة، الاثنين–السبت 12 ظهرًا–8 مساءً. |
 | Tab | Returns — If an item arrives damaged or isn't what you ordered, tell us within 48 hours and we'll exchange or refund it. | الاسترجاع — إذا وصلت القطعة متضرّرة أو مختلفة عمّا طلبته، أخبرنا خلال 48 ساعة ونستبدلها أو نعيد لك المبلغ. |
 | Related | You may also like | قد يعجبك أيضًا |
 
 **Product descriptions** are written per product in step 6: our own short text, in English and Arabic (what it is,
-who it suits, what's in the box), not copied from Amazon.
+who it suits, what's in the box), not copied from Amazon. The sample products' titles, descriptions and Arabic option
+names (step 4c) are in `market/store/products.json`; the pattern is one short paragraph, then 3–4 points.
 
 ---
 
@@ -263,7 +266,7 @@ Theme settings → Kashkoul, so changing a number there changes every page in bo
 | Step 2 | **We confirm on WhatsApp** — We message you to confirm the items, the price and the delivery day. | **نؤكّد على واتساب** — نراسلك لتأكيد القطع والسعر وموعد التوصيل. |
 | Step 3 | **Pay when it arrives** — In cash or with Whish. Or pick up your order free from Kashkoul in Khaldeh. | **ادفع عند الاستلام** — نقدًا أو عبر Whish، أو استلم طلبك مجانًا من كشكول في خلدة. |
 | In stock or on order? | Every product shows one of these two labels. | كل منتج يحمل إحدى هاتين العلامتين. |
-| — In stock card | In stock · Delivered in **[1–3] days** · Already in Lebanon. Delivered anywhere in the country, or ready for free pickup in Khaldeh. | متوفر · يصل خلال **[1–3] أيام** · موجود في لبنان. نوصله إلى أي مكان في البلد، أو يكون جاهزًا للاستلام المجاني من خلدة. |
+| — In stock card | In stock · Delivered in **[3–5] days** · Already in Lebanon. Delivered anywhere in the country, or ready for free pickup in Khaldeh. | متوفر · يصل خلال **[3–5] أيام** · موجود في لبنان. نوصله إلى أي مكان في البلد، أو يكون جاهزًا للاستلام المجاني من خلدة. |
 | — On order card | On order · Delivered in **[2–4] weeks** · Ordered from the US after you order. We confirm the delivery date with you on WhatsApp. | حسب الطلب · يصل خلال **[2–4] أسابيع** · نطلبه من الولايات المتحدة بعد طلبك، ونؤكّد معك موعد التوصيل على واتساب. |
 | Note: deposit | **[30]%** — Deposits on special orders — For on-order items, when the order is over $[100], we ask for a [30]% deposit by Whish before we order it for you. You pay the rest on delivery. | **[30]%** — العربون على الطلبات الخاصة — للقطع حسب الطلب، إذا تجاوز الطلب [100]$، نطلب عربونًا بنسبة [30]% عبر Whish قبل أن نطلبها لك، وتدفع الباقي عند الاستلام. |
 | Note: discount | **[10]% off** — Academy students and teachers — Ask us for your code on WhatsApp, and use it at checkout. | **خصم [10]%** — طلاب وأساتذة الأكاديمية — اطلبوا الرمز منّا على واتساب، واستعملوه عند إتمام الطلب. |

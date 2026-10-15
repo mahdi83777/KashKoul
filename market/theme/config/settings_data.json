@@ -71,7 +71,7 @@
     "variant_swatch_radius": 32,
     "variant_button_border_width": 1,
     "variant_button_radius": 100,
-    "variant_button_width": "equal-width-buttons",
+    "variant_button_width": "default-width-buttons",
     "content_for_index": [],
     "badge_sold_out_background_color": "#e2d6c8",
     "palette_input_border": "#c9b8a6",

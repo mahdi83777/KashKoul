@@ -1,0 +1,41 @@
+{%- comment -%}
+  Product page: "In stock · delivered in 3–5 days" / "On order · delivered in 2–4 weeks" / "Sold out", for the
+  selected variant (snippets/kashkoul-stock-state.liquid); empty when the picked options aren't a real variant.
+  Refreshed on variant change by assets/kashkoul-product.js.
+  Delivery times from Theme settings → Kashkoul.
+{%- endcomment -%}
+{%- liquid
+  assign product = closest.product
+  assign variant = product.selected_or_first_available_variant
+  capture state
+    render 'kashkoul-stock-state', variant: variant
+  endcapture
+  assign days = settings.kashkoul_days_in_stock | default: '3–5' | prepend: '⁦' | append: '⁩'
+  assign weeks = settings.kashkoul_weeks_on_order | default: '2–4' | prepend: '⁦' | append: '⁩'
+  assign label_key = 'kashkoul.product.' | append: state
+  assign time_key = 'kashkoul.product.' | append: state | append: '_time'
+-%}
+<script src="{{ 'kashkoul-product.js' | asset_url }}" type="module" fetchpriority="low"></script>
+{%- comment -%} variant → its photo, so assets/kashkoul-product.js can show it the moment an option is chosen {%- endcomment -%}
+<script type="application/json" data-kk-variant-media>
+  { {%- for v in product.variants -%}"{{ v.id }}":{{ v.featured_media.id | default: 'null' }}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%} }
+</script>
+<kk-live class="kk-pavail" data-block-id="{{ block.id }}" {{ block.shopify_attributes }}>
+  {%- if state != 'none' -%}
+    <div class="kk-avail-line kk-avail-line--{{ state }}">
+      <span class="kk-avail-line__badge">{{ label_key | t }}</span>
+      <span class="kk-avail-line__time">{{ time_key | t: days: days, weeks: weeks }}</span>
+    </div>
+  {%- endif -%}
+</kk-live>
+
+{% schema %}
+{
+  "name": "Kashkoul availability",
+  "tag": null,
+  "settings": [
+    { "type": "paragraph", "content": "In stock / On order / Sold out, from the selected variant's stock. Delivery times from Theme settings → Kashkoul." }
+  ],
+  "presets": [{ "name": "Kashkoul availability" }]
+}
+{% endschema %}

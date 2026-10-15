@@ -123,7 +123,7 @@
           {% if products_count > 25000 %}
             {{- 'content.item_count_cutoff' | t: count: 25000 -}}
           {% else %}
-            {{- 'content.item_count' | t: count: products_count -}}
+            {{- 'kashkoul.shop.count' | t: count: products_count -}}
           {% endif %}
         </span>
       </div>
@@ -285,7 +285,7 @@
                   {% if products_count > 25000 %}
                     {{- 'content.item_count_cutoff' | t: count: 25000 -}}
                   {% else %}
-                    {{- 'content.item_count' | t: count: products_count -}}
+                    {{- 'kashkoul.shop.count' | t: count: products_count -}}
                   {% endif %}
                 </span>
               </div>
@@ -335,7 +335,10 @@
             {{ 'icon-filter.svg' | inline_asset_content }}
           </span>
 
-          {{ 'actions.show_filters' | t }}
+          {%- comment -%} Kashkoul: "Filter & sort" (sorting lives in this drawer on phones) and the item count {%- endcomment -%}
+          <span class="kk-ftoggle__label">
+            {%- if block_settings.enable_sorting -%}{{ 'kashkoul.shop.filter_sort' | t }}{%- else -%}{{ 'actions.show_filters' | t }}{%- endif -%}
+          </span>
 
           {% if total_active_values > 0 %}
             <div
@@ -354,6 +357,9 @@
               </span>
             </div>
           {% endif %}
+          <span class="kk-ftoggle__count">
+            {%- if products_count > 25000 -%}{{- 'content.item_count_cutoff' | t: count: 25000 -}}{%- else -%}{{- 'kashkoul.shop.count' | t: count: products_count -}}{%- endif -%}
+          </span>
         </button>
       </div>
     {% endif %}

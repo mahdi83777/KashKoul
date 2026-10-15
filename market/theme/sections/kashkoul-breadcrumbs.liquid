@@ -1,0 +1,52 @@
+{%- comment -%}
+  Product page: "Shop / Category / Product" above the product, in the Market's label style. On phones only
+  "‹ Category" shows (a way back that fits one line).
+  The category is the one the visitor came through (/collections/x/products/y), else the product's first category
+  in the admin (the homepage's "frontpage" collection is skipped).
+{%- endcomment -%}
+{%- liquid
+  assign kk_cat = collection
+  if kk_cat == blank and product
+    for c in product.collections
+      if c.handle != 'frontpage' and c.handle != 'all'
+        assign kk_cat = c
+        break
+      endif
+    endfor
+  endif
+-%}
+<div class="kk-wrap">
+  <nav class="kk-crumbs" aria-label="{{ 'kashkoul.crumbs.label' | t }}">
+    <ol class="kk-crumbs__list">
+      <li class="kk-crumbs__root">
+        <a href="{{ routes.all_products_collection_url }}">
+          <svg class="kk-crumbs__arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+          {{- 'kashkoul.crumbs.shop' | t -}}
+        </a>
+      </li>
+      {%- if kk_cat != blank -%}
+        <li class="kk-crumbs__cat">
+          <a href="{{ kk_cat.url }}">
+            <svg class="kk-crumbs__arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+            {{- kk_cat.title | escape -}}
+          </a>
+        </li>
+      {%- endif -%}
+      {%- if product -%}
+        <li class="kk-crumbs__here" aria-current="page">{{ product.title | escape }}</li>
+      {%- endif -%}
+    </ol>
+  </nav>
+</div>
+
+{% schema %}
+{
+  "name": "Kashkoul breadcrumbs",
+  "tag": "div",
+  "class": "kk-crumbs-section",
+  "settings": [
+    { "type": "paragraph", "content": "Shop / Category / Product (on phones: ‹ Category). The category is the product's first collection in the admin (the homepage collection is skipped)." }
+  ],
+  "presets": [{ "name": "Kashkoul breadcrumbs" }]
+}
+{% endschema %}

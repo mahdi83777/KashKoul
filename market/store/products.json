@@ -1,0 +1,472 @@
+{
+  "_about": "Sample products (step 4c), imported from Amazon with Reputon and cleaned up by market/tools/setup-products.mjs. Each product is found by `handle`, or by `from_handle` (the importer's handle) on the first run. stock (first run only, while stock isn't tracked; after that the admin owns it): a number = in stock (that many), \"on_order\" = 0 with continue selling. variants_keep = the variant titles to keep (the importer brings Amazon's whole product family); remove_options = true or a list of option names to drop. media_keep = positions (1-based, current order) of the photos to keep; applied only while the product has more photos than that. In Arabic, number ranges are wrapped in invisible left-to-right marks (U+2066 … U+2069), or they show reversed (09–42 as 42–09).",
+  "products": [
+    {
+      "handle": "fender-fa-25-acoustic-guitar",
+      "from_handle": "fender-fa-25-dreadnought-acoustic-guitar-beginner-guitar-2-color-sunburst",
+      "vendor": "Fender",
+      "type": "Acoustic guitar",
+      "tags": [
+        "sample"
+      ],
+      "price": "164.99",
+      "stock": "on_order",
+      "media_keep": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "options": [
+        {
+          "name": "Color",
+          "ar": "اللون",
+          "values": [
+            {
+              "from": "Sunburst - Dreadnought",
+              "name": "Sunburst",
+              "ar": "صن برست"
+            },
+            {
+              "from": "Natural - Dreadnought",
+              "name": "Natural",
+              "ar": "طبيعي"
+            },
+            {
+              "name": "Black",
+              "ar": "أسود"
+            }
+          ]
+        }
+      ],
+      "en": {
+        "title": "Fender FA-25 Acoustic Guitar",
+        "body": "<p>A full-size Fender acoustic made for beginners: light, easy to hold, and comfortable to play from the first day.</p><ul><li>Full-size dreadnought body, all-laminate</li><li>Slim C-shaped neck, easy on the hand</li><li>Sealed gear tuners that hold their tuning</li><li>Three colors: sunburst, natural and black</li></ul>"
+      },
+      "ar": {
+        "title": "غيتار أكوستيك Fender FA-25",
+        "body": "<p>غيتار أكوستيك بالحجم الكامل من Fender، مصمَّم للمبتدئين: خفيف، سهل الحمل، ومريح في العزف من اليوم الأول.</p><ul><li>جسم Dreadnought بالحجم الكامل، من الخشب المضغوط</li><li>زند نحيف بشكل C، مريح لليد</li><li>مفاتيح دوزان مغلقة تحافظ على الدوزان</li><li>ثلاثة ألوان: صن برست، طبيعي وأسود</li></ul>",
+        "type": "غيتار أكوستيك"
+      }
+    },
+    {
+      "handle": "fender-venice-ukulele",
+      "from_handle": "fender-venice-soprano-ukulele-daphne-blue",
+      "vendor": "Fender",
+      "type": "Ukulele",
+      "tags": [
+        "sample"
+      ],
+      "stock": "on_order",
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "ar": "المقاس",
+          "values": [
+            {
+              "name": "Soprano",
+              "ar": "سوبرانو"
+            },
+            {
+              "name": "Tenor",
+              "ar": "تينور"
+            }
+          ]
+        },
+        {
+          "name": "Color",
+          "ar": "اللون",
+          "values": [
+            {
+              "name": "Daphne Blue",
+              "ar": "أزرق فاتح"
+            },
+            {
+              "name": "Surf Green",
+              "ar": "أخضر فاتح"
+            },
+            {
+              "name": "Natural",
+              "ar": "طبيعي"
+            },
+            {
+              "name": "Black",
+              "ar": "أسود"
+            },
+            {
+              "name": "2-Color Sunburst",
+              "ar": "صن برست"
+            },
+            {
+              "name": "Shell Pink",
+              "ar": "وردي"
+            },
+            {
+              "name": "Cherry",
+              "ar": "أحمر كرزي"
+            }
+          ]
+        }
+      ],
+      "en": {
+        "title": "Fender Venice Ukulele",
+        "body": "<p>A bright, easy ukulele from Fender, with the headstock of its famous electric guitars. A happy first instrument for kids and adults.</p><ul><li>Soprano: the small, classic ukulele sound</li><li>Tenor: a bigger body with a fuller sound</li><li>Fender's Telecaster-style headstock</li><li>Several colors to choose from</li></ul>"
+      },
+      "ar": {
+        "title": "يوكوليلي Fender Venice",
+        "body": "<p>يوكوليلي من Fender بصوت مشرق وعزف سهل، برأس يشبه غيتاراتها الكهربائية الشهيرة. آلة أولى ممتعة للأطفال والكبار.</p><ul><li>سوبرانو: الحجم الصغير والصوت الكلاسيكي لليوكوليلي</li><li>تينور: جسم أكبر وصوت أغنى</li><li>رأس على طراز غيتار Telecaster من Fender</li><li>ألوان متعددة للاختيار</li></ul>",
+        "type": "يوكوليلي"
+      }
+    },
+    {
+      "handle": "eastar-violin-set",
+      "from_handle": "eastar-violin-4-4-full-size-for-adults-violin-set-for-beginners-with-hard-case-rosin-shoulder-rest-bow-and-extra-strings-imprinted-finger-guide-on-fingerboard-eva-2",
+      "vendor": "Eastar",
+      "type": "Violin",
+      "tags": [
+        "sample"
+      ],
+      "stock": "on_order",
+      "media_keep": [
+        1,
+        3,
+        4,
+        7,
+        9,
+        10,
+        37
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "ar": "المقاس",
+          "values": [
+            {
+              "from": "Full",
+              "name": "4/4",
+              "ar": "4/4"
+            },
+            {
+              "name": "3/4",
+              "ar": "3/4"
+            },
+            {
+              "name": "1/2",
+              "ar": "1/2"
+            },
+            {
+              "name": "1/4",
+              "ar": "1/4"
+            }
+          ]
+        },
+        {
+          "from": "Color",
+          "name": "Style",
+          "ar": "الطراز",
+          "values": [
+            {
+              "name": "Glossy",
+              "ar": "لامع"
+            },
+            {
+              "name": "Matte",
+              "ar": "مطفأ"
+            },
+            {
+              "name": "Two Bows",
+              "ar": "مع قوسين"
+            },
+            {
+              "name": "Black",
+              "ar": "أسود"
+            }
+          ]
+        }
+      ],
+      "en": {
+        "title": "Eastar Violin Set",
+        "body": "<p>Everything a beginner needs to start the violin, in one hard case.</p><ul><li>Violin, bow, rosin, shoulder rest and spare strings</li><li>Finger guide printed on the fingerboard, to find the notes</li><li>Hard case for carrying and storage</li><li>Sizes: 4/4 for adults and from about 12 years, 3/4 for about 9–12, 1/2 for about 7–9, 1/4 for about 5–7. Not sure? Ask us on WhatsApp.</li></ul>"
+      },
+      "ar": {
+        "title": "طقم كمان Eastar",
+        "body": "<p>كل ما يحتاجه المبتدئ ليبدأ تعلّم الكمان، في حقيبة صلبة واحدة.</p><ul><li>كمان، قوس، صمغ (روزين)، مسند كتف وأوتار احتياطية</li><li>دليل أصابع مطبوع على زند الكمان لإيجاد النوتات</li><li>حقيبة صلبة للحمل والحفظ</li><li>المقاسات: 4/4 للكبار ومن عمر 12 تقريبًا، 3/4 من 9 إلى 12، 1/2 من 7 إلى 9، 1/4 من 5 إلى 7. لست متأكدًا؟ اسألنا على واتساب.</li></ul>",
+        "type": "كمان"
+      }
+    },
+    {
+      "handle": "akai-mpk-mini-mk3",
+      "from_handle": "akai-professional-mpk-mini-mk3-25-key-usb-midi-keyboard-controller",
+      "vendor": "Akai Professional",
+      "type": "Keyboard controller",
+      "tags": [
+        "sample"
+      ],
+      "stock": "on_order",
+      "media_keep": [
+        1,
+        3,
+        10,
+        14
+      ],
+      "remove_options": true,
+      "en": {
+        "title": "Akai MPK Mini MK3 Keyboard Controller",
+        "body": "<p>A small keyboard and pad controller for making music on a computer. Plug it in with USB and play the sounds of your music software.</p><ul><li>25 mini keys that respond to how hard you play</li><li>8 backlit drum pads and 8 knobs</li><li>Built-in arpeggiator and a joystick for pitch and modulation</li><li>Powered by the USB cable, no adapter needed</li></ul><p><strong>Good to know:</strong> it has no speakers or sounds of its own; it works with a computer and music software.</p>"
+      },
+      "ar": {
+        "title": "لوحة مفاتيح Akai MPK Mini MK3",
+        "body": "<p>لوحة مفاتيح ووسادات صغيرة لصنع الموسيقى على الكمبيوتر. توصلها عبر USB وتعزف أصوات برنامج الموسيقى عندك.</p><ul><li>25 مفتاحًا صغيرًا تستجيب لقوة العزف</li><li>8 وسادات إيقاع مضيئة و8 أزرار تحكم</li><li>أربيجيتور مدمج وعصا تحكم لطبقة الصوت والتعديل</li><li>تعمل بطاقة كابل USB، بلا محوّل</li></ul><p><strong>للعلم:</strong> لا تحتوي على سمّاعات أو أصوات خاصة بها؛ تعمل مع كمبيوتر وبرنامج موسيقى.</p>",
+        "type": "لوحة مفاتيح تحكم"
+      }
+    },
+    {
+      "handle": "daddario-ej95a-oud-strings",
+      "from_handle": "daddario-ej95a-arabic-oud-strings",
+      "vendor": "D'Addario",
+      "type": "Strings",
+      "tags": [
+        "sample"
+      ],
+      "stock": 10,
+      "media_keep": [
+        1,
+        3,
+        4
+      ],
+      "en": {
+        "title": "D'Addario Arabic Oud Strings (EJ95A)",
+        "body": "<p>A full set of D'Addario strings for the Arabic oud, for a warm, clear sound.</p><ul><li>Made for the Arabic oud</li><li>Silver-plated copper wound strings</li><li>A trusted string brand used around the world</li></ul>"
+      },
+      "ar": {
+        "title": "أوتار عود عربي D'Addario (EJ95A)",
+        "body": "<p>طقم كامل من أوتار D'Addario للعود العربي، بصوت دافئ وواضح.</p><ul><li>مصنوعة للعود العربي</li><li>أوتار ملفوفة بالنحاس المطلي بالفضة</li><li>علامة أوتار موثوقة حول العالم</li></ul>",
+        "type": "أوتار"
+      }
+    },
+    {
+      "handle": "hal-leonard-guitar-method-book-1",
+      "from_handle": "hal-leonard-guitar-method-book-1-second-edition-beginner-guitar-lesson-book-for-adults-and-students-learn-to-play-acoustic-or-electric-guitar-with-chords-songs-exercises-notation-and-strumming",
+      "vendor": "Hal Leonard",
+      "type": "Music book",
+      "tags": [
+        "sample"
+      ],
+      "stock": 10,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "en": {
+        "title": "Hal Leonard Guitar Method, Book 1",
+        "body": "<p>The well-known first book for learning the guitar, acoustic or electric. Clear steps, from holding the guitar to playing your first songs.</p><ul><li>Second edition, by Will Schmid and Greg Koch</li><li>Tuning, playing position, reading music and the notes in first position</li><li>The chords C, G, G7, D, D7, A7 and Em, with strumming and picking</li><li>100 songs, riffs and exercises to practice</li></ul><p><strong>Good to know:</strong> the book is in English.</p>"
+      },
+      "ar": {
+        "title": "كتاب Hal Leonard لتعلّم الغيتار، الجزء 1",
+        "body": "<p>الكتاب المعروف لتعلّم الغيتار من البداية، الأكوستيك أو الكهربائي. خطوات واضحة، من طريقة حمل الغيتار حتى عزف أولى الأغاني.</p><ul><li>الطبعة الثانية، تأليف Will Schmid وGreg Koch</li><li>الدوزان، وضعية العزف، قراءة النوتة والنوتات في الوضعية الأولى</li><li>الأكوردات C وG وG7 وD وD7 وA7 وEm، مع الضرب والنقر على الأوتار</li><li>100 أغنية ومقطع وتمرين للتدريب</li></ul><p><strong>للعلم:</strong> الكتاب باللغة الإنجليزية.</p>",
+        "type": "كتاب موسيقى"
+      }
+    },
+    {
+      "handle": "winsor-newton-cotman-watercolor-set",
+      "from_handle": "winsor-newton-cotman-watercolor-paint-set-sketchers-pocket-set",
+      "vendor": "Winsor & Newton",
+      "type": "Watercolor paint",
+      "tags": [
+        "sample"
+      ],
+      "stock": 10,
+      "media_keep": [
+        1,
+        7,
+        12,
+        46,
+        47,
+        81,
+        83
+      ],
+      "variants_keep": [
+        "12 Half Pan Sketchers Pocket Set",
+        "16 Half Pan Complete Pocket Set",
+        "24 Half Pan Studio Set"
+      ],
+      "options": [
+        {
+          "from": "Style",
+          "name": "Set",
+          "ar": "الطقم",
+          "values": [
+            {
+              "from": "12 Half Pan Sketchers Pocket Set",
+              "name": "Sketchers' Pocket, 12 colors",
+              "ar": "علبة جيب للرسم، 12 لونًا"
+            },
+            {
+              "from": "16 Half Pan Complete Pocket Set",
+              "name": "Complete Pocket, 16 colors",
+              "ar": "علبة جيب كاملة، 16 لونًا"
+            },
+            {
+              "from": "24 Half Pan Studio Set",
+              "name": "Large Set, 24 colors",
+              "ar": "طقم كبير، 24 لونًا"
+            }
+          ]
+        }
+      ],
+      "en": {
+        "title": "Winsor & Newton Cotman Watercolor Set",
+        "body": "<p>Cotman is Winsor & Newton's student-grade watercolor: good colors for learning and everyday painting, in a box small enough to take anywhere.</p><ul><li>Half pans: small blocks of solid color, just add water</li><li>A small brush in every box, and a lid that opens into a mixing palette</li><li>Three sizes: 12, 16 or 24 colors</li><li>The 16-color box also has a pencil and an eraser</li></ul>"
+      },
+      "ar": {
+        "title": "طقم ألوان مائية Winsor & Newton Cotman",
+        "body": "<p>Cotman هي ألوان Winsor & Newton المائية للطلاب: ألوان جيدة للتعلّم والرسم اليومي، في علبة صغيرة تأخذها معك أينما ذهبت.</p><ul><li>أقراص ألوان صغيرة (Half pans): ألوان صلبة، يكفي أن تضيف الماء</li><li>فرشاة صغيرة في كل علبة، وغطاء ينفتح ليصبح لوحة لخلط الألوان</li><li>ثلاثة أحجام: 12 أو 16 أو 24 لونًا</li><li>علبة الـ16 لونًا فيها أيضًا قلم رصاص وممحاة</li></ul>",
+        "type": "ألوان مائية"
+      }
+    },
+    {
+      "handle": "donner-yellow-fall-delay-pedal",
+      "from_handle": "donner-guitar-delay-pedal-for-pedal-boards-electric-guitar-yellow-fall-analog-delay-mini-guitar-effect-pedal-vintage-delay-true-bypass",
+      "vendor": "Donner",
+      "type": "Guitar pedal",
+      "tags": [
+        "sample"
+      ],
+      "stock": 4,
+      "media_keep": [
+        1
+      ],
+      "variants_keep": [
+        "Yellow Delay"
+      ],
+      "remove_options": true,
+      "en": {
+        "title": "Donner Yellow Fall Analog Delay Pedal",
+        "body": "<p>A small analog delay pedal for electric guitar, for warm echoes from a short slap to long repeats. Its mini size fits easily on any pedalboard.</p><ul><li>Analog delay, 20–620 ms</li><li>Three knobs: Time, Echo (level) and F.Back (number of repeats)</li><li>True bypass: your sound stays clean when the pedal is off</li><li>Metal case, runs on a standard 9V DC pedal power supply</li></ul>"
+      },
+      "ar": {
+        "title": "دواسة ديلاي أنالوغ Donner Yellow Fall",
+        "body": "<p>دواسة صدى (Delay) أنالوغ صغيرة للغيتار الكهربائي، تعطي صدى دافئًا من التكرار القصير إلى الطويل. حجمها الصغير يناسب أي لوحة دواسات.</p><ul><li>ديلاي أنالوغ، من 20 إلى 620 ميلي ثانية</li><li>ثلاثة أزرار: Time (الوقت)، Echo (مستوى الصدى) وF.Back (عدد التكرارات)</li><li>True bypass: يبقى صوتك نقيًا عندما تكون الدواسة مطفأة</li><li>هيكل معدني، تعمل بمحوّل كهرباء 9V DC عادي للدواسات</li></ul>",
+        "type": "دواسة غيتار"
+      }
+    },
+    {
+      "handle": "vic-firth-freestyle-5b-drumsticks",
+      "from_handle": "vic-firth-american-concept-freestyle-5b",
+      "vendor": "Vic Firth",
+      "type": "Drumsticks",
+      "tags": [
+        "sample"
+      ],
+      "stock": "on_order",
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        7
+      ],
+      "remove_options": true,
+      "en": {
+        "title": "Vic Firth Freestyle 5B Drumsticks",
+        "body": "<p>A pair of 5B drumsticks from Vic Firth's American Concept line. The Freestyle has a long taper, for more bounce and speed.</p><ul><li>5B: a little thicker than 7A and 5A, for a fuller sound and a firmer grip</li><li>17\" (43 cm) long, with a long taper</li><li>Hickory, with a wood tip</li><li>One pair</li></ul>"
+      },
+      "ar": {
+        "title": "عصي درامز Vic Firth Freestyle 5B",
+        "body": "<p>زوج من عصي الدرامز 5B من سلسلة American Concept من Vic Firth. تصميم Freestyle مستدقّ على مسافة طويلة، لارتداد أكبر وعزف أسرع.</p><ul><li>5B: أسمك قليلًا من 7A و5A، لصوت أقوى وقبضة أثبت</li><li>طولها 17 إنشًا (43 سم)، مع استدقاق طويل</li><li>من خشب الهيكوري، برأس خشبي</li><li>زوج واحد</li></ul>",
+        "type": "عصي درامز"
+      }
+    },
+    {
+      "handle": "daddario-nyxl-electric-strings-3-sets",
+      "from_handle": "daddario-nyxl0942-3p-electric-guitar-strings-09-42-3-sets",
+      "vendor": "D'Addario",
+      "type": "Strings",
+      "tags": [
+        "sample"
+      ],
+      "stock": "on_order",
+      "media_keep": [
+        1,
+        7,
+        15,
+        16,
+        21,
+        23
+      ],
+      "variants_keep": [
+        "Super Light, 09-42 / Guitar Strings / 3-Pack",
+        "Super Light Top/Reg. Bottom, 09-46 / Guitar Strings / 3-Pack",
+        "Lt. Top/Hvy Bottom, 10-52 / Guitar Strings / 3-Pack",
+        "Med. Top/Hvy Bottom, 11-52 / Guitar Strings / 3-Pack",
+        "Regular Light, 10-46 / Guitar Strings / 3-Pack",
+        "Medium, 11-49 / Guitar Strings / 3-Pack"
+      ],
+      "remove_options": [
+        "Pattern Name",
+        "Size"
+      ],
+      "options": [
+        {
+          "from": "Style",
+          "name": "Gauge",
+          "ar": "السماكة",
+          "values": [
+            {
+              "from": "Super Light, 09-42",
+              "name": "Super Light 09–42",
+              "ar": "خفيف جدًا ⁦09–42⁩"
+            },
+            {
+              "from": "Super Light Top/Reg. Bottom, 09-46",
+              "name": "Super Light Top, Regular Bottom 09–46",
+              "ar": "خفيف جدًا من الأعلى، عادي من الأسفل ⁦09–46⁩"
+            },
+            {
+              "from": "Regular Light, 10-46",
+              "name": "Regular Light 10–46",
+              "ar": "خفيف عادي ⁦10–46⁩"
+            },
+            {
+              "from": "Lt. Top/Hvy Bottom, 10-52",
+              "name": "Light Top, Heavy Bottom 10–52",
+              "ar": "خفيف من الأعلى، ثقيل من الأسفل ⁦10–52⁩"
+            },
+            {
+              "from": "Medium, 11-49",
+              "name": "Medium 11–49",
+              "ar": "متوسط ⁦11–49⁩"
+            },
+            {
+              "from": "Med. Top/Hvy Bottom, 11-52",
+              "name": "Medium Top, Heavy Bottom 11–52",
+              "ar": "متوسط من الأعلى، ثقيل من الأسفل ⁦11–52⁩"
+            }
+          ]
+        }
+      ],
+      "en": {
+        "title": "D'Addario NYXL Electric Guitar Strings, 3 Sets",
+        "body": "<p>Three sets of D'Addario NYXL strings for electric guitar, made in the USA. Strong strings that stay in tune, with a clear sound and a strong mid-range.</p><ul><li>Nickel-wound, with a high-carbon steel core</li><li>Made to resist breaking and to hold their tuning</li><li>Corrosion-resistant packaging keeps them fresh</li><li>Six gauges, from 09–42 to 11–52</li></ul>"
+      },
+      "ar": {
+        "title": "أوتار غيتار كهربائي D'Addario NYXL، 3 أطقم",
+        "body": "<p>ثلاثة أطقم من أوتار D'Addario NYXL للغيتار الكهربائي، مصنوعة في الولايات المتحدة. أوتار قوية تحافظ على الدوزان، بصوت واضح وحضور قوي للترددات المتوسطة.</p><ul><li>ملفوفة بالنيكل، بقلب من الفولاذ عالي الكربون</li><li>مصنوعة لتقاوم الانقطاع وتحافظ على الدوزان</li><li>تغليف مقاوم للصدأ يحافظ عليها جديدة</li><li>ست سماكات، من ⁦09–42⁩ إلى ⁦11–52⁩</li></ul>",
+        "type": "أوتار"
+      }
+    }
+  ]
+}

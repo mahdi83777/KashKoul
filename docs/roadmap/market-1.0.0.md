@@ -23,12 +23,13 @@ approved, and approved steps are marked ✅ here with the date.
 | 2026-10-15 | **Resell model.** We buy from Amazon US, then sell and deliver in Lebanon | Not affiliate links: Amazon US doesn't ship most items to Lebanon. |
 | 2026-10-15 | **No online payment.** Cash on delivery, or Whish arranged over WhatsApp | How customers in Lebanon already pay. Set up as Shopify "manual payment methods". |
 | 2026-10-15 | **Colors: brick & mustard** (option B), Kashkoul fonts (Gloock, Bricolage Grotesque, Fustat), Studio-style layout | Chosen on the step 1 style board over deep green & sand pink. |
-| 2026-10-15 | **Running the shop:** Academy WhatsApp (+961 78 721 968); items in stock *and* on order; one flat delivery fee everywhere in Lebanon, with time-limited offers through Shopify Discounts; free pickup in Khaldeh; delivery 1–3 days (in stock) / 2–4 weeks (on order); deposit by Whish on on-order items above an amount (amount and % are editable settings); returns only for damaged or wrong items within 48 hours; prices in USD only; discount code for Academy students and teachers; Arabic in simple standard Arabic; Arabic name سوق كشكول | Answered in step 2, with Academy and Studio sites as the source for contact, hours and tone. Details in `docs/market/content.md`. |
+| 2026-10-15 | **Running the shop:** Academy WhatsApp (+961 78 721 968); items in stock *and* on order; one flat delivery fee everywhere in Lebanon, with time-limited offers through Shopify Discounts; free pickup in Khaldeh; delivery 3–5 days (in stock; first set at 1–3, changed the same day) / 2–4 weeks (on order); deposit by Whish on on-order items above an amount (amount and % are editable settings); returns only for damaged or wrong items within 48 hours; prices in USD only; discount code for Academy students and teachers; Arabic in simple standard Arabic; Arabic name سوق كشكول | Answered in step 2, with Academy and Studio sites as the source for contact, hours and tone. Details in `docs/market/content.md`. |
 | 2026-10-15 | **Numbers:** delivery $5 flat; deposit 30% on on-order items when the order is over $100; Academy students and teachers 10% off; no warranty; special requests yes (Amazon link on WhatsApp, optional photo and variation) | Answered after the step 2 draft. |
 | 2026-10-15 | **Help pages are designed pages**, not text pages; all wording in `market/strings.json`, all shop numbers in theme settings | Text-only pages looked poor; one set of pieces (cards, big numbers, bands) keeps every page consistent and lets the owner change a number once. |
 | 2026-10-15 | **Header and menu:** logo left like the Academy and Studio; one "Shop" dropdown instead of four category tabs; one-tap language switch; no Contact page | The menu was crowded; WhatsApp is on every page, so a Contact page added nothing. |
 | 2026-10-15 | **Homepage v2 and footer A:** the homepage stays about the Market (categories, products) in the pages' style, plus short Delivery and How-to-order sections; footer A "compact brick" | Chosen on the homepage v2 board; previews of other pages on the homepage were too much. |
 | 2026-10-15 | **Page width:** content up to 1440px, centered, 40px side margins; full width below that | Full width on laptops, comfortable line lengths on big monitors (full width compared and rejected). |
+| 2026-10-15 | **Shop page and product page:** stock levels decide In stock / On order / Sold out; shop filters are Type, Brand and Price (no "Availability" filter); products load as you scroll; options are dropdowns; breadcrumbs instead of a Back button | Shopify's own Availability filter counts on-order items as in stock. Dropdowns keep long option lists (6 gauges, 7 colors) to one line. |
 | 2026-10-15 | **English and Arabic** on every page, **mobile first** | Customers order from their phones, in either language. |
 | 2026-10-15 | **Build on a free development store** and move to a paid plan at launch | Costs nothing while building. Created as a "client transfer" store, so it becomes the real store at launch with nothing rebuilt. |
 | 2026-10-15 | **Theme base: Horizon** (Shopify's free theme, v4.3.0), **styled to look like Shopify's "Studio" theme** | Studio's look was the favorite (Atelier, Tinker and Horizon were also compared), but Studio has no Arabic support: no right-to-left layout and no Arabic text file. Horizon has both built in, and Studio's look is mostly settings (serif type, deep ink color on near-white, colored panels, pill buttons), which Horizon can reproduce. If the step 1 style board doesn't convince, the fallback is Studio with Arabic added by hand. |
@@ -148,17 +149,42 @@ Preview: https://kashkoul-market-fhsuuq5c.myshopify.com/?preview_theme_id=189216
 
 **Review:** the built homepage and footer. → Approved 2026-10-15.
 
-## Step 4 — Category & product pages 🔄
+## Step 4 — Category & product pages ✅ (2026-10-15)
 
-- [ ] 5–10 sample products added by hand, in English and Arabic
-- [ ] Category page: grid, filters, sorting
-- [ ] Product page: photos, price, availability ("in stock" or "ships in about 2 weeks"), description
-- [ ] On every product: how to pay (cash on delivery or Whish) and the delivery time
-- [ ] Checked on phone and computer, in English and Arabic
+- [x] 5–10 sample products added by hand, in English and Arabic
+- [x] Category page: grid, filters, sorting
+- [x] Product page: photos, price, availability ("in stock" or "ships in about 2 weeks"), description
+- [x] On every product: how to pay (cash on delivery or Whish) and the delivery time
+- [x] Checked on phone and computer, in English and Arabic
+
+**Availability rule (agreed):** taken from the stock count in the Shopify admin. Quantity above 0 = **In stock** (3–5 days); 0 with "continue selling when out of stock" = **On order** (2–4 weeks, deposit line shown); otherwise **Sold out**. Stock not tracked counts as in stock.
+
+**4a — Product page** ✅
+- "Shop · Instruments · Product" above the product, in the Market's label style (Bricolage capitals, terracotta, mustard dots); on phones only "‹ Instruments" (`sections/kashkoul-breadcrumbs.liquid`). No separate Back button.
+- Photo and details side by side: the photo's column is as wide as the photo, which fits the window height, and the details take the rest; every photo in the same square white frame, whole (Amazon photos aren't cropped); all colors in the gallery; choosing a size or color shows its photo at once.
+- Size and Color side by side; quantity, Add to cart and Buy it now in one row of 40px buttons (Buy it now on its own row on phones); "Ask about this on WhatsApp" as a small link; the photo sits next to the details and the column starts level with it.
+- Brand, title, price, availability line ("In stock · delivered in 3–5 days" / "On order · delivered in 2–4 weeks" / "Sold out"), options as dropdowns (Size ▾, Color ▾), Add to cart (solid) and Buy it now (outlined), "Ask about this on WhatsApp" link (with the product's name and link), info box (pay on delivery · delivery $5 or free pickup · we confirm on WhatsApp · deposit on on-order items), tabs: Description, Delivery & pickup, Returns.
+- Availability and deposit lines follow the chosen option (`assets/kashkoul-product.js`).
+- "You may also like" with the Kashkoul heading.
+- In-stock delivery changed from 1–3 to **3–5 days** (theme setting default, help pages, docs).
+
+**4b — Category page** ✅
+- [x] Header: "Shop" label, the category title and description, and the categories as chips (the links under "Shop" in the main menu, so the owner manages them in Navigation) (`sections/kashkoul-collection-head.liquid`)
+- [x] Filter & sort bar as pills with white drop-down panels. Filters: Type, Brand, Price (Search & Discovery app; Arabic labels النوع، الماركة، السعر; product types in Arabic). Shopify's "Availability" filter removed (it counts on-order items as in stock)
+- [x] One product card everywhere (shop page, homepage, "You may also like", search, cart): white tile with rounded corners, square photo, In stock / On order / Sold out badge, brand, title of at most 2 lines, bold brick price (`blocks/kashkoul-card-meta.liquid`)
+- [x] Same side margins on phones as the homepage; products load 24 at a time as you scroll; no grid-size switch
+- [x] Phones: one full-width "Filter & sort" row with the product count; the drawer opens with every filter collapsed; counts in proper Arabic plurals (10 منتجات)
+
+**4c — Sample products** ✅ imported from Amazon with the Reputon app (free plan, 5 at a time), then cleaned up by `market/tools/setup-products.mjs` from `market/store/products.json`: our own English/Arabic title and description, short handle, brand, type, tag `sample`, no "compare at" price, option names and values in Arabic, 1–7 clean photos (no advert slides), and only the variants that belong to the product (the importer brings Amazon's whole family, e.g. 17 different pedals under one delay pedal).
+- [x] Fender FA-25 guitar, Fender Venice ukulele, Eastar violin set, Akai MPK Mini MK3, D'Addario oud strings
+- [x] Hal Leonard Guitar Method Book 1, Winsor & Newton Cotman set (12/16/24 colors), Donner Yellow Fall delay, Vic Firth Freestyle 5B, D'Addario NYXL 3 sets (6 gauges)
+- [x] Stock levels: oud strings ×10, Hal Leonard ×10, Winsor & Newton ×10 each, Donner ×4; the others on order. The script only sets stock while it isn't tracked yet; after that the admin owns it
+
+**4d — Check** ✅ computer checked by Claude, phone by Mohamad (Claude's browser window can't be narrowed), English and Arabic.
 
 **Review:** how a product looks and reads.
 
-## Step 5 — Ordering ⬜
+## Step 5 — Ordering 🔄
 
 - [ ] Cart
 - [ ] Checkout with two manual payment methods: "Cash on delivery" and "Whish (we'll contact you on WhatsApp)"

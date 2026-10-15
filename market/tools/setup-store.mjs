@@ -7,55 +7,13 @@
 //     write_online_store_navigation,read_online_store_pages,write_online_store_pages,read_translations,\
 //     write_translations,read_locales,write_locales,read_publications,write_publications
 //   node market/tools/setup-store.mjs [--store kashkoul-market-fhsuuq5c.myshopify.com]
-import { execFileSync } from 'node:child_process';
-import { mkdtempSync, readFileSync, writeFileSync, rmSync } from 'node:fs';
-import { tmpdir } from 'node:os';
+import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { gql, check, translate } from './store-lib.mjs';
 
 const market = join(dirname(fileURLToPath(import.meta.url)), '..');
 const content = JSON.parse(readFileSync(join(market, 'store', 'content.json'), 'utf8'));
-const argStore = process.argv.indexOf('--store');
-const STORE = argStore > -1 ? process.argv[argStore + 1] : 'kashkoul-market-fhsuuq5c.myshopify.com';
-const tmp = mkdtempSync(join(tmpdir(), 'kk-store-'));
-
-let n = 0;
-function gql(query, variables = {}, { mutation = false } = {}) {
-  const q = join(tmp, `q${++n}.graphql`), v = join(tmp, `v${n}.json`), out = join(tmp, `o${n}.json`);
-  writeFileSync(q, query);
-  writeFileSync(v, JSON.stringify(variables));
-  const args = ['store', 'execute', '--store', STORE, '--query-file', q, '--variable-file', v, '--output-file', out, '--no-color'];
-  if (mutation) args.push('--allow-mutations');
-  try {
-    execFileSync('shopify', args, { stdio: ['ignore', 'pipe', 'pipe'] });
-  } catch (e) {
-    process.stderr.write(e.stderr?.toString() ?? '');
-    throw new Error(`shopify store execute failed (${query.trim().split('\n')[0].slice(0, 80)})`);
-  }
-  return JSON.parse(readFileSync(out, 'utf8'));
-}
-function check(result, path) {
-  const errors = path.split('.').reduce((o, k) => o?.[k], result)?.userErrors ?? [];
-  if (errors.length) throw new Error(`${path}: ${JSON.stringify(errors)}`);
-}
-
-// Registers Arabic (or any) translations for a resource, by key. `values` = { title: '…', body_html: '…' }.
-// Brand-new resources (e.g. menu items just created) can take a moment to become translatable, so it retries.
-function translate(resourceId, locale, values, attempt = 1) {
-  let translatableResource;
-  try {
-    ({ translatableResource } = gql(`query ($id: ID!) { translatableResource(resourceId: $id) { translatableContent { key digest } } }`, { id: resourceId }));
-  } catch (e) {
-    if (attempt >= 4) throw e;
-    execFileSync('sleep', [String(2 * attempt)]);
-    return translate(resourceId, locale, values, attempt + 1);
-  }
-  const digests = Object.fromEntries(translatableResource.translatableContent.map(c => [c.key, c.digest]));
-  const translations = Object.entries(values).filter(([key]) => digests[key]).map(([key, value]) => ({ locale, key, value, translatableContentDigest: digests[key] }));
-  if (!translations.length) return;
-  check(gql(`mutation ($id: ID!, $t: [TranslationInput!]!) { translationsRegister(resourceId: $id, translations: $t) { userErrors { field message } } }`,
-    { id: resourceId, t: translations }, { mutation: true }), 'translationsRegister');
-}
 
 const { publications } = gql(`{ publications(first: 20) { nodes { id name } } }`);
 const onlineStore = publications.nodes.find(p => p.name === 'Online Store')?.id;
@@ -136,5 +94,4 @@ for (const l of content.locales) {
   console.log(`language    ${l.locale}  published=${l.published}`);
 }
 
-rmSync(tmp, { recursive: true, force: true });
 console.log('done');

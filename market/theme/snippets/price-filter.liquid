@@ -18,6 +18,11 @@
   elsif filter_style == 'vertical'
     assign is_vertical = true
   endif
+  # Kashkoul: in the phone filter drawer, every filter starts collapsed
+  assign kk_open = is_vertical
+  if id_prefix == 'dialog'
+    assign kk_open = false
+  endif
 -%}
 {% capture accordion_children %}
   <details
@@ -177,9 +182,9 @@
 {% render 'accordion-custom-component',
   children: accordion_children,
   class: 'facets__item',
-  open: is_vertical,
-  open_by_default_on_desktop: is_vertical,
-  open_by_default_on_mobile: is_vertical,
+  open: kk_open,
+  open_by_default_on_desktop: kk_open,
+  open_by_default_on_mobile: kk_open,
   disable_animation_on_desktop: is_horizontal,
   close_with_escape: is_horizontal
 %}

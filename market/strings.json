@@ -30,7 +30,8 @@
       "order_link": "How to order, in detail",
       "eyebrow": "Kashkoul Market",
       "how_to_order": "How to order",
-      "delivery_link": "Delivery & pickup, in detail"
+      "delivery_link": "Delivery & pickup, in detail",
+      "related_title": "You may also like"
     },
     "categories": {
       "instruments": "Instruments",
@@ -207,6 +208,38 @@
       "studio_text": "The same rooms, furnished and lit, by the hour or the day.",
       "market_line": "The Market brings you what you need",
       "market_text": "Instruments, strings, art supplies and books, to play and to make."
+    },
+    "product": {
+      "in_stock": "In stock",
+      "in_stock_time": "Delivered in {{ days }} days",
+      "on_order": "On order",
+      "on_order_time": "Ordered from the US for you · delivered in {{ weeks }} weeks",
+      "sold_out": "Sold out",
+      "sold_out_time": "Ask us on WhatsApp when it's back",
+      "ask": "Ask about this on WhatsApp",
+      "ask_message": "Hi Kashkoul Market! I have a question about:",
+      "pay_html": "<strong>Pay on delivery</strong>, in cash or with Whish. No card needed.",
+      "delivery_html": "<strong>Delivery</strong> anywhere in Lebanon for ${{ fee }}, or <strong>free pickup</strong> in Khaldeh.",
+      "confirm_html": "<strong>We confirm every order</strong> with you on WhatsApp before it's on its way.",
+      "deposit_html": "<strong>Ordered specially for you.</strong> For orders over ${{ over }}, we ask for a {{ percent }}% deposit by Whish before we order it. The rest is paid on delivery.",
+      "tab_description": "Description",
+      "tab_delivery": "Delivery & pickup",
+      "tab_returns": "Returns",
+      "delivery_text": "Delivered anywhere in Lebanon for ${{ fee }}: in-stock items in {{ days }} days, on-order items in {{ weeks }} weeks. Or pick it up free from Kashkoul in Khaldeh, Mon–Sat 12pm–8pm.",
+      "returns_text": "If an item arrives damaged or isn't what you ordered, tell us within {{ hours }} hours and we'll exchange or refund it. Change-of-mind returns aren't possible, since most items are ordered from the US especially for you.",
+      "more": "More details"
+    },
+    "crumbs": {
+      "label": "Breadcrumb",
+      "shop": "Shop",
+      "categories": "Categories"
+    },
+    "shop": {
+      "filter_sort": "Filter & sort",
+      "count": {
+        "one": "{{ count }} product",
+        "other": "{{ count }} products"
+      }
     }
   },
   "ar": {
@@ -239,7 +272,8 @@
       "order_link": "تفاصيل الطلب",
       "eyebrow": "سوق كشكول",
       "how_to_order": "كيف تطلب",
-      "delivery_link": "تفاصيل التوصيل والاستلام"
+      "delivery_link": "تفاصيل التوصيل والاستلام",
+      "related_title": "قد يعجبك أيضًا"
     },
     "categories": {
       "instruments": "آلات موسيقية",
@@ -416,6 +450,42 @@
       "studio_text": "الغرف نفسها، مفروشة ومضاءة، بالساعة أو باليوم.",
       "market_line": "السوق يحضر لك ما تحتاجه",
       "market_text": "آلات موسيقية وأوتار ولوازم فنية وكتب، للعزف والإبداع."
+    },
+    "product": {
+      "in_stock": "متوفر",
+      "in_stock_time": "يصل خلال {{ days }} أيام",
+      "on_order": "حسب الطلب",
+      "on_order_time": "نطلبه لك من الولايات المتحدة · يصل خلال {{ weeks }} أسابيع",
+      "sold_out": "نفدت الكمية",
+      "sold_out_time": "اسألنا على واتساب متى يتوفّر",
+      "ask": "اسأل عنه على واتساب",
+      "ask_message": "مرحبًا سوق كشكول، لديّ سؤال عن:",
+      "pay_html": "<strong>ادفع عند الاستلام</strong>، نقدًا أو عبر Whish. لا حاجة لبطاقة.",
+      "delivery_html": "<strong>توصيل</strong> إلى أي مكان في لبنان مقابل {{ fee }}$، أو <strong>استلام مجاني</strong> من خلدة.",
+      "confirm_html": "<strong>نؤكّد كل طلب</strong> معك على واتساب قبل إرساله.",
+      "deposit_html": "<strong>نطلبه خصيصًا لك.</strong> للطلبات فوق {{ over }}$، نطلب عربونًا بنسبة {{ percent }}% عبر Whish قبل أن نطلبه، والباقي عند الاستلام.",
+      "tab_description": "الوصف",
+      "tab_delivery": "التوصيل والاستلام",
+      "tab_returns": "الاسترجاع",
+      "delivery_text": "نوصل إلى أي مكان في لبنان مقابل {{ fee }}$: القطع المتوفرة خلال {{ days }} أيام، والقطع حسب الطلب خلال {{ weeks }} أسابيع. أو استلمه مجانًا من كشكول في خلدة، الاثنين–السبت 12 ظهرًا–8 مساءً.",
+      "returns_text": "إذا وصلت القطعة متضرّرة أو مختلفة عمّا طلبته، أخبرنا خلال {{ hours }} ساعة ونستبدلها أو نعيد لك المبلغ. لا يمكن الاسترجاع بسبب تغيير الرأي، لأن معظم القطع نطلبها من الولايات المتحدة خصيصًا لك.",
+      "more": "تفاصيل أكثر"
+    },
+    "crumbs": {
+      "label": "مسار التصفّح",
+      "shop": "تسوّق",
+      "categories": "الأقسام"
+    },
+    "shop": {
+      "filter_sort": "التصفية والترتيب",
+      "count": {
+        "zero": "لا منتجات",
+        "one": "منتج واحد",
+        "two": "منتجان",
+        "few": "{{ count }} منتجات",
+        "many": "{{ count }} منتجًا",
+        "other": "{{ count }} منتج"
+      }
     }
   }
 }

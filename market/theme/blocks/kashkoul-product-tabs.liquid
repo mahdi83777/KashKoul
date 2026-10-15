@@ -1,0 +1,45 @@
+{%- comment -%}
+  Product page tabs, tap to open (<details>): Description (open), Delivery & pickup, Returns.
+  The description is the product's own (translated in Translate & Adapt); the other two come from the theme in the
+  visitor's language, with numbers from Theme settings → Kashkoul.
+{%- endcomment -%}
+{%- liquid
+  assign product = closest.product
+  assign fee = settings.kashkoul_delivery_fee | default: 5
+  assign hours = settings.kashkoul_return_hours | default: 48
+  assign days = settings.kashkoul_days_in_stock | default: '3–5' | prepend: '⁦' | append: '⁩'
+  assign weeks = settings.kashkoul_weeks_on_order | default: '2–4' | prepend: '⁦' | append: '⁩'
+  capture delivery_url
+    render 'kashkoul-url', path: '/pages/delivery-pickup'
+  endcapture
+  capture returns_url
+    render 'kashkoul-url', path: '/pages/returns'
+  endcapture
+-%}
+<div class="kk-ptabs" {{ block.shopify_attributes }}>
+  {%- if product.description != blank -%}
+    <details class="kk-ptab" open>
+      <summary class="kk-ptab__q"><span>{{ 'kashkoul.product.tab_description' | t }}</span><span class="kk-faq__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+      <div class="kk-ptab__a rte">{{ product.description }}</div>
+    </details>
+  {%- endif -%}
+  <details class="kk-ptab">
+    <summary class="kk-ptab__q"><span>{{ 'kashkoul.product.tab_delivery' | t }}</span><span class="kk-faq__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+    <div class="kk-ptab__a"><p>{{ 'kashkoul.product.delivery_text' | t: fee: fee, days: days, weeks: weeks }}</p><a class="kk-link" href="{{ delivery_url }}">{{ 'kashkoul.product.more' | t }} →</a></div>
+  </details>
+  <details class="kk-ptab">
+    <summary class="kk-ptab__q"><span>{{ 'kashkoul.product.tab_returns' | t }}</span><span class="kk-faq__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+    <div class="kk-ptab__a"><p>{{ 'kashkoul.product.returns_text' | t: hours: hours }}</p><a class="kk-link" href="{{ returns_url }}">{{ 'kashkoul.product.more' | t }} →</a></div>
+  </details>
+</div>
+
+{% schema %}
+{
+  "name": "Kashkoul product tabs",
+  "tag": null,
+  "settings": [
+    { "type": "paragraph", "content": "Description, Delivery & pickup and Returns, opening on tap. Text in English and Arabic from the theme." }
+  ],
+  "presets": [{ "name": "Kashkoul product tabs" }]
+}
+{% endschema %}

@@ -402,7 +402,8 @@
       "order_link": "How to order, in detail",
       "eyebrow": "Kashkoul Market",
       "how_to_order": "How to order",
-      "delivery_link": "Delivery & pickup, in detail"
+      "delivery_link": "Delivery & pickup, in detail",
+      "related_title": "You may also like"
     },
     "categories": {
       "instruments": "Instruments",
@@ -579,6 +580,38 @@
       "studio_text": "The same rooms, furnished and lit, by the hour or the day.",
       "market_line": "The Market brings you what you need",
       "market_text": "Instruments, strings, art supplies and books, to play and to make."
+    },
+    "product": {
+      "in_stock": "In stock",
+      "in_stock_time": "Delivered in {{ days }} days",
+      "on_order": "On order",
+      "on_order_time": "Ordered from the US for you · delivered in {{ weeks }} weeks",
+      "sold_out": "Sold out",
+      "sold_out_time": "Ask us on WhatsApp when it's back",
+      "ask": "Ask about this on WhatsApp",
+      "ask_message": "Hi Kashkoul Market! I have a question about:",
+      "pay_html": "<strong>Pay on delivery</strong>, in cash or with Whish. No card needed.",
+      "delivery_html": "<strong>Delivery</strong> anywhere in Lebanon for ${{ fee }}, or <strong>free pickup</strong> in Khaldeh.",
+      "confirm_html": "<strong>We confirm every order</strong> with you on WhatsApp before it's on its way.",
+      "deposit_html": "<strong>Ordered specially for you.</strong> For orders over ${{ over }}, we ask for a {{ percent }}% deposit by Whish before we order it. The rest is paid on delivery.",
+      "tab_description": "Description",
+      "tab_delivery": "Delivery & pickup",
+      "tab_returns": "Returns",
+      "delivery_text": "Delivered anywhere in Lebanon for ${{ fee }}: in-stock items in {{ days }} days, on-order items in {{ weeks }} weeks. Or pick it up free from Kashkoul in Khaldeh, Mon–Sat 12pm–8pm.",
+      "returns_text": "If an item arrives damaged or isn't what you ordered, tell us within {{ hours }} hours and we'll exchange or refund it. Change-of-mind returns aren't possible, since most items are ordered from the US especially for you.",
+      "more": "More details"
+    },
+    "crumbs": {
+      "label": "Breadcrumb",
+      "shop": "Shop",
+      "categories": "Categories"
+    },
+    "shop": {
+      "filter_sort": "Filter & sort",
+      "count": {
+        "one": "{{ count }} product",
+        "other": "{{ count }} products"
+      }
     }
   }
 }

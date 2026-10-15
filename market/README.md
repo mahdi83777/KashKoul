@@ -22,7 +22,10 @@ market/
 
 Kashkoul changes live in new files named `kashkoul-…` wherever possible, so Horizon updates can still be applied.
 The few edits to Horizon's own files are marked with a "Kashkoul:" comment (`layout/theme.liquid`,
-`blocks/_header-logo.liquid`, `sections/header.liquid`).
+`blocks/_header-logo.liquid`, `sections/header.liquid`; `snippets/list-filter.liquid` and `snippets/price-filter.liquid`,
+where the phone filter drawer starts with every filter collapsed; `blocks/filters.liquid`, for the full-width
+"Filter & sort" row on phones and the product count in proper English/Arabic plurals). One can't carry a comment because it's inside a JSON
+schema: `blocks/_product-card.liquid` lists `kashkoul-card-meta` among the blocks a product card accepts.
 
 ## The Kashkoul layer
 
@@ -30,16 +33,25 @@ The few edits to Horizon's own files are marked with a "Kashkoul:" comment (`lay
 market/
 ├── strings.json            English + Arabic text for the Kashkoul sections (from docs/market/content.md)
 ├── store/content.json      store content: categories, pages, main menu, their Arabic, published languages
+├── store/products.json     sample products' clean-up: titles, descriptions, Arabic, options, photos to keep, stock
 ├── PHOTO-CREDITS.md        where the theme's photos come from
 ├── .theme-check.yml        Theme Check config (English + Arabic only)
 ├── tools/
 │   ├── sync-strings.mjs    strings.json → theme/locales/en.default.json + ar.json ("kashkoul" key)
 │   ├── sync-house.mjs      shared/sites.json → theme/snippets/kashkoul-house.liquid (links between the sites)
-│   └── setup-store.mjs     store/content.json → the store, through `shopify store execute` (safe to re-run)
+│   ├── setup-store.mjs     store/content.json → the store, through `shopify store execute` (safe to re-run)
+│   ├── setup-products.mjs  store/products.json → the imported products (safe to re-run)
+│   └── store-lib.mjs       shared helpers for the two store scripts
 └── theme/
     ├── snippets/kashkoul-head.liquid   fonts, colors, type scale (--kk-fs-*), spacing (--kk-sec)
     ├── assets/kashkoul.css             styles for every Kashkoul section
     ├── sections/kashkoul-*.liquid      homepage, help pages, header strip, announcement, footer
+    ├── blocks/kashkoul-*.liquid        product page: availability, WhatsApp question, info box, tabs;
+    │                                   product cards: kashkoul-card-meta (badge on the photo + brand)
+    ├── sections/kashkoul-breadcrumbs   product page: Shop · Category · Product (phones: ‹ Category)
+    ├── sections/kashkoul-collection-head  shop/category page header with category chips
+    ├── snippets/kashkoul-stock-state   in stock / on order / sold out, from the stock count
+    ├── assets/kashkoul-product.js      keeps the availability and deposit lines in step with the chosen option
     └── templates/page.*.json           the designed pages: how-to-order, delivery-pickup, returns, faq, about
 ```
 

@@ -1,0 +1,47 @@
+{%- comment -%}
+  Product page info box: pay on delivery · delivery fee or free pickup · we confirm on WhatsApp, and — for on-order
+  variants only — the deposit rule (refreshed on variant change by assets/kashkoul-product.js). Numbers from Theme settings → Kashkoul; text in the visitor's language.
+{%- endcomment -%}
+{%- liquid
+  assign variant = closest.product.selected_or_first_available_variant
+  capture state
+    render 'kashkoul-stock-state', variant: variant
+  endcapture
+  assign fee = settings.kashkoul_delivery_fee | default: 5
+  assign over = settings.kashkoul_deposit_over | default: 100
+  assign deposit = settings.kashkoul_deposit_percent | default: 30
+-%}
+<script src="{{ 'kashkoul-product.js' | asset_url }}" type="module" fetchpriority="low"></script>
+<kk-live class="kk-pinfo-wrap" data-block-id="{{ block.id }}" {{ block.shopify_attributes }}>
+<ul class="kk-pinfo">
+  <li>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="3"/></svg>
+    <span>{{ 'kashkoul.product.pay_html' | t }}</span>
+  </li>
+  <li>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+    <span>{{ 'kashkoul.product.delivery_html' | t: fee: fee }}</span>
+  </li>
+  <li>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg>
+    <span>{{ 'kashkoul.product.confirm_html' | t }}</span>
+  </li>
+  {%- if state == 'on_order' -%}
+    <li class="kk-pinfo__deposit">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>
+      <span>{{ 'kashkoul.product.deposit_html' | t: over: over, percent: deposit }}</span>
+    </li>
+  {%- endif -%}
+</ul>
+</kk-live>
+
+{% schema %}
+{
+  "name": "Kashkoul product info",
+  "tag": null,
+  "settings": [
+    { "type": "paragraph", "content": "Payment, delivery and confirmation, plus the deposit rule on on-order items. Numbers from Theme settings → Kashkoul." }
+  ],
+  "presets": [{ "name": "Kashkoul product info" }]
+}
+{% endschema %}
