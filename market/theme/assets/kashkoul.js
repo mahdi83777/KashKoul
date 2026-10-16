@@ -16,6 +16,15 @@ document.addEventListener('click', (event) => {
   drawer.close();
 });
 
+// The cart doesn't follow you to the next page (no-persist in snippets/cart-drawer.liquid). Pressing Back can still
+// bring a page back from the browser's memory with the cart open: close it as the page is left, and again on return.
+const closeCartDrawer = () => {
+  const drawer = document.querySelector('theme-drawer#cart-drawer');
+  if (drawer?.isOpen && typeof drawer.close === 'function') drawer.close();
+};
+window.addEventListener('pagehide', closeCartDrawer);
+window.addEventListener('pageshow', (event) => { if (event.persisted) closeCartDrawer(); });
+
 // The header's Shop menu: the +/− next to a category opens or closes its sub-categories (snippets/mega-menu-list.liquid).
 document.addEventListener('click', (event) => {
   const toggle = event.target instanceof Element ? event.target.closest('.kk-subtoggle') : null;

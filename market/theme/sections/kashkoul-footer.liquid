@@ -1,8 +1,8 @@
 {%- comment -%}
   Footer A, "compact brick" (chosen on the homepage v2 board, 2026-10-15):
   the full Market logo with one line and a WhatsApp button, then Shop / Help / Kashkoul columns, and a thin darker bar
-  with © and the Miqvaro credit. Shop and Help use the menus picked in the editor; with none picked they list the
-  categories and the help pages. The Kashkoul column comes from shared/sites.json (snippets/kashkoul-house.liquid,
+  with © and the Miqvaro credit. Shop lists the categories under "Shop" in the main menu (so a new category shows up
+  here by itself), or the menu picked in the editor; Help uses the menu picked in the editor, or the help pages. The Kashkoul column comes from shared/sites.json (snippets/kashkoul-house.liquid,
   kind 'links'). All text in the visitor's language.
 {%- endcomment -%}
 {%- capture wa_url -%}{% render 'kashkoul-whatsapp-url' %}{%- endcapture -%}
@@ -21,13 +21,25 @@
 
     <nav class="kk-ft__col" aria-labelledby="kk-ft-shop">
       <h2 class="kk-ft__head" id="kk-ft-shop">{{ 'kashkoul.footer.shop' | t }}</h2>
-      {%- if section.settings.shop_menu != blank -%}
-        {%- for link in section.settings.shop_menu.links -%}
+      {%- liquid
+        assign kk_shop_links = section.settings.shop_menu.links
+        if section.settings.shop_menu == blank
+          for link in linklists['main-menu'].links
+            if link.links.size > 0
+              assign kk_shop_links = link.links
+              break
+            endif
+          endfor
+        endif
+      -%}
+      {%- if kk_shop_links.size > 0 -%}
+        {%- for link in kk_shop_links -%}
           <a href="{{ link.url }}">{{ link.title | escape }}</a>
         {%- endfor -%}
       {%- else -%}
         <a href="{{ routes.collections_url }}/instruments">{{ 'kashkoul.categories.instruments' | t }}</a>
         <a href="{{ routes.collections_url }}/strings-accessories">{{ 'kashkoul.categories.strings' | t }}</a>
+        <a href="{{ routes.collections_url }}/studio-recording">{{ 'kashkoul.categories.studio' | t }}</a>
         <a href="{{ routes.collections_url }}/art-supplies">{{ 'kashkoul.categories.art' | t }}</a>
         <a href="{{ routes.collections_url }}/books-sheet-music">{{ 'kashkoul.categories.books' | t }}</a>
         <a href="{{ routes.all_products_collection_url }}">{{ 'kashkoul.categories.all' | t }}</a>
@@ -72,7 +84,7 @@
   "class": "kk-footer-section",
   "enabled_on": { "groups": ["footer"] },
   "settings": [
-    { "type": "link_list", "id": "shop_menu", "label": "Shop links", "info": "Leave empty for the four categories and All products." },
+    { "type": "link_list", "id": "shop_menu", "label": "Shop links", "info": "Leave empty for the categories under \"Shop\" in the main menu." },
     { "type": "link_list", "id": "help_menu", "label": "Help links", "info": "Leave empty for How to order, Delivery & pickup, Returns, FAQ and About." },
     { "type": "paragraph", "content": "The Kashkoul column (Academy, Studio) comes from shared/sites.json in the code." }
   ],

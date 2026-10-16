@@ -40,9 +40,11 @@
     </div>
   {% endcapture %}
 
+  {%- comment -%} Kashkoul: no-persist, so the cart doesn't reopen by itself on the next page {%- endcomment -%}
   <theme-drawer
     id="cart-drawer"
     data-skip-node-update
+    no-persist
   >
     <dialog
       ref="panel"

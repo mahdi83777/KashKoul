@@ -57,6 +57,12 @@ a.kk-house__site:hover { color: var(--kk-paper); }
 /* ---- shop by category ---- */
 .kk-cats__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 14px; }
 @media (min-width: 990px) { .kk-cats__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; } }
+/* five categories: one row of five on computers; on phones an odd last card takes the whole row */
+@media (min-width: 990px) { .kk-cats__grid:has(> .kk-cat:nth-child(5):last-child) { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px; } }
+@media (max-width: 989px) {
+  .kk-cats__grid > .kk-cat:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .kk-cats__grid > .kk-cat:last-child:nth-child(odd) .kk-cat__media { aspect-ratio: 2 / 1; }
+}
 .kk-cat { display: flex; flex-direction: column; gap: 12px; text-align: center; color: var(--kk-brick); text-decoration: none; }
 .kk-cat__media { position: relative; aspect-ratio: 4 / 5; overflow: hidden; display: flex; align-items: center; justify-content: center; }
 .kk-cat__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
@@ -322,6 +328,10 @@ html[lang='ar'] .kk-crumbs__list { text-transform: none; letter-spacing: 0; font
    never taller than the window; the details beside it in a calm column of at most 500px */
 media-gallery { container-type: inline-size; }
 media-gallery .product-media-container { aspect-ratio: auto !important; height: min(75cqw, max(320px, 100svh - 250px)); }
+/* computers show a row of thumbnails under the photo (Theme → product page → media): keep it in the window too */
+@media (min-width: 750px) {
+  media-gallery .product-media-container { height: min(75cqw, max(320px, 100svh - 340px)); }
+}
 @media (min-width: 990px) {
   .product-information .product-information__grid.product-information__grid--half.product-information--media-left {
     grid-template-columns:
@@ -503,26 +513,86 @@ product-card.product-card { position: relative; }
   background: #fff !important; border: 1px solid var(--kk-line); border-radius: 16px; box-shadow: 0 14px 34px rgb(31 30 33 / .12); margin-block-start: 8px; }
 
 /* ---- shop / category page header (sections/kashkoul-collection-head.liquid) ---- */
-.kk-chead { padding-block: 40px 28px; border-block-end: 1px solid var(--kk-line); margin-block-end: 24px; }
+.kk-chead { padding-block: 40px 8px; margin-block-end: 24px; }
 .kk-chead__eyebrow { margin: 0 0 10px; }
 .kk-chead__title { margin: 0; font-family: var(--kk-font-title); font-weight: var(--kk-title-weight); font-size: var(--kk-fs-h1); line-height: 1.02; color: var(--kk-brick); letter-spacing: -.01em; }
 .kk-chead__text { margin-block-start: 14px; max-width: 60ch; font-size: var(--kk-fs-lead); line-height: 1.55; color: var(--kk-muted); }
 .kk-chead__text p { margin: 0; }
-.kk-chips { display: flex; gap: 8px; margin-block-start: 26px; overflow-x: auto; scrollbar-width: none; padding-block-end: 2px; }
-.kk-chips::-webkit-scrollbar { display: none; }
-.kk-chip { flex: none; display: inline-flex; align-items: center; min-height: 40px; padding: 0 18px; border-radius: 100px; border: 1px solid #cdbcaa;
-  font-family: var(--kk-font-label); font-size: 15px; font-weight: 600; color: var(--kk-ink); text-decoration: none; white-space: nowrap; transition: background-color .15s, border-color .15s, color .15s; }
-.kk-chip:hover { border-color: var(--kk-brick); }
-.kk-chip.is-on { background: var(--kk-brick); border-color: var(--kk-brick); color: var(--kk-paper); }
-/* sub-categories (e.g. under Instruments): a second, lighter row */
-.kk-chips--sub { margin-block-start: 12px; gap: 6px; }
-.kk-chip--sub { min-height: 34px; padding: 0 14px; font-size: 14px; background: transparent; border-color: transparent; color: var(--kk-muted); }
-.kk-chip--sub:hover { border-color: #cdbcaa; color: var(--kk-ink); }
-.kk-chip--sub.is-on { background: var(--kk-paper-2); border-color: var(--kk-brick); color: var(--kk-brick); }
+/* categories as tabs (sections/kashkoul-collection-head.liquid) */
+.kk-tabs { display: flex; gap: 28px; margin-block-start: 26px; border-block-end: 1px solid var(--kk-line); overflow-x: auto; scrollbar-width: none; }
+.kk-tabs::-webkit-scrollbar { display: none; }
+.kk-tab { flex: none; padding-block: 0 12px; margin-block-end: -1px; border-block-end: 3px solid transparent; font-family: var(--kk-font-label);
+  font-size: 15px; font-weight: 600; color: var(--kk-muted); text-decoration: none; white-space: nowrap; transition: color .15s, border-color .15s; }
+.kk-tab:hover { color: var(--kk-ink); }
+.kk-tab.is-on { color: var(--kk-brick); border-color: var(--kk-brick); }
+/* sub-categories as round photo tiles with their count; the first one is the whole category */
+.kk-tiles { display: flex; gap: 12px; margin-block-start: 20px; padding-block: 2px; overflow-x: auto; scrollbar-width: none; }
+.kk-tiles::-webkit-scrollbar { display: none; }
+.kk-tile { flex: none; min-width: 96px; display: grid; justify-items: center; align-content: start; gap: 6px; text-align: center; color: var(--kk-ink); text-decoration: none; }
+.kk-tile__img { width: 80px; height: 80px; display: grid; place-items: center; overflow: hidden; border-radius: 50%; background: #fff;
+  border: 2px solid transparent; transition: border-color .15s; }
+.kk-tile__img img { width: 74%; height: 74%; object-fit: contain; }
+.kk-tile:hover .kk-tile__img { border-color: #cdbcaa; }
+.kk-tile.is-on .kk-tile__img { border-color: var(--kk-brick); }
+.kk-tile--all .kk-tile__img { background: var(--kk-brick); color: var(--kk-paper); font-family: var(--kk-font-label); font-size: 14px; font-weight: 700; }
+.kk-tile__name { font-family: var(--kk-font-label); font-size: 13px; font-weight: 600; line-height: 1.25; white-space: nowrap; }
+.kk-tile.is-on .kk-tile__name { color: var(--kk-brick); }
+.kk-tile__n { margin-block-start: -4px; font-size: 12px; color: var(--kk-muted); font-variant-numeric: tabular-nums; }
 @media (max-width: 749px) {
-  .kk-chead { padding-block: 24px 18px; margin-block-end: 16px; }
-  .kk-chips { margin-block-start: 18px; margin-inline: calc(-1 * var(--kk-gutter, 20px)); padding-inline: var(--kk-gutter, 20px); }
+  .kk-chead { padding-block: 24px 4px; margin-block-end: 16px; }
+  .kk-tabs, .kk-tiles { margin-inline: calc(-1 * var(--kk-gutter, 20px)); padding-inline: var(--kk-gutter, 20px); }
+  .kk-tabs { gap: 22px; margin-block-start: 18px; }
+  .kk-tab { font-size: 14px; padding-block-end: 10px; }
+  .kk-tiles { gap: 8px; margin-block-start: 16px; }
+  .kk-tile { min-width: 76px; }
+  .kk-tile__img { width: 64px; height: 64px; }
+  .kk-tile__name { font-size: 12px; }
 }
+
+/* the categories list at the top of the filter sidebar, computers only (snippets/kashkoul-category-tree.liquid):
+   folds up like the filters below it; a category with sub-categories has a +/− */
+/* no line of its own: the first filter's top line (Type) separates the two */
+.kk-ctree { margin-inline-end: 13px; }
+.kk-ctree__title { display: flex; align-items: center; justify-content: space-between; padding-block: 14px; cursor: pointer; list-style: none;
+  font-size: 16px; color: var(--kk-ink); }
+.kk-ctree__title::-webkit-details-marker { display: none; }
+.kk-ctree__chevron { width: 8px; height: 8px; margin-inline-end: 6px; border-block-end: 1.5px solid currentColor; border-inline-end: 1.5px solid currentColor;
+  transform: translateY(-2px) rotate(45deg); transition: transform .15s; }
+.kk-ctree[open] .kk-ctree__chevron { transform: translateY(2px) rotate(-135deg); }
+.kk-ctree ul { margin: 0; padding: 0; list-style: none; }
+.kk-ctree__list { padding-block-end: 12px; }
+.kk-ctree__item { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; column-gap: 2px; }
+.kk-ctree__item > ul { grid-column: 1 / -1; }
+.kk-ctree__link { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 7px 10px; border-radius: 8px;
+  font-family: var(--kk-font-label); font-size: 14px; font-weight: 600; color: var(--kk-ink); text-decoration: none; }
+.kk-ctree__link:hover { background: var(--kk-paper-2); }
+.kk-ctree__link.is-open { color: var(--kk-brick); }
+.kk-ctree__link.is-on { background: var(--kk-paper-2); color: var(--kk-brick); }
+.kk-ctree__link--sub { padding-inline-start: 24px; font-size: 13.5px; font-weight: 500; }
+.kk-ctree__n { font-family: var(--kk-font-body); font-size: 12px; font-weight: 500; color: var(--kk-muted); font-variant-numeric: tabular-nums; }
+.kk-ctree .kk-subtoggle { width: 28px; height: 28px; }
+.kk-ctree .kk-subtoggle::before, .kk-ctree .kk-subtoggle::after { width: 10px; margin-inline-start: -5px; }
+
+/* the sidebar (categories + filters) stays in view while the products scroll; below the header when it slides back in */
+@media (min-width: 750px) {
+  body .collection-wrapper .facets-block-wrapper--vertical:not(#filters-drawer) {
+    position: sticky; inset-block-start: 20px; align-self: start; max-height: calc(100svh - 40px); overflow-y: auto;
+    overscroll-behavior: contain; scrollbar-width: thin; scrollbar-gutter: stable; padding-inline-end: 6px;
+    transition: inset-block-start .25s ease, max-height .25s ease; }
+  body:has(#header-component[data-sticky-state='active']) .collection-wrapper .facets-block-wrapper--vertical:not(#filters-drawer) {
+    inset-block-start: calc(var(--header-height, 0px) + 16px); max-height: calc(100svh - var(--header-height, 0px) - 32px); }
+}
+
+/* price filter: rounded white fields like the rest of the Market */
+body .facets .price-facet__inputs-wrapper { gap: 10px; align-items: center; }
+body .facets .price-facet__field .field__input { height: 44px; padding-inline: 32px 16px; border: 1px solid #cdbcaa; border-radius: 100px; background: #fff;
+  box-shadow: none; font-family: var(--kk-font-label); font-size: 15px; font-weight: 600; color: var(--kk-ink); text-align: start; }
+body .facets .price-facet__field .field__input:focus-visible { border-color: var(--kk-brick); outline: 2px solid var(--kk-brick); outline-offset: 1px; }
+body .facets .price-facet__field .field__label { inset-block: 0; inset-inline-start: 16px; display: flex; align-items: center; padding: 0; font-family: var(--kk-font-label); font-size: 14px; color: var(--kk-muted); }
+body .facets .price-facet__separator { font-family: var(--kk-font-label); font-size: 13px; color: var(--kk-muted); }
+body .facets .price-facet__highest-price { margin-block-start: 10px; font-size: 13px; color: var(--kk-muted); }
+html[lang='ar'] .kk-ctree__title { letter-spacing: 0; }
+@media (max-width: 749px) { .kk-ctree { display: none; } }
 
 /* ---- product cards as soft white tiles ---- */
 product-card.product-card { background: #fff; border-radius: 14px; overflow: hidden; padding-block-end: 16px;

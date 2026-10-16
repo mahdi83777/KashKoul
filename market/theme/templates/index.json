@@ -39,6 +39,14 @@
             "use_photo": true
           }
         },
+        "cat_studio": {
+          "type": "category",
+          "settings": {
+            "kind": "studio",
+            "name": "",
+            "use_photo": true
+          }
+        },
         "cat_art": {
           "type": "category",
           "settings": {
@@ -59,6 +67,7 @@
       "block_order": [
         "cat_instruments",
         "cat_strings",
+        "cat_studio",
         "cat_art",
         "cat_books"
       ],

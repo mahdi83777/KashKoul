@@ -36,6 +36,7 @@
     "categories": {
       "instruments": "Instruments",
       "strings": "Strings & accessories",
+      "studio": "Studio & recording",
       "art": "Art supplies",
       "books": "Books & sheet music",
       "all": "All products"
@@ -239,7 +240,10 @@
       "count": {
         "one": "{{ count }} product",
         "other": "{{ count }} products"
-      }
+      },
+      "all": "All",
+      "all_title": "All products",
+      "all_text": "Everything in the Market: instruments, accessories, studio gear and more."
     },
     "cart": {
       "title": "Your cart",
@@ -288,6 +292,7 @@
     "categories": {
       "instruments": "آلات موسيقية",
       "strings": "أوتار وإكسسوارات",
+      "studio": "استوديو وتسجيل",
       "art": "لوازم فنية",
       "books": "كتب ونوتات موسيقية",
       "all": "كل المنتجات"
@@ -495,7 +500,10 @@
         "few": "{{ count }} منتجات",
         "many": "{{ count }} منتجًا",
         "other": "{{ count }} منتج"
-      }
+      },
+      "all": "الكل",
+      "all_title": "كل المنتجات",
+      "all_text": "كل ما في السوق: آلات موسيقية وإكسسوارات ومعدات استوديو وغيرها."
     },
     "cart": {
       "title": "سلّتك",

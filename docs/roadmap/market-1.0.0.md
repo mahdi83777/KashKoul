@@ -33,6 +33,10 @@ approved, and approved steps are marked ✅ here with the date.
 | 2026-10-15 | **English and Arabic** on every page, **mobile first** | Customers order from their phones, in either language. |
 | 2026-10-15 | **Build on a free development store** and move to a paid plan at launch | Costs nothing while building. Created as a "client transfer" store, so it becomes the real store at launch with nothing rebuilt. |
 | 2026-10-15 | **Theme base: Horizon** (Shopify's free theme, v4.3.0), **styled to look like Shopify's "Studio" theme** | Studio's look was the favorite (Atelier, Tinker and Horizon were also compared), but Studio has no Arabic support: no right-to-left layout and no Arabic text file. Horizon has both built in, and Studio's look is mostly settings (serif type, deep ink color on near-white, colored panels, pill buttons), which Horizon can reproduce. If the step 1 style board doesn't convince, the fallback is Studio with Arabic added by hand. |
+| 2026-10-16 | **Importer: Ryviu (free plan)**, one link at a time, 500 variants a month; our script does the rest | Spreadr can't be paid for on a development store; Ryviu keeps each variant's Amazon ID, which the script uses to find and price products. |
+| 2026-10-16 | **Price = round_up((Amazon price + kg × $15) × 1.2) − 0.01**, by real weight only | Option 2 of the pricing proposals: simple, covers shipping by weight, and the cost stays visible in the admin. |
+| 2026-10-16 | **Every instrument taught at the Academy is in the shop, with several choices each** | The Market's first job is to equip the Academy's students. |
+| 2026-10-16 | **Sub-categories by product type** (Instruments, Strings & accessories), **Studio & recording** as its own category, **filters in a sidebar** on computers with Type and Brand collapsed | ~115 products need more than four categories; automatic collections keep working when the owner adds products. |
 
 ## Costs to expect
 
@@ -198,21 +202,58 @@ Preview: https://kashkoul-market-fhsuuq5c.myshopify.com/?preview_theme_id=189216
 
 **Review:** the ordering experience and email text.
 
-## Step 6 — Products ⬜
+## Step 6 — Products 🔄 (2026-10-16)
 
-With the owner.
+With the owner. **114 products live** (on the test theme's store, all "on order"), none left in draft.
 
-- [ ] Bulk import (2026-10-16): Spreadr couldn't be used (Shopify doesn't let a development store approve paid app subscriptions; it was uninstalled, nothing charged). Using **Ryviu Amazon Importer, free plan** (500 variants/month, one product link at a time; its "Import Amazon Store" failed on Donner's store). Ryviu imports as Draft, at Amazon's price, stock 0, Amazon link and variant ASINs kept on the product. First batch: 50 best sellers in `market/store/import-batch-1.json`, links checklist `market/store/import-batch-1-links.md` (Mohamad imports them). Then our script cleans them (English/Arabic texts, options, photos), prices them and publishes them. Pricing decided: option 2 by **real weight only**, (Amazon price + kg × $15) × 1.2, rounded up to .99; Amazon price kept in "Cost per item", weight in "Weight". Bundles that include a clip-on tuner (coin battery) are fine.
-  - Batch 1: 47 of 50 imported (3 had more than 25 variants). English/Arabic entries written for all 46 new ones (`market/store/products.json`), script run started. The Fender Dreadnought bundle was dropped (archived) as the same guitar as the FA-25. Decided: keep "Amazon Basics" as the brand on its products; no music stand needed.
-  - The first 10 sample products were re-priced by the same rule (cost = their Amazon price, weight from Amazon), stock untouched.
-  - Batch 2 (Mohamad's priority): **every instrument taught at the Academy**, several choices each (starter / step-up / better / kids) plus essentials: `market/store/import-batch-2.json`, checklist `import-batch-2-links.md`. 60 of 64 imported (Ryviu at 422/500 variants this month). Amazon US has no real buzuq (Turkish saz instead, named as such), no starter qanun or riq. English/Arabic entries written for 58 products (the P-145BT and P-225 came in as one product; the EJ95A oud strings were already in the shop, so the duplicate was archived); script run started.
-- [ ] Get the list of products from the owner (Amazon links or wishlist)
-- [ ] Choose an Amazon importer app (used for the samples: Reputon Amazon Importer, free plan, 5 at a time; other candidates: Ryviu, GD Amazon Importer, Importio, Amazon Channel)
-- [ ] Pricing rule per category: Amazon price + shipping to Lebanon (by weight) + customs + margin
-- [ ] Check items can be shipped to Lebanon (no lithium batteries, liquids or oversized items)
-- [ ] Import or add the first ~100 products. Arabic titles, and our own descriptions rather than Amazon's text.
-- [ ] Organize products into categories
-- [x] Shop page with the real catalog (2026-10-16): filters are a **sidebar on computers** (Horizon's "vertical" style; Type and Brand start collapsed and open when one of their values is ticked, Price open; phones keep the "Filter & sort" drawer). **Sub-categories** under Instruments, following what the Academy teaches: Oud & saz, Qanun, Ney & flutes, Violin, Guitar & ukulele, Piano & keys, Winds, Percussion. Each is an automatic collection by product type (`types` in `market/store/content.json`), so new products land in them by themselves; they sit under Shop → Instruments in the main menu (the owner manages them in Navigation), show as a second row of chips on the shop page, and in the header's Shop menu under a +/− (collapsed by default). Strings & accessories has its own sub-categories the same way: Strings, Picks & small parts, Reeds mouthpieces & care, Cases & stands, Amps pedals & cables. **Studio & recording** is its own main category (headphones, microphones, stands, cables, audio interfaces), also automatic by type.
+- [x] Importer: **Ryviu Amazon Importer, free plan** (500 variants a month, one product link at a time, then "Process
+  Variants"). Spreadr couldn't be used (a development store can't approve paid app subscriptions; uninstalled, nothing
+  charged); Ryviu's "Import Amazon Store" failed on Donner's store. Ryviu imports as Draft at Amazon's price, stock 0,
+  with the Amazon link and each variant's Amazon ID (SKU) kept.
+- [x] Pricing rule (option 2, **real weight only**): round_up((Amazon price + kg × $15) × 1.2) − 0.01. The Amazon price
+  is kept in "Cost per item" and the weight in "Weight", so re-runs never compound. Bundles with a clip-on tuner (coin
+  battery) are fine; no lithium batteries.
+- [x] Our script `market/tools/setup-products.mjs` turns each import into a shop product from `market/store/products.json`:
+  English and Arabic title, text and type, clean variants and options (with Arabic), fewer photos, price and cost,
+  weight, "on order" stock, category, Active on the Online Store. Variants Amazon shows without a price are dropped.
+- [x] The first 10 sample products were re-priced by the same rule (their Amazon price as cost), stock untouched.
+- [x] **Batch 1**, 50 best sellers (`import-batch-1.json`, checklist `import-batch-1-links.md`): 47 imported (3 had
+  more than 25 variants), 46 live. The Fender Dreadnought bundle was dropped (archived): same guitar as the FA-25.
+  Decided: keep "Amazon Basics" as the brand on its products; no music stand needed.
+- [x] **Batch 2**, every instrument taught at the Academy, several choices each (starter / step-up / better / kids)
+  plus essentials (`import-batch-2.json`, checklist `import-batch-2-links.md`): 60 of 64 imported, 58 live (the
+  P-145BT and P-225 came in as one product; the EJ95A oud strings were already in the shop, the duplicate is archived).
+  Not imported: Sala SALA-A8 oud, qanun picks and Meinl riq (no price / out of stock), Eastar trumpet (same level as the
+  Glory). Amazon US has no real buzuq (Turkish saz instead, named as such), and no starter qanun or riq.
+- [x] Categories: Instruments, Strings & accessories, **Studio & recording** (its own category), Art supplies, Books &
+  sheet music. **Sub-categories**, each an automatic collection by product type (`types` in `market/store/content.json`,
+  applied by `setup-store.mjs --only collections,menu`), so new products land in them by themselves:
+  - Instruments: Oud & saz, Qanun, Ney & flutes, Violin, Guitar & ukulele, Piano & keys, Winds, Percussion
+  - Strings & accessories: Strings, Picks & small parts, Reeds mouthpieces & care, Cases & stands, Amps pedals & cables
+  They sit under Shop in the main menu (the owner manages them in Navigation) and in the header's Shop menu under a
+  +/− (collapsed by default). On the shop page (chosen on the navigation board, a mix of directions A and C): the
+  categories are **tabs**, the sub-categories **round photo tiles with their count** (first tile = the whole category),
+  and on computers the same list sits at the **top of the filter sidebar** with counts, the current category opened.
+  Phones show the tabs and tiles only. A tile's photo is the sub-category's image in the admin (set to a chosen product
+  photo; falls back to its first product's photo). The sidebar list folds up (open at first), each category with sub-categories has a +/−
+  (open only for the one you're in), and the whole sidebar (categories + filters) **stays in view** while the products
+  scroll, below the header when it slides back in. "All products" has its own title and text (from `market/strings.json`,
+  as Shopify's catalog has no description), and Studio & recording is in the footer's Shop column.
+- [x] Cart: the slide-out cart no longer reopens by itself on the next page or after Back (it used to follow you
+  from page to page).
+- [x] Shop page with the real catalog: filters are a **sidebar on computers** (Horizon's "vertical" style; Type and
+  Brand start collapsed and open when one of their values is ticked, Price open); phones keep the "Filter & sort"
+  drawer, with a gap before the products. Price fields are rounded white fields like the rest of the Market.
+- [x] Product page: a row of **thumbnails** under the main photo on computers (Horizon's gallery setting, the photo
+  frame made a little shorter so they fit in the window); phones keep swipe and dots.
+- [ ] **Later:** Owner review of prices and the catalog. Points to check on the product pages: Al Cass valve oil (1 or 2
+  bottles?), Sala ney's key (C), Gawharet El Fan darbuka photos vs design names, Glory alto sax colours (keep the
+  bright ones?), a few accessories with only 1–2 photos.
+- [ ] **Later:** Get the owner's own list of products (Amazon links or wishlist)
+- [ ] **Later:** Next list: the 3 batch 1 items with more than 25 variants (Ernie Ball Regular Slinky, D'Addario EJ16 3-pack,
+  Ernie Ball Polypro strap) and the batch 2 items that were unavailable. Ryviu has 78 variants left this month (resets
+  monthly).
+- [ ] **Later:** Sub-categories for Art supplies and Books & sheet music once they hold more products
 
 **Review:** prices and the catalog.
 

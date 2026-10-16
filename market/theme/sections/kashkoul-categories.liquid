@@ -1,7 +1,7 @@
 {%- comment -%}
   "Shop by category": one card per block. A card links to its collection and shows, in order of preference:
   the photo picked on the card, the collection's own image, the theme's photo for that kind of card, or a colored
-  tile with an icon. The kind (instruments, strings, art, books) sets the defaults. Photos are toned brick-and-mustard
+  tile with an icon. The kind (instruments, strings, studio, art, books) sets the defaults. Photos are toned brick-and-mustard
   (setting "duotone") so every card looks like one family.
 {%- endcomment -%}
 {%- liquid
@@ -35,6 +35,13 @@
               assign kk_photo_h = 1200
               assign kk_bg = '#dabd5c'
               assign kk_fg = '#66261c'
+            when 'studio'
+              assign kk_handle = 'studio-recording'
+              assign kk_photo = 'kashkoul-photo-studio.jpg'
+              assign kk_photo_w = 810
+              assign kk_photo_h = 1012
+              assign kk_bg = '#3d150f'
+              assign kk_fg = '#dabd5c'
             when 'art'
               assign kk_handle = 'art-supplies'
               assign kk_photo = 'kashkoul-photo-art.jpg'
@@ -74,6 +81,8 @@
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".9" aria-hidden="true"><circle cx="9" cy="15" r="5"/><circle cx="9" cy="15" r="1.4"/><path d="M12.5 11.5l6.5-6.5M17.5 3.5l3 3"/></svg>
                 {%- when 'strings' -%}
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".9" aria-hidden="true"><path d="M8 3v18M12 3v18M16 3v18"/><circle cx="8" cy="5" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="16" cy="5" r="1"/></svg>
+                {%- when 'studio' -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".9" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0 0 12 0M12 17v4M9 21h6"/></svg>
                 {%- when 'art' -%}
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".9" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 2-2s-1-1.5-1-2.5 1-1.5 2-1.5h2a4 4 0 0 0 4-4c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7" r="1"/></svg>
                 {%- else -%}
@@ -110,6 +119,7 @@
           "options": [
             { "value": "instruments", "label": "Instruments" },
             { "value": "strings", "label": "Strings & accessories" },
+            { "value": "studio", "label": "Studio & recording" },
             { "value": "art", "label": "Art supplies" },
             { "value": "books", "label": "Books & sheet music" }
           ],
@@ -129,6 +139,7 @@
       "blocks": [
         { "type": "category", "settings": { "kind": "instruments" } },
         { "type": "category", "settings": { "kind": "strings" } },
+        { "type": "category", "settings": { "kind": "studio" } },
         { "type": "category", "settings": { "kind": "art" } },
         { "type": "category", "settings": { "kind": "books" } }
       ]
