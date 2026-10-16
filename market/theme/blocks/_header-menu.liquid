@@ -105,7 +105,17 @@
           <a
             href="{{ link.url }}"
             data-skip-node-update="true"
-            class="menu-list__link{% if link.active %} menu-list__link--active{% endif %}"
+            {%- # Kashkoul: also active when you're inside it (Shop on a category or product page) -%}
+            {%- liquid
+              assign kk_active = link.active
+              if link.child_active
+                assign kk_active = true
+              endif
+              if link.type == 'catalog_link' and template.name == 'product' or link.type == 'catalog_link' and template.name == 'collection'
+                assign kk_active = true
+              endif
+            -%}
+            class="menu-list__link{% if kk_active %} menu-list__link--active{% endif %}"
             {% if link.current %}
               aria-current="page"
             {% endif %}

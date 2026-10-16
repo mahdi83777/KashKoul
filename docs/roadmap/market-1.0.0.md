@@ -257,6 +257,22 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   when it slides back in) until the products end.
 - [x] Homepage "Shop by category": Studio & recording card (the Studio's turntable photo, toned like the others), five
   cards in one row on computers. Footer Shop column follows the main menu, so new categories appear there by themselves.
+- [x] **Request a product** page (`/pages/request`, 2026-10-16): the Market's most asked-for service, so it's in the
+  header menu (second, after Shop), the footer's Help column, the "Can't find it here?" band, the FAQ and search with no results.
+  Built like the other help pages: title band (an oud from the Studio), "How it works" step cards (send the link → we
+  reply on WhatsApp with the price → order like any item), then "Send your request": the form in a white card (Amazon
+  link, size/color/version, quantity, name, WhatsApp number, optional email and notes) beside a mustard "Prefer
+  WhatsApp?" card. It's Shopify's contact form, so each request is emailed to the shop. Both WhatsApp buttons (beside
+  the form, and "Also send it on WhatsApp" after sending) open WhatsApp with everything typed, each under its label;
+  that's also where a photo goes (forms can't take files). The FAQ answer links to the page and to WhatsApp.
+- [x] Header menu: only the page you're on is in mustard (Shop also on its categories and products).
+- [x] Closing mustard bands ("Still have a question?", "Can't find it here?", "Something wrong with your order?") made
+  compact on every page: no small label, a card-size title with its line, the button beside them (about half the height).
+- [x] **Search page** in the shop's style: "Search" label, brick title ("Results for …"), a rounded search field,
+  results with the filter sidebar (Type open there, as it does the category's job) and the "Can't find it here?" band.
+  Nothing found: on the left a friendly message and the instruments as photo tiles, on the right a mustard "We can get it
+  for you" card (Request a product); then the 15 newest products (three rows). The
+  header search popup also offers Request a product when nothing is found.
 - [ ] **Later:** Owner review of prices and the catalog. Points to check on the product pages: Al Cass valve oil (1 or 2
   bottles?), Sala ney's key (C), Gawharet El Fan darbuka photos vs design names, Glory alto sax colours (keep the
   bright ones?), a few accessories with only 1–2 photos.
@@ -284,4 +300,5 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
 
 ## Open questions
 
-- **"Request a product" page** (to discuss; added 2026-10-16): a page where a customer fills in the Amazon link, a photo (optional), the variation (size, color…) and their name and WhatsApp number. Sending it emails the request to the shop and opens WhatsApp with the same details pre-filled, which the customer sends from their own phone. Builds on the agreed "special requests" (Amazon link on WhatsApp, optional photo and variation). Bilingual, mobile first; to decide where it lives (its own page, linked from the "Can't find it here?" band, the menu and the footer) and how the photo is sent (Shopify forms can't attach files, so a photo may go through WhatsApp only).
+- None right now.
+

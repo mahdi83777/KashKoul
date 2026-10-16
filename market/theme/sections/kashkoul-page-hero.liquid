@@ -36,6 +36,12 @@
       assign kk_photo = 'kashkoul-photo-guitar.jpg'
       assign kk_photo_w = 1400
       assign kk_photo_h = 935
+    when 'request'
+      assign kk_photo = 'kashkoul-photo-oud.jpg'
+      assign kk_photo_w = 1600
+      assign kk_photo_h = 899
+      # the oud stands on the right of this photo: keep it in the frame
+      assign kk_photo_pos = '100% 50%'
     when 'faq'
       assign kk_photo = 'kashkoul-photo-books.jpg'
       assign kk_photo_w = 960
@@ -53,7 +59,7 @@
       {%- if section.settings.image != blank -%}
         {{ section.settings.image | image_url: width: 1400 | image_tag: widths: '500, 800, 1100, 1400', sizes: '(min-width: 990px) 560px, 1px', loading: 'lazy', alt: kk_alt }}
       {%- elsif kk_photo -%}
-        <img src="{{ kk_photo | asset_url }}" alt="{{ kk_alt }}" width="{{ kk_photo_w }}" height="{{ kk_photo_h }}" loading="lazy">
+        <img src="{{ kk_photo | asset_url }}" alt="{{ kk_alt }}" width="{{ kk_photo_w }}" height="{{ kk_photo_h }}" loading="lazy"{% if kk_photo_pos %} style="object-position: {{ kk_photo_pos }}"{% endif %}>
       {%- endif -%}
     </div>
   </div>
@@ -73,6 +79,7 @@
         { "value": "how_to_order", "label": "How to order" },
         { "value": "delivery_pickup", "label": "Delivery & pickup" },
         { "value": "returns", "label": "Returns" },
+        { "value": "request", "label": "Request a product" },
         { "value": "faq", "label": "FAQ" },
         { "value": "about", "label": "About" }
       ],

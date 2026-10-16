@@ -303,6 +303,18 @@
   ],
   "pages": [
     {
+      "handle": "request",
+      "template_suffix": "request",
+      "en": {
+        "title": "Request a product",
+        "body": ""
+      },
+      "ar": {
+        "title": "اطلب منتجًا",
+        "body": ""
+      }
+    },
+    {
       "handle": "how-to-order",
       "en": {
         "title": "How to order",
@@ -489,6 +501,12 @@
             "ar": "كل المنتجات"
           }
         ]
+      },
+      {
+        "type": "PAGE",
+        "handle": "request",
+        "en": "Request a product",
+        "ar": "اطلب منتجًا"
       },
       {
         "type": "PAGE",

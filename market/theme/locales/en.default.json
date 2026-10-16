@@ -435,6 +435,7 @@
     "footer": {
       "shop": "Shop",
       "help": "Help",
+      "request": "Request a product",
       "how_to_order": "How to order",
       "delivery": "Delivery & pickup",
       "returns": "Returns",
@@ -516,6 +517,19 @@
         "title": "About the Market",
         "intro": "Kashkoul Market is the shop of Kashkoul Academy, the music academy in Khaldeh.",
         "photo_alt": "The Kashkoul storefront in Khaldeh"
+      },
+      "request": {
+        "eyebrow": "Special requests",
+        "title": "Request a product",
+        "intro": "Can't find it in the shop? Send us the Amazon link and we'll get it for you. We reply on WhatsApp with the price, usually within a day.",
+        "photo_alt": "An oud resting by an armchair",
+        "steps_title": "How it works",
+        "step_1_title": "Send the link",
+        "step_1_text": "Paste the Amazon link and tell us the size, color or version you want.",
+        "step_2_title": "We reply with the price",
+        "step_2_text": "On WhatsApp, usually within a day: the full price, delivery included.",
+        "step_3_title": "Order like any other item",
+        "step_3_text": "It reaches you in {{ weeks }} weeks and you pay on delivery. For orders over ${{ over }}, a {{ percent }}% deposit by Whish first."
       }
     },
     "availability": {
@@ -541,8 +555,8 @@
       "request": {
         "eyebrow": "Special requests",
         "title": "Can't find it here?",
-        "text": "Send us the Amazon link on WhatsApp, with a photo if you like, and the size, color or version you want. We'll reply with a price.",
-        "button": "Send us a link on WhatsApp",
+        "text": "Send us the Amazon link, with the size, color or version you want. We'll reply on WhatsApp with the price.",
+        "button": "Request a product",
         "message": "Hi Kashkoul Market! Can you get this for me? "
       },
       "question": {
@@ -582,7 +596,8 @@
       "warranty_a": "No, we don't offer a warranty. If an item arrives damaged or isn't what you ordered, tell us within {{ hours }} hours and we'll exchange or refund it.",
       "requests": "Special requests",
       "request_q": "Can you get something that isn't on the site?",
-      "request_a": "Yes. Send us the Amazon link on WhatsApp, with a photo if you like, and the size, color or version you want. We'll reply with a price."
+      "request_a": "Yes. Use the Request a product page (in the menu), or send us the Amazon link on WhatsApp, with the size, color or version you want. We'll reply with a price.",
+      "request_a_html": "Yes. Use the <a href=\"{{ url }}\">Request a product</a> page, or send us the Amazon link on <a href=\"{{ wa }}\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>, with the size, color or version you want. We'll reply with a price."
     },
     "about": {
       "statement": "We bring in instruments, accessories, art supplies and books from the US, and deliver them anywhere in Lebanon.",
@@ -645,6 +660,52 @@
       "days": "{{ days }} days",
       "weeks": "{{ weeks }} weeks",
       "view_full": "View full cart"
+    },
+    "request": {
+      "form_title": "Send your request",
+      "link": "Amazon link",
+      "link_hint": "For example amazon.com/dp/B005B6EZ36",
+      "options": "Size, color or version",
+      "options_hint": "Optional. For example: 3/4 size, black.",
+      "quantity": "Quantity",
+      "name": "Your name",
+      "phone": "WhatsApp number",
+      "phone_hint": "We'll send you the price here.",
+      "email": "Email",
+      "email_hint": "Optional.",
+      "notes": "Anything else",
+      "notes_hint": "Optional.",
+      "optional": "optional",
+      "submit": "Send request",
+      "sent_title": "Got it, thank you!",
+      "sent_text": "We'll reply on WhatsApp with the price, usually within a day.",
+      "sent_wa": "Also send it on WhatsApp",
+      "sent_wa_hint": "Handy if you want to add a photo.",
+      "another": "Request another product",
+      "error": "Please check the fields marked below.",
+      "wa_message": "Hi Kashkoul Market, I'd like to request this product:",
+      "wa_sent": "Hi Kashkoul Market, I just sent a product request on the website.",
+      "email_subject": "Product request",
+      "search_text": "Can't find it here? We can get it from Amazon for you.",
+      "search_link": "Request a product",
+      "wa_title": "Prefer WhatsApp?",
+      "wa_text": "Send us the link there, and a photo if you like. We'll reply the same way.",
+      "wa_button": "Send it on WhatsApp",
+      "photo_note": "Want to add a photo? WhatsApp is the easiest way: after sending, or right here."
+    },
+    "search": {
+      "eyebrow": "Search",
+      "title": "Search the Market",
+      "title_results": "Results for “{{ terms }}”",
+      "placeholder": "Search instruments, brands, accessories…",
+      "button": "Search",
+      "label": "Search the Market",
+      "none_title": "Nothing found for “{{ terms }}”",
+      "none_text": "Check the spelling, or try a shorter word like “oud” or “violin”.",
+      "request_title": "We can get it for you",
+      "request_text": "Send us the Amazon link and we'll reply on WhatsApp with the price, usually within a day.",
+      "request_button": "Request a product",
+      "browse_title": "Or browse the instruments"
     }
   }
 }

@@ -65,6 +65,11 @@
       <p>
         {{ 'content.search_results_no_results_check_spelling' | t: terms: search.terms }}
       </p>
+      {%- # Kashkoul: nothing found → offer to get it from Amazon -%}
+      <p class="kk-search-request">
+        {{ 'kashkoul.request.search_text' | t }}
+        <a class="kk-link" href="{% render 'kashkoul-url', path: '/pages/request' %}"><span class="kk-link__t">{{ 'kashkoul.request.search_link' | t }}</span> <span aria-hidden="true">→</span></a>
+      </p>
     </div>
   {% endif %}
 </form>

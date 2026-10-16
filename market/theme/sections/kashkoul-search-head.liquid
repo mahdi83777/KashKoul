@@ -1,0 +1,92 @@
+{%- comment -%}
+  Search page header, in the style of the shop pages: "Search" label, a brick title ("Search the Market", or the words
+  searched), and a rounded search field. When nothing is found: a friendly message, a mustard card to request the
+  product from Amazon (the Request a product page), and the sub-categories of the first category with any (e.g.
+  Instruments) as photo tiles to browse instead. Below it, the search results section shows the products, or "New in
+  the Market" when nothing was found. Text in the visitor's language (market/strings.json → kashkoul.search).
+{%- endcomment -%}
+{%- liquid
+  # the words searched sit in their own direction (U+2068 … U+2069), so Latin words keep the «quotes» right in Arabic
+  assign kk_terms = search.terms | escape | prepend: '⁨' | append: '⁩'
+  assign kk_none = false
+  if search.performed and search.results_count == 0
+    assign kk_none = true
+  endif
+  if search.performed and search.terms != blank
+    assign kk_title = 'kashkoul.search.title_results' | t: terms: kk_terms
+  else
+    assign kk_title = 'kashkoul.search.title' | t
+  endif
+
+  assign kk_parent = null
+  for link in linklists['main-menu'].links
+    if link.links.size > 0
+      for cat in link.links
+        if cat.links.size > 0
+          assign kk_parent = cat
+          break
+        endif
+      endfor
+      break
+    endif
+  endfor
+-%}
+<div class="kk-wrap">
+  <header class="kk-chead kk-shead">
+    <p class="kk-label kk-chead__eyebrow">{{ 'kashkoul.search.eyebrow' | t }}</p>
+    <h1 class="kk-chead__title">{{ kk_title }}</h1>
+    <form class="kk-sform" action="{{ routes.search_url }}" method="get" role="search">
+      <input type="hidden" name="type" value="product">
+      <input type="hidden" name="options[prefix]" value="last">
+      <label class="visually-hidden" for="kk-sform-q">{{ 'kashkoul.search.label' | t }}</label>
+      <svg class="kk-sform__icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input class="kk-sform__input" type="search" id="kk-sform-q" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'kashkoul.search.placeholder' | t }}" autocomplete="off">
+      <button class="kk-button kk-sform__button" type="submit">{{ 'kashkoul.search.button' | t }}</button>
+    </form>
+
+    {%- if kk_none -%}
+      {%- comment -%} computers: keep looking on the left (message, instruments), the request card on the right;
+         phones: message, card, instruments {%- endcomment -%}
+      <div class="kk-snone">
+        <div class="kk-snone__msg">
+          <h2 class="kk-snone__title">{{ 'kashkoul.search.none_title' | t: terms: kk_terms }}</h2>
+          <p class="kk-snone__text">{{ 'kashkoul.search.none_text' | t }}</p>
+        </div>
+        <div class="kk-snone__request">
+          <h2 class="kk-snone__request-title">{{ 'kashkoul.search.request_title' | t }}</h2>
+          <p class="kk-snone__request-text">{{ 'kashkoul.search.request_text' | t }}</p>
+          <a class="kk-button" href="{% render 'kashkoul-url', path: '/pages/request' %}">{{ 'kashkoul.search.request_button' | t }} <span class="kk-cta__arrow" aria-hidden="true">→</span></a>
+        </div>
+        {%- if kk_parent -%}
+          <div class="kk-snone__browse">
+            <h2 class="kk-snone__browse-title">{{ 'kashkoul.search.browse_title' | t }}</h2>
+            <nav class="kk-tiles kk-snone__tiles" aria-label="{{ kk_parent.title | escape }}">
+              {%- for sub in kk_parent.links -%}
+                {%- assign kk_img = sub.object.image | default: sub.object.products.first.featured_image -%}
+                <a class="kk-tile" href="{{ sub.url }}">
+                  <span class="kk-tile__img">
+                    {%- if kk_img -%}{{ kk_img | image_url: width: 200 | image_tag: loading: 'lazy', alt: '', sizes: '80px' }}{%- endif -%}
+                  </span>
+                  <span class="kk-tile__name">{{ sub.title | escape }}</span>
+                  <span class="kk-tile__n">{{ sub.object.all_products_count }}</span>
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </header>
+</div>
+
+{% schema %}
+{
+  "name": "Kashkoul search header",
+  "tag": "div",
+  "class": "kk-shead-section",
+  "settings": [
+    { "type": "paragraph", "content": "Search title and field; when nothing is found, a card to request the product and the instruments to browse. Text in English and Arabic from the theme." }
+  ],
+  "presets": [{ "name": "Kashkoul search header" }]
+}
+{% endschema %}

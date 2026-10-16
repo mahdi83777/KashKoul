@@ -22,6 +22,10 @@ html[lang='ar'] .kk-label { text-transform: none; }
 .kk-button:focus-visible, .kk-link:focus-visible { outline: 2px solid var(--kk-terra); outline-offset: 3px; }
 .kk-link { font-family: var(--kk-font-label); font-size: 15px; font-weight: 600; color: var(--kk-brick); text-underline-offset: 4px;
   display: inline-flex; align-items: center; gap: 6px; min-height: 44px; }
+/* a link with an arrow: only its words are underlined, not the arrow */
+.kk-link:has(> .kk-link__t) { text-decoration: none; }
+.kk-link__t { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+.kk-link:hover .kk-link__t { text-decoration-thickness: 2px; }
 
 /* ---- Kashkoul house strip: links to the Academy and Studio, above everything ---- */
 .kk-house { background: #4e1d15; color: rgba(244,235,226,.78); font-family: var(--kk-font-label); font-size: 11px; font-weight: 600;
@@ -164,12 +168,13 @@ html[lang='ar'] .kk-page-hero .kk-title { line-height: 1.3; }
 .kk-cta { background: var(--kk-mustard); color: var(--kk-brick); }
 /* on the homepage it follows Horizon's product grid, which has no space under it */
 .ui-test-product-list + .kk-cta-section .kk-cta { margin-block-start: var(--kk-sec); }
-.kk-cta__in { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; padding-block: 36px; }
-@media (min-width: 750px) { .kk-cta__in { flex-direction: row; align-items: center; justify-content: space-between; gap: 48px; padding-block: 48px; } }
-.kk-cta__text { display: flex; flex-direction: column; gap: 10px; max-width: 40em; }
-.kk-cta__eyebrow { color: var(--kk-brick); opacity: .8; }
-.kk-cta__body { margin: 0; font-size: var(--kk-fs-lead); line-height: 1.6; }
-.kk-cta__button { flex: 0 0 auto; min-height: 52px; }
+/* compact: no label, a card-size title with its line, the button beside them */
+.kk-cta__in { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; padding-block: 22px; }
+@media (min-width: 750px) { .kk-cta__in { flex-direction: row; align-items: center; justify-content: space-between; gap: 40px; padding-block: 26px; } }
+.kk-cta__text { display: flex; flex-direction: column; gap: 4px; max-width: 40em; }
+.kk-cta__title { margin: 0; font-family: var(--kk-font-title); font-weight: var(--kk-title-weight); font-size: var(--kk-fs-h3); line-height: 1.15; color: var(--kk-brick); }
+.kk-cta__body { margin: 0; font-size: var(--kk-fs-body); line-height: 1.5; }
+.kk-cta__button { flex: 0 0 auto; min-height: 48px; }
 
 /* ---- delivery & pickup: two big option cards ---- */
 .kk-options { padding-block: var(--kk-sec) 0; }
@@ -223,6 +228,7 @@ html[lang='ar'] .kk-page-hero .kk-title { line-height: 1.3; }
 .kk-faq__icon svg { width: 18px; height: 18px; }
 .kk-faq__item[open] .kk-faq__icon { transform: rotate(45deg); }
 .kk-faq__a { margin: 0; padding-block-end: 20px; max-width: 40em; font-size: var(--kk-fs-body); line-height: 1.7; color: var(--kk-ink); }
+.kk-faq__a a { color: var(--kk-brick); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---- about: statement + three fact cards ---- */
 .kk-heading--stack { flex-direction: column; align-items: flex-start; gap: 10px; }
@@ -717,3 +723,91 @@ html[lang='ar'] .cart-items__title-row + p { text-transform: none; letter-spacin
 }
 .kk-cfull { display: flex; justify-content: center; align-items: center; gap: 6px; min-height: 32px; margin-block-start: -12px; font-weight: 700; font-size: 14px; }
 [dir="rtl"] .kk-cfull span { display: inline-block; transform: scaleX(-1); }
+
+/* ---- Request a product (sections/kashkoul-request.liquid): the form in a white card beside "How it works" ---- */
+.kk-req { padding-block: var(--kk-sec); }
+.kk-req__heading { margin: 0 0 24px; }
+.kk-req__in { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; align-items: start; }
+@media (min-width: 990px) { .kk-req__in { grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 24px; } }
+.kk-req__card { padding: 32px; background: #fff; border-radius: 16px; }
+@media (max-width: 749px) { .kk-req__card { padding: 22px 18px; border-radius: 14px; } }
+.kk-req__form { display: grid; gap: 18px; }
+.kk-req__title { margin: 0; font-family: var(--kk-font-title); font-weight: var(--kk-title-weight); font-size: var(--kk-fs-h3); line-height: 1.15; color: var(--kk-brick); }
+.kk-req__error { margin: 0; padding: 10px 14px; border-radius: 10px; background: #f7e3dd; color: var(--kk-brick); font-size: 14px; }
+.kk-req__field { display: grid; gap: 6px; min-width: 0; align-content: start; }
+.kk-req__row { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; }
+@media (min-width: 750px) {
+  .kk-req__row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .kk-req__row--options { grid-template-columns: minmax(0, 1fr) 120px; }
+}
+@media (max-width: 749px) { .kk-req__row--options { grid-template-columns: minmax(0, 1fr) 96px; gap: 12px; } }
+.kk-req__label { font-family: var(--kk-font-label); font-size: 14px; font-weight: 600; color: var(--kk-ink); }
+.kk-req__opt { font-weight: 400; color: var(--kk-muted); }
+.kk-req__input { width: 100%; height: 48px; padding: 0 16px; border: 1px solid #cdbcaa; border-radius: 12px; background: #fff; color: var(--kk-ink);
+  font-family: var(--kk-font-body); font-size: 16px; }
+.kk-req__input::placeholder { color: #a99b8f; }
+.kk-req__input:hover { border-color: #b9a58f; }
+.kk-req__input:focus-visible { outline: 2px solid var(--kk-brick); outline-offset: 0; border-color: var(--kk-brick); }
+.kk-req__input--area { height: auto; min-height: 96px; padding-block: 12px; resize: vertical; line-height: 1.5; }
+.kk-req__hint { font-size: 13px; line-height: 1.45; color: var(--kk-muted); }
+.kk-req__submit { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-block-start: 4px; }
+/* after sending */
+.kk-req__sent { display: grid; justify-items: start; gap: 12px; }
+.kk-req__sent-icon { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: var(--kk-mustard); color: var(--kk-brick); }
+.kk-req__sent-icon svg { width: 28px; height: 28px; }
+.kk-req__sent-text { margin: 0; font-size: var(--kk-fs-body); line-height: 1.6; }
+.kk-req__sent-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-block-start: 6px; }
+.kk-req__wa { border-color: #cdbcaa; color: var(--kk-ink); background: #fff; }
+.kk-req__wa:hover { border-color: var(--kk-brick); background: #fff; color: var(--kk-brick); }
+.kk-req__again { margin-block-start: 6px; font-weight: 700; font-size: 14px; }
+/* "Prefer WhatsApp?": a mustard card beside the form */
+.kk-req__side { display: grid; justify-items: start; gap: 12px; padding: 28px; border-radius: 16px; background: var(--kk-mustard); color: var(--kk-brick); }
+@media (max-width: 749px) { .kk-req__side { padding: 22px 18px; border-radius: 14px; } }
+.kk-req__side-icon { display: inline-flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 50%; background: var(--kk-paper); color: #1f7a4d; }
+.kk-req__side-title { margin: 4px 0 0; font-family: var(--kk-font-title); font-weight: var(--kk-title-weight); font-size: var(--kk-fs-h3); line-height: 1.15; }
+.kk-req__side-text { margin: 0; font-size: var(--kk-fs-body); line-height: 1.6; color: var(--kk-ink); }
+.kk-req__side-button { margin-block-start: 4px; }
+.kk-req__side-note { display: flex; align-items: flex-start; gap: 8px; margin: 6px 0 0; padding-block-start: 14px; border-block-start: 1px solid rgb(102 38 28 / .2);
+  font-size: 14px; line-height: 1.5; color: var(--kk-ink); }
+.kk-req__side-note svg { flex: none; margin-block-start: 1px; color: var(--kk-brick); }
+/* the band's "Request a product" button: the arrow points the reading way */
+[dir="rtl"] .kk-cta__arrow { display: inline-block; transform: scaleX(-1); }
+/* the header menu: the page you're on (or the one you're inside, e.g. Shop on a category) in mustard */
+#header-component .menu-list__link.menu-list__link--active { color: var(--kk-mustard) !important; }
+/* search with no results: offer to request it */
+.kk-search-request { margin-block-start: 10px; font-size: var(--kk-fs-body); color: var(--kk-ink); }
+.kk-search-request .kk-link { font-weight: 700; white-space: nowrap; }
+[dir="rtl"] .kk-search-request .kk-link > span[aria-hidden] { display: inline-block; transform: scaleX(-1); }
+/* header search popup: Horizon centres its "no results" line only when it's the last one, so centre both lines here */
+.predictive-search-results__no-results:has(+ .kk-search-request--popup) { margin-block: var(--margin-lg) 0; text-align: center; }
+.kk-search-request--popup { margin: 4px 0 0; padding: 0 20px var(--margin-lg); text-align: center; }
+
+/* ---- search page (sections/kashkoul-search-head.liquid): shop-style header, a rounded field, a friendly empty state ---- */
+.kk-shead { padding-block-end: 8px; }
+.kk-sform { position: relative; display: flex; align-items: center; gap: 8px; max-width: 720px; margin-block-start: 24px; padding: 6px; padding-inline-start: 48px;
+  border: 1px solid #cdbcaa; border-radius: 100px; background: #fff; }
+.kk-sform:focus-within { border-color: var(--kk-brick); box-shadow: 0 0 0 1px var(--kk-brick); }
+.kk-sform__icon { position: absolute; inset-inline-start: 18px; color: var(--kk-muted); }
+.kk-sform__input { flex: 1 1 auto; min-width: 0; height: 44px; padding: 0 4px; border: 0; background: none; font-family: var(--kk-font-body); font-size: 16px; color: var(--kk-ink); }
+.kk-sform__input:focus { outline: none; }
+.kk-sform__input::-webkit-search-cancel-button { cursor: pointer; }
+.kk-sform__button { flex: none; min-height: 44px; padding-inline: 22px; }
+.kk-snone { display: grid; grid-template-columns: minmax(0, 1fr); grid-template-areas: "msg" "card" "browse"; gap: 24px; margin-block-start: 32px; }
+@media (min-width: 990px) {
+  .kk-snone { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); grid-template-areas: "msg card" "browse card"; gap: 28px 40px; align-items: start; }
+}
+.kk-snone__msg { grid-area: msg; }
+.kk-snone__title { margin: 0; font-family: var(--kk-font-title); font-weight: var(--kk-title-weight); font-size: var(--kk-fs-h3); color: var(--kk-brick); }
+.kk-snone__text { margin: 6px 0 0; font-size: var(--kk-fs-body); color: var(--kk-muted); }
+/* the request card: like "Prefer WhatsApp?" on the request page, title, text, then the button */
+.kk-snone__request { grid-area: card; display: grid; justify-items: start; gap: 10px; padding: 26px 28px; border-radius: 16px; background: var(--kk-mustard); color: var(--kk-brick); }
+.kk-snone__request-title { margin: 0; font-family: var(--kk-font-title); font-weight: var(--kk-title-weight); font-size: var(--kk-fs-h3); line-height: 1.15; }
+.kk-snone__request-text { margin: 0 0 6px; font-size: var(--kk-fs-body); line-height: 1.55; color: var(--kk-ink); }
+.kk-snone__browse { grid-area: browse; min-width: 0; }
+.kk-snone__browse-title { margin: 0 0 4px; font-family: var(--kk-font-label); font-size: 16px; font-weight: 700; color: var(--kk-ink); }
+@media (max-width: 749px) {
+  .kk-sform { margin-block-start: 18px; padding-inline-start: 42px; }
+  .kk-sform__icon { inset-inline-start: 14px; }
+  .kk-sform__button { padding-inline: 16px; }
+  .kk-snone__request { padding: 20px 18px; border-radius: 14px; }
+}

@@ -9,46 +9,9 @@
  */
 {
   "sections": {
-    "search": {
-      "type": "search-header",
-      "blocks": {
-        "heading": {
-          "type": "_heading",
-          "static": true,
-          "settings": {
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "text": "",
-            "read_only": true,
-            "alignment": "left",
-            "show_alignment": true,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "search": {
-          "type": "_search-input",
-          "static": true,
-          "settings": {
-            "width": "custom",
-            "custom_width": 50
-          },
-          "blocks": {}
-        }
-      },
-      "settings": {
-        "alignment": "flex-start",
-        "padding-block-start": 40,
-        "padding-block-end": 0
-      }
+    "kk_head": {
+      "type": "kashkoul-search-head",
+      "settings": {}
     },
     "main": {
       "type": "search-results",
@@ -58,13 +21,13 @@
           "static": true,
           "settings": {
             "enable_filtering": true,
-            "filter_style": "horizontal",
+            "filter_style": "vertical",
             "filter_width": "centered",
             "text_label_case": "default",
             "show_swatch_label": false,
             "show_filter_label": false,
             "enable_sorting": true,
-            "enable_grid_density": true,
+            "enable_grid_density": false,
             "padding-block-start": 8,
             "padding-block-end": 8,
             "padding-inline-start": 0,
@@ -180,10 +143,18 @@
         "padding-block-start": 40,
         "padding-block-end": 40
       }
+    },
+    "kk_cta": {
+      "type": "kashkoul-cta",
+      "settings": {
+        "variant": "request",
+        "hide_when_no_results": true
+      }
     }
   },
   "order": [
-    "search",
-    "main"
+    "kk_head",
+    "main",
+    "kk_cta"
   ]
 }

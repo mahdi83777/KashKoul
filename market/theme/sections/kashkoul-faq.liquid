@@ -40,6 +40,16 @@
                   assign answer = a_key | t: fee: fee
                 when 'return', 'warranty'
                   assign answer = a_key | t: hours: hours
+                when 'request'
+                  # links to the Request a product page and to WhatsApp with a message ready
+                  capture kk_req_url
+                    render 'kashkoul-url', path: '/pages/request'
+                  endcapture
+                  assign kk_req_message = 'kashkoul.cta.request.message' | t
+                  capture kk_req_wa
+                    render 'kashkoul-whatsapp-url', message: kk_req_message
+                  endcapture
+                  assign answer = 'kashkoul.faq.request_a_html' | t: url: kk_req_url, wa: kk_req_wa
                 else
                   assign answer = a_key | t
               endcase

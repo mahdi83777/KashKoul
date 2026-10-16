@@ -32,9 +32,13 @@
     assign is_horizontal = true
   endif
   # Kashkoul: list filters (type, brand) start collapsed, in the sidebar and in the phone drawer, unless one of
-  # their values is ticked
+  # their values is ticked (and Type on the search page, below)
   assign kk_open = false
   if filter.active_values.size > 0
+    assign kk_open = true
+  endif
+  # on the search page, Type starts open: there it does the category's job (e.g. "oud" → Oud, Oud risha)
+  if template.name == 'search' and filter.param_name contains 'product_type' and in_drawer != true
     assign kk_open = true
   endif
   assign filter_param_name = filter.param_name | escape | replace: '.', '-'

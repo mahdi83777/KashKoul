@@ -53,7 +53,7 @@
           <a href="{{ link.url }}">{{ link.title | escape }}</a>
         {%- endfor -%}
       {%- else -%}
-        {%- assign pages = 'how-to-order:how_to_order,delivery-pickup:delivery,returns:returns,faq:faq,about:about' | split: ',' -%}
+        {%- assign pages = 'request:request,how-to-order:how_to_order,delivery-pickup:delivery,returns:returns,faq:faq,about:about' | split: ',' -%}
         {%- for p in pages -%}
           {%- assign parts = p | split: ':' -%}
           {%- assign path = '/pages/' | append: parts[0] -%}
@@ -85,7 +85,7 @@
   "enabled_on": { "groups": ["footer"] },
   "settings": [
     { "type": "link_list", "id": "shop_menu", "label": "Shop links", "info": "Leave empty for the categories under \"Shop\" in the main menu." },
-    { "type": "link_list", "id": "help_menu", "label": "Help links", "info": "Leave empty for How to order, Delivery & pickup, Returns, FAQ and About." },
+    { "type": "link_list", "id": "help_menu", "label": "Help links", "info": "Leave empty for Request a product, How to order, Delivery & pickup, Returns, FAQ and About." },
     { "type": "paragraph", "content": "The Kashkoul column (Academy, Studio) comes from shared/sites.json in the code." }
   ],
   "presets": [{ "name": "Kashkoul footer" }]

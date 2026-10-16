@@ -21,7 +21,7 @@
 -%}
 {%- unless cart.empty? -%}
   {%- unless template.name == 'cart' -%}
-    <a class="kk-link kk-cfull" href="{{ routes.cart_url }}">{{ 'kashkoul.cart.view_full' | t }} <span aria-hidden="true">→</span></a>
+    <a class="kk-link kk-cfull" href="{{ routes.cart_url }}"><span class="kk-link__t">{{ 'kashkoul.cart.view_full' | t }}</span> <span aria-hidden="true">→</span></a>
   {%- endunless -%}
   <ul class="kk-pinfo kk-cinfo">
     <li>
