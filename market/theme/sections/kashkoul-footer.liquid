@@ -72,6 +72,13 @@
   <div class="kk-ft__bar">
     <div class="kk-wrap kk-ft__bar-in">
       <span>© {{ 'now' | date: '%Y' }} {{ 'kashkoul.footer.copyright' | t }}</span>
+      {%- # the shop's policies (Settings → Policies), each shown once it exists -%}
+      <nav class="kk-ft__policies" aria-label="{{ 'kashkoul.footer.policies.label' | t }}">
+        {%- if shop.refund_policy != blank -%}<a href="{{ shop.refund_policy.url }}">{{ 'kashkoul.footer.policies.refund' | t }}</a>{%- endif -%}
+        {%- if shop.shipping_policy != blank -%}<a href="{{ shop.shipping_policy.url }}">{{ 'kashkoul.footer.policies.shipping' | t }}</a>{%- endif -%}
+        {%- if shop.privacy_policy != blank -%}<a href="{{ shop.privacy_policy.url }}">{{ 'kashkoul.footer.policies.privacy' | t }}</a>{%- endif -%}
+        {%- if shop.terms_of_service != blank -%}<a href="{{ shop.terms_of_service.url }}">{{ 'kashkoul.footer.policies.terms' | t }}</a>{%- endif -%}
+      </nav>
       <span lang="en" dir="ltr"><a href="https://miqvaro.com" target="_blank" rel="noopener noreferrer">{{ 'kashkoul.footer.credit' | t }} Miqvaro</a></span>
     </div>
   </div>

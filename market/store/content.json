@@ -1,5 +1,5 @@
 {
-  "_readme": "Store content for Kashkoul Market, from docs/market/content.md (approved 2026-10-15): collections, pages (and pages to remove) and the main menu, in English with Arabic translations. Applied by `node market/tools/setup-store.mjs`, which creates what's missing and updates what exists (matched by handle). After launch the owner edits these in Shopify's admin; this file is the starting point, not a live mirror.",
+  "_readme": "Store content for Kashkoul Market, from docs/market/content.md (approved 2026-10-15): collections, pages (and pages to remove), the main menu and the shop's policies (from docs/market/policies.md), in English with Arabic translations. Applied by `node market/tools/setup-store.mjs`, which creates what's missing and updates what exists (matched by handle). After launch the owner edits these in Shopify's admin; this file is the starting point, not a live mirror.",
   "collections": [
     {
       "handle": "instruments",
@@ -530,5 +530,57 @@
   ],
   "remove_pages": [
     "contact"
-  ]
+  ],
+  "policies": {
+    "REFUND_POLICY": {
+      "en": {
+        "title": "Refund policy",
+        "body": "<p>If an item arrives damaged or isn't what you ordered, tell us on WhatsApp (+961 78 721 968) within 48 hours of receiving it, with a photo of the item and its box. We'll exchange it or refund you.</p><ul><li><strong>Damaged:</strong> broken, scratched or not working when it reached you.</li><li><strong>Not what you ordered:</strong> a different item, size, color or version from your order.</li></ul><p>We reply the same day and agree with you on an exchange or a refund. Refunds are paid in cash or by Whish, for the item and, when we made the mistake, the delivery fee. We arrange the pickup of the item with you.</p><p><strong>Change of mind.</strong> We can't take back items because of a change of mind, since most are ordered from the US especially for you.</p><p><strong>Deposits.</strong> If we can't get an item you paid a deposit for, we refund the deposit in full, in cash or by Whish.</p><p><strong>No warranty.</strong> We don't offer a warranty beyond this 48-hour check, so please look your order over when it arrives.</p>"
+      },
+      "ar": {
+        "title": "سياسة الاسترجاع",
+        "body": "<p>إذا وصلتك قطعة متضرّرة أو مختلفة عمّا طلبته، أخبرنا على واتساب (‎+961 78 721 968‎) خلال 48 ساعة من استلامها، مع صورة للقطعة وعلبتها، ونستبدلها لك أو نعيد لك المبلغ.</p><ul><li><strong>متضرّرة:</strong> مكسورة أو مخدوشة أو لا تعمل عند وصولها.</li><li><strong>مختلفة عمّا طلبته:</strong> قطعة أو مقاس أو لون أو نوع غير الذي طلبته.</li></ul><p>نرد عليك في اليوم نفسه ونتفق معك على الاستبدال أو استرداد المبلغ. نعيد المبلغ نقدًا أو عبر Whish، ثمن القطعة، ورسوم التوصيل أيضًا إن كان الخطأ منّا. ونرتّب معك استلام القطعة.</p><p><strong>تغيير الرأي.</strong> لا نستطيع استرجاع القطع بسبب تغيير الرأي، لأن معظمها يُطلب من الولايات المتحدة خصيصًا لك.</p><p><strong>العربون.</strong> إذا لم نتمكّن من إحضار قطعة دفعت عليها عربونًا، نعيد لك العربون كاملًا، نقدًا أو عبر Whish.</p><p><strong>لا كفالة.</strong> لا نقدّم كفالة بعد فحص الـ48 ساعة هذا، لذا نرجو أن تتفقّد طلبك عند وصوله.</p>"
+      }
+    },
+    "SHIPPING_POLICY": {
+      "en": {
+        "title": "Shipping policy",
+        "body": "<p><strong>Delivery anywhere in Lebanon: $5 per order.</strong> We confirm the delivery day with you on WhatsApp, and the driver calls you before arriving. From time to time we run free-delivery offers, shown at the top of the site.</p><p><strong>Free pickup</strong> from Kashkoul in Khaldeh (Kashkoul Academy of Arts), Monday to Saturday, 12pm–8pm; Sundays by appointment. We'll tell you when your order is ready.</p><p><strong>How long it takes</strong></p><ul><li><strong>In stock:</strong> 3–5 days.</li><li><strong>On order</strong> (ordered from the US for you): 2–4 weeks. We'll keep you posted on WhatsApp if anything changes.</li></ul><p>Each product page shows whether it's in stock or on order.</p><p><strong>Paying.</strong> You pay on delivery or when you pick up, in cash or with Whish. Nothing is paid online. For orders over $100 that include an on-order item, we ask for a 30% deposit by Whish before we order it; the rest is paid on delivery.</p>"
+      },
+      "ar": {
+        "title": "سياسة التوصيل",
+        "body": "<p><strong>التوصيل إلى أي مكان في لبنان: 5$ للطلب.</strong> نؤكّد معك يوم التوصيل على واتساب، ويتصل بك السائق قبل وصوله. ومن وقت لآخر نقدّم عروض توصيل مجاني تظهر أعلى الموقع.</p><p><strong>استلام مجاني</strong> من كشكول في خلدة (أكاديمية كشكول للفنون)، من الاثنين إلى السبت، من 12 ظهرًا حتى 8 مساءً، والأحد بموعد مسبق. نخبرك عندما يصبح طلبك جاهزًا.</p><p><strong>كم يستغرق</strong></p><ul><li><strong>متوفر:</strong> من 3 إلى 5 أيام.</li><li><strong>حسب الطلب</strong> (نطلبه لك من الولايات المتحدة): من 2 إلى 4 أسابيع. نبقيك على اطّلاع على واتساب إذا تغيّر شيء.</li></ul><p>تُظهر صفحة كل منتج إن كان متوفرًا أو حسب الطلب.</p><p><strong>الدفع.</strong> تدفع عند الاستلام، نقدًا أو عبر Whish، ولا يُدفع شيء عبر الإنترنت. للطلبات فوق 100$ التي تضم قطعة حسب الطلب، نطلب عربونًا بنسبة 30% عبر Whish قبل أن نطلبها، والباقي يُدفع عند الاستلام.</p>"
+      }
+    },
+    "PRIVACY_POLICY": {
+      "en": {
+        "title": "Privacy policy",
+        "body": "<p>Kashkoul Market is the shop of Kashkoul Academy of Arts, Khaldeh, Lebanon. This explains what we collect when you use the site or order from us, and what we do with it.</p><p><strong>What we collect</strong></p><ul><li><strong>When you order or send a request:</strong> your name, phone (WhatsApp) number, delivery address, and email if you give one; what you ordered or asked for.</li><li><strong>When you message us on WhatsApp:</strong> your messages and anything you send us, such as photos.</li><li><strong>When you browse:</strong> basic technical information (device, browser, pages viewed), through Shopify's cookies, which keep your cart working and help us see how the site is used.</li></ul><p><strong>What we use it for:</strong> to confirm, prepare and deliver your order, to reply to your questions and requests, to arrange returns, and to keep the site working. We don't sell your information, and we don't use it for advertising.</p><p><strong>Who else sees it:</strong> Shopify, which runs our online shop and stores order information for us; WhatsApp, for the messages we exchange; and the driver who delivers your order (name, phone and address only).</p><p><strong>How long we keep it:</strong> for as long as we need it for your orders and for our accounts.</p><p><strong>Your choices:</strong> you can ask us at any time what we hold about you, or ask us to correct or delete it, on WhatsApp (+961 78 721 968) or by email (kashkoulacademy@gmail.com).</p>"
+      },
+      "ar": {
+        "title": "سياسة الخصوصية",
+        "body": "<p>سوق كشكول هو متجر أكاديمية كشكول للفنون في خلدة، لبنان. نشرح هنا ما نجمعه عندما تستخدم الموقع أو تطلب منّا، وماذا نفعل به.</p><p><strong>ما نجمعه</strong></p><ul><li><strong>عندما تطلب أو ترسل طلبًا خاصًا:</strong> اسمك، رقم هاتفك (واتساب)، عنوان التوصيل، وبريدك الإلكتروني إن أعطيتنا إياه، وما طلبته أو سألت عنه.</li><li><strong>عندما تراسلنا على واتساب:</strong> رسائلك وما ترسله لنا، كالصور.</li><li><strong>عندما تتصفّح:</strong> معلومات تقنية أساسية (الجهاز، المتصفّح، الصفحات التي زرتها) عبر ملفات تعريف الارتباط من Shopify، التي تُبقي سلّتك تعمل وتساعدنا على فهم كيفية استخدام الموقع.</li></ul><p><strong>لماذا نستخدمه:</strong> لتأكيد طلبك وتجهيزه وتوصيله، وللرد على أسئلتك وطلباتك، ولترتيب الاسترجاع، وليبقى الموقع يعمل. لا نبيع معلوماتك ولا نستخدمها للإعلانات.</p><p><strong>من يطّلع عليه أيضًا:</strong> Shopify التي تشغّل متجرنا الإلكتروني وتحفظ معلومات الطلبات لنا؛ واتساب للرسائل بيننا؛ والسائق الذي يوصل طلبك (الاسم والهاتف والعنوان فقط).</p><p><strong>كم نحتفظ به:</strong> ما دمنا نحتاجه لطلباتك ولحساباتنا.</p><p><strong>خياراتك:</strong> يمكنك في أي وقت أن تسألنا عمّا نحتفظ به عنك، أو أن تطلب تصحيحه أو حذفه، على واتساب (‎+961 78 721 968‎) أو بالبريد الإلكتروني (kashkoulacademy@gmail.com).</p>"
+      }
+    },
+    "TERMS_OF_SERVICE": {
+      "en": {
+        "title": "Terms of service",
+        "body": "<p>These terms apply when you use the Kashkoul Market site or order from us. Kashkoul Market is the shop of Kashkoul Academy of Arts, Khaldeh, Lebanon.</p><p><strong>Products.</strong> Our products are new, bought from retailers in the US. Photos and descriptions come from the makers and show the product as closely as we can; small differences in color are possible. Each product page shows whether it's in stock or on order.</p><p><strong>Prices.</strong> Prices are in US dollars and include bringing the item to Lebanon. Delivery is added at checkout ($5, or free pickup). Prices can change; the price you pay is the one in the order we confirm with you.</p><p><strong>Orders.</strong> Placing an order is a request: we confirm it with you on WhatsApp before preparing it, and your order is accepted once we've confirmed it. If an item can't be supplied, we tell you and you don't pay for it (any deposit is refunded in full).</p><p><strong>Paying.</strong> Nothing is paid online. You pay on delivery or when you pick up, in cash or with Whish. For orders over $100 that include an on-order item, we ask for a 30% deposit by Whish before we order it.</p><p><strong>Special requests.</strong> For products that aren't on the site, we reply with a price. Once you accept it and pay any deposit, the item is ordered for you and is treated like an on-order item.</p><p><strong>Delivery and returns</strong> are described in our shipping policy and refund policy.</p><p><strong>Contact.</strong> WhatsApp +961 78 721 968 · kashkoulacademy@gmail.com.</p>"
+      },
+      "ar": {
+        "title": "شروط الخدمة",
+        "body": "<p>تنطبق هذه الشروط عندما تستخدم موقع سوق كشكول أو تطلب منّا. سوق كشكول هو متجر أكاديمية كشكول للفنون في خلدة، لبنان.</p><p><strong>المنتجات.</strong> منتجاتنا جديدة، نشتريها من متاجر في الولايات المتحدة. الصور والأوصاف من الشركات المصنّعة وتعرض المنتج بأقرب صورة ممكنة، وقد تختلف الألوان قليلًا. تُظهر صفحة كل منتج إن كان متوفرًا أو حسب الطلب.</p><p><strong>الأسعار.</strong> الأسعار بالدولار الأميركي وتشمل إحضار القطعة إلى لبنان. يُضاف التوصيل عند إتمام الطلب (5$، أو استلام مجاني). قد تتغيّر الأسعار، والسعر الذي تدفعه هو سعر الطلب الذي نؤكّده معك.</p><p><strong>الطلبات.</strong> الطلب الذي ترسله هو طلب شراء: نؤكّده معك على واتساب قبل تجهيزه، ويُعتبر مقبولًا عندما نؤكّده. إذا تعذّر توفير قطعة، نخبرك ولا تدفع ثمنها (ونعيد أي عربون كاملًا).</p><p><strong>الدفع.</strong> لا يُدفع شيء عبر الإنترنت. تدفع عند الاستلام، نقدًا أو عبر Whish. للطلبات فوق 100$ التي تضم قطعة حسب الطلب، نطلب عربونًا بنسبة 30% عبر Whish قبل أن نطلبها.</p><p><strong>الطلبات الخاصة.</strong> للمنتجات غير الموجودة على الموقع، نرد عليك بسعر. عندما توافق عليه وتدفع العربون إن وُجد، نطلب القطعة لك وتُعامل كقطعة حسب الطلب.</p><p><strong>التوصيل والاسترجاع</strong> موضّحان في سياسة التوصيل وسياسة الاسترجاع.</p><p><strong>التواصل.</strong> واتساب ‎+961 78 721 968‎ · kashkoulacademy@gmail.com</p>"
+      }
+    },
+    "CONTACT_INFORMATION": {
+      "en": {
+        "title": "Contact information",
+        "body": "<p>Kashkoul Market — the shop of Kashkoul Academy of Arts<br>Khaldeh, Lebanon<br>WhatsApp: +961 78 721 968<br>Email: kashkoulacademy@gmail.com<br>Pickup: Monday to Saturday, 12pm–8pm; Sundays by appointment</p>"
+      },
+      "ar": {
+        "title": "معلومات التواصل",
+        "body": "<p>سوق كشكول — متجر أكاديمية كشكول للفنون<br>خلدة، لبنان<br>واتساب: ‎+961 78 721 968‎<br>البريد الإلكتروني: kashkoulacademy@gmail.com<br>الاستلام: من الاثنين إلى السبت، من 12 ظهرًا حتى 8 مساءً، والأحد بموعد مسبق</p>"
+      }
+    }
+  }
 }

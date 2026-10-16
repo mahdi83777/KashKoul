@@ -265,6 +265,7 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   WhatsApp?" card. It's Shopify's contact form, so each request is emailed to the shop. Both WhatsApp buttons (beside
   the form, and "Also send it on WhatsApp" after sending) open WhatsApp with everything typed, each under its label;
   that's also where a photo goes (forms can't take files). The FAQ answer links to the page and to WhatsApp.
+  Tested by Mohamad on his phone (2026-10-16), with the search page: request emailed, WhatsApp message complete.
 - [x] Header menu: only the page you're on is in mustard (Shop also on its categories and products).
 - [x] Closing mustard bands ("Still have a question?", "Can't find it here?", "Something wrong with your order?") made
   compact on every page: no small label, a card-size title with its line, the button beside them (about half the height).
@@ -289,7 +290,16 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
 - [ ] Send emails from no-reply@kashkoul.org: in Namecheap, forward `no-reply` to the Academy Gmail, set it as the sender in Shopify, then add the domain-authentication records Shopify shows (CNAMEs + DMARC) in Advanced DNS
 - [ ] Choose the paid plan and transfer the store to the owner's account
 - [ ] Connect `market.kashkoul.org`
-- [ ] Policies: shipping, returns, privacy, terms, in English and Arabic
+- [x] Policies, in English and Arabic (approved 2026-10-16, text in `docs/market/policies.md`, applied from
+  `market/store/content.json` by `setup-store.mjs --only policies`): refund, shipping, privacy, terms and contact are in
+  Shopify with the Arabic as translations (Shopify's automatic privacy policy turned off by Mohamad, ours applied), linked in the footer's bottom bar. Decided with them: a delivery fee is refunded when
+  a return is our mistake; a deposit is refunded in full if we can't get the item; the confirmed price is the one paid.
+  The policy pages (drawn by Shopify) have the Market's look: a "Policies" label and brick title aligned like the other
+  pages, a reading-width text with brick lead-ins, pills linking the four policies, and the "Still have a question?"
+  band (`snippets/kashkoul-policy.liquid`, from `layout/theme.liquid`).
+- Going live needs the transfer: a development store keeps its password page and can't take public orders, so the plan
+  (chosen by the account the store is transferred to) comes first. `market.kashkoul.org` and the sender domain can be
+  connected before that; visitors would see the password page until launch.
 - [ ] Analytics and Google/Meta sales channels (optional)
 - [ ] Set Market to `"live"` in `shared/sites.json` with its new address, then redeploy Academy and Studio
 - [ ] Remove the store password and launch

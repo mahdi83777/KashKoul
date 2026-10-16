@@ -406,6 +406,8 @@ media-gallery .product-media-container { aspect-ratio: auto !important; height: 
 .kk-ft__bar { background: #4e1d15; }
 .kk-ft__bar-in { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 16px; padding-block: 14px; text-align: center; font-size: 12px; color: rgba(244,235,226,.65); }
 .kk-ft__bar a { color: rgba(244,235,226,.65); }
+.kk-ft__policies { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 16px; }
+.kk-ft__policies a:hover { color: var(--kk-paper); }
 @media (min-width: 750px) {
   .kk-ft__top { grid-template-columns: minmax(0, 5fr) repeat(3, minmax(0, 2fr)); gap: 40px; padding-block: 56px 44px; }
   .kk-ft__brand { grid-column: auto; align-items: flex-start; text-align: start; }
@@ -811,3 +813,25 @@ html[lang='ar'] .cart-items__title-row + p { text-transform: none; letter-spacin
   .kk-sform__button { padding-inline: 16px; }
   .kk-snone__request { padding: 20px 18px; border-radius: 14px; }
 }
+
+/* ---- policy pages (Shopify draws them; snippets/kashkoul-policy.liquid adds the label, links and band) ---- */
+/* the page's main area is a centring flex box: take the full width so the text lines up with the other pages */
+.content-for-layout > :is(.kk-policy__top, .shopify-policy__container, .kk-wrap, .kk-policy__cta) { width: 100%; align-self: stretch; }
+.kk-policy__top { padding-block-start: 40px; }
+.kk-policy__top .kk-label { margin: 0; }
+body .shopify-policy__container { max-width: calc(var(--kk-content) + 2 * var(--kk-gutter)); margin-inline: auto; padding: 10px var(--kk-gutter) 32px; box-sizing: border-box; }
+body .shopify-policy__title { text-align: start; }
+body .shopify-policy__title h1 { margin: 0 0 28px; font-family: var(--kk-font-title); font-weight: var(--kk-title-weight); font-size: var(--kk-fs-h1); line-height: 1.02;
+  letter-spacing: -.01em; color: var(--kk-brick); }
+body .shopify-policy__body { max-width: 68ch; font-size: var(--kk-fs-body); line-height: 1.7; color: var(--kk-ink); }
+body .shopify-policy__body p { margin: 0 0 16px; }
+body .shopify-policy__body strong { color: var(--kk-brick); font-weight: 700; }
+body .shopify-policy__body ul { margin: 0 0 18px; padding-inline-start: 22px; }
+body .shopify-policy__body li { margin-block-end: 6px; }
+body .shopify-policy__body li::marker { color: var(--kk-brick); }
+.kk-policy__links { display: flex; flex-wrap: wrap; gap: 8px; padding-block: 8px 48px; }
+.kk-policy__link { display: inline-flex; align-items: center; min-height: 38px; padding: 0 16px; border: 1px solid #cdbcaa; border-radius: 100px;
+  font-family: var(--kk-font-label); font-size: 14px; font-weight: 600; color: var(--kk-ink); text-decoration: none; }
+.kk-policy__link:hover { border-color: var(--kk-brick); color: var(--kk-brick); }
+.kk-policy__link.is-on { background: var(--kk-brick); border-color: var(--kk-brick); color: var(--kk-paper); }
+@media (max-width: 749px) { .kk-policy__top { padding-block-start: 24px; } .kk-policy__links { padding-block-end: 32px; } }

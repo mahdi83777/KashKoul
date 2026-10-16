@@ -157,7 +157,10 @@
         data-product-transition="{{ settings.transition_to_main_product }}"
         data-template="{{ template }}"
       >
+        {%- # Kashkoul: the Market's frame around Shopify's policy pages -%}
+        {%- if request.page_type == 'policy' -%}{% render 'kashkoul-policy', part: 'start' %}{%- endif -%}
         {{ content_for_layout }}
+        {%- if request.page_type == 'policy' -%}{% render 'kashkoul-policy', part: 'end' %}{%- endif -%}
       </main>
 
       <footer>

@@ -446,7 +446,14 @@
       "tagline": "Instruments and art supplies, sourced for you. Delivered anywhere in Lebanon; cash on delivery or Whish.",
       "kashkoul": "Kashkoul",
       "wa_button": "Message us on WhatsApp",
-      "copyright": "Kashkoul Market · Khaldeh, Lebanon"
+      "copyright": "Kashkoul Market · Khaldeh, Lebanon",
+      "policies": {
+        "refund": "Refund policy",
+        "shipping": "Shipping policy",
+        "privacy": "Privacy policy",
+        "terms": "Terms of service",
+        "label": "Policies"
+      }
     },
     "whatsapp": {
       "label": "Message us on WhatsApp",
