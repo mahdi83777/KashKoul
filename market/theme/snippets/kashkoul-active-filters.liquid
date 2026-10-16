@@ -1,0 +1,56 @@
+{%- comment -%}
+  The filters you've ticked, as chips with × (and "Clear all" when there are two or more), above the products: on
+  computers in the "Filters · count · Sort" row, on phones under the "Category · Filter & sort" bar (blocks/filters.liquid).
+  Same chips as Horizon's snippets/filter-remove-buttons.liquid, pointed at the filter form by its id so they work
+  outside it.
+
+  @param {object} filters - The filters
+  @param {string} results_url - The page without filters
+  @param {string} form - The id of the facets-form-component to update
+  @param {string} [class] - Extra class
+{%- endcomment -%}
+{%- liquid
+  assign kk_count = 0
+  for filter in filters
+    if filter.type == 'price_range'
+      if filter.min_value.value != null or filter.max_value.value != null
+        assign kk_count = kk_count | plus: 1
+      endif
+    else
+      assign kk_count = kk_count | plus: filter.active_values.size
+    endif
+  endfor
+-%}
+{%- if kk_count > 0 -%}
+  <div class="kk-active {{ class }}">
+    <h3 class="visually-hidden">{{ 'accessibility.active_filters' | t }}</h3>
+    {%- for filter in filters -%}
+      {%- if filter.type == 'price_range' -%}
+        {%- if filter.min_value.value != null or filter.max_value.value != null -%}
+          <facet-remove-component class="kk-active__chip" data-url="{{ filter.url_to_remove }}" tabindex="0" role="button"
+            on:click="/removeFilter?form={{ form }}" on:keydown="/removeFilter?form={{ form }}">
+            <bdi>{{ filter.min_value.value | default: 0 | money }}–{{ filter.max_value.value | default: filter.range_max | money }}</bdi>
+            <span class="kk-active__x" aria-hidden="true"></span>
+            <span class="visually-hidden">{{ 'actions.remove' | t }}</span>
+          </facet-remove-component>
+        {%- endif -%}
+      {%- else -%}
+        {%- for value in filter.active_values -%}
+          <facet-remove-component class="kk-active__chip" data-url="{{ value.url_to_remove }}" tabindex="0" role="button"
+            on:click="/removeFilter?form={{ form }}" on:keydown="/removeFilter?form={{ form }}">
+            {%- if filter.type == 'boolean' -%}{{ filter.label | escape }}: {% endif -%}{{ value.label | escape }}
+            <span class="kk-active__x" aria-hidden="true"></span>
+            <span class="visually-hidden">{{ 'actions.remove' | t }}</span>
+          </facet-remove-component>
+        {%- endfor -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if kk_count > 1 -%}
+      <facet-remove-component data-url="{{ results_url }}">
+        <button type="button" class="button-unstyled kk-active__clear" on:click="/removeFilter?form={{ form }}" on:keydown="/removeFilter?form={{ form }}">
+          {{- 'actions.clear_all' | t -}}
+        </button>
+      </facet-remove-component>
+    {%- endif -%}
+  </div>
+{%- endif -%}

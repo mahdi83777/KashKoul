@@ -239,11 +239,6 @@
               "settings": {},
               "blocks": {}
             },
-            "kk_ask": {
-              "type": "kashkoul-whatsapp-ask",
-              "settings": {},
-              "blocks": {}
-            },
             "kk_info": {
               "type": "kashkoul-product-info",
               "settings": {},
@@ -260,7 +255,6 @@
             "kk_availability",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
-            "kk_ask",
             "kk_info",
             "kk_tabs"
           ]

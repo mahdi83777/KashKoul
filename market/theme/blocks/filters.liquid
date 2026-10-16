@@ -113,6 +113,9 @@
     >
       {% if block_settings.enable_filtering %}
         <h4 class="facets--filters-title">{{ 'content.filters' | t }}</h4>
+        {%- # Kashkoul: the ticked filters as chips here, above the products, instead of in the sidebar -%}
+        {%- assign kk_form = 'kk-facets-form-' | append: section.id -%}
+        {% render 'kashkoul-active-filters', filters: filters, results_url: results_url, form: kk_form, class: 'kk-active--bar' %}
       {% endif %}
 
       <div
@@ -178,6 +181,7 @@
       {%- if block_settings.filter_style == 'vertical' -%}{% render 'kashkoul-category-tree' %}{%- endif -%}
       <facets-form-component
         class="facets__form-wrapper"
+        id="kk-facets-form-{{ section.id }}"
         section-id="{{ section.id }}"
         form-style="{{ block_settings.filter_style }}"
         {{ collection_id_attribute }}
@@ -314,6 +318,8 @@
     </div>
   </div>
 
+  {%- # Kashkoul: marks where the phone filter bar sits, so it can be pinned once scrolled past (assets/kashkoul.js) -%}
+  <div class="kk-ftoggle-spot" aria-hidden="true"></div>
   <div
     class="
       facets-toggle
@@ -325,6 +331,8 @@
       {{ facets_margin_style }}
     "
   >
+    {%- # Kashkoul: on phones, a "Category" button beside "Filter & sort"; the bar stays pinned while scrolling -%}
+    {% render 'kashkoul-category-sheet' %}
     {% if block_settings.enable_filtering %}
       <div class="facets-toggle__wrapper">
         <button
@@ -408,6 +416,16 @@
       {% endif %}
     </div>
   </div>
+  {%- # Kashkoul: on phones, under the "Category · Filter & sort" bar: the ticked filters, and the number of products at the end -%}
+  {%- if block_settings.enable_filtering -%}
+    <div class="kk-phone-meta">
+      {%- assign kk_form = 'FacetFiltersFormComponent--' | append: section.id | append: '-overflow' -%}
+      {% render 'kashkoul-active-filters', filters: filters, results_url: results_url, form: kk_form, class: 'kk-active--phone' %}
+      <span class="kk-phone-meta__count">
+        {%- if products_count > 25000 -%}{{- 'content.item_count_cutoff' | t: count: 25000 -}}{%- else -%}{{- 'kashkoul.shop.count' | t: count: products_count -}}{%- endif -%}
+      </span>
+    </div>
+  {%- endif -%}
 {% else %}
   <div></div>
 {% endif %}

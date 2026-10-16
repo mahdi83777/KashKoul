@@ -237,15 +237,26 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   Phones show the tabs and tiles only. A tile's photo is the sub-category's image in the admin (set to a chosen product
   photo; falls back to its first product's photo). The sidebar list folds up (open at first), each category with sub-categories has a +/−
   (open only for the one you're in), and the whole sidebar (categories + filters) **stays in view** while the products
-  scroll, below the header when it slides back in. "All products" has its own title and text (from `market/strings.json`,
-  as Shopify's catalog has no description), and Studio & recording is in the footer's Shop column.
+  scroll, below the header when it slides back in. "All products" has its own title and one-line text (from `market/strings.json`,
+  as Shopify's catalog has no description).
 - [x] Cart: the slide-out cart no longer reopens by itself on the next page or after Back (it used to follow you
   from page to page).
 - [x] Shop page with the real catalog: filters are a **sidebar on computers** (Horizon's "vertical" style; Type and
   Brand start collapsed and open when one of their values is ticked, Price open); phones keep the "Filter & sort"
-  drawer, with a gap before the products. Price fields are rounded white fields like the rest of the Market.
+  drawer, with a gap before the products. Price fields are rounded white fields like the rest of the Market. The
+  **ticked filters show as chips above the products** (beside "Filters" on computers, under the pinned bar on phones),
+  with "Clear all" when there are two or more; the sidebar no longer repeats them.
 - [x] Product page: a row of **thumbnails** under the main photo on computers (Horizon's gallery setting, the photo
   frame made a little shorter so they fit in the window); phones keep swipe and dots.
+- [x] Product page, calmer details column, **no full-width buttons**: quantity · Add to cart, then Buy it now ·
+  "Ask about this" (WhatsApp icon, light outline) sharing the next row (also for sold-out products);
+  pay / delivery / confirm / deposit lines in one soft box, all in the same style; Description, Delivery & pickup and
+  Returns with thin lines and a +/− (like the menus and the sidebar).
+- [x] Phones, shop page: a **"Category" button beside "Filter & sort"** (just the number of products), opening the
+  categories list in a sheet from the bottom; the bar **stays pinned** at the top once scrolled past (below the header
+  when it slides back in) until the products end.
+- [x] Homepage "Shop by category": Studio & recording card (the Studio's turntable photo, toned like the others), five
+  cards in one row on computers. Footer Shop column follows the main menu, so new categories appear there by themselves.
 - [ ] **Later:** Owner review of prices and the catalog. Points to check on the product pages: Al Cass valve oil (1 or 2
   bottles?), Sala ney's key (C), Gawharet El Fan darbuka photos vs design names, Glory alto sax colours (keep the
   bright ones?), a few accessories with only 1–2 photos.

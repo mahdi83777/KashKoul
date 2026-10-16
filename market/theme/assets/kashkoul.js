@@ -32,3 +32,38 @@ document.addEventListener('click', (event) => {
   event.preventDefault();
   toggle.setAttribute('aria-expanded', String(toggle.getAttribute('aria-expanded') !== 'true'));
 });
+
+// Phones, shop page: the "Category" button opens the categories sheet (snippets/kashkoul-category-sheet.liquid); a tap
+// on the dimmed page or the × closes it.
+document.addEventListener('click', (event) => {
+  const target = event.target instanceof Element ? event.target : null;
+  if (!target) return;
+  const sheet = document.getElementById('kk-csheet');
+  if (!(sheet instanceof HTMLDialogElement)) return;
+  if (target.closest('[data-kk-csheet-open]')) sheet.showModal();
+  else if (target.closest('[data-kk-csheet-close]') || target === sheet) sheet.close();
+});
+
+// Phones, shop page: once the "Category · Filter & sort" bar is scrolled past, it stays pinned at the top (below the
+// header when it slides back in) until the products end. The spot before it keeps its height so nothing jumps.
+(() => {
+  const phone = window.matchMedia('(max-width: 749px)');
+  let queued = false;
+  const update = () => {
+    queued = false;
+    const spot = document.querySelector('.kk-ftoggle-spot');
+    const bar = spot?.nextElementSibling;
+    const wrapper = spot?.closest('.collection-wrapper');
+    if (!bar || !wrapper) return;
+    const header = document.getElementById('header-component');
+    const top = header?.dataset.stickyState === 'active' ? header.getBoundingClientRect().bottom : 0;
+    const pinned = phone.matches && spot.getBoundingClientRect().top < top && wrapper.getBoundingClientRect().bottom > top + bar.offsetHeight * 2;
+    if (pinned && !bar.classList.contains('kk-pinned')) spot.style.height = `${bar.offsetHeight}px`;
+    if (!pinned) spot.style.height = '';
+    bar.classList.toggle('kk-pinned', pinned);
+    bar.style.setProperty('--kk-pin-top', `${Math.max(0, top)}px`);
+  };
+  const queue = () => { if (!queued) { queued = true; requestAnimationFrame(update); } };
+  window.addEventListener('scroll', queue, { passive: true });
+  window.addEventListener('resize', queue);
+})();

@@ -236,6 +236,8 @@
             can_add_to_cart: can_add_to_cart,
             form_obj: form
           %}
+          {%- # Kashkoul: "Ask about this" on WhatsApp, beside "Buy it now" -%}
+          {% render 'kashkoul-whatsapp-ask', product: product %}
         </div>
         {%- if block_settings.gift_card_form and product.gift_card? -%}
           </span>
@@ -252,6 +254,8 @@
       >
         {{ 'blocks.sold_out' | t }}
       </button>
+      {%- # Kashkoul: "Ask about this" on WhatsApp, also when sold out -%}
+      {% render 'kashkoul-whatsapp-ask', product: product %}
     </div>
   {%- endif -%}
 </span>

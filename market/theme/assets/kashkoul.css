@@ -293,16 +293,21 @@ html[lang='ar'] .kk-crumbs__list { text-transform: none; letter-spacing: 0; font
 .product-details .quantity-selector { min-height: 40px; height: 40px; }
 .product-details .quantity-selector .button { width: 38px; height: 38px; min-height: 0; }
 .product-details :is(.add-to-cart-button, .shopify-payment-button__button) { min-height: 40px; height: 40px; padding-block: 0; font-size: 15px; }
+/* two rows, no full-width buttons: quantity · Add to cart, then Buy it now · Ask about this (WhatsApp), sharing the row.
+   Add to cart takes all but the quantity's room, so the next two wrap and split their row in half. */
+.product-details .product-form-buttons { flex-wrap: wrap; }
+.product-details .product-form-buttons > .quantity-selector-wrapper { flex: none; }
+.product-details .product-form-buttons > :not(.quantity-selector-wrapper):not(.product-form-text__error):not(.kk-ask):not(.accelerated-checkout-block) { flex: 1 1 calc(100% - 140px); min-width: 0; }
+.product-details .product-form-buttons > :is(.accelerated-checkout-block, .kk-ask) { flex: 1 1 calc(50% - 10px); min-width: 0; }
 .product-details button.shopify-payment-button__button--unbranded {
   --button-background-color: transparent; --button-color: var(--kk-brick); --button-border-color: var(--kk-brick); --button-border-width: 1.5px; }
 .product-details button.shopify-payment-button__button--unbranded:hover:not([disabled]) {
   --button-background-color: rgb(102 38 28 / .07); --button-color: var(--kk-brick); --button-border-color: var(--kk-brick); }
-.product-details .kk-ask { width: auto; min-height: 32px; padding: 0; border: 0; background: none; gap: 8px; font-size: 15px; font-weight: 700;
-  color: var(--kk-brick); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; justify-content: flex-start; }
-.product-details .kk-ask:hover { background: none; text-decoration-thickness: 2px; }
+.product-details .kk-ask { width: auto; max-width: 100%; height: 40px; min-height: 40px; padding: 0 16px; border: 1px solid #cdbcaa; border-radius: 100px; background: #fff; gap: 8px;
+  font-size: 15px; font-weight: 600; color: var(--kk-ink); text-decoration: none; justify-content: center; }
+.product-details .kk-ask:hover { background: #fff; border-color: var(--kk-brick); color: var(--kk-brick); }
 @media (max-width: 749px) {
-  .product-details .product-form-buttons { flex-wrap: wrap; }
-  .product-details .product-form-buttons > :has(.shopify-payment-button), .product-details .product-form-buttons > .shopify-payment-button { flex: 1 0 100%; }
+  .product-details :is(.add-to-cart-button, .shopify-payment-button__button, .kk-ask) { font-size: 14px; }
 }
 /* phones: the photo keeps the page's side margins (not edge to edge), and the title fits a phone */
 @media (max-width: 749px) {
@@ -319,7 +324,7 @@ html[lang='ar'] .kk-crumbs__list { text-transform: none; letter-spacing: 0; font
   .product-details .quantity-selector .button { width: 34px; height: 36px; }
   .product-details :is(.add-to-cart-button, .shopify-payment-button__button) { min-height: 38px; height: 38px; font-size: 14px; }
   .product-details .product-form-buttons { gap: 8px; }
-  .product-details .kk-ask { font-size: 14px; min-height: 28px; }
+  .product-details .kk-ask { height: 38px; min-height: 38px; }
   .kk-avail-line { gap: 6px 10px; }
   .kk-avail-line__badge { font-size: 12px; padding: 5px 11px 4px; }
   .kk-avail-line__time { font-size: 14px; }
@@ -352,20 +357,22 @@ media-gallery .product-media-container { aspect-ratio: auto !important; height: 
 .kk-avail-line--on_order .kk-avail-line__badge { background: var(--kk-mustard); color: var(--kk-brick); }
 .kk-avail-line--sold_out .kk-avail-line__badge { background: var(--kk-line); color: var(--kk-ink); }
 .kk-avail-line__time { font-size: 15px; color: var(--kk-muted); }
-.kk-pinfo { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.kk-pinfo { margin: 0; padding: 16px 18px; list-style: none; display: grid; gap: 10px; background: var(--kk-paper-2); border: 1px solid var(--kk-line); border-radius: 14px; }
 .kk-pinfo li { display: flex; align-items: flex-start; gap: 10px; font-size: 14.5px; line-height: 1.45; color: var(--kk-ink); }
 .kk-pinfo svg { flex: 0 0 auto; width: 20px; height: 20px; margin-block-start: 1px; color: var(--kk-brick); }
 .kk-pinfo strong { color: var(--kk-brick); }
-.kk-pinfo .kk-pinfo__deposit { color: var(--kk-muted); }
-.kk-pinfo .kk-pinfo__deposit svg { color: var(--kk-mustard-2); }
-.kk-pinfo .kk-pinfo__deposit strong { color: var(--kk-ink); }
-.kk-ptabs { border-block-start: 2px solid var(--kk-brick); }
-.kk-ptab { border-block-end: 1px solid rgba(102,38,28,.22); }
+.kk-ptabs { border-block-start: 1px solid var(--kk-line); }
+.kk-ptab { border-block-end: 1px solid var(--kk-line); }
 .kk-ptab__q { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 56px; cursor: pointer; list-style: none;
-  font-size: var(--kk-fs-lead); font-weight: 700; color: var(--kk-brick); }
+  font-family: var(--kk-font-label); font-size: 16px; font-weight: 600; color: var(--kk-ink); }
 .kk-ptab__q::-webkit-details-marker { display: none; }
+.kk-ptab[open] .kk-ptab__q { color: var(--kk-brick); }
+.kk-ptab__pm { position: relative; flex: none; width: 28px; height: 28px; color: var(--kk-brick); }
+.kk-ptab__pm::before, .kk-ptab__pm::after { content: ''; position: absolute; inset-block-start: 50%; inset-inline-start: 50%; width: 12px; height: 2px;
+  margin: -1px 0 0 -6px; background: currentColor; border-radius: 1px; transition: transform .15s; }
+.kk-ptab__pm::after { transform: rotate(90deg); }
+.kk-ptab[open] .kk-ptab__pm::after { transform: rotate(0deg); }
 .kk-ptab__q:focus-visible { outline: 2px solid var(--kk-terra); outline-offset: 2px; }
-.kk-ptab[open] .kk-faq__icon { transform: rotate(45deg); }
 .kk-ptab__a { padding-block-end: 18px; font-size: var(--kk-fs-body); line-height: 1.7; }
 .kk-ptab__a p { margin: 0 0 10px; }
 .kk-ptab__a ul { margin: 6px 0 0; padding-inline-start: 20px; }
@@ -552,7 +559,7 @@ product-card.product-card { position: relative; }
 /* the categories list at the top of the filter sidebar, computers only (snippets/kashkoul-category-tree.liquid):
    folds up like the filters below it; a category with sub-categories has a +/− */
 /* no line of its own: the first filter's top line (Type) separates the two */
-.kk-ctree { margin-inline-end: 13px; }
+.kk-ctree:not(.kk-ctree--sheet) { margin-inline-end: 13px; }
 .kk-ctree__title { display: flex; align-items: center; justify-content: space-between; padding-block: 14px; cursor: pointer; list-style: none;
   font-size: 16px; color: var(--kk-ink); }
 .kk-ctree__title::-webkit-details-marker { display: none; }
@@ -583,6 +590,25 @@ product-card.product-card { position: relative; }
     inset-block-start: calc(var(--header-height, 0px) + 16px); max-height: calc(100svh - var(--header-height, 0px) - 32px); }
 }
 
+/* the ticked filters as chips above the products (snippets/kashkoul-active-filters.liquid); the sidebar's own chips go */
+.kk-active { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.kk-active__chip { display: inline-flex; align-items: center; gap: 8px; min-height: 34px; padding: 0 10px 0 14px; border: 1px solid #cdbcaa;
+  border-radius: 100px; background: #fff; font-family: var(--kk-font-label); font-size: 14px; font-weight: 600; color: var(--kk-ink); cursor: pointer; }
+.kk-active__chip:hover, .kk-active__chip:focus-visible { border-color: var(--kk-brick); color: var(--kk-brick); }
+.kk-active__x { position: relative; width: 16px; height: 16px; color: var(--kk-muted); }
+.kk-active__chip:hover .kk-active__x { color: var(--kk-brick); }
+.kk-active__x::before, .kk-active__x::after { content: ''; position: absolute; inset-block-start: 50%; inset-inline-start: 50%; width: 10px; height: 1.5px;
+  margin: -.75px 0 0 -5px; background: currentColor; transform: rotate(45deg); }
+.kk-active__x::after { transform: rotate(-45deg); }
+.kk-active__clear { padding: 0 6px; font-family: var(--kk-font-label); font-size: 14px; font-weight: 600; color: var(--kk-brick); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.facets-controls-wrapper .kk-active--bar { flex: 1 1 auto; margin-inline: 24px auto; }
+.kk-phone-meta { display: none; }
+@media (max-width: 749px) {
+  .kk-phone-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; grid-column: 1 / -1; margin-block: -6px 14px; padding-inline: var(--padding-lg); }
+  .kk-phone-meta__count { margin-inline-start: auto; font-size: 14px; color: var(--kk-muted); white-space: nowrap; }
+}
+@media (min-width: 750px) { body .facets--vertical .facets-remove { display: none; } }
+
 /* price filter: rounded white fields like the rest of the Market */
 body .facets .price-facet__inputs-wrapper { gap: 10px; align-items: center; }
 body .facets .price-facet__field .field__input { height: 44px; padding-inline: 32px 16px; border: 1px solid #cdbcaa; border-radius: 100px; background: #fff;
@@ -592,7 +618,7 @@ body .facets .price-facet__field .field__label { inset-block: 0; inset-inline-st
 body .facets .price-facet__separator { font-family: var(--kk-font-label); font-size: 13px; color: var(--kk-muted); }
 body .facets .price-facet__highest-price { margin-block-start: 10px; font-size: 13px; color: var(--kk-muted); }
 html[lang='ar'] .kk-ctree__title { letter-spacing: 0; }
-@media (max-width: 749px) { .kk-ctree { display: none; } }
+@media (max-width: 749px) { .kk-ctree:not(.kk-ctree--sheet) { display: none; } }
 
 /* ---- product cards as soft white tiles ---- */
 product-card.product-card { background: #fff; border-radius: 14px; overflow: hidden; padding-block-end: 16px;
@@ -613,12 +639,44 @@ product-card.product-card:hover { transform: translateY(-3px); box-shadow: 0 14p
   /* with the sidebar style, Horizon drops the row's spacing on phones: keep a gap before the products, and line the
      row up with the product grid (its styles load after this file and zero the margin with a two-class selector, hence the
      longer selector here) */
-  body .collection-wrapper .facets-toggle { height: auto; margin: 0 0 16px; padding-block: 0; }
+  body .collection-wrapper .facets-toggle { height: auto; margin: 0 0 16px; padding-block: 0; gap: 8px; }
+  /* with the Category button beside it, "Filter & sort" shows no count (the number of products is in the line below,
+     so a number here can't be mistaken for active filters), and stays on one line */
+  .facets-toggle:has(.kk-csheet-open) .kk-ftoggle__count { display: none; }
+  .facets-toggle:has(.kk-csheet-open) .facets-toggle__button { justify-content: center; }
+  .kk-ftoggle__label { white-space: nowrap; }
+  /* pinned at the top once scrolled past (assets/kashkoul.js) */
+  body .collection-wrapper .facets-toggle.kk-pinned { position: fixed; z-index: 20; inset-inline: 0; inset-block-start: var(--kk-pin-top, 0px); margin: 0;
+    padding: 8px var(--kk-gutter, 20px); background: var(--kk-paper); box-shadow: 0 6px 16px rgb(31 30 33 / .08); }
   body .facets-toggle__wrapper { margin-inline-start: 0; }
   .facets-toggle__button { width: 100%; justify-content: flex-start; gap: 10px; min-height: 44px; padding-inline: 16px; }
   .facets-toggle__button .kk-ftoggle__count { margin-inline-start: auto; font-weight: 500; font-size: 14px; color: var(--kk-muted); }
 }
 @media (min-width: 750px) { .kk-ftoggle__count { display: none; } }
+/* the marker before the phone filter bar takes no place in the page grid on computers (it would push the products down) */
+.kk-ftoggle-spot { display: none; }
+@media (max-width: 749px) { .kk-ftoggle-spot { display: block; grid-column: 1 / -1; } }
+/* phones: the Category button (same pill as Filter & sort) and its sheet from the bottom (snippets/kashkoul-category-sheet.liquid) */
+.kk-csheet-open { display: none; }
+@media (max-width: 749px) {
+  .kk-csheet-open { flex: 1 1 0; min-width: 0; display: flex; align-items: center; gap: 8px; min-height: 44px; padding-inline: 14px 16px;
+    border: 1px solid #cdbcaa; border-radius: 100px; background: #fff; color: var(--kk-ink); font-family: var(--kk-font-label); font-size: 15px; font-weight: 600; cursor: pointer; }
+  .kk-csheet-open svg { flex: none; color: var(--kk-brick); }
+  .kk-csheet-open__label { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: start; }
+  .kk-csheet-open__chevron { flex: none; width: 7px; height: 7px; border-block-end: 1.5px solid currentColor; border-inline-end: 1.5px solid currentColor; transform: translateY(-2px) rotate(45deg); }
+  .facets-toggle:has(.kk-csheet-open) .facets-toggle__wrapper { flex: 1 1 0; min-width: 0; }
+}
+.kk-csheet { width: 100%; max-width: 100%; max-height: 80svh; margin: auto 0 0; padding: 8px 16px calc(20px + env(safe-area-inset-bottom, 0px)); border: 0;
+  border-radius: 20px 20px 0 0; background: #fff; color: var(--kk-ink); overflow-y: auto; }
+.kk-csheet::backdrop { background: rgb(31 30 33 / .4); }
+.kk-csheet__head { position: sticky; inset-block-start: -8px; z-index: 1; display: flex; align-items: center; justify-content: space-between; padding-block: 12px 8px; background: #fff; }
+.kk-csheet__title { margin: 0; font-family: var(--kk-font-title); font-size: 24px; color: var(--kk-brick); }
+.kk-csheet__close { position: relative; width: 36px; height: 36px; border: 0; border-radius: 50%; background: var(--kk-paper-2); color: var(--kk-brick); cursor: pointer; }
+.kk-csheet__close::before, .kk-csheet__close::after { content: ''; position: absolute; inset-block-start: 50%; inset-inline-start: 50%; width: 14px; height: 2px; margin: -1px 0 0 -7px; background: currentColor; border-radius: 1px; transform: rotate(45deg); }
+.kk-csheet__close::after { transform: rotate(-45deg); }
+.kk-ctree--sheet .kk-ctree__link { padding-block: 10px; font-size: 15px; }
+.kk-ctree--sheet .kk-ctree__link--sub { font-size: 14.5px; }
+.kk-ctree--sheet .kk-subtoggle { width: 36px; height: 36px; }
 
 /* filter choices show how many products they have (Kashkoul edit in snippets/list-filter.liquid) */
 .facets__inputs-list-item:has(.kk-fcount) { display: flex; align-items: center; gap: 12px; }
@@ -646,7 +704,8 @@ html[lang='ar'] .cart-items__title-row + p { text-transform: none; letter-spacin
 .cart-totals__total-value { font-family: var(--kk-font-label); font-weight: 700; font-size: 22px !important; color: var(--kk-brick); }
 .cart-totals__tax-note { font-size: 14px; line-height: 1.5; color: var(--kk-muted); }
 .cart__checkout-button { min-height: 44px; height: 44px; padding-block: 0; font-size: 15px; }
-.kk-cinfo { margin-block-start: 18px; padding-block-start: 16px; border-block-start: 1px solid var(--kk-line); }
+/* in the cart, the same soft box as on the product page (.kk-pinfo), just closer to the button above */
+.kk-cinfo { margin-block-start: -6px; }
 @media (min-width: 750px) {
   /* the summary is a card beside the items, not a full-height panel */
   .cart-page .cart-page__summary { grid-row: 2 / -1 !important; height: auto !important; align-self: start !important; display: block !important; }
@@ -656,5 +715,5 @@ html[lang='ar'] .cart-items__title-row + p { text-transform: none; letter-spacin
   .cart-page__summary .cart-summary { display: block; grid-row: auto; }
   .cart-page__summary .cart-summary__inner { padding-block: 0 !important; }
 }
-.kk-cfull { display: flex; justify-content: center; align-items: center; gap: 6px; min-height: 40px; margin-block-start: 6px; font-weight: 700; font-size: 14px; }
+.kk-cfull { display: flex; justify-content: center; align-items: center; gap: 6px; min-height: 32px; margin-block-start: -12px; font-weight: 700; font-size: 14px; }
 [dir="rtl"] .kk-cfull span { display: inline-block; transform: scaleX(-1); }

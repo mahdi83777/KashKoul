@@ -608,7 +608,7 @@
       "on_order_time": "Ordered from the US for you · delivered in {{ weeks }} weeks",
       "sold_out": "Sold out",
       "sold_out_time": "Ask us on WhatsApp when it's back",
-      "ask": "Ask about this on WhatsApp",
+      "ask": "Ask about this",
       "ask_message": "Hi Kashkoul Market! I have a question about:",
       "pay_html": "<strong>Pay on delivery</strong>, in cash or with Whish. No card needed.",
       "delivery_html": "<strong>Delivery</strong> anywhere in Lebanon for ${{ fee }}, or <strong>free pickup</strong> in Khaldeh.",

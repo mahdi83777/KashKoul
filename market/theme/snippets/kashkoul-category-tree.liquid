@@ -3,7 +3,10 @@
   and Price. Same source as the tabs above the products: the links under "Shop" in the main menu. Each line shows its
   product count. The whole list folds up like the filters (open at first); a category with sub-categories has a +/−
   (the same button as the header's Shop menu, assets/kashkoul.js), open only for the category you're in.
-  Phones don't show it: they have the tabs and photo tiles (sections/kashkoul-collection-head.liquid).
+  Phones get the same list in a sheet from the "Category" button of the pinned filter bar
+  (snippets/kashkoul-category-sheet.liquid), with sheet: true (no fold, ids kept apart from the sidebar's).
+
+  @param {boolean} [sheet] - Rendered inside the phone sheet
 {%- endcomment -%}
 {%- liquid
   assign kk_links = null
@@ -14,12 +17,22 @@
     endif
   endfor
 -%}
+{%- liquid
+  assign kk_id = 'kk-ctree-'
+  if sheet
+    assign kk_id = 'kk-csheet-'
+  endif
+-%}
 {%- if kk_links and collection -%}
-  <details class="kk-ctree" open>
-    <summary class="kk-ctree__title">
-      {{- 'kashkoul.crumbs.categories' | t -}}
-      <span class="kk-ctree__chevron" aria-hidden="true"></span>
-    </summary>
+  {%- if sheet -%}
+    <nav class="kk-ctree kk-ctree--sheet" aria-label="{{ 'kashkoul.crumbs.categories' | t }}">
+  {%- else -%}
+    <details class="kk-ctree" open>
+      <summary class="kk-ctree__title">
+        {{- 'kashkoul.crumbs.categories' | t -}}
+        <span class="kk-ctree__chevron" aria-hidden="true"></span>
+      </summary>
+  {%- endif -%}
     <ul class="kk-ctree__list">
       {%- for link in kk_links -%}
         {%- liquid
@@ -51,10 +64,10 @@
               type="button"
               class="kk-subtoggle"
               aria-expanded="{{ kk_open }}"
-              aria-controls="kk-ctree-{{ forloop.index }}"
+              aria-controls="{{ kk_id }}{{ forloop.index }}"
               aria-label="{{ link.title | escape }}"
             ></button>
-            <ul class="kk-ctree__sub" id="kk-ctree-{{ forloop.index }}">
+            <ul class="kk-ctree__sub" id="{{ kk_id }}{{ forloop.index }}">
               {%- for sub in link.links -%}
                 <li>
                   <a
@@ -72,5 +85,5 @@
         </li>
       {%- endfor -%}
     </ul>
-  </details>
+  {%- if sheet -%}</nav>{%- else -%}</details>{%- endif -%}
 {%- endif -%}
