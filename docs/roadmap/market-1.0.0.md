@@ -35,6 +35,7 @@ approved, and approved steps are marked ✅ here with the date.
 | 2026-10-15 | **Theme base: Horizon** (Shopify's free theme, v4.3.0), **styled to look like Shopify's "Studio" theme** | Studio's look was the favorite (Atelier, Tinker and Horizon were also compared), but Studio has no Arabic support: no right-to-left layout and no Arabic text file. Horizon has both built in, and Studio's look is mostly settings (serif type, deep ink color on near-white, colored panels, pill buttons), which Horizon can reproduce. If the step 1 style board doesn't convince, the fallback is Studio with Arabic added by hand. |
 | 2026-10-16 | **Importer: Ryviu (free plan)**, one link at a time, 500 variants a month; our script does the rest | Spreadr can't be paid for on a development store; Ryviu keeps each variant's Amazon ID, which the script uses to find and price products. |
 | 2026-10-16 | **Price = round_up((Amazon price + kg × $15) × 1.2) − 0.01**, by real weight only | Option 2 of the pricing proposals: simple, covers shipping by weight, and the cost stays visible in the admin. |
+| 2026-10-29 | **Price = round_up((Amazon price + kg × $20) × 1.3) − 0.01**, by real weight only | Replaces the 2026-10-16 rule ($15 a kg, 20% margin): shipping now $20 a kg and the margin 30%. |
 | 2026-10-16 | **Every instrument taught at the Academy is in the shop, with several choices each** | The Market's first job is to equip the Academy's students. |
 | 2026-10-16 | **Sub-categories by product type** (Instruments, Strings & accessories), **Studio & recording** as its own category, **filters in a sidebar** on computers with Type and Brand collapsed | ~115 products need more than four categories; automatic collections keep working when the owner adds products. |
 
@@ -210,7 +211,8 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   Variants"). Spreadr couldn't be used (a development store can't approve paid app subscriptions; uninstalled, nothing
   charged); Ryviu's "Import Amazon Store" failed on Donner's store. Ryviu imports as Draft at Amazon's price, stock 0,
   with the Amazon link and each variant's Amazon ID (SKU) kept.
-- [x] Pricing rule (option 2, **real weight only**): round_up((Amazon price + kg × $15) × 1.2) − 0.01. The Amazon price
+- [x] Pricing rule (option 2, **real weight only**): round_up((Amazon price + kg × $20) × 1.3) − 0.01 (since
+  2026-10-29; it was kg × $15 and × 1.2 before). The Amazon price
   is kept in "Cost per item" and the weight in "Weight", so re-runs never compound. Bundles with a clip-on tuner (coin
   battery) are fine; no lithium batteries.
 - [x] Our script `market/tools/setup-products.mjs` turns each import into a shop product from `market/store/products.json`:
@@ -281,7 +283,13 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
 - [ ] **Later:** Next list: the 3 batch 1 items with more than 25 variants (Ernie Ball Regular Slinky, D'Addario EJ16 3-pack,
   Ernie Ball Polypro strap) and the batch 2 items that were unavailable. Ryviu has 78 variants left this month (resets
   monthly).
-- [ ] **Later:** Sub-categories for Art supplies and Books & sheet music once they hold more products
+- [ ] **New categories from the owner** (approved 2026-10-29, `docs/market/categories.md`): 6 categories (Instruments,
+  Accessories, Studio & sound, Art supplies, Vinyl & hi-fi, Books & sheet music), 33 sub-categories, each with its
+  product types, in English and Arabic. Adapted from the owner's sheet: items that conflict with how the Market works
+  removed (second-hand, can't be flown, lithium, oversized, software), thin types merged, short sentence-case names.
+  Replaces the sub-categories above, including Art supplies and Books. Next: set it up in Shopify, move the 114
+  products to the new types, then the Spreadr import batches (Spreadr installed 2026-10-29, bulk import now that the
+  store is on a paid plan).
 
 **Review:** prices and the catalog.
 
@@ -326,6 +334,17 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   from the live theme. Changes are pushed there, previewed and published once approved (`market/README.md`)
 
 **Review:** go live. Approved 2026-10-29.
+
+---
+
+## After launch ⬜
+
+- [ ] **Checkout closer to the site.** Already set in the checkout editor (step 5b): brick logo, brick buttons and links,
+  paper order summary, Gloock headings, Fustat text. On the Basic plan the checkout's layout and steps stay Shopify's;
+  the aim is the finer styling through Shopify's checkout branding settings: corner radius (the site's rounded pills),
+  field and button styles, section backgrounds, the header, so it reads like the rest of the Market; and our own blocks
+  on the thank-you and order-status pages (e.g. "What happens next" and a WhatsApp button). First check which of these
+  the Basic plan allows; then each change is shown in English and Arabic on a phone before it's kept.
 
 ---
 
