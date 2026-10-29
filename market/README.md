@@ -86,19 +86,37 @@ Needs Node (already used for the Academy) and Shopify's command-line tool:
 npm install -g @shopify/cli@latest
 shopify theme dev   --path market/theme --store kashkoul-market-fhsuuq5c   # live preview at http://127.0.0.1:9292, reloads on save
 shopify theme check --path market/theme --config market/.theme-check.yml   # lint: Liquid errors, …
-shopify theme push  --path market/theme --unpublished               # upload as a new, unpublished theme for review
 ```
 
-The first command opens a browser to log in to Shopify. The store is `kashkoul-market-fhsuuq5c.myshopify.com`
-(Shopify added the random ending; customers will see `market.kashkoul.org`).
+The first command opens a browser to log in to Shopify. The store is `kashkoul-market-fhsuuq5c.myshopify.com`;
+customers see it at `market.kashkoul.org`.
+
+**The store is live (since 2026-10-29), so changes never go straight to the live theme.** They go to the working
+copy, "Kashkoul Market — work" (id `189733044454`, unpublished), and are published once approved:
+
+```
+# 1. push the changed files to the working copy
+shopify theme push --path market/theme --store kashkoul-market-fhsuuq5c --theme 189733044454 --only <files>
+# 2. review it: https://market.kashkoul.org/?preview_theme_id=189733044454  (Arabic: /ar?preview_theme_id=…)
+# 3. once approved, bring the owner's theme-editor changes over from the live theme (see below), push them to the
+#    working copy, then publish it
+shopify theme publish --store kashkoul-market-fhsuuq5c --theme 189733044454
+```
+
+After publishing, the working copy is the live theme. Duplicate it as the new working copy
+(`shopify theme duplicate --theme <live id> --name "Kashkoul Market — work"`) and put the new id here and in
+`CLAUDE.md`. `shopify theme list --store kashkoul-market-fhsuuq5c` shows which theme is live.
 
 **The theme editor writes back.** When someone changes settings or the homepage in Shopify's theme editor,
 the store's `config/settings_data.json` and `templates/*.json` change. Before editing those files here, pull
 the store's version first so their changes aren't overwritten:
 
 ```
-shopify theme pull --path market/theme --store kashkoul-market-fhsuuq5c --only config/settings_data.json --only 'templates/*.json'
+shopify theme pull --path market/theme --store kashkoul-market-fhsuuq5c --live --only config/settings_data.json --only 'templates/*.json'
 ```
+
+The owner edits the live theme, so pull from it (`--live`) before publishing the working copy too. Otherwise
+publishing would undo their changes.
 
 ## Updating Horizon
 

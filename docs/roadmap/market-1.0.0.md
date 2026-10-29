@@ -285,7 +285,7 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
 
 **Review:** prices and the catalog.
 
-## Step 7 — Launch ⬜
+## Step 7 — Launch ✅ (2026-10-29)
 
 - [x] Send emails from no-reply@kashkoul.org (authenticated 2026-10-29): Namecheap forwards `no-reply` to the Academy
   Gmail; it's the sender in Shopify (Settings → Notifications); Shopify's six CNAMEs (`mailer2cs`, `2cs._domainkey`,
@@ -309,18 +309,23 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
 - Going live needs the transfer: a development store keeps its password page and can't take public orders, so the plan
   (chosen by the account the store is transferred to) comes first. `market.kashkoul.org` and the sender domain can be
   connected before that; visitors would see the password page until launch.
-- [ ] Social sharing image and SEO (Online Store → Preferences): image uploaded 2026-10-29; it is
+- [x] Social sharing image and SEO (Online Store → Preferences), added 2026-10-29 with the title and description: the image is
   `docs/Kashkoul_Market/Share_Image/kashkoul-market-share.jpg` (1200×628, made from `kashkoul-market-share.html` next to it:
   brick panel with the mustard logo, "Instruments & art supplies, delivered in Lebanon" and the Arabic line, the oud
   photo). Home page title: "Kashkoul Market · Musical instruments & art supplies in Lebanon" / «سوق كشكول · آلات موسيقية
-  ولوازم فنية في لبنان»; meta description in both languages (proposed 2026-10-29).
+  ولوازم فنية في لبنان»; meta description in both languages.
 - [ ] Analytics and Google/Meta sales channels (optional)
-- [ ] Set Market to `"live"` in `shared/sites.json` with its new address, then redeploy Academy and Studio. Done in
-  the repo 2026-10-29 (`"path": "https://market.kashkoul.org/"`; `sync-house.mjs` keeps a full address as it is);
-  Academy and Studio rebuilt with the Market linked in the strip and the cards. Left: merge to `main` to deploy.
-- [ ] Remove the store password and launch
+- [x] Set Market to `"live"` in `shared/sites.json` with its new address, then redeploy Academy and Studio
+  (2026-10-29: `"path": "https://market.kashkoul.org/"`, `sync-house.mjs` keeps a full address as it is; merged to
+  `main` and deployed, so kashkoul.org and /studio/ link to the Market)
+- [x] Remove the store password and launch (2026-10-29). Test orders (#1001–#1003, cash on delivery and Whish,
+  delivery and pickup) placed and cancelled; order emails from no-reply@kashkoul.org arrive; new-order alerts go to
+  kashkoulacademy@gmail.com and the Shopify app; store time zone set to Beirut
 
-**Review:** go live.
+- [x] A working copy of the theme for changes after launch: "Kashkoul Market — work" (id 189733044454), duplicated
+  from the live theme. Changes are pushed there, previewed and published once approved (`market/README.md`)
+
+**Review:** go live. Approved 2026-10-29.
 
 ---
 

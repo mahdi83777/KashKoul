@@ -34,6 +34,8 @@ The links between the sites (the strip above the menu and the cards above the fo
   payment, payment icons or "pay now" wording.
 - **Follow the roadmap.** Work on one step of `docs/roadmap/market-1.0.0.md` at a time. Each step ends with
   my approval, and is marked done there.
+- **The store is live: never push to the live theme.** Theme changes go to the working copy "Kashkoul Market — work"
+  (id `189733044454`). Show me its preview link, and publish it only when I approve. The steps are in `market/README.md`.
 - **Stay close to Horizon.** The theme is Shopify's free Horizon theme. Add Kashkoul changes in new files where
   possible and keep edits to Horizon's own files small, so Shopify's theme updates can still be applied.
 - **Brand.** Market colors are brick `#66261c` with mustard `#dabd5c` on paper `#f4ebe2` (approved in step 1; the
