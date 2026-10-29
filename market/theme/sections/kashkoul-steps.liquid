@@ -1,0 +1,85 @@
+{%- comment -%}
+  "How ordering works": title, a short line and three numbered steps, with a link to the full How to order page.
+  Empty text settings show the approved text in the visitor's language.
+{%- endcomment -%}
+{%- liquid
+  assign kk_title = section.settings.title | escape
+  if kk_title == blank
+    assign kk_title = 'kashkoul.home.order_title' | t
+  endif
+  assign kk_intro = section.settings.intro | escape
+  if kk_intro == blank
+    assign kk_intro = 'kashkoul.home.order_intro' | t
+  endif
+  assign kk_more = section.settings.link_label | escape
+  if kk_more == blank
+    assign kk_more = 'kashkoul.home.order_link' | t
+  endif
+  assign kk_link = section.settings.link
+  if kk_link == blank
+    capture kk_link
+      render 'kashkoul-url', path: '/pages/how-to-order'
+    endcapture
+  endif
+-%}
+<section class="kk-steps" id="how-ordering-works">
+  <div class="kk-wrap">
+    <div class="kk-steps__head">
+      <h2 class="kk-title">{{ kk_title }}</h2>
+      <p class="kk-steps__intro">{{ kk_intro }}</p>
+    </div>
+    <ol class="kk-steps__list">
+      {%- for i in (1..3) -%}
+        {%- liquid
+          assign title_id = 'step_' | append: i | append: '_title'
+          assign text_id = 'step_' | append: i | append: '_text'
+          assign step_title = section.settings[title_id] | escape
+          if step_title == blank
+            assign key = 'kashkoul.home.' | append: title_id
+            assign step_title = key | t
+          endif
+          assign step_text = section.settings[text_id] | escape
+          if step_text == blank
+            assign key = 'kashkoul.home.' | append: text_id
+            assign step_text = key | t
+          endif
+        -%}
+        <li class="kk-step">
+          <span class="kk-step__num" aria-hidden="true">{{ i }}</span>
+          <span class="kk-step__title">{{ step_title }}</span>
+          <p class="kk-step__text">{{ step_text }}</p>
+        </li>
+      {%- endfor -%}
+    </ol>
+    {%- if section.settings.show_link -%}
+      <div class="kk-steps__more"><a class="kk-button kk-button--outline" href="{{ kk_link }}">{{ kk_more }}</a></div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "How ordering works",
+  "tag": "div",
+  "class": "kk-steps-section",
+  "settings": [
+    { "type": "paragraph", "content": "Leave the text fields empty to show the approved English and Arabic text." },
+    { "type": "text", "id": "title", "label": "Title" },
+    { "type": "text", "id": "intro", "label": "Line below the title" },
+    { "type": "header", "content": "Step 1" },
+    { "type": "text", "id": "step_1_title", "label": "Title" },
+    { "type": "textarea", "id": "step_1_text", "label": "Text" },
+    { "type": "header", "content": "Step 2" },
+    { "type": "text", "id": "step_2_title", "label": "Title" },
+    { "type": "textarea", "id": "step_2_text", "label": "Text" },
+    { "type": "header", "content": "Step 3" },
+    { "type": "text", "id": "step_3_title", "label": "Title" },
+    { "type": "textarea", "id": "step_3_text", "label": "Text" },
+    { "type": "header", "content": "Link" },
+    { "type": "checkbox", "id": "show_link", "label": "Show link", "default": true },
+    { "type": "text", "id": "link_label", "label": "Link text", "info": "Leave empty for \"How to order, in detail\"." },
+    { "type": "url", "id": "link", "label": "Link", "info": "Leave empty for the How to order page." }
+  ],
+  "presets": [{ "name": "How ordering works" }]
+}
+{% endschema %}

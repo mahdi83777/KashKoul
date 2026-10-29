@@ -1,0 +1,26 @@
+{%- comment -%}
+  "One house, three doors": a big colored panel for each Kashkoul site (Academy · Studio · Market), with its link.
+  Names and links come from shared/sites.json (snippets/kashkoul-house.liquid, kind 'panels'); text from
+  market/strings.json → kashkoul.about.
+{%- endcomment -%}
+<section class="kk-housepanels">
+  <div class="kk-wrap">
+    <div class="kk-heading kk-heading--stack">
+      <h2 class="kk-title">{{ 'kashkoul.about.house_title' | t }}</h2>
+      <p class="kk-lead">{{ 'kashkoul.about.house_intro' | t }}</p>
+    </div>
+    {% render 'kashkoul-house', kind: 'panels' %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kashkoul house",
+  "tag": "div",
+  "class": "kk-housepanels-section",
+  "settings": [
+    { "type": "paragraph", "content": "The three Kashkoul sites. Names and links come from shared/sites.json in the code." }
+  ],
+  "presets": [{ "name": "Kashkoul house" }]
+}
+{% endschema %}

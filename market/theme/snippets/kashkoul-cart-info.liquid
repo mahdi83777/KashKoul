@@ -1,0 +1,42 @@
+{%- comment -%}
+  Cart summary (cart page and slide-out cart), under the Check out button: in the slide-out cart a "View full cart" link
+  to the cart page, then delivery, the deposit rule when it applies (an on-order item in a cart over the deposit
+  amount), and the Academy discount. Numbers from Theme settings → Kashkoul.
+{%- endcomment -%}
+{%- liquid
+  assign fee = settings.kashkoul_delivery_fee | default: 5
+  assign over = settings.kashkoul_deposit_over | default: 100
+  assign deposit = settings.kashkoul_deposit_percent | default: 30
+  assign over_cents = over | times: 100
+  assign has_on_order = false
+  for item in cart.items
+    capture s
+      render 'kashkoul-stock-state', variant: item.variant
+    endcapture
+    if s == 'on_order'
+      assign has_on_order = true
+      break
+    endif
+  endfor
+-%}
+{%- unless cart.empty? -%}
+  {%- unless template.name == 'cart' -%}
+    <a class="kk-link kk-cfull" href="{{ routes.cart_url }}"><span class="kk-link__t">{{ 'kashkoul.cart.view_full' | t }}</span> <span aria-hidden="true">→</span></a>
+  {%- endunless -%}
+  <ul class="kk-pinfo kk-cinfo">
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+      <span>{{ 'kashkoul.product.delivery_html' | t: fee: fee }}</span>
+    </li>
+    {%- if has_on_order and cart.total_price > over_cents -%}
+      <li class="kk-pinfo__deposit">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>
+        <span>{{ 'kashkoul.product.deposit_html' | t: over: over, percent: deposit }}</span>
+      </li>
+    {%- endif -%}
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9l9-5 9 5-9 5z"/><path d="M7 11.5V16c0 1.5 2.2 3 5 3s5-1.5 5-3v-4.5"/></svg>
+      <span>{{ 'kashkoul.cart.academy_html' | t }}</span>
+    </li>
+  </ul>
+{%- endunless -%}

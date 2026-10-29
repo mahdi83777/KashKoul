@@ -1,0 +1,16 @@
+{%- comment -%}
+  Product page: "Ask about this" on WhatsApp, as its own block (snippets/kashkoul-whatsapp-ask.liquid). The product page
+  doesn't use it any more: the button sits in the buttons row beside "Buy it now" (blocks/buy-buttons.liquid).
+{%- endcomment -%}
+<div {{ block.shopify_attributes }}>{% render 'kashkoul-whatsapp-ask', product: closest.product %}</div>
+
+{% schema %}
+{
+  "name": "Kashkoul ask on WhatsApp",
+  "tag": null,
+  "settings": [
+    { "type": "paragraph", "content": "Opens WhatsApp with the product's name and link. Number from Theme settings → Kashkoul." }
+  ],
+  "presets": [{ "name": "Kashkoul ask on WhatsApp" }]
+}
+{% endschema %}

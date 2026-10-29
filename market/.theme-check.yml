@@ -1,0 +1,6 @@
+# Theme Check config for market/theme:   shopify theme check --path market/theme --config market/.theme-check.yml
+extends: theme-check:recommended
+# The Market is English + Arabic only. Kashkoul text lives in en.default.json and ar.json; Shopify falls back to
+# English for the other languages Horizon ships with, so missing keys there aren't errors for us.
+MatchingTranslations:
+  enabled: false

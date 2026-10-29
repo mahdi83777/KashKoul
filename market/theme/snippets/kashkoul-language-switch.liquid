@@ -1,0 +1,19 @@
+{%- comment -%}
+  One-tap language switch for the header: shows the OTHER language ("عربي" on English pages, "English" on Arabic
+  pages) and switches to it on the same page. Replaces Horizon's language dropdown (sections/header.liquid).
+  With more than two languages published it lists every other one.
+{%- endcomment -%}
+{%- for language in localization.available_languages -%}
+  {%- if language.iso_code != request.locale.iso_code -%}
+    {%- liquid
+      assign label = language.endonym_name
+      if language.iso_code == 'ar'
+        assign label = 'عربي'
+      endif
+    -%}
+    {%- form 'localization', id: 'KashkoulLanguage', class: 'kk-lang', return_to: back -%}
+      <input type="hidden" name="language_code" value="{{ language.iso_code }}">
+      <button type="submit" class="kk-lang__button" lang="{{ language.iso_code }}">{{ label }}</button>
+    {%- endform -%}
+  {%- endif -%}
+{%- endfor -%}

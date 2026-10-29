@@ -1,0 +1,34 @@
+{
+  "sections": {
+    "title": {
+      "type": "kashkoul-page-hero",
+      "settings": {
+        "page": "request",
+        "title": "",
+        "intro": ""
+      }
+    },
+    "steps": {
+      "type": "kashkoul-step-cards",
+      "settings": {
+        "page": "request"
+      }
+    },
+    "form": {
+      "type": "kashkoul-request",
+      "settings": {}
+    },
+    "cta": {
+      "type": "kashkoul-cta",
+      "settings": {
+        "variant": "question"
+      }
+    }
+  },
+  "order": [
+    "title",
+    "steps",
+    "form",
+    "cta"
+  ]
+}

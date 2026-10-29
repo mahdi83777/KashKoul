@@ -1,0 +1,106 @@
+{%- comment -%}
+  Shop / category page header: "Shop" label, the category title and description, then the categories as tabs, and the
+  sub-categories of the category you're in as round photo tiles with their product count (the first tile is the whole
+  category). They're the links under "Shop" in the main menu (Online Store → Navigation), so the owner manages them
+  there. A tile's photo is the sub-category's own image (Products → Collections → the collection → Image) or, when it
+  has none, its first product's photo. On computers the same list also sits in the filter sidebar
+  (snippets/kashkoul-category-tree.liquid).
+{%- endcomment -%}
+{%- liquid
+  assign kk_menu = linklists[section.settings.menu]
+  assign kk_links = null
+  for link in kk_menu.links
+    if link.links.size > 0
+      assign kk_links = link.links
+      break
+    endif
+  endfor
+  assign kk_title = collection.title | default: page_title
+  # "All products" is Shopify's own catalog, which has no description in the admin: ours comes from the strings
+  assign kk_text = collection.description
+  if collection.handle == 'all'
+    assign kk_title = 'kashkoul.shop.all_title' | t
+    if kk_text == blank
+      assign kk_text = 'kashkoul.shop.all_text' | t | prepend: '<p>' | append: '</p>'
+    endif
+  endif
+
+  assign kk_parent = null
+  for link in kk_links
+    if link.links.size == 0
+      continue
+    endif
+    if link.url == collection.url or link.child_active
+      assign kk_parent = link
+    endif
+    for sub in link.links
+      if sub.url == collection.url
+        assign kk_parent = link
+      endif
+    endfor
+  endfor
+-%}
+<div class="kk-wrap">
+  <header class="kk-chead">
+    <p class="kk-label kk-chead__eyebrow">{{ 'kashkoul.crumbs.shop' | t }}</p>
+    <h1 class="kk-chead__title">{{ kk_title | escape }}</h1>
+    {%- if kk_text != blank -%}
+      <div class="kk-chead__text">{{ kk_text }}</div>
+    {%- endif -%}
+    {%- if kk_links -%}
+      <nav class="kk-tabs" aria-label="{{ 'kashkoul.crumbs.categories' | t }}">
+        {%- for link in kk_links -%}
+          {%- liquid
+            assign kk_on = false
+            if link.url == collection.url or link.url == kk_parent.url
+              assign kk_on = true
+            endif
+          -%}
+          <a class="kk-tab{% if kk_on %} is-on{% endif %}" href="{{ link.url }}"{% if link.url == collection.url %} aria-current="page"{% endif %}>
+            {{- link.title | escape -}}
+          </a>
+        {%- endfor -%}
+      </nav>
+    {%- endif -%}
+    {%- if kk_parent -%}
+      <nav class="kk-tiles" aria-label="{{ kk_parent.title | escape }}">
+        {%- assign kk_on = false -%}
+        {%- if kk_parent.url == collection.url -%}{%- assign kk_on = true -%}{%- endif -%}
+        <a class="kk-tile kk-tile--all{% if kk_on %} is-on{% endif %}" href="{{ kk_parent.url }}"{% if kk_on %} aria-current="page"{% endif %}>
+          <span class="kk-tile__img">{{ 'kashkoul.shop.all' | t }}</span>
+          <span class="kk-tile__name">{{ kk_parent.title | escape }}</span>
+          <span class="kk-tile__n">{{ kk_parent.object.all_products_count }}</span>
+        </a>
+        {%- for sub in kk_parent.links -%}
+          {%- liquid
+            assign kk_on = false
+            if sub.url == collection.url
+              assign kk_on = true
+            endif
+            assign kk_img = sub.object.image | default: sub.object.products.first.featured_image
+          -%}
+          <a class="kk-tile{% if kk_on %} is-on{% endif %}" href="{{ sub.url }}"{% if kk_on %} aria-current="page"{% endif %}>
+            <span class="kk-tile__img">
+              {%- if kk_img -%}{{ kk_img | image_url: width: 200 | image_tag: loading: 'lazy', alt: '', sizes: '80px' }}{%- endif -%}
+            </span>
+            <span class="kk-tile__name">{{ sub.title | escape }}</span>
+            <span class="kk-tile__n">{{ sub.object.all_products_count }}</span>
+          </a>
+        {%- endfor -%}
+      </nav>
+    {%- endif -%}
+  </header>
+</div>
+
+{% schema %}
+{
+  "name": "Kashkoul shop header",
+  "tag": "div",
+  "class": "kk-chead-section",
+  "settings": [
+    { "type": "paragraph", "content": "Category title, description (from the collection), the categories as tabs and the sub-categories as photo tiles (the links under \"Shop\" in this menu)." },
+    { "type": "link_list", "id": "menu", "label": "Menu", "default": "main-menu" }
+  ],
+  "presets": [{ "name": "Kashkoul shop header" }]
+}
+{% endschema %}

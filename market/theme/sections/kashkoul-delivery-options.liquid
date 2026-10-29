@@ -1,0 +1,49 @@
+{%- comment -%}
+  Delivery & pickup: two big cards, "Delivery $5 anywhere in Lebanon" (brick) and "Free pickup in Khaldeh" (mustard,
+  with a map link). Fee from Theme settings → Kashkoul; map link too. Text in the visitor's language.
+{%- endcomment -%}
+{%- liquid
+  assign fee = settings.kashkoul_delivery_fee | default: 5
+-%}
+<section class="kk-options">
+  {%- if section.settings.show_title -%}
+    <div class="kk-wrap">
+      <div class="kk-heading kk-options__head">
+        <h2 class="kk-title">{{ 'kashkoul.pages.delivery_pickup.title' | t }}</h2>
+        <a class="kk-link" href="{% render 'kashkoul-url', path: '/pages/delivery-pickup' %}">{{ 'kashkoul.home.delivery_link' | t }} <span class="kk-house__go" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  {%- endif -%}
+  <div class="kk-wrap kk-options__grid">
+    <div class="kk-option kk-option--delivery">
+      <span class="kk-option__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span>
+      <span class="kk-option__label">{{ 'kashkoul.pages.delivery_pickup.delivery_label' | t }}</span>
+      <span class="kk-option__big">{{ 'kashkoul.pages.delivery_pickup.delivery_big' | t: fee: fee }}</span>
+      <span class="kk-option__sub">{{ 'kashkoul.pages.delivery_pickup.delivery_sub' | t }}</span>
+      <p class="kk-option__text">{{ 'kashkoul.pages.delivery_pickup.delivery_text' | t }}</p>
+    </div>
+    <div class="kk-option kk-option--pickup">
+      <span class="kk-option__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+      <span class="kk-option__label">{{ 'kashkoul.pages.delivery_pickup.pickup_label' | t }}</span>
+      <span class="kk-option__big">{{ 'kashkoul.pages.delivery_pickup.pickup_big' | t }}</span>
+      <span class="kk-option__sub">{{ 'kashkoul.pages.delivery_pickup.pickup_sub' | t }}</span>
+      <p class="kk-option__text">{{ 'kashkoul.pages.delivery_pickup.pickup_text' | t }}</p>
+      {%- if settings.kashkoul_map != blank -%}
+        <a class="kk-button kk-option__button" href="{{ settings.kashkoul_map }}" target="_blank" rel="noopener">{{ 'kashkoul.pages.delivery_pickup.pickup_map' | t }}&nbsp;<span class="kk-house__go" aria-hidden="true">↗</span><span class="visually-hidden"> {{ 'kashkoul.new_tab' | t }}</span></a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Delivery and pickup",
+  "tag": "div",
+  "class": "kk-options-section",
+  "settings": [
+    { "type": "checkbox", "id": "show_title", "label": "Show title and link to the Delivery & pickup page", "default": false, "info": "For the homepage." },
+    { "type": "paragraph", "content": "The fee and the map link come from Theme settings → Kashkoul. Text in English and Arabic from the theme." }
+  ],
+  "presets": [{ "name": "Delivery and pickup" }]
+}
+{% endschema %}

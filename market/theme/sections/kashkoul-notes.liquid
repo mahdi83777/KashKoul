@@ -1,0 +1,56 @@
+{%- comment -%}
+  Side-by-side notes: the deposit rule and the Academy discount (with a big number), and the two returns notes.
+  Numbers come from Theme settings → Kashkoul; text in the visitor's language.
+{%- endcomment -%}
+{%- liquid
+  assign over = settings.kashkoul_deposit_over | default: 100
+  assign deposit = settings.kashkoul_deposit_percent | default: 30
+  assign discount = settings.kashkoul_discount_percent | default: 10
+  assign hours = settings.kashkoul_return_hours | default: 48
+-%}
+<section class="kk-notes">
+  <div class="kk-wrap kk-notes__grid">
+    {%- if section.settings.show_deposit -%}
+      <div class="kk-note">
+        <span class="kk-note__big">{{ 'kashkoul.notes.deposit_big' | t: percent: deposit }}</span>
+        <h3 class="kk-note__title">{{ 'kashkoul.notes.deposit_title' | t }}</h3>
+        <p class="kk-note__text">{{ 'kashkoul.notes.deposit_text' | t: over: over, percent: deposit }}</p>
+      </div>
+    {%- endif -%}
+    {%- if section.settings.show_discount -%}
+      <div class="kk-note">
+        <span class="kk-note__big">{{ 'kashkoul.notes.discount_big' | t: percent: discount }}</span>
+        <h3 class="kk-note__title">{{ 'kashkoul.notes.discount_title' | t }}</h3>
+        <p class="kk-note__text">{{ 'kashkoul.notes.discount_text' | t }}</p>
+      </div>
+    {%- endif -%}
+    {%- if section.settings.show_not_covered -%}
+      <div class="kk-note">
+        <h3 class="kk-note__title">{{ 'kashkoul.pages.returns.not_covered_title' | t }}</h3>
+        <p class="kk-note__text">{{ 'kashkoul.pages.returns.not_covered_text' | t }}</p>
+      </div>
+    {%- endif -%}
+    {%- if section.settings.show_warranty -%}
+      <div class="kk-note">
+        <h3 class="kk-note__title">{{ 'kashkoul.pages.returns.warranty_title' | t }}</h3>
+        <p class="kk-note__text">{{ 'kashkoul.pages.returns.warranty_text' | t: hours: hours }}</p>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kashkoul notes",
+  "tag": "div",
+  "class": "kk-notes-section",
+  "settings": [
+    { "type": "checkbox", "id": "show_deposit", "label": "Deposit rule", "default": true },
+    { "type": "checkbox", "id": "show_discount", "label": "Academy discount", "default": true },
+    { "type": "checkbox", "id": "show_not_covered", "label": "Returns: change of mind isn't covered", "default": false },
+    { "type": "checkbox", "id": "show_warranty", "label": "Returns: no warranty", "default": false },
+    { "type": "paragraph", "content": "Numbers come from Theme settings → Kashkoul." }
+  ],
+  "presets": [{ "name": "Kashkoul notes" }]
+}
+{% endschema %}

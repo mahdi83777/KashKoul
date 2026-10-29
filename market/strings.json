@@ -1,0 +1,695 @@
+{
+  "_readme": "Kashkoul text used by the theme's own sections, in English and Arabic — from docs/market/content.md. Run `node market/tools/sync-strings.mjs` after editing; it copies each language into theme/locales/ (en.default.json, ar.json) under the \"kashkoul\" key. Section settings left empty in the theme editor show this text; a setting the owner fills in wins. \"shopify_overrides\" holds our wording for some of Shopify's own checkout text (contact field labels), written under the \"shopify\" key.",
+  "en": {
+    "announcement": {
+      "text": "Cash on delivery, or pay with Whish",
+      "link": "Questions? Message us on WhatsApp",
+      "text_short": "Cash on delivery or Whish",
+      "link_short": "WhatsApp us"
+    },
+    "home": {
+      "headline": "Instruments and art supplies, sourced for you.",
+      "subline": "Brought in from the US and delivered anywhere in Lebanon. You pay when it arrives.",
+      "shop_now": "Shop now",
+      "photo_alt": "Hands playing a qanun",
+      "categories_title": "Shop by category",
+      "new_in_title": "New in the Market",
+      "view_all": "View all",
+      "panel_title": "From the people behind Kashkoul Academy",
+      "panel_text": "Kashkoul Academy teaches music in Khaldeh. The Market is its shop: instruments, accessories, art supplies and books, brought in from the US and delivered to your door.",
+      "panel_button": "About the Market",
+      "panel_photo_alt": "The Kashkoul storefront in Khaldeh",
+      "order_title": "How ordering works",
+      "order_intro": "Three steps. No card needed.",
+      "step_1_title": "Order on the site.",
+      "step_1_text": "Add what you need to your cart and place your order.",
+      "step_2_title": "We confirm on WhatsApp.",
+      "step_2_text": "We message you to confirm your order and the delivery day.",
+      "step_3_title": "Pay when it arrives.",
+      "step_3_text": "In cash or with Whish. Or pick it up free from Kashkoul in Khaldeh.",
+      "order_link": "How to order, in detail",
+      "eyebrow": "Kashkoul Market",
+      "how_to_order": "How to order",
+      "delivery_link": "Delivery & pickup, in detail",
+      "related_title": "You may also like"
+    },
+    "categories": {
+      "instruments": "Instruments",
+      "strings": "Strings & accessories",
+      "studio": "Studio & recording",
+      "art": "Art supplies",
+      "books": "Books & sheet music",
+      "all": "All products"
+    },
+    "footer": {
+      "shop": "Shop",
+      "help": "Help",
+      "request": "Request a product",
+      "how_to_order": "How to order",
+      "delivery": "Delivery & pickup",
+      "returns": "Returns",
+      "faq": "FAQ",
+      "about": "About",
+      "credit": "Website by",
+      "name": "Kashkoul Market",
+      "tagline": "Instruments and art supplies, sourced for you. Delivered anywhere in Lebanon; cash on delivery or Whish.",
+      "kashkoul": "Kashkoul",
+      "wa_button": "Message us on WhatsApp",
+      "copyright": "Kashkoul Market · Khaldeh, Lebanon",
+      "policies": {
+        "refund": "Refund policy",
+        "shipping": "Shipping policy",
+        "privacy": "Privacy policy",
+        "terms": "Terms of service",
+        "label": "Policies"
+      }
+    },
+    "whatsapp": {
+      "label": "Message us on WhatsApp",
+      "message": "Hi Kashkoul Market! I have a question."
+    },
+    "new_tab": "(opens in a new tab)",
+    "pages": {
+      "how_to_order": {
+        "eyebrow": "Help · How to order",
+        "title": "How to order",
+        "intro": "Three steps, and you never need a card. Order here, we confirm on WhatsApp, and you pay when it arrives.",
+        "photo_alt": "Hands playing a ney",
+        "steps_title": "Three steps, no card",
+        "step_1_title": "Order on the site",
+        "step_1_text": "Add what you need to your cart, check out, and leave a phone number we can reach on WhatsApp.",
+        "step_2_title": "We confirm on WhatsApp",
+        "step_2_text": "We message you to confirm the items, the price and the delivery day.",
+        "step_3_title": "Pay when it arrives",
+        "step_3_text": "In cash or with Whish. Or pick up your order free from Kashkoul in Khaldeh."
+      },
+      "delivery_pickup": {
+        "eyebrow": "Help · Delivery & pickup",
+        "title": "Delivery & pickup",
+        "intro": "We deliver anywhere in Lebanon for one flat fee, or you pick up your order free from Kashkoul in Khaldeh.",
+        "photo_alt": "Hands on a piano",
+        "delivery_label": "Delivery",
+        "delivery_big": "${{ fee }}",
+        "delivery_sub": "per order, anywhere in Lebanon",
+        "delivery_text": "We confirm the delivery day with you on WhatsApp. From time to time we run free-delivery offers; they're shown at the top of the site.",
+        "pickup_label": "Pickup",
+        "pickup_big": "Free",
+        "pickup_sub": "from Kashkoul in Khaldeh",
+        "pickup_text": "Mon–Sat, 12pm–8pm · Sundays by appointment. We'll tell you when your order is ready.",
+        "pickup_map": "See it on the map"
+      },
+      "returns": {
+        "eyebrow": "Help · Returns",
+        "title": "Returns",
+        "intro": "If something arrives damaged or isn't what you ordered, we'll make it right.",
+        "photo_alt": "Hands playing a guitar",
+        "window_big": "{{ hours }} hours",
+        "window_text": "to tell us, from the moment you receive your order.",
+        "case_1_title": "It arrived damaged",
+        "case_1_text": "Broken, scratched or not working when it reached you.",
+        "case_2_title": "It's not what you ordered",
+        "case_2_text": "A different item, size, color or version from your order.",
+        "case_result": "We'll exchange it or refund you, in cash or by Whish.",
+        "steps_title": "How to return something",
+        "step_1_title": "Message us on WhatsApp",
+        "step_1_text": "Within {{ hours }} hours of receiving it, with a photo of the item.",
+        "step_2_title": "We check and reply",
+        "step_2_text": "We answer the same day and agree with you on an exchange or a refund.",
+        "step_3_title": "Exchange or refund",
+        "step_3_text": "We swap the item, or refund you in cash or by Whish.",
+        "not_covered_title": "Change of mind",
+        "not_covered_text": "We can't take back items because of a change of mind, since most are ordered from the US especially for you.",
+        "warranty_title": "No warranty",
+        "warranty_text": "We don't offer a warranty beyond this {{ hours }}-hour check, so please look your order over when it arrives."
+      },
+      "faq": {
+        "eyebrow": "Help · FAQ",
+        "title": "Questions",
+        "intro": "Quick answers about ordering, paying, delivery and returns.",
+        "photo_alt": "Sheet music on a piano"
+      },
+      "about": {
+        "eyebrow": "About",
+        "title": "About the Market",
+        "intro": "Kashkoul Market is the shop of Kashkoul Academy, the music academy in Khaldeh.",
+        "photo_alt": "The Kashkoul storefront in Khaldeh"
+      },
+      "request": {
+        "eyebrow": "Special requests",
+        "title": "Request a product",
+        "intro": "Can't find it in the shop? Send us the Amazon link and we'll get it for you. We reply on WhatsApp with the price, usually within a day.",
+        "photo_alt": "An oud resting by an armchair",
+        "steps_title": "How it works",
+        "step_1_title": "Send the link",
+        "step_1_text": "Paste the Amazon link and tell us the size, color or version you want.",
+        "step_2_title": "We reply with the price",
+        "step_2_text": "On WhatsApp, usually within a day: the full price, delivery included.",
+        "step_3_title": "Order like any other item",
+        "step_3_text": "It reaches you in {{ weeks }} weeks and you pay on delivery. For orders over ${{ over }}, a {{ percent }}% deposit by Whish first."
+      }
+    },
+    "availability": {
+      "title": "In stock or on order?",
+      "intro": "Every product shows one of these two labels.",
+      "in_stock": "In stock",
+      "in_stock_time": "{{ days }} days",
+      "in_stock_text": "Already in Lebanon. Delivered anywhere in the country, or ready for free pickup in Khaldeh.",
+      "on_order": "On order",
+      "on_order_time": "{{ weeks }} weeks",
+      "on_order_text": "Ordered from the US after you order. We confirm the delivery date with you on WhatsApp.",
+      "delivered_in": "Delivered in"
+    },
+    "notes": {
+      "deposit_title": "Deposits on special orders",
+      "deposit_big": "{{ percent }}%",
+      "deposit_text": "For on-order items, when the order is over ${{ over }}, we ask for a {{ percent }}% deposit by Whish before we order it for you. You pay the rest on delivery.",
+      "discount_title": "Academy students and teachers",
+      "discount_big": "{{ percent }}% off",
+      "discount_text": "Ask us for your code on WhatsApp, and use it at checkout."
+    },
+    "cta": {
+      "request": {
+        "eyebrow": "Special requests",
+        "title": "Can't find it here?",
+        "text": "Send us the Amazon link, with the size, color or version you want. We'll reply on WhatsApp with the price.",
+        "button": "Request a product",
+        "message": "Hi Kashkoul Market! Can you get this for me? "
+      },
+      "question": {
+        "eyebrow": "Questions",
+        "title": "Still have a question?",
+        "text": "Message us on WhatsApp. We answer the same day.",
+        "button": "Ask us on WhatsApp",
+        "message": "Hi Kashkoul Market! I have a question: "
+      },
+      "returns": {
+        "eyebrow": "Returns",
+        "title": "Something wrong with your order?",
+        "text": "Message us on WhatsApp within {{ hours }} hours of receiving it, with a photo. We'll make it right.",
+        "button": "Tell us on WhatsApp",
+        "message": "Hi Kashkoul Market! There's a problem with my order: "
+      }
+    },
+    "faq": {
+      "ordering": "Ordering & payment",
+      "card_q": "Do I need a card to order?",
+      "card_a": "No. You pay on delivery, in cash or with Whish.",
+      "source_q": "Where do the products come from?",
+      "source_a": "They're new, bought from Amazon in the US and brought to Lebanon.",
+      "deposit_q": "Why is there sometimes a deposit?",
+      "deposit_a": "On-order items are bought for you before they ship. For orders over ${{ over }} we ask for {{ percent }}% first, by Whish.",
+      "discount_q": "I study at Kashkoul Academy. Is there a discount?",
+      "discount_a": "Yes. Students and teachers get {{ percent }}% off with a code; ask us on WhatsApp.",
+      "delivery": "Delivery",
+      "time_q": "How long does delivery take?",
+      "time_a": "In-stock items: {{ days }} days. On-order items: {{ weeks }} weeks.",
+      "where_q": "Do you deliver everywhere in Lebanon?",
+      "where_a": "Yes, for one flat fee of ${{ fee }}. Or pick up free in Khaldeh.",
+      "returns": "Returns",
+      "return_q": "Can I return something?",
+      "return_a": "Yes, if it arrives damaged or isn't what you ordered. Tell us within {{ hours }} hours.",
+      "warranty_q": "Is there a warranty?",
+      "warranty_a": "No, we don't offer a warranty. If an item arrives damaged or isn't what you ordered, tell us within {{ hours }} hours and we'll exchange or refund it.",
+      "requests": "Special requests",
+      "request_q": "Can you get something that isn't on the site?",
+      "request_a": "Yes. Use the Request a product page (in the menu), or send us the Amazon link on WhatsApp, with the size, color or version you want. We'll reply with a price.",
+      "request_a_html": "Yes. Use the <a href=\"{{ url }}\">Request a product</a> page, or send us the Amazon link on <a href=\"{{ wa }}\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>, with the size, color or version you want. We'll reply with a price."
+    },
+    "about": {
+      "statement": "We bring in instruments, accessories, art supplies and books from the US, and deliver them anywhere in Lebanon.",
+      "fact_1_title": "Brought in from the US",
+      "fact_1_text": "New products, bought from Amazon in the US. Can't find something here? Send us the link.",
+      "fact_2_title": "Delivered anywhere in Lebanon",
+      "fact_2_text": "${{ fee }} per order, or free pickup from Kashkoul in Khaldeh.",
+      "fact_3_title": "You pay when it arrives",
+      "fact_3_text": "Order online, we confirm on WhatsApp, and you pay in cash or with Whish. No card needed.",
+      "house_title": "One house, three doors",
+      "house_intro": "Kashkoul is one house in Khaldeh, with three doors.",
+      "academy_line": "The Academy teaches",
+      "academy_text": "Music lessons in Khaldeh, from complete beginner to advanced.",
+      "studio_line": "The Studio rents out the rooms",
+      "studio_text": "The same rooms, furnished and lit, by the hour or the day.",
+      "market_line": "The Market brings you what you need",
+      "market_text": "Instruments, strings, art supplies and books, to play and to make."
+    },
+    "product": {
+      "in_stock": "In stock",
+      "in_stock_time": "Delivered in {{ days }} days",
+      "on_order": "On order",
+      "on_order_time": "Ordered from the US for you · delivered in {{ weeks }} weeks",
+      "sold_out": "Sold out",
+      "sold_out_time": "Ask us on WhatsApp when it's back",
+      "ask": "Ask about this",
+      "ask_message": "Hi Kashkoul Market! I have a question about:",
+      "pay_html": "<strong>Pay on delivery</strong>, in cash or with Whish. No card needed.",
+      "delivery_html": "<strong>Delivery</strong> anywhere in Lebanon for ${{ fee }}, or <strong>free pickup</strong> in Khaldeh.",
+      "confirm_html": "<strong>We confirm every order</strong> with you on WhatsApp before it's on its way.",
+      "deposit_html": "<strong>Ordered specially for you.</strong> For orders over ${{ over }}, we ask for a {{ percent }}% deposit by Whish before we order it. The rest is paid on delivery.",
+      "tab_description": "Description",
+      "tab_delivery": "Delivery & pickup",
+      "tab_returns": "Returns",
+      "delivery_text": "Delivered anywhere in Lebanon for ${{ fee }}: in-stock items in {{ days }} days, on-order items in {{ weeks }} weeks. Or pick it up free from Kashkoul in Khaldeh, Mon–Sat 12pm–8pm.",
+      "returns_text": "If an item arrives damaged or isn't what you ordered, tell us within {{ hours }} hours and we'll exchange or refund it. Change-of-mind returns aren't possible, since most items are ordered from the US especially for you.",
+      "more": "More details"
+    },
+    "crumbs": {
+      "label": "Breadcrumb",
+      "shop": "Shop",
+      "categories": "Categories"
+    },
+    "shop": {
+      "filter_sort": "Filter & sort",
+      "count": {
+        "one": "{{ count }} product",
+        "other": "{{ count }} products"
+      },
+      "all": "All",
+      "all_title": "All products",
+      "all_text": "Everything in the Market: instruments, accessories, studio gear and more."
+    },
+    "cart": {
+      "title": "Your cart",
+      "subtotal": "Subtotal",
+      "checkout": "Check out",
+      "note": "Delivery is added at checkout. You won't pay now: we confirm on WhatsApp and you pay on delivery.",
+      "academy_html": "<strong>Academy student or teacher?</strong> Ask us for your discount code.",
+      "days": "{{ days }} days",
+      "weeks": "{{ weeks }} weeks",
+      "view_full": "View full cart"
+    },
+    "request": {
+      "form_title": "Send your request",
+      "link": "Amazon link",
+      "link_hint": "For example amazon.com/dp/B005B6EZ36",
+      "options": "Size, color or version",
+      "options_hint": "Optional. For example: 3/4 size, black.",
+      "quantity": "Quantity",
+      "name": "Your name",
+      "phone": "WhatsApp number",
+      "phone_hint": "We'll send you the price here.",
+      "email": "Email",
+      "email_hint": "Optional.",
+      "notes": "Anything else",
+      "notes_hint": "Optional.",
+      "optional": "optional",
+      "submit": "Send request",
+      "sent_title": "Got it, thank you!",
+      "sent_text": "We'll reply on WhatsApp with the price, usually within a day.",
+      "sent_wa": "Also send it on WhatsApp",
+      "sent_wa_hint": "Handy if you want to add a photo.",
+      "another": "Request another product",
+      "error": "Please check the fields marked below.",
+      "wa_message": "Hi Kashkoul Market, I'd like to request this product:",
+      "wa_sent": "Hi Kashkoul Market, I just sent a product request on the website.",
+      "email_subject": "Product request",
+      "search_text": "Can't find it here? We can get it from Amazon for you.",
+      "search_link": "Request a product",
+      "wa_title": "Prefer WhatsApp?",
+      "wa_text": "Send us the link there, and a photo if you like. We'll reply the same way.",
+      "wa_button": "Send it on WhatsApp",
+      "photo_note": "Want to add a photo? WhatsApp is the easiest way: after sending, or right here."
+    },
+    "search": {
+      "eyebrow": "Search",
+      "title": "Search the Market",
+      "title_results": "Results for “{{ terms }}”",
+      "placeholder": "Search instruments, brands, accessories…",
+      "button": "Search",
+      "label": "Search the Market",
+      "none_title": "Nothing found for “{{ terms }}”",
+      "none_text": "Check the spelling, or try a shorter word like “oud” or “violin”.",
+      "request_title": "We can get it for you",
+      "request_text": "Send us the Amazon link and we'll reply on WhatsApp with the price, usually within a day.",
+      "request_button": "Request a product",
+      "browse_title": "Or browse the instruments"
+    }
+  },
+  "ar": {
+    "announcement": {
+      "text": "الدفع عند الاستلام أو عبر Whish",
+      "link": "لأي سؤال، راسلنا على واتساب",
+      "text_short": "الدفع عند الاستلام أو Whish",
+      "link_short": "راسلنا على واتساب"
+    },
+    "home": {
+      "headline": "آلات موسيقية ولوازم فنية، نؤمّنها لك.",
+      "subline": "نستوردها من الولايات المتحدة ونوصلها إلى أي مكان في لبنان، وتدفع عند الاستلام.",
+      "shop_now": "تسوّق الآن",
+      "photo_alt": "يدان تعزفان على القانون",
+      "categories_title": "تسوّق حسب الفئة",
+      "new_in_title": "جديد في السوق",
+      "view_all": "عرض الكل",
+      "panel_title": "من فريق أكاديمية كشكول",
+      "panel_text": "أكاديمية كشكول تعلّم الموسيقى في خلدة، والسوق هو متجرها: آلات موسيقية وإكسسوارات ولوازم فنية وكتب، نستوردها من الولايات المتحدة ونوصلها إلى بابك.",
+      "panel_button": "عن السوق",
+      "panel_photo_alt": "واجهة كشكول في خلدة",
+      "order_title": "كيف يتم الطلب",
+      "order_intro": "ثلاث خطوات، ولا حاجة لبطاقة.",
+      "step_1_title": "اطلب من الموقع.",
+      "step_1_text": "أضف ما تحتاجه إلى السلة وأرسل طلبك.",
+      "step_2_title": "نؤكّد على واتساب.",
+      "step_2_text": "نراسلك لتأكيد طلبك وموعد التوصيل.",
+      "step_3_title": "ادفع عند الاستلام.",
+      "step_3_text": "نقدًا أو عبر Whish، أو استلمه مجانًا من كشكول في خلدة.",
+      "order_link": "تفاصيل الطلب",
+      "eyebrow": "سوق كشكول",
+      "how_to_order": "كيف تطلب",
+      "delivery_link": "تفاصيل التوصيل والاستلام",
+      "related_title": "قد يعجبك أيضًا"
+    },
+    "categories": {
+      "instruments": "آلات موسيقية",
+      "strings": "أوتار وإكسسوارات",
+      "studio": "استوديو وتسجيل",
+      "art": "لوازم فنية",
+      "books": "كتب ونوتات موسيقية",
+      "all": "كل المنتجات"
+    },
+    "footer": {
+      "shop": "تسوّق",
+      "help": "مساعدة",
+      "request": "اطلب منتجًا",
+      "how_to_order": "كيف تطلب",
+      "delivery": "التوصيل والاستلام",
+      "returns": "الاسترجاع",
+      "faq": "أسئلة شائعة",
+      "about": "عن السوق",
+      "credit": "Website by",
+      "name": "سوق كشكول",
+      "tagline": "آلات موسيقية ولوازم فنية، نؤمّنها لك. نوصل إلى أي مكان في لبنان، والدفع عند الاستلام أو عبر Whish.",
+      "kashkoul": "كشكول",
+      "wa_button": "راسلنا على واتساب",
+      "copyright": "سوق كشكول · خلدة، لبنان",
+      "policies": {
+        "refund": "سياسة الاسترجاع",
+        "shipping": "سياسة التوصيل",
+        "privacy": "سياسة الخصوصية",
+        "terms": "شروط الخدمة",
+        "label": "السياسات"
+      }
+    },
+    "whatsapp": {
+      "label": "راسلنا على واتساب",
+      "message": "مرحبًا سوق كشكول، لديّ سؤال."
+    },
+    "new_tab": "(يفتح في نافذة جديدة)",
+    "pages": {
+      "how_to_order": {
+        "eyebrow": "مساعدة · كيف تطلب",
+        "title": "كيف تطلب",
+        "intro": "ثلاث خطوات، ولا حاجة لبطاقة أبدًا. تطلب من هنا، نؤكّد على واتساب، وتدفع عند الاستلام.",
+        "photo_alt": "يدان تعزفان على الناي",
+        "steps_title": "ثلاث خطوات، بلا بطاقة",
+        "step_1_title": "اطلب من الموقع",
+        "step_1_text": "أضف ما تحتاجه إلى السلة، أكمل الطلب، واترك رقم هاتف نتواصل معك عليه عبر واتساب.",
+        "step_2_title": "نؤكّد على واتساب",
+        "step_2_text": "نراسلك لتأكيد القطع والسعر وموعد التوصيل.",
+        "step_3_title": "ادفع عند الاستلام",
+        "step_3_text": "نقدًا أو عبر Whish، أو استلم طلبك مجانًا من كشكول في خلدة."
+      },
+      "delivery_pickup": {
+        "eyebrow": "مساعدة · التوصيل والاستلام",
+        "title": "التوصيل والاستلام",
+        "intro": "نوصل إلى أي مكان في لبنان مقابل مبلغ واحد، أو تستلم طلبك مجانًا من كشكول في خلدة.",
+        "photo_alt": "يدان على البيانو",
+        "delivery_label": "التوصيل",
+        "delivery_big": "{{ fee }}$",
+        "delivery_sub": "للطلب، إلى أي مكان في لبنان",
+        "delivery_text": "نؤكّد معك موعد التوصيل على واتساب. ونقدّم أحيانًا عروض توصيل مجاني تظهر في أعلى الموقع.",
+        "pickup_label": "الاستلام",
+        "pickup_big": "مجانًا",
+        "pickup_sub": "من كشكول في خلدة",
+        "pickup_text": "الاثنين–السبت، 12 ظهرًا–8 مساءً · الأحد بموعد مسبق. نخبرك عندما يصبح طلبك جاهزًا.",
+        "pickup_map": "الموقع على الخريطة"
+      },
+      "returns": {
+        "eyebrow": "مساعدة · الاسترجاع",
+        "title": "الاسترجاع",
+        "intro": "إذا وصلتك قطعة متضرّرة أو مختلفة عمّا طلبته، نصلح الأمر.",
+        "photo_alt": "يدان تعزفان على الغيتار",
+        "window_big": "{{ hours }} ساعة",
+        "window_text": "لتخبرنا، من لحظة استلام طلبك.",
+        "case_1_title": "وصلت متضرّرة",
+        "case_1_text": "مكسورة أو مخدوشة أو لا تعمل عند وصولها.",
+        "case_2_title": "ليست ما طلبته",
+        "case_2_text": "قطعة أو مقاس أو لون أو نوع مختلف عن طلبك.",
+        "case_result": "نستبدلها أو نعيد لك المبلغ، نقدًا أو عبر Whish.",
+        "steps_title": "كيف تُرجع قطعة",
+        "step_1_title": "راسلنا على واتساب",
+        "step_1_text": "خلال {{ hours }} ساعة من استلامها، مع صورة للقطعة.",
+        "step_2_title": "نتحقّق ونردّ",
+        "step_2_text": "نردّ في اليوم نفسه ونتّفق معك على الاستبدال أو استرداد المبلغ.",
+        "step_3_title": "استبدال أو استرداد",
+        "step_3_text": "نستبدل القطعة، أو نعيد لك المبلغ نقدًا أو عبر Whish.",
+        "not_covered_title": "تغيير الرأي",
+        "not_covered_text": "لا يمكننا استرجاع القطع بسبب تغيير الرأي، لأن معظمها نطلبه من الولايات المتحدة خصيصًا لك.",
+        "warranty_title": "لا كفالة",
+        "warranty_text": "لا نقدّم كفالة بعد مهلة الـ{{ hours }} ساعة، لذا افحص طلبك عند وصوله."
+      },
+      "faq": {
+        "eyebrow": "مساعدة · أسئلة شائعة",
+        "title": "أسئلة شائعة",
+        "intro": "أجوبة سريعة عن الطلب والدفع والتوصيل والاسترجاع.",
+        "photo_alt": "نوتات موسيقية على بيانو"
+      },
+      "about": {
+        "eyebrow": "عن السوق",
+        "title": "عن السوق",
+        "intro": "سوق كشكول هو متجر أكاديمية كشكول للموسيقى في خلدة.",
+        "photo_alt": "واجهة كشكول في خلدة"
+      },
+      "request": {
+        "eyebrow": "طلبات خاصة",
+        "title": "اطلب منتجًا",
+        "intro": "لم تجده في السوق؟ أرسل لنا رابط المنتج على أمازون ونحضره لك. نرد عليك على واتساب بالسعر، عادةً خلال يوم.",
+        "photo_alt": "عود بجانب كرسي",
+        "steps_title": "كيف يعمل الطلب",
+        "step_1_title": "أرسل الرابط",
+        "step_1_text": "الصق رابط المنتج على أمازون وأخبرنا بالمقاس أو اللون أو النوع الذي تريده.",
+        "step_2_title": "نرد عليك بالسعر",
+        "step_2_text": "على واتساب، عادةً خلال يوم: السعر الكامل مع التوصيل.",
+        "step_3_title": "اطلبه مثل أي منتج آخر",
+        "step_3_text": "يصلك خلال {{ weeks }} أسابيع وتدفع عند الاستلام. للطلبات فوق {{ over }}$، نطلب أولًا عربونًا بنسبة {{ percent }}% عبر Whish."
+      }
+    },
+    "availability": {
+      "title": "متوفر أم حسب الطلب؟",
+      "intro": "كل منتج يحمل إحدى هاتين العلامتين.",
+      "in_stock": "متوفر",
+      "in_stock_time": "{{ days }} أيام",
+      "in_stock_text": "موجود في لبنان. نوصله إلى أي مكان في البلد، أو يكون جاهزًا للاستلام المجاني من خلدة.",
+      "on_order": "حسب الطلب",
+      "on_order_time": "{{ weeks }} أسابيع",
+      "on_order_text": "نطلبه من الولايات المتحدة بعد طلبك، ونؤكّد معك موعد التوصيل على واتساب.",
+      "delivered_in": "يصل خلال"
+    },
+    "notes": {
+      "deposit_title": "العربون على الطلبات الخاصة",
+      "deposit_big": "{{ percent }}%",
+      "deposit_text": "للقطع حسب الطلب، إذا تجاوز الطلب {{ over }}$، نطلب عربونًا بنسبة {{ percent }}% عبر Whish قبل أن نطلبها لك، وتدفع الباقي عند الاستلام.",
+      "discount_title": "طلاب وأساتذة الأكاديمية",
+      "discount_big": "خصم {{ percent }}%",
+      "discount_text": "اطلبوا الرمز منّا على واتساب، واستعملوه عند إتمام الطلب."
+    },
+    "cta": {
+      "request": {
+        "eyebrow": "طلبات خاصة",
+        "title": "لم تجد ما تبحث عنه؟",
+        "text": "أرسل لنا رابط المنتج على أمازون، مع المقاس أو اللون أو النوع الذي تريده، ونرد عليك على واتساب بالسعر.",
+        "button": "اطلب منتجًا",
+        "message": "مرحبًا سوق كشكول، هل يمكنكم إحضار هذا لي؟ "
+      },
+      "question": {
+        "eyebrow": "أسئلة",
+        "title": "ما زال لديك سؤال؟",
+        "text": "راسلنا على واتساب، ونردّ في اليوم نفسه.",
+        "button": "اسألنا على واتساب",
+        "message": "مرحبًا سوق كشكول، لديّ سؤال: "
+      },
+      "returns": {
+        "eyebrow": "الاسترجاع",
+        "title": "هل في طلبك مشكلة؟",
+        "text": "راسلنا على واتساب خلال {{ hours }} ساعة من استلامه، مع صورة، ونصلح الأمر.",
+        "button": "أخبرنا على واتساب",
+        "message": "مرحبًا سوق كشكول، في طلبي مشكلة: "
+      }
+    },
+    "faq": {
+      "ordering": "الطلب والدفع",
+      "card_q": "هل أحتاج إلى بطاقة للطلب؟",
+      "card_a": "لا. تدفع عند الاستلام، نقدًا أو عبر Whish.",
+      "source_q": "من أين تأتي المنتجات؟",
+      "source_a": "منتجات جديدة نشتريها من أمازون في الولايات المتحدة ونحضرها إلى لبنان.",
+      "deposit_q": "لماذا يُطلب عربون أحيانًا؟",
+      "deposit_a": "القطع حسب الطلب نشتريها لك قبل شحنها، لذلك نطلب {{ percent }}% مسبقًا عبر Whish للطلبات فوق {{ over }}$.",
+      "discount_q": "أدرس في أكاديمية كشكول، هل من خصم؟",
+      "discount_a": "نعم، لطلاب وأساتذة الأكاديمية خصم {{ percent }}% برمز خاص. اطلبه منّا على واتساب.",
+      "delivery": "التوصيل",
+      "time_q": "كم يستغرق التوصيل؟",
+      "time_a": "القطع المتوفرة: {{ days }} أيام. القطع حسب الطلب: {{ weeks }} أسابيع.",
+      "where_q": "هل توصلون إلى كل لبنان؟",
+      "where_a": "نعم، مقابل {{ fee }}$ فقط، أو استلمه مجانًا من خلدة.",
+      "returns": "الاسترجاع",
+      "return_q": "هل يمكنني إرجاع قطعة؟",
+      "return_a": "نعم، إذا وصلت متضرّرة أو مختلفة عمّا طلبته. أخبرنا خلال {{ hours }} ساعة.",
+      "warranty_q": "هل هناك كفالة؟",
+      "warranty_a": "لا، لا نقدّم كفالة. إذا وصلت القطعة متضرّرة أو مختلفة عمّا طلبته، أخبرنا خلال {{ hours }} ساعة ونستبدلها أو نعيد لك المبلغ.",
+      "requests": "طلبات خاصة",
+      "request_q": "هل يمكنكم إحضار منتج غير موجود على الموقع؟",
+      "request_a": "نعم. استخدم صفحة «اطلب منتجًا» في القائمة، أو أرسل لنا رابط المنتج على أمازون عبر واتساب مع المقاس أو اللون أو النوع الذي تريده، ونرسل لك السعر.",
+      "request_a_html": "نعم. استخدم صفحة <a href=\"{{ url }}\">اطلب منتجًا</a>، أو أرسل لنا رابط المنتج على أمازون عبر <a href=\"{{ wa }}\" target=\"_blank\" rel=\"noopener\">واتساب</a> مع المقاس أو اللون أو النوع الذي تريده، ونرسل لك السعر."
+    },
+    "about": {
+      "statement": "نستورد الآلات الموسيقية والإكسسوارات واللوازم الفنية والكتب من الولايات المتحدة، ونوصلها إلى أي مكان في لبنان.",
+      "fact_1_title": "من الولايات المتحدة",
+      "fact_1_text": "منتجات جديدة نشتريها من أمازون في الولايات المتحدة. لم تجد ما تبحث عنه؟ أرسل لنا الرابط.",
+      "fact_2_title": "توصيل إلى كل لبنان",
+      "fact_2_text": "{{ fee }}$ للطلب، أو استلام مجاني من كشكول في خلدة.",
+      "fact_3_title": "تدفع عند الاستلام",
+      "fact_3_text": "تطلب أونلاين، نؤكّد على واتساب، وتدفع نقدًا أو عبر Whish. لا حاجة لبطاقة.",
+      "house_title": "بيت واحد بثلاثة أبواب",
+      "house_intro": "كشكول بيت واحد في خلدة، بثلاثة أبواب.",
+      "academy_line": "الأكاديمية تعلّم",
+      "academy_text": "دروس موسيقى في خلدة، من المبتدئ تمامًا إلى المتقدّم.",
+      "studio_line": "الاستوديو يؤجّر الغرف",
+      "studio_text": "الغرف نفسها، مفروشة ومضاءة، بالساعة أو باليوم.",
+      "market_line": "السوق يحضر لك ما تحتاجه",
+      "market_text": "آلات موسيقية وأوتار ولوازم فنية وكتب، للعزف والإبداع."
+    },
+    "product": {
+      "in_stock": "متوفر",
+      "in_stock_time": "يصل خلال {{ days }} أيام",
+      "on_order": "حسب الطلب",
+      "on_order_time": "نطلبه لك من الولايات المتحدة · يصل خلال {{ weeks }} أسابيع",
+      "sold_out": "نفدت الكمية",
+      "sold_out_time": "اسألنا على واتساب متى يتوفّر",
+      "ask": "اسأل عن هذا المنتج",
+      "ask_message": "مرحبًا سوق كشكول، لديّ سؤال عن:",
+      "pay_html": "<strong>ادفع عند الاستلام</strong>، نقدًا أو عبر Whish. لا حاجة لبطاقة.",
+      "delivery_html": "<strong>توصيل</strong> إلى أي مكان في لبنان مقابل {{ fee }}$، أو <strong>استلام مجاني</strong> من خلدة.",
+      "confirm_html": "<strong>نؤكّد كل طلب</strong> معك على واتساب قبل إرساله.",
+      "deposit_html": "<strong>نطلبه خصيصًا لك.</strong> للطلبات فوق {{ over }}$، نطلب عربونًا بنسبة {{ percent }}% عبر Whish قبل أن نطلبه، والباقي عند الاستلام.",
+      "tab_description": "الوصف",
+      "tab_delivery": "التوصيل والاستلام",
+      "tab_returns": "الاسترجاع",
+      "delivery_text": "نوصل إلى أي مكان في لبنان مقابل {{ fee }}$: القطع المتوفرة خلال {{ days }} أيام، والقطع حسب الطلب خلال {{ weeks }} أسابيع. أو استلمه مجانًا من كشكول في خلدة، الاثنين–السبت 12 ظهرًا–8 مساءً.",
+      "returns_text": "إذا وصلت القطعة متضرّرة أو مختلفة عمّا طلبته، أخبرنا خلال {{ hours }} ساعة ونستبدلها أو نعيد لك المبلغ. لا يمكن الاسترجاع بسبب تغيير الرأي، لأن معظم القطع نطلبها من الولايات المتحدة خصيصًا لك.",
+      "more": "تفاصيل أكثر"
+    },
+    "crumbs": {
+      "label": "مسار التصفّح",
+      "shop": "تسوّق",
+      "categories": "الأقسام"
+    },
+    "shop": {
+      "filter_sort": "التصفية والترتيب",
+      "count": {
+        "zero": "لا منتجات",
+        "one": "منتج واحد",
+        "two": "منتجان",
+        "few": "{{ count }} منتجات",
+        "many": "{{ count }} منتجًا",
+        "other": "{{ count }} منتج"
+      },
+      "all": "الكل",
+      "all_title": "كل المنتجات",
+      "all_text": "كل ما في السوق: آلات موسيقية وإكسسوارات ومعدات استوديو وغيرها."
+    },
+    "cart": {
+      "title": "سلّتك",
+      "subtotal": "المجموع",
+      "checkout": "إتمام الطلب",
+      "note": "تُضاف كلفة التوصيل عند إتمام الطلب. لن تدفع الآن: نؤكّد على واتساب وتدفع عند الاستلام.",
+      "academy_html": "<strong>طالب أو أستاذ في الأكاديمية؟</strong> اطلب منّا رمز الخصم.",
+      "days": "{{ days }} أيام",
+      "weeks": "{{ weeks }} أسابيع",
+      "view_full": "عرض السلّة كاملة"
+    },
+    "request": {
+      "form_title": "أرسل طلبك",
+      "link": "رابط المنتج على أمازون",
+      "link_hint": "مثلًا amazon.com/dp/B005B6EZ36",
+      "options": "المقاس أو اللون أو النوع",
+      "options_hint": "اختياري. مثلًا: مقاس 3/4، أسود.",
+      "quantity": "الكمية",
+      "name": "اسمك",
+      "phone": "رقم واتساب",
+      "phone_hint": "نرسل لك السعر عليه.",
+      "email": "البريد الإلكتروني",
+      "email_hint": "اختياري.",
+      "notes": "ملاحظات أخرى",
+      "notes_hint": "اختياري.",
+      "optional": "اختياري",
+      "submit": "أرسل الطلب",
+      "sent_title": "وصلنا طلبك، شكرًا لك!",
+      "sent_text": "نرد عليك على واتساب بالسعر، عادةً خلال يوم.",
+      "sent_wa": "أرسله على واتساب أيضًا",
+      "sent_wa_hint": "مفيد إن أردت إضافة صورة.",
+      "another": "اطلب منتجًا آخر",
+      "error": "يرجى مراجعة الحقول المحددة أدناه.",
+      "wa_message": "مرحبًا سوق كشكول، أود طلب هذا المنتج:",
+      "wa_sent": "مرحبًا سوق كشكول، أرسلت للتو طلب منتج عبر الموقع.",
+      "email_subject": "طلب منتج",
+      "search_text": "لم تجده هنا؟ نستطيع أن نحضره لك من أمازون.",
+      "search_link": "اطلب منتجًا",
+      "wa_title": "تفضّل واتساب؟",
+      "wa_text": "أرسل لنا الرابط هناك، مع صورة إن أردت. نرد عليك بالطريقة نفسها.",
+      "wa_button": "أرسله على واتساب",
+      "photo_note": "تريد إضافة صورة؟ واتساب هو الأسهل: بعد الإرسال، أو من هنا مباشرة."
+    },
+    "search": {
+      "eyebrow": "بحث",
+      "title": "ابحث في السوق",
+      "title_results": "نتائج «{{ terms }}»",
+      "placeholder": "ابحث عن آلة أو ماركة أو إكسسوار…",
+      "button": "ابحث",
+      "label": "ابحث في السوق",
+      "none_title": "لا نتائج لـ«{{ terms }}»",
+      "none_text": "تأكّد من الكتابة، أو جرّب كلمة أقصر مثل «عود» أو «كمان».",
+      "request_title": "نستطيع أن نحضره لك",
+      "request_text": "أرسل لنا رابط المنتج على أمازون ونرد عليك على واتساب بالسعر، عادةً خلال يوم.",
+      "request_button": "اطلب منتجًا",
+      "browse_title": "أو تصفّح الآلات الموسيقية"
+    }
+  },
+  "shopify_overrides": {
+    "en": {
+      "checkout": {
+        "contact": {
+          "email_or_phone_label": "WhatsApp number or email",
+          "email_or_phone_placeholder": "WhatsApp number or email",
+          "phone_label": "WhatsApp number",
+          "phone_placeholder": "WhatsApp number",
+          "phone_tooltip": "We confirm every order with you on WhatsApp."
+        },
+        "shipping": {
+          "shipping_line_phone_label": "WhatsApp number (required)"
+        },
+        "payment": {
+          "card_security_notice": "Nothing is paid online. Pay on delivery, or by Whish after we confirm your order on WhatsApp.",
+          "billing_must_match_shipping_notice": "",
+          "billing_address_title": "Your details"
+        }
+      }
+    },
+    "ar": {
+      "checkout": {
+        "contact": {
+          "email_or_phone_label": "رقم واتساب أو البريد الإلكتروني",
+          "email_or_phone_placeholder": "رقم واتساب أو البريد الإلكتروني",
+          "phone_label": "رقم واتساب",
+          "phone_placeholder": "رقم واتساب",
+          "phone_tooltip": "نؤكّد كل طلب معك على واتساب."
+        },
+        "shipping": {
+          "shipping_line_phone_label": "رقم واتساب (إلزامي)"
+        },
+        "payment": {
+          "card_security_notice": "لا دفع عبر الإنترنت. ادفع عند الاستلام، أو عبر Whish بعد أن نؤكّد طلبك على واتساب.",
+          "billing_must_match_shipping_notice": "",
+          "billing_address_title": "بياناتك"
+        }
+      }
+    }
+  }
+}

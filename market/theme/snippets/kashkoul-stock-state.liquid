@@ -1,0 +1,22 @@
+{%- comment -%}
+  Outputs a variant's availability for Kashkoul Market: in_stock, on_order or sold_out (agreed rule, step 4):
+    quantity above 0                                → in_stock
+    quantity 0, "continue selling when out of stock" → on_order   (ordered from the US for the customer)
+    quantity 0, not continuing                       → sold_out
+  A variant whose stock isn't tracked counts as in_stock (Shopify treats it as always available).
+  No variant (the picked options don't make a real variant) → none.
+  Accepts: variant
+{%- endcomment -%}
+{%- liquid
+  if variant == blank
+    echo 'none'
+  elsif variant.available == false
+    echo 'sold_out'
+  elsif variant.inventory_management == blank
+    echo 'in_stock'
+  elsif variant.inventory_quantity > 0
+    echo 'in_stock'
+  else
+    echo 'on_order'
+  endif
+-%}

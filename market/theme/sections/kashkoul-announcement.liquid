@@ -1,0 +1,85 @@
+{%- comment -%}
+  Mustard announcement bar. Empty settings show the standard text in the visitor's language
+  (market/strings.json → kashkoul.announcement). For an offer, type the offer text in "Message".
+{%- endcomment -%}
+{%- liquid
+  assign kk_text = section.settings.text | escape
+  if kk_text == blank
+    assign kk_text = 'kashkoul.announcement.text' | t
+  endif
+  assign kk_link_label = section.settings.link_label | escape
+  if kk_link_label == blank and section.settings.show_whatsapp
+    assign kk_link_label = 'kashkoul.announcement.link' | t
+  endif
+  assign kk_link = section.settings.link
+  if kk_link == blank
+    capture kk_link
+      render 'kashkoul-whatsapp-url'
+    endcapture
+  endif
+-%}
+{%- comment -%} Phones get the short wording of the standard text, so it fits on one line. {%- endcomment -%}
+{%- liquid
+  assign kk_text_short = kk_text
+  if section.settings.text == blank
+    assign kk_text_short = 'kashkoul.announcement.text_short' | t
+  endif
+  assign kk_link_short = kk_link_label
+  if section.settings.link_label == blank and section.settings.show_whatsapp
+    assign kk_link_short = 'kashkoul.announcement.link_short' | t
+  endif
+-%}
+<div class="kk-announcement">
+  <p class="kk-announcement__in">
+    <span class="kk-announcement__long">
+      {{- kk_text -}}
+      {%- if kk_link_label != blank -%}
+        <span class="kk-announcement__sep" aria-hidden="true">·</span>
+        <a href="{{ kk_link }}"{% if kk_link contains 'wa.me' %} target="_blank" rel="noopener"{% endif %}>{{ kk_link_label }}</a>
+      {%- endif -%}
+    </span>
+    <span class="kk-announcement__short">
+      {{- kk_text_short -}}
+      {%- if kk_link_short != blank -%}
+        <span class="kk-announcement__sep" aria-hidden="true">·</span>
+        <a href="{{ kk_link }}"{% if kk_link contains 'wa.me' %} target="_blank" rel="noopener"{% endif %}>{{ kk_link_short }}</a>
+      {%- endif -%}
+    </span>
+  </p>
+</div>
+
+{% schema %}
+{
+  "name": "Kashkoul announcement",
+  "tag": "aside",
+  "class": "kk-announcement-section",
+  "enabled_on": { "groups": ["header"] },
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Message",
+      "info": "Leave empty for the standard message: \"Cash on delivery, or pay with Whish\" (Arabic shown automatically). Type an offer here when one is running, and translate it in Translate & Adapt."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_whatsapp",
+      "label": "Show the WhatsApp link",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "Link text",
+      "info": "Leave empty for \"Questions? Message us on WhatsApp\"."
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link",
+      "info": "Leave empty to open WhatsApp."
+    }
+  ],
+  "presets": [{ "name": "Kashkoul announcement" }]
+}
+{% endschema %}

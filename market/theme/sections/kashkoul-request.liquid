@@ -1,0 +1,121 @@
+{%- comment -%}
+  "Request a product" page, after "How it works" (step cards): "Send your request", the form in a white card beside a
+  "Prefer WhatsApp?" card (WhatsApp with what's typed so far, and where to add a photo). The form is Shopify's contact form, so each request is emailed to the shop like a contact message, with
+  every field listed. After sending, the card thanks the customer and offers "Also send it on WhatsApp" with the
+  same details ready (assets/kashkoul-request.js), where they can add a photo. Text in the visitor's language
+  (market/strings.json → kashkoul.request).
+  Shopify's contact form needs an email address: the customer's is optional here, and when it's left empty the
+  shop's own address fills the form's required field (the customer's details are all in the message).
+{%- endcomment -%}
+{%- liquid
+  assign kk_sent_message = 'kashkoul.request.wa_sent' | t
+  capture kk_wa_url
+    render 'kashkoul-whatsapp-url', message: kk_sent_message
+  endcapture
+  assign kk_direct_message = 'kashkoul.cta.request.message' | t
+  capture kk_wa_direct
+    render 'kashkoul-whatsapp-url', message: kk_direct_message
+  endcapture
+-%}
+<script src="{{ 'kashkoul-request.js' | asset_url }}" defer></script>
+<section class="kk-req">
+  <div class="kk-wrap">
+  <h2 class="kk-title kk-req__heading">{{ 'kashkoul.request.form_title' | t }}</h2>
+  <div class="kk-req__in">
+    <div class="kk-req__card">
+      {%- form 'contact', id: 'kk-request', class: 'kk-req__form' -%}
+        {%- if form.posted_successfully? -%}
+          <div class="kk-req__sent" role="status">
+            <span class="kk-req__sent-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <h2 class="kk-req__title">{{ 'kashkoul.request.sent_title' | t }}</h2>
+            <p class="kk-req__sent-text">{{ 'kashkoul.request.sent_text' | t }}</p>
+            <div class="kk-req__sent-actions">
+              <a class="kk-button kk-button--outline kk-req__wa" href="{{ kk_wa_url }}" target="_blank" rel="noopener" data-kk-request-wa>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="#1f7a4d" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+                {{ 'kashkoul.request.sent_wa' | t }}<span class="visually-hidden"> {{ 'kashkoul.new_tab' | t }}</span>
+              </a>
+              <span class="kk-req__hint">{{ 'kashkoul.request.sent_wa_hint' | t }}</span>
+            </div>
+            <a class="kk-link kk-req__again" href="{{ request.path }}">{{ 'kashkoul.request.another' | t }}</a>
+          </div>
+        {%- else -%}
+          {%- if form.errors -%}
+            <p class="kk-req__error" role="alert">{{ 'kashkoul.request.error' | t }}</p>
+          {%- endif -%}
+          <input type="hidden" name="contact[Request]" value="{{ 'kashkoul.request.email_subject' | t }} ({{ request.locale.iso_code }})">
+          <input type="hidden" name="contact[email]" value="{{ shop.email }}" data-kk-request-email>
+          <span hidden data-kk-request-intro="{{ 'kashkoul.request.wa_message' | t }}"></span>
+
+          <div class="kk-req__field">
+            <label class="kk-req__label" for="kk-req-link">{{ 'kashkoul.request.link' | t }}</label>
+            <input class="kk-req__input" type="url" id="kk-req-link" name="contact[Amazon link]" required inputmode="url" autocomplete="off" dir="ltr" placeholder="https://www.amazon.com/…" aria-describedby="kk-req-link-hint">
+            <span class="kk-req__hint" id="kk-req-link-hint">{{ 'kashkoul.request.link_hint' | t }}</span>
+          </div>
+
+          <div class="kk-req__row kk-req__row--options">
+            <div class="kk-req__field">
+              <label class="kk-req__label" for="kk-req-options">{{ 'kashkoul.request.options' | t }} <span class="kk-req__opt">({{ 'kashkoul.request.optional' | t }})</span></label>
+              <input class="kk-req__input" type="text" id="kk-req-options" name="contact[Size, color or version]" autocomplete="off">
+            </div>
+            <div class="kk-req__field kk-req__field--qty">
+              <label class="kk-req__label" for="kk-req-qty">{{ 'kashkoul.request.quantity' | t }}</label>
+              <input class="kk-req__input" type="number" id="kk-req-qty" name="contact[Quantity]" value="1" min="1" max="99" inputmode="numeric">
+            </div>
+          </div>
+
+          <div class="kk-req__row">
+            <div class="kk-req__field">
+              <label class="kk-req__label" for="kk-req-name">{{ 'kashkoul.request.name' | t }}</label>
+              <input class="kk-req__input" type="text" id="kk-req-name" name="contact[name]" required autocomplete="name">
+            </div>
+            <div class="kk-req__field">
+              <label class="kk-req__label" for="kk-req-phone">{{ 'kashkoul.request.phone' | t }}</label>
+              <input class="kk-req__input" type="tel" id="kk-req-phone" name="contact[phone]" required autocomplete="tel" inputmode="tel" dir="ltr" placeholder="+961 …" aria-describedby="kk-req-phone-hint">
+              <span class="kk-req__hint" id="kk-req-phone-hint">{{ 'kashkoul.request.phone_hint' | t }}</span>
+            </div>
+          </div>
+
+          <div class="kk-req__field">
+            <label class="kk-req__label" for="kk-req-email">{{ 'kashkoul.request.email' | t }} <span class="kk-req__opt">({{ 'kashkoul.request.optional' | t }})</span></label>
+            <input class="kk-req__input" type="email" id="kk-req-email" name="contact[Customer email]" autocomplete="email" dir="ltr">
+          </div>
+
+          <div class="kk-req__field">
+            <label class="kk-req__label" for="kk-req-notes">{{ 'kashkoul.request.notes' | t }} <span class="kk-req__opt">({{ 'kashkoul.request.optional' | t }})</span></label>
+            <textarea class="kk-req__input kk-req__input--area" id="kk-req-notes" name="contact[body]" rows="3"></textarea>
+          </div>
+
+          <div class="kk-req__submit">
+            <button type="submit" class="kk-button">{{ 'kashkoul.request.submit' | t }}</button>
+          </div>
+        {%- endif -%}
+      {%- endform -%}
+    </div>
+
+    <aside class="kk-req__side">
+      <span class="kk-req__side-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg></span>
+      <h3 class="kk-req__side-title">{{ 'kashkoul.request.wa_title' | t }}</h3>
+      <p class="kk-req__side-text">{{ 'kashkoul.request.wa_text' | t }}</p>
+      <a class="kk-button kk-req__side-button" href="{{ kk_wa_direct }}" target="_blank" rel="noopener" data-kk-request-direct>
+        {{ 'kashkoul.request.wa_button' | t }}<span class="visually-hidden"> {{ 'kashkoul.new_tab' | t }}</span>
+      </a>
+      <p class="kk-req__side-note">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+        {{ 'kashkoul.request.photo_note' | t }}
+      </p>
+    </aside>
+  </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kashkoul request form",
+  "tag": "div",
+  "class": "kk-req-section",
+  "settings": [
+    { "type": "paragraph", "content": "The \"Request a product\" form (emailed to the shop like a contact message) and how it works, in English and Arabic. Numbers from Theme settings → Kashkoul." }
+  ],
+  "presets": [{ "name": "Kashkoul request form" }]
+}
+{% endschema %}

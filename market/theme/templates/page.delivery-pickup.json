@@ -1,0 +1,32 @@
+{
+  "sections": {
+    "title": {
+      "type": "kashkoul-page-hero",
+      "settings": {
+        "page": "delivery_pickup",
+        "title": "",
+        "intro": ""
+      }
+    },
+    "options": {
+      "type": "kashkoul-delivery-options",
+      "settings": {}
+    },
+    "availability": {
+      "type": "kashkoul-availability",
+      "settings": {}
+    },
+    "cta": {
+      "type": "kashkoul-cta",
+      "settings": {
+        "variant": "question"
+      }
+    }
+  },
+  "order": [
+    "title",
+    "options",
+    "availability",
+    "cta"
+  ]
+}

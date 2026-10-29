@@ -1,9 +1,11 @@
 # Kashkoul
 
-Two sibling websites and the brand material behind them:
+Three sibling sites and the brand material behind them:
 
 - **Kashkoul Academy of Arts** — a music academy in Khaldeh, Lebanon. Lessons.
 - **Kashkoul Studio** — the same rooms, rented out as a furnished, lit, camera-ready space.
+- **Kashkoul Market** — instruments and art supplies from Amazon US, delivered in Lebanon. A Shopify store, being built
+  (roadmap: `docs/roadmap/market-1.0.0.md`).
 
 They share a palette, a typeface and a logo. Every page carries the **Kashkoul house** links: a thin strip above the
 menu (phones included) and one card per site above the footer, with **Kashkoul Market** shown as
@@ -12,9 +14,10 @@ menu (phones included) and one card per site above the footer, with **Kashkoul M
 ```
 academy/      Kashkoul Academy website — kashkoul.org        (Netlify publishes academy/dist)
 studio/       Kashkoul Studio website  — kashkoul.org/studio/ (built and published with it)
+market/       Kashkoul Market — Shopify theme for market.kashkoul.org (in progress, see market/README.md)
 shared/       Used by both sites: sites.json + house.css (the links between the sites),
               whatsapp-float.html/.css (the floating WhatsApp button)
-docs/         Brand guide, logos, fonts and source files from the designer
+docs/         Brand guide, logos, fonts and source files from the designer; roadmap/ for planned work
 ```
 
 ## Run locally

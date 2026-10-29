@@ -1,0 +1,95 @@
+{%- comment -%}
+  Title band for the help pages: small label, big title and intro beside a photo toned in brick and mustard.
+  "Page" picks the standard text (market/strings.json → kashkoul.pages.<page>) in the visitor's language;
+  the title and intro settings override it.
+{%- endcomment -%}
+{%- liquid
+  assign base = 'kashkoul.pages.' | append: section.settings.page | append: '.'
+  assign kk_title = section.settings.title | escape
+  if kk_title == blank
+    assign key = base | append: 'title'
+    assign kk_title = key | t
+  endif
+  assign kk_intro = section.settings.intro | escape
+  if kk_intro == blank
+    assign key = base | append: 'intro'
+    assign kk_intro = key | t
+  endif
+  assign key = base | append: 'eyebrow'
+  assign kk_eyebrow = key | t
+  assign key = base | append: 'photo_alt'
+  assign kk_alt = key | t
+  case section.settings.page
+    when 'how_to_order'
+      assign kk_photo = 'kashkoul-photo-ney.jpg'
+      assign kk_photo_w = 1600
+      assign kk_photo_h = 900
+    when 'delivery_pickup'
+      assign kk_photo = 'kashkoul-photo-piano.jpg'
+      assign kk_photo_w = 1400
+      assign kk_photo_h = 933
+    when 'about'
+      assign kk_photo = 'kashkoul-photo-storefront.jpg'
+      assign kk_photo_w = 1240
+      assign kk_photo_h = 899
+    when 'returns'
+      assign kk_photo = 'kashkoul-photo-guitar.jpg'
+      assign kk_photo_w = 1400
+      assign kk_photo_h = 935
+    when 'request'
+      assign kk_photo = 'kashkoul-photo-oud.jpg'
+      assign kk_photo_w = 1600
+      assign kk_photo_h = 899
+      # the oud stands on the right of this photo: keep it in the frame
+      assign kk_photo_pos = '100% 50%'
+    when 'faq'
+      assign kk_photo = 'kashkoul-photo-books.jpg'
+      assign kk_photo_w = 960
+      assign kk_photo_h = 1200
+  endcase
+-%}
+<section class="kk-page-hero">
+  <div class="kk-wrap kk-page-hero__in">
+    <div class="kk-page-hero__text">
+      <p class="kk-label">{{ kk_eyebrow }}</p>
+      <h1 class="kk-title">{{ kk_title }}</h1>
+      <p class="kk-page-hero__intro">{{ kk_intro }}</p>
+    </div>
+    <div class="kk-page-hero__media kk-duo">
+      {%- if section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 1400 | image_tag: widths: '500, 800, 1100, 1400', sizes: '(min-width: 990px) 560px, 1px', loading: 'lazy', alt: kk_alt }}
+      {%- elsif kk_photo -%}
+        <img src="{{ kk_photo | asset_url }}" alt="{{ kk_alt }}" width="{{ kk_photo_w }}" height="{{ kk_photo_h }}" loading="lazy"{% if kk_photo_pos %} style="object-position: {{ kk_photo_pos }}"{% endif %}>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kashkoul page title",
+  "tag": "div",
+  "class": "kk-page-hero-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "page",
+      "label": "Page",
+      "options": [
+        { "value": "how_to_order", "label": "How to order" },
+        { "value": "delivery_pickup", "label": "Delivery & pickup" },
+        { "value": "returns", "label": "Returns" },
+        { "value": "request", "label": "Request a product" },
+        { "value": "faq", "label": "FAQ" },
+        { "value": "about", "label": "About" }
+      ],
+      "default": "how_to_order",
+      "info": "Picks the standard English and Arabic text and photo."
+    },
+    { "type": "text", "id": "title", "label": "Title", "info": "Leave empty for the standard title." },
+    { "type": "textarea", "id": "intro", "label": "Intro", "info": "Leave empty for the standard intro." },
+    { "type": "image_picker", "id": "image", "label": "Photo", "info": "Toned brick and mustard. Leave empty for the theme's photo." }
+  ],
+  "presets": [{ "name": "Kashkoul page title" }]
+}
+{% endschema %}

@@ -1,0 +1,41 @@
+{%- comment -%}
+  Product card (shop page, homepage, "You may also like"): the availability badge over the photo, and the brand.
+  The badge is for the whole product: In stock if any option is in stock, else On order if it can still be ordered,
+  else Sold out (same rule as the product page, snippets/kashkoul-stock-state.liquid).
+{%- endcomment -%}
+{%- liquid
+  assign product = closest.product
+  assign kk_state = 'sold_out'
+  for v in product.variants
+    capture s
+      render 'kashkoul-stock-state', variant: v
+    endcapture
+    if s == 'in_stock'
+      assign kk_state = 'in_stock'
+      break
+    elsif s == 'on_order'
+      assign kk_state = 'on_order'
+    endif
+  endfor
+  assign kk_label = 'kashkoul.product.' | append: kk_state
+-%}
+<div class="kk-cardmeta" {{ block.shopify_attributes }}>
+  {%- if product != blank -%}
+    <span class="kk-cardmeta__badge kk-cardmeta__badge--{{ kk_state }}">{{ kk_label | t }}</span>
+    {%- if product.vendor != blank and block.settings.show_brand -%}
+      <span class="kk-cardmeta__brand">{{ product.vendor | escape }}</span>
+    {%- endif -%}
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Kashkoul card badge",
+  "tag": null,
+  "settings": [
+    { "type": "paragraph", "content": "In stock / On order / Sold out badge on the photo, from the stock count, and the brand (the product's vendor)." },
+    { "type": "checkbox", "id": "show_brand", "label": "Show brand", "default": true }
+  ],
+  "presets": [{ "name": "Kashkoul card badge" }]
+}
+{% endschema %}

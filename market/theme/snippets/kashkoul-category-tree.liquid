@@ -1,0 +1,89 @@
+{%- comment -%}
+  The categories as a list in the filter sidebar on computers (rendered from blocks/filters.liquid), above Type, Brand
+  and Price. Same source as the tabs above the products: the links under "Shop" in the main menu. Each line shows its
+  product count. The whole list folds up like the filters (open at first); a category with sub-categories has a +/−
+  (the same button as the header's Shop menu, assets/kashkoul.js), open only for the category you're in.
+  Phones get the same list in a sheet from the "Category" button of the pinned filter bar
+  (snippets/kashkoul-category-sheet.liquid), with sheet: true (no fold, ids kept apart from the sidebar's).
+
+  @param {boolean} [sheet] - Rendered inside the phone sheet
+{%- endcomment -%}
+{%- liquid
+  assign kk_links = null
+  for link in linklists['main-menu'].links
+    if link.links.size > 0
+      assign kk_links = link.links
+      break
+    endif
+  endfor
+-%}
+{%- liquid
+  assign kk_id = 'kk-ctree-'
+  if sheet
+    assign kk_id = 'kk-csheet-'
+  endif
+-%}
+{%- if kk_links and collection -%}
+  {%- if sheet -%}
+    <nav class="kk-ctree kk-ctree--sheet" aria-label="{{ 'kashkoul.crumbs.categories' | t }}">
+  {%- else -%}
+    <details class="kk-ctree" open>
+      <summary class="kk-ctree__title">
+        {{- 'kashkoul.crumbs.categories' | t -}}
+        <span class="kk-ctree__chevron" aria-hidden="true"></span>
+      </summary>
+  {%- endif -%}
+    <ul class="kk-ctree__list">
+      {%- for link in kk_links -%}
+        {%- liquid
+          assign kk_open = false
+          if link.url == collection.url or link.child_active
+            assign kk_open = true
+          endif
+          for sub in link.links
+            if sub.url == collection.url
+              assign kk_open = true
+            endif
+          endfor
+          assign kk_count = link.object.all_products_count
+          if link.type == 'catalog_link'
+            assign kk_count = collections.all.all_products_count
+          endif
+        -%}
+        <li class="kk-ctree__item">
+          <a
+            class="kk-ctree__link{% if link.url == collection.url %} is-on{% endif %}{% if kk_open %} is-open{% endif %}"
+            href="{{ link.url }}"
+            {% if link.url == collection.url %}aria-current="page"{% endif %}
+          >
+            <span>{{ link.title | escape }}</span>
+            {%- if kk_count -%}<span class="kk-ctree__n">{{ kk_count }}</span>{%- endif -%}
+          </a>
+          {%- if link.links.size > 0 -%}
+            <button
+              type="button"
+              class="kk-subtoggle"
+              aria-expanded="{{ kk_open }}"
+              aria-controls="{{ kk_id }}{{ forloop.index }}"
+              aria-label="{{ link.title | escape }}"
+            ></button>
+            <ul class="kk-ctree__sub" id="{{ kk_id }}{{ forloop.index }}">
+              {%- for sub in link.links -%}
+                <li>
+                  <a
+                    class="kk-ctree__link kk-ctree__link--sub{% if sub.url == collection.url %} is-on{% endif %}"
+                    href="{{ sub.url }}"
+                    {% if sub.url == collection.url %}aria-current="page"{% endif %}
+                  >
+                    <span>{{ sub.title | escape }}</span>
+                    <span class="kk-ctree__n">{{ sub.object.all_products_count }}</span>
+                  </a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- if sheet -%}</nav>{%- else -%}</details>{%- endif -%}
+{%- endif -%}

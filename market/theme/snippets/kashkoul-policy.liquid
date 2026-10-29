@@ -1,0 +1,47 @@
+{%- comment -%}
+  Around Shopify's own policy pages (refund, shipping, privacy, terms, contact), from layout/theme.liquid: Shopify
+  draws the policy itself, so the Market's look comes from styles (assets/kashkoul.css → policy pages) plus these two
+  parts. part 'start': the "Policies" label above the title. part 'end': links between the policies, then the compact
+  "Still have a question?" band (WhatsApp with a message ready). Text in the visitor's language.
+
+  @param {string} part - 'start' or 'end'
+{%- endcomment -%}
+{%- if part == 'start' -%}
+  <div class="kk-wrap kk-policy__top">
+    <p class="kk-label">{{ 'kashkoul.footer.policies.label' | t }}</p>
+  </div>
+{%- else -%}
+  <div class="kk-wrap">
+    <nav class="kk-policy__links" aria-label="{{ 'kashkoul.footer.policies.label' | t }}">
+      {%- assign kk_policies = 'refund_policy:refund,shipping_policy:shipping,privacy_policy:privacy,terms_of_service:terms' | split: ',' -%}
+      {%- for item in kk_policies -%}
+        {%- assign parts = item | split: ':' -%}
+        {%- assign kk_policy = shop[parts[0]] -%}
+        {%- if kk_policy != blank -%}
+          {%- assign kk_key = 'kashkoul.footer.policies.' | append: parts[1] -%}
+          {%- assign kk_on = false -%}
+          {%- if kk_policy.url == request.path -%}{%- assign kk_on = true -%}{%- endif -%}
+          <a class="kk-policy__link{% if kk_on %} is-on{% endif %}" href="{{ kk_policy.url }}"{% if kk_on %} aria-current="page"{% endif %}>{{ kk_key | t }}</a>
+        {%- endif -%}
+      {%- endfor -%}
+    </nav>
+  </div>
+  {%- liquid
+    assign kk_message = 'kashkoul.cta.question.message' | t
+    capture wa_url
+      render 'kashkoul-whatsapp-url', message: kk_message
+    endcapture
+  -%}
+  <section class="kk-cta kk-policy__cta">
+    <div class="kk-wrap kk-cta__in">
+      <div class="kk-cta__text">
+        <h2 class="kk-cta__title">{{ 'kashkoul.cta.question.title' | t }}</h2>
+        <p class="kk-cta__body">{{ 'kashkoul.cta.question.text' | t }}</p>
+      </div>
+      <a class="kk-button kk-cta__button" href="{{ wa_url }}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        {{ 'kashkoul.cta.question.button' | t }}<span class="visually-hidden"> {{ 'kashkoul.new_tab' | t }}</span>
+      </a>
+    </div>
+  </section>
+{%- endif -%}

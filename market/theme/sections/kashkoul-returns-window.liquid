@@ -1,0 +1,38 @@
+{%- comment -%}
+  Returns: a big "48 hours" card beside the two cases we take back (arrived damaged / not what you ordered),
+  and what happens then. Hours from Theme settings → Kashkoul. Text in the visitor's language.
+{%- endcomment -%}
+{%- assign hours = settings.kashkoul_return_hours | default: 48 -%}
+<section class="kk-window">
+  <div class="kk-wrap kk-window__grid">
+    <div class="kk-window__big">
+      <span class="kk-window__hours">{{ 'kashkoul.pages.returns.window_big' | t: hours: hours }}</span>
+      <p class="kk-window__text">{{ 'kashkoul.pages.returns.window_text' | t }}</p>
+    </div>
+    <div class="kk-window__cases">
+      <div class="kk-case">
+        <span class="kk-case__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/><path d="M14.5 5.5l-2 3 2 1.5-1.5 2.5"/></svg></span>
+        <h3 class="kk-case__title">{{ 'kashkoul.pages.returns.case_1_title' | t }}</h3>
+        <p class="kk-case__text">{{ 'kashkoul.pages.returns.case_1_text' | t }}</p>
+      </div>
+      <div class="kk-case">
+        <span class="kk-case__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h13l-3-3M20 17H7l3 3"/></svg></span>
+        <h3 class="kk-case__title">{{ 'kashkoul.pages.returns.case_2_title' | t }}</h3>
+        <p class="kk-case__text">{{ 'kashkoul.pages.returns.case_2_text' | t }}</p>
+      </div>
+      <p class="kk-window__result">{{ 'kashkoul.pages.returns.case_result' | t }}</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Returns window",
+  "tag": "div",
+  "class": "kk-window-section",
+  "settings": [
+    { "type": "paragraph", "content": "The number of hours comes from Theme settings → Kashkoul. Text in English and Arabic from the theme." }
+  ],
+  "presets": [{ "name": "Returns window" }]
+}
+{% endschema %}

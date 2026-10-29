@@ -1,0 +1,100 @@
+#!/usr/bin/env node
+// Writes theme/snippets/kashkoul-house.liquid from ../shared/sites.json — the links between the Kashkoul sites,
+// as the Academy and Studio show them (academy/tools/build.js), in English and Arabic.
+// Run after changing shared/sites.json:   node market/tools/sync-house.mjs
+import { readFileSync, writeFileSync } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const HERE = 'market';
+const root = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
+const { newTab, origin, sites } = JSON.parse(readFileSync(join(root, 'shared', 'sites.json'), 'utf8'));
+
+const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+// a site on its own domain (the Market) has a full address; the others are paths on kashkoul.org
+const href = s => esc(/^https?:\/\//.test(s.path) ? s.path : origin + s.path);
+const target = newTab ? ' target="_blank" rel="noopener"' : '';
+const L = {
+  en: { label: 'Kashkoul sites', soon: 'Soon', comingSoon: 'Coming soon', here: "You're here",
+        visit: s => `Visit the ${s.en}`, newTab: '(opens in a new tab)', name: s => s.en, other: s => s.ar, blurb: s => s.blurb },
+  ar: { label: 'مواقع كشكول', soon: 'قريبًا', comingSoon: 'قريبًا', here: 'أنت هنا',
+        visit: s => `زُر ${s.ar}`, newTab: '(يفتح في نافذة جديدة)', name: s => s.ar, other: s => s.en, blurb: s => s.blurb_ar },
+};
+
+function strip(t) {
+  const items = sites.map(s => {
+    if (s.id === HERE) return `<span class="kk-house__site is-current" aria-current="page">${esc(t.name(s))}</span>`;
+    if (s.status !== 'live') return `<span class="kk-house__site is-soon">${esc(t.name(s))} <em class="kk-house__soon">${t.soon}</em></span>`;
+    return `<a class="kk-house__site" href="${href(s)}"${target}>${esc(t.name(s))} <span class="kk-house__go" aria-hidden="true">↗</span>${newTab ? `<span class="visually-hidden"> ${t.newTab}</span>` : ''}</a>`;
+  });
+  return [`<nav class="kk-house" aria-label="${t.label}">`, `  <div class="kk-house__in">`, ...items.map(i => `    ${i}`), `  </div>`, `</nav>`].join('\n');
+}
+
+function doors(t) {
+  const items = sites.map(s => {
+    const lang = t === L.ar ? 'en' : 'ar';
+    const inner = `<span class="kk-door__name">${esc(t.name(s))} <span class="kk-door__other" lang="${lang}">${esc(t.other(s))}</span></span><span class="kk-door__blurb">${esc(t.blurb(s))}</span>`;
+    if (s.id === HERE) return `<div class="kk-door is-current" aria-current="page">${inner}<span class="kk-door__tag">${t.here}</span></div>`;
+    if (s.status !== 'live') return `<div class="kk-door is-soon">${inner}<span class="kk-door__tag">${t.comingSoon}</span></div>`;
+    return `<a class="kk-door" href="${href(s)}"${target}>${inner}<span class="kk-door__tag">${esc(t.visit(s))} <span class="kk-house__go" aria-hidden="true">↗</span></span>${newTab ? `<span class="visually-hidden"> ${t.newTab}</span>` : ''}</a>`;
+  });
+  return [`<nav class="kk-doors" aria-label="${t.label}">`, ...items.map(i => `  ${i}`), `</nav>`].join('\n');
+}
+
+// Footer: one link per site for the "Kashkoul" column (the current site marked, not linked).
+function links(t) {
+  const items = sites.map(s => {
+    if (s.id === HERE) return `<span class="kk-ft__here" aria-current="page">${esc(t.name(s))}</span>`;
+    if (s.status !== 'live') return `<span>${esc(t.name(s))} · ${t.soon}</span>`;
+    return `<a href="${href(s)}"${target}>${esc(t.name(s))} <span class="kk-house__go" aria-hidden="true">↗</span>${newTab ? `<span class="visually-hidden"> ${t.newTab}</span>` : ''}</a>`;
+  });
+  return items.join('\n');
+}
+
+// About page: one big panel per site — its name, a line and a short text (kashkoul.about.<id>_line / _text), and the link.
+function panels(t) {
+  const items = sites.map(s => {
+    const lang = t === L.ar ? 'en' : 'ar';
+    const head = `<span class="kk-panelcard__name">${esc(t.name(s))} <span class="kk-panelcard__other" lang="${lang}">${esc(t.other(s))}</span></span>`
+      + `<span class="kk-panelcard__line">{{ 'kashkoul.about.${s.id}_line' | t }}</span>`
+      + `<span class="kk-panelcard__text">{{ 'kashkoul.about.${s.id}_text' | t }}</span>`;
+    if (s.id === HERE) return `<div class="kk-panelcard kk-panelcard--${s.id} is-current" aria-current="page">${head}<span class="kk-panelcard__tag">${t.here}</span></div>`;
+    if (s.status !== 'live') return `<div class="kk-panelcard kk-panelcard--${s.id} is-soon">${head}<span class="kk-panelcard__tag">${t.comingSoon}</span></div>`;
+    return `<a class="kk-panelcard kk-panelcard--${s.id}" href="${href(s)}"${target}>${head}<span class="kk-panelcard__tag">${esc(t.visit(s))} <span class="kk-house__go" aria-hidden="true">↗</span></span>${newTab ? `<span class="visually-hidden"> ${t.newTab}</span>` : ''}</a>`;
+  });
+  return [`<div class="kk-panelcards">`, ...items.map(i => `  ${i}`), `</div>`].join('\n');
+}
+
+const out = `{%- comment -%}
+  GENERATED by market/tools/sync-house.mjs from shared/sites.json — do not edit; edit sites.json and re-run.
+  The links between the Kashkoul sites. kind: 'strip' (thin bar above the header), 'doors' (cards in the footer)
+  'panels' (the About page's "One house, three doors") or 'links' (the footer's Kashkoul column).
+{%- endcomment -%}
+{%- if kind == 'links' -%}
+  {%- if request.locale.iso_code == 'ar' -%}
+${links(L.ar)}
+  {%- else -%}
+${links(L.en)}
+  {%- endif -%}
+{%- elsif kind == 'panels' -%}
+  {%- if request.locale.iso_code == 'ar' -%}
+${panels(L.ar)}
+  {%- else -%}
+${panels(L.en)}
+  {%- endif -%}
+{%- elsif kind == 'doors' -%}
+  {%- if request.locale.iso_code == 'ar' -%}
+${doors(L.ar)}
+  {%- else -%}
+${doors(L.en)}
+  {%- endif -%}
+{%- else -%}
+  {%- if request.locale.iso_code == 'ar' -%}
+${strip(L.ar)}
+  {%- else -%}
+${strip(L.en)}
+  {%- endif -%}
+{%- endif -%}
+`;
+writeFileSync(join(root, 'market', 'theme', 'snippets', 'kashkoul-house.liquid'), out);
+console.log('wrote market/theme/snippets/kashkoul-house.liquid');

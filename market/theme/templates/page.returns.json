@@ -1,0 +1,44 @@
+{
+  "sections": {
+    "title": {
+      "type": "kashkoul-page-hero",
+      "settings": {
+        "page": "returns",
+        "title": "",
+        "intro": ""
+      }
+    },
+    "window": {
+      "type": "kashkoul-returns-window",
+      "settings": {}
+    },
+    "steps": {
+      "type": "kashkoul-step-cards",
+      "settings": {
+        "page": "returns"
+      }
+    },
+    "notes": {
+      "type": "kashkoul-notes",
+      "settings": {
+        "show_deposit": false,
+        "show_discount": false,
+        "show_not_covered": true,
+        "show_warranty": true
+      }
+    },
+    "cta": {
+      "type": "kashkoul-cta",
+      "settings": {
+        "variant": "returns"
+      }
+    }
+  },
+  "order": [
+    "title",
+    "window",
+    "steps",
+    "notes",
+    "cta"
+  ]
+}
