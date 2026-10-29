@@ -301,6 +301,12 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   (189216391398); the new working copy is 189736517862.
 - [ ] Spreadr import batches to reach ~500 products (Spreadr installed 2026-10-29, bulk import now that the store is on
   a paid plan).
+  - [ ] **Batch 3, Art supplies** (approved 2026-10-30, `market/store/import-batch-3*.{json,csv,md}`): 82 products over all
+    7 Art sub-categories and their types (the AnyMark alcohol markers removed). Spreadr test (3 products): imports as
+    draft, SKU = ASIN for every variant, weight from Amazon, about 1.2 credits per variant; its price can be another
+    offer's, so our list keeps the Amazon price as `cost` for `setup-products.mjs`. English and Arabic titles and texts
+    written from the Amazon facts and added to `products.json` (photos: first 5 kept until chosen). Next: buy credits,
+    import `import-batch-3.csv` ("Import single product"), run `setup-products.mjs`, then `setup-store.mjs --only menu`.
 
 **Review:** prices and the catalog.
 

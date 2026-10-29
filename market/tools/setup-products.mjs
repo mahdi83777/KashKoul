@@ -5,7 +5,8 @@
 // state on the first run (in stock with a quantity, or on order = 0 with "continue selling"); after that the stock
 // belongs to the owner in the admin. Entries with `kg` are priced by the agreed rule (step 6, option 2):
 //   price = round_up((cost + kg × $20) × 1.3) − 0.01, cost = the Amazon price, kept in "Cost per item"
-// (first run: the price the importer set). `kg` is one weight, or one per variant title. Entries with `collection` go into that category, and `publish: true`
+// (first run: the price the importer set, or `cost` when given: one Amazon price, or one per variant title, read on
+// Amazon when the list is made, since an importer can bring a different offer's price). `kg` is one weight, or one per variant title. Entries with `collection` go into that category, and `publish: true`
 // sets them Active on the Online Store. Products are found by handle, the importer's handle, or Amazon ID (SKU).
 // Safe to re-run: prices always start from the saved cost, so they never compound.
 //
@@ -76,6 +77,7 @@ for (const [n, spec] of products.entries()) {
   const id = p.id;
   // First run for this product: stock not tracked yet, or (Ryviu) tracked at 0 but no cost saved yet.
   const kgOf = v => typeof spec.kg === 'object' ? spec.kg?.[v.title] : spec.kg;
+  const costOf = v => typeof spec.cost === 'object' ? spec.cost?.[v.title] : spec.cost;
   const firstRun = p.variants.nodes.some(v => !v.inventoryItem.tracked || (kgOf(v) != null && !v.inventoryItem.unitCost));
 
   check(gql(`mutation ($p: ProductUpdateInput!) { productUpdate(product: $p) { product { id } userErrors { field message } } }`,
@@ -123,7 +125,7 @@ for (const [n, spec] of products.entries()) {
   const onOrder = spec.stock === 'on_order';
   check(gql(`mutation ($id: ID!, $v: [ProductVariantsBulkInput!]!) { productVariantsBulkUpdate(productId: $id, variants: $v) { userErrors { field message } } }`,
     { id, v: p.variants.nodes.map(v => {
-      const cost = v.inventoryItem.unitCost?.amount ?? v.price, kg = Number(cost) > 0 ? kgOf(v) : null;
+      const cost = costOf(v) ?? v.inventoryItem.unitCost?.amount ?? v.price, kg = Number(cost) > 0 ? kgOf(v) : null;
       if (kgOf(v) != null && kg == null) console.log(`  variant ${v.title}: no Amazon price (unavailable?), not priced`);
       return { id: v.id, compareAtPrice: null,
         ...(firstRun && { inventoryPolicy: onOrder ? 'CONTINUE' : 'DENY' }),

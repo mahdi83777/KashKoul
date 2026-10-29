@@ -5044,6 +5044,2368 @@
         "type": "حوامل آلات",
         "body": "<p>مسند القدم لوضعية عزف الغيتار الكلاسيكي: رفع إحدى القدمين يضع الغيتار في مكانه ويُبقي الظهر والكتفين مستقيمين ومرتاحين.</p><ul><li>6 ارتفاعات، من 11.5 حتى 24 سم</li><li>سطح مطاطي مانع للانزلاق وأرجل مطاطية تحمي الأرضية</li><li>هيكل معدني متين، وزنه نحو 0.6 كغ</li><li>يُطوى مسطّحًا لحمله إلى الدروس</li></ul>"
       }
+    },
+    {
+      "handle": "liquitex-basics-acrylic-set-12-tubes",
+      "asin": "B07VSZM41G",
+      "vendor": "Liquitex",
+      "type": "Acrylic",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.4,
+      "kg_source": "estimate",
+      "cost": 29.49,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Liquitex BASICS Acrylic Paint Set, 12 Tubes",
+        "body": "<p>Student acrylic paint from Liquitex, the brand that made the first artists' acrylics in 1955. A good set for learning and everyday painting.</p><ul><li>12 colors in 22 ml tubes</li><li>Same pigments and process as the Liquitex professional range</li><li>Medium thickness, satin finish and lightfast colors</li><li>Dries quickly, stays flexible and sticks to canvas, paper and board; cleans up with water while wet</li></ul>"
+      },
+      "ar": {
+        "title": "طقم ألوان أكريليك Liquitex BASICS، 12 أنبوبًا",
+        "body": "<p>ألوان أكريليك للطلاب من Liquitex، الشركة التي صنعت أول ألوان أكريليك للفنانين عام 1955. طقم مناسب للتعلّم والرسم اليومي.</p><ul><li>12 لونًا في أنابيب سعة كل منها 22 مل</li><li>الأصباغ وطريقة التصنيع نفسها المستعملة في مجموعة Liquitex الاحترافية</li><li>قوام متوسط، لمسة نهائية ساتان، وألوان ثابتة لا تبهت مع الضوء</li><li>تجفّ بسرعة وتبقى مرنة، وتثبت على القماش والورق والألواح، وتُغسل بالماء قبل أن تجفّ</li></ul>",
+        "type": "أكريليك"
+      },
+      "publish": true
+    },
+    {
+      "handle": "liquitex-basics-acrylic-set-48-tubes",
+      "asin": "B00251I66C",
+      "vendor": "Liquitex",
+      "type": "Acrylic",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.6,
+      "kg_source": "amazon (Amazon)",
+      "cost": 71.79,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Liquitex BASICS Acrylic Paint Set, 48 Tubes",
+        "body": "<p>The large set of Liquitex student acrylics, with plenty of colors for mixing and bigger projects. Liquitex made the first artists' acrylics in 1955.</p><ul><li>48 colors in 22 ml tubes</li><li>Same pigments and process as the Liquitex professional range</li><li>Medium thickness, satin finish and lightfast colors, from see-through to fully covering</li><li>Dries quickly, stays flexible and sticks to canvas, paper and board; cleans up with water while wet</li></ul>"
+      },
+      "ar": {
+        "title": "طقم ألوان أكريليك Liquitex BASICS، 48 أنبوبًا",
+        "body": "<p>الطقم الكبير من ألوان Liquitex الأكريليك للطلاب، فيه ألوان كثيرة للخلط وللمشاريع الأكبر. صنعت Liquitex أول ألوان أكريليك للفنانين عام 1955.</p><ul><li>48 لونًا في أنابيب سعة كل منها 22 مل</li><li>الأصباغ وطريقة التصنيع نفسها المستعملة في مجموعة Liquitex الاحترافية</li><li>قوام متوسط، لمسة نهائية ساتان، وألوان ثابتة لا تبهت مع الضوء، بدرجات تغطية مختلفة من الشفاف إلى المغطّي</li><li>تجفّ بسرعة وتبقى مرنة، وتثبت على القماش والورق والألواح، وتُغسل بالماء قبل أن تجفّ</li></ul>",
+        "type": "أكريليك"
+      },
+      "publish": true
+    },
+    {
+      "handle": "apple-barrel-acrylic-craft-paint-12-bottles",
+      "asin": "B0829R16YG",
+      "vendor": "Apple Barrel",
+      "type": "Acrylic",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.94,
+      "kg_source": "amazon (Amazon)",
+      "cost": 11.96,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Apple Barrel Acrylic Craft Paint Set, 12 Bottles",
+        "body": "<p>Easy acrylic craft paint for home projects, school work and decorating all kinds of surfaces.</p><ul><li>12 bottles of 59 ml (2 oz)</li><li>Satin finish</li><li>Works on wood, canvas, terra cotta, papier-mâché, plaster, rigid plastic, fabric and concrete</li><li>Cleans up with soap and water while wet</li></ul>"
+      },
+      "ar": {
+        "title": "طقم ألوان أكريليك للأشغال اليدوية Apple Barrel، 12 عبوة",
+        "body": "<p>ألوان أكريليك سهلة الاستعمال للأشغال اليدوية في البيت، ولفروض المدرسة، ولتزيين سطوح كثيرة.</p><ul><li>12 عبوة، سعة كل منها 59 مل (2 أونصة)</li><li>لمسة نهائية ساتان</li><li>تصلح على الخشب والقماش والفخار والورق المعجون والجبس والبلاستيك القاسي والنسيج والإسمنت</li><li>تُغسل بالماء والصابون قبل أن تجفّ</li></ul>",
+        "type": "أكريليك"
+      },
+      "publish": true
+    },
+    {
+      "handle": "winsor-newton-winton-oil-color-set-10-tubes",
+      "asin": "B004OKRI9S",
+      "vendor": "Winsor & Newton",
+      "type": "Oil paint",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 30.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Winsor & Newton Winton Oil Color Set, 10 Tubes",
+        "body": "<p>Winton is Winsor & Newton's good-quality oil paint at a moderate price, a solid choice for students and anyone starting with oils.</p><ul><li>10 colors in 21 ml tubes</li><li>Each color is made with its own recipe</li><li>Lightfast and permanent</li><li>Mixes well with oil colors from other brands</li></ul>"
+      },
+      "ar": {
+        "title": "طقم ألوان زيتية Winsor & Newton Winton، 10 أنابيب",
+        "body": "<p>Winton هي ألوان Winsor & Newton الزيتية بجودة جيدة وسعر معتدل، خيار موفّق للطلاب ولكل من يبدأ الرسم بالزيت.</p><ul><li>10 ألوان في أنابيب سعة كل منها 21 مل</li><li>لكل لون تركيبته الخاصة</li><li>ألوان ثابتة لا تبهت مع الضوء وتدوم</li><li>تمتزج جيدًا مع الألوان الزيتية من ماركات أخرى</li></ul>",
+        "type": "ألوان زيتية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "myartscape-oil-paint-set-48-tubes",
+      "asin": "B076FRSRL7",
+      "vendor": "MyArtscape",
+      "type": "Oil paint",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.0,
+      "kg_source": "estimate",
+      "cost": 35.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "MyArtscape Oil Paint Set, 48 Tubes",
+        "body": "<p>A large oil paint set with a wide choice of colors, for painters who want many shades ready to hand.</p><ul><li>48 colors in 12 ml tubes</li><li>Artist-grade paint, rich in pigment</li><li>Smooth to apply</li><li>Lightfast colors</li></ul>"
+      },
+      "ar": {
+        "title": "طقم ألوان زيتية MyArtscape، 48 أنبوبًا",
+        "body": "<p>طقم ألوان زيتية كبير بخيارات واسعة، لمن يريد درجات كثيرة جاهزة بين يديه.</p><ul><li>48 لونًا في أنابيب سعة كل منها 12 مل</li><li>ألوان بمستوى الفنانين، غنية بالصبغة</li><li>تنساب بنعومة على السطح</li><li>ألوان ثابتة لا تبهت مع الضوء</li></ul>",
+        "type": "ألوان زيتية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "winsor-newton-cotman-watercolor-tubes-20",
+      "asin": "B08NK1BR8B",
+      "vendor": "Winsor & Newton",
+      "type": "Watercolor & gouache",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.25,
+      "kg_source": "estimate",
+      "cost": 42.97,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Winsor & Newton Cotman Watercolor Tubes, Set of 20",
+        "body": "<p>Cotman is Winsor & Newton's student watercolor, here in tubes: 20 essential colors for starting out and everyday painting.</p><ul><li>20 colors in 5 ml tubes</li><li>Good transparency and strong color</li><li>Even consistency from color to color, easy for beginners</li><li>Some costly pigments are replaced to keep the range affordable</li></ul><p><strong>Good to know:</strong> this set is tubes of paint. The Cotman box with solid half pans is a separate product.</p>"
+      },
+      "ar": {
+        "title": "أنابيب ألوان مائية Winsor & Newton Cotman، طقم من 20",
+        "body": "<p>Cotman هي ألوان Winsor & Newton المائية للطلاب، وهنا في أنابيب: 20 لونًا أساسيًا للبدء وللرسم اليومي.</p><ul><li>20 لونًا في أنابيب سعة كل منها 5 مل</li><li>شفافية جيدة وألوان قوية</li><li>قوام متجانس في كل الألوان، سهل على المبتدئين</li><li>بعض الأصباغ الغالية مستبدلة لتبقى المجموعة بسعر مناسب</li></ul><p><strong>للعلم:</strong> هذا الطقم ألوان في أنابيب. علبة Cotman بالأقراص الصلبة منتج آخر.</p>",
+        "type": "ألوان مائية وغواش"
+      },
+      "publish": true
+    },
+    {
+      "handle": "artistro-watercolor-set-50-colors",
+      "asin": "B0GZY7XXZ9",
+      "vendor": "ARTISTRO",
+      "type": "Watercolor & gouache",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.4,
+      "kg_source": "estimate",
+      "cost": 18.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "ARTISTRO Watercolor Set, 50 Colors",
+        "body": "<p>A big watercolor set with brushes included, ready for landscapes, portraits, illustration and lettering.</p><ul><li>50 watercolor pans</li><li>8 brushes and other accessories</li><li>Built-in mixing palette</li></ul>"
+      },
+      "ar": {
+        "title": "طقم ألوان مائية ARTISTRO، 50 لونًا",
+        "body": "<p>طقم ألوان مائية كبير مع فراشٍ، جاهز لرسم المناظر الطبيعية والوجوه والرسوم التوضيحية والخط الزخرفي.</p><ul><li>50 قرصًا من الألوان المائية</li><li>8 فراشٍ وأدوات أخرى</li><li>لوحة خلط مدمجة في العلبة</li></ul>",
+        "type": "ألوان مائية وغواش"
+      },
+      "publish": true
+    },
+    {
+      "handle": "himi-gouache-set-24-colors",
+      "asin": "B086X11M6B",
+      "vendor": "HIMI",
+      "type": "Watercolor & gouache",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.9,
+      "kg_source": "estimate",
+      "cost": 25.51,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "HIMI Gouache Paint Set, 24 Colors",
+        "body": "<p>Thick, creamy gouache in little jelly cups, with everything needed to start painting in one carrying case.</p><ul><li>24 colors in 30 ml (1 oz) jelly cups</li><li>Good coverage</li><li>Comes with a palette and 3 brushes, in a carrying case</li><li>Non-toxic (ASTM D-4236, EN71)</li></ul>"
+      },
+      "ar": {
+        "title": "طقم ألوان غواش HIMI، 24 لونًا",
+        "body": "<p>ألوان غواش كثيفة وكريمية في عبوات صغيرة على شكل كوب، مع كل ما تحتاجه للبدء في حقيبة واحدة سهلة الحمل.</p><ul><li>24 لونًا في عبوات سعة كل منها 30 مل (1 أونصة)</li><li>تغطية جيدة</li><li>معها لوحة خلط و3 فراشٍ، في حقيبة للحمل</li><li>غير سامّة (ASTM D-4236 وEN71)</li></ul>",
+        "type": "ألوان مائية وغواش"
+      },
+      "publish": true
+    },
+    {
+      "handle": "winsor-newton-designers-gouache-10-tubes",
+      "asin": "B09795272Q",
+      "vendor": "Winsor & Newton",
+      "type": "Watercolor & gouache",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.2,
+      "kg_source": "estimate",
+      "cost": 19.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Winsor & Newton Designers Gouache, 10 Tubes",
+        "body": "<p>Winsor & Newton's Designers Gouache, well liked by designers and illustrators for flat, even color.</p><ul><li>10 tubes of 12 ml</li><li>Flat matte finish, good for scanning or photographing your work</li><li>Smooth, controlled flow</li></ul>"
+      },
+      "ar": {
+        "title": "ألوان غواش Winsor & Newton Designers، 10 أنابيب",
+        "body": "<p>ألوان غواش Designers من Winsor & Newton، يحبّها المصمّمون والرسّامون لألوانها المسطّحة والمتساوية.</p><ul><li>10 أنابيب سعة كل منها 12 مل</li><li>لمسة نهائية مطفية، مناسبة لتصوير الأعمال أو مسحها ضوئيًا</li><li>انسياب ناعم يسهل التحكّم به</li></ul>",
+        "type": "ألوان مائية وغواش"
+      },
+      "publish": true
+    },
+    {
+      "handle": "liquitex-basics-gesso-473ml",
+      "asin": "B000KNDMLG",
+      "vendor": "Liquitex",
+      "type": "Mediums & gesso",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.55,
+      "kg_source": "amazon (Amazon)",
+      "cost": 16.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Liquitex BASICS Gesso, 473 ml",
+        "body": "<p>White primer to prepare canvas, board or paper before painting with acrylic or oil.</p><ul><li>473 ml (16 oz)</li><li>White acrylic gesso, water-based</li><li>One coat is usually enough</li></ul>"
+      },
+      "ar": {
+        "title": "جيسو Liquitex BASICS، 473 مل",
+        "body": "<p>طبقة أساس بيضاء لتحضير القماش أو الألواح أو الورق قبل الرسم بالأكريليك أو الزيت.</p><ul><li>473 مل (16 أونصة)</li><li>جيسو أكريليك أبيض بأساس مائي</li><li>طبقة واحدة تكفي عادةً</li></ul>",
+        "type": "وسائط وجيسو"
+      },
+      "publish": true
+    },
+    {
+      "handle": "posca-pc-5m-paint-markers-8-colors",
+      "asin": "B07Z86PHP8",
+      "vendor": "POSCA",
+      "type": "Paint markers",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.18,
+      "kg_source": "amazon (Amazon)",
+      "cost": 19.97,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "POSCA PC-5M Paint Markers, 8 Colors",
+        "body": "<p>The well-known POSCA paint markers with a medium tip, for drawing and decorating on almost any surface.</p><ul><li>8 markers with a medium bullet tip, 1.8–2.5 mm</li><li>Water-based paint, opaque, layers well</li><li>Works on more than 50 surfaces, including wood, glass, canvas, stone, metal, fabric and plastic</li><li>Made in Japan</li></ul>"
+      },
+      "ar": {
+        "title": "أقلام تلوين POSCA PC-5M، 8 ألوان",
+        "body": "<p>أقلام POSCA المعروفة برأس متوسط، للرسم والتزيين على أغلب السطوح.</p><ul><li>8 أقلام برأس مستدير متوسط، ⁦1.8–2.5⁩ مم</li><li>ألوان بأساس مائي، مغطّية، وتصلح لوضع طبقة فوق طبقة</li><li>تعمل على أكثر من 50 سطحًا، منها الخشب والزجاج والقماش والحجر والمعدن والنسيج والبلاستيك</li><li>صُنعت في اليابان</li></ul>",
+        "type": "أقلام تلوين ماركر"
+      },
+      "publish": true
+    },
+    {
+      "handle": "posca-pc-8k-paint-markers-broad-chisel",
+      "asin": "B001AS6P4G",
+      "vendor": "POSCA",
+      "type": "Paint markers",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.15,
+      "kg_source": "estimate",
+      "cost": 27.0,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "POSCA PC-8K Paint Markers, Broad Chisel Tip",
+        "body": "<p>POSCA paint markers with a wide, flat tip, for filling large areas and for strokes like calligraphy.</p><ul><li>Broad chisel tip, 8 mm</li><li>Water-based paint that can be mixed and layered</li><li>Works on more than 50 surfaces</li><li>Made in Japan</li></ul>"
+      },
+      "ar": {
+        "title": "أقلام تلوين POSCA PC-8K، رأس عريض مشطوف",
+        "body": "<p>أقلام POSCA برأس عريض ومسطّح، لتلوين المساحات الكبيرة ولخطوط تشبه الخط العربي.</p><ul><li>رأس عريض مشطوف، 8 مم</li><li>ألوان بأساس مائي يمكن خلطها ووضع طبقة فوق طبقة</li><li>تعمل على أكثر من 50 سطحًا</li><li>صُنعت في اليابان</li></ul>",
+        "type": "أقلام تلوين ماركر"
+      },
+      "publish": true
+    },
+    {
+      "handle": "artistro-dual-tip-acrylic-paint-markers-36",
+      "asin": "B0G7P9MMCP",
+      "vendor": "ARTISTRO",
+      "type": "Paint markers",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "amazon (Amazon)",
+      "cost": 9.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "ARTISTRO Dual-Tip Acrylic Paint Markers, 36 Colors",
+        "body": "<p>Acrylic paint markers with two tips each: one for fine lines, one for dots and wider strokes.</p><ul><li>36 colors</li><li>Each marker has a 1 mm fine tip and a 1–5 mm dot tip</li><li>Ready to use, no pumping needed; water-based acrylic paint</li><li>For paper, canvas, wood, rock, ceramic, glass, metal, fabric and plastic</li></ul>"
+      },
+      "ar": {
+        "title": "أقلام ألوان أكريليك ARTISTRO برأسين، 36 لونًا",
+        "body": "<p>أقلام ألوان أكريليك، لكل قلم رأسان: واحد للخطوط الرفيعة وآخر للنقاط والخطوط الأعرض.</p><ul><li>36 لونًا</li><li>لكل قلم رأس رفيع 1 مم ورأس للنقاط ⁦1–5⁩ مم</li><li>جاهزة للاستعمال من دون ضخّ، بألوان أكريليك بأساس مائي</li><li>للورق والقماش والخشب والحجر والسيراميك والزجاج والمعدن والنسيج والبلاستيك</li></ul>",
+        "type": "أقلام تلوين ماركر"
+      },
+      "publish": true
+    },
+    {
+      "handle": "folkart-fabric-paint-set-8-bottles",
+      "asin": "B00CIVYWUS",
+      "vendor": "FolkArt",
+      "type": "Fabric, glass & ceramic paint",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.5,
+      "kg_source": "estimate",
+      "cost": 13.09,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "FolkArt Fabric Paint Beginner Set, 8 Bottles",
+        "body": "<p>A beginner set of fabric paint for decorating clothes, bags and other textiles.</p><ul><li>8 bottles of 59 ml (2 oz)</li><li>Permanent on fabric once dry, and machine washable in cold water</li><li>For cotton, linen, denim and polyester</li><li>Cleans up with soap and water while wet</li></ul>"
+      },
+      "ar": {
+        "title": "طقم ألوان للأقمشة FolkArt للمبتدئين، 8 عبوات",
+        "body": "<p>طقم ألوان للأقمشة للمبتدئين، لتزيين الثياب والحقائب وغيرها من المنسوجات.</p><ul><li>8 عبوات، سعة كل منها 59 مل (2 أونصة)</li><li>ثابتة على القماش بعد أن تجفّ، وتتحمّل الغسيل في الغسالة بالماء البارد</li><li>للقطن والكتان والجينز والبوليستر</li><li>تُغسل بالماء والصابون قبل أن تجفّ</li></ul>",
+        "type": "ألوان قماش وزجاج وسيراميك"
+      },
+      "publish": true
+    },
+    {
+      "handle": "folkart-gloss-enamel-glass-ceramic-paint-16-bottles",
+      "asin": "B076CQGKQ6",
+      "vendor": "FolkArt",
+      "type": "Fabric, glass & ceramic paint",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.1,
+      "kg_source": "estimate",
+      "cost": 34.29,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "FolkArt Gloss Enamel Paint for Glass & Ceramic, 16 Bottles",
+        "body": "<p>Enamel acrylic paint for decorating glass and ceramic, with a shiny finish that lasts.</p><ul><li>16 bottles of 59 ml (2 oz)</li><li>Gloss finish, durable and scratch-resistant</li><li>Bake in a home oven to cure; after that, safe on the top rack of the dishwasher</li><li>Cleans up with soap and water while wet</li></ul><p><strong>Good to know:</strong> the paint must be baked in the oven before it is dishwasher safe.</p>"
+      },
+      "ar": {
+        "title": "ألوان مينا لامعة FolkArt للزجاج والسيراميك، 16 عبوة",
+        "body": "<p>ألوان أكريليك من نوع المينا لتزيين الزجاج والسيراميك، بلمعة تدوم.</p><ul><li>16 عبوة، سعة كل منها 59 مل (2 أونصة)</li><li>لمسة نهائية لامعة، متينة ومقاومة للخدش</li><li>تُخبز في فرن البيت لتثبت، وبعدها تتحمّل الغسيل في الرفّ العلوي لجلّاية الصحون</li><li>تُغسل بالماء والصابون قبل أن تجفّ</li></ul><p><strong>للعلم:</strong> يجب خبز الألوان في الفرن قبل غسلها في جلّاية الصحون.</p>",
+        "type": "ألوان قماش وزجاج وسيراميك"
+      },
+      "publish": true
+    },
+    {
+      "handle": "benicci-paint-brush-set-12",
+      "asin": "B0868QQ1X6",
+      "vendor": "Benicci",
+      "type": "Brushes",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.1,
+      "kg_source": "estimate",
+      "cost": 9.97,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Benicci Paint Brush Set, 12 Brushes",
+        "body": "<p>A set of small brushes in different shapes for precise work, with any kind of paint.</p><ul><li>12 brushes: 4 round, 3 flat, 2 liner, 1 angle, 1 filbert and 1 fan</li><li>For watercolor, acrylic, oil, tempera and ink</li><li>17–20 cm long (6.7–7.9 in)</li></ul>"
+      },
+      "ar": {
+        "title": "طقم فراشي رسم Benicci، 12 فرشاة",
+        "body": "<p>طقم فراشٍ صغيرة بأشكال مختلفة للأعمال الدقيقة، مع كل أنواع الألوان.</p><ul><li>12 فرشاة: 4 مستديرة، 3 مسطّحة، 2 رفيعة للخطوط (liner)، 1 مائلة، 1 بيضاوية (filbert) و1 مروحية</li><li>للألوان المائية والأكريليك والزيت والتمبرا والحبر</li><li>طولها ⁦17–20⁩ سم (⁦6.7–7.9⁩ إنش)</li></ul>",
+        "type": "فُرَش"
+      },
+      "publish": true
+    },
+    {
+      "handle": "fuumuui-paint-brush-set-25-pieces",
+      "asin": "B0CCHK9L7G",
+      "vendor": "Fuumuui",
+      "type": "Brushes",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 29.98,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Fuumuui Paint Brush Set, 25 Pieces",
+        "body": "<p>A full brush set in a roll-up case, with a shape for almost every job, plus a palette knife.</p><ul><li>24 brushes in 9 shapes: large wide flat, flat, filbert, fan, dagger, cat tongue, round, angle and rigger</li><li>A palette knife</li><li>Synthetic bristles that hold a lot of paint, on birch handles</li><li>Waterproof canvas roll with a slot for each brush</li></ul>"
+      },
+      "ar": {
+        "title": "طقم فراشي رسم Fuumuui، 25 قطعة",
+        "body": "<p>طقم فراشٍ كامل في حافظة تُلفّ، فيه شكل لكل عمل تقريبًا، مع سكين ألوان.</p><ul><li>24 فرشاة بـ9 أشكال: مسطّحة عريضة كبيرة، مسطّحة، بيضاوية (filbert)، مروحية، خنجرية (dagger)، لسان القطّ (cat tongue)، مستديرة، مائلة، ورفيعة طويلة (rigger)</li><li>سكين لخلط الألوان</li><li>شعر صناعي يحمل كمية كبيرة من اللون، ومقابض من خشب البتولا</li><li>حافظة من القماش المقاوم للماء تُلفّ، فيها مكان لكل فرشاة</li></ul>",
+        "type": "فُرَش"
+      },
+      "publish": true
+    },
+    {
+      "handle": "artegria-watercolor-brush-set-10",
+      "asin": "B08FBDKG5K",
+      "vendor": "Artegria",
+      "type": "Brushes",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.2,
+      "kg_source": "amazon (Amazon)",
+      "cost": 23.95,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Artegria Watercolor Brush Set, 10 Brushes",
+        "body": "<p>Soft brushes for watercolor and other water-based paints, in a choice of shapes and sizes.</p><ul><li>10 brushes in different shapes and sizes</li><li>Soft synthetic squirrel hair that holds a lot of water</li><li>Hairs don't fall out</li><li>Double-crimped ferrules</li></ul>"
+      },
+      "ar": {
+        "title": "طقم فراشي ألوان مائية Artegria، 10 فراشٍ",
+        "body": "<p>فراشٍ ناعمة للألوان المائية وغيرها من الألوان ذات الأساس المائي، بأشكال وأحجام مختلفة.</p><ul><li>10 فراشٍ بأشكال وأحجام مختلفة</li><li>شعر صناعي ناعم يشبه شعر السنجاب، يحمل كمية كبيرة من الماء</li><li>لا يتساقط شعرها</li><li>حلقة معدنية مثبّتة بضغطتين</li></ul>",
+        "type": "فُرَش"
+      },
+      "publish": true
+    },
+    {
+      "handle": "conda-palette-knife-set-5",
+      "asin": "B01G176P6I",
+      "vendor": "CONDA",
+      "type": "Palettes & knives",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.12,
+      "kg_source": "estimate",
+      "cost": 6.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "CONDA Palette Knife Set, 5 Knives",
+        "body": "<p>Painting knives for oil and acrylic: for mixing paint, spreading it, scraping it off and building texture.</p><ul><li>5 knives, one in each standard shape</li><li>Stainless steel blades</li><li>Comfortable handles</li></ul>"
+      },
+      "ar": {
+        "title": "طقم سكاكين رسم CONDA، 5 سكاكين",
+        "body": "<p>سكاكين رسم للألوان الزيتية والأكريليك: لخلط الألوان وفردها وكشطها وصنع الملمس.</p><ul><li>5 سكاكين، واحدة من كل شكل أساسي</li><li>شفرات من الفولاذ المقاوم للصدأ</li><li>مقابض مريحة</li></ul>",
+        "type": "باليتات وسكاكين"
+      },
+      "publish": true
+    },
+    {
+      "handle": "tamaki-acrylic-mixing-palettes-2-pack",
+      "asin": "B0B9R91Z2P",
+      "vendor": "Tamaki",
+      "type": "Palettes & knives",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.22,
+      "kg_source": "amazon (Amazon)",
+      "cost": 5.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Tamaki Clear Acrylic Mixing Palettes, Pack of 2",
+        "body": "<p>Clear palettes for mixing paint, light enough to carry and easy to wipe clean.</p><ul><li>2 palettes, each 30 × 20 cm (11.8 × 7.9 in)</li><li>Clear acrylic, very see-through</li><li>Smooth edges, easy to clean and portable</li></ul><p><strong>Good to know:</strong> peel off the protective film before use.</p>"
+      },
+      "ar": {
+        "title": "لوحتا خلط ألوان شفّافتان Tamaki، عدد 2",
+        "body": "<p>لوحات شفّافة لخلط الألوان، خفيفة سهلة الحمل وتُنظَّف بسهولة.</p><ul><li>لوحتان، مقاس كل منهما ⁦30 × 20⁩ سم (⁦11.8 × 7.9⁩ إنش)</li><li>أكريليك شفّاف جدًا</li><li>حوافّ ناعمة، سهلة التنظيف والحمل</li></ul><p><strong>للعلم:</strong> انزع الغشاء الواقي قبل الاستعمال.</p>",
+        "type": "باليتات وسكاكين"
+      },
+      "publish": true
+    },
+    {
+      "handle": "faber-castell-9000-graphite-pencils-set-of-12",
+      "asin": "B000I5MNC0",
+      "vendor": "Faber-Castell",
+      "type": "Graphite pencils",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.14,
+      "kg_source": "amazon (Amazon)",
+      "cost": 12.49,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Faber-Castell 9000 Graphite Pencils, Set of 12",
+        "body": "<p>Pencils for students, artists and designers, for sketching, drawing and writing.</p><ul><li>12 grades, from 8B to 2H</li><li>Leads of finely ground graphite and clay</li><li>Smooth on the paper, never scratchy</li></ul>"
+      },
+      "ar": {
+        "title": "أقلام رصاص Faber-Castell 9000، طقم من 12",
+        "body": "<p>أقلام للطلاب والفنانين والمصممين، للرسم السريع والرسم والكتابة.</p><ul><li>12 درجة صلابة: ⁦8B–2H⁩</li><li>رصاص من الغرافيت المطحون ناعمًا مع الطين</li><li>تنساب على الورق بنعومة، من دون خدش</li></ul>",
+        "type": "أقلام رصاص"
+      },
+      "publish": true
+    },
+    {
+      "handle": "prismacolor-premier-graphite-drawing-set-18-pieces",
+      "asin": "B00251EHJW",
+      "vendor": "Prismacolor",
+      "type": "Graphite pencils",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.33,
+      "kg_source": "amazon (Amazon)",
+      "cost": 19.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Prismacolor Premier Graphite Drawing Set, 18 Pieces",
+        "body": "<p>A graphite set for artists, with pencils for fine detail, for covering large areas and for soft washes.</p><ul><li>Artist pencils in a range of values, from light to dark</li><li>Woodless graphite pencils: sharp for detail, blunt for coverage</li><li>Water-soluble pencils that turn into washes with water</li><li>A steel sharpener, a sanding board and a vinyl eraser included</li></ul>"
+      },
+      "ar": {
+        "title": "طقم رسم بالرصاص Prismacolor Premier، 18 قطعة",
+        "body": "<p>طقم رصاص للفنانين، فيه أقلام للتفاصيل الدقيقة ولتغطية المساحات الكبيرة وللمسات المائية الخفيفة.</p><ul><li>أقلام رصاص فنية بدرجات مختلفة، من الفاتح إلى الداكن</li><li>أقلام غرافيت بلا خشب: برأس حاد للتفاصيل، وبرأس عريض لتغطية المساحات</li><li>أقلام تذوب بالماء فتتحوّل إلى لون مائي خفيف</li><li>مع مبراة معدنية ولوح صنفرة وممحاة فينيل</li></ul>",
+        "type": "أقلام رصاص"
+      },
+      "publish": true
+    },
+    {
+      "handle": "faber-castell-pitt-graphite-set-26-pieces",
+      "asin": "B00SYFIPJ6",
+      "vendor": "Faber-Castell",
+      "type": "Graphite pencils",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.59,
+      "kg_source": "amazon (Amazon)",
+      "cost": 45.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Faber-Castell Pitt Graphite Set in a Tin, 26 Pieces",
+        "body": "<p>A set of Pitt graphite in a tin, for drawing with strong contrast and for shading.</p><ul><li>26 pieces in a tin</li><li>Pitt Graphite Pure: woodless graphite for contrast and for shading large areas</li><li>Made in Germany</li></ul>"
+      },
+      "ar": {
+        "title": "طقم رصاص Faber-Castell Pitt Graphite في علبة معدنية، 26 قطعة",
+        "body": "<p>طقم من رصاص Pitt في علبة معدنية، للرسم بتباين قوي وللتظليل.</p><ul><li>26 قطعة في علبة معدنية</li><li>فيه Pitt Graphite Pure، غرافيت بلا خشب، للتباين ولتظليل المساحات الكبيرة</li><li>صُنع في ألمانيا</li></ul>",
+        "type": "أقلام رصاص"
+      },
+      "publish": true
+    },
+    {
+      "handle": "prismacolor-premier-colored-pencils",
+      "asin": "B00006IEEU",
+      "vendor": "Prismacolor",
+      "type": "Colored pencils",
+      "tags": [],
+      "stock": "on_order",
+      "kg": {
+        "24 pencils": 0.15,
+        "36 pencils": 0.37,
+        "48 pencils": 0.55
+      },
+      "kg_source": "estimate",
+      "cost": {
+        "24 pencils": 13.79,
+        "36 pencils": 36.0
+      },
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Prismacolor Premier Colored Pencils",
+        "body": "<p>Colored pencils with soft, thick cores that give smooth, even color, good for shading and blending.</p><ul><li>Lightfast, richly saturated pigments</li><li>Cores that resist cracking</li><li>Three sizes: 24, 36 or 48 colors</li></ul>"
+      },
+      "ar": {
+        "title": "أقلام تلوين Prismacolor Premier",
+        "body": "<p>أقلام تلوين بقلب طري وسميك، تعطي لونًا ناعمًا ومتساويًا، وتناسب التظليل ودمج الألوان.</p><ul><li>أصباغ غنية ومشبعة، ثابتة أمام الضوء</li><li>قلب يقاوم التكسّر</li><li>ثلاثة أحجام: 24 أو 36 أو 48 لونًا</li></ul>",
+        "type": "أقلام ملوّنة"
+      },
+      "publish": true,
+      "variants_keep": [
+        "24 Count (Pack of 1)",
+        "36-Count",
+        "48-Count"
+      ],
+      "options": [
+        {
+          "name": "Set",
+          "from": "Size",
+          "ar": "الطقم",
+          "values": [
+            {
+              "from": "24 Count (Pack of 1)",
+              "name": "24 pencils",
+              "ar": "24 قلمًا"
+            },
+            {
+              "from": "36-Count",
+              "name": "36 pencils",
+              "ar": "36 قلمًا"
+            },
+            {
+              "from": "48-Count",
+              "name": "48 pencils",
+              "ar": "48 قلمًا"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "castle-art-supplies-colored-pencils-72",
+      "asin": "B06ZZNF7GS",
+      "vendor": "Castle Art Supplies",
+      "type": "Colored pencils",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.68,
+      "kg_source": "amazon (Amazon)",
+      "cost": 39.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Castle Art Supplies Colored Pencils, Set of 72",
+        "body": "<p>Colored pencils with rich color for layering, blending and burnishing.</p><ul><li>72 pencils arranged in color families, each one named and numbered</li><li>Soft, buttery cores that are also durable</li><li>Comes in a tin</li><li>A fold-out tutorial included</li></ul>"
+      },
+      "ar": {
+        "title": "أقلام تلوين Castle Art Supplies، طقم من 72",
+        "body": "<p>أقلام تلوين بألوان غنية، للتلوين بطبقات ودمج الألوان وصقلها.</p><ul><li>72 قلمًا مرتّبة في عائلات لونية، ولكل قلم اسم ورقم</li><li>قلب طري كالزبدة، ومتين أيضًا</li><li>في علبة معدنية</li><li>مع دليل تعليمي قابل للطي</li></ul>",
+        "type": "أقلام ملوّنة"
+      },
+      "publish": true
+    },
+    {
+      "handle": "kalour-colored-pencils-72",
+      "asin": "B0BHYGM2XG",
+      "vendor": "KALOUR",
+      "type": "Colored pencils",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.47,
+      "kg_source": "amazon (Amazon)",
+      "cost": 11.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "KALOUR Colored Pencils, Set of 72",
+        "body": "<p>A big set of colored pencils for coloring books, drawing, blending and shading.</p><ul><li>72 colors</li><li>Soft cores</li><li>Each pencil numbered and named</li></ul>"
+      },
+      "ar": {
+        "title": "أقلام تلوين KALOUR، طقم من 72",
+        "body": "<p>طقم كبير من أقلام التلوين لكتب التلوين والرسم ودمج الألوان والتظليل.</p><ul><li>72 لونًا</li><li>قلب طري</li><li>على كل قلم رقمه واسم لونه</li></ul>",
+        "type": "أقلام ملوّنة"
+      },
+      "publish": true
+    },
+    {
+      "handle": "castle-art-supplies-drawing-charcoal-set-40-pieces",
+      "asin": "B01HFCDUV6",
+      "vendor": "Castle Art Supplies",
+      "type": "Charcoal",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.55,
+      "kg_source": "amazon (Amazon)",
+      "cost": 35.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Castle Art Supplies Drawing & Charcoal Set, 40 Pieces",
+        "body": "<p>A drawing kit to try graphite, charcoal and pastel, all kept together in one case.</p><ul><li>Graphite, charcoal and pastel pencils, plus sticks and tools</li><li>A zipped case that opens into standing sections</li><li>A 20-page guide book with demos and tips</li><li>40 pieces in all</li></ul>"
+      },
+      "ar": {
+        "title": "طقم رسم وفحم Castle Art Supplies، 40 قطعة",
+        "body": "<p>طقم رسم لتجربة الرصاص والفحم والباستيل، وكل أدواته محفوظة معًا في حقيبة واحدة.</p><ul><li>أقلام رصاص وفحم وباستيل، مع أصابع وأدوات</li><li>حقيبة بسحّاب تنفتح إلى أقسام تقف وحدها</li><li>كتيّب إرشادي من 20 صفحة، فيه أمثلة ونصائح</li><li>40 قطعة في المجموع</li></ul>",
+        "type": "فحم رسم"
+      },
+      "publish": true
+    },
+    {
+      "handle": "faber-castell-pitt-charcoal-set-24-pieces",
+      "asin": "B00RV2L7Q6",
+      "vendor": "Faber-Castell",
+      "type": "Charcoal",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.3,
+      "kg_source": "amazon (Amazon)",
+      "cost": 35.44,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Faber-Castell Pitt Charcoal Set, 24 Pieces",
+        "body": "<p>A professional-quality charcoal set, with sticks and pencils for drawing.</p><ul><li>Natural charcoal sticks and Pitt charcoal pencils in several hardnesses</li><li>A paper blending stump and a kneadable eraser included</li><li>24 pieces in a metal case</li></ul>"
+      },
+      "ar": {
+        "title": "طقم فحم Faber-Castell Pitt، 24 قطعة",
+        "body": "<p>طقم فحم بجودة احترافية، فيه أصابع وأقلام للرسم.</p><ul><li>أصابع فحم طبيعي وأقلام فحم Pitt بدرجات صلابة مختلفة</li><li>مع أداة دمج ورقية (Blending stump) وممحاة عجين</li><li>24 قطعة في علبة معدنية</li></ul>",
+        "type": "فحم رسم"
+      },
+      "publish": true
+    },
+    {
+      "handle": "pentel-oil-pastels-50-colors",
+      "asin": "B00LFCWSPM",
+      "vendor": "Pentel",
+      "type": "Pastels",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.3,
+      "kg_source": "estimate",
+      "cost": 7.49,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Pentel Oil Pastels, 50 Colors",
+        "body": "<p>Oil pastels that go on smoothly and blend easily.</p><ul><li>50 colors</li><li>More vibrant than chalk pastels</li><li>Acid-free, and they resist humidity</li><li>For paper, canvas and art board</li></ul>"
+      },
+      "ar": {
+        "title": "ألوان باستيل زيتية Pentel، 50 لونًا",
+        "body": "<p>ألوان باستيل زيتية تنساب بنعومة وتمتزج ببعضها بسهولة.</p><ul><li>50 لونًا</li><li>ألوانها أزهى من الباستيل الطباشيري</li><li>خالية من الأحماض وتقاوم الرطوبة</li><li>للرسم على الورق والقماش (الكانفاس) ولوح الرسم</li></ul>",
+        "type": "باستيل"
+      },
+      "publish": true
+    },
+    {
+      "handle": "mungyo-gallery-soft-oil-pastels-48-colors",
+      "asin": "B004WQHY4S",
+      "vendor": "MUNGYO",
+      "type": "Pastels",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 19.4,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "MUNGYO Gallery Soft Oil Pastels, 48 Colors",
+        "body": "<p>Oil pastels for sketchbooks, classes and finished work.</p><ul><li>48 colors, one stick of each shade</li><li>Soft and oil-based, they glide on paper</li><li>Blend them with a fingertip, a blending stump or a cloth</li></ul>"
+      },
+      "ar": {
+        "title": "ألوان باستيل زيتية طرية MUNGYO Gallery، 48 لونًا",
+        "body": "<p>ألوان باستيل زيتية لدفاتر الرسم والدروس والأعمال الفنية المكتملة.</p><ul><li>48 لونًا، إصبع واحد لكل لون</li><li>طرية وزيتية، تنساب على الورق بسهولة</li><li>تُدمج بطرف الإصبع أو بأداة الدمج أو بقطعة قماش</li></ul>",
+        "type": "باستيل"
+      },
+      "publish": true
+    },
+    {
+      "handle": "mungyo-soft-pastels-64-colors",
+      "asin": "B01HFJJLNU",
+      "vendor": "MUNGYO",
+      "type": "Pastels",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.4,
+      "kg_source": "estimate",
+      "cost": 12.5,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "MUNGYO Soft Pastels, 64 Colors",
+        "body": "<p>Soft chalk pastels for blending, color gradations and dry washes.</p><ul><li>64 colors</li><li>Square sticks</li><li>Non-toxic (AP seal)</li></ul>"
+      },
+      "ar": {
+        "title": "ألوان باستيل طرية MUNGYO، 64 لونًا",
+        "body": "<p>ألوان باستيل طباشيرية طرية، لدمج الألوان والتدرّج اللوني وتقنية الغسل الجاف.</p><ul><li>64 لونًا</li><li>أصابع مربّعة الشكل</li><li>غير سامّة (تحمل ختم AP)</li></ul>",
+        "type": "باستيل"
+      },
+      "publish": true
+    },
+    {
+      "handle": "rembrandt-soft-pastels-60-half-sticks",
+      "asin": "B0014ZR1AC",
+      "vendor": "Rembrandt",
+      "type": "Pastels",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.18,
+      "kg_source": "amazon (Amazon)",
+      "cost": 77.29,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Rembrandt Soft Pastels, 60 Half Sticks",
+        "body": "<p>Professional soft pastels by Royal Talens, with intense colors that blend well.</p><ul><li>60 half sticks</li><li>High pigment concentration and excellent lightfastness</li><li>Kaolin formula for smooth color transfer</li></ul>"
+      },
+      "ar": {
+        "title": "ألوان باستيل طرية Rembrandt، 60 نصف إصبع",
+        "body": "<p>ألوان باستيل طرية للمحترفين من Royal Talens، بألوان قوية تمتزج ببعضها جيدًا.</p><ul><li>60 نصف إصبع</li><li>تركيز عالٍ للأصباغ وثبات ممتاز أمام الضوء</li><li>تركيبة بالكاولين تنقل اللون بنعومة</li></ul>",
+        "type": "باستيل"
+      },
+      "publish": true
+    },
+    {
+      "handle": "sakura-pigma-micron-fineliners-black-10-sizes",
+      "asin": "B08KFXJC1S",
+      "vendor": "Sakura",
+      "type": "Markers & fineliners",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.1,
+      "kg_source": "amazon (Amazon)",
+      "cost": 21.98,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Sakura Pigma Micron Fineliners, Black, 10 Sizes",
+        "body": "<p>Fine black pens for line work, used by comic artists, illustrators and watercolor artists.</p><ul><li>10 black pens in different point sizes</li><li>Pigma pigment ink: waterproof and fade resistant</li><li>Dries quickly, with no bleeding</li></ul>"
+      },
+      "ar": {
+        "title": "أقلام تحبير Sakura Pigma Micron، أسود، 10 مقاسات",
+        "body": "<p>أقلام سوداء رفيعة لرسم الخطوط، يستعملها رسّامو القصص المصوّرة والرسّامون ورسّامو الألوان المائية.</p><ul><li>10 أقلام سوداء بسماكات رأس مختلفة</li><li>حبر Pigma بالأصباغ: مقاوم للماء ولا يبهت</li><li>يجفّ بسرعة ولا ينتشر في الورق</li></ul>",
+        "type": "ماركر وأقلام رفيعة"
+      },
+      "publish": true
+    },
+    {
+      "handle": "winsor-newton-drawing-ink-black-indian-14ml",
+      "asin": "B000KNP96C",
+      "vendor": "Winsor & Newton",
+      "type": "Inks & pens",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.06,
+      "kg_source": "estimate",
+      "cost": 10.0,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Winsor & Newton Drawing Ink, Black Indian, 14 ml",
+        "body": "<p>A black drawing ink to use with a brush, a dip pen or an airbrush.</p><ul><li>14 ml bottle</li><li>Black Indian ink</li><li>Dries fast and sticks to most surfaces</li></ul>"
+      },
+      "ar": {
+        "title": "حبر رسم Winsor & Newton، أسود Black Indian، 14 مل",
+        "body": "<p>حبر أسود للرسم، يُستعمل بالفرشاة أو بالريشة المعدنية أو بالبخاخ (Airbrush).</p><ul><li>زجاجة 14 مل</li><li>حبر هندي أسود (Black Indian)</li><li>يجفّ بسرعة ويثبت على معظم السطوح</li></ul>",
+        "type": "أحبار وأقلام حبر"
+      },
+      "publish": true
+    },
+    {
+      "handle": "higgins-waterproof-black-india-ink-1-oz",
+      "asin": "B001E6CUPC",
+      "vendor": "Higgins",
+      "type": "Inks & pens",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.06,
+      "kg_source": "estimate",
+      "cost": 9.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Higgins Waterproof Black India Ink, 1 oz",
+        "body": "<p>A traditional black drawing ink for brushes and dip pens, on paper, board and film.</p><ul><li>1 oz bottle</li><li>Deep charcoal black</li><li>Micro-pulverized pigments in shellac</li><li>Waterproof, with a matte sheen</li></ul>"
+      },
+      "ar": {
+        "title": "حبر هندي أسود مقاوم للماء Higgins، 1 أونصة",
+        "body": "<p>حبر رسم أسود تقليدي للفرشاة والريشة المعدنية، على الورق والكرتون المقوّى والأفلام الشفافة.</p><ul><li>زجاجة 1 أونصة</li><li>أسود عميق بلون الفحم</li><li>أصباغ مطحونة طحنًا ناعمًا جدًا في الشيلاك</li><li>مقاوم للماء، بلمعة خفيفة مطفية</li></ul>",
+        "type": "أحبار وأقلام حبر"
+      },
+      "publish": true
+    },
+    {
+      "handle": "dr-ph-martins-bombay-india-ink-set-1-12-bottles",
+      "asin": "B0056AE8G6",
+      "vendor": "Dr. Ph. Martin's",
+      "type": "Inks & pens",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.1,
+      "kg_source": "amazon (Amazon)",
+      "cost": 57.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Dr. Ph. Martin's Bombay India Ink Set 1, 12 × 1 oz",
+        "body": "<p>A set of vibrant India inks made from finely ground pigments.</p><ul><li>12 glass bottles of 1 oz each, with droppers</li><li>A mixing palette included</li><li>Lightfast, permanent and waterproof when dry</li></ul>"
+      },
+      "ar": {
+        "title": "طقم أحبار هندية Dr. Ph. Martin's Bombay، المجموعة 1، ⁦12 × 1⁩ أونصة",
+        "body": "<p>طقم من الأحبار الهندية الزاهية، مصنوعة من أصباغ مطحونة ناعمًا.</p><ul><li>12 زجاجة من الزجاج، سعة كل منها 1 أونصة، مع قطّارات</li><li>مع لوحة لخلط الألوان</li><li>ثابتة أمام الضوء، ودائمة ومقاومة للماء بعد أن تجف</li></ul>",
+        "type": "أحبار وأقلام حبر"
+      },
+      "publish": true
+    },
+    {
+      "handle": "moon-palace-sumi-ink-180ml",
+      "asin": "B001C70A8W",
+      "vendor": "Moon Palace",
+      "type": "Inks & pens",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.25,
+      "kg_source": "estimate",
+      "cost": 7.5,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Moon Palace Sumi Ink, 180 ml",
+        "body": "<p>Japanese sumi ink for calligraphy and drawing.</p><ul><li>180 ml bottle</li><li>Deep black</li><li>For brush calligraphy and for drawing</li></ul>"
+      },
+      "ar": {
+        "title": "حبر سومي Moon Palace، 180 مل",
+        "body": "<p>حبر سومي ياباني للخط والرسم.</p><ul><li>زجاجة 180 مل</li><li>أسود عميق</li><li>للخط بالفرشاة وللرسم</li></ul>",
+        "type": "أحبار وأقلام حبر"
+      },
+      "publish": true
+    },
+    {
+      "handle": "faber-castell-kneaded-erasers-large-4-pack",
+      "asin": "B01LYU5S6D",
+      "vendor": "Faber-Castell",
+      "type": "Erasers & blending",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.09,
+      "kg_source": "amazon (Amazon)",
+      "cost": 6.25,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Faber-Castell Kneaded Erasers, Large, Pack of 4",
+        "body": "<p>Kneaded erasers for drawing with charcoal, pencil and pastel.</p><ul><li>4 large grey erasers</li><li>Very kneadable and absorbent</li><li>Lift or lighten charcoal, pencil and pastel</li><li>Clean up the final drawing</li></ul>"
+      },
+      "ar": {
+        "title": "ممحاة عجين Faber-Castell، كبيرة، 4 قطع",
+        "body": "<p>ممحاة عجين لمن يرسم بالفحم والرصاص والباستيل.</p><ul><li>4 مماحٍ كبيرة رمادية اللون</li><li>سهلة التشكيل بالأصابع وتمتصّ جيدًا</li><li>ترفع الفحم والرصاص والباستيل عن الورق أو تخفّف درجتها</li><li>لتنظيف الرسمة في مرحلتها الأخيرة</li></ul>",
+        "type": "مماحٍ وأدوات دمج"
+      },
+      "publish": true
+    },
+    {
+      "handle": "n-norocme-blending-stumps-tortillions-43-pieces",
+      "asin": "B0CCP35LVR",
+      "vendor": "N NOROCME",
+      "type": "Erasers & blending",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.15,
+      "kg_source": "estimate",
+      "cost": 9.97,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "N NOROCME Blending Stumps & Tortillions, 43 Pieces",
+        "body": "<p>A blending kit for graphite, charcoal and pastel.</p><ul><li>8 blending stumps and 8 tortillions, 2 of each size</li><li>20 sponge replacement heads, a kneaded eraser and more</li><li>Stumps and tortillions made of compressed and rolled paper</li><li>43 pieces in all</li></ul>"
+      },
+      "ar": {
+        "title": "أعواد دمج N NOROCME للرسم، 43 قطعة",
+        "body": "<p>طقم أدوات لدمج الرصاص والفحم والباستيل.</p><ul><li>8 أعواد دمج (Blending stumps) و8 أعواد ملفوفة (Tortillions)، اثنان من كل مقاس</li><li>20 رأسًا إسفنجيًا بديلًا وممحاة عجين، وقطع أخرى</li><li>أعواد من الورق المضغوط والملفوف</li><li>43 قطعة في المجموع</li></ul>",
+        "type": "مماحٍ وأدوات دمج"
+      },
+      "publish": true
+    },
+    {
+      "handle": "strathmore-400-sketch-pad-5-5x8-5-100-sheets",
+      "asin": "B004O7EFMO",
+      "vendor": "Strathmore",
+      "type": "Sketchbooks",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.33,
+      "kg_source": "amazon (Amazon)",
+      "cost": 6.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Strathmore 400 Series Sketch Pad, 5.5 × 8.5 in, 100 Sheets",
+        "body": "<p>A heavyweight, general-purpose sketch paper that artists have trusted for decades, for figure drawing and illustration.</p><ul><li>For graphite, charcoal, pastel and other dry media</li><li>100 sheets, 5.5 × 8.5 in</li><li>Micro-perforated sheets that tear out cleanly</li></ul>"
+      },
+      "ar": {
+        "title": "دفتر رسم Strathmore 400 Series، ⁦5.5 × 8.5⁩ إنش، 100 ورقة",
+        "body": "<p>ورق رسم سميك لكل الاستعمالات، يثق به الفنانون منذ عقود، لرسم الجسم البشري والرسوم التوضيحية.</p><ul><li>لقلم الرصاص والفحم والباستيل وغيرها من الأدوات الجافة</li><li>100 ورقة بمقاس ⁦5.5 × 8.5⁩ إنش</li><li>أوراق بثقوب دقيقة تنفصل عن الدفتر بشكل نظيف</li></ul>",
+        "type": "دفاتر رسم"
+      },
+      "publish": true
+    },
+    {
+      "handle": "moleskine-art-plus-sketchbook-large",
+      "asin": "8883701151",
+      "vendor": "Moleskine",
+      "type": "Sketchbooks",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "amazon (Amazon)",
+      "cost": 18.9,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Moleskine Art Plus Sketchbook, Large, Hard Cover",
+        "body": "<p>A sketchbook with ivory paper for drawing with dry media, and for light washes too.</p><ul><li>Large size: 5 × 8.25 in</li><li>165 g/m² acid-free ivory paper</li><li>Hard cover, rounded corners, elastic closure and a ribbon bookmark</li><li>Opens flat at 180°, with an expandable inner pocket</li></ul>"
+      },
+      "ar": {
+        "title": "دفتر رسم Moleskine Art Plus، حجم كبير، غلاف مقوّى",
+        "body": "<p>دفتر رسم بورق عاجي اللون، للرسم بالأدوات الجافة وللتلوين الخفيف بالماء أيضًا.</p><ul><li>الحجم الكبير: ⁦5 × 8.25⁩ إنش</li><li>ورق عاجي خالٍ من الأحماض، بوزن 165 غ/م²</li><li>غلاف مقوّى، زوايا مستديرة، رباط مطاطي للإغلاق وشريط لتحديد الصفحة</li><li>ينفتح مسطّحًا تمامًا (180°)، وفيه جيب داخلي يتّسع عند الحاجة</li></ul>",
+        "type": "دفاتر رسم"
+      },
+      "publish": true
+    },
+    {
+      "handle": "fuxi-spiral-sketch-book-9x12-100-sheets",
+      "asin": "B08TLK1ZSV",
+      "vendor": "Fuxi",
+      "type": "Sketchbooks",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.6,
+      "kg_source": "estimate",
+      "cost": 11.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Fuxi Spiral Sketch Book, 9 × 12 in, 100 Sheets",
+        "body": "<p>A spiral sketchbook with bright white paper and a fine tooth, for graphite, colored pencil and charcoal.</p><ul><li>100 sheets of 100 gsm paper</li><li>9 × 12 in</li><li>Spiral at the top, out of the way for left- and right-handed artists</li><li>Micro-perforated sheets that tear out easily</li></ul>"
+      },
+      "ar": {
+        "title": "دفتر رسم سلكي Fuxi، ⁦9 × 12⁩ إنش، 100 ورقة",
+        "body": "<p>دفتر رسم بسلك حلزوني، ورقه أبيض ناصع بملمس خفيف الخشونة، لقلم الرصاص والأقلام الملوّنة والفحم.</p><ul><li>100 ورقة بوزن 100 غ/م²</li><li>المقاس ⁦9 × 12⁩ إنش</li><li>السلك في الأعلى، فلا يعيق يدك سواء كنت ترسم باليمنى أو باليسرى</li><li>أوراق بثقوب دقيقة يسهل نزعها</li></ul>",
+        "type": "دفاتر رسم"
+      },
+      "publish": true
+    },
+    {
+      "handle": "canson-xl-mix-media-pad",
+      "asin": "B002NQ2K16",
+      "vendor": "Canson",
+      "type": "Drawing pads",
+      "tags": [],
+      "stock": "on_order",
+      "kg": {
+        "9 × 12 in": 0.86,
+        "5.5 × 8.5 in": 0.38
+      },
+      "kg_source": "amazon (Amazon)",
+      "cost": {
+        "9 × 12 in": 18.07
+      },
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Canson XL Mix Media Pad",
+        "body": "<p>A heavy paper that takes many different media in one pad, from pencil and ink to light painting.</p><ul><li>For pencil, ink and marker, and for light watercolor or acrylic washes</li><li>Perforated sheets</li><li>Made in France</li><li>In two sizes: 9 × 12 in and 5.5 × 8.5 in</li></ul>"
+      },
+      "ar": {
+        "title": "دفتر ورق متعدّد الاستعمالات Canson XL Mix Media",
+        "body": "<p>ورق سميك يتحمّل أدوات مختلفة في دفتر واحد، من قلم الرصاص والحبر حتى التلوين الخفيف.</p><ul><li>لقلم الرصاص والحبر والماركر، وللطبقات الخفيفة من الألوان المائية أو الأكريليك</li><li>أوراق مثقّبة لنزعها بسهولة</li><li>صُنع في فرنسا</li><li>بمقاسين: ⁦9 × 12⁩ إنش و⁦5.5 × 8.5⁩ إنش</li></ul>",
+        "type": "بلوكات رسم"
+      },
+      "publish": true,
+      "variants_keep": [
+        "9 x 12 inches / Mixed Media",
+        "5.5 x 8.5 inches / Mixed Media"
+      ],
+      "remove_options": [
+        "Style"
+      ],
+      "options": [
+        {
+          "name": "Size",
+          "ar": "المقاس",
+          "values": [
+            {
+              "from": "9 x 12 inches",
+              "name": "9 × 12 in",
+              "ar": "⁦9 × 12⁩ إنش"
+            },
+            {
+              "from": "5.5 x 8.5 inches",
+              "name": "5.5 × 8.5 in",
+              "ar": "⁦5.5 × 8.5⁩ إنش"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "arches-cold-press-watercolor-pad-9x12",
+      "asin": "B01EQHJH10",
+      "vendor": "Arches",
+      "type": "Watercolor paper",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.34,
+      "kg_source": "amazon (Amazon)",
+      "cost": 21.84,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Arches Cold Press Watercolor Pad, 9 × 12 in",
+        "body": "<p>Professional watercolor paper made of cotton, for painters who want to work on artist-grade paper.</p><ul><li>100% cotton, with long fibers</li><li>300 gsm (140 lb), cold press</li><li>Natural white</li><li>Pad of 9 × 12 in</li></ul>"
+      },
+      "ar": {
+        "title": "دفتر ورق ألوان مائية Arches، ⁦9 × 12⁩ إنش",
+        "body": "<p>ورق ألوان مائية احترافي مصنوع من القطن، للرسّامين الذين يريدون العمل على ورق بمستوى الفنانين المحترفين.</p><ul><li>قطن 100%، بألياف طويلة</li><li>وزن 300 غ/م² (140 lb)، سطح Cold press نصف خشن</li><li>لون أبيض طبيعي</li><li>دفتر بمقاس ⁦9 × 12⁩ إنش</li></ul>",
+        "type": "ورق ألوان مائية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "strathmore-300-watercolor-pad-11x15",
+      "asin": "B000KNLQIM",
+      "vendor": "Strathmore",
+      "type": "Watercolor paper",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.53,
+      "kg_source": "amazon (Amazon)",
+      "cost": 9.44,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Strathmore 300 Series Watercolor Pad, 11 × 15 in",
+        "body": "<p>A large pad of heavy paper for painting with watercolor and other wet media.</p><ul><li>12 sheets, 11 × 15 in</li><li>300 gsm (140 lb), cold press</li><li>Acid-free</li><li>Tape-bound pad</li></ul>"
+      },
+      "ar": {
+        "title": "دفتر ورق ألوان مائية Strathmore 300 Series، ⁦11 × 15⁩ إنش",
+        "body": "<p>دفتر كبير من الورق السميك، للرسم بالألوان المائية وغيرها من الألوان التي تُستعمل مع الماء.</p><ul><li>12 ورقة بمقاس ⁦11 × 15⁩ إنش</li><li>وزن 300 غ/م² (140 lb)، سطح Cold press نصف خشن</li><li>ورق خالٍ من الأحماض</li><li>دفتر مُجلّد بشريط لاصق</li></ul>",
+        "type": "ورق ألوان مائية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "hapikalor-watercolor-pad-9x12-20-sheets",
+      "asin": "B0D5R7JRKZ",
+      "vendor": "Hapikalor",
+      "type": "Watercolor paper",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.46,
+      "kg_source": "amazon (Amazon)",
+      "cost": 7.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Hapikalor Watercolor Pad, 9 × 12 in, 20 Sheets",
+        "body": "<p>A watercolor pad with textured, natural white paper, for watercolor as well as dry and mixed media.</p><ul><li>20 sheets, 9 × 12 in</li><li>300 gsm (140 lb), cold pressed</li><li>Acid-free, with a neutral pH</li><li>Textured surface in natural white</li></ul>"
+      },
+      "ar": {
+        "title": "دفتر ورق ألوان مائية Hapikalor، ⁦9 × 12⁩ إنش، 20 ورقة",
+        "body": "<p>دفتر للألوان المائية بورق أبيض طبيعي محبّب الملمس، يصلح أيضًا للأدوات الجافة وللتقنيات المختلطة.</p><ul><li>20 ورقة بمقاس ⁦9 × 12⁩ إنش</li><li>وزن 300 غ/م² (140 lb)، سطح Cold press نصف خشن</li><li>خالٍ من الأحماض، ودرجة حموضته متعادلة</li><li>سطح محبّب بلون أبيض طبيعي</li></ul>",
+        "type": "ورق ألوان مائية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "esrich-stretched-canvas-8x10-5-pack",
+      "asin": "B0D3TWT3TX",
+      "vendor": "ESRICH",
+      "type": "Stretched canvas",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.9,
+      "kg_source": "estimate",
+      "cost": 12.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "ESRICH Stretched Canvas, 8 × 10 in, Pack of 5",
+        "body": "<p>Cotton canvases stretched on wooden frames and already primed, so you can start painting right away.</p><ul><li>5 canvases, 8 × 10 in</li><li>Cotton, primed with acid-free acrylic gesso</li><li>Stapled on a pinewood frame, 5/8 in deep</li><li>For oil, acrylic and gouache</li></ul>"
+      },
+      "ar": {
+        "title": "لوحات كانفاس مشدودة ESRICH، ⁦8 × 10⁩ إنش، 5 قطع",
+        "body": "<p>قماش قطني مشدود على إطار خشبي ومجهّز بطبقة أساس، فتبدأ الرسم عليه مباشرة.</p><ul><li>5 لوحات بمقاس ⁦8 × 10⁩ إنش</li><li>قطن مجهّز بطبقة جيسو أكريليك خالية من الأحماض</li><li>مثبّت بالدبابيس على إطار من خشب الصنوبر بعمق ⁦5/8⁩ إنش</li><li>للألوان الزيتية والأكريليك والغواش</li></ul>",
+        "type": "كانفاس مشدود"
+      },
+      "publish": true
+    },
+    {
+      "handle": "esrich-stretched-canvas-multipack-14-pieces",
+      "asin": "B09YLT8RBP",
+      "vendor": "ESRICH",
+      "type": "Stretched canvas",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.8,
+      "kg_source": "amazon (Amazon)",
+      "cost": 25.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "ESRICH Stretched Canvas Multi Pack, 14 Pieces",
+        "body": "<p>A mix of canvas sizes in one pack, from small squares and rounds to larger rectangles, for trying different formats.</p><ul><li>14 canvases: 11 × 14, 9.44 × 12, 8 × 10, 5 × 7 and 4 × 4 in, plus round ones</li><li>Pinewood frames</li><li>Primed with acid-free gesso</li><li>For oil, acrylic, watercolor and gouache</li></ul>"
+      },
+      "ar": {
+        "title": "مجموعة لوحات كانفاس مشدودة ESRICH، 14 قطعة",
+        "body": "<p>مقاسات مختلفة من الكانفاس في علبة واحدة، من المربّعات والدوائر الصغيرة حتى المستطيلات الأكبر، لتجرّب أشكالًا متنوّعة.</p><ul><li>14 لوحة بمقاسات ⁦11 × 14⁩ و⁦9.44 × 12⁩ و⁦8 × 10⁩ و⁦5 × 7⁩ و⁦4 × 4⁩ إنش، ولوحات مستديرة</li><li>إطارات من خشب الصنوبر</li><li>مجهّزة بطبقة جيسو خالية من الأحماض</li><li>للألوان الزيتية والأكريليك والمائية والغواش</li></ul>",
+        "type": "كانفاس مشدود"
+      },
+      "publish": true
+    },
+    {
+      "handle": "esrich-canvas-boards-8x10-5-pack",
+      "asin": "B0CMXFTNDC",
+      "vendor": "ESRICH",
+      "type": "Canvas boards & panels",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.41,
+      "kg_source": "amazon (Amazon)",
+      "cost": 6.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "ESRICH Canvas Boards, 8 × 10 in, Pack of 5",
+        "body": "<p>Flat canvas boards, primed and ready to paint, for many kinds of paint.</p><ul><li>5 boards, 8 × 10 in</li><li>Pure cotton canvas on a sturdy board core</li><li>Non-toxic, acid-free primer</li><li>For oil, acrylic, watercolor, tempera and pouring</li></ul>"
+      },
+      "ar": {
+        "title": "ألواح كانفاس ESRICH، ⁦8 × 10⁩ إنش، 5 قطع",
+        "body": "<p>ألواح كانفاس مسطّحة، مجهّزة بطبقة أساس وجاهزة للرسم، تصلح لأنواع كثيرة من الألوان.</p><ul><li>5 ألواح بمقاس ⁦8 × 10⁩ إنش</li><li>قماش قطني خالص على لوح متين</li><li>طبقة أساس غير سامّة وخالية من الأحماض</li><li>للألوان الزيتية والأكريليك والمائية والتمبرا وتقنية الصبّ</li></ul>",
+        "type": "ألواح كانفاس وخشب"
+      },
+      "publish": true
+    },
+    {
+      "handle": "phoenix-canvas-boards-5x7-24-pack",
+      "asin": "B092HZL8ZG",
+      "vendor": "PHOENIX",
+      "type": "Canvas boards & panels",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.0,
+      "kg_source": "amazon (Amazon)",
+      "cost": 13.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "PHOENIX Canvas Boards, 5 × 7 in, Pack of 24",
+        "body": "<p>A big pack of small canvas panels, good for paint parties, practice and gifts.</p><ul><li>24 flat panels, 5 × 7 in</li><li>100% cotton</li><li>Pre-primed with acid-free gesso, ready to paint</li><li>Lightweight and sturdy</li></ul>"
+      },
+      "ar": {
+        "title": "ألواح كانفاس PHOENIX، ⁦5 × 7⁩ إنش، 24 قطعة",
+        "body": "<p>علبة كبيرة من ألواح الكانفاس الصغيرة، مناسبة لجلسات الرسم الجماعية والتمرين والهدايا.</p><ul><li>24 لوحًا مسطّحًا بمقاس ⁦5 × 7⁩ إنش</li><li>قطن 100%</li><li>مجهّزة مسبقًا بطبقة جيسو خالية من الأحماض، وجاهزة للرسم</li><li>خفيفة ومتينة</li></ul>",
+        "type": "ألواح كانفاس وخشب"
+      },
+      "publish": true
+    },
+    {
+      "handle": "arteza-cradled-birch-wood-panels-8x8-5-pack",
+      "asin": "B083KNPT5F",
+      "vendor": "ARTEZA",
+      "type": "Canvas boards & panels",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.82,
+      "kg_source": "amazon (Amazon)",
+      "cost": 35.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "ARTEZA Cradled Birch Wood Panels, 8 × 8 in, Pack of 5",
+        "body": "<p>Wood panels for when you want a firm surface instead of canvas, for painting and for techniques like wood burning.</p><ul><li>5 panels, 8 × 8 in</li><li>Smooth 5 mm natural birch surface</li><li>Sanded edges and a deep cradle</li><li>For oil, gouache, acrylic pouring, wood burning and encaustic</li></ul>"
+      },
+      "ar": {
+        "title": "ألواح خشب البتولا ARTEZA بإطار خلفي، ⁦8 × 8⁩ إنش، 5 قطع",
+        "body": "<p>ألواح خشبية حين تريد سطحًا صلبًا بدل الكانفاس، للرسم ولتقنيات مثل الحرق على الخشب.</p><ul><li>5 ألواح بمقاس ⁦8 × 8⁩ إنش</li><li>سطح أملس من خشب البتولا الطبيعي بسماكة 5 مم</li><li>حواف مصقولة وإطار خلفي عميق</li><li>للألوان الزيتية والغواش وصبّ الأكريليك والحرق على الخشب والرسم بالشمع الساخن (encaustic)</li></ul>",
+        "type": "ألواح كانفاس وخشب"
+      },
+      "publish": true
+    },
+    {
+      "handle": "pilot-parallel-calligraphy-pen-3-8-mm",
+      "asin": "B002RJPPMK",
+      "vendor": "Pilot",
+      "type": "Arabic calligraphy",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.05,
+      "kg_source": "estimate",
+      "cost": 11.84,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Pilot Parallel Calligraphy Pen, 3.8 mm",
+        "body": "<p>A calligraphy pen that is well suited to Arabic script. Calligraphy students use it to practice Naskh and Ruqʿa.</p><ul><li>Nib made of two parallel plates, for sharp, clean strokes</li><li>3.8 mm stroke width</li><li>Refillable with ink cartridges; comes with black and red cartridges</li><li>From Pilot, a pen maker for more than 100 years</li></ul>"
+      },
+      "ar": {
+        "title": "قلم الخط Pilot Parallel، 3.8 مم",
+        "body": "<p>قلم خط مناسب جدًا للحرف العربي، يستعمله طلاب الخط للتدرّب على خط النسخ وخط الرقعة.</p><ul><li>ريشة من صفيحتين متوازيتين تعطي خطوطًا حادّة ونظيفة</li><li>عرض الخط 3.8 مم</li><li>يُعاد ملؤه بخراطيش الحبر، ويأتي مع خراطيش باللونين الأسود والأحمر</li><li>من Pilot التي تصنع الأقلام منذ أكثر من 100 عام</li></ul>",
+        "type": "خط عربي"
+      },
+      "publish": true
+    },
+    {
+      "handle": "brause-arabic-calligraphy-nibs-with-holder",
+      "asin": "B0CSN3SVKB",
+      "vendor": "Brause",
+      "type": "Arabic calligraphy",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.03,
+      "kg_source": "amazon (Amazon)",
+      "cost": 25.38,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Brause Arabic Calligraphy Nibs with Holder, 3 Sizes",
+        "body": "<p>A nib set for writing Arabic calligraphy by hand, made especially for Naskh.</p><ul><li>A wooden nib holder</li><li>3 bevelled (oblique) Arabic calligraphy nibs</li><li>Three widths: 1, 2 and 3 mm</li></ul><p><strong>Good to know:</strong> ink is not included.</p>"
+      },
+      "ar": {
+        "title": "ريش الخط العربي Brause مع حامل، 3 مقاسات",
+        "body": "<p>طقم ريشة الخط لكتابة الخط العربي باليد، مصنوع خصيصًا لخط النسخ.</p><ul><li>حامل ريشة من الخشب</li><li>3 ريش للخط العربي مقطوعة بشكل مائل</li><li>ثلاثة عروض: 1 و2 و3 مم</li></ul><p><strong>للعلم:</strong> الحبر غير مرفق.</p>",
+        "type": "خط عربي"
+      },
+      "publish": true
+    },
+    {
+      "handle": "hhhouu-calligraphy-set-dip-pen-nibs-ink",
+      "asin": "B07FFS542C",
+      "vendor": "hhhouu",
+      "type": "Dip pens & nibs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.14,
+      "kg_source": "amazon (Amazon)",
+      "cost": 15.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "hhhouu Calligraphy Set, Feather Dip Pen, Nibs and Ink",
+        "body": "<p>A calligraphy set for beginners, with a feather quill pen that you dip in ink. A popular gift.</p><ul><li>Feather quill dip pen</li><li>Several interchangeable nibs in different sizes</li><li>Ink included</li><li>Smooth ink flow</li></ul>"
+      },
+      "ar": {
+        "title": "طقم خط hhhouu، قلم ريشة للتغميس مع ريش وحبر",
+        "body": "<p>طقم خط للمبتدئين، فيه قلم بريشة طائر يُغمَّس في الحبر. هدية محبوبة.</p><ul><li>قلم للتغميس على شكل ريشة طائر</li><li>عدّة ريش قابلة للتبديل بأحجام مختلفة</li><li>الحبر مرفق</li><li>انسياب ناعم للحبر</li></ul>",
+        "type": "أقلام وريش غمس"
+      },
+      "publish": true
+    },
+    {
+      "handle": "tombow-fudenosuke-brush-pens-3-pack",
+      "asin": "B07DQ4292Y",
+      "vendor": "Tombow",
+      "type": "Brush pens & lettering",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.03,
+      "kg_source": "estimate",
+      "cost": 12.73,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Tombow Fudenosuke Brush Pens, Pack of 3",
+        "body": "<p>Three brush pens for hand lettering and drawing, with lines that change as you press.</p><ul><li>Soft tip, hard tip and twin-tip Fudenosuke pens</li><li>Flexible brush tip</li><li>Light pressure gives extra-fine strokes, more pressure gives medium strokes</li></ul>"
+      },
+      "ar": {
+        "title": "أقلام فرشاة Tombow Fudenosuke، 3 أقلام",
+        "body": "<p>ثلاثة أقلام فرشاة للكتابة اليدوية الفنية (lettering) والرسم، يتغيّر سُمك خطّها مع ضغط يدك.</p><ul><li>أقلام Fudenosuke برأس ليّن، ورأس قاسٍ، وقلم برأسين</li><li>رأس فرشاة مرن</li><li>ضغط خفيف لخطوط رفيعة جدًا، وضغط أقوى لخطوط متوسطة</li></ul>",
+        "type": "أقلام فرشاة وكتابة فنية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "kuretake-bimoji-brush-pens-set-of-5",
+      "asin": "B06Y138TX3",
+      "vendor": "Kuretake",
+      "type": "Brush pens & lettering",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.05,
+      "kg_source": "estimate",
+      "cost": 19.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Kuretake Bimoji Brush Pens, Set of 5",
+        "body": "<p>Japanese brush pens with rich black ink, for calligraphy practice, drawing and illustration.</p><ul><li>5 pens: extra fine, fine, medium, large and medium brush</li><li>Water-based pigment ink</li><li>Water-resistant once dry</li><li>Made in Japan</li></ul>"
+      },
+      "ar": {
+        "title": "أقلام فرشاة Kuretake Bimoji، طقم من 5",
+        "body": "<p>أقلام فرشاة يابانية بحبر أسود غني، للتدرّب على الخط والرسم والرسوم التوضيحية.</p><ul><li>5 أقلام: رفيع جدًا، رفيع، متوسط، كبير، وفرشاة متوسطة</li><li>حبر صبغي أساسه الماء</li><li>يقاوم الماء بعد أن يجف</li><li>صُنعت في اليابان</li></ul>",
+        "type": "أقلام فرشاة وكتابة فنية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "staedtler-brush-letter-duo-pens",
+      "asin": "B07C2SZ43V",
+      "vendor": "Staedtler",
+      "type": "Brush pens & lettering",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.1,
+      "kg_source": "amazon (Amazon)",
+      "cost": 11.68,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Staedtler Brush Letter Duo Brush Pens",
+        "body": "<p>Double-ended pens for brush lettering, for beginners and professionals alike.</p><ul><li>Two brush tips on each pen: super fine and broad</li><li>Lines from 6 mm down to 0.5 mm</li><li>Vivid colors</li></ul>"
+      },
+      "ar": {
+        "title": "أقلام فرشاة Staedtler Brush Letter Duo",
+        "body": "<p>أقلام برأسين للكتابة اليدوية الفنية بالفرشاة، للمبتدئين والمحترفين.</p><ul><li>رأسا فرشاة في كل قلم: رفيع جدًا وعريض</li><li>خطوط بعرض ⁦0.5–6⁩ مم</li><li>ألوان زاهية</li></ul>",
+        "type": "أقلام فرشاة وكتابة فنية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "das-air-dry-modeling-clay-white-1kg",
+      "asin": "B001GAP4YA",
+      "vendor": "DAS",
+      "type": "Clay",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.05,
+      "kg_source": "amazon (Amazon)",
+      "cost": 13.18,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "DAS Air-Dry Modeling Clay, White, 1 kg",
+        "body": "<p>Air-hardening clay for sculpting figures, models and decorations, with no oven needed.</p><ul><li>1 kg (2.2 lb) of white clay</li><li>Smooth and very easy to shape</li><li>Dries hard in the air</li><li>Can be painted once dry</li></ul>"
+      },
+      "ar": {
+        "title": "صلصال DAS يجف في الهواء، أبيض، 1 كغ",
+        "body": "<p>صلصال يتصلّب في الهواء من دون فرن، لتشكيل المجسّمات والتماثيل الصغيرة والزينة.</p><ul><li>1 كغ (2.2 رطل) من الصلصال الأبيض</li><li>ناعم وسهل التشكيل جدًا</li><li>يجف ويتصلّب في الهواء</li><li>يمكن تلوينه بعد أن يجف</li></ul>",
+        "type": "صلصال وطين"
+      },
+      "publish": true
+    },
+    {
+      "handle": "ciaraq-polymer-clay-kit-50-colors",
+      "asin": "B0C1686VFN",
+      "vendor": "CiaraQ",
+      "type": "Clay",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.6,
+      "kg_source": "estimate",
+      "cost": 17.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "CiaraQ Polymer Clay Kit, 50 Colors",
+        "body": "<p>A colorful polymer clay kit for beginners, and for kids working with an adult. The clay hardens when baked in the oven.</p><ul><li>50 colors, 20 g (0.70 oz) of each</li><li>Soft and not sticky, and stays soft until baked</li><li>14 clay tools and a tutorial book included</li><li>Conforms to ASTM D-4236</li></ul>"
+      },
+      "ar": {
+        "title": "طقم صلصال بوليمر CiaraQ، 50 لونًا",
+        "body": "<p>طقم صلصال بوليمر ملوّن للمبتدئين، وللأطفال بمرافقة شخص بالغ. يتصلّب الصلصال عند خبزه في الفرن.</p><ul><li>50 لونًا، 20 غ (0.70 أونصة) من كل لون</li><li>طريّ وغير لزج، ويبقى طريًّا حتى يُخبز</li><li>مع 14 أداة للصلصال وكتيّب تعليمي</li><li>مطابق لمعيار ASTM D-4236</li></ul>",
+        "type": "صلصال وطين"
+      },
+      "publish": true
+    },
+    {
+      "handle": "arteza-pottery-sculpting-tools-42-pieces",
+      "asin": "B06XG9XHCG",
+      "vendor": "ARTEZA",
+      "type": "Modelling tools",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.39,
+      "kg_source": "amazon (Amazon)",
+      "cost": 34.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "ARTEZA Pottery and Sculpting Tools, 42 Pieces",
+        "body": "<p>A large set of tools for working clay, from pottery to polymer and air-dry clay.</p><ul><li>42 tools for carving, cutting, shaping, smoothing and detailing</li><li>Wooden handles with steel ends</li><li>Loop, ribbon, modeling and detail tools</li><li>For pottery, ceramics, polymer clay and air-dry clay</li></ul>"
+      },
+      "ar": {
+        "title": "أدوات فخار ونحت ARTEZA، 42 قطعة",
+        "body": "<p>مجموعة كبيرة من الأدوات للعمل على الصلصال، من الفخار إلى صلصال البوليمر والصلصال الذي يجف في الهواء.</p><ul><li>42 أداة للحفر والقصّ والتشكيل والتنعيم وإضافة التفاصيل</li><li>مقابض خشبية وأطراف من الفولاذ</li><li>أدوات حلقية وشريطية، وأدوات للتشكيل وللتفاصيل</li><li>للفخار والسيراميك وصلصال البوليمر والصلصال الذي يجف في الهواء</li></ul>",
+        "type": "أدوات تشكيل"
+      },
+      "publish": true
+    },
+    {
+      "handle": "blisstime-clay-sculpting-tools-18-pieces",
+      "asin": "B0BZ7GMCST",
+      "vendor": "Blisstime",
+      "type": "Modelling tools",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.27,
+      "kg_source": "amazon (Amazon)",
+      "cost": 9.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Blisstime Clay Sculpting Tools, 18 Pieces",
+        "body": "<p>A basic set of tools for pottery and clay sculpting, good for getting started.</p><ul><li>18 basic tools, some with a tool at each end</li><li>Made of stainless steel and wood</li><li>Comes in a zipped tool bag</li></ul>"
+      },
+      "ar": {
+        "title": "أدوات نحت الصلصال Blisstime، 18 قطعة",
+        "body": "<p>مجموعة أساسية من أدوات الفخار ونحت الصلصال، مناسبة للبداية.</p><ul><li>18 أداة أساسية، بعضها بطرفين</li><li>من الفولاذ المقاوم للصدأ والخشب</li><li>تأتي في حقيبة أدوات بسحّاب</li></ul>",
+        "type": "أدوات تشكيل"
+      },
+      "publish": true
+    },
+    {
+      "handle": "bobblebro-linocut-printing-kit",
+      "asin": "B0FHKNWDKV",
+      "vendor": "Bobblebro",
+      "type": "Lino & block printing",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.5,
+      "kg_source": "estimate",
+      "cost": 25.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Bobblebro Linocut Printing Kit",
+        "body": "<p>Everything you need to start linocut: carve a design into the block, roll on the ink and print.</p><ul><li>4 linoleum blocks and a brayer (ink roller)</li><li>2.64 oz of black water-soluble block printing ink</li><li>A carving tool with 6 blades, from fine lines to clearing large areas</li><li>The ink cleans up with soapy water</li></ul>"
+      },
+      "ar": {
+        "title": "طقم طباعة لينوكت Bobblebro",
+        "body": "<p>كل ما تحتاجه لتبدأ بفن اللينوكت: تحفر رسمتك في القالب، تمرّر عليه الحبر ثم تطبع.</p><ul><li>4 قوالب لينوليوم وأسطوانة لفرد الحبر</li><li>2.64 أونصة من حبر طباعة أسود يذوب في الماء</li><li>أداة حفر مع 6 شفرات، من الخطوط الدقيقة إلى تفريغ المساحات الكبيرة</li><li>يُنظَّف الحبر بالماء والصابون</li></ul>",
+        "type": "حفر وطباعة لينو"
+      },
+      "publish": true
+    },
+    {
+      "handle": "speedball-block-printing-ink-4-colors",
+      "asin": "B004PZ1ZJG",
+      "vendor": "Speedball",
+      "type": "Lino & block printing",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.23,
+      "kg_source": "amazon (Amazon)",
+      "cost": 19.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Speedball Block Printing Ink, 4 Colors",
+        "body": "<p>A starter set of water-soluble ink in bold colors, for lino and block printing on paper.</p><ul><li>4 bold colors</li><li>A 37 ml (1.25 fl oz) tube of each color</li><li>Satin finish</li><li>Water-soluble, so it cleans up with water</li></ul>"
+      },
+      "ar": {
+        "title": "حبر طباعة القوالب Speedball، 4 ألوان",
+        "body": "<p>طقم للمبتدئين من حبر يذوب في الماء بألوان قوية، لطباعة اللينوليوم والقوالب على الورق.</p><ul><li>4 ألوان قوية</li><li>أنبوب 37 مل (1.25 أونصة سائلة) من كل لون</li><li>لمسة نهائية ساتان (نصف لامعة)</li><li>يذوب في الماء، فيُنظَّف بالماء</li></ul>",
+        "type": "حفر وطباعة لينو"
+      },
+      "publish": true
+    },
+    {
+      "handle": "ellayidoi-imitation-gold-leaf-200-sheets",
+      "asin": "B0BC3ZYT4K",
+      "vendor": "EllaYIDOI",
+      "type": "Gold leaf",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.08,
+      "kg_source": "amazon (Amazon)",
+      "cost": 9.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "EllaYIDOI Imitation Gold Leaf, 200 Sheets",
+        "body": "<p>Thin gold-colored sheets for gilding frames and furniture, and for decoupage, painting, resin and craft work.</p><ul><li>200 sheets, about 14 × 14 cm (5.5 × 5.5 in) each</li><li>Each sheet is kept between tissue papers</li><li>Copper-based imitation gold leaf</li></ul><p><strong>Good to know:</strong> this is imitation gold leaf, not real gold.</p>"
+      },
+      "ar": {
+        "title": "ورق ذهب مقلّد EllaYIDOI، 200 ورقة",
+        "body": "<p>أوراق رقيقة بلون الذهب لتذهيب الإطارات والأثاث، وللديكوباج والرسم والريزن والأشغال اليدوية.</p><ul><li>200 ورقة، قياس كل منها نحو ⁦14 × 14⁩ سم (⁦5.5 × 5.5⁩ إنش)</li><li>كل ورقة محفوظة بين أوراق رقيقة</li><li>ورق ذهب مقلّد أساسه النحاس</li></ul><p><strong>للعلم:</strong> هذا ورق ذهب مقلّد، وليس ذهبًا حقيقيًا.</p>",
+        "type": "ورق ذهب"
+      },
+      "publish": true
+    },
+    {
+      "handle": "wadities-gilding-adhesive-varnish-set",
+      "asin": "B0C5J13NYS",
+      "vendor": "Wadities",
+      "type": "Gold leaf",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.3,
+      "kg_source": "amazon (Amazon)",
+      "cost": 18.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Wadities Gilding Adhesive and Varnish Set",
+        "body": "<p>The glue and varnish for working with gold leaf: the glue holds the leaf in place, and the varnish protects it.</p><ul><li>100 ml gold leaf glue (size)</li><li>100 ml water-based varnish</li><li>Brushes included</li><li>Non-toxic and odorless; for wood, glass, plastic, metal and stone</li></ul>"
+      },
+      "ar": {
+        "title": "طقم غراء وورنيش للتذهيب Wadities",
+        "body": "<p>الغراء والورنيش اللازمان للعمل بورق الذهب: الغراء يثبّت الورق، والورنيش يحميه.</p><ul><li>100 مل غراء لورق الذهب</li><li>100 مل ورنيش أساسه الماء</li><li>مع فُرَش للدهن</li><li>غير سام ومن دون رائحة، للخشب والزجاج والبلاستيك والمعدن والحجر</li></ul>",
+        "type": "ورق ذهب"
+      },
+      "publish": true
+    },
+    {
+      "handle": "x-acto-1-precision-knife-z-series",
+      "asin": "B005KRSWM6",
+      "vendor": "X-ACTO",
+      "type": "Collage & cutting",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.05,
+      "kg_source": "estimate",
+      "cost": 7.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "X-ACTO #1 Precision Knife, Z-Series",
+        "body": "<p>A small craft knife for clean, precise cuts in paper, card and other thin materials.</p><ul><li>Metal handle</li><li>Z-Series blade with a zirconium nitride coating, sharper and longer lasting</li><li>Cuts paper, card, plastic, balsa wood, film and cloth</li></ul>"
+      },
+      "ar": {
+        "title": "مشرط دقيق X-ACTO #1، سلسلة Z",
+        "body": "<p>مشرط صغير لقصّ نظيف ودقيق في الورق والكرتون والمواد الرقيقة الأخرى.</p><ul><li>مقبض معدني</li><li>شفرة من سلسلة Z مغطّاة بنيتريد الزركونيوم، أحدّ وتدوم أطول</li><li>يقصّ الورق والكرتون والبلاستيك وخشب البلسا والأفلام الرقيقة والقماش</li></ul>",
+        "type": "قصّ وكولاج"
+      },
+      "publish": true
+    },
+    {
+      "handle": "fiskars-self-healing-cutting-mat-18x24",
+      "asin": "B003W0J9ES",
+      "vendor": "Fiskars",
+      "type": "Collage & cutting",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.68,
+      "kg_source": "amazon (Amazon)",
+      "cost": 18.37,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Fiskars Self-Healing Cutting Mat, 18 × 24 in",
+        "body": "<p>A gray mat that protects your table while you cut with a craft knife or rotary cutter.</p><ul><li>18 × 24 in (about 46 × 61 cm)</li><li>Measuring grid printed on the mat</li><li>Angle lines at 30°, 45° and 60°</li><li>Self-healing: the surface closes up again after cutting</li></ul>"
+      },
+      "ar": {
+        "title": "قاعدة قصّ Fiskars ذاتية الالتئام، ⁦18 × 24⁩ إنش",
+        "body": "<p>قاعدة رمادية تحمي الطاولة أثناء القصّ بالمشرط أو بالقطّاعة الدوّارة.</p><ul><li>⁦18 × 24⁩ إنش (نحو ⁦46 × 61⁩ سم)</li><li>شبكة قياس مطبوعة عليها</li><li>خطوط زوايا 30° و45° و60°</li><li>ذاتية الالتئام: يلتئم سطحها من جديد بعد القصّ</li></ul>",
+        "type": "قصّ وكولاج"
+      },
+      "publish": true
+    },
+    {
+      "handle": "viswin-h-frame-tabletop-easel-beech",
+      "asin": "B08ZNBZZMJ",
+      "vendor": "VISWIN",
+      "type": "Easels",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.2,
+      "kg_source": "estimate",
+      "cost": 25.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "VISWIN H-Frame Tabletop Easel, Beech Wood",
+        "body": "<p>A wooden easel for painting at a table, which also works as a display stand.</p><ul><li>German beech wood</li><li>Tilts from 0° to 90°</li><li>Height up to 64 cm (25 in)</li><li>Folds flat</li></ul>"
+      },
+      "ar": {
+        "title": "حامل رسم للطاولة VISWIN على شكل H، خشب الزان",
+        "body": "<p>حامل خشبي للرسم على الطاولة، ويصلح أيضًا لعرض اللوحات.</p><ul><li>من خشب الزان الألماني</li><li>زاوية الميل ⁦0°–90°⁩</li><li>ارتفاع حتى 64 سم (25 إنش)</li><li>ينطوي ويصبح مسطّحًا</li></ul>",
+        "type": "حوامل رسم"
+      },
+      "publish": true
+    },
+    {
+      "handle": "miratuso-tabletop-sketch-box-easel",
+      "asin": "B082HCKMP5",
+      "vendor": "Miratuso",
+      "type": "Easels",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.6,
+      "kg_source": "estimate",
+      "cost": 35.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Miratuso Tabletop Sketch Box Easel, Beech Wood",
+        "body": "<p>A storage box and a tabletop easel in one: keep your supplies inside, then open it up to paint.</p><ul><li>Hand-sanded beech wood, with rubber feet</li><li>Storage box with adjustable partitions</li><li>Holds canvases up to 53 cm (21 in) tall</li><li>Folded size: 37 × 27 × 9 cm (14.5 × 10.5 × 3.5 in)</li></ul>"
+      },
+      "ar": {
+        "title": "حامل رسم للطاولة بصندوق Miratuso، خشب الزان",
+        "body": "<p>صندوق تخزين وحامل رسم للطاولة في قطعة واحدة: تحفظ أدواتك في داخله، ثم تفتحه لترسم.</p><ul><li>خشب زان مصقول باليد، مع أرجل من المطاط</li><li>صندوق تخزين بفواصل قابلة للتعديل</li><li>يحمل لوحات قماش بارتفاع حتى 53 سم (21 إنش)</li><li>قياسه مطويًا: ⁦37 × 27 × 9⁩ سم (⁦14.5 × 10.5 × 3.5⁩ إنش)</li></ul>",
+        "type": "حوامل رسم"
+      },
+      "publish": true
+    },
+    {
+      "handle": "aredy-adjustable-metal-floor-easel",
+      "asin": "B0BHYH759M",
+      "vendor": "Aredy",
+      "type": "Easels",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.5,
+      "kg_source": "estimate",
+      "cost": 29.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Aredy Adjustable Metal Floor Easel, 44–168 cm",
+        "body": "<p>A light metal tripod easel for painting and for displaying work, easy to set up and take along.</p><ul><li>Height adjusts from 44 to 168 cm (17.3–66 in)</li><li>Folds down to 44 cm (17.3 in)</li><li>Light and portable, with a carry bag</li></ul>"
+      },
+      "ar": {
+        "title": "حامل رسم أرضي معدني Aredy قابل للتعديل، ⁦44–168⁩ سم",
+        "body": "<p>حامل ثلاثي القوائم من المعدن، خفيف وسهل التركيب، للرسم ولعرض الأعمال.</p><ul><li>ارتفاع قابل للتعديل ⁦44–168⁩ سم (⁦17.3–66⁩ إنش)</li><li>ينطوي حتى طول 44 سم (17.3 إنش)</li><li>خفيف وسهل الحمل، مع حقيبة للنقل</li></ul>",
+        "type": "حوامل رسم"
+      },
+      "publish": true
+    },
+    {
+      "handle": "tergoo-3-layer-art-craft-storage-box",
+      "asin": "B089Y69QGH",
+      "vendor": "TERGOO",
+      "type": "Art boxes & storage",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.8,
+      "kg_source": "estimate",
+      "cost": 20.89,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "TERGOO 3-Layer Art and Craft Storage Box, 12 in",
+        "body": "<p>A clear storage box with fold-out trays, to keep art and craft supplies tidy and easy to carry.</p><ul><li>Clear, thickened PP plastic</li><li>3 layers: 2 fold-out trays and a bottom section, with adjustable compartments</li><li>30 × 18 × 15 cm (12 × 7 × 6 in), with a built-in handle</li><li>For brushes, paints, pencils, beads and small tools</li></ul>"
+      },
+      "ar": {
+        "title": "علبة تخزين للرسم والأشغال اليدوية TERGOO بثلاث طبقات، 12 إنش",
+        "body": "<p>علبة شفافة بصوانٍ تنفتح إلى الخارج، ترتّب أدوات الرسم والأشغال اليدوية وتسهّل حملها.</p><ul><li>بلاستيك PP شفاف ومقوّى</li><li>3 طبقات: صينيتان تنفتحان إلى الخارج وقسم سفلي، مع خانات قابلة للتعديل</li><li>⁦30 × 18 × 15⁩ سم (⁦12 × 7 × 6⁩ إنش)، مع مقبض مدمج</li><li>للفُرَش والألوان والأقلام والخرز والأدوات الصغيرة</li></ul>",
+        "type": "صناديق وتخزين"
+      },
+      "publish": true
+    },
+    {
+      "handle": "litenergy-a4-led-tracing-light-box",
+      "asin": "B07H7FLJX1",
+      "vendor": "LitEnergy",
+      "type": "Light boxes",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.45,
+      "kg_source": "amazon (Amazon)",
+      "cost": 17.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "LitEnergy A4 LED Tracing Light Box",
+        "body": "<p>A thin light pad that lights your paper from below, for tracing, sketching, calligraphy and diamond painting.</p><ul><li>A4 size and only 5 mm thin</li><li>Even LED light with no flicker</li><li>Touch to dim the light gradually</li><li>Powered by a USB cable from a computer, power bank or USB charger</li></ul><p><strong>Good to know:</strong> it has no battery and is not rechargeable, so it works only while plugged in.</p>"
+      },
+      "ar": {
+        "title": "لوح إضاءة للشفّ LitEnergy LED، مقاس A4",
+        "body": "<p>لوح رقيق يضيء الورقة من تحتها، للشفّ والرسم التخطيطي وفن الخط ولوحات الألماس.</p><ul><li>مقاس A4 وسماكة 5 مم فقط</li><li>إضاءة LED متساوية من دون وميض</li><li>تخفيف الإضاءة تدريجيًا باللمس</li><li>يعمل بكابل USB من الكمبيوتر أو من بطارية خارجية (Power bank) أو شاحن USB</li></ul><p><strong>للعلم:</strong> ليس فيه بطارية ولا يُشحن، فيعمل فقط وهو موصول.</p>",
+        "type": "ألواح إضاءة"
+      },
+      "publish": true
+    },
+    {
+      "handle": "hsk-led-tracing-light-box-9x13",
+      "asin": "B0BC8MSPJ9",
+      "vendor": "HSK",
+      "type": "Light boxes",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.43,
+      "kg_source": "amazon (Amazon)",
+      "cost": 12.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "HSK LED Tracing Light Box, 9 × 13 in",
+        "body": "<p>A super-thin light pad with an aluminum frame, for tracing drawings over a light.</p><ul><li>9 × 13 in (about 23 × 33 cm)</li><li>Even light</li><li>Touch buttons for on/off and brightness, plus a lock button</li><li>Powered by USB</li></ul><p><strong>Good to know:</strong> it has no battery, so it works only while plugged in by USB.</p>"
+      },
+      "ar": {
+        "title": "لوح إضاءة للشفّ HSK LED، ⁦9 × 13⁩ إنش",
+        "body": "<p>لوح إضاءة رقيق جدًا بإطار من الألمنيوم، لشفّ الرسومات ونسخها.</p><ul><li>⁦9 × 13⁩ إنش (نحو ⁦23 × 33⁩ سم)</li><li>إضاءة متساوية</li><li>أزرار لمس للتشغيل والإطفاء وضبط الإضاءة، وزر للقفل</li><li>يعمل عبر USB</li></ul><p><strong>للعلم:</strong> ليس فيه بطارية، فيعمل فقط وهو موصول عبر USB.</p>",
+        "type": "ألواح إضاءة"
+      },
+      "publish": true
+    },
+    {
+      "handle": "conda-cotton-canvas-artist-apron",
+      "asin": "B01F511W1E",
+      "vendor": "conda",
+      "type": "Aprons",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.22,
+      "kg_source": "amazon (Amazon)",
+      "cost": 6.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "conda Cotton Canvas Artist Apron",
+        "body": "<p>A cotton apron that keeps paint off your clothes, with pockets for brushes and tools.</p><ul><li>100% cotton canvas</li><li>One size, 65 × 78 cm (25.6 × 30.7 in), with long waist ties</li><li>Soft neck strap</li><li>3 pockets: 2 slanted side pockets and 1 chest pocket</li></ul>"
+      },
+      "ar": {
+        "title": "مريول رسم conda من قماش القطن",
+        "body": "<p>مريول قطني يحمي ثيابك من الألوان، مع جيوب للفُرَش والأدوات.</p><ul><li>قماش كانفاس قطن 100%</li><li>مقاس واحد، ⁦65 × 78⁩ سم (⁦25.6 × 30.7⁩ إنش)، مع أربطة طويلة للخصر</li><li>حزام رقبة ناعم</li><li>3 جيوب: جيبان جانبيان مائلان وجيب على الصدر</li></ul>",
+        "type": "مرايل"
+      },
+      "publish": true
+    },
+    {
+      "handle": "upsimples-picture-frames-8x10-set-of-5-black",
+      "asin": "B08XVP48KQ",
+      "vendor": "upsimples",
+      "type": "Frames",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.3,
+      "kg_source": "estimate",
+      "cost": 17.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "upsimples Picture Frames, 8 × 10 in, Set of 5, Black",
+        "body": "<p>Simple black frames for photos, prints and artwork.</p><ul><li>Set of 5 black frames</li><li>Fits an 8 × 10 in picture without the mat, or 5 × 7 in with the mat</li><li>Light but firm</li><li>Hangs horizontally or vertically</li></ul><p><strong>Good to know:</strong> the front is clear HD plastic, not glass, so it is safer around kids.</p>"
+      },
+      "ar": {
+        "title": "إطارات صور upsimples، ⁦8 × 10⁩ إنش، طقم من 5، أسود",
+        "body": "<p>إطارات سوداء بسيطة للصور والرسومات والأعمال الفنية.</p><ul><li>طقم من 5 إطارات سوداء</li><li>تتسع لصورة ⁦8 × 10⁩ إنش من دون الإطار الداخلي (الماونت)، أو ⁦5 × 7⁩ إنش معه</li><li>خفيفة لكنها متينة</li><li>تُعلَّق بالطول أو بالعرض</li></ul><p><strong>للعلم:</strong> الواجهة من بلاستيك شفاف عالي الوضوح وليست من الزجاج، فهي أكثر أمانًا حول الأطفال.</p>",
+        "type": "براويز"
+      },
+      "publish": true
+    },
+    {
+      "handle": "wacom-intuos-small-drawing-tablet-wired",
+      "asin": "B079HL9YSF",
+      "vendor": "Wacom",
+      "type": "Drawing tablets",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.5,
+      "kg_source": "estimate",
+      "cost": 39.95,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Wacom Intuos Small Drawing Tablet, Wired",
+        "body": "<p>A pen tablet for drawing, photo editing and design on your computer.</p><ul><li>Pressure-sensitive pen that needs no battery</li><li>Works with any software</li><li>Connects by USB cable</li><li>Creative software and training to download when you register the tablet</li></ul><p><strong>Good to know:</strong> a computer is needed; the tablet connects to it by USB and does not work on its own.</p>"
+      },
+      "ar": {
+        "title": "لوح رسم Wacom Intuos Small، سلكي",
+        "body": "<p>لوح رسم بالقلم للرسم وتعديل الصور والتصميم على الكمبيوتر.</p><ul><li>قلم حسّاس للضغط لا يحتاج إلى بطارية</li><li>يعمل مع أي برنامج</li><li>يتّصل بكابل USB</li><li>برامج إبداعية ودروس تدريبية للتحميل عند تسجيل اللوح</li></ul><p><strong>للعلم:</strong> تحتاج إلى كمبيوتر، فاللوح يتّصل به عبر USB ولا يعمل وحده.</p>",
+        "type": "ألواح رسم رقمية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "ugee-m708-drawing-tablet-10x6",
+      "asin": "B07P82FSFW",
+      "vendor": "UGEE",
+      "type": "Drawing tablets",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.8,
+      "kg_source": "estimate",
+      "cost": 41.95,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "UGEE M708 Drawing Tablet, 10 × 6 in",
+        "body": "<p>A drawing tablet with a paper-like surface, for drawing and design on a computer.</p><ul><li>10 × 6 in drawing area (about 25 × 15 cm), with a paper-like texture</li><li>Battery-free pen with 16,384 pressure levels</li><li>8 shortcut keys you can set yourself</li><li>Works with Windows, macOS, Linux, Chromebook and Android; connects by USB</li></ul><p><strong>Good to know:</strong> a computer is needed (or a supported Android device); the tablet connects by USB and does not work on its own.</p>"
+      },
+      "ar": {
+        "title": "لوح رسم UGEE M708، ⁦10 × 6⁩ إنش",
+        "body": "<p>لوح رسم بسطح يشبه ملمس الورق، للرسم والتصميم على الكمبيوتر.</p><ul><li>مساحة رسم ⁦10 × 6⁩ إنش (نحو ⁦25 × 15⁩ سم)، بملمس يشبه الورق</li><li>قلم بلا بطارية مع 16,384 مستوى ضغط</li><li>8 أزرار اختصار يمكنك ضبطها كما تريد</li><li>يعمل مع Windows وmacOS وLinux وChromebook وAndroid، ويتّصل عبر USB</li></ul><p><strong>للعلم:</strong> تحتاج إلى كمبيوتر (أو جهاز Android متوافق)، فاللوح يتّصل عبر USB ولا يعمل وحده.</p>",
+        "type": "ألواح رسم رقمية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "huion-kamvas-pro-16-pen-display",
+      "asin": "B07S7BCTWW",
+      "vendor": "HUION",
+      "type": "Drawing tablets",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 2.0,
+      "kg_source": "estimate",
+      "cost": 265.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "HUION Kamvas Pro 16 Pen Display, 15.6 in",
+        "body": "<p>A pen display: you draw directly on the screen, with the image right under your pen.</p><ul><li>15.6 in fully laminated HD screen with anti-glare glass</li><li>PW507 pen with 8,192 pressure levels and 60° tilt, no battery needed</li><li>6 express keys and a touch bar</li></ul><p><strong>Good to know:</strong> a computer is needed; this is a screen to draw on that connects to a computer, not a standalone tablet.</p>"
+      },
+      "ar": {
+        "title": "شاشة رسم HUION Kamvas Pro 16، مقاس 15.6 إنش",
+        "body": "<p>شاشة رسم بالقلم: ترسم مباشرة على الشاشة، والصورة تحت قلمك.</p><ul><li>شاشة HD مقاس 15.6 إنش، مصفّحة بالكامل، بزجاج مضاد للانعكاس</li><li>قلم PW507 بلا بطارية، مع 8,192 مستوى ضغط وإمالة حتى 60°</li><li>6 أزرار سريعة وشريط لمس</li></ul><p><strong>للعلم:</strong> تحتاج إلى كمبيوتر، فهذه شاشة للرسم توصَل بالكمبيوتر وليست جهازًا مستقلًا.</p>",
+        "type": "ألواح رسم رقمية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "crayola-create-n-carry-travel-art-set-75-pieces",
+      "asin": "B01CIMC95Q",
+      "vendor": "Crayola",
+      "type": "Kids' art",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.8,
+      "kg_source": "amazon (Amazon)",
+      "cost": 22.55,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Crayola Create 'N Carry Travel Art Set, 75 Pieces",
+        "body": "<p>A kids' art set in a case that doubles as a lap desk, for coloring at home or on the go.</p><ul><li>16 crayons made for construction paper</li><li>8 washable Gel FX markers and 8 Fine Line markers</li><li>12 short colored pencils</li><li>30 sheets of construction paper</li></ul>"
+      },
+      "ar": {
+        "title": "طقم رسم Crayola Create 'N Carry للسفر، 75 قطعة",
+        "body": "<p>طقم رسم للأطفال في علبة تصبح طاولة صغيرة على الركبتين، للتلوين في البيت أو أثناء التنقّل.</p><ul><li>16 قلم شمع مخصّصًا للورق الملوّن المقوّى</li><li>8 أقلام Gel FX قابلة للغسل و8 أقلام Fine Line</li><li>12 قلم تلوين خشبيًا قصيرًا</li><li>30 ورقة من الورق الملوّن المقوّى</li></ul>",
+        "type": "فنون للأطفال"
+      },
+      "publish": true
+    },
+    {
+      "handle": "ibayam-deluxe-art-set-150-pieces",
+      "asin": "B08JCD4PS6",
+      "vendor": "iBayam",
+      "type": "Kids' art",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.2,
+      "kg_source": "estimate",
+      "cost": 32.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "iBayam Deluxe Art Set, 150 Pieces",
+        "body": "<p>A big art set in a wooden case, packed in a gift box, for kids and adults.</p><ul><li>24 colored pencils</li><li>24 oil pastels</li><li>24 watercolor cakes</li><li>Crayons, markers, brushes and more</li></ul>"
+      },
+      "ar": {
+        "title": "طقم رسم iBayam Deluxe، 150 قطعة",
+        "body": "<p>طقم رسم كبير في علبة خشبية داخل علبة هدايا، للأطفال والكبار.</p><ul><li>24 قلم تلوين خشبيًا</li><li>24 قلم باستيل زيتيًا</li><li>24 قرص ألوان مائية</li><li>أقلام شمع وأقلام ماركر وفُرَش وغيرها</li></ul>",
+        "type": "فنون للأطفال"
+      },
+      "publish": true
+    },
+    {
+      "handle": "prina-drawing-sketching-kit-76-pieces",
+      "asin": "B092Z1PYCD",
+      "vendor": "PRINA",
+      "type": "Starter & gift sets",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.9,
+      "kg_source": "estimate",
+      "cost": 24.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "PRINA Drawing and Sketching Kit, 76 Pieces",
+        "body": "<p>A kit for learning to sketch and shade, with pencils, charcoal and a sketch pad.</p><ul><li>Graphite, charcoal (black and white) and colored pencils, plus sticks and a water brush pen</li><li>Vinyl and kneaded erasers, sandpaper and blending stumps</li><li>A 6 × 9 in spiral sketch pad with white, toned tan and gray pages</li><li>A 7-step drawing tutorial</li></ul>"
+      },
+      "ar": {
+        "title": "طقم رسم وتخطيط PRINA، 76 قطعة",
+        "body": "<p>طقم لتعلّم الرسم والتظليل، فيه أقلام وفحم ودفتر رسم.</p><ul><li>أقلام غرافيت وفحم (أسود وأبيض) وأقلام تلوين، مع أصابع رسم وقلم فرشاة مائي</li><li>ممحاة فينيل وممحاة عجين، وورق صنفرة وأقلام تمويه (blending stumps)</li><li>دفتر رسم بسلك ⁦6 × 9⁩ إنش، بصفحات بيضاء وبنية فاتحة ورمادية</li><li>دليل رسم من 7 خطوات</li></ul>",
+        "type": "أطقم مبتدئين وهدايا"
+      },
+      "publish": true
+    },
+    {
+      "handle": "tmol-deluxe-art-set-175-pieces",
+      "asin": "B09D3R2692",
+      "vendor": "TMOL",
+      "type": "Starter & gift sets",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.8,
+      "kg_source": "estimate",
+      "cost": 39.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "TMOL Deluxe Art Set, 175 Pieces",
+        "body": "<p>A large art set in a pine wood case, for students and hobbyists, or as a gift.</p><ul><li>Crayons, oil pastels and colored pencils</li><li>Watercolor cakes and acrylic paints, with brushes</li><li>Sketching pencils and 2 drawing pads</li><li>And more: 175 pieces in all</li></ul>"
+      },
+      "ar": {
+        "title": "طقم رسم TMOL Deluxe، 175 قطعة",
+        "body": "<p>طقم رسم كبير في علبة من خشب الصنوبر، للطلاب والهواة أو كهدية.</p><ul><li>أقلام شمع وألوان باستيل زيتية وأقلام تلوين خشبية</li><li>أقراص ألوان مائية وألوان أكريليك، مع فُرَش</li><li>أقلام رسم ودفترا رسم</li><li>وغيرها: 175 قطعة في المجموع</li></ul>",
+        "type": "أطقم مبتدئين وهدايا"
+      },
+      "publish": true
     }
   ]
 }
