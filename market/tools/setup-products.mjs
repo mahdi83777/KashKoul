@@ -4,14 +4,15 @@
 // compare-at price, an optional fixed price, option names and values (with Arabic), fewer photos, and the stock
 // state on the first run (in stock with a quantity, or on order = 0 with "continue selling"); after that the stock
 // belongs to the owner in the admin. Entries with `kg` are priced by the agreed rule (step 6, option 2):
-//   price = round_up((cost + kg × $15) × 1.2) − 0.01, cost = the Amazon price, kept in "Cost per item"
+//   price = round_up((cost + kg × $20) × 1.3) − 0.01, cost = the Amazon price, kept in "Cost per item"
 // (first run: the price the importer set). `kg` is one weight, or one per variant title. Entries with `collection` go into that category, and `publish: true`
 // sets them Active on the Online Store. Products are found by handle, the importer's handle, or Amazon ID (SKU).
 // Safe to re-run: prices always start from the saved cost, so they never compound.
 //
 //   shopify store auth --store <store> --scopes read_products,write_products,read_translations,write_translations,\
 //     read_inventory,write_inventory,read_locations,read_publications,write_publications
-//   node market/tools/setup-products.mjs [--store kashkoul-market-fhsuuq5c.myshopify.com] [--only <handle>]
+//   node market/tools/setup-products.mjs [--store kashkoul-market-fhsuuq5c.myshopify.com] [--only <handle>] [--shard 1/4]
+// --shard k/n runs every n-th product starting at the k-th, so n runs side by side cover the whole list faster.
 // Without the inventory scopes, everything but the stock quantities is applied and the script says so.
 import { randomUUID } from 'node:crypto';
 import { readFileSync } from 'node:fs';
@@ -23,6 +24,8 @@ const market = join(dirname(fileURLToPath(import.meta.url)), '..');
 const { products } = JSON.parse(readFileSync(join(market, 'store', 'products.json'), 'utf8'));
 const argOnly = process.argv.indexOf('--only');
 const only = argOnly > -1 ? process.argv[argOnly + 1] : null;
+const argShard = process.argv.indexOf('--shard');
+const [shard, shards] = argShard > -1 ? process.argv[argShard + 1].split('/').map(Number) : [1, 1];
 
 const PRODUCT = `id handle status
   options { id name optionValues { id name } }
@@ -30,8 +33,8 @@ const PRODUCT = `id handle status
   media(first: 250) { nodes { id } }
   collections(first: 20) { nodes { handle } }`;
 
-// The agreed price rule (option 2): Amazon price + shipping by real weight, plus 20%, ending in .99.
-const SHIPPING_PER_KG = 15, MARGIN = 1.2;
+// The agreed price rule (option 2): Amazon price + shipping by real weight, plus 30%, ending in .99.
+const SHIPPING_PER_KG = 20, MARGIN = 1.3;
 const priceFor = (cost, kg) => (Math.ceil((Number(cost) + kg * SHIPPING_PER_KG) * MARGIN) - 0.01).toFixed(2);
 
 function find(handle) {
@@ -65,8 +68,9 @@ try {
   console.log('stock       skipped: the store auth has no inventory/locations access (see the auth command at the top)');
 }
 
-for (const spec of products) {
+for (const [n, spec] of products.entries()) {
   if (only && spec.handle !== only) continue;
+  if (n % shards !== shard - 1) continue;
   let p = find(spec.handle) ?? (spec.from_handle && find(spec.from_handle)) ?? (spec.asin && findByAsin(spec.asin));
   if (!p) { console.log(`product     ${spec.handle}  NOT FOUND (import it first)`); continue; }
   const id = p.id;

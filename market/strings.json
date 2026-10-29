@@ -35,8 +35,9 @@
     },
     "categories": {
       "instruments": "Instruments",
-      "strings": "Strings & accessories",
-      "studio": "Studio & recording",
+      "strings": "Accessories",
+      "studio": "Studio & sound",
+      "vinyl": "Vinyl & hi-fi",
       "art": "Art supplies",
       "books": "Books & sheet music",
       "all": "All products"
@@ -359,8 +360,9 @@
     },
     "categories": {
       "instruments": "آلات موسيقية",
-      "strings": "أوتار وإكسسوارات",
-      "studio": "استوديو وتسجيل",
+      "strings": "إكسسوارات",
+      "studio": "استوديو وصوت",
+      "vinyl": "فينيل وهاي فاي",
       "art": "لوازم فنية",
       "books": "كتب ونوتات موسيقية",
       "all": "كل المنتجات"

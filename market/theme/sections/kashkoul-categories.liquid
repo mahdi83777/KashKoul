@@ -1,8 +1,9 @@
 {%- comment -%}
   "Shop by category": one card per block. A card links to its collection and shows, in order of preference:
   the photo picked on the card, the collection's own image, the theme's photo for that kind of card, or a colored
-  tile with an icon. The kind (instruments, strings, studio, art, books) sets the defaults. Photos are toned brick-and-mustard
-  (setting "duotone") so every card looks like one family.
+  tile with an icon. The kind (instruments, strings = Accessories, studio, art, vinyl, books) sets the defaults. Studio & sound
+  has no theme photo: it shows its collection's image, set in the admin (Products → Collections). Photos are toned
+  brick-and-mustard (setting "duotone") so every card looks like one family. A category with no products yet isn't shown.
 {%- endcomment -%}
 {%- liquid
   assign kk_title = section.settings.title | escape
@@ -37,10 +38,15 @@
               assign kk_fg = '#66261c'
             when 'studio'
               assign kk_handle = 'studio-recording'
+              assign kk_photo = blank
+              assign kk_bg = '#3d150f'
+              assign kk_fg = '#dabd5c'
+            when 'vinyl'
+              assign kk_handle = 'vinyl-hifi'
               assign kk_photo = 'kashkoul-photo-studio.jpg'
               assign kk_photo_w = 810
               assign kk_photo_h = 1012
-              assign kk_bg = '#3d150f'
+              assign kk_bg = '#2b2b2b'
               assign kk_fg = '#dabd5c'
             when 'art'
               assign kk_handle = 'art-supplies'
@@ -57,6 +63,9 @@
               assign kk_bg = '#e2d6c8'
               assign kk_fg = '#66261c'
           endcase
+          if c == blank and collections[kk_handle].all_products_count == 0
+            continue
+          endif
           assign kk_name = block.settings.name | escape
           if kk_name == blank
             assign kk_key = 'kashkoul.categories.' | append: kind
@@ -68,12 +77,15 @@
             assign kk_url = routes.collections_url | append: '/' | append: kk_handle
           endif
           assign kk_image = block.settings.image | default: c.featured_image
+          if kk_image == blank and kk_photo == blank
+            assign kk_image = collections[kk_handle].image
+          endif
         -%}
         <a class="kk-cat" href="{{ kk_url }}" {{ block.shopify_attributes }}>
           <span class="kk-cat__media{% if section.settings.duotone %} kk-cat__media--duotone{% endif %}" style="background: {{ kk_bg }}; color: {{ kk_fg }}">
             {%- if kk_image != blank -%}
               {{ kk_image | image_url: width: 900 | image_tag: widths: '300, 450, 600, 900', sizes: '(min-width: 990px) 280px, 50vw', loading: 'lazy', alt: '' }}
-            {%- elsif block.settings.use_photo -%}
+            {%- elsif block.settings.use_photo and kk_photo != blank -%}
               <img src="{{ kk_photo | asset_url }}" alt="" width="{{ kk_photo_w }}" height="{{ kk_photo_h }}" loading="lazy">
             {%- else -%}
               {%- case kind -%}
@@ -83,6 +95,8 @@
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".9" aria-hidden="true"><path d="M8 3v18M12 3v18M16 3v18"/><circle cx="8" cy="5" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="16" cy="5" r="1"/></svg>
                 {%- when 'studio' -%}
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".9" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0 0 12 0M12 17v4M9 21h6"/></svg>
+                {%- when 'vinyl' -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".9" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r=".6"/><path d="M12 5.5a6.5 6.5 0 0 1 6.5 6.5"/></svg>
                 {%- when 'art' -%}
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".9" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 2-2s-1-1.5-1-2.5 1-1.5 2-1.5h2a4 4 0 0 0 4-4c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7" r="1"/></svg>
                 {%- else -%}
@@ -118,9 +132,10 @@
           "label": "Kind",
           "options": [
             { "value": "instruments", "label": "Instruments" },
-            { "value": "strings", "label": "Strings & accessories" },
-            { "value": "studio", "label": "Studio & recording" },
+            { "value": "strings", "label": "Accessories" },
+            { "value": "studio", "label": "Studio & sound" },
             { "value": "art", "label": "Art supplies" },
+            { "value": "vinyl", "label": "Vinyl & hi-fi" },
             { "value": "books", "label": "Books & sheet music" }
           ],
           "default": "instruments",
@@ -141,6 +156,7 @@
         { "type": "category", "settings": { "kind": "strings" } },
         { "type": "category", "settings": { "kind": "studio" } },
         { "type": "category", "settings": { "kind": "art" } },
+        { "type": "category", "settings": { "kind": "vinyl" } },
         { "type": "category", "settings": { "kind": "books" } }
       ]
     }

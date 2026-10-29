@@ -9,7 +9,7 @@ answers:
 3. Short names, without losing the meaning of the main categories.
 4. Turntables go in Vinyl & hi-fi; headphones in Studio headphones; stands in Instrument stands.
 
-**Status:** approved 2026-10-29. Being set up in Shopify (step 6, roadmap).
+**Status:** approved 2026-10-29, set up in Shopify 2026-10-30 (`market/store/content.json`, applied by `market/tools/setup-store.mjs`). Sub-categories with no products yet stay out of the menu until they have some.
 
 **How it works in the shop:** the categories and sub-categories are the menu, the category tabs and the photo tiles;
 the product types are the **Type** filter. Each sub-category is an automatic collection of its types, so a product
@@ -114,3 +114,73 @@ stands → Instrument stands.
 
 **Renamed:** "Orchestral Strings" → "Violin & viola", since cello and double bass are out. "Strings" now always comes
 with its instrument (Oriental strings, Guitar & bass strings, Violin strings), so no two types share a name.
+
+---
+
+## Setting it up in Shopify
+
+Each category and sub-category is a collection: its address (handle) and the one line shown under its title on the
+shop page, in English and Arabic. The five existing categories keep their addresses, so links already shared still
+work; the old sub-categories' addresses are redirected to their new homes.
+
+### Categories
+
+| Category | Address | One line (EN) | One line (AR) |
+|---|---|---|---|
+| Instruments | `instruments` (kept) | Ouds, guitars, violins, percussion and more, for beginners and players alike. | أعواد وغيتارات وكمانات وآلات إيقاع وغيرها، للمبتدئين والعازفين على حدّ سواء. |
+| Accessories | `strings-accessories` (kept) | Strings, picks, reeds, stands and cases for every instrument. | أوتار وريش وقصبات وحوامل وحقائب لكل آلة. |
+| Studio & sound | `studio-recording` (kept) | Microphones, headphones, amps and DJ gear for home and studio. | ميكروفونات وسماعات ومضخّمات ومعدات DJ للبيت والاستوديو. |
+| Art supplies | `art-supplies` (kept) | Paints, pencils, paper, canvas and tools for every kind of artist. | ألوان وأقلام وورق وكانفاس وأدوات لكل فنان. |
+| Vinyl & hi-fi | `vinyl-hifi` (new) | Records, turntables and hi-fi, and everything to look after them. | أسطوانات ومشغّلات وأجهزة هاي فاي، وكل ما يلزم للعناية بها. |
+| Books & sheet music | `books-sheet-music` (kept) | Method books, sheet music, theory and reading for musicians and artists. | كتب تعليم ونوتات ونظرية وقراءة للموسيقيين والفنانين. |
+
+### Sub-categories
+
+| Sub-category | Address | One line (EN) | One line (AR) |
+|---|---|---|---|
+| **Instruments** | | | |
+| Oriental | `oriental-instruments` | Oud, qanun, buzuq, ney and the percussion of Arabic music. | عود وقانون وبزق وناي، وإيقاعات الموسيقى العربية. |
+| Guitars & basses | `guitars-basses` | Classical, acoustic, electric and bass guitars, ukuleles and more. | غيتارات كلاسيك وأكوستيك وكهربائية وباص، ويوكوليلي وغيرها. |
+| Pianos & keyboards | `pianos-keyboards` | Digital pianos with weighted keys, keyboards, accordions and melodicas. | بيانوهات رقمية بمفاتيح ثقيلة، وكيبوردات وأكورديون وميلوديكا. |
+| Drums & percussion | `drums-percussion` | Electronic drums, cymbals, hand drums and small percussion. | طبول إلكترونية وصنوج وطبول يدوية وإيقاع صغير. |
+| Violin & viola | `violin-viola` | Violin and viola outfits in every size, from small children to full size. | أطقم كمان وفيولا بكل المقاسات، من الأطفال إلى الحجم الكامل. |
+| Winds & brass | `winds-brass` | Flutes, clarinets, saxophones, trumpets, recorders and harmonicas. | فلوت وكلارينيت وساكسوفون وترومبيت وريكوردر وهارمونيكا. |
+| **Accessories** | | | |
+| Oriental | `oriental-accessories` | Strings, risha, qanun rings and darbuka skins. | أوتار وريشة وخواتم قانون وجلود دربكة. |
+| Guitar & bass | `guitar-bass-accessories` | Strings, picks, capos, straps, pickups and parts. | أوتار وريش وكابو وأحزمة وبيك أب وقطع. |
+| Violin & viola | `violin-viola-accessories` | Strings, bows, rosin, shoulder rests and mutes. | أوتار وأقواس وقلفونية ومساند كتف وكاتمات صوت. |
+| Winds & brass | `winds-brass-accessories` | Reeds, mouthpieces, ligatures, swabs and oils. | قصبات ومباسم وأربطة وأدوات تنظيف وزيوت. |
+| Drums & percussion | `drums-percussion-accessories` | Sticks, mallets, drum heads, practice pads and pedals. | عصي ومضارب وجلود طبول ووسادات تمرين ودواسات. |
+| Keyboard | `keyboard-accessories` | Sustain pedals, piano benches and covers. | دواسات سستين ومقاعد بيانو وأغطية. |
+| Essentials | `essentials` | Tuners, metronomes, stands, cases and care for every instrument. | دوزان ومترونوم وحوامل وحقائب وعناية لكل آلة. |
+| **Studio & sound** | | | |
+| Recording & mixing | `recording-mixing` | Microphones, audio interfaces, recorders, podcast kits and mixers. | ميكروفونات وكروت صوت ومسجّلات وعدّة بودكاست وميكسرات. |
+| Monitors & headphones | `monitors-headphones` | Studio monitors, headphones and in-ear monitors to hear every detail. | سماعات مونيتور وسماعات رأس وداخل الأذن لسماع كل التفاصيل. |
+| Amps & effects | `amps-effects` | Amps for guitar, bass and keyboard, pedals and multi-effects. | مضخّمات للغيتار والباص والكيبورد، ودواسات ومؤثرات متعددة. |
+| DJ & electronic | `dj-electronic` | DJ controllers and mixers, synthesizers, drum machines and MIDI. | وحدات تحكّم وميكسرات DJ، وسينثسايزر ودرام ماشين وMIDI. |
+| Cables & stands | `cables-stands` | Cables, adapters, mic stands, pop filters and acoustic panels. | كابلات ومحوّلات وحوامل ميكروفون وفلاتر وألواح عزل. |
+| **Art supplies** | | | |
+| Painting | `painting` | Acrylic, oil and watercolor paints, mediums, brushes and palettes. | ألوان أكريليك وزيتية ومائية، ووسائط وفُرَش وباليتات. |
+| Drawing & ink | `drawing-ink` | Pencils, charcoal, pastels, markers, inks and erasers. | أقلام رصاص وملوّنة وفحم وباستيل وماركر وأحبار ومماحٍ. |
+| Paper & canvas | `paper-canvas` | Sketchbooks, drawing pads, watercolor paper, canvas and panels. | دفاتر وبلوكات رسم، وورق ألوان مائية، وكانفاس وألواح. |
+| Calligraphy & lettering | `calligraphy-lettering` | Arabic calligraphy, dip pens and nibs, and brush pens. | خط عربي وأقلام وريش غمس وأقلام فرشاة. |
+| Sculpture & craft | `sculpture-craft` | Clay, modelling tools, lino printing, gold leaf and collage. | صلصال وأدوات تشكيل وطباعة لينو وورق ذهب وكولاج. |
+| Studio & digital | `art-studio-digital` | Easels, storage, light boxes, aprons, frames and drawing tablets. | حوامل رسم وصناديق وألواح إضاءة ومرايل وبراويز وألواح رقمية. |
+| Kids & gift sets | `kids-gift-sets` | Art for kids, and starter and gift sets for every age. | فنون للأطفال، وأطقم مبتدئين وهدايا لكل الأعمار. |
+| **Vinyl & hi-fi** | | | |
+| Vinyl records | `vinyl-records` | New records on vinyl: LPs, 45s and singles. | أسطوانات فينيل جديدة: ألبومات LP وأسطوانات 45 وسنغل. |
+| Cassettes & CDs | `cassettes-cds` | Albums on cassette and CD. | ألبومات على كاسيت وسي دي. |
+| Turntables & hi-fi | `turntables-hifi` | Turntables, hi-fi speakers, amplifiers, cartridges and styluses. | مشغّلات أسطوانات وسماعات هاي فاي ومضخّمات ورؤوس وإبر. |
+| Record care | `record-care` | Sleeves, cleaning kits, crates and displays for your records. | أغلفة وأطقم تنظيف وصناديق وعرض لأسطواناتك. |
+| **Books & sheet music** | | | |
+| Method books | `method-books` | Learn to play step by step, with method books for every instrument. | تعلّم العزف خطوة بخطوة، بكتب تعليم لكل آلة. |
+| Sheet music & songbooks | `sheet-music-songbooks` | Sheet music, scores and songbooks to play from. | نوتات وبارتيتورات وكتب أغانٍ للعزف. |
+| Theory & practice | `theory-practice` | Music theory, maqam, solfège and manuscript paper. | نظرية الموسيقى والمقامات والصولفيج ودفاتر النوتة. |
+| Reading | `reading` | Books on art technique, history and the lives of artists. | كتب عن تقنيات الفن وتاريخه وسير الفنانين. |
+
+### Old sub-categories → redirected to
+
+`oud-saz`, `qanun`, `ney-flutes` → Oriental instruments · `violin` → Violin & viola · `guitar-ukulele` → Guitars & basses ·
+`piano-keys` → Pianos & keyboards · `winds` → Winds & brass · `percussion` → Drums & percussion · `strings` →
+Accessories · `picks-small-parts` → Guitar & bass accessories · `reeds-care` → Winds & brass accessories ·
+`cases-stands` → Essentials · `amps-pedals-cables` → Amps & effects

@@ -55,6 +55,14 @@
             "use_photo": true
           }
         },
+        "cat_vinyl": {
+          "type": "category",
+          "settings": {
+            "kind": "vinyl",
+            "name": "",
+            "use_photo": true
+          }
+        },
         "cat_books": {
           "type": "category",
           "settings": {
@@ -69,6 +77,7 @@
         "cat_strings",
         "cat_studio",
         "cat_art",
+        "cat_vinyl",
         "cat_books"
       ],
       "settings": {

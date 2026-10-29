@@ -15,289 +15,848 @@
     {
       "handle": "strings-accessories",
       "en": {
-        "title": "Strings & accessories",
-        "body": "<p>Strings, picks, tuners, cases and stands: the small things every player needs.</p>"
+        "title": "Accessories",
+        "body": "<p>Strings, picks, reeds, stands and cases for every instrument.</p>"
       },
       "ar": {
-        "title": "أوتار وإكسسوارات",
-        "body": "<p>أوتار وريش ودوزانات وحقائب وحوامل: الأشياء الصغيرة التي يحتاجها كل عازف.</p>"
+        "title": "إكسسوارات",
+        "body": "<p>أوتار وريش وقصبات وحوامل وحقائب لكل آلة.</p>"
+      }
+    },
+    {
+      "handle": "studio-recording",
+      "en": {
+        "title": "Studio & sound",
+        "body": "<p>Microphones, headphones, amps and DJ gear for home and studio.</p>"
+      },
+      "ar": {
+        "title": "استوديو وصوت",
+        "body": "<p>ميكروفونات وسماعات ومضخّمات ومعدات DJ للبيت والاستوديو.</p>"
       }
     },
     {
       "handle": "art-supplies",
       "en": {
         "title": "Art supplies",
-        "body": "<p>Paints, brushes, sketchbooks and canvases for drawing and painting.</p>"
+        "body": "<p>Paints, pencils, paper, canvas and tools for every kind of artist.</p>"
       },
       "ar": {
         "title": "لوازم فنية",
-        "body": "<p>ألوان وفُرَش ودفاتر رسم ولوحات قماشية للرسم والتلوين.</p>"
+        "body": "<p>ألوان وأقلام وورق وكانفاس وأدوات لكل فنان.</p>"
+      }
+    },
+    {
+      "handle": "vinyl-hifi",
+      "en": {
+        "title": "Vinyl & hi-fi",
+        "body": "<p>Records, turntables and hi-fi, and everything to look after them.</p>"
+      },
+      "ar": {
+        "title": "فينيل وهاي فاي",
+        "body": "<p>أسطوانات ومشغّلات وأجهزة هاي فاي، وكل ما يلزم للعناية بها.</p>"
       }
     },
     {
       "handle": "books-sheet-music",
       "en": {
         "title": "Books & sheet music",
-        "body": "<p>Method books, music theory and songbooks.</p>"
+        "body": "<p>Method books, sheet music, theory and reading for musicians and artists.</p>"
       },
       "ar": {
         "title": "كتب ونوتات موسيقية",
-        "body": "<p>كتب تعليمية ونظريات موسيقية وكتب نوتات.</p>"
+        "body": "<p>كتب تعليم ونوتات ونظرية وقراءة للموسيقيين والفنانين.</p>"
       }
     },
     {
-      "handle": "oud-saz",
+      "handle": "oriental-instruments",
       "parent": "instruments",
       "types": [
         "Oud",
-        "Saz"
+        "Qanun",
+        "Buzuq & saz",
+        "Ney & oriental winds",
+        "Darbuka",
+        "Riq & frame drums"
+      ],
+      "types_ar": [
+        "عود",
+        "قانون",
+        "بزق وساز",
+        "ناي ونفخ شرقي",
+        "دربكة",
+        "رق ودفوف"
       ],
       "en": {
-        "title": "Oud & saz",
-        "body": "<p>Arabic and Turkish ouds, and the long-neck saz, the Turkish cousin of the buzuq.</p>"
+        "title": "Oriental",
+        "body": "<p>Oud, qanun, buzuq, ney and the percussion of Arabic music.</p>"
       },
       "ar": {
-        "title": "عود وساز",
-        "body": "<p>أعواد عربية وتركية، والساز طويل الزند، ابن عمّ البزق التركي.</p>"
+        "title": "آلات شرقية",
+        "body": "<p>عود وقانون وبزق وناي، وإيقاعات الموسيقى العربية.</p>"
       }
     },
     {
-      "handle": "qanun",
-      "parent": "instruments",
-      "types": [
-        "Qanun"
-      ],
-      "en": {
-        "title": "Qanun",
-        "body": "<p>Handmade qanuns that come with a case, picks and finger rings.</p>"
-      },
-      "ar": {
-        "title": "قانون",
-        "body": "<p>قوانين مصنوعة يدويًا تأتي مع حقيبة وريش وخواتم للأصابع.</p>"
-      }
-    },
-    {
-      "handle": "ney-flutes",
-      "parent": "instruments",
-      "types": [
-        "Ney",
-        "Flute",
-        "Recorder"
-      ],
-      "en": {
-        "title": "Ney & flutes",
-        "body": "<p>Neys in several keys, flutes and recorders, from first notes to maqam.</p>"
-      },
-      "ar": {
-        "title": "ناي وفلوت",
-        "body": "<p>نايات بطبقات مختلفة، وفلوت وريكوردر، من أول نغمة إلى المقامات.</p>"
-      }
-    },
-    {
-      "handle": "violin",
-      "parent": "instruments",
-      "types": [
-        "Violin"
-      ],
-      "en": {
-        "title": "Violin",
-        "body": "<p>Violin sets in every size, from 1/4 for young children to full size.</p>"
-      },
-      "ar": {
-        "title": "كمان",
-        "body": "<p>أطقم كمان بكل المقاسات، من ⁦1/4⁩ للأطفال الصغار إلى الحجم الكامل.</p>"
-      }
-    },
-    {
-      "handle": "guitar-ukulele",
+      "handle": "guitars-basses",
       "parent": "instruments",
       "types": [
         "Classical guitar",
         "Acoustic guitar",
         "Electric guitar",
-        "Ukulele"
+        "Bass guitar",
+        "Ukulele",
+        "Mandolin & banjo"
+      ],
+      "types_ar": [
+        "غيتار كلاسيك",
+        "غيتار أكوستيك",
+        "غيتار كهربائي",
+        "غيتار باص",
+        "يوكوليلي",
+        "ماندولين وبانجو"
       ],
       "en": {
-        "title": "Guitar & ukulele",
-        "body": "<p>Classical, acoustic and electric guitars, kids' sizes, and ukuleles.</p>"
+        "title": "Guitars & basses",
+        "body": "<p>Classical, acoustic, electric and bass guitars, ukuleles and more.</p>"
       },
       "ar": {
-        "title": "غيتار ويوكوليلي",
-        "body": "<p>غيتارات كلاسيك وأكوستيك وكهربائية، ومقاسات للأطفال، ويوكوليلي.</p>"
+        "title": "غيتار وباص",
+        "body": "<p>غيتارات كلاسيك وأكوستيك وكهربائية وباص، ويوكوليلي وغيرها.</p>"
       }
     },
     {
-      "handle": "piano-keys",
+      "handle": "pianos-keyboards",
       "parent": "instruments",
       "types": [
         "Digital piano",
         "Keyboard",
-        "Keyboard controller",
-        "Synthesizer"
+        "Accordion & melodica"
+      ],
+      "types_ar": [
+        "بيانو رقمي",
+        "كيبورد",
+        "أكورديون وميلوديكا"
       ],
       "en": {
-        "title": "Piano & keys",
-        "body": "<p>Digital pianos with weighted keys, keyboards for beginners, and controllers.</p>"
+        "title": "Pianos & keyboards",
+        "body": "<p>Digital pianos with weighted keys, keyboards, accordions and melodicas.</p>"
       },
       "ar": {
         "title": "بيانو وكيبورد",
-        "body": "<p>بيانوهات رقمية بمفاتيح ثقيلة، وكيبوردات للمبتدئين، ولوحات تحكّم.</p>"
+        "body": "<p>بيانوهات رقمية بمفاتيح ثقيلة، وكيبوردات وأكورديون وميلوديكا.</p>"
       }
     },
     {
-      "handle": "winds",
+      "handle": "drums-percussion",
       "parent": "instruments",
       "types": [
-        "Trumpet",
-        "Saxophone",
+        "Electronic drums",
+        "Cymbals",
+        "Hand drums",
+        "Small percussion"
+      ],
+      "types_ar": [
+        "طبول إلكترونية",
+        "صنوج",
+        "طبول يدوية",
+        "إيقاع صغير"
+      ],
+      "en": {
+        "title": "Drums & percussion",
+        "body": "<p>Electronic drums, cymbals, hand drums and small percussion.</p>"
+      },
+      "ar": {
+        "title": "طبول وإيقاع",
+        "body": "<p>طبول إلكترونية وصنوج وطبول يدوية وإيقاع صغير.</p>"
+      }
+    },
+    {
+      "handle": "violin-viola",
+      "parent": "instruments",
+      "types": [
+        "Violin",
+        "Viola"
+      ],
+      "types_ar": [
+        "كمان",
+        "فيولا"
+      ],
+      "en": {
+        "title": "Violin & viola",
+        "body": "<p>Violin and viola outfits in every size, from small children to full size.</p>"
+      },
+      "ar": {
+        "title": "كمان وفيولا",
+        "body": "<p>أطقم كمان وفيولا بكل المقاسات، من الأطفال إلى الحجم الكامل.</p>"
+      }
+    },
+    {
+      "handle": "winds-brass",
+      "parent": "instruments",
+      "types": [
+        "Flute",
         "Clarinet",
+        "Saxophone",
+        "Trumpet & brass",
+        "Recorder",
         "Harmonica"
       ],
-      "en": {
-        "title": "Winds",
-        "body": "<p>Trumpets, saxophones and clarinets for students, and the harmonica.</p>"
-      },
-      "ar": {
-        "title": "آلات النفخ",
-        "body": "<p>ترومبيت وساكسوفون وكلارينيت للطلاب، والهارمونيكا أيضًا.</p>"
-      }
-    },
-    {
-      "handle": "percussion",
-      "parent": "instruments",
-      "types": [
-        "Darbuka",
-        "Riq",
-        "Daf",
-        "Frame drum",
-        "Cajon",
-        "Tambourine",
-        "Maracas",
-        "Shaker",
-        "Tongue drum",
-        "Glockenspiel",
-        "Kalimba"
+      "types_ar": [
+        "فلوت",
+        "كلارينيت",
+        "ساكسوفون",
+        "ترومبيت ونحاسيات",
+        "ريكوردر",
+        "هارمونيكا"
       ],
       "en": {
-        "title": "Percussion",
-        "body": "<p>Darbukas, riqs and dafs for Arabic rhythms, plus cajon, shakers and more.</p>"
+        "title": "Winds & brass",
+        "body": "<p>Flutes, clarinets, saxophones, trumpets, recorders and harmonicas.</p>"
       },
       "ar": {
-        "title": "إيقاع",
-        "body": "<p>دربكات ورقوق ودفوف للإيقاعات العربية، وكاخون وشيكرز وغيرها.</p>"
+        "title": "نفخ ونحاسيات",
+        "body": "<p>فلوت وكلارينيت وساكسوفون وترومبيت وريكوردر وهارمونيكا.</p>"
       }
     },
     {
-      "handle": "studio-recording",
-      "types": [
-        "Headphones",
-        "Microphone",
-        "Microphone stand",
-        "Microphone cable",
-        "Pop filter",
-        "Audio interface"
-      ],
-      "en": {
-        "title": "Studio & recording",
-        "body": "<p>Headphones, microphones, stands, cables and audio interfaces to record at home.</p>"
-      },
-      "ar": {
-        "title": "استوديو وتسجيل",
-        "body": "<p>سماعات وميكروفونات وحوامل وكابلات وواجهات صوت للتسجيل في البيت.</p>"
-      }
-    },
-    {
-      "handle": "strings",
+      "handle": "oriental-accessories",
       "parent": "strings-accessories",
       "types": [
-        "Strings"
+        "Oriental strings",
+        "Risha & qanun rings",
+        "Darbuka skins"
+      ],
+      "types_ar": [
+        "أوتار شرقية",
+        "ريشة وخواتم قانون",
+        "جلود دربكة"
       ],
       "en": {
-        "title": "Strings",
-        "body": "<p>Strings for guitar, oud, ukulele and violin.</p>"
+        "title": "Oriental",
+        "body": "<p>Strings, risha, qanun rings and darbuka skins.</p>"
       },
       "ar": {
-        "title": "أوتار",
-        "body": "<p>أوتار للغيتار والعود واليوكوليلي والكمان.</p>"
+        "title": "للآلات الشرقية",
+        "body": "<p>أوتار وريشة وخواتم قانون وجلود دربكة.</p>"
       }
     },
     {
-      "handle": "picks-small-parts",
+      "handle": "guitar-bass-accessories",
       "parent": "strings-accessories",
       "types": [
-        "Guitar picks",
-        "Oud risha",
-        "Qanun rings",
-        "Capo",
-        "Shoulder rest",
-        "Darbuka head",
-        "Drumsticks",
-        "Practice pad"
+        "Guitar & bass strings",
+        "Picks",
+        "Capos",
+        "Straps",
+        "Pickups & parts"
+      ],
+      "types_ar": [
+        "أوتار غيتار وباص",
+        "ريش غيتار",
+        "كابو",
+        "أحزمة",
+        "بيك أب وقطع"
       ],
       "en": {
-        "title": "Picks & small parts",
-        "body": "<p>Picks, oud risha, qanun rings, capos, shoulder rests and drum parts.</p>"
+        "title": "Guitar & bass",
+        "body": "<p>Strings, picks, capos, straps, pickups and parts.</p>"
       },
       "ar": {
-        "title": "ريش وقطع صغيرة",
-        "body": "<p>ريش غيتار وريشة عود وخواتم قانون وكابو ومساند كتف وقطع للإيقاع.</p>"
+        "title": "للغيتار والباص",
+        "body": "<p>أوتار وريش وكابو وأحزمة وبيك أب وقطع.</p>"
       }
     },
     {
-      "handle": "reeds-care",
+      "handle": "violin-viola-accessories",
+      "parent": "strings-accessories",
+      "types": [
+        "Violin strings",
+        "Bows",
+        "Rosin",
+        "Shoulder & chin rests",
+        "Mutes"
+      ],
+      "types_ar": [
+        "أوتار كمان",
+        "أقواس",
+        "قلفونية",
+        "مساند كتف وذقن",
+        "كاتمات صوت"
+      ],
+      "en": {
+        "title": "Violin & viola",
+        "body": "<p>Strings, bows, rosin, shoulder rests and mutes.</p>"
+      },
+      "ar": {
+        "title": "للكمان والفيولا",
+        "body": "<p>أوتار وأقواس وقلفونية ومساند كتف وكاتمات صوت.</p>"
+      }
+    },
+    {
+      "handle": "winds-brass-accessories",
       "parent": "strings-accessories",
       "types": [
         "Reeds",
-        "Mouthpiece",
-        "Rosin",
-        "Valve oil"
+        "Mouthpieces & ligatures",
+        "Care & oils"
+      ],
+      "types_ar": [
+        "قصبات",
+        "مباسم وأربطة",
+        "عناية وزيوت"
       ],
       "en": {
-        "title": "Reeds, mouthpieces & care",
-        "body": "<p>Reeds and mouthpieces for sax and clarinet, rosin and valve oil.</p>"
+        "title": "Winds & brass",
+        "body": "<p>Reeds, mouthpieces, ligatures, swabs and oils.</p>"
       },
       "ar": {
-        "title": "قصبات ومباسم وعناية",
-        "body": "<p>قصبات ومباسم للساكسوفون والكلارينيت، وقلفونية وزيت مكابس.</p>"
+        "title": "للنفخ",
+        "body": "<p>قصبات ومباسم وأربطة وأدوات تنظيف وزيوت.</p>"
       }
     },
     {
-      "handle": "cases-stands",
+      "handle": "drums-percussion-accessories",
       "parent": "strings-accessories",
       "types": [
-        "Guitar bag",
-        "Ney case",
-        "Guitar stand",
-        "Guitar wall mount",
-        "Keyboard stand",
-        "Guitar footstool",
-        "Piano bench"
+        "Sticks & mallets",
+        "Drum heads",
+        "Practice pads",
+        "Pedals & hardware"
+      ],
+      "types_ar": [
+        "عصي ومضارب",
+        "جلود طبول",
+        "وسادات تمرين",
+        "دواسات وقطع"
       ],
       "en": {
-        "title": "Cases & stands",
-        "body": "<p>Gig bags and cases, stands, wall mounts, footstools and piano benches.</p>"
+        "title": "Drums & percussion",
+        "body": "<p>Sticks, mallets, drum heads, practice pads and pedals.</p>"
       },
       "ar": {
-        "title": "حقائب وحوامل",
-        "body": "<p>حقائب وأغطية، وحوامل وحوامل حائط، ومساند قدم وكراسي بيانو.</p>"
+        "title": "للطبول والإيقاع",
+        "body": "<p>عصي ومضارب وجلود طبول ووسادات تمرين ودواسات.</p>"
       }
     },
     {
-      "handle": "amps-pedals-cables",
+      "handle": "keyboard-accessories",
       "parent": "strings-accessories",
       "types": [
-        "Guitar amplifier",
-        "Guitar pedal",
-        "Instrument cable",
-        "Sustain pedal"
+        "Sustain pedals",
+        "Piano benches",
+        "Covers"
+      ],
+      "types_ar": [
+        "دواسات سستين",
+        "مقاعد بيانو",
+        "أغطية"
       ],
       "en": {
-        "title": "Amps, pedals & cables",
-        "body": "<p>Guitar amps, effect pedals, sustain pedals and instrument cables.</p>"
+        "title": "Keyboard",
+        "body": "<p>Sustain pedals, piano benches and covers.</p>"
       },
       "ar": {
-        "title": "مضخّمات ودواسات وكابلات",
-        "body": "<p>مضخّمات غيتار ودواسات مؤثرات ودواسات سستين وكابلات آلات.</p>"
+        "title": "للكيبورد",
+        "body": "<p>دواسات سستين ومقاعد بيانو وأغطية.</p>"
+      }
+    },
+    {
+      "handle": "essentials",
+      "parent": "strings-accessories",
+      "types": [
+        "Tuners & metronomes",
+        "Instrument stands",
+        "Music stands",
+        "Cases & gig bags",
+        "Care & cleaning"
+      ],
+      "types_ar": [
+        "دوزان ومترونوم",
+        "حوامل آلات",
+        "حوامل نوتة",
+        "حقائب",
+        "عناية وتنظيف"
+      ],
+      "en": {
+        "title": "Essentials",
+        "body": "<p>Tuners, metronomes, stands, cases and care for every instrument.</p>"
+      },
+      "ar": {
+        "title": "أساسيات",
+        "body": "<p>دوزان ومترونوم وحوامل وحقائب وعناية لكل آلة.</p>"
+      }
+    },
+    {
+      "handle": "recording-mixing",
+      "parent": "studio-recording",
+      "types": [
+        "Microphones",
+        "Audio interfaces",
+        "Portable recorders",
+        "Podcast & streaming kits",
+        "Mixers & DI boxes"
+      ],
+      "types_ar": [
+        "ميكروفونات",
+        "كروت صوت",
+        "مسجّلات محمولة",
+        "عدّة بودكاست وبث",
+        "ميكسرات وصناديق DI"
+      ],
+      "en": {
+        "title": "Recording & mixing",
+        "body": "<p>Microphones, audio interfaces, recorders, podcast kits and mixers.</p>"
+      },
+      "ar": {
+        "title": "تسجيل ومكساج",
+        "body": "<p>ميكروفونات وكروت صوت ومسجّلات وعدّة بودكاست وميكسرات.</p>"
+      }
+    },
+    {
+      "handle": "monitors-headphones",
+      "parent": "studio-recording",
+      "types": [
+        "Studio monitors",
+        "Headphones",
+        "In-ear monitors"
+      ],
+      "types_ar": [
+        "سماعات مونيتور",
+        "سماعات رأس",
+        "سماعات داخل الأذن"
+      ],
+      "en": {
+        "title": "Monitors & headphones",
+        "body": "<p>Studio monitors, headphones and in-ear monitors to hear every detail.</p>"
+      },
+      "ar": {
+        "title": "سماعات ومونيتور",
+        "body": "<p>سماعات مونيتور وسماعات رأس وداخل الأذن لسماع كل التفاصيل.</p>"
+      }
+    },
+    {
+      "handle": "amps-effects",
+      "parent": "studio-recording",
+      "types": [
+        "Guitar & bass amps",
+        "Keyboard & acoustic amps",
+        "Effects pedals",
+        "Multi-effects & modelers",
+        "Pedalboards & power"
+      ],
+      "types_ar": [
+        "مضخّمات غيتار وباص",
+        "مضخّمات كيبورد وأكوستيك",
+        "دواسات مؤثرات",
+        "مؤثرات متعددة ومحاكيات",
+        "لوحات دواسات وتغذية"
+      ],
+      "en": {
+        "title": "Amps & effects",
+        "body": "<p>Amps for guitar, bass and keyboard, pedals and multi-effects.</p>"
+      },
+      "ar": {
+        "title": "مضخّمات ومؤثرات",
+        "body": "<p>مضخّمات للغيتار والباص والكيبورد، ودواسات ومؤثرات متعددة.</p>"
+      }
+    },
+    {
+      "handle": "dj-electronic",
+      "parent": "studio-recording",
+      "types": [
+        "DJ controllers",
+        "DJ mixers & players",
+        "Synthesizers",
+        "Drum machines & samplers",
+        "MIDI controllers"
+      ],
+      "types_ar": [
+        "وحدات تحكّم DJ",
+        "ميكسرات ومشغّلات DJ",
+        "سينثسايزر",
+        "درام ماشين وسامبلر",
+        "وحدات تحكّم MIDI"
+      ],
+      "en": {
+        "title": "DJ & electronic",
+        "body": "<p>DJ controllers and mixers, synthesizers, drum machines and MIDI.</p>"
+      },
+      "ar": {
+        "title": "دي جي وإلكتروني",
+        "body": "<p>وحدات تحكّم وميكسرات DJ، وسينثسايزر ودرام ماشين وMIDI.</p>"
+      }
+    },
+    {
+      "handle": "cables-stands",
+      "parent": "studio-recording",
+      "types": [
+        "Cables & adapters",
+        "Mic stands & pop filters",
+        "Acoustic treatment"
+      ],
+      "types_ar": [
+        "كابلات ومحوّلات",
+        "حوامل ميكروفون وفلاتر",
+        "عزل ومعالجة صوتية"
+      ],
+      "en": {
+        "title": "Cables & stands",
+        "body": "<p>Cables, adapters, mic stands, pop filters and acoustic panels.</p>"
+      },
+      "ar": {
+        "title": "كابلات وحوامل",
+        "body": "<p>كابلات ومحوّلات وحوامل ميكروفون وفلاتر وألواح عزل.</p>"
+      }
+    },
+    {
+      "handle": "painting",
+      "parent": "art-supplies",
+      "types": [
+        "Acrylic",
+        "Oil paint",
+        "Watercolor & gouache",
+        "Mediums & gesso",
+        "Paint markers",
+        "Fabric, glass & ceramic paint",
+        "Brushes",
+        "Palettes & knives"
+      ],
+      "types_ar": [
+        "أكريليك",
+        "ألوان زيتية",
+        "ألوان مائية وغواش",
+        "وسائط وجيسو",
+        "أقلام تلوين ماركر",
+        "ألوان قماش وزجاج وسيراميك",
+        "فُرَش",
+        "باليتات وسكاكين"
+      ],
+      "en": {
+        "title": "Painting",
+        "body": "<p>Acrylic, oil and watercolor paints, mediums, brushes and palettes.</p>"
+      },
+      "ar": {
+        "title": "تلوين",
+        "body": "<p>ألوان أكريليك وزيتية ومائية، ووسائط وفُرَش وباليتات.</p>"
+      }
+    },
+    {
+      "handle": "drawing-ink",
+      "parent": "art-supplies",
+      "types": [
+        "Graphite pencils",
+        "Colored pencils",
+        "Charcoal",
+        "Pastels",
+        "Markers & fineliners",
+        "Inks & pens",
+        "Erasers & blending"
+      ],
+      "types_ar": [
+        "أقلام رصاص",
+        "أقلام ملوّنة",
+        "فحم رسم",
+        "باستيل",
+        "ماركر وأقلام رفيعة",
+        "أحبار وأقلام حبر",
+        "مماحٍ وأدوات دمج"
+      ],
+      "en": {
+        "title": "Drawing & ink",
+        "body": "<p>Pencils, charcoal, pastels, markers, inks and erasers.</p>"
+      },
+      "ar": {
+        "title": "رسم وحبر",
+        "body": "<p>أقلام رصاص وملوّنة وفحم وباستيل وماركر وأحبار ومماحٍ.</p>"
+      }
+    },
+    {
+      "handle": "paper-canvas",
+      "parent": "art-supplies",
+      "types": [
+        "Sketchbooks",
+        "Drawing pads",
+        "Watercolor paper",
+        "Stretched canvas",
+        "Canvas boards & panels"
+      ],
+      "types_ar": [
+        "دفاتر رسم",
+        "بلوكات رسم",
+        "ورق ألوان مائية",
+        "كانفاس مشدود",
+        "ألواح كانفاس وخشب"
+      ],
+      "en": {
+        "title": "Paper & canvas",
+        "body": "<p>Sketchbooks, drawing pads, watercolor paper, canvas and panels.</p>"
+      },
+      "ar": {
+        "title": "ورق وكانفاس",
+        "body": "<p>دفاتر وبلوكات رسم، وورق ألوان مائية، وكانفاس وألواح.</p>"
+      }
+    },
+    {
+      "handle": "calligraphy-lettering",
+      "parent": "art-supplies",
+      "types": [
+        "Arabic calligraphy",
+        "Dip pens & nibs",
+        "Brush pens & lettering"
+      ],
+      "types_ar": [
+        "خط عربي",
+        "أقلام وريش غمس",
+        "أقلام فرشاة وكتابة فنية"
+      ],
+      "en": {
+        "title": "Calligraphy & lettering",
+        "body": "<p>Arabic calligraphy, dip pens and nibs, and brush pens.</p>"
+      },
+      "ar": {
+        "title": "خط وكتابة فنية",
+        "body": "<p>خط عربي وأقلام وريش غمس وأقلام فرشاة.</p>"
+      }
+    },
+    {
+      "handle": "sculpture-craft",
+      "parent": "art-supplies",
+      "types": [
+        "Clay",
+        "Modelling tools",
+        "Lino & block printing",
+        "Gold leaf",
+        "Collage & cutting"
+      ],
+      "types_ar": [
+        "صلصال وطين",
+        "أدوات تشكيل",
+        "حفر وطباعة لينو",
+        "ورق ذهب",
+        "قصّ وكولاج"
+      ],
+      "en": {
+        "title": "Sculpture & craft",
+        "body": "<p>Clay, modelling tools, lino printing, gold leaf and collage.</p>"
+      },
+      "ar": {
+        "title": "نحت وحِرف",
+        "body": "<p>صلصال وأدوات تشكيل وطباعة لينو وورق ذهب وكولاج.</p>"
+      }
+    },
+    {
+      "handle": "art-studio-digital",
+      "parent": "art-supplies",
+      "types": [
+        "Easels",
+        "Art boxes & storage",
+        "Light boxes",
+        "Aprons",
+        "Frames",
+        "Drawing tablets"
+      ],
+      "types_ar": [
+        "حوامل رسم",
+        "صناديق وتخزين",
+        "ألواح إضاءة",
+        "مرايل",
+        "براويز",
+        "ألواح رسم رقمية"
+      ],
+      "en": {
+        "title": "Studio & digital",
+        "body": "<p>Easels, storage, light boxes, aprons, frames and drawing tablets.</p>"
+      },
+      "ar": {
+        "title": "مرسم ورقمي",
+        "body": "<p>حوامل رسم وصناديق وألواح إضاءة ومرايل وبراويز وألواح رقمية.</p>"
+      }
+    },
+    {
+      "handle": "kids-gift-sets",
+      "parent": "art-supplies",
+      "types": [
+        "Kids' art",
+        "Starter & gift sets"
+      ],
+      "types_ar": [
+        "فنون للأطفال",
+        "أطقم مبتدئين وهدايا"
+      ],
+      "en": {
+        "title": "Kids & gift sets",
+        "body": "<p>Art for kids, and starter and gift sets for every age.</p>"
+      },
+      "ar": {
+        "title": "أطفال وهدايا",
+        "body": "<p>فنون للأطفال، وأطقم مبتدئين وهدايا لكل الأعمار.</p>"
+      }
+    },
+    {
+      "handle": "vinyl-records",
+      "parent": "vinyl-hifi",
+      "types": [
+        "LPs",
+        "45s & singles"
+      ],
+      "types_ar": [
+        "ألبومات LP",
+        "أسطوانات 45 وسنغل"
+      ],
+      "en": {
+        "title": "Vinyl records",
+        "body": "<p>New records on vinyl: LPs, 45s and singles.</p>"
+      },
+      "ar": {
+        "title": "أسطوانات فينيل",
+        "body": "<p>أسطوانات فينيل جديدة: ألبومات LP وأسطوانات 45 وسنغل.</p>"
+      }
+    },
+    {
+      "handle": "cassettes-cds",
+      "parent": "vinyl-hifi",
+      "types": [
+        "Cassettes",
+        "CDs"
+      ],
+      "types_ar": [
+        "كاسيت",
+        "سي دي"
+      ],
+      "en": {
+        "title": "Cassettes & CDs",
+        "body": "<p>Albums on cassette and CD.</p>"
+      },
+      "ar": {
+        "title": "كاسيت وسي دي",
+        "body": "<p>ألبومات على كاسيت وسي دي.</p>"
+      }
+    },
+    {
+      "handle": "turntables-hifi",
+      "parent": "vinyl-hifi",
+      "types": [
+        "Turntables",
+        "Hi-fi speakers",
+        "Amplifiers & receivers",
+        "Cartridges & styluses"
+      ],
+      "types_ar": [
+        "مشغّلات أسطوانات",
+        "سماعات هاي فاي",
+        "مضخّمات وريسيفر",
+        "رؤوس وإبر"
+      ],
+      "en": {
+        "title": "Turntables & hi-fi",
+        "body": "<p>Turntables, hi-fi speakers, amplifiers, cartridges and styluses.</p>"
+      },
+      "ar": {
+        "title": "مشغّلات وهاي فاي",
+        "body": "<p>مشغّلات أسطوانات وسماعات هاي فاي ومضخّمات ورؤوس وإبر.</p>"
+      }
+    },
+    {
+      "handle": "record-care",
+      "parent": "vinyl-hifi",
+      "types": [
+        "Sleeves",
+        "Cleaning kits",
+        "Crates & display"
+      ],
+      "types_ar": [
+        "أغلفة",
+        "أطقم تنظيف",
+        "صناديق وعرض"
+      ],
+      "en": {
+        "title": "Record care",
+        "body": "<p>Sleeves, cleaning kits, crates and displays for your records.</p>"
+      },
+      "ar": {
+        "title": "عناية وتخزين",
+        "body": "<p>أغلفة وأطقم تنظيف وصناديق وعرض لأسطواناتك.</p>"
+      }
+    },
+    {
+      "handle": "method-books",
+      "parent": "books-sheet-music",
+      "types": [
+        "Method books"
+      ],
+      "types_ar": [
+        "كتب تعليم العزف"
+      ],
+      "en": {
+        "title": "Method books",
+        "body": "<p>Learn to play step by step, with method books for every instrument.</p>"
+      },
+      "ar": {
+        "title": "كتب تعليم العزف",
+        "body": "<p>تعلّم العزف خطوة بخطوة، بكتب تعليم لكل آلة.</p>"
+      }
+    },
+    {
+      "handle": "sheet-music-songbooks",
+      "parent": "books-sheet-music",
+      "types": [
+        "Sheet music & scores",
+        "Songbooks"
+      ],
+      "types_ar": [
+        "نوتات وبارتيتورات",
+        "كتب أغانٍ"
+      ],
+      "en": {
+        "title": "Sheet music & songbooks",
+        "body": "<p>Sheet music, scores and songbooks to play from.</p>"
+      },
+      "ar": {
+        "title": "نوتات وكتب أغانٍ",
+        "body": "<p>نوتات وبارتيتورات وكتب أغانٍ للعزف.</p>"
+      }
+    },
+    {
+      "handle": "theory-practice",
+      "parent": "books-sheet-music",
+      "types": [
+        "Music theory",
+        "Maqam & Arabic music",
+        "Solfège",
+        "Manuscript paper"
+      ],
+      "types_ar": [
+        "نظرية الموسيقى",
+        "مقامات وموسيقى عربية",
+        "صولفيج",
+        "دفاتر نوتة"
+      ],
+      "en": {
+        "title": "Theory & practice",
+        "body": "<p>Music theory, maqam, solfège and manuscript paper.</p>"
+      },
+      "ar": {
+        "title": "نظرية وتمرين",
+        "body": "<p>نظرية الموسيقى والمقامات والصولفيج ودفاتر النوتة.</p>"
+      }
+    },
+    {
+      "handle": "reading",
+      "parent": "books-sheet-music",
+      "types": [
+        "Art technique",
+        "History & biographies"
+      ],
+      "types_ar": [
+        "تقنيات فنية",
+        "تاريخ وسير"
+      ],
+      "en": {
+        "title": "Reading",
+        "body": "<p>Books on art technique, history and the lives of artists.</p>"
+      },
+      "ar": {
+        "title": "قراءة",
+        "body": "<p>كتب عن تقنيات الفن وتاريخه وسير الفنانين.</p>"
       }
     }
   ],
@@ -391,114 +950,243 @@
             "items": [
               {
                 "type": "COLLECTION",
-                "handle": "oud-saz",
-                "en": "Oud & saz",
-                "ar": "عود وساز"
+                "handle": "oriental-instruments",
+                "en": "Oriental",
+                "ar": "آلات شرقية"
               },
               {
                 "type": "COLLECTION",
-                "handle": "qanun",
-                "en": "Qanun",
-                "ar": "قانون"
+                "handle": "guitars-basses",
+                "en": "Guitars & basses",
+                "ar": "غيتار وباص"
               },
               {
                 "type": "COLLECTION",
-                "handle": "ney-flutes",
-                "en": "Ney & flutes",
-                "ar": "ناي وفلوت"
-              },
-              {
-                "type": "COLLECTION",
-                "handle": "violin",
-                "en": "Violin",
-                "ar": "كمان"
-              },
-              {
-                "type": "COLLECTION",
-                "handle": "guitar-ukulele",
-                "en": "Guitar & ukulele",
-                "ar": "غيتار ويوكوليلي"
-              },
-              {
-                "type": "COLLECTION",
-                "handle": "piano-keys",
-                "en": "Piano & keys",
+                "handle": "pianos-keyboards",
+                "en": "Pianos & keyboards",
                 "ar": "بيانو وكيبورد"
               },
               {
                 "type": "COLLECTION",
-                "handle": "winds",
-                "en": "Winds",
-                "ar": "آلات النفخ"
+                "handle": "drums-percussion",
+                "en": "Drums & percussion",
+                "ar": "طبول وإيقاع"
               },
               {
                 "type": "COLLECTION",
-                "handle": "percussion",
-                "en": "Percussion",
-                "ar": "إيقاع"
+                "handle": "violin-viola",
+                "en": "Violin & viola",
+                "ar": "كمان وفيولا"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "winds-brass",
+                "en": "Winds & brass",
+                "ar": "نفخ ونحاسيات"
               }
             ]
           },
           {
             "type": "COLLECTION",
             "handle": "strings-accessories",
-            "en": "Strings & accessories",
-            "ar": "أوتار وإكسسوارات",
+            "en": "Accessories",
+            "ar": "إكسسوارات",
             "items": [
               {
                 "type": "COLLECTION",
-                "handle": "strings",
-                "en": "Strings",
-                "ar": "أوتار"
+                "handle": "oriental-accessories",
+                "en": "Oriental",
+                "ar": "للآلات الشرقية"
               },
               {
                 "type": "COLLECTION",
-                "handle": "picks-small-parts",
-                "en": "Picks & small parts",
-                "ar": "ريش وقطع صغيرة"
+                "handle": "guitar-bass-accessories",
+                "en": "Guitar & bass",
+                "ar": "للغيتار والباص"
               },
               {
                 "type": "COLLECTION",
-                "handle": "reeds-care",
-                "en": "Reeds, mouthpieces & care",
-                "ar": "قصبات ومباسم وعناية"
+                "handle": "violin-viola-accessories",
+                "en": "Violin & viola",
+                "ar": "للكمان والفيولا"
               },
               {
                 "type": "COLLECTION",
-                "handle": "cases-stands",
-                "en": "Cases & stands",
-                "ar": "حقائب وحوامل"
+                "handle": "winds-brass-accessories",
+                "en": "Winds & brass",
+                "ar": "للنفخ"
               },
               {
                 "type": "COLLECTION",
-                "handle": "amps-pedals-cables",
-                "en": "Amps, pedals & cables",
-                "ar": "مضخّمات ودواسات وكابلات"
+                "handle": "drums-percussion-accessories",
+                "en": "Drums & percussion",
+                "ar": "للطبول والإيقاع"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "keyboard-accessories",
+                "en": "Keyboard",
+                "ar": "للكيبورد"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "essentials",
+                "en": "Essentials",
+                "ar": "أساسيات"
               }
             ]
           },
           {
             "type": "COLLECTION",
             "handle": "studio-recording",
-            "en": "Studio & recording",
-            "ar": "استوديو وتسجيل"
+            "en": "Studio & sound",
+            "ar": "استوديو وصوت",
+            "items": [
+              {
+                "type": "COLLECTION",
+                "handle": "recording-mixing",
+                "en": "Recording & mixing",
+                "ar": "تسجيل ومكساج"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "monitors-headphones",
+                "en": "Monitors & headphones",
+                "ar": "سماعات ومونيتور"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "amps-effects",
+                "en": "Amps & effects",
+                "ar": "مضخّمات ومؤثرات"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "dj-electronic",
+                "en": "DJ & electronic",
+                "ar": "دي جي وإلكتروني"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "cables-stands",
+                "en": "Cables & stands",
+                "ar": "كابلات وحوامل"
+              }
+            ]
           },
           {
             "type": "COLLECTION",
             "handle": "art-supplies",
             "en": "Art supplies",
-            "ar": "لوازم فنية"
+            "ar": "لوازم فنية",
+            "items": [
+              {
+                "type": "COLLECTION",
+                "handle": "painting",
+                "en": "Painting",
+                "ar": "تلوين"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "drawing-ink",
+                "en": "Drawing & ink",
+                "ar": "رسم وحبر"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "paper-canvas",
+                "en": "Paper & canvas",
+                "ar": "ورق وكانفاس"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "calligraphy-lettering",
+                "en": "Calligraphy & lettering",
+                "ar": "خط وكتابة فنية"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "sculpture-craft",
+                "en": "Sculpture & craft",
+                "ar": "نحت وحِرف"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "art-studio-digital",
+                "en": "Studio & digital",
+                "ar": "مرسم ورقمي"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "kids-gift-sets",
+                "en": "Kids & gift sets",
+                "ar": "أطفال وهدايا"
+              }
+            ]
+          },
+          {
+            "type": "COLLECTION",
+            "handle": "vinyl-hifi",
+            "en": "Vinyl & hi-fi",
+            "ar": "فينيل وهاي فاي",
+            "items": [
+              {
+                "type": "COLLECTION",
+                "handle": "vinyl-records",
+                "en": "Vinyl records",
+                "ar": "أسطوانات فينيل"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "cassettes-cds",
+                "en": "Cassettes & CDs",
+                "ar": "كاسيت وسي دي"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "turntables-hifi",
+                "en": "Turntables & hi-fi",
+                "ar": "مشغّلات وهاي فاي"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "record-care",
+                "en": "Record care",
+                "ar": "عناية وتخزين"
+              }
+            ]
           },
           {
             "type": "COLLECTION",
             "handle": "books-sheet-music",
             "en": "Books & sheet music",
-            "ar": "كتب ونوتات موسيقية"
-          },
-          {
-            "type": "CATALOG",
-            "en": "All products",
-            "ar": "كل المنتجات"
+            "ar": "كتب ونوتات موسيقية",
+            "items": [
+              {
+                "type": "COLLECTION",
+                "handle": "method-books",
+                "en": "Method books",
+                "ar": "كتب تعليم العزف"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "sheet-music-songbooks",
+                "en": "Sheet music & songbooks",
+                "ar": "نوتات وكتب أغانٍ"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "theory-practice",
+                "en": "Theory & practice",
+                "ar": "نظرية وتمرين"
+              },
+              {
+                "type": "COLLECTION",
+                "handle": "reading",
+                "en": "Reading",
+                "ar": "قراءة"
+              }
+            ]
           }
         ]
       },
@@ -582,5 +1270,59 @@
         "body": "<p>سوق كشكول — متجر أكاديمية كشكول للفنون<br>خلدة، لبنان<br>واتساب: ‎+961 78 721 968‎<br>البريد الإلكتروني: kashkoulacademy@gmail.com<br>الاستلام: من الاثنين إلى السبت، من 12 ظهرًا حتى 8 مساءً، والأحد بموعد مسبق</p>"
       }
     }
-  }
+  },
+  "remove_collections": [
+    {
+      "handle": "oud-saz",
+      "redirect_to": "oriental-instruments"
+    },
+    {
+      "handle": "qanun",
+      "redirect_to": "oriental-instruments"
+    },
+    {
+      "handle": "ney-flutes",
+      "redirect_to": "oriental-instruments"
+    },
+    {
+      "handle": "violin",
+      "redirect_to": "violin-viola"
+    },
+    {
+      "handle": "guitar-ukulele",
+      "redirect_to": "guitars-basses"
+    },
+    {
+      "handle": "piano-keys",
+      "redirect_to": "pianos-keyboards"
+    },
+    {
+      "handle": "winds",
+      "redirect_to": "winds-brass"
+    },
+    {
+      "handle": "percussion",
+      "redirect_to": "drums-percussion"
+    },
+    {
+      "handle": "strings",
+      "redirect_to": "strings-accessories"
+    },
+    {
+      "handle": "picks-small-parts",
+      "redirect_to": "guitar-bass-accessories"
+    },
+    {
+      "handle": "reeds-care",
+      "redirect_to": "winds-brass-accessories"
+    },
+    {
+      "handle": "cases-stands",
+      "redirect_to": "essentials"
+    },
+    {
+      "handle": "amps-pedals-cables",
+      "redirect_to": "amps-effects"
+    }
+  ]
 }

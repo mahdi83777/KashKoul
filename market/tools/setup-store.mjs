@@ -3,12 +3,16 @@
 // collections (published to the Online Store; a collection with `types` is automatic: it holds every product of those
 // product types, so new products land in it by themselves), pages, the main menu, the shop's policies (refund, shipping,
 // privacy, terms, contact), their Arabic translations, and published languages. Safe to re-run: everything is matched by handle and updated in place.
+// A category (no `parent`) holds every type of its sub-categories. A category that exists as a manual collection is
+// recreated as an automatic one with the same handle and image. `remove_collections` (part `cleanup`) deletes old
+// collections and redirects their addresses (English and Arabic) to their new homes.
 //
 //   shopify store auth --store <store> --scopes read_products,write_products,read_online_store_navigation,\
 //     write_online_store_navigation,read_online_store_pages,write_online_store_pages,read_translations,\
 //     write_translations,read_locales,write_locales,read_publications,write_publications,read_legal_policies,write_legal_policies
-//   node market/tools/setup-store.mjs [--store kashkoul-market-fhsuuq5c.myshopify.com] [--only collections,menu]
-// --only applies just those parts (collections, pages, menu, policies, languages); the menu still needs the pages to exist.
+//   node market/tools/setup-store.mjs [--store kashkoul-market-fhsuuq5c.myshopify.com] [--only collections,menu] [--new-only]
+// --only applies just those parts (collections, pages, menu, policies, languages, cleanup); the menu still needs the pages
+// to exist. --new-only creates the collections that don't exist yet and leaves the others as they are.
 import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -17,23 +21,39 @@ import { gql, check, translate } from './store-lib.mjs';
 const market = join(dirname(fileURLToPath(import.meta.url)), '..');
 const content = JSON.parse(readFileSync(join(market, 'store', 'content.json'), 'utf8'));
 const argOnly = process.argv.indexOf('--only');
-const parts = argOnly > -1 ? process.argv[argOnly + 1].split(',') : ['collections', 'pages', 'menu', 'policies', 'languages'];
+const parts = argOnly > -1 ? process.argv[argOnly + 1].split(',') : ['collections', 'pages', 'menu', 'policies', 'languages', 'cleanup'];
+const newOnly = process.argv.includes('--new-only');
 
 const { publications } = gql(`{ publications(first: 20) { nodes { id name } } }`);
 const onlineStore = publications.nodes.find(p => p.name === 'Online Store')?.id;
 
 // ---- collections ----
 const collectionIds = {};
+// a category's types: every type of its sub-categories
+const typesOf = c => c.types ?? (content.collections.some(x => x.parent === c.handle)
+  ? content.collections.filter(x => x.parent === c.handle).flatMap(x => x.types ?? []) : null);
 for (const c of parts.includes('collections') ? content.collections : []) {
-  const ruleSet = c.types && { appliedDisjunctively: true, rules: c.types.map(t => ({ column: 'TYPE', relation: 'EQUALS', condition: t })) };
-  const found = gql(`query ($q: String!) { collections(first: 1, query: $q) { nodes { id } } }`, { q: `handle:${c.handle}` }).collections.nodes[0];
+  const types = typesOf(c);
+  const ruleSet = types && { appliedDisjunctively: true, rules: types.map(t => ({ column: 'TYPE', relation: 'EQUALS', condition: t })) };
+  let found = gql(`query ($q: String!) { collections(first: 1, query: $q) { nodes { id handle ruleSet { appliedDisjunctively } image { url altText } } } }`,
+    { q: `handle:${c.handle}` }).collections.nodes.find(x => x.handle === c.handle);
+  if (found && newOnly) { collectionIds[c.handle] = found.id; continue; }
+  // a manual collection can't take rules: recreate it as an automatic one, keeping its handle and image
+  let image = null;
+  if (found && ruleSet && !found.ruleSet) {
+    image = found.image && { src: found.image.url, altText: found.image.altText };
+    check(gql(`mutation ($input: CollectionDeleteInput!) { collectionDelete(input: $input) { userErrors { field message } } }`,
+      { input: { id: found.id } }, { mutation: true }), 'collectionDelete');
+    console.log(`collection  ${c.handle}  manual → recreated as automatic`);
+    found = null;
+  }
   let id = found?.id;
   if (id) {
     check(gql(`mutation ($input: CollectionInput!) { collectionUpdate(input: $input) { userErrors { field message } } }`,
       { input: { id, title: c.en.title, descriptionHtml: c.en.body, ...(ruleSet && { ruleSet }) } }, { mutation: true }), 'collectionUpdate');
   } else {
     const r = gql(`mutation ($input: CollectionInput!) { collectionCreate(input: $input) { collection { id } userErrors { field message } } }`,
-      { input: { title: c.en.title, handle: c.handle, descriptionHtml: c.en.body, ...(ruleSet && { ruleSet }) } }, { mutation: true });
+      { input: { title: c.en.title, handle: c.handle, descriptionHtml: c.en.body, ...(ruleSet && { ruleSet }), ...(image && { image }) } }, { mutation: true });
     check(r, 'collectionCreate'); id = r.collectionCreate.collection.id;
   }
   if (onlineStore) check(gql(`mutation ($id: ID!, $input: [PublicationInput!]!) { publishablePublish(id: $id, input: $input) { userErrors { field message } } }`,
@@ -71,6 +91,15 @@ const menus = gql(`{ menus(first: 20) { nodes { id handle title } } }`).menus.no
 const menu = menus.find(m => m.handle === content.menu.handle);
 if (!menu) throw new Error(`menu ${content.menu.handle} not found`);
 // Items nest up to two levels (e.g. "Shop" → the categories → Instruments' sub-categories). CATALOG = all products; COLLECTION/PAGE resolve by handle.
+// A collection with no products yet is left out of the menu (and so out of the header, tiles, sidebar and footer);
+// re-run `--only menu` after an import and it comes in by itself.
+const counts = {};
+for (const c of content.collections) counts[c.handle] = collectionIds[c.handle]
+  ? gql(`query ($id: ID!) { collection(id: $id) { productsCount { count } } }`, { id: collectionIds[c.handle] }).collection?.productsCount.count ?? 0 : 0;
+const shown = i => i.type !== 'COLLECTION' || counts[i.handle] > 0;
+const visible = items => items.filter(shown).map(i => (i.items ? { ...i, items: visible(i.items) } : i));
+const menuItems = visible(content.menu.items);
+const hidden = content.collections.filter(c => !counts[c.handle]).map(c => c.handle);
 const toInput = i => ({
   title: i.en, type: i.type,
   ...(i.type === 'COLLECTION' ? { resourceId: collectionIds[i.handle] } : {}),
@@ -78,15 +107,15 @@ const toInput = i => ({
   ...(i.items ? { items: i.items.map(toInput) } : {}),
 });
 const m = gql(`mutation ($id: ID!, $title: String!, $items: [MenuItemUpdateInput!]!) { menuUpdate(id: $id, title: $title, items: $items) { menu { items { id title items { id title items { id title } } } } userErrors { field message } } }`,
-  { id: menu.id, title: menu.title, items: content.menu.items.map(toInput) }, { mutation: true });
+  { id: menu.id, title: menu.title, items: menuItems.map(toInput) }, { mutation: true });
 check(m, 'menuUpdate');
 // A menu item's translations live on its Link resource: gid://shopify/MenuItem/N → gid://shopify/Link/N.
 const translateItems = (saved, source) => saved.forEach((item, k) => {
   translate(item.id.replace('/MenuItem/', '/Link/'), 'ar', { title: source[k].ar });
   if (item.items?.length) translateItems(item.items, source[k].items);
 });
-translateItems(m.menuUpdate.menu.items, content.menu.items);
-console.log(`menu        ${content.menu.handle}  ${content.menu.items.length} items`);
+translateItems(m.menuUpdate.menu.items, menuItems);
+console.log(`menu        ${content.menu.handle}  ${menuItems.length} items${hidden.length ? `; not shown until they have products: ${hidden.join(', ')}` : ''}`);
 }
 
 // ---- pages no longer wanted ----
@@ -95,6 +124,20 @@ for (const handle of parts.includes('pages') ? content.remove_pages ?? [] : []) 
   if (!found) continue;
   check(gql(`mutation ($id: ID!) { pageDelete(id: $id) { userErrors { field message } } }`, { id: found.id }, { mutation: true }), 'pageDelete');
   console.log(`page        ${handle}  removed`);
+}
+
+// ---- old collections: removed, their addresses redirected ----
+for (const { handle, redirect_to } of parts.includes('cleanup') ? content.remove_collections ?? [] : []) {
+  const found = gql(`query ($q: String!) { collections(first: 1, query: $q) { nodes { id handle } } }`, { q: `handle:${handle}` }).collections.nodes.find(x => x.handle === handle);
+  if (found) check(gql(`mutation ($input: CollectionDeleteInput!) { collectionDelete(input: $input) { userErrors { field message } } }`,
+    { input: { id: found.id } }, { mutation: true }), 'collectionDelete');
+  for (const prefix of ['', '/ar']) {
+    const path = `${prefix}/collections/${handle}`, target = `${prefix}/collections/${redirect_to}`;
+    const exists = gql(`query ($q: String!) { urlRedirects(first: 1, query: $q) { nodes { path } } }`, { q: `path:${path}` }).urlRedirects.nodes.some(r => r.path === path);
+    if (!exists) check(gql(`mutation ($r: UrlRedirectInput!) { urlRedirectCreate(urlRedirect: $r) { userErrors { field message } } }`,
+      { r: { path, target } }, { mutation: true }), 'urlRedirectCreate');
+  }
+  console.log(`collection  ${handle}  ${found ? 'removed' : 'already removed'}, → ${redirect_to}`);
 }
 
 // ---- policies ----

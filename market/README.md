@@ -92,20 +92,21 @@ The first command opens a browser to log in to Shopify. The store is `kashkoul-m
 customers see it at `market.kashkoul.org`.
 
 **The store is live (since 2026-10-29), so changes never go straight to the live theme.** They go to the working
-copy, "Kashkoul Market — work" (id `189733044454`, unpublished), and are published once approved:
+copy, "Kashkoul Market — work" (id `189736517862`, unpublished), and are published once approved:
 
 ```
 # 1. push the changed files to the working copy
-shopify theme push --path market/theme --store kashkoul-market-fhsuuq5c --theme 189733044454 --only <files>
-# 2. review it: https://market.kashkoul.org/?preview_theme_id=189733044454  (Arabic: /ar?preview_theme_id=…)
+shopify theme push --path market/theme --store kashkoul-market-fhsuuq5c --theme 189736517862 --only <files>
+# 2. review it: https://market.kashkoul.org/?preview_theme_id=189736517862  (Arabic: /ar?preview_theme_id=…)
 # 3. once approved, bring the owner's theme-editor changes over from the live theme (see below), push them to the
 #    working copy, then publish it
-shopify theme publish --store kashkoul-market-fhsuuq5c --theme 189733044454
+shopify theme publish --store kashkoul-market-fhsuuq5c --theme 189736517862
 ```
 
-After publishing, the working copy is the live theme. Duplicate it as the new working copy
-(`shopify theme duplicate --theme <live id> --name "Kashkoul Market — work"`) and put the new id here and in
-`CLAUDE.md`. `shopify theme list --store kashkoul-market-fhsuuq5c` shows which theme is live.
+After publishing, the working copy is the live theme: rename it "Kashkoul Market" (`shopify theme rename`), and the
+previous live theme "Kashkoul Market — before <date>" (kept for going back). Duplicate the live theme as the new
+working copy (`shopify theme duplicate --theme <live id> --name "Kashkoul Market — work"`) and put the new id here and
+in `CLAUDE.md`. `shopify theme list --store kashkoul-market-fhsuuq5c` shows which theme is live.
 
 **The theme editor writes back.** When someone changes settings or the homepage in Shopify's theme editor,
 the store's `config/settings_data.json` and `templates/*.json` change. Before editing those files here, pull

@@ -212,7 +212,7 @@
       "handle": "akai-mpk-mini-mk3",
       "from_handle": "akai-professional-mpk-mini-mk3-25-key-usb-midi-keyboard-controller",
       "vendor": "Akai Professional",
-      "type": "Keyboard controller",
+      "type": "MIDI controllers",
       "tags": [
         "sample"
       ],
@@ -233,14 +233,14 @@
       "ar": {
         "title": "لوحة مفاتيح Akai MPK Mini MK3",
         "body": "<p>لوحة مفاتيح ووسادات صغيرة لصنع الموسيقى على الكمبيوتر. توصلها عبر USB وتعزف أصوات برنامج الموسيقى عندك.</p><ul><li>25 مفتاحًا صغيرًا تستجيب لقوة العزف</li><li>8 وسادات إيقاع مضيئة و8 أزرار تحكم</li><li>أربيجيتور مدمج وعصا تحكم لطبقة الصوت والتعديل</li><li>تعمل بطاقة كابل USB، بلا محوّل</li></ul><p><strong>للعلم:</strong> لا تحتوي على سمّاعات أو أصوات خاصة بها؛ تعمل مع كمبيوتر وبرنامج موسيقى.</p>",
-        "type": "لوحة مفاتيح تحكم"
+        "type": "وحدات تحكّم MIDI"
       }
     },
     {
       "handle": "daddario-ej95a-oud-strings",
       "from_handle": "daddario-ej95a-arabic-oud-strings",
       "vendor": "D'Addario",
-      "type": "Strings",
+      "type": "Oriental strings",
       "tags": [
         "sample"
       ],
@@ -259,14 +259,14 @@
       "ar": {
         "title": "أوتار عود عربي D'Addario (EJ95A)",
         "body": "<p>طقم كامل من أوتار D'Addario للعود العربي، بصوت دافئ وواضح.</p><ul><li>مصنوعة للعود العربي</li><li>أوتار ملفوفة بالنحاس المطلي بالفضة</li><li>علامة أوتار موثوقة حول العالم</li></ul>",
-        "type": "أوتار"
+        "type": "أوتار شرقية"
       }
     },
     {
       "handle": "hal-leonard-guitar-method-book-1",
       "from_handle": "hal-leonard-guitar-method-book-1-second-edition-beginner-guitar-lesson-book-for-adults-and-students-learn-to-play-acoustic-or-electric-guitar-with-chords-songs-exercises-notation-and-strumming",
       "vendor": "Hal Leonard",
-      "type": "Music book",
+      "type": "Method books",
       "tags": [
         "sample"
       ],
@@ -288,14 +288,14 @@
       "ar": {
         "title": "كتاب Hal Leonard لتعلّم الغيتار، الجزء 1",
         "body": "<p>الكتاب المعروف لتعلّم الغيتار من البداية، الأكوستيك أو الكهربائي. خطوات واضحة، من طريقة حمل الغيتار حتى عزف أولى الأغاني.</p><ul><li>الطبعة الثانية، تأليف Will Schmid وGreg Koch</li><li>الدوزان، وضعية العزف، قراءة النوتة والنوتات في الوضعية الأولى</li><li>الأكوردات C وG وG7 وD وD7 وA7 وEm، مع الضرب والنقر على الأوتار</li><li>100 أغنية ومقطع وتمرين للتدريب</li></ul><p><strong>للعلم:</strong> الكتاب باللغة الإنجليزية.</p>",
-        "type": "كتاب موسيقى"
+        "type": "كتب تعليم العزف"
       }
     },
     {
       "handle": "winsor-newton-cotman-watercolor-set",
       "from_handle": "winsor-newton-cotman-watercolor-paint-set-sketchers-pocket-set",
       "vendor": "Winsor & Newton",
-      "type": "Watercolor paint",
+      "type": "Watercolor & gouache",
       "tags": [
         "sample"
       ],
@@ -351,14 +351,14 @@
       "ar": {
         "title": "طقم ألوان مائية Winsor & Newton Cotman",
         "body": "<p>Cotman هي ألوان Winsor & Newton المائية للطلاب: ألوان جيدة للتعلّم والرسم اليومي، في علبة صغيرة تأخذها معك أينما ذهبت.</p><ul><li>أقراص ألوان صغيرة (Half pans): ألوان صلبة، يكفي أن تضيف الماء</li><li>فرشاة صغيرة في كل علبة، وغطاء ينفتح ليصبح لوحة لخلط الألوان</li><li>ثلاثة أحجام: 12 أو 16 أو 24 لونًا</li><li>علبة الـ16 لونًا فيها أيضًا قلم رصاص وممحاة</li></ul>",
-        "type": "ألوان مائية"
+        "type": "ألوان مائية وغواش"
       }
     },
     {
       "handle": "donner-yellow-fall-delay-pedal",
       "from_handle": "donner-guitar-delay-pedal-for-pedal-boards-electric-guitar-yellow-fall-analog-delay-mini-guitar-effect-pedal-vintage-delay-true-bypass",
       "vendor": "Donner",
-      "type": "Guitar pedal",
+      "type": "Effects pedals",
       "tags": [
         "sample"
       ],
@@ -379,14 +379,14 @@
       "ar": {
         "title": "دواسة ديلاي أنالوغ Donner Yellow Fall",
         "body": "<p>دواسة صدى (Delay) أنالوغ صغيرة للغيتار الكهربائي، تعطي صدى دافئًا من التكرار القصير إلى الطويل. حجمها الصغير يناسب أي لوحة دواسات.</p><ul><li>ديلاي أنالوغ، من 20 إلى 620 ميلي ثانية</li><li>ثلاثة أزرار: Time (الوقت)، Echo (مستوى الصدى) وF.Back (عدد التكرارات)</li><li>True bypass: يبقى صوتك نقيًا عندما تكون الدواسة مطفأة</li><li>هيكل معدني، تعمل بمحوّل كهرباء 9V DC عادي للدواسات</li></ul>",
-        "type": "دواسة غيتار"
+        "type": "دواسات مؤثرات"
       }
     },
     {
       "handle": "vic-firth-freestyle-5b-drumsticks",
       "from_handle": "vic-firth-american-concept-freestyle-5b",
       "vendor": "Vic Firth",
-      "type": "Drumsticks",
+      "type": "Sticks & mallets",
       "tags": [
         "sample"
       ],
@@ -408,14 +408,14 @@
       "ar": {
         "title": "عصي درامز Vic Firth Freestyle 5B",
         "body": "<p>زوج من عصي الدرامز 5B من سلسلة American Concept من Vic Firth. تصميم Freestyle مستدقّ على مسافة طويلة، لارتداد أكبر وعزف أسرع.</p><ul><li>5B: أسمك قليلًا من 7A و5A، لصوت أقوى وقبضة أثبت</li><li>طولها 17 إنشًا (43 سم)، مع استدقاق طويل</li><li>من خشب الهيكوري، برأس خشبي</li><li>زوج واحد</li></ul>",
-        "type": "عصي درامز"
+        "type": "عصي ومضارب"
       }
     },
     {
       "handle": "daddario-nyxl-electric-strings-3-sets",
       "from_handle": "daddario-nyxl0942-3p-electric-guitar-strings-09-42-3-sets",
       "vendor": "D'Addario",
-      "type": "Strings",
+      "type": "Guitar & bass strings",
       "tags": [
         "sample"
       ],
@@ -488,7 +488,7 @@
       "ar": {
         "title": "أوتار غيتار كهربائي D'Addario NYXL، 3 أطقم",
         "body": "<p>ثلاثة أطقم من أوتار D'Addario NYXL للغيتار الكهربائي، مصنوعة في الولايات المتحدة. أوتار قوية تحافظ على الدوزان، بصوت واضح وحضور قوي للترددات المتوسطة.</p><ul><li>ملفوفة بالنيكل، بقلب من الفولاذ عالي الكربون</li><li>مصنوعة لتقاوم الانقطاع وتحافظ على الدوزان</li><li>تغليف مقاوم للصدأ يحافظ عليها جديدة</li><li>ست سماكات، من ⁦09–42⁩ إلى ⁦11–52⁩</li></ul>",
-        "type": "أوتار"
+        "type": "أوتار غيتار وباص"
       }
     },
     {
@@ -499,7 +499,6 @@
       "stock": "on_order",
       "kg": 1.5,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -526,11 +525,10 @@
       "handle": "fender-premium-picks-sampler",
       "asin": "B07ZRYKNGS",
       "vendor": "Fender",
-      "type": "Guitar picks",
+      "type": "Picks",
       "stock": "on_order",
       "kg": 0.03,
       "kg_source": "estimate",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -576,11 +574,10 @@
       "handle": "wingo-guitar-capo",
       "asin": "B073LSS9TJ",
       "vendor": "Wingo",
-      "type": "Capo",
+      "type": "Capos",
       "stock": "on_order",
       "kg": 0.06,
       "kg_source": "estimate",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -626,11 +623,10 @@
       "handle": "onmiwod-guitar-wall-mount-2-pack",
       "asin": "B09WVZMKWG",
       "vendor": "Onmiwod",
-      "type": "Guitar wall mount",
+      "type": "Instrument stands",
       "stock": "on_order",
       "kg": 0.3,
       "kg_source": "estimate (Amazon says 11 kg)",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -694,7 +690,7 @@
       },
       "ar": {
         "title": "حامل غيتار للحائط Onmiwod، عبوة من قطعتين",
-        "type": "حامل غيتار للحائط",
+        "type": "حوامل آلات",
         "body": "<p>علّق غيتارك على الحائط: آمن، بعيد عن الطريق، ومعروض بشكل جميل. في العبوة حاملان، مع كل ما يلزم لتثبيتهما.</p><ul><li>قاعدة خشبية مع حامل معدني مبطّن على شكل حرف U يمنع الغيتار من الانزلاق</li><li>الحامل يدور ليناسب رؤوس الغيتار المختلفة، حتى المائلة منها</li><li>يناسب الغيتار الأكوستيك والكهربائي والباص والبانجو، ولا يناسب الغيتار الكلاسيكي أو الأوكوليلي</li><li>مع براغٍ ومثبّتات للجدران الجبسية والإسمنتية والخشبية</li></ul>"
       }
     },
@@ -702,11 +698,10 @@
       "handle": "a-frame-folding-guitar-stand",
       "asin": "B018FCZKR2",
       "vendor": "Amazon Basics",
-      "type": "Guitar stand",
+      "type": "Instrument stands",
       "stock": "on_order",
       "kg": 1.6,
       "kg_source": "amazon",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -723,7 +718,7 @@
       },
       "ar": {
         "title": "حامل غيتار قابل للطي على شكل A",
-        "type": "حامل غيتار",
+        "type": "حوامل آلات",
         "body": "<p>حامل أرضي متين يُبقي غيتارك آمنًا وجاهزًا للعزف. لا يحتاج إلى تركيب، وينطوي بشكل مسطّح ليسهل حمله أو تخزينه.</p><ul><li>للغيتار الأكوستيك والكهربائي، مع 3 خيارات للعرض</li><li>هيكل معدني يتحمّل حتى 10 كغ</li><li>ذراعان ومسند من الإسفنج الناعم تحمي طلاء الغيتار</li><li>أرجل مطاطية مانعة للانزلاق</li></ul>"
       }
     },
@@ -731,11 +726,10 @@
       "handle": "adjustable-tripod-guitar-stand",
       "asin": "B0BG7JWCHV",
       "vendor": "Amazon Basics",
-      "type": "Guitar stand",
+      "type": "Instrument stands",
       "stock": "on_order",
       "kg": 0.6,
       "kg_source": "amazon",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -749,7 +743,7 @@
       },
       "ar": {
         "title": "حامل غيتار ثلاثي القوائم قابل للتعديل",
-        "type": "حامل غيتار",
+        "type": "حوامل آلات",
         "body": "<p>حامل أرضي خفيف وقابل للطي يُمسك الغيتار واقفًا من الزند. مناسب للبيت ولجلسات التمرين.</p><ul><li>لمعظم أنواع الغيتار الأكوستيك والكهربائي والباص والبانجو، ولا يناسب غيتار الجاز أو الأجسام الكبيرة جدًا</li><li>ارتفاع قابل للتعديل يُثبَّت بمقبض، مع قفل لحامل الزند</li><li>قاعدة ثلاثية مع أرجل مطاطية مانعة للانزلاق</li><li>تبطين مطاطي ناعم في كل نقاط التلامس يحمي من الخدوش</li></ul>"
       }
     },
@@ -757,11 +751,10 @@
       "handle": "cahaya-padded-guitar-gig-bag",
       "asin": "B079FRVSPH",
       "vendor": "Cahaya",
-      "type": "Guitar bag",
+      "type": "Cases & gig bags",
       "stock": "on_order",
       "kg": 0.64,
       "kg_source": "amazon",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -799,7 +792,7 @@
       },
       "ar": {
         "title": "حقيبة غيتار مبطّنة Cahaya",
-        "type": "حقيبة غيتار",
+        "type": "حقائب",
         "body": "<p>حقيبة مبطّنة ومقاومة للماء تحمل فيها غيتارك إلى الدرس على ظهرك أو باليد. مقاس الأكوستيك يناسب الغيتار بطول 39 و40 و41 إنش، وتتوفّر أيضًا نسخة للغيتار الكهربائي وأخرى للباص.</p><ul><li>تبطين سميك 9 مم وقاعدة تمتص الصدمات</li><li>قماش أكسفورد 600D مقاوم للماء، يتحمّل المطر الخفيف</li><li>حمّالتان قابلتان للتعديل كحقيبة ظهر، ومقبضان، وعروة لتعليقها على الحائط</li><li>جيب أمامي كبير لكتب الموسيقى، وجيب صغير للريش والكابو وجهاز الدوزان</li></ul>"
       }
     },
@@ -807,11 +800,10 @@
       "handle": "fender-professional-instrument-cable",
       "asin": "B07MVZQXRZ",
       "vendor": "Fender",
-      "type": "Instrument cable",
+      "type": "Cables & adapters",
       "stock": "on_order",
       "kg": 0.3,
       "kg_source": "estimate",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         2,
@@ -882,7 +874,7 @@
       },
       "ar": {
         "title": "كابل آلات Fender Professional",
-        "type": "كابل آلات موسيقية",
+        "type": "كابلات ومحوّلات",
         "body": "<p>كابل متين من سلسلة Professional من Fender لوصل الغيتار أو الباص أو أي آلة أخرى بالمضخّم (الأمبليفاير). مرن وهادئ، ولا يلتفّ أو ينثني بسهولة.</p><ul><li>مقابس قياسية 6.35 مم مطلية بالنيكل</li><li>موصل بقياس 22 ودرع لولبي من النحاس الخالي من الأكسجين بنسبة 95% لإشارة نقية بلا ضجيج</li><li>غلاف PVC سميك 8 مم</li><li>اختر الطول، مع طرفين مستقيمين أو طرف بزاوية</li></ul>"
       }
     },
@@ -890,11 +882,10 @@
       "handle": "fender-frontman-10g-guitar-amp",
       "asin": "B001L8PIFW",
       "vendor": "Fender",
-      "type": "Guitar amplifier",
+      "type": "Guitar & bass amps",
       "stock": "on_order",
       "kg": 3.8,
       "kg_source": "amazon",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -912,7 +903,7 @@
       },
       "ar": {
         "title": "مضخّم غيتار Fender Frontman 10G",
-        "type": "مضخّم غيتار",
+        "type": "مضخّمات غيتار وباص",
         "body": "<p>مضخّم صغير للتمرين على الغيتار الكهربائي، بشكل Fender الكلاسيكي. أزراره بسيطة يفهمها أي مبتدئ، وصوته يتنقّل من النقي إلى البلوز والميتال.</p><ul><li>قوة 10 واط مع سمّاعة Fender Special Design بقياس 6 إنش</li><li>صوت نقي مع Overdrive يُشغَّل بزرّ، وأزرار Gain وVolume وTreble وBass</li><li>مدخل AUX بقياس 3.5 ملم للعزف مع أغانيك، ومخرج سمّاعات للتمرين بصمت</li><li>هيكل مغلق من الخلف لصوت باص أغنى</li></ul>"
       }
     },
@@ -920,11 +911,10 @@
       "handle": "fender-mustang-lt25-guitar-amp",
       "asin": "B07N29M92M",
       "vendor": "Fender",
-      "type": "Guitar amplifier",
+      "type": "Guitar & bass amps",
       "stock": "on_order",
       "kg": 6.9,
       "kg_source": "amazon",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -940,7 +930,7 @@
       },
       "ar": {
         "title": "مضخّم غيتار Fender Mustang LT25",
-        "type": "مضخّم غيتار",
+        "type": "مضخّمات غيتار وباص",
         "body": "<p>مضخّم رقمي بقوة 25 واط للتمرين على الغيتار الكهربائي، مصمَّم للمبتدئين والطلاب. فيه 30 إعدادًا جاهزًا تغطي أشهر أصوات الغيتار الكهربائي لأنواع موسيقية كثيرة، مع واجهة بسيطة وسهلة.</p><ul><li>قوة 25 واط مع سمّاعة Fender Special Design بقياس 8 إنش</li><li>30 إعدادًا جاهزًا مبنية على نماذج مضخّمات ومؤثرات</li><li>شاشة ملوّنة بقياس 1.8 إنش ترى عليها إعداداتك بلمحة</li><li>مخرج سمّاعات للتمرين بصمت، ومنفذ USB للتسجيل</li></ul>"
       }
     },
@@ -948,11 +938,10 @@
       "handle": "boss-ds-1-distortion-pedal",
       "asin": "B0002KYY14",
       "vendor": "BOSS",
-      "type": "Guitar pedal",
+      "type": "Effects pedals",
       "stock": "on_order",
       "kg": 0.4,
       "kg_source": "estimate (Amazon says 0.57 g)",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -970,7 +959,7 @@
       },
       "ar": {
         "title": "دواسة ديستورشن BOSS ⁦DS-1⁩",
-        "type": "دواسة غيتار",
+        "type": "دواسات مؤثرات",
         "body": "<p>دواسة الديستورشن البرتقالية الكلاسيكية، يستعملها عازفو الغيتار في كل مكان منذ 1978. هجوم حادّ وامتداد ناعم للنغمة، للإيقاعات الثقيلة والسولوهات الحادّة.</p><ul><li>ثلاثة أزرار: Tone وLevel وDist</li><li>يبقى الصوت واضحًا حتى مع أقصى تشويه، وتعمل كمعزّز للصوت (Booster) على الإعدادات المنخفضة</li><li>تحافظ على طابع غيتارك الخاص: اخفض صوت الغيتار ليصبح الصوت أنقى</li><li>تعمل ببطارية 9V (مرفقة) أو بمحوّل BOSS PSA (غير مرفق)</li></ul>"
       }
     },
@@ -978,11 +967,10 @@
       "handle": "elixir-nanoweb-phosphor-bronze-acoustic-strings",
       "asin": "B000A6ASSS",
       "vendor": "Elixir",
-      "type": "Strings",
+      "type": "Guitar & bass strings",
       "stock": "on_order",
       "kg": 0.05,
       "kg_source": "estimate",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -1051,7 +1039,7 @@
       },
       "ar": {
         "title": "أوتار غيتار أكوستيك Elixir NANOWEB فوسفور برونز",
-        "type": "أوتار",
+        "type": "أوتار غيتار وباص",
         "body": "<p>أوتار فوسفور برونز مغلّفة للغيتار الأكوستيك ذي الستة أوتار، معروفة بأنها تحافظ على صوتها أطول بكثير من الأوتار العادية. صوت غني وممتلئ مع ملمس ناعم ومريح.</p><ul><li>فوسفور برونز، مع تغليف NANOWEB من Elixir يغطي الوتر بالكامل</li><li>تقاوم العرق والرطوبة والصدأ، فتبدّل أوتارك مرات أقل</li><li>الطقم الخفيف: ⁦12-16-24-32-42-53⁩</li><li>طقم واحد أو عبوة من 4 أطقم، بسماكات من ⁦11–52⁩ إلى ⁦13–56⁩</li></ul>"
       }
     },
@@ -1059,11 +1047,10 @@
       "handle": "daddario-pro-arte-classical-strings",
       "asin": "B000EEL6J6",
       "vendor": "D'Addario",
-      "type": "Strings",
+      "type": "Guitar & bass strings",
       "stock": "on_order",
       "kg": 0.05,
       "kg_source": "estimate",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -1125,7 +1112,7 @@
       },
       "ar": {
         "title": "أوتار غيتار كلاسيك D'Addario Pro-Arte",
-        "type": "أوتار",
+        "type": "أوتار غيتار وباص",
         "body": "<p>طقم أوتار النايلون الكلاسيكي من D'Addario للغيتار الكلاسيكي، بالصوت الكلاسيكي التقليدي الذي يحبه العازفون. صوت دافئ وناعم وعزف سريع الاستجابة.</p><ul><li>أوتار عالية من النايلون الشفاف لنغمات حلوة وناعمة</li><li>أوتار الباص بقلب من ألياف النايلون، ملفوفة بنحاس مطلي بالفضة</li><li>أوتار بأطراف للربط، في كيس يُعاد إغلاقه يحافظ عليها جديدة</li><li>أربع درجات شدّ (خفيف، عادي، مرتفع، مرتفع جدًا)، طقم واحد أو 3 أطقم</li></ul>"
       }
     },
@@ -1133,11 +1120,10 @@
       "handle": "martin-fluorocarbon-ukulele-strings",
       "asin": "B0002CZVZK",
       "vendor": "Martin",
-      "type": "Strings",
+      "type": "Guitar & bass strings",
       "stock": "on_order",
       "kg": 0.03,
       "kg_source": "estimate",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -1171,7 +1157,7 @@
       },
       "ar": {
         "title": "أوتار يوكوليلي Martin فلوروكربون",
-        "type": "أوتار",
+        "type": "أوتار غيتار وباص",
         "body": "<p>طقم كامل من 4 أوتار فلوروكربون شفافة لليوكوليلي، للمبتدئين والمحترفين. سهلة العزف، بصوت دافئ وواضح، وتحافظ على الدوزان خلال التمارين الطويلة والحفلات.</p><ul><li>خفيفة لتسهيل الضرب والنقر، وقوية لتحافظ على الدوزان</li><li>تصل إلى النغمة المطلوبة بسرعة، مع تمدّد قليل</li><li>طقم سوبرانو/كونسرت، موديل M600، لدوزان C العادي</li><li>متوفرة أيضًا لليوكوليلي الباريتون</li></ul>"
       }
     },
@@ -1183,7 +1169,6 @@
       "stock": "on_order",
       "kg": 1.8,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -1238,7 +1223,6 @@
       "stock": "on_order",
       "kg": 3.9,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -1309,7 +1293,6 @@
       "stock": "on_order",
       "kg": 1.4,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -1394,7 +1377,6 @@
       "stock": "on_order",
       "kg": 3,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -1445,7 +1427,6 @@
       "stock": "on_order",
       "kg": 1.3,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -1521,7 +1502,6 @@
       "stock": "on_order",
       "kg": 0.6,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -1598,11 +1578,10 @@
       "handle": "newlam-17-key-kalimba",
       "asin": "B07Q38FWFJ",
       "vendor": "Newlam",
-      "type": "Kalimba",
+      "type": "Small percussion",
       "stock": "on_order",
       "kg": 0.33,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -1636,7 +1615,7 @@
       },
       "ar": {
         "title": "كاليمبا Newlam بـ17 مفتاحًا",
-        "type": "كاليمبا",
+        "type": "إيقاع صغير",
         "body": "<p>بيانو إبهام خشبي بصوت ناعم يشبه الأجراس. يُتعلَّم خلال دقائق، صغير يرافقك أينما ذهبت، وهدية جميلة للأطفال والمبتدئين الكبار ومحبّي الموسيقى.</p><ul><li>17 مفتاحًا من الفولاذ، محفور عليها أسماء النوتات</li><li>جسم من الخشب مع انحناءة مريحة لليد</li><li>يأتي مع كتيّب تعليمات وكيس قماشي للحمل وقطعة قماش للتنظيف</li><li>للأطفال والمبتدئين والعازفين المتمرّسين</li></ul>"
       }
     },
@@ -1648,7 +1627,6 @@
       "stock": "on_order",
       "kg": 3.3,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -1678,7 +1656,6 @@
       "stock": "on_order",
       "kg": 4.4,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -1704,11 +1681,10 @@
       "handle": "stylophone-s1-pocket-synthesizer",
       "asin": "B000SKHSRU",
       "vendor": "Stylophone",
-      "type": "Synthesizer",
+      "type": "Synthesizers",
       "stock": "on_order",
       "kg": 0.25,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -1758,7 +1734,6 @@
       "stock": "on_order",
       "kg": 11.3,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -1781,11 +1756,10 @@
       "handle": "m-audio-sp-2-sustain-pedal",
       "asin": "B00063678K",
       "vendor": "M-Audio",
-      "type": "Sustain pedal",
+      "type": "Sustain pedals",
       "stock": "on_order",
       "kg": 0.4,
       "kg_source": "amazon",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -1803,7 +1777,7 @@
       },
       "ar": {
         "title": "دواسة سستين M-Audio ⁦SP-2⁩",
-        "type": "دواسة سستين",
+        "type": "دواسات سستين",
         "body": "<p>دواسة سستين متينة على طراز البيانو، للكيبورد والبيانو الرقمي والسينثسايزر وأجهزة MIDI. تضيف إلى عزفك إحساس دواسة البيانو الحقيقية.</p><ul><li>دواسة كروم على طراز البيانو بحركة طبيعية</li><li>مفتاح لتغيير القطبية، لتعمل مع كل أنواع الكيبورد الإلكتروني</li><li>قطع مطاطية من الأسفل تمنعها من الانزلاق</li><li>كابل بطول نحو 1.8 م مع وصلة 6.35 ملم</li></ul>"
       }
     },
@@ -1811,11 +1785,10 @@
       "handle": "rockjam-xfinity-keyboard-stand",
       "asin": "B01B15JPCQ",
       "vendor": "RockJam",
-      "type": "Keyboard stand",
+      "type": "Instrument stands",
       "stock": "on_order",
       "kg": 3.8,
       "kg_source": "amazon",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -1833,7 +1806,7 @@
       },
       "ar": {
         "title": "حامل كيبورد RockJam Xfinity",
-        "type": "حامل كيبورد",
+        "type": "حوامل آلات",
         "body": "<p>حامل متين على شكل X مزدوج للبيانو الرقمي والكيبورد الكبير. يصل مركّبًا: افتحه، اضبط الارتفاع واقفله، من دون براغٍ.</p><ul><li>هيكل X مزدوج من الفولاذ القوي، يحمل نحو 20 كغ</li><li>ارتفاع من نحو ⁦10–98⁩ سم، من الأطفال جالسين إلى الكبار واقفين</li><li>قفل أمان يمنع الانطباق وأحزمة لتثبيت الكيبورد</li><li>أطراف مطاطية لا تنزلق</li></ul>"
       }
     },
@@ -1841,11 +1814,10 @@
       "handle": "miniartis-25-note-glockenspiel",
       "asin": "B0BSXGS7GK",
       "vendor": "MiniArtis",
-      "type": "Glockenspiel",
+      "type": "Small percussion",
       "stock": "on_order",
       "kg": 1.46,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -1875,7 +1847,7 @@
       },
       "ar": {
         "title": "غلوكنشبيل MiniArtis بـ25 نغمة",
-        "type": "غلوكنشبيل",
+        "type": "إيقاع صغير",
         "body": "<p>غلوكنشبيل ملوّن ومضبوط النغمات للأطفال، مع كتاب أغانٍ ليبدأوا بعزف أغانٍ حقيقية. مناسب للبيت والصفوف والعلاج بالموسيقى.</p><ul><li>25 قطعة معدنية ملوّنة حسب النغمة، من صول إلى صول العالية، مع أنصاف النغمات</li><li>مضربان آمنان للأطفال</li><li>حقيبة للحمل والتخزين</li><li>كتاب أغانٍ فيه 30 أغنية</li></ul>"
       }
     },
@@ -1982,7 +1954,7 @@
       "handle": "focusrite-scarlett-solo-4th-gen-audio-interface",
       "asin": "B0C5JSHP7M",
       "vendor": "Focusrite",
-      "type": "Audio interface",
+      "type": "Audio interfaces",
       "stock": "on_order",
       "kg": 0.41,
       "kg_source": "amazon",
@@ -2003,7 +1975,7 @@
       },
       "ar": {
         "title": "واجهة صوت Focusrite Scarlett Solo 4th Gen",
-        "type": "واجهة صوت",
+        "type": "كروت صوت",
         "body": "<p>واجهة الصوت (كرت الصوت) المصمَّمة لكتّاب الأغاني: صِل الميكروفون والغيتار وسجّل بجودة الاستوديو على الكمبيوتر أو iPad.</p><ul><li>مدخل ميكروفون XLR مع مضخّم مسبق منخفض الضجيج، ومدخل للغيتار أو الآلات</li><li>⁦24-bit/192 kHz⁩ ومدى ديناميكي 120 dB، مع وضع Air للصوت والغيتار</li><li>مخرج سماعات بتحكّم مستقل بالصوت</li><li>منفذ USB-C، يعمل مع Mac وWindows وiPad، ومعه برامج Pro Tools Intro+ وAbleton Live Lite وCubase LE</li></ul>"
       }
     },
@@ -2011,7 +1983,7 @@
       "handle": "shure-sm58-vocal-microphone",
       "asin": "B000CZ0R42",
       "vendor": "Shure",
-      "type": "Microphone",
+      "type": "Microphones",
       "stock": "on_order",
       "kg": 0.6,
       "kg_source": "estimate (Amazon says 8.6 kg)",
@@ -2048,7 +2020,7 @@
       },
       "ar": {
         "title": "ميكروفون غناء Shure SM58",
-        "type": "ميكروفون",
+        "type": "ميكروفونات",
         "body": "<p>ميكروفون الغناء الديناميكي الكلاسيكي، المعتمَد على المسارح وفي الاستوديوهات حول العالم: صوت دافئ وواضح يبرز في المكس، للغناء والحفلات والتسجيل والبودكاست.</p><ul><li>التقاط قلبي الشكل (Cardioid): يركّز على صوتك ويخفّف ضجيج الخلفية والصفير (feedback)</li><li>فلتر مدمج في الشبكة يخفّف أصوات النفَس والهواء</li><li>هيكل معدني متين ووصلة XLR</li><li>يأتي مع قطعة تثبيت على الستاند وحقيبة حفظ</li></ul>"
       }
     },
@@ -2056,7 +2028,7 @@
       "handle": "fifine-am8-usb-xlr-microphone",
       "asin": "B0BMFQP2ZZ",
       "vendor": "FIFINE",
-      "type": "Microphone",
+      "type": "Microphones",
       "stock": "on_order",
       "kg": 0.79,
       "kg_source": "amazon",
@@ -2092,7 +2064,7 @@
       },
       "ar": {
         "title": "ميكروفون FIFINE AmpliGame AM8 USB/XLR",
-        "type": "ميكروفون",
+        "type": "ميكروفونات",
         "body": "<p>ميكروفون ديناميكي للبث المباشر والألعاب والبودكاست والتسجيل في البيت. يُوصَل مباشرةً بالكمبيوتر أو PS5 عبر USB، أو بواجهة صوت أو ميكسر عبر XLR.</p><ul><li>ميكروفون ديناميكي قلبي الالتقاط (⁦50 Hz–16 kHz⁩): صوت طبيعي وضجيج أقل من الغرفة</li><li>عبر USB: كتم الصوت باللمس، مفتاح للكسب (gain)، منفذ سماعات مع تحكّم بالصوت، وإضاءة RGB</li><li>عبر XLR: لواجهة صوت أو ميكسر (كابل XLR غير مرفق)</li><li>يأتي مع قاعدة للمكتب وكابل USB-C، ويركب أيضًا على ستاندات الميكروفون القياسية</li></ul>"
       }
     },
@@ -2100,7 +2072,7 @@
       "handle": "on-stage-ms7701b-boom-mic-stand",
       "asin": "B000978D58",
       "vendor": "On-Stage",
-      "type": "Microphone stand",
+      "type": "Mic stands & pop filters",
       "stock": "on_order",
       "kg": 2.4,
       "kg_source": "amazon",
@@ -2117,7 +2089,7 @@
       },
       "ar": {
         "title": "حامل ميكروفون On-Stage MS7701B مع ذراع",
-        "type": "حامل ميكروفون",
+        "type": "حوامل ميكروفون وفلاتر",
         "body": "<p>حامل ميكروفون متين مع ذراع (boom) للاستعمال اليومي على المسرح أو في الاستوديو أو في البيت: يحمل ميكروفون الغناء، أو يمتدّ لالتقاط صوت آلة أكوستيك أو مضخّم.</p><ul><li>قاعدة ثلاثية من الفولاذ بأرجل مطاطية مانعة للانزلاق</li><li>ارتفاع قابل للتعديل بين 81 و156 سم</li><li>ذراع بطول 76 سم قابلة للفك، تميل بأي زاوية</li><li>سنّ قياسي ⁦5/8⁩ إنش، ويُطوى ليسهل حمله</li></ul>"
       }
     },
@@ -2125,7 +2097,7 @@
       "handle": "xlr-microphone-cable",
       "asin": "B01JNLUA5G",
       "vendor": "Amazon Basics",
-      "type": "Microphone cable",
+      "type": "Cables & adapters",
       "stock": "on_order",
       "kg": 0.2,
       "kg_source": "amazon",
@@ -2208,7 +2180,7 @@
       },
       "ar": {
         "title": "كابل ميكروفون XLR",
-        "type": "كابل ميكروفون",
+        "type": "كابلات ومحوّلات",
         "body": "<p>كابل ميكروفون XLR متوازن (ذكر إلى أنثى)، لوصل الميكروفون بالميكسر أو واجهة الصوت أو نظام الصوت والسماعات، في الاستوديو أو على المسرح.</p><ul><li>موصلات من النحاس بالكامل مع تدريع حلزوني لتخفيف التشويش</li><li>وصلات معدنية بثلاثة دبابيس</li><li>غلاف PVC مرن بسماكة 6 ملم، لا يتشابك</li><li>اختر الطول، كابلًا واحدًا أو عبوة من كابلين</li></ul>"
       }
     },
@@ -2216,7 +2188,7 @@
       "handle": "aokeo-pop-filter",
       "asin": "B01N21H9WY",
       "vendor": "Aokeo",
-      "type": "Pop filter",
+      "type": "Mic stands & pop filters",
       "stock": "on_order",
       "kg": 0.18,
       "kg_source": "amazon",
@@ -2236,7 +2208,7 @@
       },
       "ar": {
         "title": "فلتر بوب للميكروفون Aokeo",
-        "type": "فلتر بوب للميكروفون",
+        "type": "حوامل ميكروفون وفلاتر",
         "body": "<p>فلتر بوب يُثبَّت على ستاند الميكروفون أو الذراع ويوضع أمام الميكروفون، لصوت أنظف في الغناء والبودكاست والبث. يناسب Blue Yeti ومعظم الميكروفونات الأخرى.</p><ul><li>شاشة بطبقتين تخفّف ضربات الهواء في الحروف الانفجارية وحدّة حرف السين</li><li>رقبة معدنية مرنة لضبط الزاوية والمسافة</li><li>ملقط بمسمار مع قبضة لا تخدش، يناسب معظم الستاندات والأذرع</li><li>قطر الشاشة نحو 15.5 سم، والملقط يفتح حتى 4 سم</li></ul>"
       }
     },
@@ -2248,7 +2220,6 @@
       "stock": "on_order",
       "kg": 0.1,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -2288,11 +2259,10 @@
       "handle": "glory-bb-trumpet",
       "asin": "B0BRGW215W",
       "vendor": "Glory",
-      "type": "Trumpet",
+      "type": "Trumpet & brass",
       "stock": "on_order",
       "kg": 2.4,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -2358,7 +2328,7 @@
       },
       "ar": {
         "title": "ترومبيت Glory على سلّم سي بيمول (Bb)",
-        "type": "ترومبيت",
+        "type": "ترومبيت ونحاسيات",
         "body": "<p>طقم ترومبيت كامل للمبتدئين، للدروس وفرقة المدرسة والتمرين في البيت. سهل النفخ، بصوت ساطع وواضح.</p><ul><li>ترومبيت على سلّم سي بيمول (Bb)، بجسم من النحاس الأصفر وبعدّة ألوان</li><li>ثلاثة مكابس سريعة وسلسة الحركة</li><li>مع مبسم فضي وقفازات بيضاء وعدّة تنظيف</li><li>حقيبة صلبة مع أحزمة للكتف</li></ul>"
       }
     },
@@ -2370,7 +2340,6 @@
       "stock": "on_order",
       "kg": 1.5,
       "kg_source": "estimate",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -2445,7 +2414,7 @@
       },
       "ar": {
         "title": "فلوت عرضي Glory بثقوب مغلقة، سلّم دو (C)",
-        "type": "فلوت عرضي",
+        "type": "فلوت",
         "body": "<p>طقم فلوت كامل للمبتدئين، للطلاب وفرقة المدرسة. مفاتيحه بثقوب مغلقة، أسهل في التغطية من الموديلات ذات الثقوب المفتوحة، فيحصل العازف الجديد على صوت نظيف بسرعة.</p><ul><li>فلوت على سلّم دو (C) بـ16 مفتاحًا وثقوب مغلقة</li><li>جسم من الكوبرونيكل بصوت دافئ وواضح</li><li>وسائد جلدية محكمة تسهّل النوتات المنخفضة</li><li>مع حقيبة، وقضيب ضبط، وشحم للوصلات، وقطعة تنظيف، وقفازات</li></ul>"
       }
     },
@@ -2457,7 +2426,6 @@
       "stock": "on_order",
       "kg": 0.13,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -2551,11 +2519,10 @@
       "handle": "hopwell-steel-tongue-drum",
       "asin": "B0C7QVVMD9",
       "vendor": "Hopwell",
-      "type": "Tongue drum",
+      "type": "Small percussion",
       "stock": "on_order",
       "kg": 2.6,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -2594,7 +2561,7 @@
       },
       "ar": {
         "title": "طبل لسان فولاذي Hopwell بـ15 نغمة",
-        "type": "طبل لسان فولاذي",
+        "type": "إيقاع صغير",
         "body": "<p>طبل لسان فولاذي بقطر 13 إنش على سلّم ري الكبير (D major)، بصوت هادئ وصافٍ. سهل حتى للمبتدئين تمامًا، وجميل لحصص الموسيقى والاسترخاء واليوغا.</p><ul><li>15 نغمة مدوزنة على سلّم ري الكبير</li><li>مصنوع يدويًا من سبيكة التيتانيوم، بطلاء لا يبهت</li><li>يُعزف بالمضارب أو بالأصابع</li><li>مع مضربين خشبيين وكتاب أغانٍ وملصقات للنوتات وحقيبة حمل</li></ul>"
       }
     },
@@ -2602,11 +2569,10 @@
       "handle": "teninyu-half-moon-tambourine",
       "asin": "B0D8BJPHK8",
       "vendor": "Teninyu",
-      "type": "Tambourine",
+      "type": "Small percussion",
       "stock": "on_order",
       "kg": 0.31,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -2656,7 +2622,7 @@
       },
       "ar": {
         "title": "دفّ نصف قمر Teninyu",
-        "type": "تامبورين",
+        "type": "إيقاع صغير",
         "body": "<p>دفّ يدوي على شكل نصف قمر، برنين صافٍ وواضح. مناسب لمرافقة الغناء والرقص، ولحصص الموسيقى والعزف الجماعي.</p><ul><li>صفّان من الصنوج المعدنية، 40 صنجًا في المجموع</li><li>جسم من البلاستيك القاسي المتين</li><li>مقبض مريح يناسب اليد</li></ul>"
       }
     },
@@ -2664,11 +2630,10 @@
       "handle": "domg-wooden-maracas",
       "asin": "B09LLPY3D3",
       "vendor": "DOMG",
-      "type": "Maracas",
+      "type": "Small percussion",
       "stock": "on_order",
       "kg": 0.2,
       "kg_source": "estimate",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -2702,7 +2667,7 @@
       },
       "ar": {
         "title": "ماراكاس خشبية DOMG",
-        "type": "ماراكاس",
+        "type": "إيقاع صغير",
         "body": "<p>ماراكاس خشبية مرسومة يدويًا، بصوت ساطع وواضح. ممتعة للأطفال والكبار، في البيت أو الصف أو الحفلات.</p><ul><li>من الخشب، مرسومة باليد</li><li>بطول 19.5 سم تقريبًا</li><li>تُباع زوجًا واحدًا أو ثلاثة أزواج</li><li>من عمر 3 سنوات وما فوق</li></ul>"
       }
     },
@@ -2710,11 +2675,10 @@
       "handle": "mgtech-wooden-egg-shakers",
       "asin": "B0C5WN9XK7",
       "vendor": "MGTECH",
-      "type": "Shaker",
+      "type": "Small percussion",
       "stock": "on_order",
       "kg": 0.26,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -2748,7 +2712,7 @@
       },
       "ar": {
         "title": "بيض إيقاعي خشبي MGTECH",
-        "type": "شيكر",
+        "type": "إيقاع صغير",
         "body": "<p>بيض إيقاعي (شيكر) من الخشب بألوان زاهية وصوت خشخشة ناعم. آلة أولى بسيطة تساعد الأطفال على تنمية حسّ الإيقاع، في الصف أو في البيت.</p><ul><li>من الخشب، بنقوش ملوّنة زاهية</li><li>بحجم البيضة العادية، نحو 5 × 7 سم</li><li>طقم من 6 أو 12 قطعة</li><li>من عمر 3 سنوات وما فوق</li></ul>"
       }
     },
@@ -2756,11 +2720,10 @@
       "handle": "meinl-jam-cajon",
       "asin": "B00PNG4AWA",
       "vendor": "Meinl",
-      "type": "Cajon",
+      "type": "Hand drums",
       "stock": "on_order",
       "kg": 4.5,
       "kg_source": "estimate (Amazon says 0.6)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -2827,7 +2790,7 @@
       },
       "ar": {
         "title": "كاخون Meinl Jam",
-        "type": "كاخون",
+        "type": "طبول يدوية",
         "body": "<p>طبل صندوقي صغير تجلس عليه وتعزف بيديك، بباص قوي وسنير حادّ. سهل لأي شخص، ومناسب للحفلات الأكوستيك والجلسات الموسيقية وتعليم الإيقاع.</p><ul><li>مصنوع في أوروبا من خشب البتولا البلطيقي 100%</li><li>مجموعتان ثابتتان من أسلاك السنير الفولاذية</li><li>فتحة صوت خلفية، تصلح أيضًا لوضع الميكروفون</li><li>أرجل من السيليكون؛ نحو 26 × 38 × 26 سم و2.7 كغ، ويتحمّل وزن الكبار</li></ul>"
       }
     },
@@ -2835,11 +2798,10 @@
       "handle": "evans-realfeel-practice-pad",
       "asin": "B000FMDIXY",
       "vendor": "Evans",
-      "type": "Practice pad",
+      "type": "Practice pads",
       "stock": "on_order",
       "kg": 1.65,
       "kg_source": "amazon",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -2896,7 +2858,7 @@
       },
       "ar": {
         "title": "باد تمرين Evans RealFeel",
-        "type": "باد تمرين للدرامز",
+        "type": "وسادات تمرين",
         "body": "<p>باد التمرين الكلاسيكي للدرامز: هادئ وسهل الحمل، لتتمرّن على التمارين الأساسية في أي مكان من دون إزعاج أحد. يوضع على الطاولة أو على الركبتين أو داخل حامل السنير.</p><ul><li>مطاط طبيعي يعطي ارتداد العصا كما على الطبل الحقيقي</li><li>الموديلات بوجهين فيها وجه مطاطي أقسى لتمرين أصعب</li><li>بمقاسات 6 و7 و12 إنش</li><li>سطح من قماش رمادي داكن يقاوم الاهتراء</li></ul>"
       }
     },
@@ -2908,7 +2870,6 @@
       "stock": "on_order",
       "kg": 3.2,
       "kg_source": "amazon (7 lb)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -2936,7 +2897,6 @@
       "stock": "on_order",
       "kg": 3.2,
       "kg_source": "estimate (Amazon says 2 kg item)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -2964,7 +2924,6 @@
       "stock": "on_order",
       "kg": 3.2,
       "kg_source": "estimate (Amazon says 2 kg item)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -2988,11 +2947,10 @@
       "handle": "sala-muzik-sop-206-oud-risha-6-pack",
       "asin": "B07TJJF9BK",
       "vendor": "Sala Muzik",
-      "type": "Oud risha",
+      "type": "Risha & qanun rings",
       "stock": "on_order",
       "kg": 0.05,
       "kg_source": "estimate (Amazon says 0.01 kg)",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1
@@ -3004,7 +2962,7 @@
       },
       "ar": {
         "title": "ريشة عود Sala Muzik، عبوة من 6",
-        "type": "ريشة عود",
+        "type": "ريشة وخواتم قانون",
         "body": "<p>ست ريشات للعود بسماكات مختلفة، لتجد الإحساس والصوت اللذين يناسبان عزفك.</p><ul><li>6 ريشات، لكل واحدة سماكة مختلفة</li><li>مصنوعة للعود ولصوته الشرقي الأصيل</li><li>ألوان ونقوش متنوعة</li><li>الموديل ⁦SOP-206⁩</li></ul>"
       }
     },
@@ -3012,11 +2970,10 @@
       "handle": "sala-muzik-csl-113-baglama-saz",
       "asin": "B00WOI8VGQ",
       "vendor": "Sala Muzik",
-      "type": "Saz",
+      "type": "Buzuq & saz",
       "stock": "on_order",
       "kg": 1.5,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -3032,7 +2989,7 @@
       },
       "ar": {
         "title": "ساز باغلاما طويل الزند Sala Muzik ⁦CSL-113⁩",
-        "type": "ساز",
+        "type": "بزق وساز",
         "body": "<p>ساز باغلاما تركي طويل الزند، آلة أولى جيدة للطلاب الذين يحبون صوت الآلات طويلة الزند. الساز هو القريب التركي للبزق، وقريب منه في الصوت وطريقة العزف.</p><ul><li>قصعة مخططة من خشب الماهوغاني والقيقب، ووجه من خشب السبروس</li><li>7 أوتار من الستيل، مركّبة وجاهزة للدوزان</li><li>لمسة نهائية لامعة</li><li>الآلة مع أوتارها، من دون حقيبة</li></ul>"
       }
     },
@@ -3040,11 +2997,10 @@
       "handle": "ethnic-musical-black-saz-with-pickup",
       "asin": "B09JG6DDTY",
       "vendor": "Ethnic Musical",
-      "type": "Saz",
+      "type": "Buzuq & saz",
       "stock": "on_order",
       "kg": 2,
       "kg_source": "estimate (Amazon gives none)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -3060,7 +3016,7 @@
       },
       "ar": {
         "title": "ساز طويل الزند أسود مع لاقط صوت Ethnic Musical",
-        "type": "ساز",
+        "type": "بزق وساز",
         "body": "<p>ساز طويل الزند مصنوع يدويًا بلون أسود لامع، مع لاقط صوت (بيك أب) مدمج لتوصله بالمضخّم على المسرح. الساز هو القريب التركي للبزق، وقريب منه في الصوت وطريقة العزف.</p><ul><li>قصعة من خشب الكرز الصلب، وجه من خشب السبروس، وزند من خشب الزان</li><li>مفاتيح من خشب الروزوود، مريحة في الدوزان</li><li>لاقط صوت مدمج بمخرج jack قياس 6.35 ملم (1/4 إنش)</li><li>مع حقيبة طرية وطقم أوتار Pyramid و10 ريشات للساز</li></ul>"
       }
     },
@@ -3068,11 +3024,10 @@
       "handle": "sala-muzik-asl-302geq-walnut-baglama-saz",
       "asin": "B073C6FS67",
       "vendor": "Sala Muzik",
-      "type": "Saz",
+      "type": "Buzuq & saz",
       "stock": "on_order",
       "kg": 1.5,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -3089,7 +3044,7 @@
       },
       "ar": {
         "title": "ساز باغلاما من خشب الجوز Sala Muzik ⁦ASL-302GEQ⁩",
-        "type": "ساز",
+        "type": "بزق وساز",
         "body": "<p>ساز باغلاما طويل الزند بقصعة من خشب الجوز ومعادل صوت (إيكولايزر) مدمج، للطلاب الجادّين الذين يريدون أيضًا العزف عبر مضخّم. الساز هو القريب التركي للبزق، وقريب منه في الصوت وطريقة العزف.</p><ul><li>قصعة من خشب الجوز، ووجه من خشب السبروس</li><li>قصعة بقياس 39 سم؛ 80 سم من الفرس إلى العتبة</li><li>23 دستانًا</li><li>معادل صوت مدمج، للعزف عبر مضخّم أو نظام صوت</li></ul>"
       }
     },
@@ -3097,11 +3052,10 @@
       "handle": "sala-muzik-trl-101-saz-strings",
       "asin": "B01GS0M6IE",
       "vendor": "Sala Muzik",
-      "type": "Strings",
+      "type": "Oriental strings",
       "stock": "on_order",
       "kg": 0.1,
       "kg_source": "estimate (Amazon gives none)",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -3114,7 +3068,7 @@
       },
       "ar": {
         "title": "أوتار ساز طويل الزند Sala Muzik ⁦TRL-101⁩",
-        "type": "أوتار",
+        "type": "أوتار شرقية",
         "body": "<p>طقم أوتار بديل لساز الباغلاما طويل الزند، ليبقى صوت الساز عندك نقيًا.</p><ul><li>للباغلاما طويلة الزند (uzun sap)</li><li>أوتار ستيل بسماكة متوسطة (0.20 على العبوة)</li><li>عبوة واحدة</li><li>الموديل ⁦TRL-101⁩</li></ul>"
       }
     },
@@ -3126,7 +3080,6 @@
       "stock": "on_order",
       "kg": 11,
       "kg_source": "estimate (Amazon says 5 kg, which is the bare instrument without its hard case)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -3154,7 +3107,6 @@
       "stock": "on_order",
       "kg": 11,
       "kg_source": "estimate (Amazon lists no weight; the sister MK-123 says 5 kg for the bare instrument)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -3178,11 +3130,10 @@
       "handle": "sala-muzik-qanun-finger-rings",
       "asin": "B00NHYXCGU",
       "vendor": "Sala Muzik",
-      "type": "Qanun rings",
+      "type": "Risha & qanun rings",
       "stock": "on_order",
       "kg": 0.1,
       "kg_source": "estimate (Amazon lists no weight)",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1
@@ -3194,7 +3145,7 @@
       },
       "ar": {
         "title": "خواتم أصابع للقانون Sala Muzik",
-        "type": "خواتم قانون",
+        "type": "ريشة وخواتم قانون",
         "body": "<p>طقم خواتم معدنية للقانون: الخواتم التي تثبّت الريشة على أصابعك أثناء العزف.</p><ul><li>خواتم معدنية، طقم واحد</li><li>مصنوعة للقانون</li><li>الريش غير مشمولة</li></ul><p><strong>للعلم:</strong> الصانع لا يذكر مقاس الخواتم.</p>"
       }
     },
@@ -3202,11 +3153,10 @@
       "handle": "ethnic-musical-turkish-ney-hard-case",
       "asin": "B093WZR1LY",
       "vendor": "Ethnic Musical",
-      "type": "Ney",
+      "type": "Ney & oriental winds",
       "stock": "on_order",
       "kg": 1,
       "kg_source": "estimate (Amazon lists no weight)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         4,
@@ -3250,7 +3200,7 @@
       },
       "ar": {
         "title": "ناي تركي من القصب مع حقيبة صلبة",
-        "type": "ناي",
+        "type": "ناي ونفخ شرقي",
         "body": "<p>ناي تركي حقيقي مصنوع من القصب الطبيعي، آلة الموسيقى الصوفية والشرقية الكلاسيكية. يجرّب عازف ناي كل قطعة قبل بيعها، ويأتي مع مبسم «باشباره» يسهّل النفخ: ناي أول مناسب جدًا.</p><ul><li>قصب طبيعي، من صنع المعلّم Hüseyin</li><li>مع مبسم باشباره وحقيبة صلبة</li><li>اختر الطبقة: سي (Kız) تناسب معظم الأيدي، وري (Süpürde) الأيدي الصغيرة</li><li>الأطوال: مي نحو 520 مم، ري ⁦580–600⁩ مم، دو ⁦645–665⁩ مم، سي ⁦685–715⁩ مم</li></ul>"
       }
     },
@@ -3258,11 +3208,10 @@
       "handle": "ethnic-musical-master-huseyin-ney",
       "asin": "B093LPZ58L",
       "vendor": "Ethnic Musical",
-      "type": "Ney",
+      "type": "Ney & oriental winds",
       "stock": "on_order",
       "kg": 0.7,
       "kg_source": "estimate (Amazon lists no weight)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         2,
@@ -3334,7 +3283,7 @@
       },
       "ar": {
         "title": "ناي تركي من صنع المعلّم Hüseyin، قصب Hatay",
-        "type": "ناي",
+        "type": "ناي ونفخ شرقي",
         "body": "<p>ناي تركي مصنوع يدويًا على يد Hüseyin، معلّم ناي يقطف قصبه بنفسه في منطقة هاتاي حيث ينمو أفضل قصب للناي. يجرّب عازف ناي محترف كل قطعة في الطبقات المنخفضة والعالية.</p><ul><li>قصب هاتاي مختار، بلمسة نهائية مصقولة</li><li>الطبقات: ري (Süpürde) للموسيقى العربية، سي (Kız) أو ري للتركية، دو (Yıldız) للفارسية</li><li>الثقب الخلفي على اليسار أو اليمين، حسب اليد التي تضعها في الأعلى</li><li>الأطوال: ري ⁦580–600⁩ مم، دو ⁦645–665⁩ مم، سي ⁦685–715⁩ مم، لا ⁦770–810⁩ مم</li></ul>"
       }
     },
@@ -3342,11 +3291,10 @@
       "handle": "sala-muzik-professional-turkish-ney",
       "asin": "B00UOZ1Q9U",
       "vendor": "Sala Muzik",
-      "type": "Ney",
+      "type": "Ney & oriental winds",
       "stock": "on_order",
       "kg": 0.7,
       "kg_source": "estimate (Amazon lists no weight)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         8,
@@ -3363,7 +3311,7 @@
       },
       "ar": {
         "title": "ناي تركي احترافي Sala Muzik",
-        "type": "ناي",
+        "type": "ناي ونفخ شرقي",
         "body": "<p>ناي تركي احترافي مصنوع من قصب عالي الجودة، مع مبسم باشباره أسود وحلقة نحاسية في الطرف. للطلاب الجاهزين لآلة أفضل وللعازفين.</p><ul><li>قصب طبيعي عالي الجودة، بلمسة نهائية مصقولة</li><li>مع مبسم باشباره مركّب</li><li>بطبقة دو (Yıldız)، بطول نحو ⁦645–665⁩ مم</li></ul>"
       }
     },
@@ -3371,11 +3319,10 @@
       "handle": "ethnic-musical-arabic-pvc-ney-set",
       "asin": "B08RBCHZFK",
       "vendor": "Ethnic Musical",
-      "type": "Ney",
+      "type": "Ney & oriental winds",
       "stock": "on_order",
       "kg": 2,
       "kg_source": "estimate (Amazon lists no weight)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -3391,7 +3338,7 @@
       },
       "ar": {
         "title": "طقم 7 نايات عربية من PVC مع حقيبة",
-        "type": "ناي",
+        "type": "ناي ونفخ شرقي",
         "body": "<p>النايات السبعة الأكثر استعمالًا في الموسيقى العربية، مصنوعة من PVC ومضبوطة على يد معلّم ناي على 440 هرتز، لتعزف مع موسيقيين آخرين. سهلة العزف، بصوت قوي ودافئ، ولا تتشقّق مع تغيّر الطقس: مناسبة للطلاب وللصفوف.</p><ul><li>7 نايات: لا (الأقصر)، صول، فا، مي، ري، دو، سي (الأطول)</li><li>مضبوطة على 440 هرتز</li><li>أطوال من 350 مم إلى 675 مم</li><li>مع حقيبة حمل</li></ul>"
       }
     },
@@ -3399,11 +3346,10 @@
       "handle": "sala-muzik-ney-soft-case",
       "asin": "B01ITJDV40",
       "vendor": "Sala Muzik",
-      "type": "Ney case",
+      "type": "Cases & gig bags",
       "stock": "on_order",
       "kg": 0.3,
       "kg_source": "estimate (Amazon lists no weight)",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1
@@ -3415,7 +3361,7 @@
       },
       "ar": {
         "title": "حقيبة لينة للناي Sala Muzik",
-        "type": "حقيبة ناي",
+        "type": "حقائب",
         "body": "<p>حقيبة لينة سوداء تحمي الناي أو الكافال من الصدمات حين تحمله إلى الدرس.</p><ul><li>المقاس: 6 × 80 سم</li><li>تتّسع لناي واحد أو كافال واحد</li><li>مع حزام للكتف</li><li>غير مقاومة للماء</li></ul>"
       }
     },
@@ -3427,7 +3373,6 @@
       "stock": "on_order",
       "kg": 3.33,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -3507,7 +3452,6 @@
       "stock": "on_order",
       "kg": 3,
       "kg_source": "estimate (Amazon says 2.4 kg, drum only)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         4,
@@ -3534,7 +3478,6 @@
       "stock": "on_order",
       "kg": 5.44,
       "kg_source": "amazon (12 lb, from sibling variant listing)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -3610,11 +3553,10 @@
       "handle": "power-beat-darbuka-head-8-75",
       "asin": "B00DDQ7AR4",
       "vendor": "Power Beat",
-      "type": "Darbuka head",
+      "type": "Darbuka skins",
       "stock": "on_order",
       "kg": 0.09,
       "kg_source": "amazon",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1
@@ -3626,7 +3568,7 @@
       },
       "ar": {
         "title": "جلد دربكة Power Beat مقاس 8.75 إنش",
-        "type": "جلد دربكة",
+        "type": "جلود دربكة",
         "body": "<p>جلد بديل أصلي من Power Beat للدربكة المصرية الكلاسيكية. يرجى قياس جلد الدربكة قبل الطلب.</p><ul><li>القطر 8.75 إنش (22.2 سم)، والحافة 0.5 إنش</li><li>يناسب الدربكات المصرية بارتفاع 17 و17.5 إنش</li><li>قِس قطر الجلد من الداخل، أو قطر الحافة التي يجلس عليها من الخارج</li><li>أسود، موديل ⁦ABH-83B⁩</li></ul>"
       }
     },
@@ -3634,11 +3576,10 @@
       "handle": "sala-muzik-professional-riq-tr-101",
       "asin": "B01EI24C8G",
       "vendor": "Sala Muzik",
-      "type": "Riq",
+      "type": "Riq & frame drums",
       "stock": "on_order",
       "kg": 1.2,
       "kg_source": "estimate (Amazon gives no weight)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -3653,7 +3594,7 @@
       },
       "ar": {
         "title": "رق احترافي Sala Muzik ⁦TR-101⁩",
-        "type": "رق",
+        "type": "رق ودفوف",
         "body": "<p>رق احترافي، الآلة الإيقاعية الأساسية في التخت العربي. إطار من خشب الماهوغاني مع صنوج نحاسية لصوت واضح ولامع.</p><ul><li>القطر 23 سم، والعمق 6 سم</li><li>إطار من الماهوغاني وصنوج نحاسية</li><li>مع حقيبة لينة ومفتاح للضبط</li></ul>"
       }
     },
@@ -3661,11 +3602,10 @@
       "handle": "remo-fiberskyn-16-frame-drum",
       "asin": "B0002F7KGA",
       "vendor": "Remo",
-      "type": "Frame drum",
+      "type": "Riq & frame drums",
       "stock": "on_order",
       "kg": 1,
       "kg_source": "estimate (Amazon says 22.68 g)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1
@@ -3677,7 +3617,7 @@
       },
       "ar": {
         "title": "دف إطاري Remo Fiberskyn مقاس 16 إنش",
-        "type": "دف إطاري",
+        "type": "رق ودفوف",
         "body": "<p>دف إطاري مقاس 16 إنش مضبوط مسبقًا، بجلد Fiberskyn دافئ الصوت: آلة سهلة ومتينة لتعلّم ضربات الدف والإيقاعات في الدرس وفي البيت.</p><ul><li>القطر 16 إنش، والعمق 2.5 إنش</li><li>جلد Fiberskyn 3 مضبوط مسبقًا</li><li>إطار Acousticon مع فتحة للإبهام</li><li>خفيف ويتحمّل تغيّر الطقس</li></ul>"
       }
     },
@@ -3685,11 +3625,10 @@
       "handle": "sala-muzik-habibi-persian-daf",
       "asin": "B00NMKH7IS",
       "vendor": "Sala Muzik",
-      "type": "Daf",
+      "type": "Riq & frame drums",
       "stock": "on_order",
       "kg": 1.3,
       "kg_source": "estimate (Amazon says 0.75 kg, instrument only)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -3705,7 +3644,7 @@
       },
       "ar": {
         "title": "دف فارسي Sala Muzik من صنع Habibi",
-        "type": "دف",
+        "type": "رق ودفوف",
         "body": "<p>دف فارسي كردي بالحجم الكامل (إربانه)، من صنع عازف الدف البارع M. Habibi، مع حلقات معدنية داخل الإطار. خفيف بما يكفي للعزف الطويل.</p><ul><li>القطر 54 سم</li><li>جلد صناعي</li><li>الوزن نحو 0.75 كغ</li><li>مع حقيبة لينة</li></ul>"
       }
     },
@@ -3713,11 +3652,10 @@
       "handle": "sala-muzik-hapa-tunable-daf",
       "asin": "B01C97VOX8",
       "vendor": "Sala Muzik",
-      "type": "Daf",
+      "type": "Riq & frame drums",
       "stock": "on_order",
       "kg": 1.4,
       "kg_source": "estimate (Amazon says 0.8 kg, instrument only)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -3733,7 +3671,7 @@
       },
       "ar": {
         "title": "دف فارسي Hapa قابل للشدّ بجلد Remo",
-        "type": "دف",
+        "type": "رق ودفوف",
         "body": "<p>دف فارسي كردي احترافي قابل للشدّ من صنع Hapa، بجلد Remo وحلقات معدنية داخل الإطار. لأنه قابل للشدّ، يمكن إعادة ضبطه حين يتغيّر الطقس.</p><ul><li>القطر 54 سم، والوزن نحو 0.8 كغ</li><li>جلد Remo قابل للشدّ</li><li>إطار خشبي فاتح مع حلقات معدنية</li><li>الدف فقط، من دون حقيبة</li></ul>"
       }
     },
@@ -3745,7 +3683,6 @@
       "stock": "on_order",
       "kg": 7.12,
       "kg_source": "amazon (Item Weight 15.7 lb; Alesis spec ~7.1 kg)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -3795,7 +3732,6 @@
       "stock": "on_order",
       "kg": 12.3,
       "kg_source": "amazon (Item Weight 27 lb = 12.25 kg; Roland spec 12.3 kg)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -3822,7 +3758,6 @@
       "stock": "on_order",
       "kg": 11.1,
       "kg_source": "amazon (Item Weight 24.5 lb = 11.1 kg; Yamaha spec 11.1 kg)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -3887,7 +3822,6 @@
       "stock": "on_order",
       "kg": 23.8,
       "kg_source": "amazon (Item Weight 23.8 kg)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -3943,7 +3877,6 @@
       "stock": "on_order",
       "kg": 4.3,
       "kg_source": "amazon (Item Weight 9.5 lb = 4.3 kg; Casio spec ~4.0 kg without batteries)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -3988,11 +3921,10 @@
       "handle": "rockjam-padded-piano-bench",
       "asin": "B06XF6NF5Y",
       "vendor": "RockJam",
-      "type": "Piano bench",
+      "type": "Piano benches",
       "stock": "on_order",
       "kg": 3.4,
       "kg_source": "amazon (Item Weight 7.5 lb)",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -4007,7 +3939,7 @@
       },
       "ar": {
         "title": "كرسي بيانو RockJam مبطّن",
-        "type": "كرسي بيانو",
+        "type": "مقاعد بيانو",
         "body": "<p>كرسي مبطّن بهيكل X قابل لضبط الارتفاع، للأورغ والبيانو الرقمي، ليجلس الصغار والكبار على الارتفاع المناسب. يُطوى بشكل مسطّح ليُخزّن بسهولة.</p><ul><li>مقعد بتبطين سميك للتمرّن لساعات طويلة</li><li>4 درجات للارتفاع (⁦46.5–53⁩ سم)</li><li>هيكل X من الفولاذ، متين وقابل للطي، يتحمّل حتى 154 كغ</li><li>أرجل مانعة للانزلاق على البلاط والسجاد</li></ul>"
       }
     },
@@ -4019,7 +3951,6 @@
       "stock": "on_order",
       "kg": 4.38,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -4092,7 +4023,6 @@
       "stock": "on_order",
       "kg": 5,
       "kg_source": "estimate (Amazon says 3.2 kg)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -4122,7 +4052,6 @@
       "stock": "on_order",
       "kg": 5.35,
       "kg_source": "amazon (comparison table 11.8 lb; detail row says 4.3 lb)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -4171,7 +4100,6 @@
       "stock": "on_order",
       "kg": 7.94,
       "kg_source": "amazon (comparison table 17.5 lb; detail row says 6.3 lb)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -4221,7 +4149,6 @@
       "stock": "on_order",
       "kg": 6,
       "kg_source": "amazon (13.2 lb)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -4249,7 +4176,6 @@
       "stock": "on_order",
       "kg": 0.05,
       "kg_source": "estimate (Amazon says 23 g)",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -4302,7 +4228,7 @@
       },
       "ar": {
         "title": "قصبات Vandoren Traditional للساكسوفون ألتو (علبة من 10)",
-        "type": "قصبات (ريشات)",
+        "type": "قصبات",
         "body": "<p>قصبة Vandoren الكلاسيكية للساكسوفون ألتو، معروفة بصوتها الصافي واستجابتها السهلة في كل المناطق الصوتية. علبة من 10 قصبات، كل واحدة مغلّفة وحدها لتبقى طازجة.</p><ul><li>طرف رفيع يوازنه عمود صلب من القصب، لصوت واضح وممتلئ</li><li>مرنة في العزف المتصل والمتقطّع، حتى البدايات الهادئة على أعلى النوتات</li><li>بقوة 2 و2.5 و3 و3.5: اختر القوة التي ينصحك بها أستاذك</li><li>للساكسوفون ألتو من مقام مي بيمول (Eb)</li></ul>"
       }
     },
@@ -4310,11 +4236,10 @@
       "handle": "yamaha-standard-alto-sax-mouthpiece",
       "asin": "B07NFPR6LT",
       "vendor": "Yamaha",
-      "type": "Mouthpiece",
+      "type": "Mouthpieces & ligatures",
       "stock": "on_order",
       "kg": 0.1,
       "kg_source": "estimate (Amazon says 32 g)",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -4348,7 +4273,7 @@
       },
       "ar": {
         "title": "مبسم Yamaha Standard للساكسوفون ألتو",
-        "type": "مبسم",
+        "type": "مباسم وأربطة",
         "body": "<p>مبسم الساكسوفون ألتو من Yamaha. مقاس 4C هو نفسه الذي يأتي مع ساكسوفونات Yamaha ألتو الجديدة، وصُمّم ليتمكّن حتى المبتدئ من إخراج صوت جميل.</p><ul><li>يناسب أي ساكسوفون ألتو عادي</li><li>من راتنج الفينول المتين، بتصنيع دقيق وجودة ثابتة</li><li>متوفر بمقاسي 4C و5C</li></ul>"
       }
     },
@@ -4356,11 +4281,10 @@
       "handle": "jean-paul-tr-330-trumpet",
       "asin": "B006WAVQ50",
       "vendor": "Jean Paul USA",
-      "type": "Trumpet",
+      "type": "Trumpet & brass",
       "stock": "on_order",
       "kg": 3,
       "kg_source": "estimate (Amazon says 2.2 lb)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -4401,7 +4325,7 @@
       },
       "ar": {
         "title": "ترومبيت Jean Paul ⁦TR-330⁩ للطلاب",
-        "type": "ترومبيت",
+        "type": "ترومبيت ونحاسيات",
         "body": "<p>ترومبيت Bb للطلاب، مصمّم للمبتدئين وعازفي الفرق المدرسية. تُجرَّب كل آلة قبل خروجها من المصنع، فتصلك جاهزة للعزف مباشرة.</p><ul><li>جرس من النحاس الأصفر من قطعتين لصوت واضح ومركّز</li><li>مكابس من الفولاذ المقاوم للصدأ بحركة سريعة ومنتظمة</li><li>مسند للإبهام على المكبس الأول وحلقة ثابتة على الثالث، مريحان لليد الصغيرة</li><li>يأتي مع مبسم 7C وحقيبة شبه صلبة وزيت للمكابس وقطعة قماش للتنظيف</li></ul>"
       }
     },
@@ -4409,11 +4333,10 @@
       "handle": "jean-paul-tr-430-trumpet",
       "asin": "B01CYA7L6E",
       "vendor": "Jean Paul USA",
-      "type": "Trumpet",
+      "type": "Trumpet & brass",
       "stock": "on_order",
       "kg": 3,
       "kg_source": "estimate (Amazon says 2.2 lb)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -4448,7 +4371,7 @@
       },
       "ar": {
         "title": "ترومبيت Jean Paul ⁦TR-430⁩ للمستوى المتوسط",
-        "type": "ترومبيت",
+        "type": "ترومبيت ونحاسيات",
         "body": "<p>ترومبيت Bb للمستوى المتوسط، للطلاب الجاهزين للانتقال من آلتهم الأولى وللعازفين العائدين إلى الموسيقى. صوت أدفأ واستجابة متوازنة من النغمات المنخفضة حتى دو العالية.</p><ul><li>أنبوب رئيسي من النحاس الوردي لصوت أدفأ وأغنى</li><li>حلقة قابلة للضبط على زلّاقة المكبس الثالث مع مانع للانزلاق</li><li>قطر داخلي متوسط 0.465 إنش وجرس من النحاس الأصفر من قطعتين</li><li>يأتي مع مبسم 7C وحقيبة شبه صلبة وزيت للمكابس وقطعة قماش للتنظيف</li></ul>"
       }
     },
@@ -4456,11 +4379,10 @@
       "handle": "yamaha-ytr-2330-trumpet",
       "asin": "B007G3T3TS",
       "vendor": "Yamaha",
-      "type": "Trumpet",
+      "type": "Trumpet & brass",
       "stock": "on_order",
       "kg": 4.5,
       "kg_source": "estimate (Amazon says 0.27 g)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -4475,7 +4397,7 @@
       },
       "ar": {
         "title": "ترومبيت Yamaha ⁦YTR-2330⁩ للطلاب",
-        "type": "ترومبيت",
+        "type": "ترومبيت ونحاسيات",
         "body": "<p>الترومبيت الأكثر مبيعًا من Yamaha للطلاب: آلة Bb بصوت دافئ وغني وإحساس خفيف ومتوازن يساعد المبتدئ على بناء تقنية صحيحة. مصنوع للتمرين اليومي ويدوم لسنوات.</p><ul><li>جسم من النحاس مطلي بورنيش ذهبي</li><li>مكابس ناعمة من سبيكة المونيل</li><li>أنبوب رئيسي من النحاس الذهبي وجرس نحاسي من قطعتين</li><li>المبسم مرفق</li></ul>"
       }
     },
@@ -4483,11 +4405,10 @@
       "handle": "al-cass-fast-valve-oil",
       "asin": "B0FH37LPN7",
       "vendor": "Al Cass",
-      "type": "Valve oil",
+      "type": "Care & oils",
       "stock": "on_order",
       "kg": 0.1,
       "kg_source": "estimate (Amazon says 2 oz)",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -4504,7 +4425,7 @@
       },
       "ar": {
         "title": "زيت Al Cass Fast للمكابس والزلّاقات والمفاتيح",
-        "type": "زيت مكابس",
+        "type": "عناية وزيوت",
         "body": "<p>زيت المكابس السريع الكلاسيكي للترومبيت والكورنيت وباقي الآلات النحاسية، طُوِّر مع Dizzy Gillespie ويستعمله عازفو النحاسيات منذ 1960. يُبقي المكابس سريعة وناعمة بلا التصاق.</p><ul><li>للمكابس والزلّاقات والمفاتيح</li><li>لا يتكتّل ولا ينفصل في أي طقس</li><li>شبه عديم الرائحة</li><li>عبوة من زجاجتين، 2 أونصة لكل منهما</li></ul>"
       }
     },
@@ -4516,7 +4437,6 @@
       "stock": "on_order",
       "kg": 2,
       "kg_source": "estimate (Amazon gives no weight)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         11,
@@ -4561,7 +4481,6 @@
       "stock": "on_order",
       "kg": 2,
       "kg_source": "estimate (Amazon says 1.8 lb)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -4589,7 +4508,6 @@
       "stock": "on_order",
       "kg": 2,
       "kg_source": "estimate (Amazon says 1.8 lb)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -4616,7 +4534,6 @@
       "stock": "on_order",
       "kg": 2.4,
       "kg_source": "amazon (5.3 lb)",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1
@@ -4640,7 +4557,6 @@
       "stock": "on_order",
       "kg": 0.05,
       "kg_source": "estimate (Amazon says 23 g)",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -4700,7 +4616,7 @@
       },
       "ar": {
         "title": "قصبات Vandoren Traditional لكلارينيت Bb، علبة من 10",
-        "type": "قصبات (ريشات)",
+        "type": "قصبات",
         "body": "<p>القصبة الأكثر استعمالًا من Vandoren، لكلارينيت Bb ولكل أنماط الموسيقى. صوت غني واستجابة سهلة في كل الطبقات، حتى النغمات العالية الهادئة.</p><ul><li>علبة من 10 قصبات من القصب الطبيعي</li><li>كل قصبة مغلّفة وحدها لتبقى طازجة</li><li>مرنة للعزف المتّصل والمتقطّع بوضوح</li><li>اختر القوة: من 2 إلى 4 (المبتدئ يبدأ عادة بـ2 أو 2.5)</li></ul>"
       }
     },
@@ -4708,11 +4624,10 @@
       "handle": "yamaha-4c-clarinet-mouthpiece",
       "asin": "B07NFNVCR4",
       "vendor": "Yamaha",
-      "type": "Mouthpiece",
+      "type": "Mouthpieces & ligatures",
       "stock": "on_order",
       "kg": 0.1,
       "kg_source": "estimate (Amazon says 14 g)",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1
@@ -4724,7 +4639,7 @@
       },
       "ar": {
         "title": "مبسم Yamaha 4C للكلارينيت",
-        "type": "مبسم",
+        "type": "مباسم وأربطة",
         "body": "<p>مبسم 4C الأصلي من Yamaha، نفسه الذي يأتي مع كلارينيتات Yamaha الجديدة. مصمّم ليعطي حتى المبتدئ صوتًا جميلًا: ترقية بسيطة لأي كلارينيت للطلاب.</p><ul><li>من سلسلة Standard، مقاس 4C</li><li>من راتنج الفينول المتين، بجودة عالية وثابتة</li><li>يناسب أي كلارينيت Bb عادي من أي ماركة</li><li>المبسم وحده</li></ul>"
       }
     },
@@ -4736,7 +4651,6 @@
       "stock": "on_order",
       "kg": 2.27,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -4783,7 +4697,6 @@
       "stock": "on_order",
       "kg": 3,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -4809,7 +4722,6 @@
       "stock": "on_order",
       "kg": 2,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -4861,7 +4773,6 @@
       "stock": "on_order",
       "kg": 2.8,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -4887,7 +4798,6 @@
       "stock": "on_order",
       "kg": 0.1,
       "kg_source": "amazon",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -4930,11 +4840,10 @@
       "handle": "everest-ez-4a-violin-shoulder-rest",
       "asin": "B0775Z5443",
       "vendor": "Everest",
-      "type": "Shoulder rest",
+      "type": "Shoulder & chin rests",
       "stock": "on_order",
       "kg": 0.15,
       "kg_source": "amazon",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -4947,7 +4856,7 @@
       },
       "ar": {
         "title": "مسند كتف للكمان Everest ⁦EZ-4A⁩",
-        "type": "مسند كتف للكمان",
+        "type": "مساند كتف وذقن",
         "body": "<p>مسند كتف مريح ومن الأكثر استعمالًا، يساعد الطالب على تثبيت الكمان والحفاظ على وضعية مرتاحة.</p><ul><li>يناسب الكمان مقاس 4/4 ويُعدَّل ليناسب مقاس 3/4</li><li>يناسب أيضًا الفيولا مقاس 13 و14 إنش</li><li>مصنوع من بلاستيك ABS المتين</li><li>باللون الأسود</li></ul>"
       }
     },
@@ -4959,7 +4868,6 @@
       "stock": "on_order",
       "kg": 2.27,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -4990,7 +4898,6 @@
       "stock": "on_order",
       "kg": 2.5,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -5022,7 +4929,6 @@
       "stock": "on_order",
       "kg": 2,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -5069,7 +4975,6 @@
       "stock": "on_order",
       "kg": 2.5,
       "kg_source": "amazon",
-      "collection": "instruments",
       "publish": true,
       "media_keep": [
         1,
@@ -5118,11 +5023,10 @@
       "handle": "tetra-teknica-gfr-01-guitar-footstool",
       "asin": "B0195NQSTO",
       "vendor": "Tetra-Teknica",
-      "type": "Guitar footstool",
+      "type": "Instrument stands",
       "stock": "on_order",
       "kg": 0.64,
       "kg_source": "amazon",
-      "collection": "strings-accessories",
       "publish": true,
       "media_keep": [
         1,
@@ -5137,7 +5041,7 @@
       },
       "ar": {
         "title": "مسند قدم للغيتار Tetra-Teknica ⁦GFR-01⁩",
-        "type": "مسند قدم للغيتار",
+        "type": "حوامل آلات",
         "body": "<p>مسند القدم لوضعية عزف الغيتار الكلاسيكي: رفع إحدى القدمين يضع الغيتار في مكانه ويُبقي الظهر والكتفين مستقيمين ومرتاحين.</p><ul><li>6 ارتفاعات، من 11.5 حتى 24 سم</li><li>سطح مطاطي مانع للانزلاق وأرجل مطاطية تحمي الأرضية</li><li>هيكل معدني متين، وزنه نحو 0.6 كغ</li><li>يُطوى مسطّحًا لحمله إلى الدروس</li></ul>"
       }
     }

@@ -287,9 +287,20 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   Accessories, Studio & sound, Art supplies, Vinyl & hi-fi, Books & sheet music), 33 sub-categories, each with its
   product types, in English and Arabic. Adapted from the owner's sheet: items that conflict with how the Market works
   removed (second-hand, can't be flown, lithium, oversized, software), thin types merged, short sentence-case names.
-  Replaces the sub-categories above, including Art supplies and Books. Next: set it up in Shopify, move the 114
-  products to the new types, then the Spreadr import batches (Spreadr installed 2026-10-29, bulk import now that the
-  store is on a paid plan).
+  Replaces the sub-categories above, including Art supplies and Books. **Set up in Shopify 2026-10-30**
+  (`content.json` → `setup-store.mjs`): the 33 sub-categories and Vinyl & hi-fi created; the five categories recreated
+  as automatic collections (each holds every type of its sub-categories, same addresses); the 13 old sub-categories
+  removed, their addresses redirected in English and Arabic; the 114 products moved to the new types with their
+  Arabic and re-priced by the 2026-10-29 rule (`setup-products.mjs`, run in 6 shards with `--shard k/6`). Sub-categories
+  with no products yet stay out of the menu (and so the header, tiles, sidebar and footer) until they have some:
+  re-run `setup-store.mjs --only menu` after each import. Studio & sound's card shows its collection image (studio
+  headphones, changeable in the admin); the turntable photo moved to the new Vinyl & hi-fi card.
+- [x] Homepage and footer for the new categories (published 2026-10-30): "Accessories" and "Studio & sound" names, the
+  Vinyl & hi-fi card (six in a row on computers), empty categories' cards hidden. The live theme is now
+  "Kashkoul Market" (189733044454); the previous one is kept as "Kashkoul Market — before 2026-10-30"
+  (189216391398); the new working copy is 189736517862.
+- [ ] Spreadr import batches to reach ~500 products (Spreadr installed 2026-10-29, bulk import now that the store is on
+  a paid plan).
 
 **Review:** prices and the catalog.
 
@@ -330,8 +341,8 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   delivery and pickup) placed and cancelled; order emails from no-reply@kashkoul.org arrive; new-order alerts go to
   kashkoulacademy@gmail.com and the Shopify app; store time zone set to Beirut
 
-- [x] A working copy of the theme for changes after launch: "Kashkoul Market — work" (id 189733044454), duplicated
-  from the live theme. Changes are pushed there, previewed and published once approved (`market/README.md`)
+- [x] A working copy of the theme for changes after launch: "Kashkoul Market — work" (first 189733044454, now
+  189736517862 after the 2026-10-30 publish), duplicated from the live theme. Changes are pushed there, previewed and published once approved (`market/README.md`)
 
 **Review:** go live. Approved 2026-10-29.
 
