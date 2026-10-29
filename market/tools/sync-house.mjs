@@ -11,7 +11,8 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const { newTab, origin, sites } = JSON.parse(readFileSync(join(root, 'shared', 'sites.json'), 'utf8'));
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-const href = s => esc(origin + s.path);
+// a site on its own domain (the Market) has a full address; the others are paths on kashkoul.org
+const href = s => esc(/^https?:\/\//.test(s.path) ? s.path : origin + s.path);
 const target = newTab ? ' target="_blank" rel="noopener"' : '';
 const L = {
   en: { label: 'Kashkoul sites', soon: 'Soon', comingSoon: 'Coming soon', here: "You're here",

@@ -287,9 +287,18 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
 
 ## Step 7 — Launch ⬜
 
-- [ ] Send emails from no-reply@kashkoul.org: in Namecheap, forward `no-reply` to the Academy Gmail, set it as the sender in Shopify, then add the domain-authentication records Shopify shows (CNAMEs + DMARC) in Advanced DNS
-- [ ] Choose the paid plan and transfer the store to the owner's account
-- [ ] Connect `market.kashkoul.org`
+- [x] Send emails from no-reply@kashkoul.org (authenticated 2026-10-29): Namecheap forwards `no-reply` to the Academy
+  Gmail; it's the sender in Shopify (Settings → Notifications); Shopify's six CNAMEs (`mailer2cs`, `2cs._domainkey`,
+  `2cs2._domainkey`, `mailerst5`, `pdk1._domainkey.mailerst5`, `pdk2._domainkey.mailerst5`) and the `_dmarc` TXT (`v=DMARC1; p=none;`) are in
+  Namecheap's Advanced DNS. Leave the forwarding MX records and the `v=spf1` TXT as they are.
+- [x] Choose the paid plan and transfer the store to the owner's account (2026-10-29). Before it: the Kashkoul theme
+  (189216391398) published as the live theme, the store email set. The transfer is sent from the Dev Dashboard to the
+  owner's email only: the owner must not be a user in the Partner organization, or Shopify refuses. The owner
+  (kashkoulacademy@gmail.com) picked the plan; Mohamad is a collaborator, and the CLI logins were renewed. The transfer
+  removed the two manual payment methods: added back in Payments with the same text (`docs/market/content.md` §7), and
+  their Arabic re-registered as translations. Delivery ($5, Lebanon) and pickup kept their settings and Arabic.
+- [x] Connect `market.kashkoul.org` (2026-10-29): CNAME `market` → `shops.myshopify.com` in Namecheap; the primary
+  domain in Shopify (Settings → Domains), so the `myshopify.com` address redirects to it
 - [x] Policies, in English and Arabic (approved 2026-10-16, text in `docs/market/policies.md`, applied from
   `market/store/content.json` by `setup-store.mjs --only policies`): refund, shipping, privacy, terms and contact are in
   Shopify with the Arabic as translations (Shopify's automatic privacy policy turned off by Mohamad, ours applied), linked in the footer's bottom bar. Decided with them: a delivery fee is refunded when
@@ -301,7 +310,9 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   (chosen by the account the store is transferred to) comes first. `market.kashkoul.org` and the sender domain can be
   connected before that; visitors would see the password page until launch.
 - [ ] Analytics and Google/Meta sales channels (optional)
-- [ ] Set Market to `"live"` in `shared/sites.json` with its new address, then redeploy Academy and Studio
+- [ ] Set Market to `"live"` in `shared/sites.json` with its new address, then redeploy Academy and Studio. Done in
+  the repo 2026-10-29 (`"path": "https://market.kashkoul.org/"`; `sync-house.mjs` keeps a full address as it is);
+  Academy and Studio rebuilt with the Market linked in the strip and the cards. Left: merge to `main` to deploy.
 - [ ] Remove the store password and launch
 
 **Review:** go live.
