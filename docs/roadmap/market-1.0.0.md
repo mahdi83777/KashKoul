@@ -309,6 +309,11 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
 - Going live needs the transfer: a development store keeps its password page and can't take public orders, so the plan
   (chosen by the account the store is transferred to) comes first. `market.kashkoul.org` and the sender domain can be
   connected before that; visitors would see the password page until launch.
+- [ ] Social sharing image and SEO (Online Store → Preferences): image uploaded 2026-10-29; it is
+  `docs/Kashkoul_Market/Share_Image/kashkoul-market-share.jpg` (1200×628, made from `kashkoul-market-share.html` next to it:
+  brick panel with the mustard logo, "Instruments & art supplies, delivered in Lebanon" and the Arabic line, the oud
+  photo). Home page title: "Kashkoul Market · Musical instruments & art supplies in Lebanon" / «سوق كشكول · آلات موسيقية
+  ولوازم فنية في لبنان»; meta description in both languages (proposed 2026-10-29).
 - [ ] Analytics and Google/Meta sales channels (optional)
 - [ ] Set Market to `"live"` in `shared/sites.json` with its new address, then redeploy Academy and Studio. Done in
   the repo 2026-10-29 (`"path": "https://market.kashkoul.org/"`; `sync-house.mjs` keeps a full address as it is);
