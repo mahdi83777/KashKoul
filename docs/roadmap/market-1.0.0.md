@@ -305,8 +305,16 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
     7 Art sub-categories and their types (the AnyMark alcohol markers removed). Spreadr test (3 products): imports as
     draft, SKU = ASIN for every variant, weight from Amazon, about 1.2 credits per variant; its price can be another
     offer's, so our list keeps the Amazon price as `cost` for `setup-products.mjs`. English and Arabic titles and texts
-    written from the Amazon facts and added to `products.json` (photos: first 5 kept until chosen). Next: buy credits,
-    import `import-batch-3.csv` ("Import single product"), run `setup-products.mjs`, then `setup-store.mjs --only menu`.
+    written from the Amazon facts and added to `products.json` (photos: first 5 kept until chosen).
+  - [ ] **Batches 4–8, the other categories** (approved 2026-10-30; mix chosen: Accessories +~110, Instruments +~50,
+    Studio & sound +~55, Vinyl & hi-fi ~45, Books & sheet music ~40), same files per batch (`import-batch-N*.{json,csv,md}`):
+    4 Accessories 95 · 5 Instruments 49 · 6 Studio & sound 52 · 7 Vinyl & hi-fi 40 · 8 Books & sheet music 37. Rules
+    decided: heavy items and few-review items kept; low-stock (≤ 3 left), out-of-stock and duplicate items left out;
+    clip-on tuners with a coin battery allowed, anything with a built-in lithium battery left out. 10 instruments (Fender,
+    Squier, Yamaha guitars and basses) show no price from Lebanon: their cost is read at import. Amazon US has few Arabic
+    records; the owner may supply Arabic vinyl locally. All texts in English and Arabic in `products.json`.
+  - [ ] Next, for all 8 batches (≈ 435 products, about 1.2 credits each): buy credits, import each CSV in Spreadr
+    ("Import single product"), run `setup-products.mjs`, choose photos, then `setup-store.mjs --only menu`.
 
 **Review:** prices and the catalog.
 
