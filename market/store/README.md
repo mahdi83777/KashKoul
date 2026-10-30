@@ -15,7 +15,8 @@ store/
     │                   notes) and the review checklist (`batch-N-links.md`), plus the files uploaded to the importer
     ├── round-1/          batches 1–2 (imported one by one with Ryviu)
     ├── round-2/          batches 3–8, `variants-plan.md`, `import-1.csv` and `import-2.csv` for Spreadr
-    ├── round-3/          the Academy instruments round (Amazon US): `list.json`, the review checklist `list.md`, `import.csv`
+    ├── round-3/          the Academy instruments round (Amazon US): `list.json`, the review checklist `list.md`,
+    │                     `import-1.csv` (Instruments: 118) and `import-2.csv` (the other categories: 134)
     └── round-4/          the Amazon UAE round (amazon.ae, prices in AED): `list.json`, the review checklist `list.md`, `import.csv`
 ```
 

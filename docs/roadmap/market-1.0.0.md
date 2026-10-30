@@ -332,7 +332,8 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   studio, vinyl and book additions. 173 products, 252 Amazon IDs (≈ 302 credits). Same rules as round 2; 16 big-brand
   products have their price read at import. Not the whole $10: the rest is kept for the Amazon UAE round. English and
   Arabic texts written from the Amazon facts (`products/round-3.json`, 41 products with choices). Next: import
-  `rounds/round-3/import.csv` (252 IDs) in Spreadr ("Import single product"), then `setup-products.mjs --round 3` →
+  `rounds/round-3/import-1.csv` (Instruments: 118 IDs) and `import-2.csv` (Accessories, Studio, Art, Vinyl, Books:
+  134 IDs) in Spreadr ("Import single product"), then `setup-products.mjs --round 3` →
   `merge-variants.mjs --round 3` → `setup-products.mjs --round 3`, read the prices of the big-brand products, choose
   photos, `setup-store.mjs --only menu`.
 - [ ] **Round 4, Amazon UAE** (list approved 2026-10-30, `market/store/rounds/round-4/list.md` and `list.json`;
