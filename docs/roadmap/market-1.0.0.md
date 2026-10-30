@@ -301,13 +301,13 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   (189216391398); the new working copy is 189736517862.
 - [ ] Spreadr import batches to reach ~500 products (Spreadr installed 2026-10-29, bulk import now that the store is on
   a paid plan).
-  - [ ] **Batch 3, Art supplies** (approved 2026-10-30, `market/store/import-batch-3*.{json,csv,md}`): 82 products over all
+  - [ ] **Batch 3, Art supplies** (approved 2026-10-30, `market/store/import-batch-3*.{json,md}`): 82 products over all
     7 Art sub-categories and their types (the AnyMark alcohol markers removed). Spreadr test (3 products): imports as
     draft, SKU = ASIN for every variant, weight from Amazon, about 1.2 credits per variant; its price can be another
     offer's, so our list keeps the Amazon price as `cost` for `setup-products.mjs`. English and Arabic titles and texts
     written from the Amazon facts and added to `products.json` (photos: first 5 kept until chosen).
   - [ ] **Batches 4–8, the other categories** (approved 2026-10-30; mix chosen: Accessories +~110, Instruments +~50,
-    Studio & sound +~55, Vinyl & hi-fi ~45, Books & sheet music ~40), same files per batch (`import-batch-N*.{json,csv,md}`):
+    Studio & sound +~55, Vinyl & hi-fi ~45, Books & sheet music ~40), same files per batch (`import-batch-N*.{json,md}`):
     4 Accessories 95 · 5 Instruments 49 · 6 Studio & sound 52 · 7 Vinyl & hi-fi 40 · 8 Books & sheet music 37. Rules
     decided: heavy items and few-review items kept; low-stock (≤ 3 left), out-of-stock and duplicate items left out;
     clip-on tuners with a coin battery allowed, anything with a built-in lithium battery left out. 10 instruments (Fender,
@@ -317,8 +317,8 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
     (sizes, colours, gauges, strengths, lengths…), about 100 variants in all. Each variant is imported as a single
     product (its Amazon ID added to the batch CSV) and `market/tools/merge-variants.mjs` combines them into one product.
     The Liquitex 48-tube set, Elixir 9–42 strings and the 88-key cover became variants instead of separate products.
-  - [ ] Next, for all 8 batches (424 Amazon IDs in the CSVs, about 1.2 credits each ≈ 510 credits): buy credits,
-    import each CSV in Spreadr ("Import single product"), then `setup-products.mjs` → `merge-variants.mjs` →
+  - [ ] Next, for all 8 batches (424 Amazon IDs in `import-all.csv`, about 1.2 credits each ≈ 510 credits): buy credits,
+    import `market/store/import-all.csv` in Spreadr ("Import single product"; all batches in one file), then `setup-products.mjs` → `merge-variants.mjs` →
     `setup-products.mjs`, choose photos, then `setup-store.mjs --only menu`.
 
 **Review:** prices and the catalog.

@@ -1,5 +1,5 @@
 {
-  "_about": "Batch 5 (approved 2026-10-30, all kept): Instruments, toward ~120 (68 in the shop before): the types the shop had few or none of. Researched on amazon.com 2026-10-30 (in stock, mostly 4.4+ stars; low-stock items left out; products already in the shop left out). amazon_price null = Amazon shows no price when browsing from Lebanon (Fender, Squier, Yamaha guitars): the price is read at import and used as cost. kg = boxed shipping weight (Amazon's, or an estimate). our_price = round_up((amazon_price + kg × 20) × 1.3) − 0.01. Imported with Spreadr (CSV import-batch-5.csv, 'Import single product'), finished by setup-products.mjs.",
+  "_about": "Batch 5 (approved 2026-10-30, all kept): Instruments, toward ~120 (68 in the shop before): the types the shop had few or none of. Researched on amazon.com 2026-10-30 (in stock, mostly 4.4+ stars; low-stock items left out; products already in the shop left out). amazon_price null = Amazon shows no price when browsing from Lebanon (Fender, Squier, Yamaha guitars): the price is read at import and used as cost. kg = boxed shipping weight (Amazon's, or an estimate). our_price = round_up((amazon_price + kg × 20) × 1.3) − 0.01. Imported with Spreadr (in market/store/import-all.csv, 'Import single product'), finished by setup-products.mjs.",
   "items": [
     {
       "asin": "B00GOE7XHE",

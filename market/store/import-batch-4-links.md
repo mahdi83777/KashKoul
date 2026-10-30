@@ -3,7 +3,7 @@
 Toward ~140 Accessories (29 in the shop before), every sub-category from `docs/market/categories.md`. Researched on amazon.com
 2026-10-30: in stock, mostly 4.4★ or better; nothing that can't be flown; products already in the shop left out.
 Prices: Amazon → our price ((Amazon + kg × $20) × 1.3, ending .99). Weights marked ~ are estimates. Details: `import-batch-4.json`.
-Untick anything you don't want. Then `import-batch-4.csv` (ASIN, SKU) goes into Spreadr's bulk import, "Import single product".
+Untick anything you don't want. Then `import-all.csv` (ASIN, SKU, all batches in one file) goes into Spreadr's bulk import, "Import single product".
 
 ## Oriental (9)
 

@@ -1,5 +1,5 @@
 {
-  "_about": "Batch 6 (approved 2026-10-30, all kept; Numark Mixtrack Go removed: may have a built-in battery): Studio & sound, toward ~70 (15 in the shop before). Researched on amazon.com 2026-10-30 (in stock, mostly 4.4+ stars; low-stock and out-of-stock items, products already in the shop and anything with a built-in lithium battery left out; recorders and synths that run on AA/AAA batteries kept). kg = boxed shipping weight (Amazon's, or an estimate). our_price = round_up((amazon_price + kg × 20) × 1.3) − 0.01. Imported with Spreadr (CSV import-batch-6.csv, 'Import single product'), finished by setup-products.mjs.",
+  "_about": "Batch 6 (approved 2026-10-30, all kept; Numark Mixtrack Go removed: may have a built-in battery): Studio & sound, toward ~70 (15 in the shop before). Researched on amazon.com 2026-10-30 (in stock, mostly 4.4+ stars; low-stock and out-of-stock items, products already in the shop and anything with a built-in lithium battery left out; recorders and synths that run on AA/AAA batteries kept). kg = boxed shipping weight (Amazon's, or an estimate). our_price = round_up((amazon_price + kg × 20) × 1.3) − 0.01. Imported with Spreadr (in market/store/import-all.csv, 'Import single product'), finished by setup-products.mjs.",
   "items": [
     {
       "asin": "B0006H92QK",

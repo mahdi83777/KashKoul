@@ -3,7 +3,7 @@
 Every Art supplies sub-category and type from `docs/market/categories.md`, researched on amazon.com 2026-10-30: in stock,
 4.4★ or better, mostly thousands of reviews; nothing that can't be flown, no lithium batteries, nothing oversized.
 Prices: Amazon → our price ((Amazon + kg × $20) × 1.3, ending .99). Weights marked ~ are estimates. Details: `import-batch-3.json`.
-Untick anything you don't want. Then `import-batch-3.csv` (ASIN, SKU) goes into Spreadr's bulk import, "Import single product".
+Untick anything you don't want. Then `import-all.csv` (ASIN, SKU, all batches in one file) goes into Spreadr's bulk import, "Import single product".
 
 
 ## Painting (20)
