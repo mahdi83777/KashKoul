@@ -1,5 +1,5 @@
 {
-  "_about": "Batch 8 (approved 2026-10-30, all kept): Books & sheet music, toward ~40 (1 in the shop before). All in English. Researched on amazon.com 2026-10-30; amazon_price = the paperback/spiral price from Amazon's search; low-stock items left out (The Story of Art). kg = estimated shipping weight. our_price = round_up((amazon_price + kg × 20) × 1.3) − 0.01. Imported with Spreadr (in market/store/import-all.csv, 'Import single product'; ASINs of books are their ISBN-10), finished by setup-products.mjs.",
+  "_about": "Batch 8 (approved 2026-10-30, all kept): Books & sheet music, toward ~40 (1 in the shop before). All in English. Researched on amazon.com 2026-10-30; amazon_price = the paperback/spiral price from Amazon's search; low-stock items left out (The Story of Art). kg = estimated shipping weight. our_price = round_up((amazon_price + kg × 20) × 1.3) − 0.01. Imported with Spreadr (in market/store/import-1.csv for batches 3–4, import-2.csv for 5–8, 'Import single product'; ASINs of books are their ISBN-10), finished by setup-products.mjs.",
   "items": [
     {
       "asin": "B07G4TW59B",

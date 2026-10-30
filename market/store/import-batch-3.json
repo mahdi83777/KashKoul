@@ -1,5 +1,5 @@
 {
-  "_about": "Batch 3 (approved 2026-10-30; the AnyMark alcohol markers removed): Art supplies, every sub-category and type of docs/market/categories.md. Researched on amazon.com 2026-10-30 (in stock, 4.4+ stars, mostly thousands of reviews; nothing that can't be flown, no lithium batteries, nothing oversized). kg = boxed shipping weight (Amazon's, or an estimate where Amazon's figure is missing or clearly wrong, see kg_source). our_price = round_up((amazon_price + kg × 20) × 1.3) − 0.01, the 2026-10-29 rule. Imported with Spreadr (in market/store/import-all.csv, 'Import single product'), finished by setup-products.mjs.",
+  "_about": "Batch 3 (approved 2026-10-30; the AnyMark alcohol markers removed): Art supplies, every sub-category and type of docs/market/categories.md. Researched on amazon.com 2026-10-30 (in stock, 4.4+ stars, mostly thousands of reviews; nothing that can't be flown, no lithium batteries, nothing oversized). kg = boxed shipping weight (Amazon's, or an estimate where Amazon's figure is missing or clearly wrong, see kg_source). our_price = round_up((amazon_price + kg × 20) × 1.3) − 0.01, the 2026-10-29 rule. Imported with Spreadr (in market/store/import-1.csv for batches 3–4, import-2.csv for 5–8, 'Import single product'), finished by setup-products.mjs.",
   "items": [
     {
       "asin": "B07VSZM41G",

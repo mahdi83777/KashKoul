@@ -29,12 +29,10 @@ are estimates. Details: `import-batch-7.json`.
 - [ ] **CDs** · 100 Classical Music Pieces (5 CDs) — $21.99 → **$36.99** · ~0.3 kg · 4.6★ (653) · [B07N43C71T](https://www.amazon.com/dp/B07N43C71T)
 - [ ] **CDs** · Essential Yo-Yo Ma (CD) — $13.94 → **$21.99** · ~0.12 kg · 4.7★ (536) · [B000A7Q29G](https://www.amazon.com/dp/B000A7Q29G)
 
-## Turntables & hi-fi (12)
+## Turntables & hi-fi (10)
 
 - [ ] **Turntables** · Audio-Technica AT-LP60X Automatic Turntable, black — $179.00 → **$328.99** · 3.7 kg · 4.5★ (13,391) · [B07N3XJ66N](https://www.amazon.com/dp/B07N3XJ66N)
 - [ ] **Turntables** · Audio-Technica AT-LP60XBT Bluetooth Turntable, black — $259.00 → **$438.99** · ~3.9 kg · 4.6★ (9,044) · [B07N3RFXRL](https://www.amazon.com/dp/B07N3RFXRL)
-- [ ] **Turntables** · Audio-Technica AT-LP120XUSB Direct-Drive Turntable — $399.00 → **$778.99** · ~10.0 kg · 4.7★ (9,073) · [B07N3S4X3P](https://www.amazon.com/dp/B07N3S4X3P) — *heavy: price is mostly delivery*
-- [ ] **Hi-fi speakers** · Edifier R1280T Powered Bookshelf Speakers, pair — $117.99 → **$309.99** · ~6.0 kg · 4.6★ (19,400) · [B016P9HJIA](https://www.amazon.com/dp/B016P9HJIA) — *heavy*
 - [ ] **Hi-fi speakers** · Audioengine A2+ Powered Speakers (Gen 3), pair — $299.00 → **$479.99** · ~3.5 kg · 4.4★ (3,106) · [B07MYW4Q8S](https://www.amazon.com/dp/B07MYW4Q8S)
 - [ ] **Amplifiers & receivers** · Fosi Audio BT20A Bluetooth Stereo Amplifier — $79.99 → **$127.99** · ~0.9 kg · 4.5★ (8,829) · [B07BQC7GNL](https://www.amazon.com/dp/B07BQC7GNL)
 - [ ] **Amplifiers & receivers** · Fosi Audio BT20A Pro Stereo Amplifier — $99.99 → **$153.99** · ~0.9 kg · 4.5★ (3,066) · [B07JVFY27T](https://www.amazon.com/dp/B07JVFY27T)

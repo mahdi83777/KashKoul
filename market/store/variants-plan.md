@@ -1,6 +1,6 @@
 # Products with variants (approved 2026-10-30, option B)
 
-Each variant is imported from Spreadr as a single product (its own Amazon ID in `import-all.csv`), then
+Each variant is imported from Spreadr as a single product (its own Amazon ID in `import-1.csv` or `import-2.csv`), then
 `market/tools/merge-variants.mjs` combines them into one product with an option, and deletes the extra copies.
 Order after each import: `setup-products.mjs` → `merge-variants.mjs` → `setup-products.mjs` (prices per variant from
 `cost`/`kg`, Arabic option names). Data: `merge_variants`, `options`, `kg` and `cost` on the product in `products.json`.

@@ -22,11 +22,9 @@ Prices: Amazon → our price ((Amazon + kg × $20) × 1.3, ending .99). Weights 
 - [ ] **Mixers & DI boxes** · Whirlwind IMP 2 Passive Direct Box — $79.00 → **$109.99** · 0.25 kg · 4.8★ (581) · [B0002DUQ72](https://www.amazon.com/dp/B0002DUQ72)
 - [ ] **Mixers & DI boxes** · Pyle Passive DI Box — $17.99 → **$33.99** · 0.38 kg · 4.5★ (3,663) · [B0027V760M](https://www.amazon.com/dp/B0027V760M)
 
-## Monitors & headphones (9)
+## Monitors & headphones (7)
 
 - [ ] **Studio monitors** · PreSonus Eris 3.5 Studio Monitors, pair — $99.99 → **$220.99** · ~3.5 kg · 4.5★ (1,597) · [B0C88ZB3D9](https://www.amazon.com/dp/B0C88ZB3D9) — *heavy*
-- [ ] **Studio monitors** · PreSonus Eris E4.5 Studio Monitors, pair — $139.99 → **$337.99** · ~6.0 kg · 4.5★ (3,038) · [B00GP56OYA](https://www.amazon.com/dp/B00GP56OYA) — *heavy*
-- [ ] **Studio monitors** · JBL 305P MkII 5 in Studio Monitors, pair — $319.00 → **$726.99** · ~12.0 kg · 4.7★ (994) · [B088VSBV65](https://www.amazon.com/dp/B088VSBV65) — *heavy: price is mostly delivery*
 - [ ] **Studio monitors** · Edifier MR3 Powered Studio Monitors, pair — $109.99 → **$259.99** · 4.5 kg · 4.5★ (906) · [B0DGXTBQTY](https://www.amazon.com/dp/B0DGXTBQTY) — *heavy*
 - [ ] **Headphones** · Audio-Technica ATH-M40x Studio Headphones — $109.00 → **$152.99** · ~0.4 kg · 4.6★ (17,002) · [B00HVLUR54](https://www.amazon.com/dp/B00HVLUR54)
 - [ ] **Headphones** · Mackie HM-4 4-Channel Headphone Amplifier — $49.99 → **$70.99** · 0.23 kg · 4.6★ (1,930) · [B079C8MLG8](https://www.amazon.com/dp/B079C8MLG8)
@@ -34,11 +32,9 @@ Prices: Amazon → our price ((Amazon + kg × $20) × 1.3, ending .99). Weights 
 - [ ] **In-ear monitors** · KZ ZS10 Pro In-Ear Monitors, wired — $50.99 → **$70.99** · ~0.15 kg · 4.4★ (14,974) · [B07QKYTGH9](https://www.amazon.com/dp/B07QKYTGH9)
 - [ ] **In-ear monitors** · Shure SE215 PRO In-Ear Monitors, clear — $119.00 → **$159.99** · ~0.2 kg · 4.4★ (10,088) · [B004PO10E2](https://www.amazon.com/dp/B004PO10E2)
 
-## Amps & effects (10)
+## Amps & effects (8)
 
 - [ ] **Guitar & bass amps** · Boss Katana Mini 7 W Guitar Amp — $114.99 → **$188.99** · 1.5 kg · 4.5★ (2,755) · [B072XKP8TH](https://www.amazon.com/dp/B072XKP8TH)
-- [ ] **Guitar & bass amps** · Fender Rumble 15 V3 Bass Amp — $99.99 → **$348.99** · 8.4 kg · 4.7★ (1,759) · [B00HWINK1E](https://www.amazon.com/dp/B00HWINK1E) — *heavy: price is mostly delivery*
-- [ ] **Keyboard & acoustic amps** · Fender Acoustasonic 15 Acoustic Guitar Amp — $159.99 → **$361.99** · 5.9 kg · 4.6★ (1,313) · [B00B28HDH2](https://www.amazon.com/dp/B00B28HDH2) — *heavy*
 - [ ] **Effects pedals** · MXR Distortion+ Pedal — $99.99 → **$141.99** · 0.45 kg · 4.5★ (287) · [B0002E520C](https://www.amazon.com/dp/B0002E520C)
 - [ ] **Effects pedals** · Dunlop Cry Baby GCB95 Wah Pedal — $99.99 → **$161.99** · 1.2 kg · 4.6★ (1,910) · [B0002CZVK0](https://www.amazon.com/dp/B0002CZVK0)
 - [ ] **Effects pedals** · MXR Carbon Copy Analog Delay — $159.99 → **$219.99** · 0.45 kg · 4.6★ (845) · [B0016ZZKJO](https://www.amazon.com/dp/B0016ZZKJO)

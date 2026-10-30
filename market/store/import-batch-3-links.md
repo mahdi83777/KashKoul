@@ -3,10 +3,10 @@
 Every Art supplies sub-category and type from `docs/market/categories.md`, researched on amazon.com 2026-10-30: in stock,
 4.4★ or better, mostly thousands of reviews; nothing that can't be flown, no lithium batteries, nothing oversized.
 Prices: Amazon → our price ((Amazon + kg × $20) × 1.3, ending .99). Weights marked ~ are estimates. Details: `import-batch-3.json`.
-Untick anything you don't want. Then `import-all.csv` (ASIN, SKU, all batches in one file) goes into Spreadr's bulk import, "Import single product".
+Untick anything you don't want. Then `import-1.csv` (batches 3–4) or `import-2.csv` (batches 5–8) goes into Spreadr's bulk import, "Import single product".
 
 
-## Painting (20)
+## Painting (19)
 
 - [ ] **Acrylic** · Liquitex BASICS Acrylic Paint Set, 12 × 22ml tubes — $29.49 → **$48.99** · ~0.4 kg · 4.7★ (14,017) · [B07VSZM41G](https://www.amazon.com/dp/B07VSZM41G)
 - [ ] **Acrylic** · Liquitex BASICS Acrylic Paint Set, 48 × 22ml tubes — $71.79 → **$134.99** · 1.6 kg · 4.7★ (14,017) · [B00251I66C](https://www.amazon.com/dp/B00251I66C)

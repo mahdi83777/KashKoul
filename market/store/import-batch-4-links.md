@@ -3,7 +3,7 @@
 Toward ~140 Accessories (29 in the shop before), every sub-category from `docs/market/categories.md`. Researched on amazon.com
 2026-10-30: in stock, mostly 4.4★ or better; nothing that can't be flown; products already in the shop left out.
 Prices: Amazon → our price ((Amazon + kg × $20) × 1.3, ending .99). Weights marked ~ are estimates. Details: `import-batch-4.json`.
-Untick anything you don't want. Then `import-all.csv` (ASIN, SKU, all batches in one file) goes into Spreadr's bulk import, "Import single product".
+Untick anything you don't want. Then `import-1.csv` (batches 3–4) or `import-2.csv` (batches 5–8) goes into Spreadr's bulk import, "Import single product".
 
 ## Oriental (9)
 
@@ -17,7 +17,7 @@ Untick anything you don't want. Then `import-all.csv` (ASIN, SKU, all batches in
 - [ ] **Darbuka skins** · Remo SKYNDEEP Doumbek Head, 8.625 in — $34.99 → **$53.99** · ~0.3 kg · 4.4★ (26) · [B003B10I3Y](https://www.amazon.com/dp/B003B10I3Y)
 - [ ] **Darbuka skins** · Darbuka Heads 8.75–9 in, clear, 2-pack — $24.75 → **$36.99** · ~0.15 kg · 4.5★ (12) · [B0C7PGB4WG](https://www.amazon.com/dp/B0C7PGB4WG)
 
-## Guitar & bass (29)
+## Guitar & bass (28)
 
 - [ ] **Guitar & bass strings** · Ernie Ball Regular Slinky Electric Strings, 10–46 — $8.99 → **$12.99** · ~0.03 kg · 4.8★ (59,855) · [B0002M6CVC](https://www.amazon.com/dp/B0002M6CVC)
 - [ ] **Guitar & bass strings** · Elixir NANOWEB Electric Strings, 10–46 — $17.99 → **$24.99** · 0.04 kg · 4.8★ (8,181) · [B0002E1O3G](https://www.amazon.com/dp/B0002E1O3G)
@@ -86,7 +86,7 @@ Untick anything you don't want. Then `import-all.csv` (ASIN, SKU, all batches in
 - [ ] **Pedals & hardware** · Arborea Snare Drum Stand, 10–14 in — $24.99 → **$79.99** · 1.8 kg · 4.4★ (222) · [B09PQNFPCY](https://www.amazon.com/dp/B09PQNFPCY) — *heavy*
 - [ ] **Pedals & hardware** · EastRock Drum Keys, 3-pack — $6.39 → **$12.99** · 0.15 kg · 4.8★ (2,415) · [B07PJ41WPD](https://www.amazon.com/dp/B07PJ41WPD)
 
-## Keyboard (6)
+## Keyboard (5)
 
 - [ ] **Sustain pedals** · Soraco Universal Sustain Pedal — $13.99 → **$29.99** · 0.43 kg · 4.5★ (6,081) · [B071HN5TQ5](https://www.amazon.com/dp/B071HN5TQ5)
 - [ ] **Sustain pedals** · M-Audio SP-1 Sustain Pedal — $19.00 → **$30.99** · 0.23 kg · 4.5★ (1,169) · [B00063678A](https://www.amazon.com/dp/B00063678A)

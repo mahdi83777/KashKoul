@@ -317,8 +317,10 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
     (sizes, colours, gauges, strengths, lengths…), about 100 variants in all. Each variant is imported as a single
     product (its Amazon ID added to the batch CSV) and `market/tools/merge-variants.mjs` combines them into one product.
     The Liquitex 48-tube set, Elixir 9–42 strings and the 88-key cover became variants instead of separate products.
-  - [ ] Next, for all 8 batches (424 Amazon IDs in `import-all.csv`, about 1.2 credits each ≈ 510 credits): buy credits,
-    import `market/store/import-all.csv` in Spreadr ("Import single product"; all batches in one file), then `setup-products.mjs` → `merge-variants.mjs` →
+  - [ ] Next, for all 8 batches (409 Amazon IDs, about 1.2 credits each ≈ 491 credits, within the $10 budget: the 13
+    heaviest products were removed for it, among them the Alesis e-drums, JBL and Eris E4.5 monitors, the LP120X turntable,
+    the Rumble and Acoustasonic amps, the Squier Precision Bass and Classic Vibe guitars, the trombone and the cajon): buy credits,
+    import `market/store/import-1.csv` (Art, Accessories: 228) and `import-2.csv` (Instruments, Studio, Vinyl, Books: 181) in Spreadr ("Import single product"), then `setup-products.mjs` → `merge-variants.mjs` →
     `setup-products.mjs`, choose photos, then `setup-store.mjs --only menu`.
 
 **Review:** prices and the catalog.

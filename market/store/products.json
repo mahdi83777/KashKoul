@@ -11182,74 +11182,6 @@
       "publish": true
     },
     {
-      "handle": "squier-affinity-precision-bass-pj-olympic-white",
-      "asin": "B091BGTWQ1",
-      "vendor": "Squier",
-      "type": "Bass guitar",
-      "tags": [],
-      "stock": "on_order",
-      "kg": {
-        "Olympic White": 5.5,
-        "Surf Green": 5.5,
-        "Lake Placid Blue": 5.5
-      },
-      "kg_source": "estimate",
-      "media_keep": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "en": {
-        "title": "Squier Affinity Series Precision Bass PJ",
-        "body": "<p>The Precision Bass from Squier's Affinity Series: a light, comfortable bass that is easy to hold and play.</p><ul><li>Thin, light body and a slim C-shaped neck</li><li>PJ pickups</li><li>Open-gear tuners</li><li>Choose Olympic White, Surf Green or Lake Placid Blue</li></ul>"
-      },
-      "ar": {
-        "title": "غيتار باص Squier Affinity Series Precision Bass PJ",
-        "body": "<p>غيتار الباص Precision Bass من سلسلة Affinity من Squier: خفيف ومريح، يسهل حمله والعزف عليه.</p><ul><li>جسم رفيع وخفيف، وزند نحيف على شكل حرف C</li><li>لاقطات PJ</li><li>مفاتيح دوزان مكشوفة التروس</li><li>اختر اللون: أبيض Olympic أو أخضر Surf أو أزرق Lake Placid</li></ul>",
-        "type": "غيتار باص"
-      },
-      "publish": true,
-      "merge_variants": {
-        "option": "Color",
-        "values": [
-          {
-            "asin": "B091BGTWQ1",
-            "name": "Olympic White"
-          },
-          {
-            "asin": "B0BF5TMGD9",
-            "name": "Surf Green"
-          },
-          {
-            "asin": "B091BHKXMR",
-            "name": "Lake Placid Blue"
-          }
-        ]
-      },
-      "options": [
-        {
-          "name": "Color",
-          "ar": "اللون",
-          "values": [
-            {
-              "name": "Olympic White",
-              "ar": "أبيض Olympic"
-            },
-            {
-              "name": "Surf Green",
-              "ar": "أخضر Surf"
-            },
-            {
-              "name": "Lake Placid Blue",
-              "ar": "أزرق Lake Placid"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "handle": "ibanez-gsrm20-mikro-short-scale-bass-walnut",
       "asin": "B00SMYGEBA",
       "vendor": "Ibanez",
@@ -11274,34 +11206,6 @@
         "title": "غيتار باص Ibanez GSRM20 Mikro قصير الزند، لون الجوز",
         "body": "<p>غيتار باص كهربائي صغير بأربعة أوتار وزند قصير، مناسب للعازفين الأصغر سنًّا أو الأصغر حجمًا.</p><ul><li>جسم من خشب الحور (poplar) بلون الجوز المطفي (Walnut Flat)</li><li>زند من خشب القيقب (maple) ولوحة أصابع من خشب الجاتوبا (jatoba)</li><li>لاقطتان أحاديتا الملف (single-coil)</li><li>زند قصير وحجم صغير</li></ul>",
         "type": "غيتار باص"
-      },
-      "publish": true
-    },
-    {
-      "handle": "squier-classic-vibe-60s-stratocaster-candy-apple-red",
-      "asin": "B07T91SK12",
-      "vendor": "Squier",
-      "type": "Electric guitar",
-      "tags": [],
-      "stock": "on_order",
-      "kg": 5.0,
-      "kg_source": "amazon (Amazon)",
-      "cost": null,
-      "media_keep": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "en": {
-        "title": "Squier Classic Vibe '60s Stratocaster, Candy Apple Red",
-        "body": "<p>An electric guitar designed by Fender and inspired by the Stratocasters of the 1960s.</p><ul><li>Alnico single-coil pickups designed by Fender</li><li>Laurel fingerboard</li><li>Neck with a vintage-tint gloss finish</li><li>Candy apple red finish</li></ul>"
-      },
-      "ar": {
-        "title": "غيتار كهربائي Squier Classic Vibe '60s Stratocaster، أحمر",
-        "body": "<p>غيتار كهربائي صمّمته Fender، مستوحى من غيتارات Stratocaster في الستينيات.</p><ul><li>لاقطات Alnico أحادية الملف (single-coil) من تصميم Fender</li><li>لوحة أصابع من خشب الغار (laurel)</li><li>زند لامع بلون كلاسيكي عتيق (vintage tint)</li><li>اللون: أحمر Candy Apple Red</li></ul>",
-        "type": "غيتار كهربائي"
       },
       "publish": true
     },
@@ -11392,34 +11296,6 @@
       ]
     },
     {
-      "handle": "squier-classic-vibe-50s-telecaster-butterscotch-blonde",
-      "asin": "B07T7H8P4H",
-      "vendor": "Squier",
-      "type": "Electric guitar",
-      "tags": [],
-      "stock": "on_order",
-      "kg": 5.0,
-      "kg_source": "amazon (Amazon)",
-      "cost": null,
-      "media_keep": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "en": {
-        "title": "Squier Classic Vibe '50s Telecaster, Butterscotch Blonde",
-        "body": "<p>An electric guitar designed by Fender that celebrates the Telecaster of the 1950s.</p><ul><li>Bridge with barrel saddles, strings through the body</li><li>Vintage-style tuners</li><li>Maple fingerboard</li><li>Butterscotch blonde finish</li></ul>"
-      },
-      "ar": {
-        "title": "غيتار كهربائي Squier Classic Vibe '50s Telecaster، Butterscotch Blonde",
-        "body": "<p>غيتار كهربائي صمّمته Fender، تحيةً لغيتار Telecaster في الخمسينيات.</p><ul><li>فرس بسروج أسطوانية (barrel saddles)، والأوتار تمرّ عبر الجسم</li><li>مفاتيح دوزان بتصميم كلاسيكي (vintage)</li><li>لوحة أصابع من خشب القيقب (maple)</li><li>اللون: أشقر Butterscotch Blonde</li></ul>",
-        "type": "غيتار كهربائي"
-      },
-      "publish": true
-    },
-    {
       "handle": "yamaha-pacifica-pac012dlx-old-violin-sunburst",
       "asin": "B003NZ06W6",
       "vendor": "Yamaha",
@@ -11443,34 +11319,6 @@
       "ar": {
         "title": "غيتار كهربائي Yamaha Pacifica PAC012DLX، Old Violin Sunburst",
         "body": "<p>غيتار كهربائي من سلسلة Pacifica من Yamaha، مع ذراع تريمولو كلاسيكي ولون سنبرست.</p><ul><li>جسم من خشب الأغاثيس (agathis)</li><li>زند من خشب القيقب (maple) مثبّت بالبراغي</li><li>لوحة أصابع من خشب السونوكلينغ (sonokeling)</li><li>تريمولو بتصميم كلاسيكي (vintage)</li></ul>",
-        "type": "غيتار كهربائي"
-      },
-      "publish": true
-    },
-    {
-      "handle": "fender-mini-stratocaster-kit-with-amp-daphne-blue",
-      "asin": "B0FSGSV4MB",
-      "vendor": "Fender",
-      "type": "Electric guitar",
-      "tags": [],
-      "stock": "on_order",
-      "kg": 6.0,
-      "kg_source": "estimate",
-      "cost": 359.99,
-      "media_keep": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "en": {
-        "title": "Fender Mini Stratocaster Kit with Amp, Daphne Blue",
-        "body": "<p>A beginner kit built around a compact Stratocaster, with what you need to plug in and start playing.</p><ul><li>Mini Strat, compact 3/4 size, with a comfortable C-shaped maple neck</li><li>Fender Frontman 10G amp</li><li>Padded gig bag, strap, cable, tuner and picks</li><li>Includes a Fender Play lessons subscription</li></ul>"
-      },
-      "ar": {
-        "title": "طقم غيتار كهربائي Fender Mini Stratocaster مع مضخّم، أزرق",
-        "body": "<p>طقم للمبتدئين حول غيتار Stratocaster صغير الحجم، فيه ما تحتاجه لتوصل الغيتار وتبدأ العزف.</p><ul><li>غيتار Mini Strat صغير بمقاس ⁦3/4⁩، بزند مريح من خشب القيقب (maple) على شكل حرف C</li><li>مضخّم صوت Fender Frontman 10G</li><li>حقيبة مبطّنة، حزام، كابل، جهاز دوزان وريشات</li><li>يشمل اشتراكًا في دروس Fender Play</li></ul>",
         "type": "غيتار كهربائي"
       },
       "publish": true
@@ -11981,34 +11829,6 @@
       "publish": true
     },
     {
-      "handle": "alesis-turbo-max-electronic-drum-set",
-      "asin": "B0FC6D7WL4",
-      "vendor": "Alesis",
-      "type": "Electronic drums",
-      "tags": [],
-      "stock": "on_order",
-      "kg": 10.6,
-      "kg_source": "amazon (Amazon)",
-      "cost": 249.0,
-      "media_keep": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "en": {
-        "title": "Alesis Turbo Max Electronic Drum Set, 7 Pieces",
-        "body": "<p>A compact electronic drum kit for beginners that folds up to fit small rooms. Plug in headphones and practice quietly.</p><ul><li>4 drums with 8 in mesh heads, and 3 cymbals of 8 in</li><li>Full-size kick and hi-hat pedals</li><li>Drum module with kits and coaching for beginners</li><li>Bluetooth</li></ul>"
-      },
-      "ar": {
-        "title": "طقم طبول إلكترونية Alesis Turbo Max، 7 قطع",
-        "body": "<p>طقم طبول إلكترونية صغير الحجم للمبتدئين، ينطوي ليناسب الغرف الصغيرة. صِل سماعات الرأس وتمرّن بهدوء.</p><ul><li>4 طبول برؤوس شبكية قياس 8 إنش، و3 صنوج قياس 8 إنش</li><li>دوّاسة طبل القاعدة (Kick) ودوّاسة الهاي هات بالحجم الكامل</li><li>وحدة تحكّم فيها أطقم أصوات وتدريب للمبتدئين</li><li>اتصال Bluetooth</li></ul>",
-        "type": "طبول إلكترونية"
-      },
-      "publish": true
-    },
-    {
       "handle": "meinl-hcs-cymbal-set",
       "asin": "B00F912X96",
       "vendor": "Meinl",
@@ -12116,34 +11936,6 @@
       "ar": {
         "title": "بونغو EastRock قابل للدوزان، 4 و5 إنش",
         "body": "<p>بونغو صغير سهل الحمل للمبتدئين، من الخشب والمعدن.</p><ul><li>طبلتان 4 و5 إنش، قابلتان للدوزان</li><li>رؤوس من جلد طبيعي</li><li>بلا حواف حادّة</li></ul>",
-        "type": "طبول يدوية"
-      },
-      "publish": true
-    },
-    {
-      "handle": "meinl-turbo-slaptop-cajon-walnut",
-      "asin": "B00HV7U4EC",
-      "vendor": "Meinl",
-      "type": "Hand drums",
-      "tags": [],
-      "stock": "on_order",
-      "kg": 5.5,
-      "kg_source": "estimate",
-      "cost": 159.99,
-      "media_keep": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "en": {
-        "title": "Meinl Turbo Slaptop Cajon, Walnut",
-        "body": "<p>A cajon you play on your lap, so you don't have to lean over it.</p><ul><li>Walnut playing surface</li><li>Internal snares for crisp snare tones, with a deep bass</li><li>Forward bass port</li></ul>"
-      },
-      "ar": {
-        "title": "كاخون Meinl Turbo Slaptop، خشب الجوز",
-        "body": "<p>كاخون تعزف عليه وهو على حضنك، فلا تحتاج إلى الانحناء فوقه.</p><ul><li>سطح العزف من خشب الجوز</li><li>أوتار سنير داخلية لصوت سنير حادّ وواضح، مع باص عميق</li><li>فتحة الباص في الأمام</li></ul>",
         "type": "طبول يدوية"
       },
       "publish": true
@@ -12726,34 +12518,6 @@
       "publish": true
     },
     {
-      "handle": "eastrock-bb-tenor-trombone-with-case",
-      "asin": "B08KFS5VKJ",
-      "vendor": "EASTROCK",
-      "type": "Trumpet & brass",
-      "tags": [],
-      "stock": "on_order",
-      "kg": 5.0,
-      "kg_source": "estimate",
-      "cost": 130.0,
-      "media_keep": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "en": {
-        "title": "EASTROCK Bb Tenor Trombone, with Case",
-        "body": "<p>A brass tenor trombone in Bb, designed to help beginners sound good.</p><ul><li>Slide trombone in brass, in Bb</li><li>Light hard case</li><li>Mouthpiece, gloves and cleaning cloth included</li><li>Each one is test-played</li></ul>"
-      },
-      "ar": {
-        "title": "ترومبون تينور EASTROCK، سلّم Bb، مع علبة",
-        "body": "<p>ترومبون تينور من النحاس على سلّم Bb، مصمَّم ليساعد المبتدئين على إخراج صوت جميل.</p><ul><li>ترومبون بالمنزلقة من النحاس، على سلّم Bb</li><li>علبة صلبة خفيفة</li><li>الفم (المبسم) والقفازات وقطعة قماش للتنظيف ضمن الطقم</li><li>كل قطعة مجرَّبة بالعزف</li></ul>",
-        "type": "ترومبيت ونحاسيات"
-      },
-      "publish": true
-    },
-    {
       "handle": "audio-technica-at2020-condenser-microphone-xlr",
       "asin": "B0006H92QK",
       "vendor": "Audio-Technica",
@@ -13202,62 +12966,6 @@
       "publish": true
     },
     {
-      "handle": "presonus-eris-e4-5-studio-monitors-pair",
-      "asin": "B00GP56OYA",
-      "vendor": "PreSonus",
-      "type": "Studio monitors",
-      "tags": [],
-      "stock": "on_order",
-      "kg": 6.0,
-      "kg_source": "estimate",
-      "cost": 139.99,
-      "media_keep": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "en": {
-        "title": "PreSonus Eris E4.5 Studio Monitors, Pair",
-        "body": "<p>A pair of near-field studio monitors, made for listening closely to your music and mixes.</p><ul><li>4.5 in woven-composite woofers and 1 in silk-dome tweeters</li><li>50 W Class AB in total, 25 W per side</li><li>Accurate sound, with a deep low end</li></ul><p><strong>Good to know:</strong> this is a pair: two speakers.</p>"
-      },
-      "ar": {
-        "title": "زوج سماعات مونيتور PreSonus Eris E4.5",
-        "body": "<p>زوج من سماعات المونيتور القريبة (Near-field)، للاستماع عن قرب إلى موسيقاك وتسجيلاتك.</p><ul><li>مكبّرات للترددات المنخفضة (Woofers) قياس 4.5 إنش من مادة مركّبة منسوجة، ومكبّرات للترددات العالية (Tweeters) بقبّة حريرية قياس 1 إنش</li><li>50 واط Class AB في المجموع، 25 واط لكل جهة</li><li>صوت دقيق، مع ترددات منخفضة عميقة</li></ul><p><strong>للعلم:</strong> هذا زوج من السماعات: سماعتان.</p>",
-        "type": "سماعات مونيتور"
-      },
-      "publish": true
-    },
-    {
-      "handle": "jbl-305p-mkii-studio-monitors-5-in-pair",
-      "asin": "B088VSBV65",
-      "vendor": "JBL",
-      "type": "Studio monitors",
-      "tags": [],
-      "stock": "on_order",
-      "kg": 12.0,
-      "kg_source": "estimate",
-      "cost": 319.0,
-      "media_keep": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "en": {
-        "title": "JBL 305P MkII Studio Monitors, 5 in, Pair",
-        "body": "<p>A pair of 5 in powered studio monitors, with controls to suit them to your room.</p><ul><li>Image Control Waveguide for a wide sweet spot</li><li>2 × 41 W Class-D amps in each speaker</li><li>Boundary EQ and HF Trim to adjust the sound to your room</li></ul><p><strong>Good to know:</strong> this is a pair: two speakers.</p>"
-      },
-      "ar": {
-        "title": "زوج سماعات مونيتور JBL 305P MkII، 5 إنش",
-        "body": "<p>زوج من سماعات المونيتور قياس 5 إنش، مزوّدة بمضخّم، مع أزرار تضبطها على غرفتك.</p><ul><li>تقنية Image Control Waveguide لمنطقة استماع مثالية واسعة</li><li>مضخّما Class-D بقوة ⁦2 × 41⁩ واط في كل سماعة</li><li>ضبط Boundary EQ وHF Trim لتناسب السماعات غرفتك</li></ul><p><strong>للعلم:</strong> هذا زوج من السماعات: سماعتان.</p>",
-        "type": "سماعات مونيتور"
-      },
-      "publish": true
-    },
-    {
       "handle": "edifier-mr3-powered-studio-monitors-pair",
       "asin": "B0DGXTBQTY",
       "vendor": "Edifier",
@@ -13450,62 +13158,6 @@
         "title": "مضخّم غيتار Boss Katana Mini، 7 واط",
         "body": "<p>مضخّم صغير جدًا للغيتار بصوت سلسلة Katana من Boss، تأخذه معك أينما ذهبت.</p><ul><li>مضخّم كومبو بقوة 7 واط</li><li>دائرة gain تناظرية</li><li>تحكّم بالصوت على 3 نطاقات</li><li>3 أنواع من الصوت: Brown وCrunch وClean</li></ul>",
         "type": "مضخّمات غيتار وباص"
-      },
-      "publish": true
-    },
-    {
-      "handle": "fender-rumble-15-v3-bass-amp",
-      "asin": "B00HWINK1E",
-      "vendor": "Fender",
-      "type": "Guitar & bass amps",
-      "tags": [],
-      "stock": "on_order",
-      "kg": 8.4,
-      "kg_source": "amazon (Amazon)",
-      "cost": 99.99,
-      "media_keep": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "en": {
-        "title": "Fender Rumble 15 V3 Bass Amp, 15 W",
-        "body": "<p>A compact amp for bass guitar, light enough to move around easily.</p><ul><li>15 W</li><li>8 in Fender Special Design speaker</li><li>Controls mounted on top of the amp</li><li>Compact, light sealed cabinet</li></ul>"
-      },
-      "ar": {
-        "title": "مضخّم غيتار باص Fender Rumble 15 V3، 15 واط",
-        "body": "<p>مضخّم صغير للغيتار الباص، خفيف وسهل النقل.</p><ul><li>قوة 15 واط</li><li>سمّاعة 8 إنش من تصميم Fender الخاص (Special Design)</li><li>أزرار التحكّم في أعلى المضخّم</li><li>صندوق مغلق، صغير وخفيف</li></ul>",
-        "type": "مضخّمات غيتار وباص"
-      },
-      "publish": true
-    },
-    {
-      "handle": "fender-acoustasonic-15-acoustic-guitar-amp",
-      "asin": "B00B28HDH2",
-      "vendor": "Fender",
-      "type": "Keyboard & acoustic amps",
-      "tags": [],
-      "stock": "on_order",
-      "kg": 5.9,
-      "kg_source": "amazon (Amazon)",
-      "cost": 159.99,
-      "media_keep": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "en": {
-        "title": "Fender Acoustasonic 15 Acoustic Guitar Amp",
-        "body": "<p>A light, portable amp for acoustic guitar, with a second input for a microphone so you can play and sing through one amp.</p><ul><li>15 W</li><li>2 inputs on the front: 1/4 in for the instrument and XLR for a microphone</li><li>A \"whizzer\" cone for clear highs</li><li>Headphone output for silent practice</li></ul>"
-      },
-      "ar": {
-        "title": "مضخّم غيتار أكوستيك Fender Acoustasonic 15",
-        "body": "<p>مضخّم خفيف وسهل الحمل للغيتار الأكوستيك، فيه مدخل ثانٍ للميكروفون لتعزف وتغنّي عبر مضخّم واحد.</p><ul><li>قوة 15 واط</li><li>مدخلان في الواجهة: ⁦1/4⁩ إنش للآلة وXLR للميكروفون</li><li>مخروط إضافي (whizzer cone) لأصوات حادّة واضحة</li><li>مخرج لسمّاعات الرأس للتمرين بصمت</li></ul>",
-        "type": "مضخّمات كيبورد وأكوستيك"
       },
       "publish": true
     },
@@ -14884,62 +14536,6 @@
         "title": "مشغّل أسطوانات (تيرنتيبل) Audio-Technica AT-LP60XBT مع Bluetooth، أسود",
         "body": "<p>مشغّل أسطوانات أوتوماتيكي بالكامل يدور بحزام، يرسل صوت الأسطوانة إلى سماعات أو سماعات رأس Bluetooth من دون أسلاك.</p><ul><li>أوتوماتيكي بالكامل، يدور بواسطة حزام</li><li>Bluetooth مع aptX، لسماعات أو سماعات رأس Bluetooth</li><li>يمكن وصله بالأسلاك أيضًا</li><li>سرعتان: 33⅓ و45 دورة في الدقيقة</li></ul>",
         "type": "مشغّلات أسطوانات"
-      },
-      "publish": true
-    },
-    {
-      "handle": "audio-technica-at-lp120xusb-direct-drive-turntable",
-      "asin": "B07N3S4X3P",
-      "vendor": "Audio-Technica",
-      "type": "Turntables",
-      "tags": [],
-      "stock": "on_order",
-      "kg": 10.0,
-      "kg_source": "estimate",
-      "cost": 399.0,
-      "media_keep": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "en": {
-        "title": "Audio-Technica AT-LP120XUSB Direct-Drive Turntable",
-        "body": "<p>A direct-drive turntable with full manual control, for listeners who like to fine-tune their setup and want to record their vinyl to a computer.</p><ul><li>Three speeds: 33⅓, 45 and 78 RPM</li><li>Fully manual, with adjustable anti-skate</li><li>Variable pitch control with quartz lock</li><li>USB output to record vinyl to a computer, with the free Audacity software</li></ul>"
-      },
-      "ar": {
-        "title": "مشغّل أسطوانات (تيرنتيبل) Audio-Technica AT-LP120XUSB بدفع مباشر",
-        "body": "<p>مشغّل أسطوانات بمحرّك دفع مباشر (Direct-Drive) وتحكّم يدوي كامل، لمن يحب ضبط جهازه بدقة ويريد تسجيل أسطواناته على الكمبيوتر.</p><ul><li>ثلاث سرعات: 33⅓ و45 و78 دورة في الدقيقة</li><li>يدوي بالكامل، مع ضبط قابل للتعديل لمنع انزلاق الذراع (anti-skate)</li><li>تحكّم بالسرعة (pitch) مع تثبيت بالكوارتز</li><li>مخرج USB لتسجيل الأسطوانات على الكمبيوتر، مع برنامج Audacity المجاني</li></ul>",
-        "type": "مشغّلات أسطوانات"
-      },
-      "publish": true
-    },
-    {
-      "handle": "edifier-r1280t-powered-bookshelf-speakers-pair",
-      "asin": "B016P9HJIA",
-      "vendor": "Edifier",
-      "type": "Hi-fi speakers",
-      "tags": [],
-      "stock": "on_order",
-      "kg": 6.0,
-      "kg_source": "estimate",
-      "cost": 117.99,
-      "media_keep": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "en": {
-        "title": "Edifier R1280T Powered Bookshelf Speakers, Pair",
-        "body": "<p>A pair of bookshelf speakers with the amplifier built in, in MDF wood cabinets, for music at home.</p><ul><li>Two AUX inputs (RCA)</li><li>4-inch full-range driver and 13 mm silk-dome tweeter</li><li>Bass and treble controls on the side</li><li>Remote control</li></ul>"
-      },
-      "ar": {
-        "title": "سماعات رفّ Edifier R1280T مع مضخّم مدمج، زوج",
-        "body": "<p>زوج من سماعات الرفّ فيها مضخّم صوت مدمج، بصناديق من خشب MDF، للاستماع إلى الموسيقى في البيت.</p><ul><li>مدخلان AUX (RCA)</li><li>مكبّر صوت كامل المدى 4 إنش ومكبّر للنغمات العالية (tweeter) بقبّة حريرية 13 مم</li><li>أزرار للتحكّم بالباص والنغمات العالية على الجانب</li><li>جهاز تحكّم عن بُعد</li></ul>",
-        "type": "سماعات هاي فاي"
       },
       "publish": true
     },
