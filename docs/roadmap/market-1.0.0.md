@@ -322,6 +322,17 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
     the Rumble and Acoustasonic amps, the Squier Precision Bass and Classic Vibe guitars, the trombone and the cajon): buy credits,
     import `market/store/rounds/round-2/import-1.csv` (Art, Accessories: 228) and `import-2.csv` (Instruments, Studio, Vinyl, Books: 181) in Spreadr ("Import single product"), then `setup-products.mjs` → `merge-variants.mjs` →
     `setup-products.mjs`, choose photos, then `setup-store.mjs --only menu`.
+- [ ] **Round 3, Amazon US** (list approved 2026-10-30, `market/store/rounds/round-3/list.md` and `list.json`):
+  every Academy instrument (violin, guitar, piano, percussion, winds, oriental) in more brands, sizes and colours, plus
+  the sub-categories still empty (electronic drums, podcast kits, keyboard & acoustic amps, DJ mixers) and some art,
+  studio, vinyl and book additions. 173 products, 252 Amazon IDs (≈ 302 credits). Same rules as round 2; 16 big-brand
+  products have their price read at import. Not the whole $10: the rest is kept for the Amazon UAE round. English and
+  Arabic texts written from the Amazon facts (`products/round-3.json`, 41 products with choices). Next: import
+  `rounds/round-3/import.csv` (252 IDs) in Spreadr ("Import single product"), then `setup-products.mjs --round 3` →
+  `merge-variants.mjs --round 3` → `setup-products.mjs --round 3`, read the prices of the big-brand products, choose
+  photos, `setup-store.mjs --only menu`.
+- [ ] **Round 4, Amazon UAE** (amazon.ae, Spreadr region UAE, separate CSV; cost in AED ÷ 3.6725, same $20/kg shipping):
+  products missing from Amazon US (oud, qanun, ney, riq, buzuq and more), no fixed size.
 
 **Review:** prices and the catalog.
 

@@ -1,0 +1,3159 @@
+{
+ "_about": "Round 3 list (Amazon US, researched 2026-10-30, for review): every instrument taught at the Academy (violin, guitar, piano, percussion, winds, oriental) with more brands, sizes and colours, plus the sub-categories still empty (electronic drums, podcast kits, keyboard & acoustic amps, DJ mixers) and a few art, studio, vinyl and book additions. Same rules as round 2: in stock (no \"only 1–3 left\"), nothing that can't be flown (no lithium batteries), products already in the shop left out, heavy and few-review items kept. kg = boxed shipping weight (Amazon's, or an estimate). our_price = round_up((amazon_price + kg × 20) × 1.3) − 0.01; \"price at import\" = Amazon hides the price from Lebanon (big brands), Spreadr fills it in. Products sold with a choice carry merge_variants (option B: every value is imported, then merged with merge-variants.mjs). Not the whole $10 budget: the Amazon UAE round comes next.",
+ "items": [
+  {
+   "asin": "B074W19TH2",
+   "subcategory": "Violin & viola",
+   "type": "Violin",
+   "name": "Stentor Student I Violin Outfit (1400), 4/4",
+   "amazon_price": 268.99,
+   "kg": 1.59,
+   "kg_source": "amazon",
+   "our_price": 391.99,
+   "rating": 4.2,
+   "reviews": "1,268"
+  },
+  {
+   "asin": "B000O56IC0",
+   "subcategory": "Violin & viola",
+   "type": "Violin",
+   "name": "Cremona SV-175 Premier Student Violin Outfit, 4/4",
+   "amazon_price": 299.99,
+   "kg": 2.3,
+   "kg_source": "estimate",
+   "our_price": 449.99,
+   "rating": 4.0,
+   "reviews": "207"
+  },
+  {
+   "asin": "B00G234FK0",
+   "subcategory": "Violin & viola",
+   "type": "Violin",
+   "name": "Cremona SV-500 Premier Artist Violin Outfit, 4/4",
+   "amazon_price": 449.0,
+   "kg": 2.72,
+   "kg_source": "amazon",
+   "our_price": 654.99,
+   "rating": 4.1,
+   "reviews": "289"
+  },
+  {
+   "asin": "B00EOYK2FQ",
+   "subcategory": "Violin & viola",
+   "type": "Violin",
+   "name": "Cecilio CVN-500 Solid Wood Violin, ebony fittings, with case",
+   "amazon_price": 210.98,
+   "kg": 2.27,
+   "kg_source": "amazon",
+   "our_price": 333.99,
+   "rating": 4.2,
+   "reviews": "411",
+   "merge_variants": {
+    "option": "Size",
+    "values": [
+     {
+      "asin": "B00EOYK2FQ",
+      "name": "4/4",
+      "amazon_price": 210.98,
+      "kg": 2.27,
+      "our_price": 333.99
+     },
+     {
+      "asin": "B00EOYK49A",
+      "name": "1/2",
+      "amazon_price": 172.99,
+      "kg": 1.81,
+      "our_price": 271.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B0D5CGMJJY",
+   "subcategory": "Violin & viola",
+   "type": "Violin",
+   "name": "Vangoa Varnished Solid Wood Violin Set, 4/4",
+   "amazon_price": 169.99,
+   "kg": 2.27,
+   "kg_source": "amazon",
+   "our_price": 280.99,
+   "rating": 4.2,
+   "reviews": "183"
+  },
+  {
+   "asin": "B0FQHYL7K6",
+   "subcategory": "Violin & viola",
+   "type": "Violin",
+   "name": "Vangoa Beginner Violin Set, natural",
+   "amazon_price": 119.99,
+   "kg": 1.4,
+   "kg_source": "estimate",
+   "our_price": 192.99,
+   "rating": 4.2,
+   "reviews": "171",
+   "merge_variants": {
+    "option": "Size",
+    "values": [
+     {
+      "asin": "B0FQHYL7K6",
+      "name": "1/4",
+      "amazon_price": 119.99,
+      "kg": 1.2,
+      "our_price": 187.99
+     },
+     {
+      "asin": "B0FQHGN8ZL",
+      "name": "3/4",
+      "amazon_price": 115.99,
+      "kg": 1.4,
+      "our_price": 187.99
+     },
+     {
+      "asin": "B0FNR9NL4C",
+      "name": "4/4",
+      "amazon_price": 112.99,
+      "kg": 1.6,
+      "our_price": 188.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B08199SVYK",
+   "subcategory": "Violin & viola",
+   "type": "Violin",
+   "name": "Eastar Beginner Violin Kit with hard case, 3/4",
+   "amazon_price": 123.49,
+   "kg": 1.93,
+   "kg_source": "amazon",
+   "our_price": 210.99,
+   "rating": 4.1,
+   "reviews": "2,560"
+  },
+  {
+   "asin": "B01DFFF54M",
+   "subcategory": "Violin & viola",
+   "type": "Violin",
+   "name": "Yamaha YEV104 Electric Violin, black",
+   "amazon_price": 881.99,
+   "kg": 1.22,
+   "kg_source": "amazon",
+   "our_price": 1178.99,
+   "rating": 4.7,
+   "reviews": "129"
+  },
+  {
+   "asin": "B0812NDXNP",
+   "subcategory": "Violin & viola",
+   "type": "Bows",
+   "name": "VINGOBOW 100V Carbon Fiber Violin Bow, 4/4",
+   "amazon_price": 49.95,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 72.99,
+   "rating": 4.4,
+   "reviews": "373"
+  },
+  {
+   "asin": "B0002D08OI",
+   "subcategory": "Violin & viola",
+   "type": "Violin strings",
+   "name": "D'Addario Helicore Violin Strings, 4/4 medium",
+   "amazon_price": 58.47,
+   "kg": 0.05,
+   "kg_source": "estimate",
+   "our_price": 77.99,
+   "rating": 4.8,
+   "reviews": "901"
+  },
+  {
+   "asin": "B0731KJG61",
+   "subcategory": "Violin & viola",
+   "type": "Violin strings",
+   "name": "D'Addario Ascente Violin Strings, full set",
+   "amazon_price": 28.99,
+   "kg": 0.05,
+   "kg_source": "estimate",
+   "our_price": 38.99,
+   "rating": 4.6,
+   "reviews": "1,129",
+   "merge_variants": {
+    "option": "Size",
+    "values": [
+     {
+      "asin": "B0731KJG61",
+      "name": "4/4",
+      "amazon_price": 28.99,
+      "kg": 0.05,
+      "our_price": 38.99
+     },
+     {
+      "asin": "B0731JTGQC",
+      "name": "3/4",
+      "amazon_price": 28.99,
+      "kg": 0.05,
+      "our_price": 38.99
+     },
+     {
+      "asin": "B07D7SDTDB",
+      "name": "1/4",
+      "amazon_price": 28.99,
+      "kg": 0.05,
+      "our_price": 38.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B000F3HK78",
+   "subcategory": "Violin & viola",
+   "type": "Rosin",
+   "name": "Bernardel Rosin for violin, viola and cello",
+   "amazon_price": 17.99,
+   "kg": 0.05,
+   "kg_source": "estimate",
+   "our_price": 24.99,
+   "rating": 4.8,
+   "reviews": "1,103"
+  },
+  {
+   "asin": "B0002OP0WC",
+   "subcategory": "Violin & viola",
+   "type": "Rosin",
+   "name": "D'Addario Natural Rosin, light",
+   "amazon_price": 5.99,
+   "kg": 0.05,
+   "kg_source": "estimate",
+   "our_price": 9.99,
+   "rating": 4.6,
+   "reviews": "11,527"
+  },
+  {
+   "asin": "B00UM66DL2",
+   "subcategory": "Violin & viola",
+   "type": "Shoulder & chin rests",
+   "name": "Fiddlerman Wood Violin Shoulder Rest, 4/4 and 3/4",
+   "amazon_price": 22.89,
+   "kg": 0.15,
+   "kg_source": "estimate",
+   "our_price": 33.99,
+   "rating": 4.6,
+   "reviews": "1,913"
+  },
+  {
+   "asin": "B09LQWVC2Q",
+   "subcategory": "Essentials",
+   "type": "Cases & gig bags",
+   "name": "adm Violin Hard Case, 4/4, backpack straps",
+   "amazon_price": 64.99,
+   "kg": 1.18,
+   "kg_source": "amazon",
+   "our_price": 115.99,
+   "rating": 4.5,
+   "reviews": "598"
+  },
+  {
+   "asin": "B0GFFTFYDB",
+   "subcategory": "Guitars & basses",
+   "type": "Classical guitar",
+   "name": "Fender CN-25 Classical Guitar for kids, 3/4",
+   "amazon_price": 129.99,
+   "kg": 3.0,
+   "kg_source": "estimate",
+   "our_price": 246.99,
+   "rating": 4.7,
+   "reviews": "39",
+   "note": "few reviews"
+  },
+  {
+   "asin": "B00O1QJ6KE",
+   "subcategory": "Guitars & basses",
+   "type": "Classical guitar",
+   "name": "Music Alley Junior Classical Guitar, 34 in",
+   "amazon_price": 44.99,
+   "kg": 0.95,
+   "kg_source": "amazon",
+   "our_price": 83.99,
+   "rating": 4.2,
+   "reviews": "6,922"
+  },
+  {
+   "asin": "B0B7NLLXFB",
+   "subcategory": "Guitars & basses",
+   "type": "Classical guitar",
+   "name": "Vangoa Classical Guitar, 36 in (3/4)",
+   "amazon_price": 149.99,
+   "kg": 3.0,
+   "kg_source": "estimate",
+   "our_price": 272.99,
+   "rating": 4.6,
+   "reviews": "53"
+  },
+  {
+   "asin": "B007RM1V8O",
+   "subcategory": "Guitars & basses",
+   "type": "Classical guitar",
+   "name": "Cordoba Dolce 7/8 Classical Guitar",
+   "amazon_price": null,
+   "kg": 2.5,
+   "kg_source": "estimate",
+   "our_price": null,
+   "rating": 4.6,
+   "reviews": "114",
+   "note": "price at import"
+  },
+  {
+   "asin": "B0CG9YZW27",
+   "subcategory": "Guitars & basses",
+   "type": "Acoustic guitar",
+   "name": "Pyle Beginner Acoustic Guitar Kit, 3/4, ash",
+   "amazon_price": 72.99,
+   "kg": 2.13,
+   "kg_source": "amazon",
+   "our_price": 150.99,
+   "rating": 4.3,
+   "reviews": "8,269"
+  },
+  {
+   "asin": "B089P25CQ1",
+   "subcategory": "Guitars & basses",
+   "type": "Acoustic guitar",
+   "name": "Ashthorpe Beginner Acoustic Guitar Kit with gig bag",
+   "amazon_price": 62.99,
+   "kg": 1.27,
+   "kg_source": "amazon",
+   "our_price": 114.99,
+   "rating": 4.4,
+   "reviews": "9,322",
+   "merge_variants": {
+    "option": "Size",
+    "values": [
+     {
+      "asin": "B089P25CQ1",
+      "name": "38 in, black",
+      "amazon_price": 62.99,
+      "kg": 1.27,
+      "our_price": 114.99
+     },
+     {
+      "asin": "B089P1LLFS",
+      "name": "38 in, blue",
+      "amazon_price": 62.99,
+      "kg": 1.27,
+      "our_price": 114.99
+     },
+     {
+      "asin": "B099NVPZ3Q",
+      "name": "30 in (kids), black",
+      "amazon_price": 53.99,
+      "kg": 0.82,
+      "our_price": 91.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B00009J580",
+   "subcategory": "Guitars & basses",
+   "type": "Acoustic guitar",
+   "name": "Yamaha JR1 3/4 Junior Acoustic Guitar",
+   "amazon_price": null,
+   "kg": 2.22,
+   "kg_source": "amazon",
+   "our_price": null,
+   "rating": 4.4,
+   "reviews": "1,123",
+   "note": "price at import"
+  },
+  {
+   "asin": "B00DYIIQ0Q",
+   "subcategory": "Guitars & basses",
+   "type": "Acoustic guitar",
+   "name": "Yamaha APXT2 3/4 Acoustic-Electric Guitar, black",
+   "amazon_price": null,
+   "kg": 2.4,
+   "kg_source": "amazon",
+   "our_price": null,
+   "rating": 4.3,
+   "reviews": "831",
+   "note": "price at import"
+  },
+  {
+   "asin": "B01CFOAQP2",
+   "subcategory": "Guitars & basses",
+   "type": "Acoustic guitar",
+   "name": "Yamaha FG830 Solid Top Acoustic Guitar",
+   "amazon_price": null,
+   "kg": 3.5,
+   "kg_source": "estimate",
+   "our_price": null,
+   "rating": 4.7,
+   "reviews": "542",
+   "note": "price at import"
+  },
+  {
+   "asin": "B07965TCK1",
+   "subcategory": "Guitars & basses",
+   "type": "Acoustic guitar",
+   "name": "Yamaha APX600 Thin Acoustic-Electric Guitar, oriental blue burst",
+   "amazon_price": null,
+   "kg": 2.95,
+   "kg_source": "amazon",
+   "our_price": null,
+   "rating": 4.5,
+   "reviews": "1,243",
+   "note": "price at import"
+  },
+  {
+   "asin": "B01667J2QS",
+   "subcategory": "Guitars & basses",
+   "type": "Acoustic guitar",
+   "name": "Fender CD-60SCE Solid Top Acoustic-Electric Guitar, all mahogany",
+   "amazon_price": null,
+   "kg": 4.0,
+   "kg_source": "estimate",
+   "our_price": null,
+   "rating": 4.5,
+   "reviews": "529",
+   "note": "price at import"
+  },
+  {
+   "asin": "B001CM7U5I",
+   "subcategory": "Guitars & basses",
+   "type": "Acoustic guitar",
+   "name": "Martin LX1E Little Martin Acoustic-Electric with gig bag",
+   "amazon_price": null,
+   "kg": 3.77,
+   "kg_source": "amazon",
+   "our_price": null,
+   "rating": 4.5,
+   "reviews": "240",
+   "note": "price at import"
+  },
+  {
+   "asin": "B09S7V94J8",
+   "subcategory": "Guitars & basses",
+   "type": "Acoustic guitar",
+   "name": "Taylor GS Mini Mahogany Acoustic Guitar",
+   "amazon_price": null,
+   "kg": 5.22,
+   "kg_source": "amazon",
+   "our_price": null,
+   "rating": 4.6,
+   "reviews": "40",
+   "note": "price at import"
+  },
+  {
+   "asin": "B0F3XGJWNL",
+   "subcategory": "Guitars & basses",
+   "type": "Ukulele",
+   "name": "Winzz Soprano Ukulele for kids, 21 in",
+   "amazon_price": 34.91,
+   "kg": 0.94,
+   "kg_source": "amazon",
+   "our_price": 69.99,
+   "rating": 4.3,
+   "reviews": "5,244",
+   "merge_variants": {
+    "option": "Color",
+    "values": [
+     {
+      "asin": "B0F3XGJWNL",
+      "name": "Natural",
+      "amazon_price": 34.91,
+      "kg": 0.94,
+      "our_price": 69.99
+     },
+     {
+      "asin": "B01N5LXD0K",
+      "name": "Black",
+      "amazon_price": 37.91,
+      "kg": 0.9,
+      "our_price": 72.99
+     },
+     {
+      "asin": "B06Y23KKJN",
+      "name": "Pink",
+      "amazon_price": 35.41,
+      "kg": 0.9,
+      "our_price": 69.99
+     },
+     {
+      "asin": "B06Y21NYRB",
+      "name": "Blue",
+      "amazon_price": 36.91,
+      "kg": 0.9,
+      "our_price": 71.99
+     },
+     {
+      "asin": "B08YN7ZBKK",
+      "name": "White",
+      "amazon_price": 36.11,
+      "kg": 0.9,
+      "our_price": 70.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B076KFB49J",
+   "subcategory": "Guitars & basses",
+   "type": "Ukulele",
+   "name": "Kmise Mahogany Ukulele with gig bag",
+   "amazon_price": 45.99,
+   "kg": 0.9,
+   "kg_source": "estimate",
+   "our_price": 83.99,
+   "rating": 4.6,
+   "reviews": "8,398",
+   "merge_variants": {
+    "option": "Size",
+    "values": [
+     {
+      "asin": "B076KFB49J",
+      "name": "Soprano 21 in",
+      "amazon_price": 45.99,
+      "kg": 0.9,
+      "our_price": 83.99
+     },
+     {
+      "asin": "B078NS1ZPY",
+      "name": "Concert 23 in",
+      "amazon_price": 54.99,
+      "kg": 1.0,
+      "our_price": 97.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B07SDCLVTY",
+   "subcategory": "Guitars & basses",
+   "type": "Ukulele",
+   "name": "EASTROCK Mahogany Ukulele Kit",
+   "amazon_price": 60.14,
+   "kg": 1.0,
+   "kg_source": "estimate",
+   "our_price": 104.99,
+   "rating": 4.6,
+   "reviews": "665",
+   "merge_variants": {
+    "option": "Size",
+    "values": [
+     {
+      "asin": "B07SDCLVTY",
+      "name": "Soprano 21 in",
+      "amazon_price": 60.14,
+      "kg": 1.0,
+      "our_price": 104.99
+     },
+     {
+      "asin": "B07SFT17Q3",
+      "name": "Concert 23 in",
+      "amazon_price": 74.35,
+      "kg": 1.2,
+      "our_price": 127.99
+     },
+     {
+      "asin": "B082M48TCZ",
+      "name": "Tenor 26 in",
+      "amazon_price": 90.09,
+      "kg": 1.4,
+      "our_price": 153.99
+     },
+     {
+      "asin": "B089KCG5H3",
+      "name": "Concert 23 in, with pickup",
+      "amazon_price": 80.3,
+      "kg": 1.3,
+      "our_price": 138.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B072JT9WLF",
+   "subcategory": "Guitars & basses",
+   "type": "Ukulele",
+   "name": "AKLOT Solid Mahogany Concert Ukulele, 23 in",
+   "amazon_price": 59.99,
+   "kg": 1.32,
+   "kg_source": "amazon",
+   "our_price": 112.99,
+   "rating": 4.7,
+   "reviews": "5,933"
+  },
+  {
+   "asin": "B000EEHI7U",
+   "subcategory": "Guitar & bass",
+   "type": "Guitar & bass strings",
+   "name": "Savarez Classical Guitar Strings",
+   "amazon_price": 24.97,
+   "kg": 0.05,
+   "kg_source": "amazon",
+   "our_price": 33.99,
+   "rating": 4.6,
+   "reviews": "770"
+  },
+  {
+   "asin": "B0051MQUXS",
+   "subcategory": "Guitar & bass",
+   "type": "Guitar & bass strings",
+   "name": "Augustine Classic Blue Classical Guitar Strings, high tension",
+   "amazon_price": 12.49,
+   "kg": 0.05,
+   "kg_source": "estimate",
+   "our_price": 17.99,
+   "rating": 4.6,
+   "reviews": "2,220"
+  },
+  {
+   "asin": "B0058D7YSU",
+   "subcategory": "Guitar & bass",
+   "type": "Guitar & bass strings",
+   "name": "Augustine Classic Red Classical Guitar Strings, medium tension",
+   "amazon_price": 12.49,
+   "kg": 0.05,
+   "kg_source": "estimate",
+   "our_price": 17.99,
+   "rating": 4.4,
+   "reviews": "1,448"
+  },
+  {
+   "asin": "B077MN2RDQ",
+   "subcategory": "Guitar & bass",
+   "type": "Guitar & bass strings",
+   "name": "D'Addario EJ27N Classical Guitar Strings, normal tension, 3 sets",
+   "amazon_price": 21.99,
+   "kg": 0.12,
+   "kg_source": "estimate",
+   "our_price": 31.99,
+   "rating": 4.5,
+   "reviews": "2,489"
+  },
+  {
+   "asin": "B088K6431K",
+   "subcategory": "Guitar & bass",
+   "type": "Pickups & parts",
+   "name": "Passive Piezo Pickup, stick-on",
+   "amazon_price": 59.99,
+   "kg": 0.1,
+   "kg_source": "estimate",
+   "our_price": 80.99,
+   "rating": 4.5,
+   "reviews": "606",
+   "merge_variants": {
+    "option": "For",
+    "values": [
+     {
+      "asin": "B088K6431K",
+      "name": "Acoustic guitar",
+      "amazon_price": 59.99,
+      "kg": 0.1,
+      "our_price": 80.99
+     },
+     {
+      "asin": "B0887TQ7F3",
+      "name": "Classical guitar",
+      "amazon_price": 59.99,
+      "kg": 0.1,
+      "our_price": 80.99
+     },
+     {
+      "asin": "B0887TXB49",
+      "name": "Ukulele",
+      "amazon_price": 55.99,
+      "kg": 0.1,
+      "our_price": 75.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B0D6RDKX2X",
+   "subcategory": "Essentials",
+   "type": "Instrument stands",
+   "name": "CAHAYA Guitar Foot Stool, 6 heights",
+   "amazon_price": 14.99,
+   "kg": 0.72,
+   "kg_source": "amazon",
+   "our_price": 38.99,
+   "rating": 4.6,
+   "reviews": "685"
+  },
+  {
+   "asin": "B00724YJN6",
+   "subcategory": "Essentials",
+   "type": "Instrument stands",
+   "name": "Hercules FS100B Guitar Foot Rest",
+   "amazon_price": 22.98,
+   "kg": 0.8,
+   "kg_source": "amazon",
+   "our_price": 50.99,
+   "rating": 4.8,
+   "reviews": "1,670"
+  },
+  {
+   "asin": "B00I0ROV00",
+   "subcategory": "Pianos & keyboards",
+   "type": "Keyboard",
+   "name": "Casio SA-51 Mini Keyboard, 32 keys",
+   "amazon_price": 79.99,
+   "kg": 1.0,
+   "kg_source": "amazon",
+   "our_price": 129.99,
+   "rating": 4.6,
+   "reviews": "382"
+  },
+  {
+   "asin": "B07WN7NG5H",
+   "subcategory": "Pianos & keyboards",
+   "type": "Keyboard",
+   "name": "Casio CT-S300 Touch-Sensitive Keyboard, 61 keys",
+   "amazon_price": null,
+   "kg": 4.94,
+   "kg_source": "amazon",
+   "our_price": null,
+   "rating": 4.7,
+   "reviews": "1,464",
+   "note": "price at import"
+  },
+  {
+   "asin": "B0D4R71VLV",
+   "subcategory": "Pianos & keyboards",
+   "type": "Keyboard",
+   "name": "Yamaha YPT-380 Touch-Sensitive Keyboard, 61 keys",
+   "amazon_price": null,
+   "kg": 4.4,
+   "kg_source": "amazon",
+   "our_price": null,
+   "rating": 4.2,
+   "reviews": "57",
+   "note": "price at import"
+  },
+  {
+   "asin": "B0D1CVCDN2",
+   "subcategory": "Pianos & keyboards",
+   "type": "Keyboard",
+   "name": "Yamaha PSR-EW320 Touch-Sensitive Keyboard, 76 keys",
+   "amazon_price": null,
+   "kg": 5.17,
+   "kg_source": "amazon",
+   "our_price": null,
+   "rating": 4.6,
+   "reviews": "158",
+   "note": "price at import"
+  },
+  {
+   "asin": "B09HHGPVN5",
+   "subcategory": "Pianos & keyboards",
+   "type": "Digital piano",
+   "name": "Carina Foldable Digital Piano, 88 semi-weighted keys",
+   "amazon_price": 109.99,
+   "kg": 4.0,
+   "kg_source": "estimate",
+   "our_price": 246.99,
+   "rating": 4.2,
+   "reviews": "149"
+  },
+  {
+   "asin": "B0C4GQ2Y66",
+   "subcategory": "Pianos & keyboards",
+   "type": "Digital piano",
+   "name": "FingerBallet Folding Digital Piano, 88 semi-weighted keys",
+   "amazon_price": 155.99,
+   "kg": 5.64,
+   "kg_source": "amazon",
+   "our_price": 349.99,
+   "rating": 4.3,
+   "reviews": "443",
+   "merge_variants": {
+    "option": "Color",
+    "values": [
+     {
+      "asin": "B0C4GQ2Y66",
+      "name": "Black",
+      "amazon_price": 155.99,
+      "kg": 5.64,
+      "our_price": 349.99
+     },
+     {
+      "asin": "B0C4GQLS13",
+      "name": "White",
+      "amazon_price": 132.87,
+      "kg": 5.6,
+      "our_price": 318.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B00UJ9LNDK",
+   "subcategory": "Pianos & keyboards",
+   "type": "Digital piano",
+   "name": "Yamaha P-45 Digital Piano, 88 weighted keys",
+   "amazon_price": null,
+   "kg": 11.5,
+   "kg_source": "amazon",
+   "our_price": null,
+   "rating": 4.7,
+   "reviews": "1,767",
+   "note": "price at import"
+  },
+  {
+   "asin": "B0FMCGPCR4",
+   "subcategory": "Pianos & keyboards",
+   "type": "Digital piano",
+   "name": "Yamaha P-143 Digital Piano bundle with stand and bench",
+   "amazon_price": null,
+   "kg": 11.34,
+   "kg_source": "amazon",
+   "our_price": null,
+   "rating": 4.7,
+   "reviews": "51",
+   "note": "price at import"
+  },
+  {
+   "asin": "B09S6R9R57",
+   "subcategory": "Pianos & keyboards",
+   "type": "Digital piano",
+   "name": "Casio CDP-S160 Digital Piano, 88 weighted keys",
+   "amazon_price": null,
+   "kg": 10.52,
+   "kg_source": "amazon",
+   "our_price": null,
+   "rating": 4.6,
+   "reviews": "97",
+   "note": "price at import"
+  },
+  {
+   "asin": "B0BJL1K22R",
+   "subcategory": "Pianos & keyboards",
+   "type": "Digital piano",
+   "name": "Roland FP-10 Digital Piano bundle with stand and bench",
+   "amazon_price": null,
+   "kg": 12.25,
+   "kg_source": "amazon",
+   "our_price": null,
+   "rating": 4.6,
+   "reviews": "107",
+   "note": "price at import"
+  },
+  {
+   "asin": "B0894GWK74",
+   "subcategory": "Pianos & keyboards",
+   "type": "Accordion & melodica",
+   "name": "EastRock Melodica with case",
+   "amazon_price": 34.99,
+   "kg": 0.5,
+   "kg_source": "amazon",
+   "our_price": 58.99,
+   "rating": 4.7,
+   "reviews": "333",
+   "merge_variants": {
+    "option": "Model",
+    "values": [
+     {
+      "asin": "B0894GWK74",
+      "name": "37 keys, black",
+      "amazon_price": 34.99,
+      "kg": 0.5,
+      "our_price": 58.99
+     },
+     {
+      "asin": "B0894J92QF",
+      "name": "37 keys, blue",
+      "amazon_price": 32.99,
+      "kg": 0.5,
+      "our_price": 55.99
+     },
+     {
+      "asin": "B0894HC2DH",
+      "name": "32 keys, black",
+      "amazon_price": 22.99,
+      "kg": 0.45,
+      "our_price": 41.99
+     },
+     {
+      "asin": "B0894HB9C8",
+      "name": "32 keys, pink",
+      "amazon_price": 25.89,
+      "kg": 0.45,
+      "our_price": 45.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B0CGRX7KGR",
+   "subcategory": "Pianos & keyboards",
+   "type": "Accordion & melodica",
+   "name": "CAHAYA Melodica, 32 colorful keys, with case",
+   "amazon_price": 34.99,
+   "kg": 0.5,
+   "kg_source": "estimate",
+   "our_price": 58.99,
+   "rating": 4.4,
+   "reviews": "44"
+  },
+  {
+   "asin": "B08V4PG1VG",
+   "subcategory": "Keyboard",
+   "type": "Piano benches",
+   "name": "CAHAYA Padded X-Style Piano Bench",
+   "amazon_price": 36.99,
+   "kg": 2.72,
+   "kg_source": "amazon",
+   "our_price": 118.99,
+   "rating": 4.5,
+   "reviews": "820",
+   "merge_variants": {
+    "option": "Color",
+    "values": [
+     {
+      "asin": "B08V4PG1VG",
+      "name": "Black",
+      "amazon_price": 36.99,
+      "kg": 2.72,
+      "our_price": 118.99
+     },
+     {
+      "asin": "B0BNL28M48",
+      "name": "White",
+      "amazon_price": 39.99,
+      "kg": 2.72,
+      "our_price": 122.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B0991SSPVS",
+   "subcategory": "Essentials",
+   "type": "Instrument stands",
+   "name": "GLEAM Keyboard Stand, single X",
+   "amazon_price": 24.99,
+   "kg": 2.52,
+   "kg_source": "amazon",
+   "our_price": 98.99,
+   "rating": 4.0,
+   "reviews": "2,818"
+  },
+  {
+   "asin": "B0F325KNWZ",
+   "subcategory": "Essentials",
+   "type": "Instrument stands",
+   "name": "Double-X Keyboard Stand, adjustable",
+   "amazon_price": 36.99,
+   "kg": 2.76,
+   "kg_source": "amazon",
+   "our_price": 119.99,
+   "rating": 4.5,
+   "reviews": "206"
+  },
+  {
+   "asin": "B0DZ1V943K",
+   "subcategory": "Keyboard",
+   "type": "Sustain pedals",
+   "name": "karmiero Piano-Style Sustain Pedal, universal",
+   "amazon_price": 11.98,
+   "kg": 0.41,
+   "kg_source": "amazon",
+   "our_price": 26.99,
+   "rating": 4.7,
+   "reviews": "368"
+  },
+  {
+   "asin": "B09MLVZRJ5",
+   "subcategory": "Keyboard",
+   "type": "Sustain pedals",
+   "name": "Goldby Piano Sustain Pedal, universal",
+   "amazon_price": 18.99,
+   "kg": 0.35,
+   "kg_source": "amazon",
+   "our_price": 33.99,
+   "rating": 4.5,
+   "reviews": "263"
+  },
+  {
+   "asin": "B07YPVCR5Y",
+   "subcategory": "Oriental",
+   "type": "Darbuka",
+   "name": "Gawharet El Fan Pro Darbuka with case, 17.75 in",
+   "amazon_price": 169.0,
+   "kg": 3.0,
+   "kg_source": "estimate",
+   "our_price": 297.99,
+   "rating": 4.4,
+   "reviews": "9",
+   "note": "few reviews",
+   "merge_variants": {
+    "option": "Color",
+    "values": [
+     {
+      "asin": "B07YPVCR5Y",
+      "name": "Gold",
+      "amazon_price": 169.0,
+      "kg": 3.0,
+      "our_price": 297.99
+     },
+     {
+      "asin": "B08B5FR7MY",
+      "name": "Copper",
+      "amazon_price": 159.0,
+      "kg": 3.0,
+      "our_price": 284.99
+     },
+     {
+      "asin": "B003UUDGNU",
+      "name": "Silver and black",
+      "amazon_price": 169.0,
+      "kg": 3.0,
+      "our_price": 297.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B00UC6P2AK",
+   "subcategory": "Oriental",
+   "type": "Darbuka",
+   "name": "Egyptian Darbuka (doumbek)",
+   "amazon_price": 129.9,
+   "kg": 2.4,
+   "kg_source": "amazon",
+   "our_price": 231.99,
+   "rating": 4.6,
+   "reviews": "88"
+  },
+  {
+   "asin": "B086GYCDQY",
+   "subcategory": "Oriental",
+   "type": "Darbuka",
+   "name": "Zaza Kids Aluminium Darbuka, 10 in",
+   "amazon_price": 39.0,
+   "kg": 0.5,
+   "kg_source": "estimate",
+   "our_price": 63.99,
+   "rating": 4.0,
+   "reviews": "46"
+  },
+  {
+   "asin": "B0002F7KGK",
+   "subcategory": "Oriental",
+   "type": "Riq & frame drums",
+   "name": "Remo Fiberskyn Frame Drum",
+   "amazon_price": 21.95,
+   "kg": 0.44,
+   "kg_source": "amazon",
+   "our_price": 39.99,
+   "rating": 4.7,
+   "reviews": "2,262",
+   "merge_variants": {
+    "option": "Size",
+    "values": [
+     {
+      "asin": "B0002I1F6I",
+      "name": "8 in",
+      "amazon_price": 19.95,
+      "kg": 0.34,
+      "our_price": 34.99
+     },
+     {
+      "asin": "B0002F7KGK",
+      "name": "10 in",
+      "amazon_price": 21.95,
+      "kg": 0.44,
+      "our_price": 39.99
+     },
+     {
+      "asin": "B0002F7KG0",
+      "name": "12 in",
+      "amazon_price": 28.95,
+      "kg": 0.68,
+      "our_price": 55.99
+     },
+     {
+      "asin": "B0002F7KGU",
+      "name": "14 in",
+      "amazon_price": 40.95,
+      "kg": 0.77,
+      "our_price": 73.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B0002I1ESM",
+   "subcategory": "Oriental",
+   "type": "Riq & frame drums",
+   "name": "Remo Buffalo Drum (large frame drum)",
+   "amazon_price": 104.95,
+   "kg": 1.22,
+   "kg_source": "amazon",
+   "our_price": 168.99,
+   "rating": 4.8,
+   "reviews": "2,034",
+   "merge_variants": {
+    "option": "Size",
+    "values": [
+     {
+      "asin": "B0002I1EOQ",
+      "name": "14 in",
+      "amazon_price": 89.95,
+      "kg": 1.0,
+      "our_price": 142.99
+     },
+     {
+      "asin": "B0002I1ESM",
+      "name": "16 in",
+      "amazon_price": 104.95,
+      "kg": 1.22,
+      "our_price": 168.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B07T6HY62X",
+   "subcategory": "Oriental",
+   "type": "Riq & frame drums",
+   "name": "Naisian Persian Daf RAD-404",
+   "amazon_price": 99.0,
+   "kg": 0.9,
+   "kg_source": "amazon",
+   "our_price": 152.99,
+   "rating": 4.4,
+   "reviews": "23"
+  },
+  {
+   "asin": "B01J7MZ132",
+   "subcategory": "Oriental",
+   "type": "Riq & frame drums",
+   "name": "Professional Riq ER-101",
+   "amazon_price": 229.9,
+   "kg": 1.0,
+   "kg_source": "estimate",
+   "our_price": 324.99,
+   "rating": 5.0,
+   "reviews": "2",
+   "note": "few reviews"
+  },
+  {
+   "asin": "B00LJP78Q4",
+   "subcategory": "Drums & percussion",
+   "type": "Hand drums",
+   "name": "Meinl Cajon with snare, with bag",
+   "amazon_price": 119.99,
+   "kg": 5.0,
+   "kg_source": "estimate",
+   "our_price": 285.99,
+   "rating": 4.6,
+   "reviews": "1,149",
+   "merge_variants": {
+    "option": "Color",
+    "values": [
+     {
+      "asin": "B00LJP78Q4",
+      "name": "Natural and wine red",
+      "amazon_price": 119.99,
+      "kg": 5.0,
+      "our_price": 285.99
+     },
+     {
+      "asin": "B0BHXLW6FW",
+      "name": "Black",
+      "amazon_price": 119.99,
+      "kg": 3.18,
+      "our_price": 238.99
+     },
+     {
+      "asin": "B0BHXDQ3SH",
+      "name": "Light brown",
+      "amazon_price": 119.99,
+      "kg": 3.18,
+      "our_price": 238.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B00HV7U49W",
+   "subcategory": "Drums & percussion",
+   "type": "Hand drums",
+   "name": "Meinl Subwoofer Bass Cajon",
+   "amazon_price": 199.99,
+   "kg": 5.9,
+   "kg_source": "amazon",
+   "our_price": 413.99,
+   "rating": 4.6,
+   "reviews": "828"
+  },
+  {
+   "asin": "B01MR7FLTH",
+   "subcategory": "Drums & percussion",
+   "type": "Hand drums",
+   "name": "Pyle Jam Wooden Cajon",
+   "amazon_price": 116.99,
+   "kg": 4.22,
+   "kg_source": "amazon",
+   "our_price": 261.99,
+   "rating": 4.6,
+   "reviews": "2,426"
+  },
+  {
+   "asin": "B00KH8MANU",
+   "subcategory": "Drums & percussion",
+   "type": "Small percussion",
+   "name": "Pro Finger Cymbals (zills), gold, 2 pairs",
+   "amazon_price": 24.98,
+   "kg": 0.1,
+   "kg_source": "estimate",
+   "our_price": 35.99,
+   "rating": 4.3,
+   "reviews": "117"
+  },
+  {
+   "asin": "B01DK1Q8UQ",
+   "subcategory": "Drums & percussion",
+   "type": "Small percussion",
+   "name": "Foraineam Finger Cymbals (zills), 2 pairs",
+   "amazon_price": 15.99,
+   "kg": 0.1,
+   "kg_source": "estimate",
+   "our_price": 23.99,
+   "rating": 4.2,
+   "reviews": "301"
+  },
+  {
+   "asin": "B0002OSCPO",
+   "subcategory": "Drums & percussion",
+   "type": "Small percussion",
+   "name": "LP Cyclops Tambourine, brass jingles",
+   "amazon_price": 49.99,
+   "kg": 0.5,
+   "kg_source": "estimate",
+   "our_price": 77.99,
+   "rating": 4.6,
+   "reviews": "343"
+  },
+  {
+   "asin": "B09TGVZRZF",
+   "subcategory": "Drums & percussion",
+   "type": "Small percussion",
+   "name": "Heuyrao Foldable Glockenspiel, 30 notes",
+   "amazon_price": 56.99,
+   "kg": 0.73,
+   "kg_source": "amazon",
+   "our_price": 93.99,
+   "rating": 4.7,
+   "reviews": "160"
+  },
+  {
+   "asin": "B0BGRM7YYL",
+   "subcategory": "Drums & percussion",
+   "type": "Small percussion",
+   "name": "EASTROCK Glockenspiel, 25 notes, with box",
+   "amazon_price": 32.99,
+   "kg": 1.4,
+   "kg_source": "amazon",
+   "our_price": 79.99,
+   "rating": 4.5,
+   "reviews": "351",
+   "merge_variants": {
+    "option": "Color",
+    "values": [
+     {
+      "asin": "B0BGRM7YYL",
+      "name": "Black",
+      "amazon_price": 32.99,
+      "kg": 1.4,
+      "our_price": 79.99
+     },
+     {
+      "asin": "B0BMFF6QS8",
+      "name": "Red",
+      "amazon_price": 31.72,
+      "kg": 1.4,
+      "our_price": 77.99
+     },
+     {
+      "asin": "B08K4MH3JK",
+      "name": "Blue",
+      "amazon_price": 27.88,
+      "kg": 1.4,
+      "our_price": 72.99
+     },
+     {
+      "asin": "B0BGR15FKW",
+      "name": "Pink",
+      "amazon_price": 27.88,
+      "kg": 1.4,
+      "our_price": 72.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B004HDZVD2",
+   "subcategory": "Drums & percussion",
+   "type": "Cymbals",
+   "name": "Meinl HCS Cymbal Set: 14 in hi-hats, 16 in crash, 20 in ride + 10 in splash",
+   "amazon_price": 279.99,
+   "kg": 4.54,
+   "kg_source": "amazon",
+   "our_price": 482.99,
+   "rating": 4.5,
+   "reviews": "256"
+  },
+  {
+   "asin": "B0C43R8SRB",
+   "subcategory": "Drums & percussion",
+   "type": "Electronic drums",
+   "name": "Alesis Nitro Max Electronic Drum Kit, mesh heads",
+   "amazon_price": 449.0,
+   "kg": 14.5,
+   "kg_source": "amazon",
+   "our_price": 960.99,
+   "rating": 4.4,
+   "reviews": "2,792"
+  },
+  {
+   "asin": "B0FNYMVLQS",
+   "subcategory": "Drums & percussion",
+   "type": "Electronic drums",
+   "name": "Pearl ERS1000 eRoadshow Electronic Drum Kit, mesh pads",
+   "amazon_price": 379.99,
+   "kg": 14.54,
+   "kg_source": "amazon",
+   "our_price": 872.99,
+   "rating": 4.6,
+   "reviews": "35"
+  },
+  {
+   "asin": "B0BP1M4V9R",
+   "subcategory": "Drums & percussion",
+   "type": "Electronic drums",
+   "name": "AODSK Electronic Drum Kit for beginners",
+   "amazon_price": 199.99,
+   "kg": 8.98,
+   "kg_source": "amazon",
+   "our_price": 493.99,
+   "rating": 4.4,
+   "reviews": "723"
+  },
+  {
+   "asin": "B0D12PSW9F",
+   "subcategory": "Drums & percussion",
+   "type": "Electronic drums",
+   "name": "MK-0 Compact Electronic Drum Kit, mesh pads",
+   "amazon_price": 169.99,
+   "kg": 9.0,
+   "kg_source": "amazon",
+   "our_price": 454.99,
+   "rating": 4.6,
+   "reviews": "375"
+  },
+  {
+   "asin": "B0B3VS49MW",
+   "subcategory": "Drums & percussion",
+   "type": "Practice pads",
+   "name": "GrowDaily Drum Practice Pad with sticks, 12 in",
+   "amazon_price": 22.97,
+   "kg": 1.67,
+   "kg_source": "amazon",
+   "our_price": 73.99,
+   "rating": 4.7,
+   "reviews": "1,936"
+  },
+  {
+   "asin": "B0FZ2K8BKG",
+   "subcategory": "Drums & percussion",
+   "type": "Practice pads",
+   "name": "GrowDaily Practice Pad with snare stand, 12 in",
+   "amazon_price": 29.97,
+   "kg": 2.69,
+   "kg_source": "amazon",
+   "our_price": 108.99,
+   "rating": 4.7,
+   "reviews": "903",
+   "merge_variants": {
+    "option": "Color",
+    "values": [
+     {
+      "asin": "B0FZ2K8BKG",
+      "name": "Black",
+      "amazon_price": 29.97,
+      "kg": 2.69,
+      "our_price": 108.99
+     },
+     {
+      "asin": "B0DRV17C89",
+      "name": "Gray",
+      "amazon_price": 29.97,
+      "kg": 2.65,
+      "our_price": 107.99
+     },
+     {
+      "asin": "B0DRTYXXXF",
+      "name": "Blue",
+      "amazon_price": 29.97,
+      "kg": 2.68,
+      "our_price": 108.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B00HV7UOKQ",
+   "subcategory": "Essentials",
+   "type": "Cases & gig bags",
+   "name": "Meinl Large Doumbek Bag",
+   "amazon_price": 50.76,
+   "kg": 0.94,
+   "kg_source": "amazon",
+   "our_price": 90.99,
+   "rating": 4.7,
+   "reviews": "39"
+  },
+  {
+   "asin": "B0H4D4N7NH",
+   "subcategory": "Winds & brass",
+   "type": "Saxophone",
+   "name": "Yasisid Alto Saxophone, gold lacquer, with case",
+   "amazon_price": 209.99,
+   "kg": 4.5,
+   "kg_source": "amazon",
+   "our_price": 389.99,
+   "rating": 4.6,
+   "reviews": "48"
+  },
+  {
+   "asin": "B0GYWNYB4F",
+   "subcategory": "Winds & brass",
+   "type": "Saxophone",
+   "name": "STRICH Tenor Saxophone for students, with hard case",
+   "amazon_price": 425.99,
+   "kg": 6.5,
+   "kg_source": "estimate",
+   "our_price": 722.99,
+   "rating": 4.9,
+   "reviews": "16",
+   "note": "few reviews"
+  },
+  {
+   "asin": "B006WAVPEM",
+   "subcategory": "Winds & brass",
+   "type": "Flute",
+   "name": "Jean Paul USA Silver-Plated Flute",
+   "amazon_price": 279.99,
+   "kg": 1.5,
+   "kg_source": "estimate",
+   "our_price": 402.99,
+   "rating": 4.5,
+   "reviews": "474",
+   "merge_variants": {
+    "option": "Model",
+    "values": [
+     {
+      "asin": "B006WAVPEM",
+      "name": "FL-220 student",
+      "amazon_price": 279.99,
+      "kg": 1.5,
+      "our_price": 402.99
+     },
+     {
+      "asin": "B07W22TRNM",
+      "name": "Intermediate (open hole)",
+      "amazon_price": 349.99,
+      "kg": 1.5,
+      "our_price": 493.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B07RKV7L27",
+   "subcategory": "Winds & brass",
+   "type": "Flute",
+   "name": "EastRock Closed-Hole Flute, 16 keys, with case",
+   "amazon_price": 91.99,
+   "kg": 1.0,
+   "kg_source": "amazon",
+   "our_price": 145.99,
+   "rating": 4.3,
+   "reviews": "834",
+   "merge_variants": {
+    "option": "Color",
+    "values": [
+     {
+      "asin": "B07RKV7L27",
+      "name": "Silver",
+      "amazon_price": 91.99,
+      "kg": 1.0,
+      "our_price": 145.99
+     },
+     {
+      "asin": "B07RJR2PZB",
+      "name": "Lake blue",
+      "amazon_price": 89.99,
+      "kg": 1.0,
+      "our_price": 142.99
+     },
+     {
+      "asin": "B07RGJLHGX",
+      "name": "Pink",
+      "amazon_price": 99.99,
+      "kg": 1.0,
+      "our_price": 155.99
+     },
+     {
+      "asin": "B07RJR2PZC",
+      "name": "Red",
+      "amazon_price": 89.99,
+      "kg": 1.0,
+      "our_price": 142.99
+     },
+     {
+      "asin": "B07RDJQT47",
+      "name": "Purple",
+      "amazon_price": 94.99,
+      "kg": 1.0,
+      "our_price": 149.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B09CN69WNX",
+   "subcategory": "Winds & brass",
+   "type": "Clarinet",
+   "name": "Glory Bb Clarinet with 10 reeds, stand and case",
+   "amazon_price": 99.99,
+   "kg": 1.74,
+   "kg_source": "amazon",
+   "our_price": 175.99,
+   "rating": 4.4,
+   "reviews": "2,166",
+   "merge_variants": {
+    "option": "Color",
+    "values": [
+     {
+      "asin": "B09CN69WNX",
+      "name": "Black",
+      "amazon_price": 99.99,
+      "kg": 1.74,
+      "our_price": 175.99
+     },
+     {
+      "asin": "B0CPW9N1Y7",
+      "name": "Dark blue",
+      "amazon_price": 89.99,
+      "kg": 1.85,
+      "our_price": 165.99
+     },
+     {
+      "asin": "B0CPWBWSYZ",
+      "name": "Red",
+      "amazon_price": 129.99,
+      "kg": 1.8,
+      "our_price": 215.99
+     },
+     {
+      "asin": "B0CPW9KS4L",
+      "name": "White",
+      "amazon_price": 89.99,
+      "kg": 1.8,
+      "our_price": 163.99
+     },
+     {
+      "asin": "B0CPW9N8WW",
+      "name": "Pink",
+      "amazon_price": 89.99,
+      "kg": 1.8,
+      "our_price": 163.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B08J7DF18J",
+   "subcategory": "Winds & brass",
+   "type": "Clarinet",
+   "name": "EASTROCK Bb Clarinet, 17 nickel keys",
+   "amazon_price": 122.39,
+   "kg": 1.75,
+   "kg_source": "estimate",
+   "our_price": 204.99,
+   "rating": 4.3,
+   "reviews": "841",
+   "merge_variants": {
+    "option": "Color",
+    "values": [
+     {
+      "asin": "B08J7DF18J",
+      "name": "Dark blue",
+      "amazon_price": 122.39,
+      "kg": 1.75,
+      "our_price": 204.99
+     },
+     {
+      "asin": "B07RJR1G7D",
+      "name": "Black",
+      "amazon_price": 126.99,
+      "kg": 1.8,
+      "our_price": 211.99
+     },
+     {
+      "asin": "B08689ZR3S",
+      "name": "White",
+      "amazon_price": 125.99,
+      "kg": 1.7,
+      "our_price": 207.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B0BHCYGRTQ",
+   "subcategory": "Winds & brass",
+   "type": "Clarinet",
+   "name": "Rhythm Bb Clarinet, 17 nickel keys",
+   "amazon_price": 99.99,
+   "kg": 1.71,
+   "kg_source": "amazon",
+   "our_price": 174.99,
+   "rating": 4.4,
+   "reviews": "298"
+  },
+  {
+   "asin": "B09H68P3R6",
+   "subcategory": "Winds & brass",
+   "type": "Trumpet & brass",
+   "name": "Glory Bb Pocket Trumpet with case",
+   "amazon_price": 109.99,
+   "kg": 1.89,
+   "kg_source": "amazon",
+   "our_price": 192.99,
+   "rating": 4.4,
+   "reviews": "76",
+   "merge_variants": {
+    "option": "Color",
+    "values": [
+     {
+      "asin": "B09H68P3R6",
+      "name": "Lacquer",
+      "amazon_price": 109.99,
+      "kg": 1.89,
+      "our_price": 192.99
+     },
+     {
+      "asin": "B09CN2N42K",
+      "name": "Black",
+      "amazon_price": 129.99,
+      "kg": 1.88,
+      "our_price": 217.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B0G39JRRJV",
+   "subcategory": "Winds & brass",
+   "type": "Trumpet & brass",
+   "name": "SONICAKE Bb Pocket Trumpet, nickel plated",
+   "amazon_price": 125.99,
+   "kg": 1.76,
+   "kg_source": "amazon",
+   "our_price": 209.99,
+   "rating": 4.5,
+   "reviews": "39",
+   "note": "few reviews"
+  },
+  {
+   "asin": "B0DFW49ZVN",
+   "subcategory": "Winds & brass",
+   "type": "Trumpet & brass",
+   "name": "CAHAYA Bb Trumpet for beginners, with case",
+   "amazon_price": 119.99,
+   "kg": 2.27,
+   "kg_source": "amazon",
+   "our_price": 215.99,
+   "rating": 4.4,
+   "reviews": "225",
+   "merge_variants": {
+    "option": "Color",
+    "values": [
+     {
+      "asin": "B0DFW49ZVN",
+      "name": "Gold",
+      "amazon_price": 119.99,
+      "kg": 2.27,
+      "our_price": 215.99
+     },
+     {
+      "asin": "B0DFW8TG54",
+      "name": "Silver",
+      "amazon_price": 129.99,
+      "kg": 2.3,
+      "our_price": 228.99
+     },
+     {
+      "asin": "B0DFW9L1K4",
+      "name": "Black",
+      "amazon_price": 129.99,
+      "kg": 2.3,
+      "our_price": 228.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B00BRP2CG2",
+   "subcategory": "Winds & brass",
+   "type": "Reeds",
+   "name": "Vandoren JUNO Alto Saxophone Reeds, box of 10",
+   "amazon_price": 29.0,
+   "kg": 0.05,
+   "kg_source": "amazon",
+   "our_price": 38.99,
+   "rating": 4.7,
+   "reviews": "349",
+   "merge_variants": {
+    "option": "Strength",
+    "values": [
+     {
+      "asin": "B00BRP2ADM",
+      "name": "2",
+      "amazon_price": 29.0,
+      "kg": 0.05,
+      "our_price": 38.99
+     },
+     {
+      "asin": "B00BRP2CG2",
+      "name": "2.5",
+      "amazon_price": 29.0,
+      "kg": 0.05,
+      "our_price": 38.99
+     },
+     {
+      "asin": "B00FZR0DDM",
+      "name": "3",
+      "amazon_price": 29.0,
+      "kg": 0.05,
+      "our_price": 38.99
+     },
+     {
+      "asin": "B082P4BR41",
+      "name": "3.5",
+      "amazon_price": 29.0,
+      "kg": 0.05,
+      "our_price": 38.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B00MO1XHBW",
+   "subcategory": "Winds & brass",
+   "type": "Reeds",
+   "name": "Vandoren V.12 Bb Clarinet Reeds, box of 10",
+   "amazon_price": 42.5,
+   "kg": 0.05,
+   "kg_source": "estimate",
+   "our_price": 56.99,
+   "rating": 4.8,
+   "reviews": "1,214",
+   "merge_variants": {
+    "option": "Strength",
+    "values": [
+     {
+      "asin": "B0002D0AB4",
+      "name": "2.5",
+      "amazon_price": 41.0,
+      "kg": 0.05,
+      "our_price": 54.99
+     },
+     {
+      "asin": "B00MO1XHB2",
+      "name": "3",
+      "amazon_price": 42.48,
+      "kg": 0.05,
+      "our_price": 56.99
+     },
+     {
+      "asin": "B00MO1XHBW",
+      "name": "3.5",
+      "amazon_price": 42.5,
+      "kg": 0.05,
+      "our_price": 56.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B0002F58VE",
+   "subcategory": "Winds & brass",
+   "type": "Reeds",
+   "name": "D'Addario La Voz Bb Clarinet Reeds, medium, 10-pack",
+   "amazon_price": 27.99,
+   "kg": 0.05,
+   "kg_source": "estimate",
+   "our_price": 37.99,
+   "rating": 4.5,
+   "reviews": "102"
+  },
+  {
+   "asin": "B00P0AHJZY",
+   "subcategory": "Winds & brass",
+   "type": "Mouthpieces & ligatures",
+   "name": "Glory Alto Saxophone Mouthpiece Kit, ligature, cap and reed",
+   "amazon_price": 11.99,
+   "kg": 0.1,
+   "kg_source": "estimate",
+   "our_price": 18.99,
+   "rating": 4.5,
+   "reviews": "1,850"
+  },
+  {
+   "asin": "B00H3ZUE9W",
+   "subcategory": "Winds & brass",
+   "type": "Care & oils",
+   "name": "Blue Juice Valve Oil, 2 oz, pack of 2",
+   "amazon_price": 15.48,
+   "kg": 0.2,
+   "kg_source": "estimate",
+   "our_price": 25.99,
+   "rating": 4.8,
+   "reviews": "6,208"
+  },
+  {
+   "asin": "B07CWXQTSK",
+   "subcategory": "Essentials",
+   "type": "Cases & gig bags",
+   "name": "Alto Saxophone Gig Bag, padded backpack",
+   "amazon_price": 49.99,
+   "kg": 1.21,
+   "kg_source": "amazon",
+   "our_price": 96.99,
+   "rating": 4.4,
+   "reviews": "401"
+  },
+  {
+   "asin": "B07Z5QL7DZ",
+   "subcategory": "Essentials",
+   "type": "Cases & gig bags",
+   "name": "DUENEW Trumpet Gig Bag, padded",
+   "amazon_price": 29.99,
+   "kg": 0.5,
+   "kg_source": "amazon",
+   "our_price": 51.99,
+   "rating": 4.6,
+   "reviews": "444"
+  },
+  {
+   "asin": "B001BAJO4G",
+   "subcategory": "Essentials",
+   "type": "Cases & gig bags",
+   "name": "Protec MAX Trumpet Case",
+   "amazon_price": 86.39,
+   "kg": 2.0,
+   "kg_source": "amazon",
+   "our_price": 164.99,
+   "rating": 4.6,
+   "reviews": "539"
+  },
+  {
+   "asin": "B002BW1F0Y",
+   "subcategory": "Essentials",
+   "type": "Cases & gig bags",
+   "name": "Protec MAX Clarinet Case",
+   "amazon_price": 57.97,
+   "kg": 0.91,
+   "kg_source": "amazon",
+   "our_price": 99.99,
+   "rating": 4.7,
+   "reviews": "378",
+   "merge_variants": {
+    "option": "Color",
+    "values": [
+     {
+      "asin": "B002BW1F0Y",
+      "name": "Purple",
+      "amazon_price": 57.97,
+      "kg": 0.91,
+      "our_price": 99.99
+     },
+     {
+      "asin": "B002AEQSUA",
+      "name": "Black",
+      "amazon_price": 49.99,
+      "kg": 0.91,
+      "our_price": 88.99
+     },
+     {
+      "asin": "B002AEQSUU",
+      "name": "Blue",
+      "amazon_price": 56.99,
+      "kg": 0.91,
+      "our_price": 97.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B07H8QG19K",
+   "subcategory": "Essentials",
+   "type": "Cases & gig bags",
+   "name": "Protec Micro Clarinet Case, black",
+   "amazon_price": 74.35,
+   "kg": 0.73,
+   "kg_source": "amazon",
+   "our_price": 115.99,
+   "rating": 4.8,
+   "reviews": "325"
+  },
+  {
+   "asin": "B01KFL7KYW",
+   "subcategory": "Oriental",
+   "type": "Oud",
+   "name": "Sala Muzik Turkish Walnut Oud AO-108G",
+   "amazon_price": 399.0,
+   "kg": 4.5,
+   "kg_source": "estimate",
+   "our_price": 635.99,
+   "rating": 5.0,
+   "reviews": "2",
+   "note": "few reviews"
+  },
+  {
+   "asin": "B073XR9HKF",
+   "subcategory": "Oriental",
+   "type": "Oud",
+   "name": "Sala Muzik Arabic Handmade Walnut Oud AAO-108G",
+   "amazon_price": 499.0,
+   "kg": 4.5,
+   "kg_source": "estimate",
+   "our_price": 765.99,
+   "rating": 5.0,
+   "reviews": "1",
+   "note": "few reviews"
+  },
+  {
+   "asin": "B013WO0XDY",
+   "subcategory": "Oriental",
+   "type": "Buzuq & saz",
+   "name": "Sala Muzik Short-Neck Walnut Saz with pickup, black",
+   "amazon_price": 269.99,
+   "kg": 1.5,
+   "kg_source": "amazon",
+   "our_price": 389.99,
+   "rating": 5.0,
+   "reviews": "6",
+   "note": "few reviews"
+  },
+  {
+   "asin": "B0B25RVWNV",
+   "subcategory": "Oriental",
+   "type": "Buzuq & saz",
+   "name": "Sala Muzik Long-Neck Walnut Saz ASL-150M",
+   "amazon_price": 269.0,
+   "kg": 2.5,
+   "kg_source": "estimate",
+   "our_price": 414.99,
+   "rating": 5.0,
+   "reviews": "1",
+   "note": "few reviews"
+  },
+  {
+   "asin": "B01846OMVO",
+   "subcategory": "Oriental",
+   "type": "Buzuq & saz",
+   "name": "Sala Muzik Long-Neck Mulberry Saz ASL-111",
+   "amazon_price": 249.0,
+   "kg": 1.5,
+   "kg_source": "amazon",
+   "our_price": 362.99,
+   "rating": 3.8,
+   "reviews": "14",
+   "note": "few reviews"
+  },
+  {
+   "asin": "B00NFR6XPQ",
+   "subcategory": "Oriental",
+   "type": "Ney & oriental winds",
+   "name": "Sala Muzik Turkish Ney",
+   "amazon_price": 49.0,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 71.99,
+   "rating": 4.0,
+   "reviews": "49"
+  },
+  {
+   "asin": "B09PDV4MKZ",
+   "subcategory": "Oriental",
+   "type": "Ney & oriental winds",
+   "name": "Corsaro Turkish Bamboo Ney, Lale series, with gig bag (D)",
+   "amazon_price": 74.99,
+   "kg": 0.45,
+   "kg_source": "amazon",
+   "our_price": 109.99,
+   "rating": 3.8,
+   "reviews": "14",
+   "note": "few reviews"
+  },
+  {
+   "asin": "B0DZW9K7RN",
+   "subcategory": "Oriental",
+   "type": "Ney & oriental winds",
+   "name": "Saber Kawala Egyptian Ney",
+   "amazon_price": 85.0,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 118.99,
+   "rating": 5.0,
+   "reviews": "3",
+   "note": "few reviews",
+   "merge_variants": {
+    "option": "Key",
+    "values": [
+     {
+      "asin": "B0DZW9K7RN",
+      "name": "D (Dukah)",
+      "amazon_price": 85.0,
+      "kg": 0.3,
+      "our_price": 118.99
+     },
+     {
+      "asin": "B0DZWF9T8S",
+      "name": "G (Nawa)",
+      "amazon_price": 78.0,
+      "kg": 0.3,
+      "our_price": 109.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B0BRBH7KTJ",
+   "subcategory": "Oriental",
+   "type": "Oriental strings",
+   "name": "Kürschner Premium Carbon Strings for Turkish oud",
+   "amazon_price": 32.99,
+   "kg": 0.05,
+   "kg_source": "estimate",
+   "our_price": 44.99,
+   "rating": 5.0,
+   "reviews": "4",
+   "note": "few reviews"
+  },
+  {
+   "asin": "B08CTC5RNX",
+   "subcategory": "Oriental",
+   "type": "Risha & qanun rings",
+   "name": "Zaza Oud Risha, pack of 10",
+   "amazon_price": 16.5,
+   "kg": 0.05,
+   "kg_source": "estimate",
+   "our_price": 22.99,
+   "rating": 4.4,
+   "reviews": "33"
+  },
+  {
+   "asin": "B07JLT2V5X",
+   "subcategory": "Essentials",
+   "type": "Cases & gig bags",
+   "name": "Handike Oud Hard Case HOC-404",
+   "amazon_price": 149.9,
+   "kg": 2.0,
+   "kg_source": "amazon",
+   "our_price": 246.99,
+   "rating": 4.0,
+   "reviews": "28"
+  },
+  {
+   "asin": "B0GFN4TJKR",
+   "subcategory": "Essentials",
+   "type": "Cases & gig bags",
+   "name": "Corsaro Saz Gig Bag, padded",
+   "amazon_price": 30.54,
+   "kg": 0.54,
+   "kg_source": "amazon",
+   "our_price": 53.99,
+   "rating": 5.0,
+   "reviews": "1",
+   "note": "few reviews"
+  },
+  {
+   "asin": "B07TNJBLS7",
+   "subcategory": "Essentials",
+   "type": "Instrument stands",
+   "name": "Handike Foldable Oud Stand KOS-204",
+   "amazon_price": 99.9,
+   "kg": 0.9,
+   "kg_source": "amazon",
+   "our_price": 153.99,
+   "rating": 4.5,
+   "reviews": "42"
+  },
+  {
+   "asin": "B083FPFZJG",
+   "subcategory": "Essentials",
+   "type": "Music stands",
+   "name": "CAHAYA Folding Music Stand with bag",
+   "amazon_price": 29.99,
+   "kg": 3.02,
+   "kg_source": "amazon",
+   "our_price": 117.99,
+   "rating": 4.7,
+   "reviews": "13,060",
+   "merge_variants": {
+    "option": "Color",
+    "values": [
+     {
+      "asin": "B083FPFZJG",
+      "name": "Black",
+      "amazon_price": 29.99,
+      "kg": 3.02,
+      "our_price": 117.99
+     },
+     {
+      "asin": "B08TM5GH72",
+      "name": "White",
+      "amazon_price": 35.99,
+      "kg": 3.02,
+      "our_price": 125.99
+     },
+     {
+      "asin": "B08TM62D6P",
+      "name": "Pink",
+      "amazon_price": 35.99,
+      "kg": 3.02,
+      "our_price": 125.99
+     },
+     {
+      "asin": "B0CFP4L6DH",
+      "name": "Blue",
+      "amazon_price": 35.99,
+      "kg": 3.02,
+      "our_price": 125.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B0983DJGNN",
+   "subcategory": "Essentials",
+   "type": "Music stands",
+   "name": "Vekkia Professional Portable Music Stand",
+   "amazon_price": 39.99,
+   "kg": 3.08,
+   "kg_source": "amazon",
+   "our_price": 132.99,
+   "rating": 4.7,
+   "reviews": "1,758"
+  },
+  {
+   "asin": "B002T45X1G",
+   "subcategory": "Recording & mixing",
+   "type": "Microphones",
+   "name": "Audio-Technica AT2035 Condenser Microphone",
+   "amazon_price": 159.0,
+   "kg": 0.4,
+   "kg_source": "amazon",
+   "our_price": 217.99,
+   "rating": 4.7,
+   "reviews": "3,089"
+  },
+  {
+   "asin": "B0D81KDVJQ",
+   "subcategory": "Recording & mixing",
+   "type": "Microphones",
+   "name": "Shure SM4 Studio Condenser Microphone Kit",
+   "amazon_price": 299.0,
+   "kg": 1.13,
+   "kg_source": "amazon",
+   "our_price": 418.99,
+   "rating": 4.7,
+   "reviews": "231"
+  },
+  {
+   "asin": "B0BQM4TKF7",
+   "subcategory": "Recording & mixing",
+   "type": "Microphones",
+   "name": "RØDE PodMic USB Dynamic Microphone, XLR and USB-C",
+   "amazon_price": 194.98,
+   "kg": 0.86,
+   "kg_source": "amazon",
+   "our_price": 275.99,
+   "rating": 4.3,
+   "reviews": "1,341"
+  },
+  {
+   "asin": "B0BQLJYSBX",
+   "subcategory": "Recording & mixing",
+   "type": "Podcast & streaming kits",
+   "name": "RØDECaster Duo Audio Production Studio",
+   "amazon_price": 498.0,
+   "kg": 2.0,
+   "kg_source": "amazon",
+   "our_price": 699.99,
+   "rating": 4.3,
+   "reviews": "725"
+  },
+  {
+   "asin": "B0FCNP8XQN",
+   "subcategory": "Recording & mixing",
+   "type": "Podcast & streaming kits",
+   "name": "Movo 4-Person USB Podcast Bundle: 4 mics, hub and case",
+   "amazon_price": 189.95,
+   "kg": 3.0,
+   "kg_source": "estimate",
+   "our_price": 324.99,
+   "rating": 4.4,
+   "reviews": "39",
+   "note": "few reviews"
+  },
+  {
+   "asin": "B0CKTSZJCV",
+   "subcategory": "Monitors & headphones",
+   "type": "Studio monitors",
+   "name": "Yamaha HS Powered Studio Monitors",
+   "amazon_price": 229.99,
+   "kg": 5.9,
+   "kg_source": "amazon",
+   "our_price": 452.99,
+   "rating": 4.7,
+   "reviews": "2,375",
+   "merge_variants": {
+    "option": "Model",
+    "values": [
+     {
+      "asin": "B0CKTSZJCV",
+      "name": "HS3 pair, black",
+      "amazon_price": 229.99,
+      "kg": 5.9,
+      "our_price": 452.99
+     },
+     {
+      "asin": "B0CKTR88Y7",
+      "name": "HS4 pair, black",
+      "amazon_price": null,
+      "kg": 6.8,
+      "our_price": null
+     },
+     {
+      "asin": "B00CFOX420",
+      "name": "HS5, one speaker",
+      "amazon_price": null,
+      "kg": 5.44,
+      "our_price": null
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B06WLLKH5R",
+   "subcategory": "Amps & effects",
+   "type": "Keyboard & acoustic amps",
+   "name": "Fender Acoustasonic 40 Acoustic Guitar Amp",
+   "amazon_price": 299.99,
+   "kg": 4.54,
+   "kg_source": "amazon",
+   "our_price": 508.99,
+   "rating": 4.6,
+   "reviews": "751"
+  },
+  {
+   "asin": "B0C4G6PCQ1",
+   "subcategory": "DJ & electronic",
+   "type": "MIDI controllers",
+   "name": "Arturia KeyLab Essential mk3 MIDI Keyboard, 61 keys",
+   "amazon_price": 299.0,
+   "kg": 3.08,
+   "kg_source": "amazon",
+   "our_price": 468.99,
+   "rating": 4.3,
+   "reviews": "482"
+  },
+  {
+   "asin": "B00PB7JD78",
+   "subcategory": "DJ & electronic",
+   "type": "DJ mixers & players",
+   "name": "Numark M2 2-Channel Scratch DJ Mixer",
+   "amazon_price": 139.0,
+   "kg": 2.72,
+   "kg_source": "amazon",
+   "our_price": 251.99,
+   "rating": 4.5,
+   "reviews": "871"
+  },
+  {
+   "asin": "B00L2TUFLM",
+   "subcategory": "DJ & electronic",
+   "type": "DJ mixers & players",
+   "name": "Gemini MM1 Portable 2-Channel DJ Mixer",
+   "amazon_price": 59.95,
+   "kg": 0.54,
+   "kg_source": "amazon",
+   "our_price": 91.99,
+   "rating": 4.3,
+   "reviews": "433"
+  },
+  {
+   "asin": "B06XF7VHTQ",
+   "subcategory": "DJ & electronic",
+   "type": "DJ mixers & players",
+   "name": "Pioneer DJ DJM-250MK2 2-Channel DJ Mixer",
+   "amazon_price": 419.0,
+   "kg": 3.5,
+   "kg_source": "estimate",
+   "our_price": 635.99,
+   "rating": 4.6,
+   "reviews": "172"
+  },
+  {
+   "asin": "B07LC2YVGM",
+   "subcategory": "Painting",
+   "type": "Watercolor & gouache",
+   "name": "ARTEZA Watercolor Paint Tubes, 12 ml",
+   "amazon_price": 47.69,
+   "kg": 1.41,
+   "kg_source": "amazon",
+   "our_price": 98.99,
+   "rating": 4.7,
+   "reviews": "5,721",
+   "merge_variants": {
+    "option": "Set",
+    "values": [
+     {
+      "asin": "B077Y6M34T",
+      "name": "12 colors",
+      "amazon_price": 13.99,
+      "kg": 0.29,
+      "our_price": 25.99
+     },
+     {
+      "asin": "B07LC2YVGM",
+      "name": "60 colors",
+      "amazon_price": 47.69,
+      "kg": 1.41,
+      "our_price": 98.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B079D6P281",
+   "subcategory": "Painting",
+   "type": "Watercolor & gouache",
+   "name": "Sakura Koi Watercolor Studio Kit, 72 colors",
+   "amazon_price": 63.0,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 89.99,
+   "rating": 4.8,
+   "reviews": "2,003"
+  },
+  {
+   "asin": "B00004THXH",
+   "subcategory": "Painting",
+   "type": "Watercolor & gouache",
+   "name": "Winsor & Newton Cotman Watercolor Half Pan Set",
+   "amazon_price": 30.56,
+   "kg": 0.15,
+   "kg_source": "estimate",
+   "our_price": 43.99,
+   "rating": 4.7,
+   "reviews": "2,033",
+   "merge_variants": {
+    "option": "Set",
+    "values": [
+     {
+      "asin": "B00004THXH",
+      "name": "14 half pans (field set)",
+      "amazon_price": 30.56,
+      "kg": 0.15,
+      "our_price": 43.99
+     },
+     {
+      "asin": "B000XYHYI4",
+      "name": "45 half pans (studio set)",
+      "amazon_price": 69.35,
+      "kg": 0.44,
+      "our_price": 101.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B0CLCKQ9WW",
+   "subcategory": "Painting",
+   "type": "Watercolor & gouache",
+   "name": "HIMI Gouache Paint Set, jelly cups",
+   "amazon_price": 22.61,
+   "kg": 0.8,
+   "kg_source": "estimate",
+   "our_price": 50.99,
+   "rating": 4.6,
+   "reviews": "627",
+   "merge_variants": {
+    "option": "Set",
+    "values": [
+     {
+      "asin": "B0CLCKQ9WW",
+      "name": "36 colors × 12 ml",
+      "amazon_price": 22.61,
+      "kg": 0.8,
+      "our_price": 50.99
+     },
+     {
+      "asin": "B0D4V7TDSX",
+      "name": "56 colors × 30 ml",
+      "amazon_price": 50.99,
+      "kg": 2.2,
+      "our_price": 123.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B09MWGFSC7",
+   "subcategory": "Painting",
+   "type": "Acrylic",
+   "name": "Liquitex BASICS Acrylic Paint Set, 12 × 118 ml",
+   "amazon_price": 63.05,
+   "kg": 1.95,
+   "kg_source": "amazon",
+   "our_price": 132.99,
+   "rating": 4.7,
+   "reviews": "14,018"
+  },
+  {
+   "asin": "B002E9GUZ4",
+   "subcategory": "Painting",
+   "type": "Oil paint",
+   "name": "Winsor & Newton Winton Oil Color Set",
+   "amazon_price": 46.99,
+   "kg": 0.66,
+   "kg_source": "amazon",
+   "our_price": 78.99,
+   "rating": 4.8,
+   "reviews": "2,245",
+   "merge_variants": {
+    "option": "Set",
+    "values": [
+     {
+      "asin": "B08NJYJRD1",
+      "name": "10 × 12 ml tubes",
+      "amazon_price": 22.55,
+      "kg": 0.25,
+      "our_price": 35.99
+     },
+     {
+      "asin": "B08NJZ4Z2F",
+      "name": "20 × 12 ml tubes",
+      "amazon_price": 44.99,
+      "kg": 0.45,
+      "our_price": 70.99
+     },
+     {
+      "asin": "B002E9GUZ4",
+      "name": "Starter set 10 × 37 ml",
+      "amazon_price": 46.99,
+      "kg": 0.66,
+      "our_price": 78.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B08M4D993H",
+   "subcategory": "Painting",
+   "type": "Brushes",
+   "name": "Princeton Velvetouch 3950 Brush Set, 5 brushes",
+   "amazon_price": 50.95,
+   "kg": 0.1,
+   "kg_source": "estimate",
+   "our_price": 68.99,
+   "rating": 4.8,
+   "reviews": "329"
+  },
+  {
+   "asin": "B08SDTFVTG",
+   "subcategory": "Painting",
+   "type": "Brushes",
+   "name": "Princeton Aspen 6500 Brush Set, 5 brushes",
+   "amazon_price": 49.95,
+   "kg": 0.1,
+   "kg_source": "estimate",
+   "our_price": 67.99,
+   "rating": 4.7,
+   "reviews": "259"
+  },
+  {
+   "asin": "B0007OECK8",
+   "subcategory": "Drawing & ink",
+   "type": "Colored pencils",
+   "name": "Faber-Castell Polychromos Colored Pencils, tin of 24",
+   "amazon_price": 46.98,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 68.99,
+   "rating": 4.7,
+   "reviews": "5,561"
+  },
+  {
+   "asin": "B000PD3M84",
+   "subcategory": "Drawing & ink",
+   "type": "Colored pencils",
+   "name": "Derwent Inktense Watercolor Ink Pencils",
+   "amazon_price": 28.59,
+   "kg": 0.21,
+   "kg_source": "amazon",
+   "our_price": 42.99,
+   "rating": 4.8,
+   "reviews": "9,256",
+   "merge_variants": {
+    "option": "Set",
+    "values": [
+     {
+      "asin": "B000PD3M84",
+      "name": "12 pencils",
+      "amazon_price": 28.59,
+      "kg": 0.21,
+      "our_price": 42.99
+     },
+     {
+      "asin": "B001U3QO7O",
+      "name": "36 pencils",
+      "amazon_price": 97.64,
+      "kg": 0.55,
+      "our_price": 141.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B000J69KZQ",
+   "subcategory": "Drawing & ink",
+   "type": "Graphite pencils",
+   "name": "Derwent Graphic Drawing Pencils, tin",
+   "amazon_price": 19.23,
+   "kg": 0.15,
+   "kg_source": "amazon",
+   "our_price": 28.99,
+   "rating": 4.7,
+   "reviews": "3,225",
+   "merge_variants": {
+    "option": "Set",
+    "values": [
+     {
+      "asin": "B000J69KZQ",
+      "name": "12 pencils",
+      "amazon_price": 19.23,
+      "kg": 0.15,
+      "our_price": 28.99
+     },
+     {
+      "asin": "B000P6YNES",
+      "name": "24 pencils",
+      "amazon_price": 26.95,
+      "kg": 0.3,
+      "our_price": 42.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B07M8FVGJF",
+   "subcategory": "Drawing & ink",
+   "type": "Graphite pencils",
+   "name": "Staedtler Mars Lumograph Sketching Pencils, tin",
+   "amazon_price": 28.0,
+   "kg": 0.29,
+   "kg_source": "amazon",
+   "our_price": 43.99,
+   "rating": 4.8,
+   "reviews": "1,463",
+   "merge_variants": {
+    "option": "Set",
+    "values": [
+     {
+      "asin": "B0014E2S0Q",
+      "name": "12 pencils",
+      "amazon_price": 15.99,
+      "kg": 0.15,
+      "our_price": 24.99
+     },
+     {
+      "asin": "B07M8FVGJF",
+      "name": "24 pencils",
+      "amazon_price": 28.0,
+      "kg": 0.29,
+      "our_price": 43.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B0018C032E",
+   "subcategory": "Drawing & ink",
+   "type": "Pastels",
+   "name": "Sennelier Oil Pastels, card box",
+   "amazon_price": 37.8,
+   "kg": 0.18,
+   "kg_source": "amazon",
+   "our_price": 53.99,
+   "rating": 4.8,
+   "reviews": "1,624",
+   "merge_variants": {
+    "option": "Set",
+    "values": [
+     {
+      "asin": "B0018C032E",
+      "name": "12 colors",
+      "amazon_price": 37.8,
+      "kg": 0.18,
+      "our_price": 53.99
+     },
+     {
+      "asin": "B0018BSVII",
+      "name": "24 colors",
+      "amazon_price": 74.9,
+      "kg": 0.33,
+      "our_price": 105.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B00006IFGK",
+   "subcategory": "Drawing & ink",
+   "type": "Markers & fineliners",
+   "name": "Prismacolor Premier Double-Ended Art Markers, 12",
+   "amazon_price": 30.13,
+   "kg": 0.18,
+   "kg_source": "amazon",
+   "our_price": 43.99,
+   "rating": 4.7,
+   "reviews": "4,509",
+   "merge_variants": {
+    "option": "Colors",
+    "values": [
+     {
+      "asin": "B00006IFGK",
+      "name": "Primary",
+      "amazon_price": 30.13,
+      "kg": 0.18,
+      "our_price": 43.99
+     },
+     {
+      "asin": "B0BBY29ZVT",
+      "name": "Midtones",
+      "amazon_price": 33.15,
+      "kg": 0.18,
+      "our_price": 47.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B09NQY86G1",
+   "subcategory": "Paper & canvas",
+   "type": "Watercolor paper",
+   "name": "Canson XL Watercolor Pad, 30 sheets",
+   "amazon_price": 20.6,
+   "kg": 0.41,
+   "kg_source": "amazon",
+   "our_price": 37.99,
+   "rating": 4.7,
+   "reviews": "7,374",
+   "merge_variants": {
+    "option": "Size",
+    "values": [
+     {
+      "asin": "B083GFMC5B",
+      "name": "5.5 × 8.5 in",
+      "amazon_price": 15.33,
+      "kg": 0.16,
+      "our_price": 24.99
+     },
+     {
+      "asin": "B09NQY86G1",
+      "name": "9 × 12 in, 2 pads",
+      "amazon_price": 20.6,
+      "kg": 0.41,
+      "our_price": 37.99
+     },
+     {
+      "asin": "B0049UXGD0",
+      "name": "11 × 15 in",
+      "amazon_price": 18.22,
+      "kg": 0.6,
+      "our_price": 39.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "886293193X",
+   "subcategory": "Paper & canvas",
+   "type": "Sketchbooks",
+   "name": "Moleskine Art Sketchbook, hard cover, A4",
+   "amazon_price": 25.99,
+   "kg": 0.6,
+   "kg_source": "estimate",
+   "our_price": 49.99,
+   "rating": 4.8,
+   "reviews": "2,106"
+  },
+  {
+   "asin": "B0919VT3J1",
+   "subcategory": "Turntables & hi-fi",
+   "type": "Turntables",
+   "name": "Retrolife Suitcase Record Player with speakers",
+   "amazon_price": 49.99,
+   "kg": 2.5,
+   "kg_source": "amazon",
+   "our_price": 129.99,
+   "rating": 4.5,
+   "reviews": "6,137",
+   "merge_variants": {
+    "option": "Color",
+    "values": [
+     {
+      "asin": "B0919VT3J1",
+      "name": "Black",
+      "amazon_price": 49.99,
+      "kg": 2.5,
+      "our_price": 129.99
+     },
+     {
+      "asin": "B09BCJ184S",
+      "name": "White",
+      "amazon_price": 46.99,
+      "kg": 2.5,
+      "our_price": 126.99
+     },
+     {
+      "asin": "B0CPSS6QYB",
+      "name": "Vintage black",
+      "amazon_price": 47.99,
+      "kg": 2.5,
+      "our_price": 127.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B0BQJM66C2",
+   "subcategory": "Turntables & hi-fi",
+   "type": "Turntables",
+   "name": "Seasonlife Vintage Record Player with speakers",
+   "amazon_price": 33.99,
+   "kg": 2.31,
+   "kg_source": "estimate",
+   "our_price": 104.99,
+   "rating": 4.4,
+   "reviews": "5,048",
+   "merge_variants": {
+    "option": "Color",
+    "values": [
+     {
+      "asin": "B0BQJM66C2",
+      "name": "Black",
+      "amazon_price": 33.99,
+      "kg": 2.31,
+      "our_price": 104.99
+     },
+     {
+      "asin": "B0C39S747F",
+      "name": "White",
+      "amazon_price": 39.99,
+      "kg": 2.31,
+      "our_price": 112.99
+     },
+     {
+      "asin": "B0BQJJH1PP",
+      "name": "Cyan",
+      "amazon_price": 39.99,
+      "kg": 2.31,
+      "our_price": 112.99
+     },
+     {
+      "asin": "B0DBTPBR3C",
+      "name": "Wood grain",
+      "amazon_price": 43.99,
+      "kg": 2.31,
+      "our_price": 117.99
+     }
+    ]
+   }
+  },
+  {
+   "asin": "B081WQY69Y",
+   "subcategory": "Vinyl records",
+   "type": "LPs",
+   "name": "Vivaldi: The Four Seasons (LP)",
+   "amazon_price": 20.25,
+   "kg": 0.3,
+   "kg_source": "amazon",
+   "our_price": 34.99,
+   "rating": 4.8,
+   "reviews": "1,037"
+  },
+  {
+   "asin": "B00F5DXK86",
+   "subcategory": "Vinyl records",
+   "type": "LPs",
+   "name": "Ella Fitzgerald and Louis Armstrong: Ella and Louis (LP)",
+   "amazon_price": 26.59,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 42.99,
+   "rating": 4.9,
+   "reviews": "2,527"
+  },
+  {
+   "asin": "B077Z82BCF",
+   "subcategory": "Vinyl records",
+   "type": "LPs",
+   "name": "John Coltrane & Miles Davis: The Final Tour, Copenhagen 1960 (LP)",
+   "amazon_price": 23.98,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 38.99,
+   "rating": 4.8,
+   "reviews": "1,556"
+  },
+  {
+   "asin": "B09DQ23K77",
+   "subcategory": "Vinyl records",
+   "type": "LPs",
+   "name": "Fairuz & Violin (LP)",
+   "amazon_price": 41.99,
+   "kg": 0.45,
+   "kg_source": "amazon",
+   "our_price": 66.99,
+   "rating": null,
+   "reviews": "0",
+   "note": "no reviews"
+  },
+  {
+   "asin": "0634052659",
+   "subcategory": "Method books",
+   "type": "Method books",
+   "name": "Essential Elements for Strings, Violin Book 2",
+   "amazon_price": 8.86,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 19.99,
+   "rating": 4.8,
+   "reviews": "3,389"
+  },
+  {
+   "asin": "0739048120",
+   "subcategory": "Method books",
+   "type": "Method books",
+   "name": "Suzuki Violin School, Volume 2",
+   "amazon_price": 14.99,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 27.99,
+   "rating": 4.8,
+   "reviews": "2,790"
+  },
+  {
+   "asin": "0634074032",
+   "subcategory": "Method books",
+   "type": "Method books",
+   "name": "Wohlfahrt: 60 Studies Op. 45, Violin",
+   "amazon_price": 9.99,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 20.99,
+   "rating": 4.8,
+   "reviews": "1,193"
+  },
+  {
+   "asin": "B002N3DVD0",
+   "subcategory": "Method books",
+   "type": "Method books",
+   "name": "Bastien Piano Basics, Primer Level, 4-book set",
+   "amazon_price": 35.99,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 54.99,
+   "rating": 4.8,
+   "reviews": "526"
+  },
+  {
+   "asin": "0849752663",
+   "subcategory": "Method books",
+   "type": "Method books",
+   "name": "Bastien Piano Basics, Piano Level 1",
+   "amazon_price": 7.5,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 17.99,
+   "rating": 4.8,
+   "reviews": "2,650"
+  },
+  {
+   "asin": "1616770783",
+   "subcategory": "Method books",
+   "type": "Method books",
+   "name": "Faber Piano Adventures, Lesson Book Level 1",
+   "amazon_price": 7.59,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 17.99,
+   "rating": 4.8,
+   "reviews": "7,486"
+  },
+  {
+   "asin": "B07TDSJ6RC",
+   "subcategory": "Method books",
+   "type": "Method books",
+   "name": "Faber Piano Adventures Level 1, 4-book pack",
+   "amazon_price": 32.7,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 50.99,
+   "rating": 4.9,
+   "reviews": "1,722"
+  },
+  {
+   "asin": "0739003682",
+   "subcategory": "Method books",
+   "type": "Method books",
+   "name": "Alfred's Complete Book of Scales, Chords, Arpeggios & Cadences",
+   "amazon_price": 13.22,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 24.99,
+   "rating": 4.7,
+   "reviews": "4,799"
+  },
+  {
+   "asin": "0825636795",
+   "subcategory": "Method books",
+   "type": "Method books",
+   "name": "Frederick Noad: Solo Guitar Playing, Book 1",
+   "amazon_price": 20.5,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 34.99,
+   "rating": 4.6,
+   "reviews": "693"
+  },
+  {
+   "asin": "1792936303",
+   "subcategory": "Method books",
+   "type": "Method books",
+   "name": "Classical Guitar Method, Volume 1",
+   "amazon_price": 19.99,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 33.99,
+   "rating": 4.8,
+   "reviews": "209"
+  },
+  {
+   "asin": "0634012916",
+   "subcategory": "Method books",
+   "type": "Method books",
+   "name": "Essential Elements for Band, Alto Saxophone Book 2",
+   "amazon_price": 12.99,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 24.99,
+   "rating": 4.8,
+   "reviews": "891"
+  },
+  {
+   "asin": "0634012924",
+   "subcategory": "Method books",
+   "type": "Method books",
+   "name": "Essential Elements for Band, Tenor Saxophone Book 2",
+   "amazon_price": 12.99,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 24.99,
+   "rating": 4.7,
+   "reviews": "227"
+  },
+  {
+   "asin": "1423444787",
+   "subcategory": "Method books",
+   "type": "Method books",
+   "name": "Rubank Elementary Method, Clarinet",
+   "amazon_price": 6.14,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 15.99,
+   "rating": 4.7,
+   "reviews": "1,058"
+  },
+  {
+   "asin": "1423444183",
+   "subcategory": "Method books",
+   "type": "Method books",
+   "name": "Rubank Intermediate Method, Clarinet",
+   "amazon_price": 8.99,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 19.99,
+   "rating": 4.8,
+   "reviews": "476"
+  },
+  {
+   "asin": "0486479552",
+   "subcategory": "Method books",
+   "type": "Method books",
+   "name": "Arban's Complete Conservatory Method for Trumpet",
+   "amazon_price": 28.36,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 44.99,
+   "rating": 4.7,
+   "reviews": "540"
+  },
+  {
+   "asin": "B0C2S9ZYW9",
+   "subcategory": "Method books",
+   "type": "Method books",
+   "name": "Ukulele for Kids: 45 Songs, book and audio",
+   "amazon_price": 12.99,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 24.99,
+   "rating": 4.7,
+   "reviews": "441"
+  },
+  {
+   "asin": "1470632071",
+   "subcategory": "Method books",
+   "type": "Method books",
+   "name": "Alfred's Kid's Ukulele Course 1",
+   "amazon_price": 15.99,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 28.99,
+   "rating": 4.6,
+   "reviews": "230"
+  },
+  {
+   "asin": "0244444013",
+   "subcategory": "Method books",
+   "type": "Method books",
+   "name": "The Mukhtar Method: Oud, Upper Beginner",
+   "amazon_price": 12.68,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 24.99,
+   "rating": 4.3,
+   "reviews": "21"
+  },
+  {
+   "asin": "147680608X",
+   "subcategory": "Theory & practice",
+   "type": "Music theory",
+   "name": "Essential Elements Piano Theory, Level 1",
+   "amazon_price": 8.99,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 19.99,
+   "rating": 4.4,
+   "reviews": "251"
+  },
+  {
+   "asin": "1476806098",
+   "subcategory": "Theory & practice",
+   "type": "Music theory",
+   "name": "Essential Elements Piano Theory, Level 2",
+   "amazon_price": 8.99,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 19.99,
+   "rating": 4.5,
+   "reviews": "54"
+  },
+  {
+   "asin": "1476806101",
+   "subcategory": "Theory & practice",
+   "type": "Music theory",
+   "name": "Essential Elements Piano Theory, Level 3",
+   "amazon_price": 8.99,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 19.99,
+   "rating": 4.5,
+   "reviews": "52"
+  },
+  {
+   "asin": "9679856038",
+   "subcategory": "Theory & practice",
+   "type": "Music theory",
+   "name": "Theory Made Easy for Kids, Level 1",
+   "amazon_price": 5.99,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 15.99,
+   "rating": 4.8,
+   "reviews": "855"
+  },
+  {
+   "asin": "1890348015",
+   "subcategory": "Theory & practice",
+   "type": "Music theory",
+   "name": "Theory Time: Theory Fundamentals, Grade One",
+   "amazon_price": 12.95,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 24.99,
+   "rating": 4.8,
+   "reviews": "500"
+  },
+  {
+   "asin": "0974588245",
+   "subcategory": "Theory & practice",
+   "type": "Maqam & Arabic music",
+   "name": "Arabic Musical Scales: Basic Maqam Notation",
+   "amazon_price": 19.95,
+   "kg": 0.3,
+   "kg_source": "estimate",
+   "our_price": 33.99,
+   "rating": 3.9,
+   "reviews": "29"
+  },
+  {
+   "asin": "0761176470",
+   "subcategory": "Reading",
+   "type": "History & biographies",
+   "name": "Welcome to the Symphony (sound book, Beethoven)",
+   "amazon_price": 15.2,
+   "kg": 0.9,
+   "kg_source": "estimate",
+   "our_price": 43.99,
+   "rating": 4.6,
+   "reviews": "2,166",
+   "note": "sound book: small button batteries"
+  },
+  {
+   "asin": "1805079131",
+   "subcategory": "Reading",
+   "type": "History & biographies",
+   "name": "The Animal Orchestra Plays Mozart (sound book)",
+   "amazon_price": 12.26,
+   "kg": 0.5,
+   "kg_source": "estimate",
+   "our_price": 28.99,
+   "rating": 4.5,
+   "reviews": "780",
+   "note": "sound book: small button batteries"
+  }
+ ]
+}

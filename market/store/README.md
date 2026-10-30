@@ -9,12 +9,12 @@ store/
 ├── products/           the products, one file per round of imports → `setup-products.mjs`, `merge-variants.mjs`
 │   ├── round-1.json      2026-10-15/16: the sample products and batches 1–2 (114)
 │   ├── round-2.json      2026-10-30: batches 3–8, every category (339)
-│   └── round-3.json      the Academy instruments round
+│   └── round-3.json      2026-10-30: the Academy instruments round, Amazon US (173)
 └── rounds/             how each round was chosen: per batch the list (`batch-N.json`: Amazon IDs, prices, weights,
     │                   notes) and the review checklist (`batch-N-links.md`), plus the files uploaded to the importer
     ├── round-1/          batches 1–2 (imported one by one with Ryviu)
     ├── round-2/          batches 3–8, `variants-plan.md`, `import-1.csv` and `import-2.csv` for Spreadr
-    └── round-3/
+    └── round-3/          the Academy instruments round (Amazon US): `list.json`, the review checklist `list.md`, `import.csv`
 ```
 
 A product entry (`products/round-N.json`) holds our English and Arabic title and text, type (which places it in its
