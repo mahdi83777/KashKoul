@@ -303,7 +303,7 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   a paid plan).
   - [ ] **Batch 3, Art supplies** (approved 2026-10-30, `market/store/rounds/round-2/batch-3*`): 82 products over all
     7 Art sub-categories and their types (the AnyMark alcohol markers removed). Spreadr test (3 products): imports as
-    draft, SKU = ASIN for every variant, weight from Amazon, about 1.2 credits per variant; its price can be another
+    draft, SKU from the CSV for every variant (now `US-`/`AE-` + ASIN, see SKU standard), weight from Amazon, about 1.2 credits per variant; its price can be another
     offer's, so our list keeps the Amazon price as `cost` for `setup-products.mjs`. English and Arabic titles and texts
     written from the Amazon facts and added to `products/round-2.json` (photos: first 5 kept until chosen).
   - [ ] **Batches 4–8, the other categories** (approved 2026-10-30; mix chosen: Accessories +~110, Instruments +~50,
@@ -322,6 +322,10 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
     the Rumble and Acoustasonic amps, the Squier Precision Bass and Classic Vibe guitars, the trombone and the cajon): buy credits,
     import `market/store/rounds/round-2/import-1.csv` (Art, Accessories: 228) and `import-2.csv` (Instruments, Studio, Vinyl, Books: 181) in Spreadr ("Import single product"), then `setup-products.mjs` → `merge-variants.mjs` →
     `setup-products.mjs`, choose photos, then `setup-store.mjs --only menu`.
+- [ ] **SKU standard** (decided 2026-10-30): the SKU says which Amazon to buy from, `US-<Amazon ID>` or `AE-<Amazon ID>`,
+  so every order shows it; products are tagged `amazon-us` / `amazon-uae`; customers see neither. The products already in
+  the store were renamed (`market/tools/fix-skus.mjs`), the round 2 and 3 import files use `US-`, round 4's will use `AE-`,
+  and `setup-products.mjs` / `merge-variants.mjs` find products by the new SKU (older bare IDs are renamed when found).
 - [ ] **Round 3, Amazon US** (list approved 2026-10-30, `market/store/rounds/round-3/list.md` and `list.json`):
   every Academy instrument (violin, guitar, piano, percussion, winds, oriental) in more brands, sizes and colours, plus
   the sub-categories still empty (electronic drums, podcast kits, keyboard & acoustic amps, DJ mixers) and some art,
@@ -331,8 +335,17 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   `rounds/round-3/import.csv` (252 IDs) in Spreadr ("Import single product"), then `setup-products.mjs --round 3` →
   `merge-variants.mjs --round 3` → `setup-products.mjs --round 3`, read the prices of the big-brand products, choose
   photos, `setup-store.mjs --only menu`.
-- [ ] **Round 4, Amazon UAE** (amazon.ae, Spreadr region UAE, separate CSV; cost in AED ÷ 3.6725, same $20/kg shipping):
-  products missing from Amazon US (oud, qanun, ney, riq, buzuq and more), no fixed size.
+- [ ] **Round 4, Amazon UAE** (list approved 2026-10-30, `market/store/rounds/round-4/list.md` and `list.json`;
+  amazon.ae, Spreadr region UAE, separate CSV; cost in AED ÷ 3.6725, same $20/kg shipping): what Amazon US lacks: ouds,
+  a Turkish qanun, buzuqs, saz and setar, neys, kawala, zurna, riqs, darbukas, daf and bendir with their strings, cases
+  and stands; 31 Arabic LPs (Fairuz, Umm Kulthum, Abdel Halim, Warda, Sabah, Wadih El Safi, Ziad Rahbani…); Arabic
+  calligraphy (reed qalams, ink, ahar paper, practice books); oud, darbuka, qanun, saz and daf books; and big
+  brands whose price amazon.ae shows (Yamaha PSR-A350 and Korg Pa700 oriental keyboards, Yamaha, Casio, Roland, Fender).
+  131 products, 139 Amazon IDs (≈ 167 credits; with round 3 ≈ 469 credits, within $10). Products already in the shop
+  left out (13). Many specialist oriental sellers list only 1–3 in stock: kept and marked, for the owner to decide. English and
+  Arabic texts written from the amazon.ae facts (`products/round-4.json`, source `ae`). Next: import
+  `rounds/round-4/import.csv` (139 IDs, `AE-` SKUs) in Spreadr with region UAE, then `setup-products.mjs --round 4` →
+  `merge-variants.mjs --round 4` → `setup-products.mjs --round 4`, choose photos, `setup-store.mjs --only menu`.
 
 **Review:** prices and the catalog.
 

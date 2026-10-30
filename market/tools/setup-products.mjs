@@ -7,7 +7,8 @@
 //   price = round_up((cost + kg × $20) × 1.3) − 0.01, cost = the Amazon price, kept in "Cost per item"
 // (first run: the price the importer set, or `cost` when given: one Amazon price, or one per variant title, read on
 // Amazon when the list is made, since an importer can bring a different offer's price). `kg` is one weight, or one per variant title. Entries with `collection` go into that category, and `publish: true`
-// sets them Active on the Online Store. Products are found by handle, the importer's handle, or Amazon ID (SKU).
+// sets them Active on the Online Store. Products are found by handle, the importer's handle, or SKU (US-/AE- + Amazon
+// ID, or the bare Amazon ID of an older import, which is then renamed to the standard); each gets its amazon-us/-uae tag.
 // Safe to re-run: prices always start from the saved cost, so they never compound.
 //
 //   shopify store auth --store <store> --scopes read_products,write_products,read_translations,write_translations,\
@@ -16,7 +17,7 @@
 // --shard k/n runs every n-th product starting at the k-th, so n runs side by side cover the whole list faster.
 // Without the inventory scopes, everything but the stock quantities is applied and the script says so.
 import { randomUUID } from 'node:crypto';
-import { gql, check, translate, loadProducts } from './store-lib.mjs';
+import { gql, check, translate, loadProducts, skuFor, sourceTag, isBareAsin } from './store-lib.mjs';
 
 const products = loadProducts();
 const argOnly = process.argv.indexOf('--only');
@@ -26,7 +27,7 @@ const [shard, shards] = argShard > -1 ? process.argv[argShard + 1].split('/').ma
 
 const PRODUCT = `id handle status
   options { id name optionValues { id name } }
-  variants(first: 100) { nodes { id title price inventoryItem { id tracked unitCost { amount } } } }
+  variants(first: 100) { nodes { id title sku price inventoryItem { id tracked unitCost { amount } } } }
   media(first: 250) { nodes { id } }
   collections(first: 20) { nodes { handle } }`;
 
@@ -38,9 +39,10 @@ function find(handle) {
   return gql(`query ($q: String!) { products(first: 1, query: $q) { nodes { ${PRODUCT} } } }`, { q: `handle:${handle}` }).products.nodes
     .find(p => p.handle === handle);
 }
-// Imported by Ryviu: every variant's SKU is its Amazon ID (ASIN).
-function findByAsin(asin) {
-  return gql(`query ($q: String!) { products(first: 5, query: $q) { nodes { ${PRODUCT} } } }`, { q: `sku:${asin}` }).products.nodes[0];
+// Imported products: every variant's SKU is US-/AE- + its Amazon ID (older imports: the bare Amazon ID).
+function findBySku(sku) {
+  return gql(`query ($q: String!) { products(first: 5, query: $q) { nodes { ${PRODUCT} } } }`, { q: `sku:${sku}` }).products.nodes
+    .find(p => p.variants.nodes.some(v => v.sku === sku));
 }
 
 // Publishing needs read/write_publications; without them products are set Active but not put on the Online Store.
@@ -68,7 +70,7 @@ try {
 for (const [n, spec] of products.entries()) {
   if (only && spec.handle !== only) continue;
   if (n % shards !== shard - 1) continue;
-  let p = find(spec.handle) ?? (spec.from_handle && find(spec.from_handle)) ?? (spec.asin && findByAsin(spec.asin));
+  let p = find(spec.handle) ?? (spec.from_handle && find(spec.from_handle)) ?? (spec.asin && (findBySku(skuFor(spec)) ?? findBySku(spec.asin)));
   if (!p) { console.log(`product     ${spec.handle}  NOT FOUND (import it first)`); continue; }
   const id = p.id;
   // First run for this product: stock not tracked yet, or (Ryviu) tracked at 0 but no cost saved yet.
@@ -78,7 +80,8 @@ for (const [n, spec] of products.entries()) {
 
   check(gql(`mutation ($p: ProductUpdateInput!) { productUpdate(product: $p) { product { id } userErrors { field message } } }`,
     { p: { id, title: spec.en.title, descriptionHtml: spec.en.body, handle: spec.handle, redirectNewHandle: true,
-      vendor: spec.vendor, productType: spec.type, tags: spec.tags } }, { mutation: true }), 'productUpdate');
+      vendor: spec.vendor, productType: spec.type, tags: [...new Set([...(spec.tags ?? []), ...(spec.asin ? [sourceTag(spec)] : [])])] } },
+    { mutation: true }), 'productUpdate');
   translate(id, 'ar', { title: spec.ar.title, body_html: spec.ar.body, ...(spec.ar.type && { product_type: spec.ar.type }) });
 
   // variants: the importer brings Amazon's whole product family; keep only the ones listed
@@ -123,11 +126,14 @@ for (const [n, spec] of products.entries()) {
     { id, v: p.variants.nodes.map(v => {
       const cost = costOf(v) ?? v.inventoryItem.unitCost?.amount ?? v.price, kg = Number(cost) > 0 ? kgOf(v) : null;
       if (kgOf(v) != null && kg == null) console.log(`  variant ${v.title}: no Amazon price (unavailable?), not priced`);
+      const sku = isBareAsin(v.sku) && spec.asin ? skuFor(spec, v.sku) : null;   // older import → the SKU standard
+      const inventoryItem = { ...(kg != null && { cost: Number(cost).toFixed(2), measurement: { weight: { value: kg, unit: 'KILOGRAMS' } } }),
+        ...(sku && { sku }) };
       return { id: v.id, compareAtPrice: null,
         ...(firstRun && { inventoryPolicy: onOrder ? 'CONTINUE' : 'DENY' }),
         ...(spec.price && { price: spec.price }),
-        ...(kg != null && { price: priceFor(cost, kg),
-          inventoryItem: { cost: Number(cost).toFixed(2), measurement: { weight: { value: kg, unit: 'KILOGRAMS' } } } }) };
+        ...(kg != null && { price: priceFor(cost, kg) }),
+        ...(Object.keys(inventoryItem).length && { inventoryItem }) };
     }) },
     { mutation: true }), 'productVariantsBulkUpdate');
 

@@ -57,6 +57,13 @@ export function translate(resourceId, locale, values, attempt = 1) {
     { id: resourceId, t: translations }, { mutation: true }), 'translationsRegister');
 }
 
+// SKU standard (2026-10-30): the Amazon store, then the Amazon ID: US-B0… (amazon.com) or AE-B0… (amazon.ae), so an
+// order shows where to buy. A product entry's `source` is 'us' (the default) or 'ae'; the product also gets the tag
+// amazon-us or amazon-uae. Products imported before the standard carry the bare Amazon ID (fix-skus.mjs renames them).
+export const skuFor = (spec, asin = spec.asin) => `${spec.source === 'ae' ? 'AE' : 'US'}-${asin}`;
+export const sourceTag = spec => spec.source === 'ae' ? 'amazon-uae' : 'amazon-us';
+export const isBareAsin = sku => /^[A-Z0-9]{10}$/.test(sku ?? '');
+
 // The shop's products, from market/store/products/round-*.json (one file per round of imports).
 // `--round round-3` (or `--round 3`) keeps only that round's file.
 export function loadProducts() {

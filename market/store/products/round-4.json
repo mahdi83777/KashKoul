@@ -1,0 +1,4009 @@
+{
+  "_about": "Round 4 (2026-10-30): the Amazon UAE round (amazon.ae; source \"ae\": SKUs AE-<Amazon ID>, tag amazon-uae), list and checklist in rounds/round-4/. cost = the amazon.ae price in AED ÷ 3.6725. Texts written from the Amazon facts; imported with Spreadr (region UAE), finished by setup-products.mjs and merge-variants.mjs (--round 4).",
+  "products": [
+    {
+      "handle": "arabic-shami-oud-beech-mahogany",
+      "asin": "B0GVVP85VL",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Oud",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 4.0,
+      "kg_source": "estimate",
+      "cost": 176.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Arabic Shami Oud, Beech and Mahogany",
+        "body": "<p>A Shami oud for Arabic music and tarab, suited to learners as well as players who already know the instrument.</p><ul><li>Body in beech and mahogany, with a spruce top</li><li>Decorative rosettes around the soundhole, inlay work and a purfling border</li><li>Wooden tuning pegs</li><li>Comes with a bag and 2 picks</li></ul>"
+      },
+      "ar": {
+        "title": "عود عربي شامي، خشب الزان والماهوغاني",
+        "body": "<p>عود شامي للموسيقى العربية وجلسات الطرب، يناسب من يتعلّم العزف ومن يعزف منذ مدة.</p><ul><li>جسم من خشب الزان والماهوغاني، ووجه من خشب الشوح (spruce)</li><li>زخارف مخرّمة حول فتحة الصوت، مع تطعيم وإطار مزخرف على الحواف</li><li>مفاتيح دوزان خشبية</li><li>يأتي مع حقيبة وريشتين</li></ul>",
+        "type": "عود"
+      },
+      "publish": true
+    },
+    {
+      "handle": "arabic-oud-three-sound-holes",
+      "asin": "B0FGVWSLVN",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Oud",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 4.0,
+      "kg_source": "estimate",
+      "cost": 122.53,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Traditional Arabic Oud with Three Sound Holes",
+        "body": "<p>A traditional pear-shaped oud in natural wood, for beginners and for players who already know the instrument.</p><ul><li>Wooden body with three round sound holes</li><li>Red and white decorative inlay around the sound holes</li><li>Fretless neck, for the quarter tones of Arabic music</li><li>Golden tuning pegs</li></ul>"
+      },
+      "ar": {
+        "title": "عود عربي تقليدي بثلاث فتحات صوت",
+        "body": "<p>عود تقليدي بشكل الإجاصة ولون الخشب الطبيعي، للمبتدئين ولمن يعزف منذ مدة.</p><ul><li>جسم خشبي فيه ثلاث فتحات صوت دائرية</li><li>زخارف مطعّمة بالأحمر والأبيض حول فتحات الصوت</li><li>زند بلا دساتين (fretless)، لعزف أرباع الصوت في الموسيقى العربية</li><li>مفاتيح دوزان ذهبية اللون</li></ul>",
+        "type": "عود"
+      },
+      "publish": true
+    },
+    {
+      "handle": "sherif-hajjaj-arabic-oud-beginners",
+      "asin": "B0HGC1T8FD",
+      "source": "ae",
+      "vendor": "Sherif Hajjaj",
+      "type": "Oud",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 4.0,
+      "kg_source": "estimate",
+      "cost": 95.3,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Sherif Hajjaj Arabic Oud for Beginners",
+        "body": "<p>An Arabic oud for those starting to learn to play.</p><ul><li>Made by Sherif Hajjaj</li><li>Wooden top, brown finish</li><li>Comes with a bag and picks</li></ul>"
+      },
+      "ar": {
+        "title": "عود عربي للمبتدئين من صنع شريف حجاج",
+        "body": "<p>عود عربي لمن يبدأ تعلّم العزف.</p><ul><li>من صنع شريف حجاج</li><li>وجه خشبي، لون بنّي</li><li>يأتي مع حقيبة وريش</li></ul>",
+        "type": "عود"
+      },
+      "publish": true
+    },
+    {
+      "handle": "arabic-learner-oud-with-stand",
+      "asin": "B0FWMV99T4",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Oud",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 4.0,
+      "kg_source": "estimate",
+      "cost": 95.03,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Arabic Learner Oud with Stand, Natural Wood",
+        "body": "<p>A pear-shaped oud in light, natural wood, made for beginners and students.</p><ul><li>Wooden body with ornate rosettes over the sound holes</li><li>Light build, comfortable to hold while playing</li><li>Comes with a stand to keep it upright when you're not playing</li></ul>"
+      },
+      "ar": {
+        "title": "عود عربي تعليمي مع حامل، خشب طبيعي",
+        "body": "<p>عود بشكل الإجاصة من خشب فاتح بلونه الطبيعي، مخصّص للمبتدئين والطلاب.</p><ul><li>جسم خشبي مع زخارف مخرّمة فوق فتحات الصوت</li><li>خفيف الوزن، مريح في الحمل أثناء العزف</li><li>يأتي مع حامل يبقيه واقفًا حين لا تعزف عليه</li></ul>",
+        "type": "عود"
+      },
+      "publish": true
+    },
+    {
+      "handle": "babuzy-egyptian-learner-oud",
+      "asin": "B0CPWYSG55",
+      "source": "ae",
+      "vendor": "Babuzy",
+      "type": "Oud",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 4.0,
+      "kg_source": "estimate",
+      "cost": 95.3,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Babuzy Egyptian Learner Oud",
+        "body": "<p>An Egyptian oud for students learning to play.</p><ul><li>Body in walnut and beech</li><li>Sycamore top</li><li>Comes with a bag and 2 picks</li></ul>"
+      },
+      "ar": {
+        "title": "عود مصري تعليمي Babuzy",
+        "body": "<p>عود مصري لمن يتعلّم العزف.</p><ul><li>جسم من خشب الجوز والزان</li><li>وجه من خشب الساكامور (sycamore)</li><li>يأتي مع حقيبة وريشتين</li></ul>",
+        "type": "عود"
+      },
+      "publish": true
+    },
+    {
+      "handle": "arabic-oud-handcrafted-spruce-top",
+      "asin": "B0F6D487P7",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Oud",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 4.0,
+      "kg_source": "estimate",
+      "cost": 156.57,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Handcrafted Arabic Oud, Spruce Top",
+        "body": "<p>A handcrafted oud with a light spruce top and a dark neck, for players of traditional Arabic music.</p><ul><li>Three sound holes with protective grilles</li><li>Eight decorative rosettes in a circle around the main sound hole</li><li>Wooden inlay details and a honey-brown finish</li></ul><p><strong>Good to know:</strong> handmade, so the wood grain and finish vary slightly from one instrument to another.</p>"
+      },
+      "ar": {
+        "title": "عود عربي مصنوع يدويًا، وجه من خشب الشوح",
+        "body": "<p>عود مصنوع يدويًا بوجه فاتح من خشب الشوح وزند داكن، لمن يعزف الموسيقى العربية التقليدية.</p><ul><li>ثلاث فتحات صوت عليها شبك واقٍ</li><li>ثماني زخارف على شكل دائرة حول فتحة الصوت الرئيسية</li><li>تطعيمات خشبية ولون بنّي عسلي</li></ul><p><strong>للعلم:</strong> مصنوع يدويًا، لذلك تختلف عروق الخشب واللمسة النهائية قليلًا من عود إلى آخر.</p>",
+        "type": "عود"
+      },
+      "publish": true
+    },
+    {
+      "handle": "zeryab-classic-shami-oud-cedar-top",
+      "asin": "B08QH2V8JZ",
+      "source": "ae",
+      "vendor": "Zeryab",
+      "type": "Oud",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 4.5,
+      "kg_source": "estimate",
+      "cost": 326.75,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Zeryab Classic Shami Oud, Cedar Top",
+        "body": "<p>A Shami oud from Zeryab's professional line, made by the Ali Khalife family, who have been building ouds since 1948. The Shami oud is known for its deep, slightly dry sound.</p><ul><li>Cedar top (2021 edition) and walnut back</li><li>Shellac varnish that protects the wood</li><li>Truss rod in the neck, so the string height can be adjusted</li><li>Fully set up, with Pyramid strings</li></ul>"
+      },
+      "ar": {
+        "title": "عود شامي Zeryab Classic، وجه من خشب الأرز",
+        "body": "<p>عود شامي من الفئة الاحترافية لدى Zeryab، من صنع عائلة علي خليفة التي تصنع الأعواد منذ عام 1948. يُعرف العود الشامي بصوته العميق والجاف قليلًا.</p><ul><li>وجه من خشب الأرز (إصدار 2021) وظهر من خشب الجوز</li><li>طلاء لكّ (shellac) يحمي الخشب</li><li>قضيب تعديل (truss rod) داخل الزند لضبط ارتفاع الأوتار</li><li>مضبوط وجاهز للعزف، مع أوتار Pyramid</li></ul>",
+        "type": "عود"
+      },
+      "publish": true
+    },
+    {
+      "handle": "turkish-oud-flamed-plane-wood",
+      "asin": "B08JQDY7KM",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Oud",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 5.0,
+      "kg_source": "estimate",
+      "cost": 800.52,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Turkish Oud in Flamed Plane Wood, with Soft Case",
+        "body": "<p>A Turkish oud made with attention to the small details, built to be comfortable and easy to play.</p><ul><li>Bowl and neck in flamed plane wood (çınar), with a spruce top</li><li>Ebony fingerboard and ebony pegs</li><li>83 cm long, 58.5 cm from bridge to nut, 11 strings</li><li>Strung with Kürschner Premium medium-tension strings; comes with a soft case and 3 picks</li></ul>"
+      },
+      "ar": {
+        "title": "عود تركي من خشب الدلب المموّج، مع حقيبة",
+        "body": "<p>عود تركي مصنوع بعناية بأدق التفاصيل، مريح وسهل العزف.</p><ul><li>قصعة وزند من خشب الدلب المموّج (çınar)، ووجه من خشب الشوح</li><li>لوحة أصابع ومفاتيح من خشب الأبنوس</li><li>طوله 83 سم، والمسافة من الفرس إلى العتبة 58.5 سم، و11 وترًا</li><li>مركّبة عليه أوتار Kürschner Premium بشدّ متوسط، ويأتي مع حقيبة طرية و3 ريش</li></ul>",
+        "type": "عود"
+      },
+      "publish": true
+    },
+    {
+      "handle": "mustafa-saglam-turkish-kanun-hard-case",
+      "asin": "B0CS9TY38M",
+      "source": "ae",
+      "vendor": "Mustafa Saglam",
+      "type": "Qanun",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 10.0,
+      "kg_source": "estimate",
+      "cost": 1301.54,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Mustafa Saglam Turkish Kanun with Hard Case",
+        "body": "<p>A Turkish kanun (qanun) by master maker Mustafa Saglam, whose kanuns are known for their high standard, timeless design and sound.</p><ul><li>Sycamore top and back, ebony tuning pins</li><li>78 strings in 26 courses, tuned from low A (la) to high E (mi)</li><li>PVF strings and alpaca silver mandals (levers) for precise intonation</li><li>Comes with a hard case, a tuning key, rings and picks (mızrap)</li></ul>"
+      },
+      "ar": {
+        "title": "قانون تركي Mustafa Saglam مع علبة صلبة",
+        "body": "<p>قانون تركي من صنع المعلّم Mustafa Saglam، وقوانينه معروفة بجودتها العالية وتصميمها وصوتها.</p><ul><li>وجه وظهر من خشب الساكامور (sycamore)، وأوتاد من خشب الأبنوس</li><li>78 وترًا في 26 مجموعة، يُدوزن من نوتة لا المنخفضة إلى نوتة مي العالية</li><li>أوتار PVF وعُرَب (mandals) من فضة الألباكا لنغمات دقيقة</li><li>يأتي مع علبة صلبة ومفتاح دوزان القانون وأصابع القانون وريش (مضراب)</li></ul>",
+        "type": "قانون"
+      },
+      "publish": true
+    },
+    {
+      "handle": "buzuq-arab-kurdish-bz4-mastex-pickup",
+      "asin": "B09PBT3KBF",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Buzuq & saz",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 3.5,
+      "kg_source": "estimate",
+      "cost": 700.08,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Arab Kurdish Buzuq with Mastex Pickup, BZ4",
+        "body": "<p>An acoustic Arab Kurdish buzuq with a Mastex pickup, so you can play it as it is or plug it into an amplifier.</p><ul><li>Neck 50 cm, bowl 38 cm</li><li>27 frets</li><li>Wooden top and back, solid wood neck</li><li>Mastex pickup</li></ul>"
+      },
+      "ar": {
+        "title": "بزق عربي كردي مع لاقط صوت Mastex، BZ4",
+        "body": "<p>بزق عربي كردي أكوستيك مزوّد بلاقط صوت Mastex: تعزف عليه كما هو، أو توصله بمضخّم (amp).</p><ul><li>طول الزند 50 سم، والقصعة 38 سم</li><li>27 دستانًا (fret)</li><li>وجه وظهر من الخشب، وزند من الخشب الصلب</li><li>لاقط صوت Mastex</li></ul>",
+        "type": "بزق وساز"
+      },
+      "publish": true
+    },
+    {
+      "handle": "buzuq-arab-kurdish-ak1-mulberry-cedar",
+      "asin": "B0DJGMJ4QJ",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Buzuq & saz",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 3.5,
+      "kg_source": "estimate",
+      "cost": 599.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Arab Kurdish Buzuq, Mulberry and Cedar, AK1",
+        "body": "<p>An Arab Kurdish buzuq with a mulberry bowl and a cedar face, ready to play with its pick and bag.</p><ul><li>Neck 50 cm, bowl 38 cm, string length 74 cm</li><li>28 frets</li><li>Metal tuning pegs on the head, nickel strings</li><li>Comes with a pick and a bag</li></ul>"
+      },
+      "ar": {
+        "title": "بزق عربي كردي من التوت والأرز، AK1",
+        "body": "<p>بزق عربي كردي، قصعته من خشب التوت ووجهه من خشب الأرز، يأتي مع ريشة وحقيبة ليكون جاهزًا للعزف.</p><ul><li>طول الزند 50 سم، والقصعة 38 سم، وطول الوتر 74 سم</li><li>28 دستانًا (fret)</li><li>مفاتيح دوزان معدنية في الرأس، وأوتار من النيكل</li><li>تأتي معه ريشة وحقيبة</li></ul>",
+        "type": "بزق وساز"
+      },
+      "publish": true
+    },
+    {
+      "handle": "short-neck-saz-pickup",
+      "asin": "B0F1MNHWS3",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Buzuq & saz",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 3.0,
+      "kg_source": "estimate",
+      "cost": 239.59,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Short-Neck Saz with Pickup and Case",
+        "body": "<p>A classic Turkish short-neck saz (bağlama), made in Turkey by a saz maker with over 20 years of experience. The built-in pickup lets you plug it into an amp.</p><ul><li>Spruce top, beech neck and rosewood pegs</li><li>Length 103 cm, 70 cm from bridge to nut, bowl 41 × 25 cm</li><li>Pyramid strings already fitted, plus a spare set of Pyramid strings for short saz</li><li>Comes with 10 saz picks and a soft case</li></ul>"
+      },
+      "ar": {
+        "title": "ساز (باغلاما) قصير الزند مع لاقط وحقيبة",
+        "body": "<p>ساز تركي كلاسيكي قصير الزند (باغلاما)، صنعه في تركيا صانع ساز له أكثر من 20 سنة في هذه الحرفة. فيه لاقط صوت مدمج لتوصله بمضخّم (amp).</p><ul><li>وجه من خشب التنوب (spruce)، زند من خشب الزان، ومفاتيح دوزان من خشب الورد</li><li>الطول 103 سم، و70 سم من الفرس إلى العتبة، والقصعة ⁦41 × 25⁩ سم</li><li>مركّبة عليه أوتار Pyramid، ومعه طقم أوتار Pyramid إضافي للساز القصير</li><li>تأتي معه 10 ريشات ساز وحقيبة</li></ul>",
+        "type": "بزق وساز"
+      },
+      "publish": true
+    },
+    {
+      "handle": "long-neck-saz-cherry-pickup",
+      "asin": "B09JG5QGS4",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Buzuq & saz",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 3.5,
+      "kg_source": "estimate",
+      "cost": 250.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Long-Neck Saz, Cherry Wood, with Pickup",
+        "body": "<p>A handmade Turkish long-neck saz from a family workshop in Izmir that has made saz for over 20 years. A good instrument for beginners and anyone who wants to explore the Turkish saz.</p><ul><li>Solid cherry wood bowl, spruce top, beech neck and rosewood pegs</li><li>Built-in pickup to connect to an amplifier</li><li>Ready to play, with Pyramid strings fitted</li><li>Comes with a spare set of Pyramid strings, 10 saz picks and a soft case</li></ul><p><strong>Good to know:</strong> handmade, so the wood grain and finish vary slightly from one instrument to another.</p>"
+      },
+      "ar": {
+        "title": "ساز (باغلاما) طويل الزند من خشب الكرز مع لاقط",
+        "body": "<p>ساز تركي طويل الزند مصنوع يدويًا في ورشة عائلية في إزمير تصنع الساز منذ أكثر من 20 سنة. آلة مناسبة للمبتدئين ولكل من يريد اكتشاف الساز التركي.</p><ul><li>قصعة من خشب الكرز الصلب، وجه من خشب التنوب (spruce)، زند من خشب الزان، ومفاتيح دوزان من خشب الورد</li><li>لاقط صوت مدمج لتوصله بمضخّم (amp)</li><li>جاهز للعزف، مركّبة عليه أوتار Pyramid</li><li>يأتي معه طقم أوتار Pyramid إضافي، و10 ريشات ساز وحقيبة</li></ul><p><strong>للعلم:</strong> مصنوع يدويًا، لذلك تختلف عروق الخشب واللمسة الأخيرة قليلًا من آلة إلى أخرى.</p>",
+        "type": "بزق وساز"
+      },
+      "publish": true
+    },
+    {
+      "handle": "cumbus-long-neck-saz-sazbus-black",
+      "asin": "B08JHDG9F3",
+      "source": "ae",
+      "vendor": "Cümbüş",
+      "type": "Buzuq & saz",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 3.5,
+      "kg_source": "estimate",
+      "cost": 351.23,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Cümbüş Long-Neck Saz (Sazbüş), Black Skin",
+        "body": "<p>The long-neck sazbüş from Zeynel Abidin Cümbüş: a saz with an aluminum bowl and a skin stretched over it, a bit like a banjo. It is tuned like a standard saz and is a fun way to play Middle Eastern music.</p><ul><li>Aluminum bowl with a synthetic skin, 6 strings</li><li>Mechanical pegs for easy tuning, and a butterfly screw to adjust the string height (action)</li><li>Length 100 cm, scale 76 cm, bowl 25 cm wide and 13 cm deep</li><li>Comes with a soft case, picks and a spare set of strings</li></ul>"
+      },
+      "ar": {
+        "title": "ساز جمبش (Sazbüş) طويل الزند Cümbüş، بجلد أسود",
+        "body": "<p>ساز جمبش طويل الزند من Zeynel Abidin Cümbüş: قصعته من الألومنيوم ومشدود عليها جلد، تشبه قليلًا آلة البانجو. يُدوزن كالساز العادي، وهو طريقة ممتعة لعزف الموسيقى الشرقية.</p><ul><li>قصعة من الألومنيوم وجلد صناعي، و6 أوتار</li><li>مفاتيح دوزان ميكانيكية تسهّل الدوزان، وبرغي فراشة لضبط ارتفاع الأوتار (action)</li><li>الطول 100 سم، وطول الوتر 76 سم، وعرض القصعة 25 سم وعمقها 13 سم</li><li>يأتي معه حقيبة وريش وطقم أوتار إضافي</li></ul>",
+        "type": "بزق وساز"
+      },
+      "publish": true
+    },
+    {
+      "handle": "sala-muzik-persian-setar",
+      "asin": "B00Z83G9E0",
+      "source": "ae",
+      "vendor": "Sala Müzik",
+      "type": "Buzuq & saz",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 2.5,
+      "kg_source": "estimate",
+      "cost": 408.44,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Sala Müzik Persian Setar with Soft Case",
+        "body": "<p>A Persian setar with a mulberry bowl and a walnut neck, comes with a soft case and spare strings.</p><ul><li>Mulberry bowl, walnut neck and walnut pegs</li><li>Length 86 cm, string length 66 cm</li><li>Comes with a soft case and extra strings</li></ul>"
+      },
+      "ar": {
+        "title": "سيتار فارسي (setar) Sala Müzik مع حقيبة",
+        "body": "<p>سيتار فارسي قصعته من خشب التوت وزنده من خشب الجوز، يأتي مع حقيبة وأوتار إضافية.</p><ul><li>قصعة من خشب التوت، وزند ومفاتيح دوزان من خشب الجوز</li><li>طول الآلة 86 سم، وطول الوتر 66 سم</li><li>تأتي معه حقيبة وأوتار إضافية</li></ul>",
+        "type": "بزق وساز"
+      },
+      "publish": true
+    },
+    {
+      "handle": "ney-arabic-natural-reed-handmade",
+      "asin": "B0H5CW91F4",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Ney & oriental winds",
+      "tags": [],
+      "stock": "on_order",
+      "kg": {
+        "E (Busalik)": 0.6,
+        "D (Dukah)": 0.6
+      },
+      "kg_source": "estimate",
+      "cost": {
+        "E (Busalik)": 87.11,
+        "D (Dukah)": 87.11
+      },
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Arabic Ney, Natural Reed, Handmade",
+        "body": "<p>A handmade Arabic ney cut from carefully chosen natural reed, with the warm, breathy tone of the ney.</p><ul><li>Natural reed with a hand-carved mouthpiece</li><li>Made with the bottom hole on the left, for players who play with the left hand on top</li><li>Not sure which key? Most players take D (Dukah): a comfortable size that goes well with the oud, the violin and more</li><li>Two keys: E (Busalik), 51 cm long, and D (Dukah), 59.5 cm long</li></ul><p><strong>Good to know:</strong> handmade, so every ney is slightly different in look and finish.</p>"
+      },
+      "ar": {
+        "title": "ناي عربي من القصب الطبيعي، مصنوع يدويًا",
+        "body": "<p>ناي عربي مصنوع يدويًا من قصب طبيعي مختار بعناية، بصوت الناي الدافئ المليء بالنَّفَس.</p><ul><li>قصب طبيعي ومبسم محفور باليد</li><li>الثقب الأسفل على اليسار، لمن يعزف واليد اليسرى في الأعلى</li><li>لست متأكّدًا أي طبقة تختار؟ أكثر العازفين يأخذون طبقة ري D (دوكاه): حجمها مريح وتنسجم مع العود والكمان وغيرهما</li><li>طبقتان: E (بوسليك) بطول 51 سم، وD (دوكاه) بطول 59.5 سم</li></ul><p><strong>للعلم:</strong> مصنوع يدويًا، لذلك يختلف كل ناي قليلًا في شكله ولمسته الأخيرة.</p>",
+        "type": "ناي ونفخ شرقي"
+      },
+      "publish": true,
+      "merge_variants": {
+        "option": "Key",
+        "values": [
+          {
+            "asin": "B0H5CW91F4",
+            "name": "E (Busalik)"
+          },
+          {
+            "asin": "B0H5CX5J7Q",
+            "name": "D (Dukah)"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Key",
+          "ar": "المقام",
+          "values": [
+            {
+              "name": "E (Busalik)",
+              "ar": "E (بوسليك)"
+            },
+            {
+              "name": "D (Dukah)",
+              "ar": "D (دوكاه)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "arabic-ney-pvc-440hz",
+      "asin": "B0HMXBW3HG",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Ney & oriental winds",
+      "tags": [],
+      "stock": "on_order",
+      "kg": {
+        "A (La)": 0.3,
+        "E (Busalik)": 0.3,
+        "G (Sol)": 0.3
+      },
+      "kg_source": "estimate",
+      "cost": {
+        "A (La)": 35.1,
+        "E (Busalik)": 35.1,
+        "G (Sol)": 35.1
+      },
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Arabic Ney in PVC, Tuned to 440 Hz",
+        "body": "<p>An Arabic ney made of PVC: easy to play, with a loud, warm sound, and it does not crack or react to the weather like reed.</p><ul><li>Made and tuned by a ney master, to 440 Hz</li><li>A narrowing at the top, like on a reed ney, makes the higher octaves easy to play</li><li>Faux wood finish</li><li>Three keys: A (La), E (Busalik) and G (Sol)</li></ul>"
+      },
+      "ar": {
+        "title": "ناي عربي من PVC، مدوزن على 440 Hz",
+        "body": "<p>ناي عربي مصنوع من PVC: سهل العزف، صوته قوي ودافئ، ولا يتشقّق ولا يتأثّر بالطقس كالقصب.</p><ul><li>صنعه ودوزنه معلّم ناي، على 440 Hz</li><li>تضييق في أعلاه يشبه الناي القصب، يسهّل عزف الطبقات العالية (الأوكتافات)</li><li>غلاف بشكل الخشب</li><li>ثلاث طبقات: A (لا)، وE (بوسليك)، وG (صول)</li></ul>",
+        "type": "ناي ونفخ شرقي"
+      },
+      "publish": true,
+      "merge_variants": {
+        "option": "Key",
+        "values": [
+          {
+            "asin": "B0HMXBW3HG",
+            "name": "A (La)"
+          },
+          {
+            "asin": "B08RBF4KXJ",
+            "name": "E (Busalik)"
+          },
+          {
+            "asin": "B0HMXCQJC9",
+            "name": "G (Sol)"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Key",
+          "ar": "المقام",
+          "values": [
+            {
+              "name": "A (La)",
+              "ar": "A (لا)"
+            },
+            {
+              "name": "E (Busalik)",
+              "ar": "E (بوسليك)"
+            },
+            {
+              "name": "G (Sol)",
+              "ar": "G (صول)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "alsaid-bayomy-egyptian-kawala-set-12",
+      "asin": "B0DLVBJZDR",
+      "source": "ae",
+      "vendor": "Alsaid Bayomy",
+      "type": "Ney & oriental winds",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.0,
+      "kg_source": "estimate",
+      "cost": 106.0,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Alsaid Bayomy Egyptian Kawala, Full Set of 12",
+        "body": "<p>A full set of Egyptian kawalas (qawwal), the Arabic end-blown flute, from one maker.</p><ul><li>A complete kawala set: 12 pieces</li><li>Made by Alsaid Bayomy, one of the well-known ney and kawala makers in the Middle East</li><li>Egyptian Arabic woodwind</li></ul>"
+      },
+      "ar": {
+        "title": "طقم كوالا مصرية Alsaid Bayomy، طقم كامل من 12",
+        "body": "<p>طقم كامل من الكوالا المصرية، آلة النفخ العربية، من صانع واحد.</p><ul><li>طقم كوالا كامل: 12 قطعة</li><li>من صنع Alsaid Bayomy، أحد صانعي الناي والكوالا المعروفين في الشرق الأوسط</li><li>آلة نفخ عربية مصرية</li></ul>",
+        "type": "ناي ونفخ شرقي"
+      },
+      "publish": true
+    },
+    {
+      "handle": "corsaro-music-bamboo-kawala-salamiya-b",
+      "asin": "B09PY6RVRT",
+      "source": "ae",
+      "vendor": "Corsaro Music",
+      "type": "Ney & oriental winds",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.45,
+      "kg_source": "amazon (Amazon)",
+      "cost": 53.11,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Corsaro Music Bamboo Kawala (Salamiya) in B",
+        "body": "<p>A kawala, also called salamiya, made from bamboo reed in Turkey. Close to the ney and played mainly in Middle Eastern music.</p><ul><li>Key: B</li><li>Six finger holes (the ney has seven)</li><li>Bamboo reed, made in Turkey</li><li>Comes in its own leather gig bag</li></ul>"
+      },
+      "ar": {
+        "title": "كوالا (سلامية) من البامبو Corsaro Music، طبقة B",
+        "body": "<p>كوالا، وتُسمّى أيضًا سلامية، مصنوعة من قصب البامبو في تركيا. قريبة من الناي، وتُعزف خاصة في الموسيقى الشرقية.</p><ul><li>الطبقة: B (سي)</li><li>ستة ثقوب للأصابع (والناي فيه سبعة)</li><li>قصب البامبو، صُنع في تركيا</li><li>تأتي في حقيبة جلدية خاصة بها</li></ul>",
+        "type": "ناي ونفخ شرقي"
+      },
+      "publish": true
+    },
+    {
+      "handle": "turkish-ney-baspare-18mm",
+      "asin": "B08RBDJL4N",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Ney & oriental winds",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.1,
+      "kg_source": "estimate",
+      "cost": 20.12,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Turkish Ney Başpare (Mouthpiece), 18 mm",
+        "body": "<p>A replacement başpare, the mouthpiece at the top of the Turkish ney, made by a Turkish ney maker who supplies many of the well-known makers in Turkey.</p><ul><li>Made of high-grade Delrin, for a comfortable embouchure and a good sound</li><li>Inner diameter: 18 mm</li><li>Suits all kinds of neys</li></ul><p><strong>Good to know:</strong> check the inner diameter at the top of your ney to make sure 18 mm fits.</p>"
+      },
+      "ar": {
+        "title": "باشبارة ناي تركي، 18 مم",
+        "body": "<p>باشبارة بديلة، وهي المبسم في أعلى الناي التركي، من صنع صانع ناي تركي يصنع لكثير من صانعي الناي المعروفين في تركيا.</p><ul><li>مصنوعة من Delrin عالي الجودة، لوضعية فم مريحة وصوت جيد</li><li>القطر الداخلي: 18 مم</li><li>تناسب كل أنواع الناي</li></ul><p><strong>للعلم:</strong> قِس القطر الداخلي في أعلى الناي الذي عندك لتتأكّد أن مقاس 18 مم يناسبه.</p>",
+        "type": "ناي ونفخ شرقي"
+      },
+      "publish": true
+    },
+    {
+      "handle": "corsaro-music-plum-zurna-g",
+      "asin": "B09PKK3JQQ",
+      "source": "ae",
+      "vendor": "Corsaro Music",
+      "type": "Ney & oriental winds",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.5,
+      "kg_source": "estimate",
+      "cost": 103.47,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Corsaro Music Plum Wood Zurna in G",
+        "body": "<p>A zurna (mizmar) handcrafted in Turkey from aged plum wood. Its sound is loud and carries straight ahead: the instrument of weddings and outdoor celebrations, best played with drums.</p><ul><li>Key: G</li><li>Length 40 cm without the mouthpiece</li><li>Bell radius 10 cm</li><li>Aged plum wood</li></ul><p><strong>Good to know:</strong> handmade, so the wood grain and finish vary slightly from one instrument to another.</p>"
+      },
+      "ar": {
+        "title": "زرنة (مزمار) Corsaro Music من خشب البرقوق، طبقة G",
+        "body": "<p>زرنة (مزمار) مصنوعة يدويًا في تركيا من خشب البرقوق المعتّق. صوتها قوي ويتّجه إلى الأمام: آلة الأعراس والاحتفالات في الهواء الطلق، وأجمل ما تكون مع الطبل.</p><ul><li>الطبقة: G (صول)</li><li>الطول 40 سم من دون المبسم</li><li>نصف قطر البوق 10 سم</li><li>خشب البرقوق المعتّق</li></ul><p><strong>للعلم:</strong> مصنوعة يدويًا، لذلك تختلف عروق الخشب واللمسة الأخيرة قليلًا من آلة إلى أخرى.</p>",
+        "type": "ناي ونفخ شرقي"
+      },
+      "publish": true
+    },
+    {
+      "handle": "zurna-mizmar-reeds-10",
+      "asin": "B08WL3DN4Y",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Reeds",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.1,
+      "kg_source": "estimate",
+      "cost": 24.51,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Zurna (Mizmar) Reeds, Pack of 10",
+        "body": "<p>Spare reeds for the zurna (mizmar), made from giant cane.</p><ul><li>10 reeds in one pack</li><li>Made from Arundo donax (giant cane)</li><li>For the zurna, also called mizmar</li></ul>"
+      },
+      "ar": {
+        "title": "ريش زرنة (مزمار)، 10 قطع",
+        "body": "<p>ريش (reeds) إضافية للزرنة (المزمار)، مصنوعة من القصب الكبير.</p><ul><li>10 ريشات في العلبة</li><li>من قصب Arundo donax (القصب الكبير)</li><li>للزرنة، وتُسمّى أيضًا المزمار</li></ul>",
+        "type": "قصبات"
+      },
+      "publish": true
+    },
+    {
+      "handle": "zaza-percussion-wave-egyptian-darbuka",
+      "asin": "B086CCPV4D",
+      "source": "ae",
+      "vendor": "Zaza Percussion",
+      "type": "Darbuka",
+      "tags": [],
+      "stock": "on_order",
+      "kg": {
+        "Black": 2.38,
+        "Copper": 2.36,
+        "Blue": 2.38
+      },
+      "kg_source": "amazon (Amazon)",
+      "cost": {
+        "Black": 239.92,
+        "Copper": 187.29,
+        "Blue": 201.52
+      },
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Zaza Percussion Wave Egyptian Darbuka",
+        "body": "<p>An Egyptian-style darbuka made in Turkey, with a shiny colored finish and hand engravings. Deep Dum strokes and crisp Tek and Ka, for beginners and experienced players.</p><ul><li>Cast aluminum body, about 43 cm (17 in) tall</li><li>Tunable synthetic head, about 22 cm (8.65 in), with 8 bolts</li><li>Comes with a padded carrying case, a tuning tool and a spare head</li><li>Three colors: black, copper or blue</li></ul>"
+      },
+      "ar": {
+        "title": "دربكة مصرية Zaza Percussion Wave",
+        "body": "<p>دربكة على الطراز المصري مصنوعة في تركيا، بلون لامع ونقوش محفورة باليد. تعطي ضربة دُم (Dum) عميقة وتك (Tek) وكا (Ka) واضحة، للمبتدئين وللعازفين المتمرّسين.</p><ul><li>جسم من الألمنيوم المصبوب، بارتفاع نحو 43 سم (17 إنش)</li><li>جلد صناعي قابل للدوزان، قطره نحو 22 سم (8.65 إنش)، مع 8 براغٍ</li><li>تأتي مع حقيبة مبطّنة، أداة دوزان وجلد احتياطي</li><li>ثلاثة ألوان: أسود أو نحاسي أو أزرق</li></ul>",
+        "type": "دربكة"
+      },
+      "publish": true,
+      "merge_variants": {
+        "option": "Color",
+        "values": [
+          {
+            "asin": "B086CCPV4D",
+            "name": "Black"
+          },
+          {
+            "asin": "B09T9ZK6QT",
+            "name": "Copper"
+          },
+          {
+            "asin": "B0749H57HG",
+            "name": "Blue"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Color",
+          "ar": "اللون",
+          "values": [
+            {
+              "name": "Black",
+              "ar": "أسود"
+            },
+            {
+              "name": "Copper",
+              "ar": "نحاسي"
+            },
+            {
+              "name": "Blue",
+              "ar": "أزرق"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "sala-muzik-solo-darbuka-antique-gold",
+      "asin": "B0HMMTVHKK",
+      "source": "ae",
+      "vendor": "Sala Müzik",
+      "type": "Darbuka",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 6.0,
+      "kg_source": "amazon (Amazon)",
+      "cost": 365.97,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Sala Müzik Solo Darbuka, Antique Gold and Black",
+        "body": "<p>A darbuka with an antique gold finish and contrasting black patterns. Full Dum bass and clear Tek and Ka, for practice, the studio and the stage.</p><ul><li>Aluminum body</li><li>Solo model, with a 22 cm head</li><li>Comes with a carrying bag, a head cover, a spare head and a tuning key</li></ul>"
+      },
+      "ar": {
+        "title": "دربكة Sala Müzik Solo، ذهبي عتيق وأسود",
+        "body": "<p>دربكة بلون ذهبي عتيق تزيّنها نقوش سوداء. ضربة دُم (Dum) عميقة وتك (Tek) وكا (Ka) واضحة، للتمرين اليومي والتسجيل والعزف على المسرح.</p><ul><li>جسم من الألمنيوم</li><li>طراز Solo، بجلد قطره 22 سم</li><li>تأتي مع حقيبة، غطاء لحماية الجلد، جلد احتياطي ومفتاح دوزان</li></ul>",
+        "type": "دربكة"
+      },
+      "publish": true
+    },
+    {
+      "handle": "gawharet-el-fan-sombaty-darbuka-copper",
+      "asin": "B00IF3MRTQ",
+      "source": "ae",
+      "vendor": "Gawharet El Fan",
+      "type": "Darbuka",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 3.5,
+      "kg_source": "estimate",
+      "cost": 163.38,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Gawharet El Fan Sombaty Darbuka, Copper",
+        "body": "<p>A Sombaty darbuka made by Gawharet El Fan in Egypt. Sombaty drums are bigger and taller than the classic Gawharet El Fan darbuka, for a fuller sound.</p><ul><li>Cast metal body in a copper color</li><li>Clear synthetic head with 6 bolts</li><li>Comes with a case</li></ul>"
+      },
+      "ar": {
+        "title": "دربكة سنباطي Gawharet El Fan، نحاسية",
+        "body": "<p>دربكة سنباطي من صنع Gawharet El Fan في مصر. الدربكة السنباطي أكبر وأطول من دربكة Gawharet El Fan الكلاسيكية، فيأتي صوتها أكثر امتلاءً.</p><ul><li>جسم من المعدن المصبوب بلون نحاسي</li><li>جلد صناعي شفاف مع 6 براغٍ</li><li>تأتي مع حقيبة</li></ul>",
+        "type": "دربكة"
+      },
+      "publish": true
+    },
+    {
+      "handle": "music-alex-egyptian-darbuka-silver",
+      "asin": "B0F6CR24DN",
+      "source": "ae",
+      "vendor": "Music Alex",
+      "type": "Darbuka",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.5,
+      "kg_source": "estimate",
+      "cost": 25.87,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Music Alex Egyptian Darbuka, Silver with Blue Head",
+        "body": "<p>An Egyptian-made darbuka in the classic goblet shape, light and sturdy, for practice and for playing live.</p><ul><li>Aluminum body with a silver sparkle finish</li><li>Blue-tinted synthetic head with the Music Alex logo</li><li>Tuning lugs to set the pitch</li><li>Wide head and narrow waist for the traditional darbuka sound</li></ul>"
+      },
+      "ar": {
+        "title": "دربكة مصرية Music Alex، فضية بجلد أزرق",
+        "body": "<p>دربكة مصرية الصنع بشكل الكأس التقليدي، خفيفة ومتينة، للتمرين وللعزف في الحفلات.</p><ul><li>جسم من الألمنيوم بلون فضي لامع</li><li>جلد صناعي بلون أزرق شفاف عليه شعار Music Alex</li><li>براغٍ للدوزان وضبط الطبقة</li><li>رأس عريض وخصر ضيق لصوت الدربكة التقليدي</li></ul>",
+        "type": "دربكة"
+      },
+      "publish": true
+    },
+    {
+      "handle": "aj-music-small-metal-darbuka-15-cm",
+      "asin": "B0DNCDNRVN",
+      "source": "ae",
+      "vendor": "AJ Music",
+      "type": "Darbuka",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.9,
+      "kg_source": "amazon (Amazon)",
+      "cost": 25.87,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "AJ Music Small Metal Darbuka, 15 cm, 5 Bolts",
+        "body": "<p>A small, light darbuka that is easy to carry, for Arabic rhythms and other styles of music.</p><ul><li>Metal body with a silver finish and fine engravings</li><li>Synthetic head, tuned with 5 bolts</li><li>15 cm in diameter, 900 g</li></ul>"
+      },
+      "ar": {
+        "title": "دربكة معدنية صغيرة AJ Music، 15 سم، 5 براغٍ",
+        "body": "<p>دربكة صغيرة وخفيفة يسهل حملها، للإيقاعات العربية ولأنواع أخرى من الموسيقى.</p><ul><li>جسم معدني بلون فضي مع نقوش دقيقة</li><li>جلد صناعي يُدوزن بـ5 براغٍ</li><li>قطرها 15 سم، ووزنها 900 غ</li></ul>",
+        "type": "دربكة"
+      },
+      "publish": true
+    },
+    {
+      "handle": "darbuka-arabic-black-white-crackle",
+      "asin": "B0H5FL38VG",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Darbuka",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 2.5,
+      "kg_source": "amazon (Amazon)",
+      "cost": 65.35,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Arabic Darbuka, Black and White Crackle Finish",
+        "body": "<p>A traditional goblet drum with a bold black and white crackle pattern, for beginners learning the basics and for experienced players.</p><ul><li>Aluminum body</li><li>Hourglass shape for deep low tones and clear highs</li><li>For practice, lessons and performances</li></ul>"
+      },
+      "ar": {
+        "title": "دربكة عربية، بنقشة متشقّقة أسود وأبيض",
+        "body": "<p>دربكة تقليدية على شكل كأس بنقشة متشقّقة لافتة بالأسود والأبيض، للمبتدئين الذين يتعلّمون الأساسيات وللعازفين المتمرّسين.</p><ul><li>جسم من الألمنيوم</li><li>شكل الساعة الرملية لصوت منخفض عميق وصوت عالٍ واضح</li><li>للتمرين والدروس والحفلات</li></ul>",
+        "type": "دربكة"
+      },
+      "publish": true
+    },
+    {
+      "handle": "alam-alikaa-small-darbuka-5-in",
+      "asin": "B0D94QPLJQ",
+      "source": "ae",
+      "vendor": "Alam Alikaa",
+      "type": "Darbuka",
+      "tags": [],
+      "stock": "on_order",
+      "kg": {
+        "Blue": 0.35,
+        "Pink": 0.35,
+        "Grey": 0.35
+      },
+      "kg_source": "amazon (Amazon)",
+      "cost": {
+        "Blue": 13.34,
+        "Pink": 13.34,
+        "Grey": 13.34
+      },
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Alam Alikaa Small Darbuka, 5 in",
+        "body": "<p>A small, light Egyptian darbuka in the classic shape, easy to carry around and good for beginners.</p><ul><li>Cast metal body, 26 cm tall</li><li>Clear synthetic head, 5 in (about 13 cm), with 4 bolts</li><li>Comes with a tuning tool</li><li>Three colors: blue, pink or grey</li></ul>"
+      },
+      "ar": {
+        "title": "دربكة صغيرة Alam Alikaa، 5 إنش",
+        "body": "<p>دربكة مصرية صغيرة وخفيفة بالشكل الكلاسيكي، سهلة الحمل ومناسبة للمبتدئين.</p><ul><li>جسم من المعدن المصبوب، بارتفاع 26 سم</li><li>جلد صناعي شفاف قطره 5 إنش (نحو 13 سم)، مع 4 براغٍ</li><li>تأتي مع أداة دوزان</li><li>ثلاثة ألوان: أزرق أو وردي أو رمادي</li></ul>",
+        "type": "دربكة"
+      },
+      "publish": true,
+      "merge_variants": {
+        "option": "Color",
+        "values": [
+          {
+            "asin": "B0D94QPLJQ",
+            "name": "Blue"
+          },
+          {
+            "asin": "B0D94QXSHK",
+            "name": "Pink"
+          },
+          {
+            "asin": "B0D94RB6R9",
+            "name": "Grey"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Color",
+          "ar": "اللون",
+          "values": [
+            {
+              "name": "Blue",
+              "ar": "أزرق"
+            },
+            {
+              "name": "Pink",
+              "ar": "وردي"
+            },
+            {
+              "name": "Grey",
+              "ar": "رمادي"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "riq-marine-brass-cymbals-22-cm",
+      "asin": "B09NBNDDDH",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Riq & frame drums",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.2,
+      "kg_source": "amazon (Amazon)",
+      "cost": 107.56,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Marine Riq with Brass Cymbals, 22 cm",
+        "body": "<p>A tunable riq with a wooden frame and brass cymbals, for Arabic and Turkish rhythms.</p><ul><li>22 cm across and 6 cm deep</li><li>Wooden frame with brass cymbals, 1200 g</li><li>Tunable</li><li>Comes with a gig bag</li></ul>"
+      },
+      "ar": {
+        "title": "رقّ Marine بصنوج نحاسية، 22 سم",
+        "body": "<p>رقّ قابل للدوزان بإطار خشبي وصنوج من النحاس الأصفر، للإيقاعات العربية والتركية.</p><ul><li>قطره 22 سم وعمقه 6 سم</li><li>إطار خشبي مع صنوج نحاسية، ووزنه 1200 غ</li><li>قابل للدوزان</li><li>يأتي مع حقيبة</li></ul>",
+        "type": "رق ودفوف"
+      },
+      "publish": true
+    },
+    {
+      "handle": "gawharet-el-fan-pro-riq-mother-of-pearl",
+      "asin": "B0DV3QR4Y2",
+      "source": "ae",
+      "vendor": "Gawharet El Fan",
+      "type": "Riq & frame drums",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.0,
+      "kg_source": "amazon (Amazon)",
+      "cost": 219.47,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Gawharet El Fan Pro Riq, Mother-of-Pearl Inlay",
+        "body": "<p>An Egyptian riq by Gawharet El Fan, its frame inlaid with mother-of-pearl in a mosaic pattern.</p><ul><li>Ten pairs of cymbals, set in five pairs of slits</li><li>Power Beat professional skin for a strong sound</li><li>Comes with Gawharet El Fan's own soft case</li></ul>"
+      },
+      "ar": {
+        "title": "رقّ Gawharet El Fan Pro، مطعّم بالصدف",
+        "body": "<p>رقّ مصري من Gawharet El Fan، إطاره مطعّم بالصدف بنقشة فسيفساء.</p><ul><li>عشرة أزواج من الصنوج في خمسة أزواج من الفتحات</li><li>جلد Power Beat الاحترافي لصوت قوي</li><li>يأتي مع حقيبة Gawharet El Fan الأصلية الطرية</li></ul>",
+        "type": "رق ودفوف"
+      },
+      "publish": true
+    },
+    {
+      "handle": "walnut-riq-clear-skin",
+      "asin": "B0B39MNT2Z",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Riq & frame drums",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.87,
+      "kg_source": "amazon (Amazon)",
+      "cost": 299.5,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Walnut Riq, Clear Skin, DEL-303",
+        "body": "<p>A walnut riq made by a luthier with a careful finish, for advanced and professional players.</p><ul><li>Clear skin for the classic riq sound, with a clean split between low and high tones</li><li>Hand-hammered brass cymbals</li><li>Light and well balanced: 870 g</li><li>5-point internal tuning for fine, accurate tuning; comes with a case</li></ul>"
+      },
+      "ar": {
+        "title": "رقّ من خشب الجوز، بجلد شفاف، DEL-303",
+        "body": "<p>رقّ من خشب الجوز صنعه حِرَفي بعناية ولمسة نهائية دقيقة، للعازفين المتقدّمين والمحترفين.</p><ul><li>جلد شفاف يعطي صوت الرقّ التقليدي، مع فصل واضح بين الصوت المنخفض والعالي</li><li>صنوج من النحاس الأصفر مطروقة باليد</li><li>خفيف ومتوازن: 870 غ</li><li>نظام دوزان داخلي من 5 نقاط لدوزان دقيق، ويأتي مع حقيبة</li></ul>",
+        "type": "رق ودفوف"
+      },
+      "publish": true
+    },
+    {
+      "handle": "seraj-s10-daf-erbane-synthetic-skin",
+      "asin": "B0D76W9F6J",
+      "source": "ae",
+      "vendor": "Seraj",
+      "type": "Riq & frame drums",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 2.0,
+      "kg_source": "estimate",
+      "cost": 111.61,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Seraj S10 Daf (Erbane), Synthetic Skin, 53 cm",
+        "body": "<p>A daf (erbane) made by hand by Seraj. The light wooden frame makes it comfortable to hold and play.</p><ul><li>Synthetic skin that looks like animal skin</li><li>Nickel rings inside the frame</li><li>53 cm across, 5 cm deep, 650 g</li><li>Comes with a soft case</li></ul><p><strong>Good to know:</strong> handmade, so the wood grain and finish vary slightly from one instrument to another.</p>"
+      },
+      "ar": {
+        "title": "دف Seraj S10 (Erbane)، بجلد صناعي، 53 سم",
+        "body": "<p>دف (إربانة) مصنوع يدويًا من Seraj. إطاره الخشبي الخفيف يجعله مريحًا في الحمل والعزف.</p><ul><li>جلد صناعي يشبه جلد الحيوان</li><li>حلقات من النيكل داخل الإطار</li><li>قطره 53 سم، عمقه 5 سم، ووزنه 650 غ</li><li>يأتي مع حقيبة طرية</li></ul><p><strong>للعلم:</strong> مصنوع يدويًا، لذلك تختلف عروق الخشب واللمسة النهائية قليلًا من آلة إلى أخرى.</p>",
+        "type": "رق ودفوف"
+      },
+      "publish": true
+    },
+    {
+      "handle": "corsaro-music-persian-daf-54-cm",
+      "asin": "B0HGC2W8CP",
+      "source": "ae",
+      "vendor": "Corsaro Music",
+      "type": "Riq & frame drums",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 2.0,
+      "kg_source": "estimate",
+      "cost": 118.57,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Corsaro Music Persian Daf with Soft Case, 54 cm",
+        "body": "<p>A large daf, the frame drum of Persian, Kurdish and Middle Eastern music, with a decorative painted face.</p><ul><li>About 54 cm (21.25 in) across: room for bass strokes, accents and finger rolls</li><li>Synthetic head, less sensitive to heat and humidity than natural skin</li><li>Light to hold: about 0.75 kg</li><li>Comes with a soft carrying bag</li></ul>"
+      },
+      "ar": {
+        "title": "دف فارسي Corsaro Music مع حقيبة، 54 سم",
+        "body": "<p>دف كبير، طبل الإطار المعروف في الموسيقى الفارسية والكردية والشرقية، بوجه مزيّن برسوم.</p><ul><li>قطره نحو 54 سم (21.25 إنش): مساحة واسعة للضربات المنخفضة والنبرات ودحرجة الأصابع</li><li>جلد صناعي يتأثر بالحرارة والرطوبة أقل من الجلد الطبيعي</li><li>خفيف في اليد: نحو 0.75 كغ</li><li>يأتي مع حقيبة طرية</li></ul>",
+        "type": "رق ودفوف"
+      },
+      "publish": true
+    },
+    {
+      "handle": "tunable-hornbeam-bendir-40-cm",
+      "asin": "B0BTMKP8Z8",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Riq & frame drums",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.5,
+      "kg_source": "estimate",
+      "cost": 119.78,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Tunable Bendir, Hornbeam, 40 cm",
+        "body": "<p>A Turkish bendir frame drum that you can tune to the pitch you want.</p><ul><li>Hornbeam wood frame, 40 cm (16 in) across and 6 cm deep</li><li>German synthetic fiber skin</li><li>8-point internal tuning system, adjusted with a 3 mm Allen key</li></ul>"
+      },
+      "ar": {
+        "title": "بندير قابل للدوزان، خشب Hornbeam، 40 سم",
+        "body": "<p>بندير تركي، طبل إطار يمكنك دوزانه على الطبقة التي تريدها.</p><ul><li>إطار من خشب Hornbeam، قطره 40 سم (16 إنش) وعمقه 6 سم</li><li>جلد من الألياف الصناعية، ألماني الصنع</li><li>نظام دوزان داخلي من 8 نقاط، يُضبط بمفتاح Allen قياس 3 مم</li></ul>",
+        "type": "رق ودفوف"
+      },
+      "publish": true
+    },
+    {
+      "handle": "corsaro-music-turkish-bendir-fiber-skin",
+      "asin": "B0HGCVSC97",
+      "source": "ae",
+      "vendor": "Corsaro Music",
+      "type": "Riq & frame drums",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.5,
+      "kg_source": "estimate",
+      "cost": 109.22,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Corsaro Music Turkish Bendir, Fiber Skin",
+        "body": "<p>A traditional bendir frame drum, handcrafted in Turkey, with a warm, resonant tone. Light and easy to carry, for the stage, the studio or practice at home.</p><ul><li>Round wooden frame with a polished finish</li><li>Synthetic fiber skin</li><li>Built-in tuning system, adjusted with an Allen key</li><li>Comes with a soft case</li></ul><p><strong>Good to know:</strong> handmade, so the wood grain and finish vary slightly from one instrument to another.</p>"
+      },
+      "ar": {
+        "title": "بندير تركي Corsaro Music، بجلد من الألياف",
+        "body": "<p>بندير تقليدي، طبل إطار مصنوع يدويًا في تركيا، بصوت دافئ ورنّان. خفيف وسهل الحمل، للمسرح والاستوديو والتمرين في البيت.</p><ul><li>إطار خشبي دائري بلمسة لامعة</li><li>جلد من الألياف الصناعية</li><li>نظام دوزان مدمج يُضبط بمفتاح Allen</li><li>يأتي مع حقيبة طرية</li></ul><p><strong>للعلم:</strong> مصنوع يدويًا، لذلك تختلف عروق الخشب واللمسة النهائية قليلًا من آلة إلى أخرى.</p>",
+        "type": "رق ودفوف"
+      },
+      "publish": true
+    },
+    {
+      "handle": "tar-arabic-frame-drum-natural-skin",
+      "asin": "B0H96LPFD9",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Riq & frame drums",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.8,
+      "kg_source": "estimate",
+      "cost": 43.57,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Arabic Duff (Tar) Frame Drum, Natural Skin",
+        "body": "<p>A traditional duff, also called tar, for Arabic, Islamic and Gulf music: warm, deep tones for spiritual gatherings, celebrations and performances.</p><ul><li>Natural animal skin head</li><li>Wooden frame, made by hand, smooth and comfortable to hold</li></ul><p><strong>Good to know:</strong> handmade, so the wood grain and finish vary slightly from one instrument to another.</p>"
+      },
+      "ar": {
+        "title": "طار (دف) عربي بجلد طبيعي",
+        "body": "<p>دف تقليدي، يُعرف أيضًا بالطار، للموسيقى العربية والإنشاد والموسيقى الخليجية: صوت دافئ وعميق للمجالس الروحية والأفراح والعروض.</p><ul><li>جلد حيوان طبيعي</li><li>إطار خشبي مصنوع يدويًا، أملس ومريح في اليد</li></ul><p><strong>للعلم:</strong> مصنوع يدويًا، لذلك تختلف عروق الخشب واللمسة النهائية قليلًا من آلة إلى أخرى.</p>",
+        "type": "رق ودفوف"
+      },
+      "publish": true
+    },
+    {
+      "handle": "la-bella-vivace-oud-strings-arabic-tuning",
+      "asin": "B09KT1XDL2",
+      "source": "ae",
+      "vendor": "La Bella",
+      "type": "Oriental strings",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.05,
+      "kg_source": "estimate",
+      "cost": 29.95,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "La Bella Vivace Oud Strings, Arabic Tuning",
+        "body": "<p>A set of strings for the oud in Arabic tuning, from La Bella's Vivace line.</p><ul><li>Model OUVIV-AC</li><li>Fluorocarbon and silver-plated wound strings</li><li>11-string set</li></ul>"
+      },
+      "ar": {
+        "title": "أوتار عود La Bella Vivace، دوزان عربي",
+        "body": "<p>طقم أوتار للعود بالدوزان العربي، من مجموعة Vivace لدى La Bella.</p><ul><li>الطراز OUVIV-AC</li><li>أوتار من الفلوروكربون وأخرى ملفوفة مطلية بالفضة</li><li>طقم من 11 وترًا</li></ul>",
+        "type": "أوتار شرقية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "la-bella-ou80a-oud-strings-arabic-tuning",
+      "asin": "B003B1N4VC",
+      "source": "ae",
+      "vendor": "La Bella",
+      "type": "Oriental strings",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.05,
+      "kg_source": "estimate",
+      "cost": 17.7,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "La Bella OU80A Oud Strings, Arabic Tuning",
+        "body": "<p>Strings for the oud in Arabic tuning, made in the USA.</p><ul><li>12 strings in six pairs: f', c, g, D, A and E</li><li>Clear nylon trebles; basses silver-plated wound on nylon</li><li>Medium gauge</li><li>Sealed packaging keeps the strings fresh and stops tarnish</li></ul>"
+      },
+      "ar": {
+        "title": "أوتار عود La Bella OU80A، دوزان عربي",
+        "body": "<p>أوتار للعود بالدوزان العربي، مصنوعة في الولايات المتحدة.</p><ul><li>12 وترًا في ستة أزواج: f' وc وg وD وA وE</li><li>الأوتار الرفيعة من النايلون الشفاف، والغليظة ملفوفة بالفضة على النايلون</li><li>شدّ متوسط</li><li>تغليف محكم يحافظ على الأوتار ويمنع تغيّر لونها</li></ul>",
+        "type": "أوتار شرقية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "sala-muzik-turkish-oud-strings-aoo-109",
+      "asin": "B08C5J62JF",
+      "source": "ae",
+      "vendor": "Sala Müzik",
+      "type": "Oriental strings",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.1,
+      "kg_source": "estimate",
+      "cost": 40.84,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Sala Müzik Turkish Oud Strings AOO-109",
+        "body": "<p>A set of strings for the Turkish oud.</p><ul><li>11 strings in the pack</li><li>Thickness 0.09 (medium)</li><li>Aurora strings</li></ul>"
+      },
+      "ar": {
+        "title": "أوتار عود تركي Sala Müzik AOO-109",
+        "body": "<p>طقم أوتار للعود التركي.</p><ul><li>11 وترًا في العلبة</li><li>السماكة 0.09 (متوسطة)</li><li>أوتار Aurora</li></ul>",
+        "type": "أوتار شرقية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "kurschner-oud-strings-fa-tuning",
+      "asin": "B0BCH6BJYT",
+      "source": "ae",
+      "vendor": "Kürschner",
+      "type": "Oriental strings",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.05,
+      "kg_source": "estimate",
+      "cost": 32.68,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Kürschner Oud Strings, Fa Tuning",
+        "body": "<p>A 12-string oud set for Arabic tuning in Fa, made in Turkey.</p><ul><li>The first three pairs in premium carbon PVF</li><li>The other three pairs silver-plated wound</li><li>Tuning: f, c, g, d, a, f</li><li>Comes with 2 oud picks</li></ul>"
+      },
+      "ar": {
+        "title": "أوتار عود Kürschner، دوزان فا",
+        "body": "<p>طقم من 12 وترًا للعود، للدوزان العربي على فا، مصنوع في تركيا.</p><ul><li>الأزواج الثلاثة الأولى من كربون PVF الممتاز</li><li>الأزواج الثلاثة الأخرى ملفوفة ومطلية بالفضة</li><li>الدوزان: f وc وg وd وa وf</li><li>يأتي مع ريشتين للعود</li></ul>",
+        "type": "أوتار شرقية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "dest-long-neck-saz-strings-trl-101",
+      "asin": "B07M5HN47S",
+      "source": "ae",
+      "vendor": "Dest",
+      "type": "Oriental strings",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.05,
+      "kg_source": "estimate",
+      "cost": 34.02,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Dest Long-Neck Saz Strings TRL-101, Set of 7",
+        "body": "<p>A full set of metal strings for the Turkish long-neck saz (bağlama).</p><ul><li>7 strings in one pack</li><li>3 bottom strings, 2 middle strings and 2 top strings</li><li>Medium gauge, gold color</li></ul>"
+      },
+      "ar": {
+        "title": "أوتار ساز طويل الزند Dest TRL-101، طقم من 7",
+        "body": "<p>طقم كامل من الأوتار المعدنية للساز (الباغلاما) التركي طويل الزند.</p><ul><li>7 أوتار في العلبة</li><li>3 أوتار سفلى، ووتران في الوسط، ووتران علويان</li><li>سماكة متوسطة، لون ذهبي</li></ul>",
+        "type": "أوتار شرقية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "qanun-dupont-string-set",
+      "asin": "B08L1GRD2P",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Oriental strings",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.3,
+      "kg_source": "estimate",
+      "cost": 100.0,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Dupont String Set for Arabic Qanun",
+        "body": "<p>Replacement strings for the Arabic qanun, sold as one set.</p><ul><li>Dupont strings</li><li>Wound strings included</li><li>Coated</li></ul>"
+      },
+      "ar": {
+        "title": "طقم أوتار Dupont للقانون العربي",
+        "body": "<p>أوتار للقانون العربي، تُباع طقمًا واحدًا.</p><ul><li>أوتار Dupont</li><li>يشمل الأوتار الملفوفة</li><li>أوتار مغلّفة</li></ul>",
+        "type": "أوتار شرقية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "kenan-ozten-pvf-carbon-kanun-strings",
+      "asin": "B08KQC8VSG",
+      "source": "ae",
+      "vendor": "Kenan Özten",
+      "type": "Oriental strings",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.3,
+      "kg_source": "estimate",
+      "cost": 141.57,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Kenan Özten PVF Carbon Kanun Strings, Set of 78",
+        "body": "<p>The complete string set for the Turkish kanun (qanun), made in Kenan Özten's workshop.</p><ul><li>All 78 strings</li><li>PVF carbon, with PVF made in Japan</li><li>Medium gauge</li><li>Kenan Özten is a well-known kanun maker in Turkey</li></ul>"
+      },
+      "ar": {
+        "title": "أوتار قانون Kenan Özten من كربون PVF، طقم من 78 وترًا",
+        "body": "<p>طقم الأوتار الكامل للقانون التركي، مصنوع في مشغل Kenan Özten.</p><ul><li>78 وترًا كاملة</li><li>كربون PVF، والـPVF مصنوع في اليابان</li><li>شدّ متوسط</li><li>Kenan Özten صانع قوانين معروف في تركيا</li></ul>",
+        "type": "أوتار شرقية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "qanun-mezrab-picks-pair",
+      "asin": "B01DGJ2OT6",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Risha & qanun rings",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.05,
+      "kg_source": "estimate",
+      "cost": 17.7,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Qanun Picks (Mızrap), 1 Pair",
+        "body": "<p>Plectrums for playing the qanun (kanun).</p><ul><li>1 pair</li><li>Delrin plastic, black</li><li>About 30 × 5 × 1 mm</li></ul>"
+      },
+      "ar": {
+        "title": "ريشة القانون (مضراب)، زوج واحد",
+        "body": "<p>ريش لعزف القانون.</p><ul><li>زوج واحد</li><li>بلاستيك Delrin، لون أسود</li><li>حوالي ⁦30 × 5 × 1⁩ مم</li></ul>",
+        "type": "ريشة وخواتم قانون"
+      },
+      "publish": true
+    },
+    {
+      "handle": "qanun-tuning-key-brass",
+      "asin": "B01DJMMOXQ",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Risha & qanun rings",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.2,
+      "kg_source": "estimate",
+      "cost": 41.0,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Qanun Tuning Key, Brass",
+        "body": "<p>A tuning key for the Turkish qanun (kanun), for turning the tuning pins.</p><ul><li>Made of brass</li><li>For the Turkish kanun</li></ul>"
+      },
+      "ar": {
+        "title": "مفتاح دوزان القانون، نحاس أصفر",
+        "body": "<p>مفتاح لدوزان القانون التركي، تُدار به أوتاد الأوتار.</p><ul><li>مصنوع من النحاس الأصفر</li><li>للقانون التركي</li></ul>",
+        "type": "ريشة وخواتم قانون"
+      },
+      "publish": true
+    },
+    {
+      "handle": "oud-qanun-pickup-microphone",
+      "asin": "B0F6M6P5L3",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Pickups & parts",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.1,
+      "kg_source": "amazon (Amazon)",
+      "cost": 27.23,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Pickup Microphone for Oud and Qanun, 3 m Cable",
+        "body": "<p>A contact microphone that clips onto the oud or qanun, to play through an amp or sound system on stage or when recording.</p><ul><li>Clips on and off without damaging the instrument</li><li>3 m cable with a standard 6.35 mm jack and gold-plated connectors</li><li>Also works with acoustic guitars and other stringed instruments</li><li>Mounting accessories included</li></ul>"
+      },
+      "ar": {
+        "title": "ميكروفون لاقط للعود والقانون، كابل 3 م",
+        "body": "<p>ميكروفون لاقط يُثبَّت على العود أو القانون، لوصل الآلة بمضخّم أو بنظام صوت على المسرح أو أثناء التسجيل.</p><ul><li>يُركَّب ويُنزع بسهولة من دون أن يؤذي الآلة</li><li>كابل بطول 3 م مع وصلة 6.35 مم عادية وموصلات مطلية بالذهب</li><li>يعمل أيضًا مع الغيتار الأكوستيك والآلات الوترية الأخرى</li><li>قطع التثبيت مرفقة</li></ul>",
+        "type": "بيك أب وقطع"
+      },
+      "publish": true
+    },
+    {
+      "handle": "oud-gig-bag-padded-30mm",
+      "asin": "B08K3SPBX9",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Cases & gig bags",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 2.0,
+      "kg_source": "estimate",
+      "cost": 73.52,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Padded Oud Gig Bag, 30 mm, Black",
+        "body": "<p>A padded gig bag for the Arabic or Turkish oud, to carry on your back or by the handle.</p><ul><li>30 mm foam padding</li><li>Backpack straps and a large handle</li><li>Outside pouch for sheet music, and a small pocket for a tuner, picks and more</li><li>Fits a bowl up to 50 × 42 × 23 cm and a pegbox up to 23 cm long; outside 94 × 45 × 23 cm</li></ul>"
+      },
+      "ar": {
+        "title": "حقيبة عود مبطّنة، 30 مم، سوداء",
+        "body": "<p>حقيبة مبطّنة للعود العربي أو التركي، تحملها على ظهرك أو باليد.</p><ul><li>تبطين إسفنجي بسماكة 30 مم</li><li>حمّالات للظهر ومقبض كبير</li><li>جيب خارجي للنوتات الموسيقية وجيب صغير للدوزان والريش وغيرها</li><li>تتّسع لقصعة حتى ⁦50 × 42 × 23⁩ سم وبنجق حتى 23 سم؛ مقاسها من الخارج ⁦94 × 45 × 23⁩ سم</li></ul>",
+        "type": "حقائب"
+      },
+      "publish": true
+    },
+    {
+      "handle": "oud-hard-case-fiberglass",
+      "asin": "B08X175QQ3",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Cases & gig bags",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 6.0,
+      "kg_source": "estimate",
+      "cost": 201.47,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Hard Oud Case, Fiberglass, Black",
+        "body": "<p>A hardshell case for all kinds of ouds: Turkish, Arabic or Syrian. Made in Turkey.</p><ul><li>Solid, reinforced fiberglass that protects against drops and knocks</li><li>Opens at an angle that lets you place the oud inside safely</li><li>Inside the bowl: 55 cm long, 42 cm wide, 27 cm deep; 89 cm long outside</li><li>Black, with a handle</li></ul>"
+      },
+      "ar": {
+        "title": "علبة عود صلبة من الفايبرغلاس، سوداء",
+        "body": "<p>علبة صلبة لكل أنواع الأعواد: التركي والعربي والشامي. مصنوعة في تركيا.</p><ul><li>فايبرغلاس صلب ومقوّى يحمي العود من السقوط والصدمات</li><li>تنفتح بزاوية تسمح بوضع العود داخلها بأمان</li><li>مقاس مكان القصعة من الداخل: طول 55 سم، عرض 42 سم، عمق 27 سم؛ وطولها من الخارج 89 سم</li><li>لون أسود، مع مقبض</li></ul>",
+        "type": "حقائب"
+      },
+      "publish": true
+    },
+    {
+      "handle": "oud-gig-bag-shoulder-strap",
+      "asin": "B01DR6FPLW",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Cases & gig bags",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 2.0,
+      "kg_source": "estimate",
+      "cost": 110.0,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Oud Gig Bag with Shoulder Strap",
+        "body": "<p>A gig bag for the Turkish or Arabic oud, made in Turkey.</p><ul><li>Reinforced inside at the pegbox and the bridge, where the oud needs it most</li><li>Outside pocket for picks and small accessories</li><li>Comfortable shoulder strap</li><li>Inside: 100 cm long, 46 cm wide, 29 cm deep, 12 cm wide at the head</li></ul>"
+      },
+      "ar": {
+        "title": "حقيبة عود مع حمّالة كتف",
+        "body": "<p>حقيبة للعود التركي أو العربي، مصنوعة في تركيا.</p><ul><li>مقوّاة من الداخل عند البنجق والفرس، حيث يحتاج العود إلى حماية أكثر</li><li>جيب خارجي للريش والإكسسوارات الصغيرة</li><li>حمّالة كتف مريحة</li><li>المقاس من الداخل: طول 100 سم، عرض 46 سم، عمق 29 سم، و12 سم عرض عند الرأس</li></ul>",
+        "type": "حقائب"
+      },
+      "publish": true
+    },
+    {
+      "handle": "saz-gig-bag-long-neck-padded",
+      "asin": "B0BV4C6KWM",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Cases & gig bags",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.5,
+      "kg_source": "estimate",
+      "cost": 70.77,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Padded Gig Bag for Long-Neck Saz",
+        "body": "<p>A padded, lightweight bag that keeps your saz safe and is easy to carry on your back.</p><ul><li>Made for the long-neck saz, and also fits a short-neck saz</li><li>Thick padding to protect the instrument</li><li>Straps to carry it on your back</li><li>One pocket for a tuner and picks, and a big pocket for sheet music and more</li></ul>"
+      },
+      "ar": {
+        "title": "حقيبة مبطّنة لساز طويل الزند",
+        "body": "<p>حقيبة مبطّنة وخفيفة تحمي الساز ويسهل حملها على الظهر.</p><ul><li>مصنوعة للساز طويل الزند، وتناسب أيضًا الساز قصير الزند</li><li>تبطين سميك لحماية الآلة</li><li>أحزمة لحملها على الظهر</li><li>جيب لجهاز الدوزان والريش، وجيب كبير للنوتات وغيرها</li></ul>",
+        "type": "حقائب"
+      },
+      "publish": true
+    },
+    {
+      "handle": "saz-gig-bag-short-neck-padded-black",
+      "asin": "B0HMYHKK6V",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Cases & gig bags",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.3,
+      "kg_source": "estimate",
+      "cost": 70.77,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Padded Gig Bag for Short-Neck Saz, Black",
+        "body": "<p>A padded bag for the short-neck saz (bağlama): good protection, while staying light and easy to carry.</p><ul><li>Internal length: 105 cm</li><li>Padded straps to carry it on your back</li><li>One pocket for tuners and picks, and a larger pocket for sheet music and accessories</li><li>Black</li></ul>"
+      },
+      "ar": {
+        "title": "حقيبة مبطّنة لساز قصير الزند، أسود",
+        "body": "<p>حقيبة مبطّنة للساز (الباغلاما) قصير الزند: حماية جيدة، وتبقى خفيفة وسهلة الحمل.</p><ul><li>الطول الداخلي: 105 سم</li><li>أحزمة مبطّنة لحملها على الظهر</li><li>جيب لأجهزة الدوزان والريش، وجيب أكبر للنوتات والإكسسوارات</li><li>اللون أسود</li></ul>",
+        "type": "حقائب"
+      },
+      "publish": true
+    },
+    {
+      "handle": "buzuq-soft-case-arab-kurdish",
+      "asin": "B09C4Y87NM",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Cases & gig bags",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.3,
+      "kg_source": "estimate",
+      "cost": 50.0,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Soft Case for Arab and Kurdish Buzuq",
+        "body": "<p>A soft case made in Turkey for the Arab and Kurdish buzuq, with a shoulder strap to carry it around town.</p><ul><li>Reinforced inside at the head and the bridge, where the buzuq needs it most</li><li>Outside pocket for picks and small gear</li><li>Inside: 105 cm long, 29.5 cm wide, 12 cm at the head</li><li>Comfortable shoulder strap</li></ul>"
+      },
+      "ar": {
+        "title": "حقيبة لبزق عربي وكردي",
+        "body": "<p>حقيبة مصنوعة في تركيا للبزق العربي والكردي، مع حزام كتف لتحملها معك أينما ذهبت.</p><ul><li>تقوية من الداخل عند الرأس والفرس، حيث يحتاج البزق إلى الحماية أكثر</li><li>جيب خارجي للريش والأغراض الصغيرة</li><li>من الداخل: الطول 105 سم، والعرض 29.5 سم، و12 سم عند الرأس</li><li>حزام كتف مريح</li></ul>",
+        "type": "حقائب"
+      },
+      "publish": true
+    },
+    {
+      "handle": "meinl-professional-darbuka-bag",
+      "asin": "B001251FOW",
+      "source": "ae",
+      "vendor": "Meinl",
+      "type": "Cases & gig bags",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.9,
+      "kg_source": "estimate",
+      "cost": 75.4,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Meinl Professional Darbuka Bag, Black",
+        "body": "<p>A padded bag to carry and protect your darbuka.</p><ul><li>Heavy-duty padded nylon with reinforced stitching</li><li>Double-slide zipper, plus an extra upright zipper</li><li>Padded shoulder strap and a carrying grip</li><li>Outside pocket</li></ul>"
+      },
+      "ar": {
+        "title": "حقيبة دربكة Meinl Professional، سوداء",
+        "body": "<p>حقيبة مبطّنة لحمل الدربكة وحمايتها.</p><ul><li>نايلون متين مبطّن بخياطة مقوّاة</li><li>سحّاب بمنزلقين، وسحّاب إضافي عمودي</li><li>حزام كتف مبطّن ومقبض للحمل</li><li>جيب خارجي</li></ul>",
+        "type": "حقائب"
+      },
+      "publish": true
+    },
+    {
+      "handle": "darbuka-strap-adjustable-shoulder",
+      "asin": "B0FYQYHNBG",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Straps",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.5,
+      "kg_source": "amazon (Amazon)",
+      "cost": 24.51,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Darbuka Shoulder Strap, Adjustable",
+        "body": "<p>A shoulder strap that holds the darbuka steady, so you can play standing up or on the move, at concerts, rehearsals and celebrations.</p><ul><li>Adjustable, with padding for comfort</li><li>Strong webbing with reinforced stitching</li><li>Secure fastening keeps the drum firmly in place</li><li>Decorative pattern</li></ul>"
+      },
+      "ar": {
+        "title": "حزام دربكة للكتف، قابل للتعديل",
+        "body": "<p>حزام كتف يثبّت الدربكة لتعزف وأنت واقف أو تتحرّك، في الحفلات والتمارين والمناسبات.</p><ul><li>قابل للتعديل، مع بطانة مريحة</li><li>شريط متين بخياطة مقوّاة</li><li>إقفال محكم يثبّت الطبلة في مكانها</li><li>نقشة مزخرفة</li></ul>",
+        "type": "أحزمة"
+      },
+      "publish": true
+    },
+    {
+      "handle": "qanun-stand-adjustable-height",
+      "asin": "B0CW2F2SBG",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Instrument stands",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 7.15,
+      "kg_source": "amazon (Amazon)",
+      "cost": 185.16,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Adjustable Qanun Stand with Carry Bag",
+        "body": "<p>A metal stand for the Arabic or Turkish qanun, so you can play standing or sitting. Made in Turkey.</p><ul><li>Adjustable height, up to 100 cm</li><li>Fully adjustable angle</li><li>Soft rubber on the edges protects the qanun</li><li>Comes with a carry bag; weighs 7.15 kg</li></ul>"
+      },
+      "ar": {
+        "title": "حامل قانون قابل للتعديل، مع حقيبة",
+        "body": "<p>حامل معدني للقانون العربي أو التركي، لتعزف واقفًا أو جالسًا. مصنوع في تركيا.</p><ul><li>ارتفاع قابل للتعديل حتى 100 سم</li><li>زاوية قابلة للتعديل بالكامل</li><li>مطاط ناعم على الأطراف يحمي القانون</li><li>يأتي مع حقيبة للحمل؛ وزنه 7.15 كغ</li></ul>",
+        "type": "حوامل آلات"
+      },
+      "publish": true
+    },
+    {
+      "handle": "zaza-percussion-folding-wooden-oud-stand",
+      "asin": "B09JNWCPYT",
+      "source": "ae",
+      "vendor": "Zaza Percussion",
+      "type": "Instrument stands",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 2.27,
+      "kg_source": "amazon (Amazon)",
+      "cost": 78.97,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Zaza Percussion Folding Wooden Oud Stand",
+        "body": "<p>A folding wooden stand, handmade in Turkey, to keep your oud safe and on show at home or on the go.</p><ul><li>Padded edges protect the oud's varnish</li><li>A strap holds the oud so it doesn't slip or fall, useful when children are around</li><li>About 28 cm tall; open base about 15 × 13 cm</li><li>Light, and folds away</li></ul><p><strong>Good to know:</strong> this is the stand only, the oud is not included.</p>"
+      },
+      "ar": {
+        "title": "حامل عود خشبي قابل للطي Zaza Percussion",
+        "body": "<p>حامل خشبي قابل للطي، مصنوع يدويًا في تركيا، يحفظ العود ويعرضه بأمان في البيت أو في التنقّل.</p><ul><li>حواف مبطّنة تحمي ورنيش العود</li><li>حزام يثبّت العود كي لا ينزلق أو يقع، وهذا مفيد بوجود الأطفال</li><li>ارتفاعه نحو 28 سم، وقاعدته المفتوحة نحو ⁦15 × 13⁩ سم</li><li>خفيف ويُطوى بسهولة</li></ul><p><strong>للعلم:</strong> هذا الحامل فقط، العود غير مشمول.</p>",
+        "type": "حوامل آلات"
+      },
+      "publish": true
+    },
+    {
+      "handle": "sala-muzik-darbuka-stand-csk-302",
+      "asin": "B0977F2C73",
+      "source": "ae",
+      "vendor": "Sala Müzik",
+      "type": "Instrument stands",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 2.5,
+      "kg_source": "estimate",
+      "cost": 176.99,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Sala Müzik Darbuka Stand CSK-302",
+        "body": "<p>An adjustable stand that holds a darbuka safely, on stage or at home.</p><ul><li>Adjusts to fit darbukas of different sizes</li><li>Soft EVA foam arms and backrest protect the drum from scratches</li><li>Three metal tripod feet with rubber tips that grip any floor</li><li>Folds for carrying and storage</li></ul>"
+      },
+      "ar": {
+        "title": "حامل دربكة Sala Müzik CSK-302",
+        "body": "<p>حامل قابل للتعديل يحمل الدربكة بأمان، على المسرح أو في البيت.</p><ul><li>يُعدَّل ليناسب الدربكات بأحجامها المختلفة</li><li>ذراعان ومسند من إسفنج EVA الطري تحمي الطبلة من الخدوش</li><li>ثلاث أرجل معدنية بأطراف مطاطية تثبت على أي أرضية</li><li>يُطوى لسهولة الحمل والتخزين</li></ul>",
+        "type": "حوامل آلات"
+      },
+      "publish": true
+    },
+    {
+      "handle": "wambooka-diamond-darbuka-head-clear",
+      "asin": "B0CQP3BY4F",
+      "source": "ae",
+      "vendor": "Wambooka",
+      "type": "Darbuka skins",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.3,
+      "kg_source": "amazon (Amazon)",
+      "cost": 10.89,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Wambooka Diamond Darbuka Head, Clear, 8.75 in",
+        "body": "<p>A clear replacement head for the Wambooka Diamond darbuka, made to the original specifications for the same fit and feel.</p><ul><li>One head, transparent</li><li>1-ply, 10 mil (0.25 mm) thick, for durability and a reliable response</li><li>Quick and easy to fit</li></ul><p><strong>Good to know:</strong> it fits only the Wambooka Diamond darbuka (8.75 in).</p>"
+      },
+      "ar": {
+        "title": "جلد دربكة Wambooka Diamond، شفاف، 8.75 إنش",
+        "body": "<p>جلد بديل شفاف لدربكة Wambooka Diamond، مصنوع حسب المواصفات الأصلية ليعطي القياس والإحساس نفسيهما.</p><ul><li>جلد واحد، شفاف</li><li>طبقة واحدة بسماكة 10 mil (نحو 0.25 مم)، متين وثابت الاستجابة</li><li>تركيبه سريع وسهل</li></ul><p><strong>للعلم:</strong> يناسب دربكة Wambooka Diamond فقط (8.75 إنش).</p>",
+        "type": "جلود دربكة"
+      },
+      "publish": true
+    },
+    {
+      "handle": "gawharet-el-fan-darbuka-heads-2-pack",
+      "asin": "B0DVZJLL7H",
+      "source": "ae",
+      "vendor": "Gawharet El Fan",
+      "type": "Darbuka skins",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.12,
+      "kg_source": "amazon (Amazon)",
+      "cost": 27.14,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Gawharet El Fan Darbuka Heads, 8.75–9 in, Pack of 2",
+        "body": "<p>Two identical replacement heads by Gawharet El Fan for the darbuka (doumbek).</p><ul><li>Pack of 2 identical heads</li><li>Transparent (clear)</li><li>For darbukas with an 8.75–9 in (about 22–23 cm) head</li></ul><p><strong>Good to know:</strong> measure your darbuka first. The size is the inside diameter of the head, or the outer diameter of the rim it sits on.</p>"
+      },
+      "ar": {
+        "title": "جلود دربكة Gawharet El Fan، ⁦8.75–9⁩ إنش، عبوة من 2",
+        "body": "<p>جلدان بديلان متطابقان من Gawharet El Fan للدربكة.</p><ul><li>عبوة من جلدين متطابقين</li><li>شفاف</li><li>للدربكة بجلد قياسه ⁦8.75–9⁩ إنش (نحو ⁦22–23⁩ سم)</li></ul><p><strong>للعلم:</strong> قِس دربكتك أولًا. القياس هو القطر الداخلي للجلد، أو القطر الخارجي للحافة التي يرتكز عليها.</p>",
+        "type": "جلود دربكة"
+      },
+      "publish": true
+    },
+    {
+      "handle": "yamaha-gl1-guitalele-gig-bag",
+      "asin": "B000RVYMWE",
+      "source": "ae",
+      "vendor": "Yamaha",
+      "type": "Classical guitar",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.45,
+      "kg_source": "amazon (Amazon)",
+      "cost": 122.26,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Yamaha GL1 Guitalele with Gig Bag",
+        "body": "<p>A small six-string guitar with nylon strings, about the size of a baritone ukulele. Easy to hold and easy to take along.</p><ul><li>Six nylon strings, like a classical guitar</li><li>Ukulele-sized wooden body</li><li>Meranti back, natural finish</li><li>Comes with a gig bag</li></ul>"
+      },
+      "ar": {
+        "title": "غيتاليلي Yamaha GL1 مع حقيبة",
+        "body": "<p>غيتار صغير بستة أوتار من النايلون، بحجم يوكوليلي الباريتون تقريبًا. سهل الحمل وسهل أن تأخذه معك.</p><ul><li>ستة أوتار نايلون، مثل الغيتار الكلاسيكي</li><li>جسم خشبي بحجم اليوكوليلي</li><li>ظهر من خشب الميرانتي، بلون الخشب الطبيعي</li><li>يأتي مع حقيبة</li></ul>",
+        "type": "غيتار كلاسيك"
+      },
+      "publish": true
+    },
+    {
+      "handle": "yamaha-f310-acoustic-guitar-natural",
+      "asin": "B08Z3C1GRM",
+      "source": "ae",
+      "vendor": "Yamaha",
+      "type": "Acoustic guitar",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 4.0,
+      "kg_source": "estimate",
+      "cost": 174.27,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Yamaha F310 Acoustic Guitar, Natural",
+        "body": "<p>A full-size, six-string acoustic guitar made for beginners and intermediate players. The dreadnought body gives a loud, warm sound and is comfortable to play.</p><ul><li>Dreadnought body in a natural finish</li><li>Spruce top with meranti back and sides</li><li>Rosewood bridge</li><li>Smooth fretboard, comfortable for learning chords</li></ul>"
+      },
+      "ar": {
+        "title": "غيتار أكوستيك Yamaha F310، طبيعي",
+        "body": "<p>غيتار أكوستيك بستة أوتار وبالحجم الكامل، مصمّم للمبتدئين ومتوسطي المستوى. جسمه من نوع Dreadnought يعطي صوتًا قويًا ودافئًا، والعزف عليه مريح.</p><ul><li>جسم Dreadnought بلون الخشب الطبيعي</li><li>وجه من خشب السبروس، وظهر وجوانب من خشب الميرانتي</li><li>فرس (bridge) من خشب الروزوود</li><li>زند ناعم ومريح لتعلّم الأكوردات</li></ul>",
+        "type": "غيتار أكوستيك"
+      },
+      "publish": true
+    },
+    {
+      "handle": "fender-fa-25-dreadnought-acoustic-guitar-sunburst",
+      "asin": "B0CSLX9D2D",
+      "source": "ae",
+      "vendor": "Fender",
+      "type": "Acoustic guitar",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 4.0,
+      "kg_source": "estimate",
+      "cost": 171.51,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Fender FA-25 Dreadnought Acoustic Guitar, Sunburst",
+        "body": "<p>A dreadnought acoustic guitar from Fender's Alternative series, easy to play and a good choice for beginners.</p><ul><li>Easy-to-play C-shape neck with a walnut fingerboard</li><li>Laminate body with a spruce top and basswood back, walnut bridge</li><li>Sealed-gear tuning machines for accurate tuning</li><li>Satin finish in sunburst, with body and neck binding for durability</li></ul>"
+      },
+      "ar": {
+        "title": "غيتار أكوستيك Fender FA-25 Dreadnought، Sunburst",
+        "body": "<p>غيتار أكوستيك بجسم Dreadnought من سلسلة Fender Alternative، سهل العزف وخيار جيد للمبتدئين.</p><ul><li>زند مريح على شكل C مع لوح أصابع من خشب الجوز</li><li>جسم من الخشب المصفّح (laminate): وجه من السبروس وظهر من الباسوود، وفرس من خشب الجوز</li><li>مفاتيح دوزان مغلقة تحافظ على دقّة الدوزان</li><li>طلاء ساتان بلون Sunburst، مع حواف مدعّمة على الجسم والزند لمتانة أكبر</li></ul>",
+        "type": "غيتار أكوستيك"
+      },
+      "publish": true
+    },
+    {
+      "handle": "squier-mini-stratocaster-black",
+      "asin": "B07BBW41Z1",
+      "source": "ae",
+      "vendor": "Squier",
+      "type": "Electric guitar",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 4.0,
+      "kg_source": "estimate",
+      "cost": 227.71,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Squier Mini Stratocaster Electric Guitar, Black",
+        "body": "<p>A smaller Stratocaster, designed by Fender, for beginners and anyone who wants a reduced-size guitar with the classic look and sound.</p><ul><li>Thin, lightweight poplar body and an easy C-shape neck</li><li>578 mm (22.75 in) scale length, Indian laurel fingerboard</li><li>Three single-coil pickups with a 5-way switch</li><li>Hardtail bridge and sealed die-cast tuners that hold the tuning well</li></ul><p><strong>Good to know:</strong> like every electric guitar, it needs an amplifier.</p>"
+      },
+      "ar": {
+        "title": "غيتار كهربائي Squier Mini Stratocaster، أسود",
+        "body": "<p>نسخة أصغر من غيتار Stratocaster، من تصميم Fender، للمبتدئين ولكل من يريد غيتارًا بحجم أصغر بالشكل والصوت الكلاسيكيين.</p><ul><li>جسم رفيع وخفيف من خشب الحور، وزند مريح على شكل C</li><li>طول الوتر 578 مم (22.75 إنش)، ولوح أصابع من خشب Indian laurel</li><li>ثلاثة لاقطات صوت (pickups) من نوع single-coil مع مفتاح بخمس وضعيات</li><li>فرس ثابت (hardtail) ومفاتيح دوزان مغلقة تحافظ على الدوزان</li></ul><p><strong>للعلم:</strong> مثل كل غيتار كهربائي، يحتاج إلى مضخّم (amp).</p>",
+        "type": "غيتار كهربائي"
+      },
+      "publish": true
+    },
+    {
+      "handle": "squier-debut-stratocaster-hss-sea-foam-green",
+      "asin": "B0DTBJ7B63",
+      "source": "ae",
+      "vendor": "Squier",
+      "type": "Electric guitar",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 4.5,
+      "kg_source": "estimate",
+      "cost": 245.78,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Squier Debut Stratocaster HSS, Sea Foam Green",
+        "body": "<p>A Stratocaster from Squier's Debut Collection, designed by Fender for beginners: comfortable to hold, with a wide range of classic Strat sounds.</p><ul><li>Slim C-shape neck, laurel fingerboard and a thin, lightweight body</li><li>Two single-coil pickups and a humbucker at the bridge (HSS), with a 5-way switch</li><li>Tremolo bridge with a removable arm for bending notes</li><li>Sealed-gear tuners and chrome hardware, white pickguard</li></ul><p><strong>Good to know:</strong> like every electric guitar, it needs an amplifier.</p>"
+      },
+      "ar": {
+        "title": "غيتار كهربائي Squier Debut Stratocaster HSS، Sea Foam Green",
+        "body": "<p>غيتار Stratocaster من مجموعة Squier Debut، صمّمته Fender للمبتدئين: مريح في اليد، ويعطي أصوات Strat الكلاسيكية المتنوّعة.</p><ul><li>زند رفيع على شكل C، لوح أصابع من خشب laurel، وجسم رفيع وخفيف</li><li>لاقطتا صوت single-coil ولاقطة humbucker عند الفرس (HSS)، مع مفتاح بخمس وضعيات</li><li>فرس تريمولو مع ذراع قابلة للفك لتمويج النغمات</li><li>مفاتيح دوزان مغلقة وقطع معدنية مطلية بالكروم، وواقي أبيض (pickguard)</li></ul><p><strong>للعلم:</strong> مثل كل غيتار كهربائي، يحتاج إلى مضخّم (amp).</p>",
+        "type": "غيتار كهربائي"
+      },
+      "publish": true
+    },
+    {
+      "handle": "yamaha-psr-a350-oriental-keyboard-adapter",
+      "asin": "B07J1QLCZT",
+      "source": "ae",
+      "vendor": "Yamaha",
+      "type": "Keyboard",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 6.5,
+      "kg_source": "amazon (Amazon)",
+      "cost": 364.87,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Yamaha PSR-A350 Oriental Keyboard with Adapter",
+        "body": "<p>Yamaha's oriental keyboard with 61 keys, a portable instrument for beginners. It comes with its power adapter.</p><ul><li>Made for Arabic music: scale settings for playing the maqamat with quarter tones</li><li>61 keys, black</li><li>Includes the Yamaha PA-130B power adapter</li><li>The adapter works on 100–240 V, with a cable of about 2.5 m</li></ul>"
+      },
+      "ar": {
+        "title": "كيبورد شرقي Yamaha PSR-A350 مع محوّل كهرباء",
+        "body": "<p>الكيبورد الشرقي من Yamaha بـ61 مفتاحًا، آلة محمولة مناسبة للمبتدئين. يأتي مع محوّل الكهرباء الخاص به.</p><ul><li>مصمّم للموسيقى العربية: إعدادات للمقامات تتيح العزف بأرباع الصوت</li><li>61 مفتاحًا، باللون الأسود</li><li>معه محوّل الكهرباء Yamaha PA-130B</li><li>المحوّل يعمل على ⁦100–240⁩ فولت، وطول سلكه نحو 2.5 متر</li></ul>",
+        "type": "كيبورد"
+      },
+      "publish": true
+    },
+    {
+      "handle": "korg-pa700-oriental-arranger-keyboard",
+      "asin": "B075DGG7KC",
+      "source": "ae",
+      "vendor": "Korg",
+      "type": "Keyboard",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 14.06,
+      "kg_source": "amazon (Amazon)",
+      "cost": 1477.77,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Korg Pa700 Oriental Arranger Keyboard, 61 Keys",
+        "body": "<p>The oriental version of Korg's Pa700 arranger, with extra sounds and styles for Middle Eastern music. It plays Arabic scales with quarter tones, for the studio or the stage.</p><ul><li>Quarter-tone scales: choose and create tunings on the fly</li><li>Over 370 styles and over 1,700 sounds</li><li>DNC sound engine for natural, expressive playing, plus KAOSS effects and MIDI control</li><li>Large TouchView touch screen, 61 keys, red and black</li></ul>"
+      },
+      "ar": {
+        "title": "كيبورد أرنجر Korg Pa700 Oriental، 61 مفتاحًا",
+        "body": "<p>النسخة الشرقية من كيبورد الأرنجر Korg Pa700، مع أصوات وإيقاعات إضافية للموسيقى الشرقية. تعزف المقامات العربية بأرباع الصوت، في الاستوديو أو على المسرح.</p><ul><li>سلالم بأرباع الصوت: تختار الدوزان أو تصنعه أثناء العزف</li><li>أكثر من 370 إيقاعًا (style) وأكثر من 1700 صوت</li><li>محرّك صوت DNC لعزف طبيعي ومعبّر، مع مؤثرات KAOSS والتحكّم عبر MIDI</li><li>شاشة لمس كبيرة TouchView، و61 مفتاحًا، باللونين الأحمر والأسود</li></ul>",
+        "type": "كيبورد"
+      },
+      "publish": true
+    },
+    {
+      "handle": "yamaha-psr-f52-keyboard-61-keys",
+      "asin": "B09HCGCPNP",
+      "source": "ae",
+      "vendor": "Yamaha",
+      "type": "Keyboard",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 4.18,
+      "kg_source": "amazon (Amazon)",
+      "cost": 146.14,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Yamaha PSR-F52 Keyboard, 61 Keys",
+        "body": "<p>A portable 61-key keyboard for players of every level, with plenty of sounds and rhythms from around the world.</p><ul><li>136 voices, 41 of them world instruments, plus 8 drum kits</li><li>158 accompaniment styles, including 75 world styles</li><li>69 built-in songs to play along with</li><li>Built-in speaker and a headphone jack</li></ul>"
+      },
+      "ar": {
+        "title": "كيبورد Yamaha PSR-F52، 61 مفتاحًا",
+        "body": "<p>كيبورد محمول بـ61 مفتاحًا لكل المستويات، فيه أصوات وإيقاعات كثيرة من موسيقى العالم.</p><ul><li>136 صوتًا، منها 41 صوتًا لآلات من العالم، و8 أطقم طبول</li><li>158 إيقاع مرافقة (style)، منها 75 إيقاعًا من موسيقى العالم</li><li>69 أغنية مسجّلة للعزف معها</li><li>سمّاعة مدمجة ومخرج لسمّاعات الرأس</li></ul>",
+        "type": "كيبورد"
+      },
+      "publish": true
+    },
+    {
+      "handle": "yamaha-pss-e30-mini-keyboard-white",
+      "asin": "B07Z2S9666",
+      "source": "ae",
+      "vendor": "Yamaha",
+      "type": "Keyboard",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.2,
+      "kg_source": "amazon (Amazon)",
+      "cost": 80.05,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Yamaha PSS-E30 Mini Keyboard, White",
+        "body": "<p>A small 37-key keyboard for beginners, light and easy to carry, with fun sounds to explore.</p><ul><li>47 instrument voices and 74 sound effects, with a quiz mode to guess the sound</li><li>28 accompaniment styles and the Smart Chord function</li><li>Built-in speaker and a headphone jack</li><li>Runs on batteries or USB power, about 51 cm wide</li></ul><p><strong>Good to know:</strong> the USB power adapter is sold separately.</p>"
+      },
+      "ar": {
+        "title": "كيبورد صغير Yamaha PSS-E30، أبيض",
+        "body": "<p>كيبورد صغير بـ37 مفتاحًا للمبتدئين، خفيف وسهل الحمل، فيه أصوات ممتعة للاكتشاف.</p><ul><li>47 صوتًا لآلات موسيقية و74 مؤثرًا صوتيًا، مع لعبة لتخمين الصوت</li><li>28 إيقاع مرافقة (style) وخاصية Smart Chord</li><li>سمّاعة مدمجة ومخرج لسمّاعات الرأس</li><li>يعمل على البطاريات أو عبر USB، وعرضه نحو 51 سم</li></ul><p><strong>للعلم:</strong> محوّل الكهرباء USB يُباع منفصلًا.</p>",
+        "type": "كيبورد"
+      },
+      "publish": true
+    },
+    {
+      "handle": "casio-ct-s100-keyboard-61-keys",
+      "asin": "B07YZNGBBV",
+      "source": "ae",
+      "vendor": "Casio",
+      "type": "Keyboard",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 3.3,
+      "kg_source": "amazon (Amazon)",
+      "cost": 207.87,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Casio CT-S100 Slim Keyboard, 61 Keys",
+        "body": "<p>The entry-level model of Casio's Casiotone series: slim, light and easy to use, at home or on the go.</p><ul><li>61 piano-style keys, 122 tones, 61 rhythms and 60 songs</li><li>5 tone buttons for quick access to the sounds you use most</li><li>Built-in handle, runs on the included AC adapter or 6 AA batteries (up to 16 hours)</li><li>USB port to connect to a computer or mobile device, and a headphone jack</li></ul>"
+      },
+      "ar": {
+        "title": "كيبورد Casio CT-S100 النحيف، 61 مفتاحًا",
+        "body": "<p>الطراز الأول في سلسلة Casiotone من Casio: نحيف وخفيف وسهل الاستعمال، في البيت أو خارجه.</p><ul><li>61 مفتاحًا بحجم مفاتيح البيانو، و122 صوتًا و61 إيقاعًا و60 أغنية</li><li>5 أزرار للوصول السريع إلى الأصوات التي تستعملها أكثر</li><li>مقبض مدمج، ويعمل على محوّل الكهرباء المرفق أو على 6 بطاريات AA (حتى 16 ساعة)</li><li>منفذ USB للوصل بالكمبيوتر أو الهاتف، ومخرج لسمّاعات الرأس</li></ul>",
+        "type": "كيبورد"
+      },
+      "publish": true
+    },
+    {
+      "handle": "roland-go-piano-61-key-keyboard",
+      "asin": "B01MS4980F",
+      "source": "ae",
+      "vendor": "Roland",
+      "type": "Keyboard",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 3.9,
+      "kg_source": "amazon (Amazon)",
+      "cost": 353.71,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Roland GO:PIANO Portable Keyboard, 61 Keys",
+        "body": "<p>A portable 61-key digital piano from Roland, made for beginners.</p><ul><li>61 touch-sensitive keys</li><li>Bluetooth audio and MIDI connection</li><li>Built-in recorder to listen back to your playing</li></ul>"
+      },
+      "ar": {
+        "title": "كيبورد Roland GO:PIANO المحمول، 61 مفتاحًا",
+        "body": "<p>بيانو رقمي محمول من Roland بـ61 مفتاحًا، مصمّم للمبتدئين.</p><ul><li>61 مفتاحًا تتحسّس قوة الضغط</li><li>اتصال Bluetooth للصوت وللـMIDI</li><li>مسجّل مدمج لتسمع عزفك من جديد</li></ul>",
+        "type": "كيبورد"
+      },
+      "publish": true
+    },
+    {
+      "handle": "akai-mpk-mini-iv-midi-keyboard-25-keys",
+      "asin": "B0FT3C66LB",
+      "source": "ae",
+      "vendor": "Akai Professional",
+      "type": "MIDI controllers",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.0,
+      "kg_source": "amazon (Amazon)",
+      "cost": 121.31,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Akai MPK Mini IV MIDI Keyboard Controller, 25 Keys",
+        "body": "<p>A compact MIDI keyboard for making beats and music on a computer, for beginners and producers alike.</p><ul><li>25 velocity-sensitive mini keys, pitch and modulation wheels</li><li>8 MPC pads, sensitive to velocity and pressure, with colored lights</li><li>8 assignable 360° knobs, a color screen, arpeggiator and Chord and Scale modes</li><li>USB-C (powered by USB) and full-size MIDI Out, works with Mac, PC and mobile; comes with the Studio Instrument Collection, 1,000+ sounds</li></ul><p><strong>Good to know:</strong> it is a controller: the sounds come from music software on your computer or device.</p>"
+      },
+      "ar": {
+        "title": "لوحة مفاتيح MIDI من Akai MPK Mini IV، 25 مفتاحًا",
+        "body": "<p>لوحة مفاتيح MIDI صغيرة لصناعة الإيقاعات والموسيقى على الكمبيوتر، للمبتدئين والمنتجين.</p><ul><li>25 مفتاحًا صغيرًا تتحسّس قوة الضغط، مع عجلتي pitch وmodulation</li><li>8 أزرار طبول (pads) من نوع MPC تتحسّس قوة الضرب والضغط، بإضاءة ملوّنة</li><li>8 مقابض دوّارة ⁦360°⁩ قابلة للبرمجة، شاشة ملوّنة، أربيجياتور ووضعا Chord وScale</li><li>منفذ USB-C (يعمل بطاقة USB) ومخرج MIDI Out بالحجم الكامل، ويعمل مع Mac وPC والهاتف؛ ومعه برنامج Studio Instrument Collection بأكثر من 1000 صوت</li></ul><p><strong>للعلم:</strong> هذه لوحة تحكّم: الأصوات تأتي من برامج الموسيقى على الكمبيوتر أو الجهاز.</p>",
+        "type": "وحدات تحكّم MIDI"
+      },
+      "publish": true
+    },
+    {
+      "handle": "yamaha-yds-120-digital-saxophone",
+      "asin": "B0C29CYLV2",
+      "source": "ae",
+      "vendor": "Yamaha",
+      "type": "Saxophone",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 1.5,
+      "kg_source": "estimate",
+      "cost": 809.8,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Yamaha YDS-120 Digital Saxophone",
+        "body": "<p>A digital saxophone with the same key layout as an acoustic saxophone. Plug in headphones to practice quietly, at any time.</p><ul><li>Specially designed recorder-style mouthpiece, black body and keys</li><li>Saxophone voices and other sounds, with effects, and 15 volume steps</li><li>Headphone output, AUX input and USB micro-B for MIDI</li><li>Runs on 4 AAA batteries or USB power</li></ul><p><strong>Good to know:</strong> no case is included.</p>"
+      },
+      "ar": {
+        "title": "ساكسوفون رقمي Yamaha YDS-120",
+        "body": "<p>ساكسوفون رقمي بترتيب المفاتيح نفسه الموجود في الساكسوفون العادي. صِل سمّاعات الرأس وتمرّن بهدوء في أي وقت.</p><ul><li>مبسم مصمّم خصيصًا يشبه مبسم الريكوردر، وجسم ومفاتيح باللون الأسود</li><li>أصوات ساكسوفون وأصوات أخرى مع مؤثرات، و15 درجة لضبط الصوت</li><li>مخرج لسمّاعات الرأس، ومدخل AUX، ومنفذ USB micro-B للـMIDI</li><li>يعمل على 4 بطاريات AAA أو عبر USB</li></ul><p><strong>للعلم:</strong> لا تأتي معه علبة.</p>",
+        "type": "ساكسوفون"
+      },
+      "publish": true
+    },
+    {
+      "handle": "korg-tm70-tuner-metronome",
+      "asin": "B0CSGYTQH4",
+      "source": "ae",
+      "vendor": "Korg",
+      "type": "Tuners & metronomes",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.2,
+      "kg_source": "estimate",
+      "cost": 40.19,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Korg TM70 Tuner and Metronome",
+        "body": "<p>A chromatic tuner and a metronome in one small device, small enough for a pocket, for musicians of every level.</p><ul><li>Tuner with an LCD needle meter and a wide range (C1–C8), for all instruments</li><li>Transpose for Bb, Eb and F wind instruments</li><li>Metronome from 30 to 252 BPM, 15 rhythms, with Pendulum, Full Step and Tap Tempo settings</li><li>Foldable stand, 250 hours of battery life, and a 3.5 mm jack for a contact mic (sold separately)</li></ul>"
+      },
+      "ar": {
+        "title": "جهاز دوزان ومترونوم Korg TM70",
+        "body": "<p>جهاز دوزان كروماتيكي ومترونوم في جهاز واحد صغير يدخل في الجيب، للعازفين من كل المستويات.</p><ul><li>دوزان بمؤشّر إبرة على شاشة LCD ومدى واسع (⁦C1–C8⁩)، لكل الآلات</li><li>خاصية transpose لآلات النفخ بطبقات Bb وEb وF</li><li>مترونوم من 30 إلى 252 نبضة في الدقيقة (BPM)، و15 إيقاعًا، مع أوضاع Pendulum وFull Step وTap Tempo</li><li>حامل قابل للطي، وبطارية تدوم 250 ساعة، ومدخل ⁦3.5⁩ مم لميكروفون لاقط (يُباع منفصلًا)</li></ul>",
+        "type": "دوزان ومترونوم"
+      },
+      "publish": true
+    },
+    {
+      "handle": "arabic-calligraphy-set-reed-qalam-black-ink",
+      "asin": "B0G3MBTHXH",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Arabic calligraphy",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "amazon (Amazon)",
+      "cost": 23.14,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Arabic Calligraphy Set: Reed Qalam, Black Ink and Inkwell",
+        "body": "<p>A starter set for Arabic calligraphy, with a traditional reed pen cut for the thick and thin strokes of Arabic script.</p><ul><li>Hand-cut reed pen (qalam), made for Thuluth and Naskh</li><li>Black calligraphy ink and an inkwell</li><li>Glossy A4 practice papers</li><li>For beginners and experienced calligraphers</li></ul>"
+      },
+      "ar": {
+        "title": "طقم خط عربي: قلم قصب وحبر أسود ودواة",
+        "body": "<p>طقم لبداية الخط العربي، فيه قلم قصب تقليدي مقطوط ليعطي الضربات العريضة والرفيعة التي يحتاجها الحرف العربي.</p><ul><li>قلم قصب مقطوط يدويًا، مناسب لخط الثلث وخط النسخ</li><li>حبر أسود للخط ودواة</li><li>أوراق تمرين لامعة بحجم A4</li><li>للمبتدئين وللخطاطين أصحاب الخبرة</li></ul>",
+        "type": "خط عربي"
+      },
+      "publish": true
+    },
+    {
+      "handle": "reed-qalam-set-10-pens-with-case",
+      "asin": "B0FNLHV396",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Arabic calligraphy",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "amazon (Amazon)",
+      "cost": 29.95,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Traditional Reed Qalam Set, 10 Pens with Case",
+        "body": "<p>Hand-cut pens of natural reed for Arabic calligraphy, kept together in a clear case that protects them.</p><ul><li>10 reed pens (qalams) in different sizes, for different writing styles</li><li>Each nib is carved by hand for smooth ink flow and good control of the stroke</li><li>Clear, sturdy case to keep the pens organized</li><li>For beginners and experienced calligraphers</li></ul>"
+      },
+      "ar": {
+        "title": "طقم أقلام قصب تقليدية، 10 أقلام مع علبة",
+        "body": "<p>أقلام من القصب الطبيعي للخط العربي، مقطوطة باليد، ومحفوظة معًا في علبة شفافة تحميها.</p><ul><li>10 أقلام قصب بمقاسات مختلفة تناسب أنواع الخطوط</li><li>سنّ كل قلم منحوت باليد لانسياب الحبر والتحكّم في الضربة</li><li>علبة شفافة متينة ترتّب الأقلام وتحميها</li><li>للمبتدئين وللخطاطين أصحاب الخبرة</li></ul>",
+        "type": "خط عربي"
+      },
+      "publish": true
+    },
+    {
+      "handle": "arabic-calligraphy-tool-box-qalams-ink",
+      "asin": "B0DKCWSF6Y",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Arabic calligraphy",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.5,
+      "kg_source": "amazon (Amazon)",
+      "cost": 23.28,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Arabic Calligraphy Tool Box: Qalams, Marker, Ink and Paper",
+        "body": "<p>A box of the basic tools for Arabic calligraphy, for teens and adults who want to start or keep practicing.</p><ul><li>Bamboo qalams and a javi qalam</li><li>A khattat calligraphy marker</li><li>Glossy practice sheets</li><li>Black ink with an inkwell</li></ul>"
+      },
+      "ar": {
+        "title": "صندوق أدوات الخط العربي: أقلام قصب وماركر وحبر وورق",
+        "body": "<p>صندوق يجمع الأدوات الأساسية للخط العربي، لليافعين والكبار الذين يريدون البدء أو مواصلة التمرين.</p><ul><li>أقلام قصب (بامبو) وقلم جاوي</li><li>قلم ماركر خطاط</li><li>أوراق كوشيه لامعة للتمرين</li><li>حبر أسود مع دواة</li></ul>",
+        "type": "خط عربي"
+      },
+      "publish": true
+    },
+    {
+      "handle": "pilot-parallel-pen-arabic-cut-nib",
+      "asin": "B0G2SX4LBW",
+      "source": "ae",
+      "vendor": "Pilot",
+      "type": "Arabic calligraphy",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.2,
+      "kg_source": "estimate",
+      "cost": 17.7,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Pilot Parallel Pen with Arabic-Cut Nib",
+        "body": "<p>A Pilot Parallel calligraphy pen whose stainless steel nib has been cut by a calligrapher for Arabic script, for crisp thick and thin strokes.</p><ul><li>Stainless steel nib cut for Arabic calligraphy</li><li>Parallel-plate nib for even ink flow and sharp lines</li><li>Comes with black and red ink cartridges</li><li>Cleaning tool and cleaning paper included</li></ul>"
+      },
+      "ar": {
+        "title": "قلم Pilot Parallel بسنّ مقصوص للخط العربي",
+        "body": "<p>قلم خط من Pilot Parallel، سنّه من الستانلس ستيل قصّه خطاط ليناسب الحرف العربي، فيعطي ضربات عريضة ورفيعة واضحة.</p><ul><li>سنّ معدني مقصوص للخط العربي</li><li>سنّ من صفيحتين متوازيتين لتدفّق منتظم للحبر وخطوط حادة</li><li>يأتي مع عبوات حبر (خراطيش) سوداء وحمراء</li><li>أداة تنظيف وورقة تنظيف</li></ul>",
+        "type": "خط عربي"
+      },
+      "publish": true
+    },
+    {
+      "handle": "artline-supreme-arabic-calligraphy-pens-3mm-12",
+      "asin": "B0897T4N77",
+      "source": "ae",
+      "vendor": "Artline",
+      "type": "Arabic calligraphy",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.17,
+      "kg_source": "amazon (Amazon)",
+      "cost": 10.54,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Artline Supreme Arabic Calligraphy Pens, 3 mm, Set of 12",
+        "body": "<p>Black calligraphy pens with a chisel tip, made for Arabic script. Comfortable to hold and easy to control, for beginners and experienced calligraphers.</p><ul><li>12 pens, 3.0 mm chisel tip</li><li>Designed for Arabic calligraphy</li><li>Ergonomic shape for comfortable, controlled writing</li><li>Black ink</li></ul>"
+      },
+      "ar": {
+        "title": "أقلام خط عربي Artline Supreme، 3 مم، طقم من 12",
+        "body": "<p>أقلام خط برأس مشطوف (chisel) مصمّمة للحرف العربي، مريحة في اليد وسهلة التحكّم، للمبتدئين وللخطاطين أصحاب الخبرة.</p><ul><li>12 قلمًا برأس مشطوف عرضه 3 مم</li><li>مصمّمة خصيصًا للخط العربي</li><li>شكل مريح يساعد على الكتابة بثبات وتحكّم</li><li>حبر أسود</li></ul>",
+        "type": "خط عربي"
+      },
+      "publish": true
+    },
+    {
+      "handle": "arabic-calligraphy-workbook-with-pen",
+      "asin": "B0FB87Y5L7",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Arabic calligraphy",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.47,
+      "kg_source": "amazon (Amazon)",
+      "cost": 32.4,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Arabic Calligraphy Workbook with Calligraphy Pen",
+        "body": "<p>A practice set for learning Arabic calligraphy step by step, for beginners and students of all ages.</p><ul><li>Printed A4 workbook with 30 practice pages</li><li>Exercises go from single letters to connected forms, words and phrases</li><li>Spiral-bound, so it opens flat on the desk</li><li>Comes with an Arabic calligraphy pen for daily practice</li></ul><p><strong>Good to know:</strong> the workbook comes in Ruq'ah or Diwani script.</p>"
+      },
+      "ar": {
+        "title": "كرّاسة تمارين الخط العربي مع قلم خط",
+        "body": "<p>مجموعة لتعلّم الخط العربي خطوة بخطوة، للمبتدئين والطلاب ومحبّي الخط من مختلف الأعمار.</p><ul><li>كرّاسة تمارين مطبوعة بحجم A4، فيها 30 صفحة تدريب</li><li>تمارين متدرّجة من الحروف المفردة إلى أشكالها المتصلة، ثم الكلمات والعبارات</li><li>مجلّدة بسلك لولبي فتنفتح مسطّحة على الطاولة</li><li>معها قلم خط عربي للتمرين اليومي</li></ul><p><strong>للعلم:</strong> الكرّاسة تأتي بخط الرقعة أو بخط الديواني.</p>",
+        "type": "خط عربي"
+      },
+      "publish": true
+    },
+    {
+      "handle": "naskh-calligraphy-self-learning-kit",
+      "asin": "B0DKCKJ8YD",
+      "source": "ae",
+      "vendor": "Kashkoul Market",
+      "type": "Arabic calligraphy",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.6,
+      "kg_source": "estimate",
+      "cost": 46.02,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Naskh Calligraphy Self-Learning Kit",
+        "body": "<p>A course in a box for learning Naskh script on your own, with a workbook and the tools to practice from the first lesson.</p><ul><li>Naskh workbook with step-by-step lessons and examples</li><li>Bamboo qalams, a javi qalam and a khattat marker</li><li>Glossy practice sheets</li><li>Black ink with an inkwell</li></ul>"
+      },
+      "ar": {
+        "title": "طقم تعلّم خط النسخ ذاتيًا",
+        "body": "<p>دورة في صندوق لتعلّم خط النسخ وحدك، فيها كرّاسة شرح والأدوات اللازمة للتمرين من الدرس الأول.</p><ul><li>كرّاسة خط النسخ مع دروس متدرّجة وأمثلة</li><li>أقلام قصب (بامبو) وقلم جاوي وقلم ماركر خطاط</li><li>أوراق كوشيه لامعة للتمرين</li><li>حبر أسود مع دواة</li></ul>",
+        "type": "خط عربي"
+      },
+      "publish": true
+    },
+    {
+      "handle": "qalam-ezzi-arabic-calligraphy-ink-with-liqa",
+      "asin": "B0F2Q18VS6",
+      "source": "ae",
+      "vendor": "Qalam Ezzi",
+      "type": "Arabic calligraphy",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.2,
+      "kg_source": "estimate",
+      "cost": 7.9,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Qalam Ezzi Arabic Calligraphy Ink with Liqa",
+        "body": "<p>Black ink for Arabic calligraphy, with silk thread (liqa) to put in the inkwell, for traditional Arabic writing.</p><ul><li>Bottle of black liquid ink made for Arabic calligraphy, 30 ml</li><li>Silk thread (liqa) for the inkwell</li><li>Small bottle and jar, easy to store and carry</li><li>For beginners and experienced calligraphers</li></ul>"
+      },
+      "ar": {
+        "title": "حبر خط عربي Qalam Ezzi مع ليقة",
+        "body": "<p>حبر أسود للخط العربي، مع ليقة من خيوط الحرير توضع في الدواة، للكتابة على الطريقة التقليدية.</p><ul><li>زجاجة حبر أسود سائل مخصّص للخط العربي، 30 مل</li><li>ليقة حرير للدواة</li><li>زجاجة وعلبة صغيرتان، سهلتا الحفظ والحمل</li><li>للمبتدئين وللخطاطين أصحاب الخبرة</li></ul>",
+        "type": "خط عربي"
+      },
+      "publish": true
+    },
+    {
+      "handle": "easypen-ahar-paper-70x100-cm",
+      "asin": "B0968L97F7",
+      "source": "ae",
+      "vendor": "EASYPEN",
+      "type": "Arabic calligraphy",
+      "tags": [],
+      "stock": "on_order",
+      "kg": {
+        "Cream": 0.5,
+        "Chickpea": 0.5
+      },
+      "kg_source": "estimate",
+      "cost": {
+        "Cream": 49.01,
+        "Chickpea": 49.01
+      },
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "EASYPEN Ahar Paper for Arabic Calligraphy, 70 × 100 cm",
+        "body": "<p>Ahar paper for Arabic calligraphy, prepared in a workshop in Istanbul by people with long experience of the art.</p><ul><li>Coated the traditional way, with natural egg and starch</li><li>After writing, you can scrape a letter off with a knife and correct it</li><li>Large 70 × 100 cm sheets, about 90 g, 2 sheets per pack</li><li>Two colors: Cream or Chickpea</li></ul>"
+      },
+      "ar": {
+        "title": "ورق مقهّر EASYPEN للخط العربي، ⁦70 × 100⁩ سم",
+        "body": "<p>ورق للخط العربي يُحضَّر في مشغل في إسطنبول، بخبرة طويلة في فن الخط.</p><ul><li>مقهّر على الطريقة التقليدية بالبيض والنشاء الطبيعيين</li><li>بعد الكتابة يمكنك كشط الحرف بالسكين وتصحيحه</li><li>أوراق كبيرة ⁦70 × 100⁩ سم، وزنها حوالي 90 غرامًا، ورقتان في كل عبوة</li><li>لونان: كريمي أو حمّصي</li></ul>",
+        "type": "خط عربي"
+      },
+      "publish": true,
+      "merge_variants": {
+        "option": "Color",
+        "values": [
+          {
+            "asin": "B0968L97F7",
+            "name": "Cream"
+          },
+          {
+            "asin": "B0968NGP3W",
+            "name": "Chickpea"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Color",
+          "ar": "اللون",
+          "values": [
+            {
+              "name": "Cream",
+              "ar": "كريمي"
+            },
+            {
+              "name": "Chickpea",
+              "ar": "حمّصي"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "higgins-sepia-calligraphy-ink-74ml",
+      "asin": "B011PSY8DK",
+      "source": "ae",
+      "vendor": "Higgins",
+      "type": "Inks & pens",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.15,
+      "kg_source": "estimate",
+      "cost": 12.53,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Higgins Sepia Calligraphy Ink, 74 ml",
+        "body": "<p>A sepia-brown calligraphy ink for dip pens and brushes, on paper, board and film.</p><ul><li>Water-based ink made from a blend of dyes: diluted with distilled water, it gives a wash with its own undertones</li><li>Free-flowing and fadeproof, dries in a medium time to a matte sheen</li><li>Rinse your tools in tap water right after use</li><li>74 ml (2.5 oz) bottle, made in the USA</li></ul><p><strong>Good to know:</strong> the ink is not waterproof.</p>"
+      },
+      "ar": {
+        "title": "حبر خط Higgins بلون السيبيا، 74 مل",
+        "body": "<p>حبر خط بنيّ بلون السيبيا، للريشة المعدنية (dip pen) والفرشاة، على الورق والكرتون وورق الفيلم.</p><ul><li>حبر مائي من مزيج أصباغ، وإذا خُفّف بالماء المقطّر أعطى طبقة شفافة بدرجات لونية مميّزة</li><li>ينساب بسهولة ولا يبهت، ويجفّ في وقت متوسط بلمسة مطفية</li><li>اغسل أدواتك بماء الحنفية بعد الاستعمال مباشرة</li><li>زجاجة 74 مل، صُنع في الولايات المتحدة</li></ul><p><strong>للعلم:</strong> الحبر غير مقاوم للماء.</p>",
+        "type": "أحبار وأقلام حبر"
+      },
+      "publish": true
+    },
+    {
+      "handle": "winsor-newton-calligraphy-ink-set-6-colors",
+      "asin": "B0012F3HHU",
+      "source": "ae",
+      "vendor": "Winsor & Newton",
+      "type": "Inks & pens",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.63,
+      "kg_source": "amazon (Amazon)",
+      "cost": 54.46,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Winsor & Newton Calligraphy Ink Set, 6 Colors",
+        "body": "<p>An introductory set of calligraphy inks, bright and lightfast, for beginners and more advanced calligraphers.</p><ul><li>Six 30 ml bottles, each a different color</li><li>Transparent inks with a satin finish</li><li>For dip pens, brushes and airbrushes</li><li>Permanence rating AA or A</li></ul><p><strong>Good to know:</strong> the inks are not waterproof.</p>"
+      },
+      "ar": {
+        "title": "طقم أحبار خط Winsor & Newton، 6 ألوان",
+        "body": "<p>طقم أول من أحبار الخط، ألوانها زاهية وثابتة أمام الضوء، للمبتدئين وللخطاطين الأكثر خبرة.</p><ul><li>6 زجاجات بستة ألوان، سعة كل واحدة 30 مل</li><li>أحبار شفافة بلمسة نصف لامعة (ساتان)</li><li>للريشة المعدنية (dip pen) والفرشاة والإيربراش</li><li>درجة ثبات اللون AA أو A</li></ul><p><strong>للعلم:</strong> الأحبار غير مقاومة للماء.</p>",
+        "type": "أحبار وأقلام حبر"
+      },
+      "publish": true
+    },
+    {
+      "handle": "mustafa-jafar-naskh-script-for-beginners",
+      "asin": "0714114995",
+      "source": "ae",
+      "vendor": "British Museum Press",
+      "type": "Art technique",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.4,
+      "kg_source": "estimate",
+      "cost": 10.0,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Mustafa Ja'far, Arabic Calligraphy: Naskh Script for Beginners",
+        "body": "<p>A teach-yourself workbook that shows, stroke by stroke, how to write Naskh: one of the six major cursive Arabic scripts, and the one most used to copy the Qur'an.</p><ul><li>By Mustafa Ja'far, based on his workshops at the British Museum</li><li>An easy-to-follow guide for beginners</li><li>32 pages, paperback</li><li>Published by British Museum Press</li></ul><p><strong>Good to know:</strong> the book is in English.</p>"
+      },
+      "ar": {
+        "title": "كتاب تعلّم خط النسخ للمبتدئين، Mustafa Ja'far",
+        "body": "<p>كرّاسة للتعلّم الذاتي تشرح كتابة خط النسخ ضربةً ضربة. والنسخ من الخطوط العربية الستة الكبرى، وهو الخط الأكثر استعمالًا في نسخ المصحف.</p><ul><li>تأليف Mustafa Ja'far، استنادًا إلى ورش العمل التي قدّمها في المتحف البريطاني</li><li>دليل سهل المتابعة للمبتدئين</li><li>32 صفحة، غلاف ورقي</li><li>من منشورات British Museum Press</li></ul><p><strong>للعلم:</strong> الكتاب باللغة الإنجليزية.</p>",
+        "type": "تقنيات فنية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "naskh-calligraphy-practice-sheets-book",
+      "asin": "B0CR9PS368",
+      "source": "ae",
+      "vendor": "Arabic Calligraphy Store",
+      "type": "Art technique",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.37,
+      "kg_source": "amazon (Amazon)",
+      "cost": 19.13,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Naskh Calligraphy Practice Sheets",
+        "body": "<p>A step-by-step practice book for learning the Arabic alphabet in Naskh script, then using the letters in artistic designs.</p><ul><li>120 pages of clear illustrations and step-by-step lessons</li><li>25 artistic designs inspired by the Arabic alphabet</li><li>For beginners and experienced calligraphers, at your own pace</li><li>Independently published by Arabic Calligraphy Store</li></ul><p><strong>Good to know:</strong> the explanations are in English.</p>"
+      },
+      "ar": {
+        "title": "كرّاسة تمارين خط النسخ",
+        "body": "<p>كتاب تمارين متدرّج لتعلّم الحروف العربية بخط النسخ، ثم استعمالها في تصاميم فنية.</p><ul><li>120 صفحة من الرسوم الواضحة والدروس خطوة بخطوة</li><li>25 تصميمًا فنيًا مستوحى من الحروف العربية</li><li>للمبتدئين وللخطاطين أصحاب الخبرة، كلٌّ حسب سرعته</li><li>نشر مستقل، من Arabic Calligraphy Store</li></ul><p><strong>للعلم:</strong> الشرح باللغة الإنجليزية.</p>",
+        "type": "تقنيات فنية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "thuluth-calligraphy-practice-sheets-book",
+      "asin": "B0C47LZKDT",
+      "source": "ae",
+      "vendor": "Calligraphy House for Thuluth",
+      "type": "Art technique",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.37,
+      "kg_source": "amazon (Amazon)",
+      "cost": 19.93,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Thuluth Calligraphy Practice Sheets",
+        "body": "<p>A step-by-step practice book for learning the Arabic alphabet in Thuluth script, then using the letters in artistic designs.</p><ul><li>120 pages of clear illustrations and step-by-step lessons</li><li>25 artistic designs inspired by the Arabic alphabet</li><li>For beginners and experienced calligraphers, at your own pace</li><li>Independently published by Calligraphy House for Thuluth</li></ul><p><strong>Good to know:</strong> the explanations are in English.</p>"
+      },
+      "ar": {
+        "title": "كرّاسة تمارين خط الثلث",
+        "body": "<p>كتاب تمارين متدرّج لتعلّم الحروف العربية بخط الثلث، ثم استعمالها في تصاميم فنية.</p><ul><li>120 صفحة من الرسوم الواضحة والدروس خطوة بخطوة</li><li>25 تصميمًا فنيًا مستوحى من الحروف العربية</li><li>للمبتدئين وللخطاطين أصحاب الخبرة، كلٌّ حسب سرعته</li><li>نشر مستقل، من Calligraphy House for Thuluth</li></ul><p><strong>للعلم:</strong> الشرح باللغة الإنجليزية.</p>",
+        "type": "تقنيات فنية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "ghani-alani-introduction-to-arabic-calligraphy",
+      "asin": "0764351737",
+      "source": "ae",
+      "vendor": "REDFeather",
+      "type": "Art technique",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.59,
+      "kg_source": "amazon (Amazon)",
+      "cost": 23.96,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Ghani Alani, Introduction to Arabic Calligraphy",
+        "body": "<p>A step-by-step introduction to the main Arabic scripts: the basic strokes, and how to make art from the 28 letters.</p><ul><li>By Ghani Alani</li><li>7 major calligraphy styles, from Kufic to Maghrebi</li><li>More than 300 images of the basic strokes, step by step</li><li>80 pages, published by REDFeather</li></ul><p><strong>Good to know:</strong> the book is in English.</p>"
+      },
+      "ar": {
+        "title": "كتاب مدخل إلى الخط العربي، Ghani Alani",
+        "body": "<p>مدخل متدرّج إلى أهم الخطوط العربية: الضربات الأساسية، وكيف تصنع عملًا فنيًا من الحروف الـ28.</p><ul><li>تأليف Ghani Alani</li><li>7 من أهم أنواع الخط العربي، من الكوفي إلى المغربي</li><li>أكثر من 300 صورة للضربات الأساسية خطوة بخطوة</li><li>80 صفحة، من منشورات REDFeather</li></ul><p><strong>للعلم:</strong> الكتاب باللغة الإنجليزية.</p>",
+        "type": "تقنيات فنية"
+      },
+      "publish": true
+    },
+    {
+      "handle": "marina-toshich-basics-of-oud-online-video",
+      "asin": "0786688513",
+      "source": "ae",
+      "vendor": "Mel Bay",
+      "type": "Method books",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.4,
+      "kg_source": "estimate",
+      "cost": 27.03,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Basics of Oud by Marina Toshich, with Online Video",
+        "body": "<p>A detailed method for the Arabic oud, the ancestor of the lute and the guitar. An online video shows the key points of playing.</p><ul><li>By Marina Toshich</li><li>Holding the oud, plucking the strings and the basic plucking rules of the Arabic tradition</li><li>Left-hand finger positions, the basic notes, advanced left-hand techniques and the maqamat</li><li>Over 40 tunes, in standard notation only (no tablature)</li></ul><p><strong>Good to know:</strong> the book is in English.</p>"
+      },
+      "ar": {
+        "title": "كتاب Basics of Oud لتعلّم العود، مع فيديو على الإنترنت",
+        "body": "<p>كتاب مفصّل لتعلّم العود العربي، جدّ آلة اللوت الأوروبية والغيتار. ومعه فيديو على الإنترنت يشرح أهم نقاط العزف.</p><ul><li>تأليف Marina Toshich</li><li>طريقة حمل العود، النقر على الأوتار، وقواعد الريشة الأساسية في التقليد العربي</li><li>وضعيات أصابع اليد اليسرى، النوتات الأساسية على العود، تقنيات متقدّمة لليد اليسرى، والمقامات</li><li>أكثر من 40 لحنًا، بالنوتة الموسيقية فقط (من دون تابلاتشر)</li></ul><p><strong>للعلم:</strong> الكتاب باللغة الإنجليزية.</p>",
+        "type": "كتب تعليم العزف"
+      },
+      "publish": true
+    },
+    {
+      "handle": "mavrothi-kontanis-school-of-oud-online-audio",
+      "asin": "0786682957",
+      "source": "ae",
+      "vendor": "Mel Bay",
+      "type": "Method books",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.3,
+      "kg_source": "estimate",
+      "cost": 19.46,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "School of Oud by Mavrothi Kontanis, with Online Audio",
+        "body": "<p>For beginner and intermediate oud players who want a stronger grasp of makam (maqam) theory and practice, with advice and exercises to improve their technique in general.</p><ul><li>By Mavrothi Kontanis, 32 pages</li><li>Three well-known makams: Rast, Mahur and Nikriz</li><li>Each makam explained in detail through exercises, études and traditional pieces, in many rhythms and forms</li><li>Audio recordings online to guide your practice</li></ul><p><strong>Good to know:</strong> the book is in English.</p>"
+      },
+      "ar": {
+        "title": "كتاب School of Oud لتعلّم العود، مع تسجيلات صوتية على الإنترنت",
+        "body": "<p>لطلاب العود المبتدئين والمتوسطين الذين يريدون أن يفهموا المقام نظريًا وعمليًا بشكل أعمق، مع نصائح وتمارين لتحسين تقنية العزف عمومًا.</p><ul><li>تأليف Mavrothi Kontanis، في 32 صفحة</li><li>ثلاثة مقامات معروفة: راست وماهور ونكريز</li><li>شرح مفصّل لكل مقام من خلال تمارين ودراسات (études) وقطع تقليدية، بإيقاعات وقوالب متنوّعة</li><li>تسجيلات صوتية على الإنترنت ترافقك في التمرين</li></ul><p><strong>للعلم:</strong> الكتاب باللغة الإنجليزية.</p>",
+        "type": "كتب تعليم العزف"
+      },
+      "publish": true
+    },
+    {
+      "handle": "hal-leonard-oud-method-bilezikjian",
+      "asin": "0634077864",
+      "source": "ae",
+      "vendor": "Hal Leonard",
+      "type": "Method books",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.3,
+      "kg_source": "estimate",
+      "cost": 16.07,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Hal Leonard Oud Method by John Bilezikjian",
+        "body": "<p>A method for learning the oud, for complete beginners and for players who already know another instrument. It also gives an overview of the oud's history, folklore and origins.</p><ul><li>By John Bilezikjian, 40 pages</li><li>Types of ouds, tuning, playing position and how to string the oud</li><li>Standard Western notation, scales, chords, arpeggios and tremolo, with studies and exercises</li><li>Songs and rhythms from Armenia and the Middle East, with 25 audio tracks to listen and play along</li></ul><p><strong>Good to know:</strong> the book is in English. The audio is online: stream or download it with the code inside the book.</p>"
+      },
+      "ar": {
+        "title": "كتاب Hal Leonard لتعلّم العود",
+        "body": "<p>كتاب لتعلّم العود، للمبتدئين تمامًا ولمن يعزف على آلة أخرى. ويقدّم أيضًا لمحة عن تاريخ العود وتراثه وأصوله.</p><ul><li>تأليف John Bilezikjian، في 40 صفحة</li><li>أنواع العود، الدوزان، وضعية العزف وطريقة تركيب الأوتار</li><li>قراءة النوتة الغربية، السلالم، الأكوردات، الأربيجات والريشة المتواصلة (tremolo)، مع دراسات وتمارين</li><li>أغانٍ وإيقاعات من أرمينيا والشرق الأوسط، مع 25 تسجيلًا صوتيًا للاستماع والعزف معها</li></ul><p><strong>للعلم:</strong> الكتاب باللغة الإنجليزية. التسجيلات على الإنترنت: تستمع إليها أو تنزّلها بالرمز الموجود داخل الكتاب.</p>",
+        "type": "كتب تعليم العزف"
+      },
+      "publish": true
+    },
+    {
+      "handle": "mukhtar-method-oud-beginners",
+      "asin": "1387761870",
+      "source": "ae",
+      "vendor": "Ahmed Mukhtar",
+      "type": "Method books",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.25,
+      "kg_source": "amazon (Amazon)",
+      "cost": 15.74,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "The Mukhtar Method: Oud Beginners, 3rd Edition",
+        "body": "<p>An oud course for complete beginners: the basic playing techniques, and how the maqam system works, through the eight main maqamat and popular traditional pieces.</p><ul><li>By Ahmed Mukhtar, third edition, 84 pages</li><li>No previous music knowledge needed: most music is written as tablature, so you don't have to read notes</li><li>Some basic knowledge of theory, rhythm and note names still helps</li><li>Videos to go with the course on the Taqasim Music School YouTube channel</li></ul><p><strong>Good to know:</strong> the book is in English.</p>"
+      },
+      "ar": {
+        "title": "كتاب The Mukhtar Method لتعلّم العود للمبتدئين، الطبعة 3",
+        "body": "<p>دورة في العود للمبتدئين تمامًا: تقنيات العزف الأساسية، وفهم نظام المقامات من خلال المقامات الثمانية الأساسية وقطع تراثية معروفة.</p><ul><li>تأليف Ahmed Mukhtar، الطبعة الثالثة، في 84 صفحة</li><li>لا تحتاج إلى معرفة موسيقية سابقة: معظم الموسيقى مكتوبة بطريقة التابلاتشر، فلا يلزمك أن تقرأ النوتة</li><li>لكن معرفة بسيطة بالنظريات والإيقاع وأسماء النوتات تساعدك</li><li>فيديوهات ترافق الدورة على قناة Taqasim Music School على YouTube</li></ul><p><strong>للعلم:</strong> الكتاب باللغة الإنجليزية.</p>",
+        "type": "كتب تعليم العزف"
+      },
+      "publish": true
+    },
+    {
+      "handle": "mukhtar-method-darbuka-beginner-to-upper-intermediate",
+      "asin": "1387682091",
+      "source": "ae",
+      "vendor": "Ahmed Mukhtar",
+      "type": "Method books",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.4,
+      "kg_source": "estimate",
+      "cost": 25.19,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "The Mukhtar Method: Darbuka, Beginner to Upper-Intermediate",
+        "body": "<p>Three levels of Ahmed Mukhtar's darbuka method in one book, from the first strokes to more advanced techniques.</p><ul><li>Beginner: holding the darbuka, clean tones, right and left-hand strokes, reading darbuka notation, and the rhythms Wahda, Maqsoum, Ayyoub and Malfouf</li><li>Intermediate: better technique, more complex rhythms, accurate tones with ornaments</li><li>Upper-intermediate: combining techniques, with the right-hand mahbous, the trill and the tremolo</li><li>98 pages</li></ul><p><strong>Good to know:</strong> the book is in English.</p>"
+      },
+      "ar": {
+        "title": "كتاب The Mukhtar Method للدربكة، من المبتدئ حتى ما فوق المتوسط",
+        "body": "<p>ثلاثة مستويات من طريقة أحمد مختار لتعلّم الدربكة في كتاب واحد، من الضربات الأولى حتى التقنيات المتقدّمة.</p><ul><li>المبتدئ: طريقة حمل الدربكة، إخراج الصوت الصحيح، ضربات اليد اليمنى واليسرى، قراءة نوتة الدربكة، وإيقاعات الوحدة والمقسوم والأيوب والملفوف</li><li>المتوسط: تحسين التقنية، إيقاعات أكثر تعقيدًا، وصوت دقيق مع الزخرفة</li><li>ما فوق المتوسط: الجمع بين التقنيات، مع المحبوس باليد اليمنى والرعشة (trill) والترعيد (tremolo)</li><li>98 صفحة</li></ul><p><strong>للعلم:</strong> الكتاب باللغة الإنجليزية.</p>",
+        "type": "كتب تعليم العزف"
+      },
+      "publish": true
+    },
+    {
+      "handle": "mastering-darbuka-book-1-fundamentals",
+      "asin": "B0DSLGM1YH",
+      "source": "ae",
+      "vendor": "Amir Etemadzadeh",
+      "type": "Method books",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.23,
+      "kg_source": "amazon (Amazon)",
+      "cost": 31.62,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Mastering Darbuka, Book 1: Fundamentals",
+        "body": "<p>A step-by-step guide to reading and playing Middle Eastern rhythms on the darbuka, by Amir Etemadzadeh, drawing on more than 25 years of teaching.</p><ul><li>For players who are starting out or want to refine their technique</li><li>442 exercises, with guidance step by step</li><li>Recorded audio for every exercise, through QR codes</li></ul><p><strong>Good to know:</strong> the book is in English.</p>"
+      },
+      "ar": {
+        "title": "كتاب Mastering Darbuka، الجزء 1: الأساسيات",
+        "body": "<p>دليل خطوة بخطوة لقراءة الإيقاعات الشرقية وعزفها على الدربكة، من تأليف Amir Etemadzadeh، بخبرة تزيد على 25 سنة في التعليم.</p><ul><li>لمن يبدأ التعلّم أو يريد أن يحسّن تقنيته</li><li>442 تمرينًا مع شرح خطوة بخطوة</li><li>تسجيل صوتي لكل تمرين، عبر رموز QR</li></ul><p><strong>للعلم:</strong> الكتاب باللغة الإنجليزية.</p>",
+        "type": "كتب تعليم العزف"
+      },
+      "publish": true
+    },
+    {
+      "handle": "roberto-salmieri-darbuka-rhythms",
+      "asin": "B0BHGBG784",
+      "source": "ae",
+      "vendor": "Roberto Salmieri",
+      "type": "Method books",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.33,
+      "kg_source": "amazon (Amazon)",
+      "cost": 29.1,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Roberto Salmieri: Darbuka Rhythms",
+        "body": "<p>A book of rhythms for the darbuka, by Roberto Salmieri.</p><ul><li>134 pages</li><li>Includes a link to download the HD demo files</li></ul><p><strong>Good to know:</strong> the book is in English.</p>"
+      },
+      "ar": {
+        "title": "كتاب Darbuka Rhythms لـRoberto Salmieri",
+        "body": "<p>كتاب إيقاعات للدربكة، من تأليف Roberto Salmieri.</p><ul><li>134 صفحة</li><li>فيه رابط لتنزيل ملفات العرض (HD)</li></ul><p><strong>للعلم:</strong> الكتاب باللغة الإنجليزية.</p>",
+        "type": "كتب تعليم العزف"
+      },
+      "publish": true
+    },
+    {
+      "handle": "halil-karaduman-kanun-method-book",
+      "asin": "B0G59DC729",
+      "source": "ae",
+      "vendor": "Halil Karaduman",
+      "type": "Method books",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.4,
+      "kg_source": "estimate",
+      "cost": 35.1,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Halil Karaduman Kanun Method Book",
+        "body": "<p>The Kanun Metodu by master musician Halil Karaduman: a full guide to learning the qanun (kanun), with detailed exercises and techniques for beginners and advanced players.</p><ul><li>Lever techniques and lever vibrato</li><li>Octave studies, tremolo, glissando, syncopation, triplets, staccato and trills</li><li>Ornaments including çarpma and fiske, and exercises for chords and arpeggios</li><li>Examples from Turkish classical songs, and studies in the pasodoble and dümine rhythms</li></ul><p><strong>Good to know:</strong> this is a Turkish kanun method, so the explanations may be in Turkish.</p>"
+      },
+      "ar": {
+        "title": "كتاب Halil Karaduman لتعلّم القانون",
+        "body": "<p>كتاب Kanun Metodu للموسيقي القدير Halil Karaduman: دليل كامل لتعلّم القانون، بتمارين وتقنيات مفصّلة للمبتدئين والمتقدّمين.</p><ul><li>تقنيات العُرَب والفيبراتو بالعُرَب</li><li>دراسات الأوكتاف، الرعشة (tremolo)، الانزلاق (glissando)، الإيقاع المتقاطع، الثلاثيات، الستاكاتو والزخارف المتعاقبة (trill)</li><li>زخارف منها çarpma وfiske، وتمارين للأكوردات والأربيجات</li><li>أمثلة من أغاني الموسيقى التركية الكلاسيكية، ودراسات على إيقاعَي الباسودوبلي والدومينه (dümine)</li></ul><p><strong>للعلم:</strong> هذا كتاب تركي لتعلّم القانون، لذلك قد تكون الشروحات باللغة التركية.</p>",
+        "type": "كتب تعليم العزف"
+      },
+      "publish": true
+    },
+    {
+      "handle": "emren-valdari-how-to-play-the-saz",
+      "asin": "B0HJ2PSFBX",
+      "source": "ae",
+      "vendor": "Emren R. Valdari",
+      "type": "Method books",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.34,
+      "kg_source": "amazon (Amazon)",
+      "cost": 17.43,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "How to Play the Saz: Beginner Bağlama Lessons",
+        "body": "<p>A practical first book on the saz (bağlama) by Emren R. Valdari, for complete beginners, even if you have never played an instrument. Clear steps, without heavy music theory.</p><ul><li>The parts of the saz, and how to hold it with a comfortable, balanced posture</li><li>How the three string courses are set up, and a practical way to tune</li><li>Holding and controlling the tezene (pick), and coordinating both hands</li><li>Keeping a steady rhythm and playing your first simple melodies</li></ul><p><strong>Good to know:</strong> the book is in English.</p>"
+      },
+      "ar": {
+        "title": "كتاب How to Play the Saz لتعلّم الباغلاما للمبتدئين",
+        "body": "<p>كتاب عملي لتعلّم الساز (الباغلاما) من البداية، تأليف Emren R. Valdari، لمن لم يعزف على أي آلة من قبل. خطوات واضحة، من دون نظريات موسيقية معقّدة.</p><ul><li>أجزاء الساز، وطريقة حمله بوضعية مريحة ومتوازنة</li><li>ترتيب مجموعات الأوتار الثلاث، وطريقة عملية للدوزان</li><li>مسك الريشة (tezene) والتحكّم بها، والتنسيق بين اليدين</li><li>الحفاظ على إيقاع ثابت وعزف أولى الألحان البسيطة</li></ul><p><strong>للعلم:</strong> الكتاب باللغة الإنجليزية.</p>",
+        "type": "كتب تعليم العزف"
+      },
+      "publish": true
+    },
+    {
+      "handle": "etemadzadeh-30-pieces-daf-frame-drum-book-1",
+      "asin": "B0CCCVQGY3",
+      "source": "ae",
+      "vendor": "Amir Etemadzadeh",
+      "type": "Method books",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.21,
+      "kg_source": "amazon (Amazon)",
+      "cost": 35.16,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "30 Pieces for Daf and Frame Drum, Book 1",
+        "body": "<p>A gradual way to master frame-drum technique, through pieces you can play solo or with a drum ensemble.</p><ul><li>By Amir Etemadzadeh, the first book in a series for the daf and frame drum</li><li>For beginners, players with some musical training and experienced musicians alike</li><li>Step by step through the technique and the rhythms: simple, compound and asymmetrical rhythms from the Persian tradition</li><li>Useful for teachers of private and group classes, and for ensembles looking for new pieces</li></ul><p><strong>Good to know:</strong> the book is in English.</p>"
+      },
+      "ar": {
+        "title": "30 مقطوعة للدف (daf) والطار، الكتاب الأول",
+        "body": "<p>طريقة متدرّجة لإتقان العزف على الدف والطار، من خلال مقطوعات تعزفها وحدك أو مع فرقة إيقاع.</p><ul><li>تأليف Amir Etemadzadeh، وهو الكتاب الأول في سلسلة للدف والطار</li><li>للمبتدئين، ولمن عنده بعض التدريب الموسيقي، وللموسيقيين المتمرّسين أيضًا</li><li>تدرّج خطوة بخطوة في التقنية والإيقاع: إيقاعات بسيطة ومركّبة وعرجاء من التراث الفارسي</li><li>مفيد لأساتذة الدروس الفردية والجماعية، وللفرق التي تبحث عن مقطوعات جديدة</li></ul><p><strong>للعلم:</strong> الكتاب باللغة الإنجليزية.</p>",
+        "type": "كتب تعليم العزف"
+      },
+      "publish": true
+    },
+    {
+      "handle": "beckles-willson-the-oud-illustrated-history",
+      "asin": "1623717523",
+      "source": "ae",
+      "vendor": "Interlink Books",
+      "type": "History & biographies",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.95,
+      "kg_source": "amazon (Amazon)",
+      "cost": 42.1,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "The Oud: An Illustrated History, by Rachel Beckles Willson",
+        "body": "<p>The story of the oud, told with pictures. Among its tales: an Iraqi literary tradition that traces the oud's origin to the grief of Lamak, a descendant of Cain.</p><ul><li>By Rachel Beckles Willson</li><li>Published by Interlink Books</li><li>256 pages, illustrated</li></ul><p><strong>Good to know:</strong> the book is in English.</p>"
+      },
+      "ar": {
+        "title": "كتاب The Oud: An Illustrated History، تاريخ العود المصوّر",
+        "body": "<p>قصة العود مرويّة بالصور. ومن حكاياته رواية أدبية عراقية تعيد أصل العود إلى حزن لامك، من نسل قابيل.</p><ul><li>تأليف Rachel Beckles Willson</li><li>صادر عن Interlink Books</li><li>في 256 صفحة، مع صور ورسوم</li></ul><p><strong>للعلم:</strong> الكتاب باللغة الإنجليزية.</p>",
+        "type": "تاريخ وسير"
+      },
+      "publish": true
+    },
+    {
+      "handle": "fairuz-legend-the-best-of-vinyl-lp",
+      "asin": "B07VM7JQQT",
+      "source": "ae",
+      "vendor": "EMI",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 51.46,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Fairuz: Legend, The Best Of (Vinyl LP)",
+        "body": "<p>A best-of collection of Fairuz songs, on a vinyl record.</p><ul><li>Artist: Fairuz</li><li>Album: Legend, The Best Of</li><li>Label: EMI</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: فيروز، Legend – The Best Of",
+        "body": "<p>مجموعة من أجمل أغاني فيروز على أسطوانة فينيل.</p><ul><li>الفنانة: فيروز</li><li>الألبوم: Legend – The Best Of</li><li>شركة الإنتاج: EMI</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "fairuz-morning-selection-vinyl-lp",
+      "asin": "B07VL4VM6V",
+      "source": "ae",
+      "vendor": "Fairuz",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Fairuz: Morning Selection (Vinyl LP)",
+        "body": "<p>A selection of Fairuz songs for the morning, on a vinyl record.</p><ul><li>Artist: Fairuz</li><li>Album: Morning Selection</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: فيروز، مختارات الصباح",
+        "body": "<p>مختارات من أغاني فيروز للصباح، على أسطوانة فينيل.</p><ul><li>الفنانة: فيروز</li><li>الألبوم: مختارات الصباح (Morning Selection)</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "fairuz-very-best-of-vinyl-lp",
+      "asin": "B08SLB2NYV",
+      "source": "ae",
+      "vendor": "Angel",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Fairuz: Very Best Of (Vinyl LP)",
+        "body": "<p>Twelve Fairuz songs on one record, from Shady and Al Bint El Chalabiya to Sanarjaou Yaoumann.</p><ul><li>12 songs: Habbeytak Bessayf, Shayef El Bahr Shou Kbir, La Fleur Des Cites, Al Bint El Chalabiya, Shady, Ya Ana ya Ana, El Kods Alatika, Addeysh Kan Fi Nass, A'atini Nay, Sanarjaou Yaoumann, Ya Moukhtar El Makhatir and Ka'an Azzaman</li><li>Artist: Fairuz</li><li>Label: Angel</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: فيروز، Very Best Of",
+        "body": "<p>اثنتا عشرة أغنية لفيروز على أسطوانة واحدة، من «شادي» و«البنت الشلبية» إلى «سنرجع يومًا».</p><ul><li>12 أغنية: «حبيتك بالصيف»، «شايف البحر شو كبير»، «زهرة المدائن»، «البنت الشلبية»، «شادي»، «يا أنا يا أنا»، «القدس العتيقة»، «قديش كان في ناس»، «أعطني الناي»، «سنرجع يومًا»، «يا مختار المخاتير» وKa'an Azzaman</li><li>الفنانة: فيروز</li><li>شركة الإنتاج: Angel</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "fairuz-very-best-of-2-vinyl-lp",
+      "asin": "B08SQK5PPX",
+      "source": "ae",
+      "vendor": "Angel",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Fairuz: Very Best Of 2 (Vinyl LP)",
+        "body": "<p>The second volume of Very Best Of Fairuz: classic Fairuz songs on a vinyl record.</p><ul><li>Artist: Fairuz</li><li>Album: Very Best Of Fairuz 2</li><li>Label: Angel</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: فيروز، Very Best Of 2",
+        "body": "<p>الجزء الثاني من Very Best Of Fairuz: أغانٍ كلاسيكية لفيروز على أسطوانة فينيل.</p><ul><li>الفنانة: فيروز</li><li>الألبوم: Very Best Of Fairuz 2</li><li>شركة الإنتاج: Angel</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "fairuz-nassamat-1-vinyl-lp",
+      "asin": "B0GT25TZQJ",
+      "source": "ae",
+      "vendor": "Fairuz",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Fairuz: Nassamat 1 (Vinyl LP)",
+        "body": "<p>Nassamat 1, a collection of classic Fairuz songs on a vinyl record.</p><ul><li>Artist: Fairuz</li><li>Album: Nassamat 1</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: فيروز، نسمات 1",
+        "body": "<p>«نسمات 1»، مجموعة من أغاني فيروز الكلاسيكية على أسطوانة فينيل.</p><ul><li>الفنانة: فيروز</li><li>الألبوم: نسمات 1</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "fairuz-nassamat-2-vinyl-lp",
+      "asin": "B0GT29JR5W",
+      "source": "ae",
+      "vendor": "Fairuz",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Fairuz: Nassamat 2 (Vinyl LP)",
+        "body": "<p>Nassamat 2, the second collection of classic Fairuz songs in the series, on a vinyl record.</p><ul><li>Artist: Fairuz</li><li>Album: Nassamat 2</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: فيروز، نسمات 2",
+        "body": "<p>«نسمات 2»، المجموعة الثانية من أغاني فيروز الكلاسيكية في هذه السلسلة، على أسطوانة فينيل.</p><ul><li>الفنانة: فيروز</li><li>الألبوم: نسمات 2</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "fairuz-for-love-vinyl-lp",
+      "asin": "B0HCX5HPMX",
+      "source": "ae",
+      "vendor": "Fairuz",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Fairuz: For Love (Vinyl LP)",
+        "body": "<p>Eleven romantic Fairuz songs with orchestral arrangements, on one record.</p><ul><li>11 songs, among them Sa'altak Habibi, Bikutub Esmuk Ya Habibi, Fi Qahwat E Almafriq, Sa'aluni Alnaas and Ana La Habibi</li><li>Artist: Fairuz</li><li>Album: For Love</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: فيروز، For Love",
+        "body": "<p>إحدى عشرة أغنية حب لفيروز بتوزيع أوركسترالي، على أسطوانة واحدة.</p><ul><li>11 أغنية، منها «سألتك حبيبي» و«بكتب اسمك يا حبيبي» و«في قهوة ع المفرق» و«سألوني الناس» و«أنا لحبيبي»</li><li>الفنانة: فيروز</li><li>الألبوم: For Love</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "umm-kulthum-amal-hayati-vinyl-lp",
+      "asin": "B01HYEE8PW",
+      "source": "ae",
+      "vendor": "Umm Kulthum",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Umm Kulthum: Amal Hayati (Vinyl LP)",
+        "body": "<p>Umm Kulthum sings Amal Hayati (Hope of My Life), on a vinyl record.</p><ul><li>Artist: Umm Kulthum</li><li>Album: Amal Hayati</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: أم كلثوم، أمل حياتي",
+        "body": "<p>أم كلثوم تغنّي «أمل حياتي»، على أسطوانة فينيل.</p><ul><li>الفنانة: أم كلثوم</li><li>الألبوم: «أمل حياتي»</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "umm-kulthum-al-atlal-vinyl-lp",
+      "asin": "B01HYE20UW",
+      "source": "ae",
+      "vendor": "Umm Kulthum",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 37.58,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Umm Kulthum: El Atlal (Vinyl LP)",
+        "body": "<p>Umm Kulthum sings El Atlal, on a vinyl record.</p><ul><li>Artist: Umm Kulthum</li><li>Album: El Atlal</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: أم كلثوم، الأطلال",
+        "body": "<p>أم كلثوم تغنّي «الأطلال»، على أسطوانة فينيل.</p><ul><li>الفنانة: أم كلثوم</li><li>الألبوم: «الأطلال»</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "umm-kulthum-enta-omri-vinyl-lp",
+      "asin": "B0GW994KZG",
+      "source": "ae",
+      "vendor": "Umm Kulthum",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Umm Kulthum: Enta Omri (Vinyl LP)",
+        "body": "<p>Umm Kulthum sings Enta Omri, on a vinyl record.</p><ul><li>Artist: Umm Kulthum</li><li>Album: Enta Omri</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: أم كلثوم، إنت عمري",
+        "body": "<p>أم كلثوم تغنّي «إنت عمري»، على أسطوانة فينيل.</p><ul><li>الفنانة: أم كلثوم</li><li>الألبوم: «إنت عمري»</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "umm-kulthum-alf-leila-wa-leila-vinyl-lp",
+      "asin": "B0763VGLH8",
+      "source": "ae",
+      "vendor": "MBI",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Umm Kulthum: Alf Leila wa Leila (Vinyl LP)",
+        "body": "<p>Umm Kulthum sings Alf Leila wa Leila, on a vinyl record.</p><ul><li>Artist: Umm Kulthum</li><li>Album: Alf Leila wa Leila</li><li>Label: MBI</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: أم كلثوم، ألف ليلة وليلة",
+        "body": "<p>أم كلثوم تغنّي «ألف ليلة وليلة»، على أسطوانة فينيل.</p><ul><li>الفنانة: أم كلثوم</li><li>الألبوم: «ألف ليلة وليلة»</li><li>شركة الإنتاج: MBI</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "umm-kulthum-laylet-el-hob-vinyl-lp",
+      "asin": "B09FSGBRMK",
+      "source": "ae",
+      "vendor": "MBI",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Umm Kulthum: Laylet El Hob (Vinyl LP)",
+        "body": "<p>Umm Kulthum sings Laylet El Hob, on a vinyl record.</p><ul><li>Artist: Umm Kulthum</li><li>Album: Laylet El Hob</li><li>Label: MBI</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: أم كلثوم، ليلة حب",
+        "body": "<p>أم كلثوم تغنّي «ليلة حب»، على أسطوانة فينيل.</p><ul><li>الفنانة: أم كلثوم</li><li>الألبوم: «ليلة حب»</li><li>شركة الإنتاج: MBI</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "umm-kulthum-hob-eih-vinyl-lp",
+      "asin": "B076446667",
+      "source": "ae",
+      "vendor": "Umm Kulthum",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Umm Kulthum: Hob Eih (Vinyl LP)",
+        "body": "<p>Umm Kulthum sings Hob Eih, on a vinyl record.</p><ul><li>Artist: Umm Kulthum</li><li>Album: Hob Eih</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: أم كلثوم، حب إيه",
+        "body": "<p>أم كلثوم تغنّي «حب إيه»، على أسطوانة فينيل.</p><ul><li>الفنانة: أم كلثوم</li><li>الألبوم: «حب إيه»</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "umm-kulthum-hagartak-vinyl-lp",
+      "asin": "B0763Z4434",
+      "source": "ae",
+      "vendor": "Umm Kulthum",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 38.12,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Umm Kulthum: Hagartak (Vinyl LP)",
+        "body": "<p>Umm Kulthum sings Hagartak, on a vinyl record.</p><ul><li>Artist: Umm Kulthum</li><li>Album: Hagartak</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: أم كلثوم، هجرتك",
+        "body": "<p>أم كلثوم تغنّي «هجرتك»، على أسطوانة فينيل.</p><ul><li>الفنانة: أم كلثوم</li><li>الألبوم: «هجرتك»</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "umm-kulthum-rawaea-instrumentals-vinyl-lp",
+      "asin": "B01M4OTVY3",
+      "source": "ae",
+      "vendor": "Umm Kulthum",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Rawaea Umm Kulthum: Instrumentals (Vinyl LP)",
+        "body": "<p>The melodies of Umm Kulthum's songs, played as instrumentals with no singing.</p><ul><li>Album: Rawaea Oum Kolthoum</li><li>Instrumental versions of Umm Kulthum songs</li><li>By various artists</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: روائع أم كلثوم، موسيقى بلا غناء",
+        "body": "<p>ألحان أغاني أم كلثوم بعزف موسيقي فقط، من دون غناء.</p><ul><li>الألبوم: روائع أم كلثوم</li><li>نسخ موسيقية (بلا غناء) من أغاني أم كلثوم</li><li>لفنانين متعددين</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "abdel-halim-hafez-golden-selection-1-vinyl-lp",
+      "asin": "B0GQQBNQCT",
+      "source": "ae",
+      "vendor": "Abdel Halim Hafez",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Abdel Halim Hafez: Golden Selection 1 (Vinyl LP)",
+        "body": "<p>A selection of classic Abdel Halim Hafez songs on vinyl, with the lyrics printed on an insert.</p><ul><li>Artist: Abdel Halim Hafez</li><li>Album: Golden Selection 1</li><li>Comes with a lyrics insert</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: عبد الحليم حافظ، Golden Selection 1",
+        "body": "<p>مختارات من أغاني عبد الحليم حافظ الكلاسيكية على أسطوانة فينيل، مع ورقة مطبوعة عليها كلمات الأغاني.</p><ul><li>الفنان: عبد الحليم حافظ</li><li>الألبوم: Golden Selection 1</li><li>مع ورقة كلمات الأغاني</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "abdel-halim-hafez-golden-selection-2-vinyl-lp",
+      "asin": "B0GQQ3B61C",
+      "source": "ae",
+      "vendor": "Abdel Halim Hafez",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Abdel Halim Hafez: Golden Selection 2 (Vinyl LP)",
+        "body": "<p>A selection of classic Abdel Halim Hafez songs on vinyl, with the lyrics printed on an insert.</p><ul><li>Artist: Abdel Halim Hafez</li><li>Album: Golden Selection 2</li><li>Comes with a lyrics insert</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: عبد الحليم حافظ، Golden Selection 2",
+        "body": "<p>مختارات من أغاني عبد الحليم حافظ الكلاسيكية على أسطوانة فينيل، مع ورقة مطبوعة عليها كلمات الأغاني.</p><ul><li>الفنان: عبد الحليم حافظ</li><li>الألبوم: Golden Selection 2</li><li>مع ورقة كلمات الأغاني</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "abdel-halim-hafez-golden-selection-3-vinyl-lp",
+      "asin": "B0GQQ4H4PK",
+      "source": "ae",
+      "vendor": "Abdel Halim Hafez",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Abdel Halim Hafez: Golden Selection 3 (Vinyl LP)",
+        "body": "<p>A selection of classic Abdel Halim Hafez songs on vinyl, with the lyrics printed on an insert.</p><ul><li>Artist: Abdel Halim Hafez</li><li>Album: Golden Selection 3</li><li>Comes with a lyrics insert</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: عبد الحليم حافظ، Golden Selection 3",
+        "body": "<p>مختارات من أغاني عبد الحليم حافظ الكلاسيكية على أسطوانة فينيل، مع ورقة مطبوعة عليها كلمات الأغاني.</p><ul><li>الفنان: عبد الحليم حافظ</li><li>الألبوم: Golden Selection 3</li><li>مع ورقة كلمات الأغاني</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "abdel-halim-hafez-qariat-al-finjan-vinyl-lp",
+      "asin": "B0GW96HTVW",
+      "source": "ae",
+      "vendor": "Abdel Halim Hafez",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Abdel Halim Hafez: Qariat Al Finjan (Vinyl LP)",
+        "body": "<p>Abdel Halim Hafez, the Nightingale, in one of his most famous love songs.</p><ul><li>Artist: Abdel Halim Hafez</li><li>Song: Qariat Al Finjan</li><li>Analog sound on vinyl</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: عبد الحليم حافظ، قارئة الفنجان",
+        "body": "<p>العندليب عبد الحليم حافظ في واحدة من أشهر أغانيه العاطفية.</p><ul><li>الفنان: عبد الحليم حافظ</li><li>الأغنية: «قارئة الفنجان»</li><li>صوت أنالوج على أسطوانة فينيل</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "abdel-halim-hafez-hawel-teftekerni-vinyl-lp",
+      "asin": "B0GTF9N9G9",
+      "source": "ae",
+      "vendor": "Abdel Halim Hafez",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Abdel Halim Hafez: Hawel Teftekerni (Vinyl LP)",
+        "body": "<p>Abdel Halim Hafez sings Hawel Teftekerni, one of his best-known love songs.</p><ul><li>Artist: Abdel Halim Hafez</li><li>Song: Hawel Teftekerni</li><li>Words by the poet Mohamed Hamza, music by Baligh Hamdi</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: عبد الحليم حافظ، حاول تفتكرني",
+        "body": "<p>العندليب الأسمر عبد الحليم حافظ يغنّي «حاول تفتكرني»، من أعذب أغانيه العاطفية.</p><ul><li>الفنان: عبد الحليم حافظ</li><li>الأغنية: «حاول تفتكرني»</li><li>كلمات الشاعر محمد حمزة وألحان بليغ حمدي</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "sabah-the-legend-vinyl-lp",
+      "asin": "B09FSMZWXP",
+      "source": "ae",
+      "vendor": "MBI",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Sabah: The Legend (Vinyl LP)",
+        "body": "<p>Sabah's album The Legend, on a vinyl record.</p><ul><li>Artist: Sabah</li><li>Album: The Legend</li><li>Label: MBI</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: صباح، The Legend",
+        "body": "<p>ألبوم The Legend للفنانة صباح، على أسطوانة فينيل.</p><ul><li>الفنانة: صباح</li><li>الألبوم: The Legend</li><li>شركة الإنتاج: MBI</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "sabah-fakhri-beiteddine-festivals-1-vinyl-lp",
+      "asin": "B01HYOW82C",
+      "source": "ae",
+      "vendor": "Sabah Fakhri",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 38.12,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Sabah Fakhri: Beiteddine Festivals 1 (Vinyl LP)",
+        "body": "<p>Sabah Fakhri's Beiteddine Festivals 1 (Mahrajanat Beiteddine), on a vinyl record.</p><ul><li>Artist: Sabah Fakhri</li><li>Album: Beiteddine Festivals 1</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: صباح فخري، مهرجانات بيت الدين 1",
+        "body": "<p>«مهرجانات بيت الدين 1» لصباح فخري، على أسطوانة فينيل.</p><ul><li>الفنان: صباح فخري</li><li>الألبوم: مهرجانات بيت الدين 1</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "warda-hekayti-maa-el-zaman-vinyl-lp",
+      "asin": "B08YZ7DX3X",
+      "source": "ae",
+      "vendor": "MBI",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Warda: Hekayti Maa El Zaman (Vinyl LP)",
+        "body": "<p>A collection of songs by the late Warda Al Jazairia, on a vinyl record.</p><ul><li>Songs include Wahashtouni, Ishtarouni, Wana Mali, Lawla El Malama and Hekayti Maa El Zaman</li><li>Artist: Warda</li><li>Label: MBI</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: وردة، حكايتي مع الزمان",
+        "body": "<p>مجموعة من أغاني الفنانة الراحلة وردة الجزائرية، على أسطوانة فينيل.</p><ul><li>منها «وحشتوني» و«اشتروني» و«وأنا مالي» و«لولا الملامة» و«حكايتي مع الزمان»</li><li>الفنانة: وردة</li><li>شركة الإنتاج: MBI</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "warda-al-jazairia-vinyl-lp",
+      "asin": "B08BLKP7BC",
+      "source": "ae",
+      "vendor": "MBI",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 38.12,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Warda Al Jazairia (Vinyl LP)",
+        "body": "<p>An album of Warda Al Jazairia's songs, on a vinyl record.</p><ul><li>Artist: Warda Al Jazairia</li><li>Label: MBI</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: وردة الجزائرية",
+        "body": "<p>ألبوم من أغاني وردة الجزائرية، على أسطوانة فينيل.</p><ul><li>الفنانة: وردة الجزائرية</li><li>شركة الإنتاج: MBI</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "warda-khaleek-hena-vinyl-lp",
+      "asin": "B0GTRCQMX9",
+      "source": "ae",
+      "vendor": "Warda",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Warda: Khaleek Hena (Vinyl LP)",
+        "body": "<p>Warda's album Khaleek Hena, with the powerful, emotional voice of one of the great divas of Arabic music.</p><ul><li>Artist: Warda Al Jazairia</li><li>Album: Khaleek Hena</li><li>Warm analog sound on vinyl</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: وردة، خليك هنا",
+        "body": "<p>ألبوم «خليك هنا» بصوت وردة القوي والمؤثر، إحدى كبيرات الغناء العربي.</p><ul><li>الفنانة: وردة الجزائرية</li><li>الألبوم: «خليك هنا»</li><li>صوت أنالوج دافئ على أسطوانة فينيل</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "wadih-el-safi-enta-al-alab-vinyl-lp",
+      "asin": "B0HMRSZ3MJ",
+      "source": "ae",
+      "vendor": "Wadih El Safi",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Wadih El Safi: Enta Al Alab (Vinyl LP)",
+        "body": "<p>Classic recordings by Wadih El Safi, one of the most celebrated voices in Arabic music.</p><ul><li>Songs: Enta Al Alab, Ya Bahr Yadwar, Fawq Alsutuh Dayaetana, Ruh Ya Zaman Almadi, Ahl Almina, Rajaet Alsayaadi, Man Hun Nihna Ya Bashar and Biladi Biladik</li><li>Artist: Wadih El Safi</li><li>Plays at 33 RPM</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: وديع الصافي، Enta Al Alab",
+        "body": "<p>تسجيلات كلاسيكية لوديع الصافي، أحد أشهر الأصوات في تاريخ الغناء العربي.</p><ul><li>الأغاني: Enta Al Alab وYa Bahr Yadwar وFawq Alsutuh Dayaetana وRuh Ya Zaman Almadi وAhl Almina وRajaet Alsayaadi وMan Hun Nihna Ya Bashar وBiladi Biladik</li><li>الفنان: وديع الصافي</li><li>تُشغَّل على سرعة 33 دورة في الدقيقة</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "ziad-rahbani-houdou-nisbi-vinyl-lp",
+      "asin": "B09NGRX799",
+      "source": "ae",
+      "vendor": "Ziad Rahbani",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 77.47,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Ziad Rahbani: Houdou Nisbi (Vinyl LP)",
+        "body": "<p>Ziad Rahbani's album Houdou Nisbi, on a vinyl record.</p><ul><li>Artist: Ziad Rahbani</li><li>Album: Houdou Nisbi</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: زياد الرحباني، هدوء نسبي",
+        "body": "<p>ألبوم «هدوء نسبي» لزياد الرحباني، على أسطوانة فينيل.</p><ul><li>الفنان: زياد الرحباني</li><li>الألبوم: «هدوء نسبي»</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "el-zaman-el-gamil-1-vinyl-lp",
+      "asin": "B0GHZTCZ98",
+      "source": "ae",
+      "vendor": "Various Artists",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "El Zaman El Gamil 1, Various Artists (Vinyl LP)",
+        "body": "<p>The first volume of El Zaman El Gamil: classic Arabic songs by various artists, on a vinyl record.</p><ul><li>Album: El Zaman El Gamil 1</li><li>Classic Arabic songs</li><li>Various artists</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: الزمن الجميل 1، فنانون متعددون",
+        "body": "<p>الجزء الأول من «الزمن الجميل»: أغانٍ عربية كلاسيكية لفنانين متعددين، على أسطوانة فينيل.</p><ul><li>الألبوم: «الزمن الجميل 1»</li><li>أغانٍ عربية كلاسيكية</li><li>فنانون متعددون</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "el-zaman-el-gamil-2-vinyl-lp",
+      "asin": "B0GHZFTHFN",
+      "source": "ae",
+      "vendor": "Various Artists",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "El Zaman El Gamil 2, Various Artists (Vinyl LP)",
+        "body": "<p>The second volume of El Zaman El Gamil: classic Arabic songs by various artists, on a vinyl record.</p><ul><li>Album: El Zaman El Gamil 2</li><li>Classic Arabic songs</li><li>Various artists</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: الزمن الجميل 2، فنانون متعددون",
+        "body": "<p>الجزء الثاني من «الزمن الجميل»: أغانٍ عربية كلاسيكية لفنانين متعددين، على أسطوانة فينيل.</p><ul><li>الألبوم: «الزمن الجميل 2»</li><li>أغانٍ عربية كلاسيكية</li><li>فنانون متعددون</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "rashed-al-majed-hally-vinyl-lp",
+      "asin": "B0GWFH2WBK",
+      "source": "ae",
+      "vendor": "Rashed Al Majed",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Rashed Al Majed: Hally (Vinyl LP)",
+        "body": "<p>Rashed Al Majed's album Hally: classic Gulf songs, on a vinyl record.</p><ul><li>Artist: Rashed Al Majed</li><li>Album: Hally</li><li>Classic Gulf music</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: راشد الماجد، هلي",
+        "body": "<p>ألبوم «هلي» لراشد الماجد: أغانٍ خليجية كلاسيكية على أسطوانة فينيل.</p><ul><li>الفنان: راشد الماجد</li><li>الألبوم: «هلي»</li><li>غناء خليجي كلاسيكي</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    },
+    {
+      "handle": "mohammed-abdo-wodouh-vinyl-lp",
+      "asin": "B0GWFM5DTB",
+      "source": "ae",
+      "vendor": "Mohammed Abdo",
+      "type": "LPs",
+      "tags": [],
+      "stock": "on_order",
+      "kg": 0.35,
+      "kg_source": "estimate",
+      "cost": 39.48,
+      "media_keep": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "en": {
+        "title": "Mohammed Abdo: Wodouh (Vinyl LP)",
+        "body": "<p>Mohammed Abdo's album Wodouh: classic Gulf songs, on a vinyl record.</p><ul><li>Artist: Mohammed Abdo</li><li>Album: Wodouh</li><li>Classic Gulf music</li><li>Format: vinyl record (LP)</li></ul><p><strong>Good to know:</strong> this is a vinyl record (LP): you need a record player.</p>"
+      },
+      "ar": {
+        "title": "أسطوانة فينيل: محمد عبده، وضوح",
+        "body": "<p>ألبوم «وضوح» لمحمد عبده: أغانٍ خليجية كلاسيكية على أسطوانة فينيل.</p><ul><li>الفنان: محمد عبده</li><li>الألبوم: «وضوح»</li><li>غناء خليجي كلاسيكي</li><li>الصيغة: أسطوانة فينيل (LP)</li></ul><p><strong>للعلم:</strong> هذه أسطوانة فينيل (LP)، تحتاج إلى مشغّل أسطوانات (تيرنتيبل) لسماعها.</p>",
+        "type": "ألبومات LP"
+      },
+      "publish": true
+    }
+  ]
+}
