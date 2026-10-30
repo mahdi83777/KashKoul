@@ -321,12 +321,13 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
     heaviest products were removed for it, among them the Alesis e-drums, JBL and Eris E4.5 monitors, the LP120X turntable,
     the Rumble and Acoustasonic amps, the Squier Precision Bass and Classic Vibe guitars, the trombone and the cajon): buy credits,
     import `market/store/rounds/round-2/import-1.csv` (Art, Accessories: 228) and `import-2.csv` (Instruments, Studio, Vinyl, Books: 181) in Spreadr ("Import single product"), then `setup-products.mjs` → `merge-variants.mjs` →
-    `setup-products.mjs`, choose photos, then `setup-store.mjs --only menu`.
+    `setup-products.mjs`, choose photos, then `setup-store.mjs --only menu`. **Done 2026-10-30** except the photos: both
+    files imported, set up, variants combined and set up again; every product checked (see round 4). Next: choose photos.
 - [x] **Spreadr sync** (confirmed by Spreadr support 2026-10-30): on the Basic plan nothing syncs with Amazon, even
   though each imported product shows auto-sync "On"; our prices and stock stay as `setup-products.mjs` sets them. Auto
   sync is a Pro-and-above feature: **don't upgrade to Pro** without first turning product-level sync off (or price sync
   off), or Spreadr would replace our weight-based prices with Amazon's price plus its own markup.
-- [ ] **SKU standard** (decided 2026-10-30): the SKU says which Amazon to buy from, `US-<Amazon ID>` or `AE-<Amazon ID>`,
+- [x] **SKU standard** (decided 2026-10-30): the SKU says which Amazon to buy from, `US-<Amazon ID>` or `AE-<Amazon ID>`,
   so every order shows it; products are tagged `amazon-us` / `amazon-uae`; customers see neither. The products already in
   the store were renamed (`market/tools/fix-skus.mjs`), the round 2 and 3 import files use `US-`, round 4's will use `AE-`,
   and `setup-products.mjs` / `merge-variants.mjs` find products by the new SKU (older bare IDs are renamed when found).
@@ -335,11 +336,10 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   the sub-categories still empty (electronic drums, podcast kits, keyboard & acoustic amps, DJ mixers) and some art,
   studio, vinyl and book additions. 173 products, 252 Amazon IDs (≈ 302 credits). Same rules as round 2; 16 big-brand
   products have their price read at import. Not the whole $10: the rest is kept for the Amazon UAE round. English and
-  Arabic texts written from the Amazon facts (`products/round-3.json`, 41 products with choices). Next: import
-  `rounds/round-3/import-1.csv` (Instruments: 118 IDs) and `import-2.csv` (Accessories, Studio, Art, Vinyl, Books:
-  134 IDs) in Spreadr ("Import single product"), then `setup-products.mjs --round 3` →
-  `merge-variants.mjs --round 3` → `setup-products.mjs --round 3`, read the prices of the big-brand products, choose
-  photos, `setup-store.mjs --only menu`.
+  Arabic texts written from the Amazon facts (`products/round-3.json`, 41 products with choices). **Done 2026-10-30**
+  except the photos: `rounds/round-3/import-1.csv` (Instruments: 118 IDs) and `import-2.csv` (Accessories, Studio, Art,
+  Vinyl, Books: 134 IDs) imported in Spreadr, then `setup-products.mjs --round 3 --csv …` → `merge-variants.mjs` →
+  `setup-products.mjs` (79 variants combined); the big-brand products' cost was taken from the import. Next: choose photos.
 - [ ] **Round 4, Amazon UAE** (list approved 2026-10-30, `market/store/rounds/round-4/list.md` and `list.json`;
   amazon.ae, Spreadr region UAE, separate CSV; cost in AED ÷ 3.6725, same $20/kg shipping): what Amazon US lacks: ouds,
   a Turkish qanun, buzuqs, saz and setar, neys, kawala, zurna, riqs, darbukas, daf and bendir with their strings, cases
@@ -348,9 +348,12 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   brands whose price amazon.ae shows (Yamaha PSR-A350 and Korg Pa700 oriental keyboards, Yamaha, Casio, Roland, Fender).
   131 products, 139 Amazon IDs (≈ 167 credits; with round 3 ≈ 469 credits, within $10). Products already in the shop
   left out (13). Many specialist oriental sellers list only 1–3 in stock: kept and marked, for the owner to decide. English and
-  Arabic texts written from the amazon.ae facts (`products/round-4.json`, source `ae`). Next: import
-  `rounds/round-4/import.csv` (139 IDs, `AE-` SKUs) in Spreadr with region UAE, then `setup-products.mjs --round 4` →
-  `merge-variants.mjs --round 4` → `setup-products.mjs --round 4`, choose photos, `setup-store.mjs --only menu`.
+  Arabic texts written from the amazon.ae facts (`products/round-4.json`, source `ae`). **Done 2026-10-30** except the
+  photos: `rounds/round-4/import.csv` (139 IDs, `AE-` SKUs) imported in Spreadr with region UAE, set up, 8 variants
+  combined, set up again. Then rounds 2–4 were all checked (643 products: active, on the Online Store, variant SKUs,
+  source tag, price by the rule, Arabic title): all right (the 2 Spreadr test products of round 2 kept the variants
+  Spreadr imported, correctly priced). `setup-store.mjs --only menu` run: all 39 categories under Shop have products;
+  757 active products in the store. Next: choose photos.
 
 **Review:** prices and the catalog.
 
