@@ -299,6 +299,12 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   Vinyl & hi-fi card (six in a row on computers), empty categories' cards hidden. The live theme is now
   "Kashkoul Market" (189733044454); the previous one is kept as "Kashkoul Market — before 2026-10-30"
   (189216391398); the new working copy is 189736517862.
+- [x] Product cards: the arch (approved and published 2026-10-30, after outline and top-line tests and four designs
+  compared): a light paper tile, the photo in a white window with a semicircle top in a brick line (the shape of the
+  Market logo, with room at the top so the arch never cuts the photo), the stock badge on the window's foot, brand,
+  title and price centred. Same card on the shop pages, the homepage and "You may also like"; only `kashkoul.css`
+  changed. The live theme is now "Kashkoul Market" (189736517862); the previous one is kept as "Kashkoul Market —
+  before arch cards (2026-10-30)" (189733044454); the new working copy is 189764174054.
 - [ ] Spreadr import batches to reach ~500 products (Spreadr installed 2026-10-29, bulk import now that the store is on
   a paid plan).
   - [ ] **Batch 3, Art supplies** (approved 2026-10-30, `market/store/rounds/round-2/batch-3*`): 82 products over all
@@ -395,7 +401,7 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   kashkoulacademy@gmail.com and the Shopify app; store time zone set to Beirut
 
 - [x] A working copy of the theme for changes after launch: "Kashkoul Market — work" (first 189733044454, now
-  189736517862 after the 2026-10-30 publish), duplicated from the live theme. Changes are pushed there, previewed and published once approved (`market/README.md`)
+  189736517862, now 189764174054 after the 2026-10-30 publishes), duplicated from the live theme. Changes are pushed there, previewed and published once approved (`market/README.md`)
 
 **Review:** go live. Approved 2026-10-29.
 

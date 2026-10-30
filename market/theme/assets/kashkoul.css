@@ -629,18 +629,23 @@ body .facets .price-facet__highest-price { margin-block-start: 10px; font-size: 
 html[lang='ar'] .kk-ctree__title { letter-spacing: 0; }
 @media (max-width: 749px) { .kk-ctree:not(.kk-ctree--sheet) { display: none; } }
 
-/* ---- product cards as soft white tiles ---- */
-product-card.product-card { background: #fff; border-radius: 14px; overflow: hidden; padding-block-end: 16px;
-  transition: transform .2s ease, box-shadow .2s ease; }
-product-card.product-card:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgb(102 38 28 / .10); }
-.product-card .kk-cardmeta__brand, .product-card .text-block, .product-card product-price { padding-inline: 16px !important; }
-.product-card .kk-cardmeta__brand { margin-block-start: 4px; }
+/* ---- product cards: the photo under an arch, the shape of the Market logo (approved 2026-10-30, design C) ----
+   A light paper tile; the white photo window has a semicircle top in a brick line; the stock badge sits on the
+   window's foot (it follows the gallery in the card, so it is pulled up over the edge); brand, title and price centred.
+   The photo gets more room at the top so the arch never cuts it. */
+product-card.product-card { background: var(--kk-paper-2); border: 1px solid var(--kk-line); padding: 14px 14px 18px; transition: border-color .2s ease; }
+product-card.product-card:hover { border-color: var(--kk-brick); }
+.product-card .card-gallery { border: 1.5px solid var(--kk-brick); border-radius: 50% 50% 4px 4px / 50% 50% 4px 4px; overflow: hidden; }
+.product-card .card-gallery :is(img, .product-media img) { padding: 16% 13% 5%; }
+.product-card .kk-cardmeta__badge { position: relative; inset: auto; align-self: center; margin-block: -17px 6px; white-space: nowrap; }
+.product-card .kk-cardmeta__brand, .product-card .text-block, .product-card product-price { --text-align: center; justify-content: center; text-align: center; }
+.product-card .kk-cardmeta__brand { margin-block-start: 0; }
+.product-card a[ref="productTitleLink"] p { text-align: center; text-wrap: balance; }
 @media (max-width: 749px) {
-  product-card.product-card { border-radius: 12px; padding-block-end: 12px; }
-  .product-card .kk-cardmeta__brand, .product-card .text-block, .product-card product-price { padding-inline: 12px !important; }
-  .kk-cardmeta__badge { inset-block-start: 8px; inset-inline-start: 8px; font-size: 11px; padding: 5px 8px 4px; }
+  product-card.product-card { padding: 8px 8px 14px; }
+  .product-card .kk-cardmeta__badge { font-size: 11px; padding: 5px 8px 4px; margin-block: -16px 4px; }
 }
-@media (prefers-reduced-motion: reduce) { product-card.product-card { transition: none; } product-card.product-card:hover { transform: none; } }
+@media (prefers-reduced-motion: reduce) { product-card.product-card { transition: none; } }
 
 /* phones: one full-width "Filter & sort" row with the item count on the other side (Kashkoul edit in blocks/filters.liquid) */
 @media (max-width: 749px) {

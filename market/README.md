@@ -94,15 +94,15 @@ The first command opens a browser to log in to Shopify. The store is `kashkoul-m
 customers see it at `market.kashkoul.org`.
 
 **The store is live (since 2026-10-29), so changes never go straight to the live theme.** They go to the working
-copy, "Kashkoul Market — work" (id `189736517862`, unpublished), and are published once approved:
+copy, "Kashkoul Market — work" (id `189764174054`, unpublished), and are published once approved:
 
 ```
 # 1. push the changed files to the working copy
-shopify theme push --path market/theme --store kashkoul-market-fhsuuq5c --theme 189736517862 --only <files>
-# 2. review it: https://market.kashkoul.org/?preview_theme_id=189736517862  (Arabic: /ar?preview_theme_id=…)
+shopify theme push --path market/theme --store kashkoul-market-fhsuuq5c --theme 189764174054 --only <files>
+# 2. review it: https://market.kashkoul.org/?preview_theme_id=189764174054  (Arabic: /ar?preview_theme_id=…)
 # 3. once approved, bring the owner's theme-editor changes over from the live theme (see below), push them to the
 #    working copy, then publish it
-shopify theme publish --store kashkoul-market-fhsuuq5c --theme 189736517862
+shopify theme publish --store kashkoul-market-fhsuuq5c --theme 189764174054
 ```
 
 After publishing, the working copy is the live theme: rename it "Kashkoul Market" (`shopify theme rename`), and the
