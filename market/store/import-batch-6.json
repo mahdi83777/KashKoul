@@ -551,7 +551,7 @@
       "reviews": "25,654"
     },
     {
-      "asin": "B0D382TX8Q",
+      "asin": "B0DB52737C",
       "subcategory": "Cables & stands",
       "type": "Cables & adapters",
       "name": "XLR Cable 10 ft, Neutrik REAN connectors",
@@ -560,7 +560,30 @@
       "kg_source": "estimate",
       "our_price": 33.99,
       "rating": 4.7,
-      "reviews": "1,727"
+      "reviews": "1,727",
+      "variants": [
+        {
+          "asin": "B0DB5DXN1J",
+          "name": "2 m (6.6 ft)",
+          "amazon_price": 11.99,
+          "kg": 0.25,
+          "our_price": 22.99
+        },
+        {
+          "asin": "B0DB52737C",
+          "name": "3 m (10 ft)",
+          "amazon_price": 13.99,
+          "kg": 0.3,
+          "our_price": 25.99
+        },
+        {
+          "asin": "B0DB4Z678H",
+          "name": "4.5 m (15 ft)",
+          "amazon_price": 15.99,
+          "kg": 0.4,
+          "our_price": 31.99
+        }
+      ]
     },
     {
       "asin": "B0BBNC2JCH",

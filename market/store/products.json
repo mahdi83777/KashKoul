@@ -5052,9 +5052,21 @@
       "type": "Acrylic",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.4,
+      "kg": {
+        "6 tubes (primary)": 0.2,
+        "12 tubes": 0.4,
+        "24 tubes": 0.85,
+        "36 tubes": 1.36,
+        "48 tubes": 1.6
+      },
       "kg_source": "estimate",
-      "cost": 29.49,
+      "cost": {
+        "6 tubes (primary)": 15.91,
+        "12 tubes": 29.49,
+        "24 tubes": 44.49,
+        "36 tubes": 55.99,
+        "48 tubes": 71.79
+      },
       "media_keep": [
         1,
         2,
@@ -5063,43 +5075,68 @@
         5
       ],
       "en": {
-        "title": "Liquitex BASICS Acrylic Paint Set, 12 Tubes",
-        "body": "<p>Student acrylic paint from Liquitex, the brand that made the first artists' acrylics in 1955. A good set for learning and everyday painting.</p><ul><li>12 colors in 22 ml tubes</li><li>Same pigments and process as the Liquitex professional range</li><li>Medium thickness, satin finish and lightfast colors</li><li>Dries quickly, stays flexible and sticks to canvas, paper and board; cleans up with water while wet</li></ul>"
+        "title": "Liquitex BASICS Acrylic Paint Set",
+        "body": "<p>Student acrylic paint from Liquitex, the brand that made the first artists' acrylics in 1955. A good set for learning and everyday painting.</p><ul><li>Same pigments and process as the Liquitex professional range</li><li>Medium thickness, satin finish and lightfast colors</li><li>Dries quickly, stays flexible and sticks to canvas, paper and board; cleans up with water while wet</li><li>Choose from 6 (primary colors), 12, 24, 36 or 48 tubes</li></ul>"
       },
       "ar": {
-        "title": "طقم ألوان أكريليك Liquitex BASICS، 12 أنبوبًا",
-        "body": "<p>ألوان أكريليك للطلاب من Liquitex، الشركة التي صنعت أول ألوان أكريليك للفنانين عام 1955. طقم مناسب للتعلّم والرسم اليومي.</p><ul><li>12 لونًا في أنابيب سعة كل منها 22 مل</li><li>الأصباغ وطريقة التصنيع نفسها المستعملة في مجموعة Liquitex الاحترافية</li><li>قوام متوسط، لمسة نهائية ساتان، وألوان ثابتة لا تبهت مع الضوء</li><li>تجفّ بسرعة وتبقى مرنة، وتثبت على القماش والورق والألواح، وتُغسل بالماء قبل أن تجفّ</li></ul>",
+        "title": "طقم ألوان أكريليك Liquitex BASICS",
+        "body": "<p>ألوان أكريليك للطلاب من Liquitex، الشركة التي صنعت أول ألوان أكريليك للفنانين عام 1955. طقم مناسب للتعلّم والرسم اليومي.</p><ul><li>الأصباغ وطريقة التصنيع نفسها المستعملة في مجموعة Liquitex الاحترافية</li><li>قوام متوسط، لمسة نهائية ساتان، وألوان ثابتة لا تبهت مع الضوء</li><li>تجفّ بسرعة وتبقى مرنة، وتثبت على القماش والورق والألواح، وتُغسل بالماء قبل أن تجفّ</li><li>اختر بين 6 أنابيب (الألوان الأساسية) و12 و24 و36 و48 أنبوبًا</li></ul>",
         "type": "أكريليك"
       },
-      "publish": true
-    },
-    {
-      "handle": "liquitex-basics-acrylic-set-48-tubes",
-      "asin": "B00251I66C",
-      "vendor": "Liquitex",
-      "type": "Acrylic",
-      "tags": [],
-      "stock": "on_order",
-      "kg": 1.6,
-      "kg_source": "amazon (Amazon)",
-      "cost": 71.79,
-      "media_keep": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "en": {
-        "title": "Liquitex BASICS Acrylic Paint Set, 48 Tubes",
-        "body": "<p>The large set of Liquitex student acrylics, with plenty of colors for mixing and bigger projects. Liquitex made the first artists' acrylics in 1955.</p><ul><li>48 colors in 22 ml tubes</li><li>Same pigments and process as the Liquitex professional range</li><li>Medium thickness, satin finish and lightfast colors, from see-through to fully covering</li><li>Dries quickly, stays flexible and sticks to canvas, paper and board; cleans up with water while wet</li></ul>"
+      "publish": true,
+      "merge_variants": {
+        "option": "Set",
+        "values": [
+          {
+            "asin": "B00251LX1C",
+            "name": "6 tubes (primary)"
+          },
+          {
+            "asin": "B07VSZM41G",
+            "name": "12 tubes"
+          },
+          {
+            "asin": "B075ZBN845",
+            "name": "24 tubes"
+          },
+          {
+            "asin": "B07VPWQHKF",
+            "name": "36 tubes"
+          },
+          {
+            "asin": "B00251I66C",
+            "name": "48 tubes"
+          }
+        ]
       },
-      "ar": {
-        "title": "طقم ألوان أكريليك Liquitex BASICS، 48 أنبوبًا",
-        "body": "<p>الطقم الكبير من ألوان Liquitex الأكريليك للطلاب، فيه ألوان كثيرة للخلط وللمشاريع الأكبر. صنعت Liquitex أول ألوان أكريليك للفنانين عام 1955.</p><ul><li>48 لونًا في أنابيب سعة كل منها 22 مل</li><li>الأصباغ وطريقة التصنيع نفسها المستعملة في مجموعة Liquitex الاحترافية</li><li>قوام متوسط، لمسة نهائية ساتان، وألوان ثابتة لا تبهت مع الضوء، بدرجات تغطية مختلفة من الشفاف إلى المغطّي</li><li>تجفّ بسرعة وتبقى مرنة، وتثبت على القماش والورق والألواح، وتُغسل بالماء قبل أن تجفّ</li></ul>",
-        "type": "أكريليك"
-      },
-      "publish": true
+      "options": [
+        {
+          "name": "Set",
+          "ar": "الطقم",
+          "values": [
+            {
+              "name": "6 tubes (primary)",
+              "ar": "6 أنابيب (الألوان الأساسية)"
+            },
+            {
+              "name": "12 tubes",
+              "ar": "12 أنبوبًا"
+            },
+            {
+              "name": "24 tubes",
+              "ar": "24 أنبوبًا"
+            },
+            {
+              "name": "36 tubes",
+              "ar": "36 أنبوبًا"
+            },
+            {
+              "name": "48 tubes",
+              "ar": "48 أنبوبًا"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "apple-barrel-acrylic-craft-paint-12-bottles",
@@ -5332,9 +5369,15 @@
       "type": "Paint markers",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.18,
+      "kg": {
+        "8 colors": 0.18,
+        "24 colors": 0.5
+      },
       "kg_source": "amazon (Amazon)",
-      "cost": 19.97,
+      "cost": {
+        "8 colors": 19.97,
+        "24 colors": 47.06
+      },
       "media_keep": [
         1,
         2,
@@ -5343,15 +5386,44 @@
         5
       ],
       "en": {
-        "title": "POSCA PC-5M Paint Markers, 8 Colors",
-        "body": "<p>The well-known POSCA paint markers with a medium tip, for drawing and decorating on almost any surface.</p><ul><li>8 markers with a medium bullet tip, 1.8–2.5 mm</li><li>Water-based paint, opaque, layers well</li><li>Works on more than 50 surfaces, including wood, glass, canvas, stone, metal, fabric and plastic</li><li>Made in Japan</li></ul>"
+        "title": "POSCA PC-5M Paint Markers",
+        "body": "<p>The well-known POSCA paint markers with a medium tip, for drawing and decorating on almost any surface.</p><ul><li>Medium bullet tip, 1.8–2.5 mm</li><li>Water-based paint, opaque, layers well</li><li>Works on more than 50 surfaces, including wood, glass, canvas, stone, metal, fabric and plastic; made in Japan</li><li>Choose from 8 or 24 colors</li></ul>"
       },
       "ar": {
-        "title": "أقلام تلوين POSCA PC-5M، 8 ألوان",
-        "body": "<p>أقلام POSCA المعروفة برأس متوسط، للرسم والتزيين على أغلب السطوح.</p><ul><li>8 أقلام برأس مستدير متوسط، ⁦1.8–2.5⁩ مم</li><li>ألوان بأساس مائي، مغطّية، وتصلح لوضع طبقة فوق طبقة</li><li>تعمل على أكثر من 50 سطحًا، منها الخشب والزجاج والقماش والحجر والمعدن والنسيج والبلاستيك</li><li>صُنعت في اليابان</li></ul>",
+        "title": "أقلام تلوين POSCA PC-5M",
+        "body": "<p>أقلام POSCA المعروفة برأس متوسط، للرسم والتزيين على أغلب السطوح.</p><ul><li>رأس مستدير متوسط، ⁦1.8–2.5⁩ مم</li><li>ألوان بأساس مائي، مغطّية، وتصلح لوضع طبقة فوق طبقة</li><li>تعمل على أكثر من 50 سطحًا، منها الخشب والزجاج والقماش والحجر والمعدن والنسيج والبلاستيك، وهي مصنوعة في اليابان</li><li>اختر بين 8 ألوان و24 لونًا</li></ul>",
         "type": "أقلام تلوين ماركر"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Set",
+        "values": [
+          {
+            "asin": "B07Z86PHP8",
+            "name": "8 colors"
+          },
+          {
+            "asin": "B0GXCH4CZN",
+            "name": "24 colors"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Set",
+          "ar": "الطقم",
+          "values": [
+            {
+              "name": "8 colors",
+              "ar": "8 ألوان"
+            },
+            {
+              "name": "24 colors",
+              "ar": "24 لونًا"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "posca-pc-8k-paint-markers-broad-chisel",
@@ -5788,9 +5860,17 @@
       "type": "Colored pencils",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.47,
+      "kg": {
+        "36 pencils": 0.3,
+        "72 pencils": 0.47,
+        "120 pencils": 0.86
+      },
       "kg_source": "amazon (Amazon)",
-      "cost": 11.99,
+      "cost": {
+        "36 pencils": 9.99,
+        "72 pencils": 11.99,
+        "120 pencils": 23.99
+      },
       "media_keep": [
         1,
         2,
@@ -5799,15 +5879,52 @@
         5
       ],
       "en": {
-        "title": "KALOUR Colored Pencils, Set of 72",
-        "body": "<p>A big set of colored pencils for coloring books, drawing, blending and shading.</p><ul><li>72 colors</li><li>Soft cores</li><li>Each pencil numbered and named</li></ul>"
+        "title": "KALOUR Colored Pencils",
+        "body": "<p>Sets of colored pencils for coloring books, drawing, blending and shading.</p><ul><li>Soft cores</li><li>Each pencil numbered and named</li><li>Choose from 36, 72 or 120 pencils</li></ul>"
       },
       "ar": {
-        "title": "أقلام تلوين KALOUR، طقم من 72",
-        "body": "<p>طقم كبير من أقلام التلوين لكتب التلوين والرسم ودمج الألوان والتظليل.</p><ul><li>72 لونًا</li><li>قلب طري</li><li>على كل قلم رقمه واسم لونه</li></ul>",
+        "title": "أقلام تلوين KALOUR",
+        "body": "<p>أطقم من أقلام التلوين لكتب التلوين والرسم ودمج الألوان والتظليل.</p><ul><li>قلب طري</li><li>على كل قلم رقمه واسم لونه</li><li>اختر بين 36 و72 و120 قلمًا</li></ul>",
         "type": "أقلام ملوّنة"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Set",
+        "values": [
+          {
+            "asin": "B0H6W9M1MJ",
+            "name": "36 pencils"
+          },
+          {
+            "asin": "B0BHYGM2XG",
+            "name": "72 pencils"
+          },
+          {
+            "asin": "B0BTSSJNKR",
+            "name": "120 pencils"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Set",
+          "ar": "الطقم",
+          "values": [
+            {
+              "name": "36 pencils",
+              "ar": "36 قلمًا"
+            },
+            {
+              "name": "72 pencils",
+              "ar": "72 قلمًا"
+            },
+            {
+              "name": "120 pencils",
+              "ar": "120 قلمًا"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "castle-art-supplies-drawing-charcoal-set-40-pieces",
@@ -6012,9 +6129,25 @@
       "type": "Inks & pens",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.06,
+      "kg": {
+        "Black Indian": 0.06,
+        "Brick Red": 0.06,
+        "Brilliant Green": 0.06,
+        "Burnt Sienna": 0.06,
+        "Canary Yellow": 0.06,
+        "Violet": 0.06,
+        "White": 0.06
+      },
       "kg_source": "estimate",
-      "cost": 10.0,
+      "cost": {
+        "Black Indian": 10.0,
+        "Brick Red": 15.81,
+        "Brilliant Green": 13.11,
+        "Burnt Sienna": 7.29,
+        "Canary Yellow": 12.59,
+        "Violet": 13.37,
+        "White": 11.98
+      },
       "media_keep": [
         1,
         2,
@@ -6023,15 +6156,84 @@
         5
       ],
       "en": {
-        "title": "Winsor & Newton Drawing Ink, Black Indian, 14 ml",
-        "body": "<p>A black drawing ink to use with a brush, a dip pen or an airbrush.</p><ul><li>14 ml bottle</li><li>Black Indian ink</li><li>Dries fast and sticks to most surfaces</li></ul>"
+        "title": "Winsor & Newton Drawing Ink, 14 ml",
+        "body": "<p>A drawing ink to use with a brush, a dip pen or an airbrush.</p><ul><li>14 ml bottle</li><li>Dries fast and sticks to most surfaces</li><li>Choose from Black Indian, Brick Red, Brilliant Green, Burnt Sienna, Canary Yellow, Violet or White</li></ul>"
       },
       "ar": {
-        "title": "حبر رسم Winsor & Newton، أسود Black Indian، 14 مل",
-        "body": "<p>حبر أسود للرسم، يُستعمل بالفرشاة أو بالريشة المعدنية أو بالبخاخ (Airbrush).</p><ul><li>زجاجة 14 مل</li><li>حبر هندي أسود (Black Indian)</li><li>يجفّ بسرعة ويثبت على معظم السطوح</li></ul>",
+        "title": "حبر رسم Winsor & Newton، 14 مل",
+        "body": "<p>حبر للرسم، يُستعمل بالفرشاة أو بالريشة المعدنية أو بالبخاخ (Airbrush).</p><ul><li>زجاجة 14 مل</li><li>يجفّ بسرعة ويثبت على معظم السطوح</li><li>اختر بين أسود Black Indian وأحمر قرميدي وأخضر لامع وبني محروق وأصفر كناري وبنفسجي وأبيض</li></ul>",
         "type": "أحبار وأقلام حبر"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Color",
+        "values": [
+          {
+            "asin": "B000KNP96C",
+            "name": "Black Indian"
+          },
+          {
+            "asin": "B003HD0A4S",
+            "name": "Brick Red"
+          },
+          {
+            "asin": "B000KNL2PY",
+            "name": "Brilliant Green"
+          },
+          {
+            "asin": "B003HCYOGO",
+            "name": "Burnt Sienna"
+          },
+          {
+            "asin": "B000KNJ1B6",
+            "name": "Canary Yellow"
+          },
+          {
+            "asin": "B005FQQHDI",
+            "name": "Violet"
+          },
+          {
+            "asin": "B003HDKM8M",
+            "name": "White"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Color",
+          "ar": "اللون",
+          "values": [
+            {
+              "name": "Black Indian",
+              "ar": "أسود Black Indian"
+            },
+            {
+              "name": "Brick Red",
+              "ar": "أحمر قرميدي"
+            },
+            {
+              "name": "Brilliant Green",
+              "ar": "أخضر لامع"
+            },
+            {
+              "name": "Burnt Sienna",
+              "ar": "بني محروق"
+            },
+            {
+              "name": "Canary Yellow",
+              "ar": "أصفر كناري"
+            },
+            {
+              "name": "Violet",
+              "ar": "بنفسجي"
+            },
+            {
+              "name": "White",
+              "ar": "أبيض"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "higgins-waterproof-black-india-ink-1-oz",
@@ -6322,9 +6524,17 @@
       "type": "Watercolor paper",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.34,
+      "kg": {
+        "9 × 12 in, cold press": 0.34,
+        "9 × 12 in, hot press": 0.34,
+        "10 × 14 in, cold press": 0.45
+      },
       "kg_source": "amazon (Amazon)",
-      "cost": 21.84,
+      "cost": {
+        "9 × 12 in, cold press": 21.84,
+        "9 × 12 in, hot press": 23.95,
+        "10 × 14 in, cold press": 27.53
+      },
       "media_keep": [
         1,
         2,
@@ -6333,15 +6543,52 @@
         5
       ],
       "en": {
-        "title": "Arches Cold Press Watercolor Pad, 9 × 12 in",
-        "body": "<p>Professional watercolor paper made of cotton, for painters who want to work on artist-grade paper.</p><ul><li>100% cotton, with long fibers</li><li>300 gsm (140 lb), cold press</li><li>Natural white</li><li>Pad of 9 × 12 in</li></ul>"
+        "title": "Arches Watercolor Pad",
+        "body": "<p>Professional watercolor paper made of cotton, for painters who want to work on artist-grade paper.</p><ul><li>100% cotton, with long fibers</li><li>300 gsm (140 lb)</li><li>Natural white</li><li>Choose from 9 × 12 in cold press, 9 × 12 in hot press or 10 × 14 in cold press</li></ul>"
       },
       "ar": {
-        "title": "دفتر ورق ألوان مائية Arches، ⁦9 × 12⁩ إنش",
-        "body": "<p>ورق ألوان مائية احترافي مصنوع من القطن، للرسّامين الذين يريدون العمل على ورق بمستوى الفنانين المحترفين.</p><ul><li>قطن 100%، بألياف طويلة</li><li>وزن 300 غ/م² (140 lb)، سطح Cold press نصف خشن</li><li>لون أبيض طبيعي</li><li>دفتر بمقاس ⁦9 × 12⁩ إنش</li></ul>",
+        "title": "دفتر ورق ألوان مائية Arches",
+        "body": "<p>ورق ألوان مائية احترافي مصنوع من القطن، للرسّامين الذين يريدون العمل على ورق بمستوى الفنانين المحترفين.</p><ul><li>قطن 100%، بألياف طويلة</li><li>وزن 300 غ/م² (140 lb)</li><li>لون أبيض طبيعي</li><li>اختر بين ⁦9 × 12⁩ إنش بسطح ضغط بارد (Cold press)، و⁦9 × 12⁩ إنش بسطح ضغط ساخن (Hot press)، و⁦10 × 14⁩ إنش بسطح ضغط بارد</li></ul>",
         "type": "ورق ألوان مائية"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Size",
+        "values": [
+          {
+            "asin": "B01EQHJH10",
+            "name": "9 × 12 in, cold press"
+          },
+          {
+            "asin": "B01AML7K9A",
+            "name": "9 × 12 in, hot press"
+          },
+          {
+            "asin": "B084Z5LP56",
+            "name": "10 × 14 in, cold press"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Size",
+          "ar": "المقاس",
+          "values": [
+            {
+              "name": "9 × 12 in, cold press",
+              "ar": "⁦9 × 12⁩ إنش، ضغط بارد"
+            },
+            {
+              "name": "9 × 12 in, hot press",
+              "ar": "⁦9 × 12⁩ إنش، ضغط ساخن"
+            },
+            {
+              "name": "10 × 14 in, cold press",
+              "ar": "⁦10 × 14⁩ إنش، ضغط بارد"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "strathmore-300-watercolor-pad-11x15",
@@ -6378,9 +6625,15 @@
       "type": "Watercolor paper",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.46,
+      "kg": {
+        "5.5 × 8.5 in": 0.33,
+        "9 × 12 in": 0.46
+      },
       "kg_source": "amazon (Amazon)",
-      "cost": 7.99,
+      "cost": {
+        "5.5 × 8.5 in": 6.99,
+        "9 × 12 in": 7.99
+      },
       "media_keep": [
         1,
         2,
@@ -6389,15 +6642,44 @@
         5
       ],
       "en": {
-        "title": "Hapikalor Watercolor Pad, 9 × 12 in, 20 Sheets",
-        "body": "<p>A watercolor pad with textured, natural white paper, for watercolor as well as dry and mixed media.</p><ul><li>20 sheets, 9 × 12 in</li><li>300 gsm (140 lb), cold pressed</li><li>Acid-free, with a neutral pH</li><li>Textured surface in natural white</li></ul>"
+        "title": "Hapikalor Watercolor Pad",
+        "body": "<p>A watercolor pad with textured, natural white paper, for watercolor as well as dry and mixed media.</p><ul><li>300 gsm (140 lb), cold pressed</li><li>Acid-free, with a neutral pH</li><li>Textured surface in natural white</li><li>Choose from 5.5 × 8.5 in or 9 × 12 in</li></ul>"
       },
       "ar": {
-        "title": "دفتر ورق ألوان مائية Hapikalor، ⁦9 × 12⁩ إنش، 20 ورقة",
-        "body": "<p>دفتر للألوان المائية بورق أبيض طبيعي محبّب الملمس، يصلح أيضًا للأدوات الجافة وللتقنيات المختلطة.</p><ul><li>20 ورقة بمقاس ⁦9 × 12⁩ إنش</li><li>وزن 300 غ/م² (140 lb)، سطح Cold press نصف خشن</li><li>خالٍ من الأحماض، ودرجة حموضته متعادلة</li><li>سطح محبّب بلون أبيض طبيعي</li></ul>",
+        "title": "دفتر ورق ألوان مائية Hapikalor",
+        "body": "<p>دفتر للألوان المائية بورق أبيض طبيعي محبّب الملمس، يصلح أيضًا للأدوات الجافة وللتقنيات المختلطة.</p><ul><li>وزن 300 غ/م² (140 lb)، سطح Cold press نصف خشن</li><li>خالٍ من الأحماض، ودرجة حموضته متعادلة</li><li>سطح محبّب بلون أبيض طبيعي</li><li>اختر بين ⁦5.5 × 8.5⁩ إنش و⁦9 × 12⁩ إنش</li></ul>",
         "type": "ورق ألوان مائية"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Size",
+        "values": [
+          {
+            "asin": "B0DF72766K",
+            "name": "5.5 × 8.5 in"
+          },
+          {
+            "asin": "B0D5R7JRKZ",
+            "name": "9 × 12 in"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Size",
+          "ar": "المقاس",
+          "values": [
+            {
+              "name": "5.5 × 8.5 in",
+              "ar": "⁦5.5 × 8.5⁩ إنش"
+            },
+            {
+              "name": "9 × 12 in",
+              "ar": "⁦9 × 12⁩ إنش"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "esrich-stretched-canvas-8x10-5-pack",
@@ -6406,9 +6688,19 @@
       "type": "Stretched canvas",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.9,
+      "kg": {
+        "5 × 7 in, 8 canvases": 0.5,
+        "8 × 10 in, 5 canvases": 0.9,
+        "9 × 12 in, 5 canvases": 1.0,
+        "12 × 16 in, 3 canvases": 1.0
+      },
       "kg_source": "estimate",
-      "cost": 12.99,
+      "cost": {
+        "5 × 7 in, 8 canvases": 12.99,
+        "8 × 10 in, 5 canvases": 12.99,
+        "9 × 12 in, 5 canvases": 15.99,
+        "12 × 16 in, 3 canvases": 16.99
+      },
       "media_keep": [
         1,
         2,
@@ -6417,15 +6709,60 @@
         5
       ],
       "en": {
-        "title": "ESRICH Stretched Canvas, 8 × 10 in, Pack of 5",
-        "body": "<p>Cotton canvases stretched on wooden frames and already primed, so you can start painting right away.</p><ul><li>5 canvases, 8 × 10 in</li><li>Cotton, primed with acid-free acrylic gesso</li><li>Stapled on a pinewood frame, 5/8 in deep</li><li>For oil, acrylic and gouache</li></ul>"
+        "title": "ESRICH Stretched Canvas",
+        "body": "<p>Cotton canvases stretched on wooden frames and already primed, so you can start painting right away.</p><ul><li>Cotton, primed with acid-free acrylic gesso</li><li>Stapled on a pinewood frame</li><li>For oil, acrylic and gouache</li><li>Choose from 5 × 7 in (8 canvases), 8 × 10 in (5 canvases), 9 × 12 in (5 canvases) or 12 × 16 in (3 canvases)</li></ul>"
       },
       "ar": {
-        "title": "لوحات كانفاس مشدودة ESRICH، ⁦8 × 10⁩ إنش، 5 قطع",
-        "body": "<p>قماش قطني مشدود على إطار خشبي ومجهّز بطبقة أساس، فتبدأ الرسم عليه مباشرة.</p><ul><li>5 لوحات بمقاس ⁦8 × 10⁩ إنش</li><li>قطن مجهّز بطبقة جيسو أكريليك خالية من الأحماض</li><li>مثبّت بالدبابيس على إطار من خشب الصنوبر بعمق ⁦5/8⁩ إنش</li><li>للألوان الزيتية والأكريليك والغواش</li></ul>",
+        "title": "لوحات كانفاس مشدودة ESRICH",
+        "body": "<p>قماش قطني مشدود على إطار خشبي ومجهّز بطبقة أساس، فتبدأ الرسم عليه مباشرة.</p><ul><li>قطن مجهّز بطبقة جيسو أكريليك خالية من الأحماض</li><li>مثبّت بالدبابيس على إطار من خشب الصنوبر</li><li>للألوان الزيتية والأكريليك والغواش</li><li>اختر بين ⁦5 × 7⁩ إنش (8 لوحات)، و⁦8 × 10⁩ إنش (5 لوحات)، و⁦9 × 12⁩ إنش (5 لوحات)، و⁦12 × 16⁩ إنش (3 لوحات)</li></ul>",
         "type": "كانفاس مشدود"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Size",
+        "values": [
+          {
+            "asin": "B0DP4NB9CT",
+            "name": "5 × 7 in, 8 canvases"
+          },
+          {
+            "asin": "B0D3TWT3TX",
+            "name": "8 × 10 in, 5 canvases"
+          },
+          {
+            "asin": "B0FN7V9YYJ",
+            "name": "9 × 12 in, 5 canvases"
+          },
+          {
+            "asin": "B0DKNCZC3J",
+            "name": "12 × 16 in, 3 canvases"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Size",
+          "ar": "المقاس",
+          "values": [
+            {
+              "name": "5 × 7 in, 8 canvases",
+              "ar": "⁦5 × 7⁩ إنش، 8 لوحات"
+            },
+            {
+              "name": "8 × 10 in, 5 canvases",
+              "ar": "⁦8 × 10⁩ إنش، 5 لوحات"
+            },
+            {
+              "name": "9 × 12 in, 5 canvases",
+              "ar": "⁦9 × 12⁩ إنش، 5 لوحات"
+            },
+            {
+              "name": "12 × 16 in, 3 canvases",
+              "ar": "⁦12 × 16⁩ إنش، 3 لوحات"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "esrich-stretched-canvas-multipack-14-pieces",
@@ -6462,9 +6799,17 @@
       "type": "Canvas boards & panels",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.41,
+      "kg": {
+        "8 × 10 in, 5 boards": 0.41,
+        "9 × 12 in, 5 boards": 0.54,
+        "5 × 7 in, 18 boards": 0.67
+      },
       "kg_source": "amazon (Amazon)",
-      "cost": 6.99,
+      "cost": {
+        "8 × 10 in, 5 boards": 6.99,
+        "9 × 12 in, 5 boards": 9.99,
+        "5 × 7 in, 18 boards": 11.99
+      },
       "media_keep": [
         1,
         2,
@@ -6473,15 +6818,52 @@
         5
       ],
       "en": {
-        "title": "ESRICH Canvas Boards, 8 × 10 in, Pack of 5",
-        "body": "<p>Flat canvas boards, primed and ready to paint, for many kinds of paint.</p><ul><li>5 boards, 8 × 10 in</li><li>Pure cotton canvas on a sturdy board core</li><li>Non-toxic, acid-free primer</li><li>For oil, acrylic, watercolor, tempera and pouring</li></ul>"
+        "title": "ESRICH Canvas Boards",
+        "body": "<p>Flat canvas boards, primed and ready to paint, for many kinds of paint.</p><ul><li>Pure cotton canvas on a sturdy board core</li><li>Non-toxic, acid-free primer</li><li>For oil, acrylic, watercolor, tempera and pouring</li><li>Choose from 8 × 10 in (5 boards), 9 × 12 in (5 boards) or 5 × 7 in (18 boards)</li></ul>"
       },
       "ar": {
-        "title": "ألواح كانفاس ESRICH، ⁦8 × 10⁩ إنش، 5 قطع",
-        "body": "<p>ألواح كانفاس مسطّحة، مجهّزة بطبقة أساس وجاهزة للرسم، تصلح لأنواع كثيرة من الألوان.</p><ul><li>5 ألواح بمقاس ⁦8 × 10⁩ إنش</li><li>قماش قطني خالص على لوح متين</li><li>طبقة أساس غير سامّة وخالية من الأحماض</li><li>للألوان الزيتية والأكريليك والمائية والتمبرا وتقنية الصبّ</li></ul>",
+        "title": "ألواح كانفاس ESRICH",
+        "body": "<p>ألواح كانفاس مسطّحة، مجهّزة بطبقة أساس وجاهزة للرسم، تصلح لأنواع كثيرة من الألوان.</p><ul><li>قماش قطني خالص على لوح متين</li><li>طبقة أساس غير سامّة وخالية من الأحماض</li><li>للألوان الزيتية والأكريليك والمائية والتمبرا وتقنية الصبّ</li><li>اختر بين ⁦8 × 10⁩ إنش (5 ألواح)، و⁦9 × 12⁩ إنش (5 ألواح)، و⁦5 × 7⁩ إنش (18 لوحًا)</li></ul>",
         "type": "ألواح كانفاس وخشب"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Size",
+        "values": [
+          {
+            "asin": "B0CMXFTNDC",
+            "name": "8 × 10 in, 5 boards"
+          },
+          {
+            "asin": "B0DXKRBV45",
+            "name": "9 × 12 in, 5 boards"
+          },
+          {
+            "asin": "B0CSCZWPGQ",
+            "name": "5 × 7 in, 18 boards"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Size",
+          "ar": "المقاس",
+          "values": [
+            {
+              "name": "8 × 10 in, 5 boards",
+              "ar": "⁦8 × 10⁩ إنش، 5 ألواح"
+            },
+            {
+              "name": "9 × 12 in, 5 boards",
+              "ar": "⁦9 × 12⁩ إنش، 5 ألواح"
+            },
+            {
+              "name": "5 × 7 in, 18 boards",
+              "ar": "⁦5 × 7⁩ إنش، 18 لوحًا"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "phoenix-canvas-boards-5x7-24-pack",
@@ -6546,9 +6928,19 @@
       "type": "Arabic calligraphy",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.05,
+      "kg": {
+        "1.5 mm": 0.05,
+        "2.4 mm": 0.05,
+        "3.0 mm": 0.05,
+        "3.8 mm": 0.05
+      },
       "kg_source": "estimate",
-      "cost": 11.84,
+      "cost": {
+        "1.5 mm": 12.77,
+        "2.4 mm": 12.12,
+        "3.0 mm": 11.76,
+        "3.8 mm": 12.84
+      },
       "media_keep": [
         1,
         2,
@@ -6557,15 +6949,60 @@
         5
       ],
       "en": {
-        "title": "Pilot Parallel Calligraphy Pen, 3.8 mm",
-        "body": "<p>A calligraphy pen that is well suited to Arabic script. Calligraphy students use it to practice Naskh and Ruqʿa.</p><ul><li>Nib made of two parallel plates, for sharp, clean strokes</li><li>3.8 mm stroke width</li><li>Refillable with ink cartridges; comes with black and red cartridges</li><li>From Pilot, a pen maker for more than 100 years</li></ul>"
+        "title": "Pilot Parallel Calligraphy Pen",
+        "body": "<p>A calligraphy pen that is well suited to Arabic script. Calligraphy students use it to practice Naskh and Ruqʿa.</p><ul><li>Nib made of two parallel plates, for sharp, clean strokes</li><li>Choose a nib width: 1.5, 2.4, 3.0 or 3.8 mm</li><li>Refillable with ink cartridges</li><li>From Pilot, a pen maker for more than 100 years</li></ul>"
       },
       "ar": {
-        "title": "قلم الخط Pilot Parallel، 3.8 مم",
-        "body": "<p>قلم خط مناسب جدًا للحرف العربي، يستعمله طلاب الخط للتدرّب على خط النسخ وخط الرقعة.</p><ul><li>ريشة من صفيحتين متوازيتين تعطي خطوطًا حادّة ونظيفة</li><li>عرض الخط 3.8 مم</li><li>يُعاد ملؤه بخراطيش الحبر، ويأتي مع خراطيش باللونين الأسود والأحمر</li><li>من Pilot التي تصنع الأقلام منذ أكثر من 100 عام</li></ul>",
+        "title": "قلم الخط Pilot Parallel",
+        "body": "<p>قلم خط مناسب جدًا للحرف العربي، يستعمله طلاب الخط للتدرّب على خط النسخ وخط الرقعة.</p><ul><li>ريشة من صفيحتين متوازيتين تعطي خطوطًا حادّة ونظيفة</li><li>اختر عرض الريشة: 1.5 أو 2.4 أو 3.0 أو 3.8 مم</li><li>يُعاد ملؤه بخراطيش الحبر</li><li>من Pilot التي تصنع الأقلام منذ أكثر من 100 عام</li></ul>",
         "type": "خط عربي"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Nib",
+        "values": [
+          {
+            "asin": "B002RJNT46",
+            "name": "1.5 mm"
+          },
+          {
+            "asin": "B002RJLS0S",
+            "name": "2.4 mm"
+          },
+          {
+            "asin": "B08LQT1JTP",
+            "name": "3.0 mm"
+          },
+          {
+            "asin": "B002RJPPMK",
+            "name": "3.8 mm"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Nib",
+          "ar": "عرض الريشة",
+          "values": [
+            {
+              "name": "1.5 mm",
+              "ar": "1.5 مم"
+            },
+            {
+              "name": "2.4 mm",
+              "ar": "2.4 مم"
+            },
+            {
+              "name": "3.0 mm",
+              "ar": "3.0 مم"
+            },
+            {
+              "name": "3.8 mm",
+              "ar": "3.8 مم"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "brause-arabic-calligraphy-nibs-with-holder",
@@ -7190,9 +7627,19 @@
       "type": "Frames",
       "tags": [],
       "stock": "on_order",
-      "kg": 1.3,
+      "kg": {
+        "Black": 1.3,
+        "Natural": 1.3,
+        "Gold": 1.3,
+        "Silver": 1.3
+      },
       "kg_source": "estimate",
-      "cost": 17.99,
+      "cost": {
+        "Black": 17.99,
+        "Natural": 19.99,
+        "Gold": 18.99,
+        "Silver": 19.99
+      },
       "media_keep": [
         1,
         2,
@@ -7201,15 +7648,60 @@
         5
       ],
       "en": {
-        "title": "upsimples Picture Frames, 8 × 10 in, Set of 5, Black",
-        "body": "<p>Simple black frames for photos, prints and artwork.</p><ul><li>Set of 5 black frames</li><li>Fits an 8 × 10 in picture without the mat, or 5 × 7 in with the mat</li><li>Light but firm</li><li>Hangs horizontally or vertically</li></ul><p><strong>Good to know:</strong> the front is clear HD plastic, not glass, so it is safer around kids.</p>"
+        "title": "upsimples Picture Frames, 8 × 10 in, Set of 5",
+        "body": "<p>Simple frames for photos, prints and artwork.</p><ul><li>Set of 5 frames</li><li>Fits an 8 × 10 in picture without the mat, or 5 × 7 in with the mat</li><li>Light but firm; hangs horizontally or vertically</li><li>Choose from black, natural, gold or silver</li></ul><p><strong>Good to know:</strong> the front is clear HD plastic, not glass, so it is safer around kids.</p>"
       },
       "ar": {
-        "title": "إطارات صور upsimples، ⁦8 × 10⁩ إنش، طقم من 5، أسود",
-        "body": "<p>إطارات سوداء بسيطة للصور والرسومات والأعمال الفنية.</p><ul><li>طقم من 5 إطارات سوداء</li><li>تتسع لصورة ⁦8 × 10⁩ إنش من دون الإطار الداخلي (الماونت)، أو ⁦5 × 7⁩ إنش معه</li><li>خفيفة لكنها متينة</li><li>تُعلَّق بالطول أو بالعرض</li></ul><p><strong>للعلم:</strong> الواجهة من بلاستيك شفاف عالي الوضوح وليست من الزجاج، فهي أكثر أمانًا حول الأطفال.</p>",
+        "title": "إطارات صور upsimples، ⁦8 × 10⁩ إنش، طقم من 5",
+        "body": "<p>إطارات بسيطة للصور والرسومات والأعمال الفنية.</p><ul><li>طقم من 5 إطارات</li><li>تتسع لصورة ⁦8 × 10⁩ إنش من دون الإطار الداخلي (الماونت)، أو ⁦5 × 7⁩ إنش معه</li><li>خفيفة لكنها متينة، وتُعلَّق بالطول أو بالعرض</li><li>اختر بين الأسود والخشبي الطبيعي والذهبي والفضي</li></ul><p><strong>للعلم:</strong> الواجهة من بلاستيك شفاف عالي الوضوح وليست من الزجاج، فهي أكثر أمانًا حول الأطفال.</p>",
         "type": "براويز"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Color",
+        "values": [
+          {
+            "asin": "B08XVP48KQ",
+            "name": "Black"
+          },
+          {
+            "asin": "B0C5HVS5RC",
+            "name": "Natural"
+          },
+          {
+            "asin": "B09PQHSGHG",
+            "name": "Gold"
+          },
+          {
+            "asin": "B09Y6BM77K",
+            "name": "Silver"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Color",
+          "ar": "اللون",
+          "values": [
+            {
+              "name": "Black",
+              "ar": "أسود"
+            },
+            {
+              "name": "Natural",
+              "ar": "خشبي طبيعي"
+            },
+            {
+              "name": "Gold",
+              "ar": "ذهبي"
+            },
+            {
+              "name": "Silver",
+              "ar": "فضي"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "wacom-intuos-small-drawing-tablet-wired",
@@ -7666,9 +8158,17 @@
       "type": "Guitar & bass strings",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.03,
+      "kg": {
+        "Regular Slinky 10–46": 0.03,
+        "Hybrid Slinky 9–46": 0.03,
+        "Power Slinky 11–48": 0.04
+      },
       "kg_source": "estimate",
-      "cost": 8.99,
+      "cost": {
+        "Regular Slinky 10–46": 8.99,
+        "Hybrid Slinky 9–46": 8.99,
+        "Power Slinky 11–48": 8.99
+      },
       "media_keep": [
         1,
         2,
@@ -7677,15 +8177,52 @@
         5
       ],
       "en": {
-        "title": "Ernie Ball Regular Slinky Electric Guitar Strings, 10–46",
-        "body": "<p>The classic Regular Slinky set for electric guitar, with a bright, balanced tone. A gauge that suits most players and styles.</p><ul><li>Nickel wound strings, gauge 10–46 (P02221)</li><li>The industry-standard gauge for electric guitar</li><li>Bright, balanced tone</li><li>Element Shield packaging keeps the strings fresh</li></ul>"
+        "title": "Ernie Ball Slinky Electric Guitar Strings",
+        "body": "<p>Ernie Ball's well-known Slinky strings for electric guitar, in three gauges.</p><ul><li>Nickel wound strings</li><li>Choose from Regular Slinky 10–46, Hybrid Slinky 9–46 or Power Slinky 11–48</li><li>Regular Slinky 10–46 is the industry-standard gauge for electric guitar</li><li>Element Shield packaging keeps the strings fresh</li></ul>"
       },
       "ar": {
-        "title": "أوتار غيتار كهربائي Ernie Ball Regular Slinky، ⁦10–46⁩",
-        "body": "<p>طقم Regular Slinky المعروف للغيتار الكهربائي، بصوت لامع ومتوازن. سماكة تناسب معظم العازفين ومعظم الأنماط.</p><ul><li>أوتار ملفوفة بالنيكل، سماكة ⁦10–46⁩ (P02221)</li><li>السماكة المعتمدة عادةً للغيتار الكهربائي</li><li>صوت لامع ومتوازن</li><li>تغليف Element Shield يحافظ على الأوتار جديدة</li></ul>",
+        "title": "أوتار غيتار كهربائي Ernie Ball Slinky",
+        "body": "<p>أوتار Slinky المعروفة من Ernie Ball للغيتار الكهربائي، بثلاث سماكات.</p><ul><li>أوتار ملفوفة بالنيكل</li><li>اختر بين Regular Slinky ⁦10–46⁩ وHybrid Slinky ⁦9–46⁩ وPower Slinky ⁦11–48⁩</li><li>سماكة Regular Slinky ⁦10–46⁩ هي المعتمدة عادةً للغيتار الكهربائي</li><li>تغليف Element Shield يحافظ على الأوتار جديدة</li></ul>",
         "type": "أوتار غيتار وباص"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Gauge",
+        "values": [
+          {
+            "asin": "B0002M6CVC",
+            "name": "Regular Slinky 10–46"
+          },
+          {
+            "asin": "B0002PBS6S",
+            "name": "Hybrid Slinky 9–46"
+          },
+          {
+            "asin": "B0002PBS6I",
+            "name": "Power Slinky 11–48"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Gauge",
+          "ar": "السماكة",
+          "values": [
+            {
+              "name": "Regular Slinky 10–46",
+              "ar": "Regular Slinky ⁦10–46⁩"
+            },
+            {
+              "name": "Hybrid Slinky 9–46",
+              "ar": "Hybrid Slinky ⁦9–46⁩"
+            },
+            {
+              "name": "Power Slinky 11–48",
+              "ar": "Power Slinky ⁦11–48⁩"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "elixir-nanoweb-electric-strings-10-46",
@@ -7694,9 +8231,17 @@
       "type": "Guitar & bass strings",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.04,
+      "kg": {
+        "Super Light 9–42": 0.04,
+        "Light 10–46": 0.04,
+        "Medium 11–49": 0.04
+      },
       "kg_source": "amazon (Amazon)",
-      "cost": 17.99,
+      "cost": {
+        "Super Light 9–42": 17.99,
+        "Light 10–46": 17.99,
+        "Medium 11–49": 17.97
+      },
       "media_keep": [
         1,
         2,
@@ -7705,43 +8250,52 @@
         5
       ],
       "en": {
-        "title": "Elixir NANOWEB Electric Guitar Strings, 10–46",
-        "body": "<p>Coated electric guitar strings that keep their bright tone for longer. A good choice if strings lose their sound quickly on your guitar.</p><ul><li>Nickel-plated steel with NANOWEB coating</li><li>Gauge 10–46</li><li>The coating protects from sweat, corrosion and humidity</li><li>Bright tone that lasts longer</li></ul>"
+        "title": "Elixir NANOWEB Electric Guitar Strings",
+        "body": "<p>Coated electric guitar strings that keep their bright tone for longer. A good choice if strings lose their sound quickly on your guitar.</p><ul><li>Nickel-plated steel with NANOWEB coating</li><li>The coating protects from sweat, corrosion and humidity</li><li>Bright tone that lasts longer</li><li>Choose from Super Light 9–42, Light 10–46 or Medium 11–49</li></ul>"
       },
       "ar": {
-        "title": "أوتار غيتار كهربائي Elixir NANOWEB، ⁦10–46⁩",
-        "body": "<p>أوتار مغلّفة للغيتار الكهربائي تحافظ على صوتها اللامع مدة أطول. خيار جيد إذا كانت الأوتار تفقد صوتها بسرعة على غيتارك.</p><ul><li>فولاذ مطلي بالنيكل مع طبقة NANOWEB</li><li>سماكة ⁦10–46⁩</li><li>الطبقة تحمي الأوتار من العرق والصدأ والرطوبة</li><li>صوت لامع يدوم أكثر</li></ul>",
+        "title": "أوتار غيتار كهربائي Elixir NANOWEB",
+        "body": "<p>أوتار مغلّفة للغيتار الكهربائي تحافظ على صوتها اللامع مدة أطول. خيار جيد إذا كانت الأوتار تفقد صوتها بسرعة على غيتارك.</p><ul><li>فولاذ مطلي بالنيكل مع طبقة NANOWEB</li><li>الطبقة تحمي الأوتار من العرق والصدأ والرطوبة</li><li>صوت لامع يدوم أكثر</li><li>اختر بين Super Light ⁦9–42⁩ وLight ⁦10–46⁩ وMedium ⁦11–49⁩</li></ul>",
         "type": "أوتار غيتار وباص"
       },
-      "publish": true
-    },
-    {
-      "handle": "elixir-nanoweb-electric-strings-9-42",
-      "asin": "B0002E1O2W",
-      "vendor": "Elixir",
-      "type": "Guitar & bass strings",
-      "tags": [],
-      "stock": "on_order",
-      "kg": 0.04,
-      "kg_source": "estimate",
-      "cost": 17.99,
-      "media_keep": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "en": {
-        "title": "Elixir NANOWEB Electric Guitar Strings, Light 9–42",
-        "body": "<p>Coated electric guitar strings in a light gauge, easier on the fingers and slower to lose their bright tone.</p><ul><li>Nickel-plated steel with NANOWEB coating</li><li>Light gauge 9–42</li><li>The coating protects from sweat, corrosion and humidity</li><li>Bright tone that lasts longer</li></ul>"
+      "publish": true,
+      "merge_variants": {
+        "option": "Gauge",
+        "values": [
+          {
+            "asin": "B0002E1O2W",
+            "name": "Super Light 9–42"
+          },
+          {
+            "asin": "B0002E1O3G",
+            "name": "Light 10–46"
+          },
+          {
+            "asin": "B0002E1O5E",
+            "name": "Medium 11–49"
+          }
+        ]
       },
-      "ar": {
-        "title": "أوتار غيتار كهربائي Elixir NANOWEB، خفيفة ⁦9–42⁩",
-        "body": "<p>أوتار مغلّفة للغيتار الكهربائي بسماكة خفيفة، أريح على الأصابع وتحافظ على صوتها اللامع مدة أطول.</p><ul><li>فولاذ مطلي بالنيكل مع طبقة NANOWEB</li><li>سماكة خفيفة ⁦9–42⁩</li><li>الطبقة تحمي الأوتار من العرق والصدأ والرطوبة</li><li>صوت لامع يدوم أكثر</li></ul>",
-        "type": "أوتار غيتار وباص"
-      },
-      "publish": true
+      "options": [
+        {
+          "name": "Gauge",
+          "ar": "السماكة",
+          "values": [
+            {
+              "name": "Super Light 9–42",
+              "ar": "Super Light ⁦9–42⁩"
+            },
+            {
+              "name": "Light 10–46",
+              "ar": "Light ⁦10–46⁩"
+            },
+            {
+              "name": "Medium 11–49",
+              "ar": "Medium ⁦11–49⁩"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "daddario-exl110-electric-strings-10-46-3-sets",
@@ -7750,9 +8304,15 @@
       "type": "Guitar & bass strings",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.09,
+      "kg": {
+        "3 sets": 0.09,
+        "10 sets": 0.25
+      },
       "kg_source": "estimate",
-      "cost": 20.95,
+      "cost": {
+        "3 sets": 20.95,
+        "10 sets": 62.99
+      },
       "media_keep": [
         1,
         2,
@@ -7761,15 +8321,44 @@
         5
       ],
       "en": {
-        "title": "D'Addario EXL110 Electric Guitar Strings, 10–46, 3 Sets",
-        "body": "<p>D'Addario's best-selling electric guitar strings, in a pack of three sets so you always have a spare.</p><ul><li>XL Nickel, gauge 10–46</li><li>Nickel-plated steel with a bright, versatile tone</li><li>Hex-Core for good intonation and a consistent feel</li><li>3 full sets in the pack</li></ul>"
+        "title": "D'Addario EXL110 Electric Guitar Strings, 10–46",
+        "body": "<p>D'Addario's best-selling electric guitar strings, in packs of several sets so you always have a spare.</p><ul><li>XL Nickel, gauge 10–46</li><li>Nickel-plated steel with a bright, versatile tone</li><li>Hex-Core for good intonation and a consistent feel</li><li>Choose a pack of 3 or 10 full sets</li></ul>"
       },
       "ar": {
-        "title": "أوتار غيتار كهربائي D'Addario EXL110، ⁦10–46⁩، 3 أطقم",
-        "body": "<p>أكثر أوتار D'Addario مبيعًا للغيتار الكهربائي، في عبوة من ثلاثة أطقم ليبقى لديك دائمًا طقم احتياطي.</p><ul><li>XL Nickel، سماكة ⁦10–46⁩</li><li>فولاذ مطلي بالنيكل بصوت لامع يناسب أنماطًا كثيرة</li><li>قلب سداسي (Hex-Core) لدوزان دقيق وإحساس ثابت تحت الأصابع</li><li>3 أطقم كاملة في العبوة</li></ul>",
+        "title": "أوتار غيتار كهربائي D'Addario EXL110، ⁦10–46⁩",
+        "body": "<p>أكثر أوتار D'Addario مبيعًا للغيتار الكهربائي، في عبوات من عدة أطقم ليبقى لديك دائمًا طقم احتياطي.</p><ul><li>XL Nickel، سماكة ⁦10–46⁩</li><li>فولاذ مطلي بالنيكل بصوت لامع يناسب أنماطًا كثيرة</li><li>قلب سداسي (Hex-Core) لدوزان دقيق وإحساس ثابت تحت الأصابع</li><li>اختر عبوة من 3 أطقم كاملة أو 10 أطقم</li></ul>",
         "type": "أوتار غيتار وباص"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Pack",
+        "values": [
+          {
+            "asin": "B000EEJ91I",
+            "name": "3 sets"
+          },
+          {
+            "asin": "B000HOYICA",
+            "name": "10 sets"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Pack",
+          "ar": "العبوة",
+          "values": [
+            {
+              "name": "3 sets",
+              "ar": "3 أطقم"
+            },
+            {
+              "name": "10 sets",
+              "ar": "10 أطقم"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "martin-authentic-acoustic-lifespan-2-strings",
@@ -7834,9 +8423,19 @@
       "type": "Guitar & bass strings",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.12,
+      "kg": {
+        "Regular 50–105, 4 strings": 0.12,
+        "Hybrid 45–105, 4 strings": 0.12,
+        "Super 45–100, 4 strings": 0.12,
+        "Regular 45–130, 5 strings": 0.15
+      },
       "kg_source": "estimate",
-      "cost": 21.57,
+      "cost": {
+        "Regular 50–105, 4 strings": 21.57,
+        "Hybrid 45–105, 4 strings": 21.85,
+        "Super 45–100, 4 strings": 21.99,
+        "Regular 45–130, 5 strings": 27.95
+      },
       "media_keep": [
         1,
         2,
@@ -7845,15 +8444,60 @@
         5
       ],
       "en": {
-        "title": "Ernie Ball Regular Slinky Bass Strings, 4-String, 50–105",
-        "body": "<p>Nickel wound strings for 4-string bass, with a rich, balanced tone.</p><ul><li>Gauge 50–105 (P02832)</li><li>One of the most popular gauges for 4-string bass</li><li>Nickel wound, rich and balanced tone</li><li>Element Shield packaging keeps the strings fresh</li></ul>"
+        "title": "Ernie Ball Slinky Bass Strings",
+        "body": "<p>Nickel wound Slinky strings from Ernie Ball, for 4-string and 5-string bass.</p><ul><li>Nickel wound strings</li><li>Choose from Regular 50–105, Hybrid 45–105 or Super 45–100 for 4-string bass, or Regular 45–130 for 5-string bass</li><li>Regular 50–105 is one of the most popular gauges for 4-string bass</li><li>Element Shield packaging keeps the strings fresh</li></ul>"
       },
       "ar": {
-        "title": "أوتار باص Ernie Ball Regular Slinky، 4 أوتار، ⁦50–105⁩",
-        "body": "<p>أوتار ملفوفة بالنيكل للباص ذي الأوتار الأربعة، بصوت غني ومتوازن.</p><ul><li>سماكة ⁦50–105⁩ (P02832)</li><li>من أكثر السماكات استعمالًا للباص ذي الأوتار الأربعة</li><li>ملفوفة بالنيكل، صوت غني ومتوازن</li><li>تغليف Element Shield يحافظ على الأوتار جديدة</li></ul>",
+        "title": "أوتار باص Ernie Ball Slinky",
+        "body": "<p>أوتار Slinky ملفوفة بالنيكل من Ernie Ball، للباص ذي الأوتار الأربعة أو الخمسة.</p><ul><li>أوتار ملفوفة بالنيكل</li><li>اختر بين Regular ⁦50–105⁩ وHybrid ⁦45–105⁩ وSuper ⁦45–100⁩ للباص ذي الأوتار الأربعة، أو Regular ⁦45–130⁩ للباص ذي الأوتار الخمسة</li><li>سماكة Regular ⁦50–105⁩ من أكثر السماكات استعمالًا للباص ذي الأوتار الأربعة</li><li>تغليف Element Shield يحافظ على الأوتار جديدة</li></ul>",
         "type": "أوتار غيتار وباص"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Gauge",
+        "values": [
+          {
+            "asin": "B000MFL7UU",
+            "name": "Regular 50–105, 4 strings"
+          },
+          {
+            "asin": "B0002M6BD6",
+            "name": "Hybrid 45–105, 4 strings"
+          },
+          {
+            "asin": "B0002M6BDQ",
+            "name": "Super 45–100, 4 strings"
+          },
+          {
+            "asin": "B000P5ZQ54",
+            "name": "Regular 45–130, 5 strings"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Gauge",
+          "ar": "السماكة",
+          "values": [
+            {
+              "name": "Regular 50–105, 4 strings",
+              "ar": "Regular ⁦50–105⁩، 4 أوتار"
+            },
+            {
+              "name": "Hybrid 45–105, 4 strings",
+              "ar": "Hybrid ⁦45–105⁩، 4 أوتار"
+            },
+            {
+              "name": "Super 45–100, 4 strings",
+              "ar": "Super ⁦45–100⁩، 4 أوتار"
+            },
+            {
+              "name": "Regular 45–130, 5 strings",
+              "ar": "Regular ⁦45–130⁩، 5 أوتار"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "daddario-xl-nickel-bass-strings-45-100",
@@ -8002,9 +8646,23 @@
       "type": "Picks",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.02,
+      "kg": {
+        "0.50 mm (red)": 0.02,
+        "0.60 mm (orange)": 0.02,
+        "0.73 mm (yellow)": 0.02,
+        "0.88 mm (green)": 0.02,
+        "1.00 mm (blue)": 0.02,
+        "1.14 mm (purple)": 0.02
+      },
       "kg_source": "amazon (Amazon)",
-      "cost": 5.76,
+      "cost": {
+        "0.50 mm (red)": 5.76,
+        "0.60 mm (orange)": 5.76,
+        "0.73 mm (yellow)": 5.76,
+        "0.88 mm (green)": 5.76,
+        "1.00 mm (blue)": 5.76,
+        "1.14 mm (purple)": 5.76
+      },
       "media_keep": [
         1,
         2,
@@ -8013,15 +8671,76 @@
         5
       ],
       "en": {
-        "title": "Dunlop Tortex Standard Picks, 0.73 mm, 12 Picks",
-        "body": "<p>The well-known yellow Tortex picks in a medium 0.73 mm gauge, with a bright, snappy attack.</p><ul><li>12 picks, 0.73 mm, yellow</li><li>Bright, snappy attack</li><li>Matte surface for a good grip</li><li>Made in the USA since 1981</li></ul>"
+        "title": "Dunlop Tortex Standard Picks, 12 Picks",
+        "body": "<p>The well-known Tortex picks, with a bright, snappy attack. Each thickness has its own color.</p><ul><li>12 picks in a pack</li><li>Choose from 0.50 mm (red), 0.60 mm (orange), 0.73 mm (yellow), 0.88 mm (green), 1.00 mm (blue) or 1.14 mm (purple)</li><li>Matte surface for a good grip</li><li>Made in the USA since 1981</li></ul>"
       },
       "ar": {
-        "title": "ريشات غيتار Dunlop Tortex Standard، 0.73 مم، 12 ريشة",
-        "body": "<p>ريشات Tortex الصفراء المعروفة بسماكة متوسطة 0.73 مم، بضربة واضحة ولامعة.</p><ul><li>12 ريشة، 0.73 مم، لون أصفر</li><li>ضربة لامعة وحادّة</li><li>سطح مطفي لإمساك ثابت</li><li>تُصنع في الولايات المتحدة منذ 1981</li></ul>",
+        "title": "ريشات غيتار Dunlop Tortex Standard، 12 ريشة",
+        "body": "<p>ريشات Tortex المعروفة، بضربة واضحة ولامعة. لكل سماكة لونها الخاص.</p><ul><li>12 ريشة في العبوة</li><li>اختر بين 0.50 مم (أحمر) و0.60 مم (برتقالي) و0.73 مم (أصفر) و0.88 مم (أخضر) و1.00 مم (أزرق) و1.14 مم (بنفسجي)</li><li>سطح مطفي لإمساك ثابت</li><li>تُصنع في الولايات المتحدة منذ 1981</li></ul>",
         "type": "ريش غيتار"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Thickness",
+        "values": [
+          {
+            "asin": "B0002D0CEO",
+            "name": "0.50 mm (red)"
+          },
+          {
+            "asin": "B0064BCRQE",
+            "name": "0.60 mm (orange)"
+          },
+          {
+            "asin": "B00HEKIKYC",
+            "name": "0.73 mm (yellow)"
+          },
+          {
+            "asin": "B0002GX7XY",
+            "name": "0.88 mm (green)"
+          },
+          {
+            "asin": "B0002D0CFS",
+            "name": "1.00 mm (blue)"
+          },
+          {
+            "asin": "B0002GX7ZM",
+            "name": "1.14 mm (purple)"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Thickness",
+          "ar": "السماكة",
+          "values": [
+            {
+              "name": "0.50 mm (red)",
+              "ar": "0.50 مم (أحمر)"
+            },
+            {
+              "name": "0.60 mm (orange)",
+              "ar": "0.60 مم (برتقالي)"
+            },
+            {
+              "name": "0.73 mm (yellow)",
+              "ar": "0.73 مم (أصفر)"
+            },
+            {
+              "name": "0.88 mm (green)",
+              "ar": "0.88 مم (أخضر)"
+            },
+            {
+              "name": "1.00 mm (blue)",
+              "ar": "1.00 مم (أزرق)"
+            },
+            {
+              "name": "1.14 mm (purple)",
+              "ar": "1.14 مم (بنفسجي)"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "dunlop-electric-pick-variety-pack-12",
@@ -8198,9 +8917,15 @@
       "type": "Straps",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.1,
+      "kg": {
+        "Black": 0.1,
+        "Cream": 0.1
+      },
       "kg_source": "estimate",
-      "cost": 10.99,
+      "cost": {
+        "Black": 10.99,
+        "Cream": 10.99
+      },
       "media_keep": [
         1,
         2,
@@ -8209,15 +8934,44 @@
         5
       ],
       "en": {
-        "title": "Ernie Ball Polypro Guitar Strap, Black",
-        "body": "<p>A simple, adjustable strap for acoustic guitar, with a loop to tie at the headstock.</p><ul><li>Polypropylene, 5 cm (2 in) wide, black</li><li>Adjustable from 104 to 183 cm (41–72 in)</li><li>Leather loop to tie at the headstock, for guitars without a neck strap button</li></ul>"
+        "title": "Ernie Ball Polypro Guitar Strap",
+        "body": "<p>A simple, adjustable strap for acoustic guitar, with a loop to tie at the headstock.</p><ul><li>Polypropylene, 5 cm (2 in) wide</li><li>Adjustable from 104 to 183 cm (41–72 in)</li><li>Leather loop to tie at the headstock, for guitars without a neck strap button</li><li>Choose black or cream</li></ul>"
       },
       "ar": {
-        "title": "حزام غيتار Ernie Ball Polypro، أسود",
-        "body": "<p>حزام بسيط وقابل للتعديل للغيتار الأكوستيك، مع حلقة تُربط عند رأس الغيتار.</p><ul><li>بوليبروبيلين، بعرض 5 سم (2 إنش)، لون أسود</li><li>طول قابل للتعديل ⁦104–183⁩ سم (⁦41–72⁩ إنش)</li><li>حلقة من الجلد تُربط عند رأس الغيتار، للغيتارات التي ليس فيها زر للحزام عند الزند</li></ul>",
+        "title": "حزام غيتار Ernie Ball Polypro",
+        "body": "<p>حزام بسيط وقابل للتعديل للغيتار الأكوستيك، مع حلقة تُربط عند رأس الغيتار.</p><ul><li>بوليبروبيلين، بعرض 5 سم (2 إنش)</li><li>طول قابل للتعديل ⁦104–183⁩ سم (⁦41–72⁩ إنش)</li><li>حلقة من الجلد تُربط عند رأس الغيتار، للغيتارات التي ليس فيها زر للحزام عند الزند</li><li>اختر بين الأسود والكريمي</li></ul>",
         "type": "أحزمة"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Color",
+        "values": [
+          {
+            "asin": "B0CJB54BD4",
+            "name": "Black"
+          },
+          {
+            "asin": "B0CJB4CTSJ",
+            "name": "Cream"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Color",
+          "ar": "اللون",
+          "values": [
+            {
+              "name": "Black",
+              "ar": "أسود"
+            },
+            {
+              "name": "Cream",
+              "ar": "كريمي"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "fender-guitar-strap-2-in",
@@ -8226,9 +8980,17 @@
       "type": "Straps",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.1,
+      "kg": {
+        "Black, white logo": 0.1,
+        "Black, gray logo": 0.1,
+        "Black, red logo": 0.1
+      },
       "kg_source": "estimate",
-      "cost": 10.49,
+      "cost": {
+        "Black, white logo": 10.49,
+        "Black, gray logo": 11.99,
+        "Black, red logo": 11.99
+      },
       "media_keep": [
         1,
         2,
@@ -8238,14 +9000,51 @@
       ],
       "en": {
         "title": "Fender Polypropylene Guitar Strap, 2 in",
-        "body": "<p>Fender's classic guitar strap: simple, light and adjustable.</p><ul><li>Polypropylene</li><li>5 cm (2 in) wide</li><li>Adjustable length</li></ul>"
+        "body": "<p>Fender's classic guitar strap: simple, light and adjustable.</p><ul><li>Polypropylene</li><li>5 cm (2 in) wide</li><li>Adjustable length</li><li>Choose black with a white, gray or red logo</li></ul>"
       },
       "ar": {
         "title": "حزام غيتار Fender من البوليبروبيلين، 2 إنش",
-        "body": "<p>حزام الغيتار الكلاسيكي من Fender: بسيط وخفيف وقابل للتعديل.</p><ul><li>بوليبروبيلين</li><li>بعرض 5 سم (2 إنش)</li><li>طول قابل للتعديل</li></ul>",
+        "body": "<p>حزام الغيتار الكلاسيكي من Fender: بسيط وخفيف وقابل للتعديل.</p><ul><li>بوليبروبيلين</li><li>بعرض 5 سم (2 إنش)</li><li>طول قابل للتعديل</li><li>اختر اللون: أسود مع شعار أبيض أو رمادي أو أحمر</li></ul>",
         "type": "أحزمة"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Color",
+        "values": [
+          {
+            "asin": "B0002KZDNM",
+            "name": "Black, white logo"
+          },
+          {
+            "asin": "B0002KZDPK",
+            "name": "Black, gray logo"
+          },
+          {
+            "asin": "B0002KZDOG",
+            "name": "Black, red logo"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Color",
+          "ar": "اللون",
+          "values": [
+            {
+              "name": "Black, white logo",
+              "ar": "أسود، شعار أبيض"
+            },
+            {
+              "name": "Black, gray logo",
+              "ar": "أسود، شعار رمادي"
+            },
+            {
+              "name": "Black, red logo",
+              "ar": "أسود، شعار أحمر"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "dunlop-straplok-strap-locks-nickel",
@@ -8478,9 +9277,19 @@
       "type": "Violin strings",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.03,
+      "kg": {
+        "4/4": 0.03,
+        "3/4": 0.03,
+        "1/2": 0.03,
+        "1/4": 0.03
+      },
       "kg_source": "estimate",
-      "cost": 66.98,
+      "cost": {
+        "4/4": 66.98,
+        "3/4": 58.96,
+        "1/2": 66.3,
+        "1/4": 73.34
+      },
       "media_keep": [
         1,
         2,
@@ -8489,15 +9298,60 @@
         5
       ],
       "en": {
-        "title": "Thomastik-Infeld Dominant Violin Strings, 4/4",
-        "body": "<p>Violin strings with a warm, clear and well-balanced tone. Used by professionals around the world, and easy for beginners too.</p><ul><li>For 4/4 violin</li><li>Medium tension</li><li>Synthetic multi-strand core</li><li>Steel E string (135B)</li></ul>"
+        "title": "Thomastik-Infeld Dominant Violin Strings",
+        "body": "<p>Violin strings with a warm, clear and well-balanced tone. Used by professionals around the world, and easy for beginners too.</p><ul><li>For full-size and smaller violins: choose size 4/4, 3/4, 1/2 or 1/4</li><li>Medium tension</li><li>Synthetic multi-strand core</li><li>Steel E string</li></ul>"
       },
       "ar": {
-        "title": "أوتار كمان Thomastik-Infeld Dominant، مقاس ⁦4/4⁩",
-        "body": "<p>أوتار كمان بصوت دافئ وواضح ومتوازن. يستعملها المحترفون حول العالم، وهي سهلة للمبتدئين أيضًا.</p><ul><li>للكمان مقاس ⁦4/4⁩</li><li>شدّ متوسط</li><li>قلب صناعي متعدد الشعيرات</li><li>وتر E من الفولاذ (135B)</li></ul>",
+        "title": "أوتار كمان Thomastik-Infeld Dominant",
+        "body": "<p>أوتار كمان بصوت دافئ وواضح ومتوازن. يستعملها المحترفون حول العالم، وهي سهلة للمبتدئين أيضًا.</p><ul><li>للكمان بالحجم الكامل والأصغر منه: اختر المقاس ⁦4/4⁩ أو ⁦3/4⁩ أو ⁦1/2⁩ أو ⁦1/4⁩</li><li>شدّ متوسط</li><li>قلب صناعي متعدد الشعيرات</li><li>وتر E من الفولاذ</li></ul>",
         "type": "أوتار كمان"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Violin size",
+        "values": [
+          {
+            "asin": "B000E1TJDE",
+            "name": "4/4"
+          },
+          {
+            "asin": "B000E1TJDY",
+            "name": "3/4"
+          },
+          {
+            "asin": "B000E1REHM",
+            "name": "1/2"
+          },
+          {
+            "asin": "B000E1P9OW",
+            "name": "1/4"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Violin size",
+          "ar": "مقاس الكمان",
+          "values": [
+            {
+              "name": "4/4",
+              "ar": "⁦4/4⁩"
+            },
+            {
+              "name": "3/4",
+              "ar": "⁦3/4⁩"
+            },
+            {
+              "name": "1/2",
+              "ar": "⁦1/2⁩"
+            },
+            {
+              "name": "1/4",
+              "ar": "⁦1/4⁩"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "daddario-prelude-viola-strings-medium-scale",
@@ -8674,9 +9528,19 @@
       "type": "Reeds",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.05,
+      "kg": {
+        "2": 0.05,
+        "2.5": 0.05,
+        "3": 0.05,
+        "3.5": 0.05
+      },
       "kg_source": "amazon (Amazon)",
-      "cost": 30.99,
+      "cost": {
+        "2": 30.99,
+        "2.5": 30.99,
+        "3": 30.99,
+        "3.5": 30.99
+      },
       "media_keep": [
         1,
         2,
@@ -8685,15 +9549,60 @@
         5
       ],
       "en": {
-        "title": "Rico Alto Sax Reeds, Strength 2.5, Box of 10",
-        "body": "<p>Reeds for the alto saxophone, a standard for students and teachers for generations.</p><ul><li>Strength 2.5</li><li>Box of 10 reeds</li><li>Naturally grown cane</li><li>Made in the USA</li></ul>"
+        "title": "Rico Alto Saxophone Reeds, Box of 10",
+        "body": "<p>Reeds for the alto saxophone, a standard for students and teachers for generations.</p><ul><li>Choose strength 2, 2.5, 3 or 3.5</li><li>Box of 10 reeds</li><li>Naturally grown cane</li><li>Made in the USA</li></ul>"
       },
       "ar": {
-        "title": "قصبات ساكسفون ألتو Rico، قوة 2.5، علبة من 10",
-        "body": "<p>قصبات للساكسفون ألتو، يعتمدها الطلاب والأساتذة منذ أجيال.</p><ul><li>القوة 2.5</li><li>علبة من 10 قصبات</li><li>من قصب طبيعي</li><li>صُنعت في الولايات المتحدة</li></ul>",
+        "title": "قصبات ساكسفون ألتو Rico، علبة من 10",
+        "body": "<p>قصبات للساكسفون ألتو، يعتمدها الطلاب والأساتذة منذ أجيال.</p><ul><li>اختر القوة: 2 أو 2.5 أو 3 أو 3.5</li><li>علبة من 10 قصبات</li><li>من قصب طبيعي</li><li>صُنعت في الولايات المتحدة</li></ul>",
         "type": "قصبات"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Strength",
+        "values": [
+          {
+            "asin": "B000VVG836",
+            "name": "2"
+          },
+          {
+            "asin": "B0002F59GI",
+            "name": "2.5"
+          },
+          {
+            "asin": "B0002F59FE",
+            "name": "3"
+          },
+          {
+            "asin": "B0002F59H2",
+            "name": "3.5"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Strength",
+          "ar": "القوة",
+          "values": [
+            {
+              "name": "2",
+              "ar": "2"
+            },
+            {
+              "name": "2.5",
+              "ar": "2.5"
+            },
+            {
+              "name": "3",
+              "ar": "3"
+            },
+            {
+              "name": "3.5",
+              "ar": "3.5"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "vandoren-traditional-tenor-sax-reeds-3-box-of-5",
@@ -8702,9 +9611,19 @@
       "type": "Reeds",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.03,
+      "kg": {
+        "2": 0.03,
+        "2.5": 0.03,
+        "3": 0.03,
+        "3.5": 0.03
+      },
       "kg_source": "amazon (Amazon)",
-      "cost": 31.0,
+      "cost": {
+        "2": 30.0,
+        "2.5": 31.0,
+        "3": 31.0,
+        "3.5": 31.0
+      },
       "media_keep": [
         1,
         2,
@@ -8713,15 +9632,60 @@
         5
       ],
       "en": {
-        "title": "Vandoren Traditional Tenor Sax Reeds, Strength 3, Box of 5",
-        "body": "<p>Vandoren's Traditional reeds for the tenor saxophone, with good response in all registers.</p><ul><li>Model SR223</li><li>Strength 3</li><li>Box of 5 reeds</li><li>Each reed in its own Flow Pack</li></ul>"
+        "title": "Vandoren Traditional Tenor Saxophone Reeds, Box of 5",
+        "body": "<p>Vandoren's Traditional reeds for the tenor saxophone, with good response in all registers.</p><ul><li>Choose strength 2, 2.5, 3 or 3.5</li><li>Box of 5 reeds</li><li>Each reed in its own Flow Pack</li></ul>"
       },
       "ar": {
-        "title": "قصبات ساكسفون تينور Vandoren Traditional، قوة 3، علبة من 5",
-        "body": "<p>قصبات Traditional من Vandoren للساكسفون تينور، تستجيب جيدًا في كل المناطق الصوتية.</p><ul><li>موديل SR223</li><li>القوة 3</li><li>علبة من 5 قصبات</li><li>كل قصبة في غلاف Flow Pack خاص بها</li></ul>",
+        "title": "قصبات ساكسفون تينور Vandoren Traditional، علبة من 5",
+        "body": "<p>قصبات Traditional من Vandoren للساكسفون تينور، تستجيب جيدًا في كل المناطق الصوتية.</p><ul><li>اختر القوة: 2 أو 2.5 أو 3 أو 3.5</li><li>علبة من 5 قصبات</li><li>كل قصبة في غلاف Flow Pack خاص بها</li></ul>",
         "type": "قصبات"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Strength",
+        "values": [
+          {
+            "asin": "B0002D0A7I",
+            "name": "2"
+          },
+          {
+            "asin": "B0002D0A7S",
+            "name": "2.5"
+          },
+          {
+            "asin": "B0002D0A82",
+            "name": "3"
+          },
+          {
+            "asin": "B0002D0A8C",
+            "name": "3.5"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Strength",
+          "ar": "القوة",
+          "values": [
+            {
+              "name": "2",
+              "ar": "2"
+            },
+            {
+              "name": "2.5",
+              "ar": "2.5"
+            },
+            {
+              "name": "3",
+              "ar": "3"
+            },
+            {
+              "name": "3.5",
+              "ar": "3.5"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "rico-bb-clarinet-reeds-2-5-pack-of-3",
@@ -8730,9 +9694,17 @@
       "type": "Reeds",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.02,
+      "kg": {
+        "2": 0.02,
+        "2.5": 0.02,
+        "3": 0.02
+      },
       "kg_source": "amazon (Amazon)",
-      "cost": 12.99,
+      "cost": {
+        "2": 12.99,
+        "2.5": 12.99,
+        "3": 12.99
+      },
       "media_keep": [
         1,
         2,
@@ -8741,15 +9713,52 @@
         5
       ],
       "en": {
-        "title": "Rico Bb Clarinet Reeds, Strength 2.5, Pack of 3",
-        "body": "<p>Student reeds for the B-flat clarinet, made from natural cane.</p><ul><li>For Bb clarinet</li><li>Strength 2.5</li><li>Pack of 3 reeds</li><li>Made in the USA</li></ul>"
+        "title": "Rico Bb Clarinet Reeds, Pack of 3",
+        "body": "<p>Student reeds for the B-flat clarinet, made from natural cane.</p><ul><li>For Bb clarinet</li><li>Choose strength 2, 2.5 or 3</li><li>Pack of 3 reeds</li><li>Made in the USA</li></ul>"
       },
       "ar": {
-        "title": "قصبات كلارينيت Bb من Rico، قوة 2.5، عبوة من 3",
-        "body": "<p>قصبات للطلاب لآلة الكلارينيت، من القصب الطبيعي.</p><ul><li>للكلارينيت Bb</li><li>القوة 2.5</li><li>عبوة من 3 قصبات</li><li>صُنعت في الولايات المتحدة</li></ul>",
+        "title": "قصبات كلارينيت Bb من Rico، عبوة من 3",
+        "body": "<p>قصبات للطلاب لآلة الكلارينيت، من القصب الطبيعي.</p><ul><li>للكلارينيت Bb</li><li>اختر القوة: 2 أو 2.5 أو 3</li><li>عبوة من 3 قصبات</li><li>صُنعت في الولايات المتحدة</li></ul>",
         "type": "قصبات"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Strength",
+        "values": [
+          {
+            "asin": "B000F4GP4Q",
+            "name": "2"
+          },
+          {
+            "asin": "B000F537YG",
+            "name": "2.5"
+          },
+          {
+            "asin": "B000F537X2",
+            "name": "3"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Strength",
+          "ar": "القوة",
+          "values": [
+            {
+              "name": "2",
+              "ar": "2"
+            },
+            {
+              "name": "2.5",
+              "ar": "2.5"
+            },
+            {
+              "name": "3",
+              "ar": "3"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "bach-7c-trumpet-mouthpiece",
@@ -8982,9 +9991,15 @@
       "type": "Sticks & mallets",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.1,
+      "kg": {
+        "1 pair": 0.1,
+        "3 pairs": 0.3
+      },
       "kg_source": "amazon (Amazon)",
-      "cost": 14.99,
+      "cost": {
+        "1 pair": 14.99,
+        "3 pairs": 42.99
+      },
       "media_keep": [
         1,
         2,
@@ -8994,14 +10009,43 @@
       ],
       "en": {
         "title": "Vic Firth American Classic 5A Drumsticks",
-        "body": "<p>Hickory drumsticks in the 5A size, for drummers who play rock, pop or jazz, and for daily practice.</p><ul><li>Hickory wood</li><li>Teardrop-shaped wood tip</li><li>American Classic 5A model</li><li>For rock, pop, jazz and practice</li></ul>"
+        "body": "<p>Hickory drumsticks in the 5A size, for drummers who play rock, pop or jazz, and for daily practice.</p><ul><li>Hickory wood</li><li>Teardrop-shaped wood tip</li><li>American Classic 5A model</li><li>Choose 1 pair or a pack of 3 pairs</li></ul>"
       },
       "ar": {
         "title": "عصي درامز Vic Firth American Classic 5A",
-        "body": "<p>عصي درامز من خشب الهيكوري بمقاس 5A، لمن يعزف الروك أو البوب أو الجاز، وللتمرين اليومي.</p><ul><li>من خشب الهيكوري</li><li>رأس خشبي على شكل قطرة</li><li>طراز American Classic 5A</li><li>للروك والبوب والجاز وللتمرين</li></ul>",
+        "body": "<p>عصي درامز من خشب الهيكوري بمقاس 5A، لمن يعزف الروك أو البوب أو الجاز، وللتمرين اليومي.</p><ul><li>من خشب الهيكوري</li><li>رأس خشبي على شكل قطرة</li><li>طراز American Classic 5A</li><li>اختر العبوة: زوج واحد أو 3 أزواج</li></ul>",
         "type": "عصي ومضارب"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Pack",
+        "values": [
+          {
+            "asin": "B0002F741Q",
+            "name": "1 pair"
+          },
+          {
+            "asin": "B0GLK76F79",
+            "name": "3 pairs"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Pack",
+          "ar": "العبوة",
+          "values": [
+            {
+              "name": "1 pair",
+              "ar": "زوج واحد"
+            },
+            {
+              "name": "3 pairs",
+              "ar": "3 أزواج"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "pangda-retractable-wire-drum-brushes",
@@ -9094,9 +10138,15 @@
       "type": "Drum heads",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.28,
+      "kg": {
+        "13 in": 0.27,
+        "14 in": 0.28
+      },
       "kg_source": "amazon (Amazon)",
-      "cost": 26.99,
+      "cost": {
+        "13 in": 25.99,
+        "14 in": 26.99
+      },
       "media_keep": [
         1,
         2,
@@ -9105,15 +10155,44 @@
         5
       ],
       "en": {
-        "title": "Evans Genera HD Dry Snare Head, 14 in",
-        "body": "<p>A heavy-duty batter head for the snare drum, made for a dry, focused sound.</p><ul><li>Fits a 14 in snare drum</li><li>Two plies: 5 mil coated and 7.5 mil</li><li>Control ring to keep the sound under control</li><li>Small vent holes for a drier sound</li></ul>"
+        "title": "Evans Genera HD Dry Snare Head",
+        "body": "<p>A heavy-duty batter head for the snare drum, made for a dry, focused sound.</p><ul><li>Choose the size of your snare drum: 13 in or 14 in</li><li>Two plies: 5 mil coated and 7.5 mil</li><li>Control ring to keep the sound under control</li><li>Small vent holes for a drier sound</li></ul>"
       },
       "ar": {
-        "title": "جلد طبل سنير Evans Genera HD Dry، مقاس 14 إنش",
-        "body": "<p>جلد متين لطبل السنير، مصمّم ليعطي صوتًا جافًا ومركّزًا.</p><ul><li>لطبل سنير مقاس 14 إنش</li><li>طبقتان: طبقة مطلية بسماكة 5 mil وطبقة بسماكة 7.5 mil</li><li>حلقة تحكّم (Control ring) تضبط الصوت</li><li>ثقوب تهوية صغيرة لصوت أكثر جفافًا</li></ul>",
+        "title": "جلد طبل سنير Evans Genera HD Dry",
+        "body": "<p>جلد متين لطبل السنير، مصمّم ليعطي صوتًا جافًا ومركّزًا.</p><ul><li>اختر مقاس طبل السنير: 13 أو 14 إنش</li><li>طبقتان: طبقة مطلية بسماكة 5 mil وطبقة بسماكة 7.5 mil</li><li>حلقة تحكّم (Control ring) تضبط الصوت</li><li>ثقوب تهوية صغيرة لصوت أكثر جفافًا</li></ul>",
         "type": "جلود طبول"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Size",
+        "values": [
+          {
+            "asin": "B0002D0E8I",
+            "name": "13 in"
+          },
+          {
+            "asin": "B0002D0E88",
+            "name": "14 in"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Size",
+          "ar": "المقاس",
+          "values": [
+            {
+              "name": "13 in",
+              "ar": "13 إنش"
+            },
+            {
+              "name": "14 in",
+              "ar": "14 إنش"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "evans-ec-reverse-dot-snare-head-14-in",
@@ -9374,9 +10453,15 @@
       "type": "Covers",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.18,
+      "kg": {
+        "61 keys": 0.18,
+        "88 keys": 0.29
+      },
       "kg_source": "amazon (Amazon)",
-      "cost": 14.69,
+      "cost": {
+        "61 keys": 14.69,
+        "88 keys": 15.99
+      },
       "media_keep": [
         1,
         2,
@@ -9385,43 +10470,44 @@
         5
       ],
       "en": {
-        "title": "Explore Land 61-Key Keyboard Cover",
-        "body": "<p>A stretchy dust cover that keeps a 61-key keyboard clean when it's not in use.</p><ul><li>Size: 37 × 13.5 × 6 in</li><li>Stretchy polyester</li><li>Zippered opening, so the music stand can stay on</li><li>Elastic hem and side straps to hold it in place</li></ul>"
+        "title": "Explore Land Keyboard Cover",
+        "body": "<p>A stretchy dust cover that keeps your keyboard clean when it's not in use.</p><ul><li>Choose the size for a 61-key or an 88-key keyboard</li><li>Stretchy polyester</li><li>Zippered opening, so the music stand can stay on</li><li>Elastic hem and side straps to hold it in place</li></ul>"
       },
       "ar": {
-        "title": "غطاء أورغ 61 مفتاحًا Explore Land",
-        "body": "<p>غطاء مطاطي يحمي الأورغ ذا الـ61 مفتاحًا من الغبار حين لا تعزف عليه.</p><ul><li>المقاس: ⁦37 × 13.5 × 6⁩ إنش</li><li>من البوليستر المطاطي</li><li>فتحة بسحّاب، فيبقى حامل النوتة في مكانه</li><li>حافة مطاطية وأحزمة جانبية تثبّته</li></ul>",
+        "title": "غطاء أورغ Explore Land",
+        "body": "<p>غطاء مطاطي يحمي الأورغ من الغبار حين لا تعزف عليه.</p><ul><li>اختر المقاس: لأورغ من 61 أو 88 مفتاحًا</li><li>من البوليستر المطاطي</li><li>فتحة بسحّاب، فيبقى حامل النوتة في مكانه</li><li>حافة مطاطية وأحزمة جانبية تثبّته</li></ul>",
         "type": "أغطية"
       },
-      "publish": true
-    },
-    {
-      "handle": "explore-land-88-key-keyboard-cover",
-      "asin": "B07PLV8MYY",
-      "vendor": "Explore Land",
-      "type": "Covers",
-      "tags": [],
-      "stock": "on_order",
-      "kg": 0.29,
-      "kg_source": "amazon (Amazon)",
-      "cost": 15.99,
-      "media_keep": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "en": {
-        "title": "Explore Land 88-Key Keyboard Cover",
-        "body": "<p>A stretchy dust cover that keeps an 88-key digital piano clean when it's not in use.</p><ul><li>Size: 51 × 13.5 × 6 in</li><li>Stretchy polyester</li><li>Zippered opening, so the music stand can stay on</li><li>Elastic hem and side straps to hold it in place</li></ul>"
+      "publish": true,
+      "merge_variants": {
+        "option": "Size",
+        "values": [
+          {
+            "asin": "B07PLV9YL6",
+            "name": "61 keys"
+          },
+          {
+            "asin": "B07PLV8MYY",
+            "name": "88 keys"
+          }
+        ]
       },
-      "ar": {
-        "title": "غطاء بيانو رقمي 88 مفتاحًا Explore Land",
-        "body": "<p>غطاء مطاطي يحمي البيانو الرقمي ذا الـ88 مفتاحًا من الغبار حين لا تعزف عليه.</p><ul><li>المقاس: ⁦51 × 13.5 × 6⁩ إنش</li><li>من البوليستر المطاطي</li><li>فتحة بسحّاب، فيبقى حامل النوتة في مكانه</li><li>حافة مطاطية وأحزمة جانبية تثبّته</li></ul>",
-        "type": "أغطية"
-      },
-      "publish": true
+      "options": [
+        {
+          "name": "Size",
+          "ar": "المقاس",
+          "values": [
+            {
+              "name": "61 keys",
+              "ar": "61 مفتاحًا"
+            },
+            {
+              "name": "88 keys",
+              "ar": "88 مفتاحًا"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "snark-sn5x-clip-on-tuner",
@@ -10102,9 +11188,12 @@
       "type": "Bass guitar",
       "tags": [],
       "stock": "on_order",
-      "kg": 5.5,
+      "kg": {
+        "Olympic White": 5.5,
+        "Surf Green": 5.5,
+        "Lake Placid Blue": 5.5
+      },
       "kg_source": "estimate",
-      "cost": null,
       "media_keep": [
         1,
         2,
@@ -10113,15 +11202,52 @@
         5
       ],
       "en": {
-        "title": "Squier Affinity Series Precision Bass PJ, Olympic White",
-        "body": "<p>The Precision Bass from Squier's Affinity Series: a light, comfortable bass that is easy to hold and play.</p><ul><li>Thin, light body and a slim C-shaped neck</li><li>PJ pickups</li><li>Maple fingerboard and open-gear tuners</li><li>Olympic white finish</li></ul>"
+        "title": "Squier Affinity Series Precision Bass PJ",
+        "body": "<p>The Precision Bass from Squier's Affinity Series: a light, comfortable bass that is easy to hold and play.</p><ul><li>Thin, light body and a slim C-shaped neck</li><li>PJ pickups</li><li>Open-gear tuners</li><li>Choose Olympic White, Surf Green or Lake Placid Blue</li></ul>"
       },
       "ar": {
-        "title": "غيتار باص Squier Affinity Series Precision Bass PJ، أبيض",
-        "body": "<p>غيتار الباص Precision Bass من سلسلة Affinity من Squier: خفيف ومريح، يسهل حمله والعزف عليه.</p><ul><li>جسم رفيع وخفيف، وزند نحيف على شكل حرف C</li><li>لاقطات PJ</li><li>لوحة أصابع من خشب القيقب (maple)، ومفاتيح دوزان مكشوفة التروس</li><li>اللون: أبيض Olympic White</li></ul>",
+        "title": "غيتار باص Squier Affinity Series Precision Bass PJ",
+        "body": "<p>غيتار الباص Precision Bass من سلسلة Affinity من Squier: خفيف ومريح، يسهل حمله والعزف عليه.</p><ul><li>جسم رفيع وخفيف، وزند نحيف على شكل حرف C</li><li>لاقطات PJ</li><li>مفاتيح دوزان مكشوفة التروس</li><li>اختر اللون: أبيض Olympic أو أخضر Surf أو أزرق Lake Placid</li></ul>",
         "type": "غيتار باص"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Color",
+        "values": [
+          {
+            "asin": "B091BGTWQ1",
+            "name": "Olympic White"
+          },
+          {
+            "asin": "B0BF5TMGD9",
+            "name": "Surf Green"
+          },
+          {
+            "asin": "B091BHKXMR",
+            "name": "Lake Placid Blue"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Color",
+          "ar": "اللون",
+          "values": [
+            {
+              "name": "Olympic White",
+              "ar": "أبيض Olympic"
+            },
+            {
+              "name": "Surf Green",
+              "ar": "أخضر Surf"
+            },
+            {
+              "name": "Lake Placid Blue",
+              "ar": "أزرق Lake Placid"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "ibanez-gsrm20-mikro-short-scale-bass-walnut",
@@ -10186,9 +11312,14 @@
       "type": "Electric guitar",
       "tags": [],
       "stock": "on_order",
-      "kg": 4.5,
+      "kg": {
+        "Black": 4.5,
+        "Arctic White": 4.5,
+        "Flash Pink": 4.5,
+        "Surf Green": 4.5,
+        "Tahitian Coral": 4.5
+      },
       "kg_source": "amazon (Amazon)",
-      "cost": null,
       "media_keep": [
         1,
         2,
@@ -10197,15 +11328,68 @@
         5
       ],
       "en": {
-        "title": "Squier Sonic Stratocaster, Black",
-        "body": "<p>A beginner electric guitar for kids and adults who are starting to play.</p><ul><li>3 single-coil pickups</li><li>Maple fingerboard</li><li>Black body with a black pickguard</li><li>Comes with 30 days of Fender Play online lessons</li></ul>"
+        "title": "Squier Sonic Stratocaster",
+        "body": "<p>A beginner electric guitar for kids and adults who are starting to play.</p><ul><li>3 single-coil pickups</li><li>Choose black, Arctic White, Flash Pink, Surf Green or Tahitian Coral</li><li>Comes with 30 days of Fender Play online lessons</li></ul>"
       },
       "ar": {
-        "title": "غيتار كهربائي Squier Sonic Stratocaster، أسود",
-        "body": "<p>غيتار كهربائي للمبتدئين، للصغار والكبار الذين يبدؤون العزف.</p><ul><li>3 لاقطات أحادية الملف (single-coil)</li><li>لوحة أصابع من خشب القيقب (maple)</li><li>جسم أسود مع واقي ريشة (pickguard) أسود</li><li>يأتي مع 30 يومًا من دروس Fender Play عبر الإنترنت</li></ul>",
+        "title": "غيتار كهربائي Squier Sonic Stratocaster",
+        "body": "<p>غيتار كهربائي للمبتدئين، للصغار والكبار الذين يبدؤون العزف.</p><ul><li>3 لاقطات أحادية الملف (single-coil)</li><li>اختر اللون: أسود أو أبيض Arctic أو زهري Flash أو أخضر Surf أو مرجاني Tahitian</li><li>يأتي مع 30 يومًا من دروس Fender Play عبر الإنترنت</li></ul>",
         "type": "غيتار كهربائي"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Color",
+        "values": [
+          {
+            "asin": "B0BVGSWXDY",
+            "name": "Black"
+          },
+          {
+            "asin": "B0BVGSD36S",
+            "name": "Arctic White"
+          },
+          {
+            "asin": "B0BVGV8PHX",
+            "name": "Flash Pink"
+          },
+          {
+            "asin": "B0CLDM8GH7",
+            "name": "Surf Green"
+          },
+          {
+            "asin": "B0BVGQG2HD",
+            "name": "Tahitian Coral"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Color",
+          "ar": "اللون",
+          "values": [
+            {
+              "name": "Black",
+              "ar": "أسود"
+            },
+            {
+              "name": "Arctic White",
+              "ar": "أبيض Arctic"
+            },
+            {
+              "name": "Flash Pink",
+              "ar": "زهري Flash"
+            },
+            {
+              "name": "Surf Green",
+              "ar": "أخضر Surf"
+            },
+            {
+              "name": "Tahitian Coral",
+              "ar": "مرجاني Tahitian"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "squier-classic-vibe-50s-telecaster-butterscotch-blonde",
@@ -10298,9 +11482,12 @@
       "type": "Acoustic guitar",
       "tags": [],
       "stock": "on_order",
-      "kg": 4.5,
+      "kg": {
+        "Natural": 4.5,
+        "Black": 4.5,
+        "Sunburst": 4.5
+      },
       "kg_source": "amazon (Amazon)",
-      "cost": null,
       "media_keep": [
         1,
         2,
@@ -10309,15 +11496,52 @@
         5
       ],
       "en": {
-        "title": "Fender CD-60 V3 Dreadnought Acoustic, Natural, with Case",
-        "body": "<p>One of Fender's most popular acoustic guitars, with a dreadnought body for balanced tone and volume.</p><ul><li>Slim, easy neck with rolled fingerboard edges</li><li>Dreadnought body</li><li>Natural finish</li><li>Comes with a hardshell case</li></ul>"
+        "title": "Fender CD-60 V3 Dreadnought Acoustic with Case",
+        "body": "<p>One of Fender's most popular acoustic guitars, with a dreadnought body for balanced tone and volume.</p><ul><li>Slim, easy neck with rolled fingerboard edges</li><li>Dreadnought body</li><li>Choose natural, black or sunburst</li><li>Comes with a hardshell case</li></ul>"
       },
       "ar": {
-        "title": "غيتار أكوستيك Fender CD-60 V3 Dreadnought، طبيعي، مع علبة",
-        "body": "<p>من أشهر غيتارات Fender الأكوستيك، بجسم dreadnought يعطي توازنًا جيدًا بين النغمة وقوة الصوت.</p><ul><li>زند نحيف وسهل، بحوافّ مستديرة للوحة الأصابع</li><li>جسم من نوع dreadnought</li><li>بلون الخشب الطبيعي</li><li>يأتي مع علبة صلبة (hardshell case)</li></ul>",
+        "title": "غيتار أكوستيك Fender CD-60 V3 Dreadnought، مع علبة",
+        "body": "<p>من أشهر غيتارات Fender الأكوستيك، بجسم dreadnought يعطي توازنًا جيدًا بين النغمة وقوة الصوت.</p><ul><li>زند نحيف وسهل، بحوافّ مستديرة للوحة الأصابع</li><li>جسم من نوع dreadnought</li><li>اختر اللون: خشبي طبيعي أو أسود أو صن برست</li><li>يأتي مع علبة صلبة (hardshell case)</li></ul>",
         "type": "غيتار أكوستيك"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Color",
+        "values": [
+          {
+            "asin": "B07N25S8KX",
+            "name": "Natural"
+          },
+          {
+            "asin": "B07N28JHB2",
+            "name": "Black"
+          },
+          {
+            "asin": "B07N29651Q",
+            "name": "Sunburst"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Color",
+          "ar": "اللون",
+          "values": [
+            {
+              "name": "Natural",
+              "ar": "خشبي طبيعي"
+            },
+            {
+              "name": "Black",
+              "ar": "أسود"
+            },
+            {
+              "name": "Sunburst",
+              "ar": "صن برست"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "yamaha-fg800-solid-top-acoustic-guitar-natural",
@@ -10606,9 +11830,17 @@
       "type": "Keyboard",
       "tags": [],
       "stock": "on_order",
-      "kg": 5.0,
+      "kg": {
+        "Black": 4.5,
+        "White": 4.5,
+        "Red": 4.5
+      },
       "kg_source": "estimate",
-      "cost": 259.99,
+      "cost": {
+        "Black": 259.99,
+        "White": 259.99,
+        "Red": 259.99
+      },
       "media_keep": [
         1,
         2,
@@ -10617,15 +11849,52 @@
         5
       ],
       "en": {
-        "title": "Casio Casiotone CT-S1 Keyboard, 61 Keys, Red",
-        "body": "<p>A light keyboard in red that can also run on batteries, so you can take it with you and play.</p><ul><li>61 full-size, touch-sensitive keys</li><li>AiX sound source, from pianos to vintage synths</li><li>Bass-reflex stereo speakers with a surround mode</li><li>Strap pins and a headphone output</li></ul>"
+        "title": "Casio Casiotone CT-S1 Keyboard, 61 Keys",
+        "body": "<p>A light keyboard that can also run on batteries, so you can take it with you and play.</p><ul><li>61 full-size, touch-sensitive keys</li><li>AiX sound source, from pianos to vintage synths</li><li>Bass-reflex stereo speakers with a surround mode</li><li>Strap pins and a headphone output</li><li>Choose black, white or red</li></ul>"
       },
       "ar": {
-        "title": "كيبورد Casio Casiotone CT-S1، 61 مفتاحًا، أحمر",
-        "body": "<p>كيبورد خفيف باللون الأحمر، يعمل أيضًا على البطاريات، فتأخذه معك وتعزف عليه.</p><ul><li>61 مفتاحًا بالحجم الكامل، تتحسّس قوة الضغط</li><li>مصدر الصوت AiX، من البيانو إلى أصوات السِنث القديمة</li><li>مكبّرات صوت ستيريو بتقنية Bass-reflex، مع وضع الصوت المحيطي (Surround)</li><li>نقاط لتثبيت حزام، ومخرج لسماعات الرأس</li></ul>",
+        "title": "كيبورد Casio Casiotone CT-S1، 61 مفتاحًا",
+        "body": "<p>كيبورد خفيف يعمل أيضًا على البطاريات، فتأخذه معك وتعزف عليه.</p><ul><li>61 مفتاحًا بالحجم الكامل، تتحسّس قوة الضغط</li><li>مصدر الصوت AiX، من البيانو إلى أصوات السِنث القديمة</li><li>مكبّرات صوت ستيريو بتقنية Bass-reflex، مع وضع الصوت المحيطي (Surround)</li><li>نقاط لتثبيت حزام، ومخرج لسماعات الرأس</li><li>اختر اللون: أسود أو أبيض أو أحمر</li></ul>",
         "type": "كيبورد"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Color",
+        "values": [
+          {
+            "asin": "B091XRLF45",
+            "name": "Black"
+          },
+          {
+            "asin": "B091XNB1J3",
+            "name": "White"
+          },
+          {
+            "asin": "B091XMKKWX",
+            "name": "Red"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Color",
+          "ar": "اللون",
+          "values": [
+            {
+              "name": "Black",
+              "ar": "أسود"
+            },
+            {
+              "name": "White",
+              "ar": "أبيض"
+            },
+            {
+              "name": "Red",
+              "ar": "أحمر"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "yamaha-61-key-portable-keyboard-beginners",
@@ -11194,9 +12463,17 @@
       "type": "Viola",
       "tags": [],
       "stock": "on_order",
-      "kg": 3.5,
+      "kg": {
+        "12 in": 3.0,
+        "14 in": 3.3,
+        "15 in": 3.5
+      },
       "kg_source": "estimate",
-      "cost": 151.99,
+      "cost": {
+        "12 in": 139.99,
+        "14 in": 159.99,
+        "15 in": 151.99
+      },
       "media_keep": [
         1,
         2,
@@ -11205,15 +12482,52 @@
         5
       ],
       "en": {
-        "title": "Mendini Solid Wood Viola Set, 15 in",
-        "body": "<p>A 15 in viola in solid wood with a satin antique finish, sold as a set with a case and a bow.</p><ul><li>Hand-carved solid spruce top, maple back and sides</li><li>Maple fingerboard, pegs and chin rest</li><li>Lightweight hard case</li><li>Brazilwood bow</li></ul>"
+        "title": "Mendini Solid Wood Viola Set",
+        "body": "<p>A solid wood viola with a satin antique finish, sold as a set with a case and a bow.</p><ul><li>Sizes for different ages: choose 12 in, 14 in or 15 in</li><li>Hand-carved solid spruce top, maple back and sides</li><li>Maple fingerboard, pegs and chin rest</li><li>Lightweight hard case</li><li>Brazilwood bow</li></ul>"
       },
       "ar": {
-        "title": "طقم فيولا Mendini من الخشب الصلب، 15 إنش",
-        "body": "<p>فيولا بقياس 15 إنش من الخشب الصلب، بلمسة نهائية عتيقة ساتان، تأتي كطقم مع علبة وقوس.</p><ul><li>وجه من خشب الشوح (spruce) الصلب منحوت باليد، والظهر والجانبان من خشب القيقب</li><li>زند المفاتيح (الفينغربورد) والمفاتيح ومسند الذقن من خشب القيقب</li><li>علبة صلبة خفيفة الوزن</li><li>قوس من خشب Brazilwood</li></ul>",
+        "title": "طقم فيولا Mendini من الخشب الصلب",
+        "body": "<p>فيولا من الخشب الصلب، بلمسة نهائية عتيقة ساتان، تأتي كطقم مع علبة وقوس.</p><ul><li>مقاسات لأعمار مختلفة: اختر 12 أو 14 أو 15 إنش</li><li>وجه من خشب الشوح (spruce) الصلب منحوت باليد، والظهر والجانبان من خشب القيقب</li><li>زند المفاتيح (الفينغربورد) والمفاتيح ومسند الذقن من خشب القيقب</li><li>علبة صلبة خفيفة الوزن</li><li>قوس من خشب Brazilwood</li></ul>",
         "type": "فيولا"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Size",
+        "values": [
+          {
+            "asin": "B0085C9UH4",
+            "name": "12 in"
+          },
+          {
+            "asin": "B0085C9TWK",
+            "name": "14 in"
+          },
+          {
+            "asin": "B0085C9TKM",
+            "name": "15 in"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Size",
+          "ar": "المقاس",
+          "values": [
+            {
+              "name": "12 in",
+              "ar": "12 إنش"
+            },
+            {
+              "name": "14 in",
+              "ar": "14 إنش"
+            },
+            {
+              "name": "15 in",
+              "ar": "15 إنش"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "cecilio-closed-hole-c-flute",
@@ -12701,14 +14015,22 @@
     },
     {
       "handle": "xlr-microphone-cable-3m",
-      "asin": "B0D382TX8Q",
+      "asin": "B0DB52737C",
       "vendor": "Kashkoul Market",
       "type": "Cables & adapters",
       "tags": [],
       "stock": "on_order",
-      "kg": 0.3,
+      "kg": {
+        "2 m (6.6 ft)": 0.25,
+        "3 m (10 ft)": 0.3,
+        "4.5 m (15 ft)": 0.4
+      },
       "kg_source": "estimate",
-      "cost": 19.99,
+      "cost": {
+        "2 m (6.6 ft)": 11.99,
+        "3 m (10 ft)": 13.99,
+        "4.5 m (15 ft)": 15.99
+      },
       "media_keep": [
         1,
         2,
@@ -12717,15 +14039,52 @@
         5
       ],
       "en": {
-        "title": "XLR Microphone Cable, 3 m (10 ft)",
-        "body": "<p>A sturdy cable to connect a microphone with XLR plugs.</p><ul><li>3 m (10 ft) long</li><li>Genuine Neutrik REAN connectors</li><li>Dual shielding and 99.99% oxygen-free copper conductors</li><li>Kevlar-reinforced</li></ul>"
+        "title": "XLR Microphone Cable",
+        "body": "<p>A sturdy cable to connect a microphone with XLR plugs.</p><ul><li>Choose the length: 2 m (6.6 ft), 3 m (10 ft) or 4.5 m (15 ft)</li><li>Genuine Neutrik REAN connectors</li><li>Dual shielding and 99.99% oxygen-free copper conductors</li><li>Kevlar-reinforced</li></ul>"
       },
       "ar": {
-        "title": "كابل ميكروفون XLR، 3 م (10 أقدام)",
-        "body": "<p>كابل متين لتوصيل الميكروفون عبر وصلات XLR.</p><ul><li>طوله 3 أمتار (10 أقدام)</li><li>وصلات Neutrik REAN أصلية</li><li>تدريع مزدوج، وموصلات من نحاس خالٍ من الأكسجين بنقاء 99.99%</li><li>مقوّى بألياف Kevlar</li></ul>",
+        "title": "كابل ميكروفون XLR",
+        "body": "<p>كابل متين لتوصيل الميكروفون عبر وصلات XLR.</p><ul><li>اختر الطول: 2 م أو 3 م أو 4.5 م</li><li>وصلات Neutrik REAN أصلية</li><li>تدريع مزدوج، وموصلات من نحاس خالٍ من الأكسجين بنقاء 99.99%</li><li>مقوّى بألياف Kevlar</li></ul>",
         "type": "كابلات ومحوّلات"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Length",
+        "values": [
+          {
+            "asin": "B0DB5DXN1J",
+            "name": "2 m (6.6 ft)"
+          },
+          {
+            "asin": "B0DB52737C",
+            "name": "3 m (10 ft)"
+          },
+          {
+            "asin": "B0DB4Z678H",
+            "name": "4.5 m (15 ft)"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Length",
+          "ar": "الطول",
+          "values": [
+            {
+              "name": "2 m (6.6 ft)",
+              "ar": "2 م"
+            },
+            {
+              "name": "3 m (10 ft)",
+              "ar": "3 م"
+            },
+            {
+              "name": "4.5 m (15 ft)",
+              "ar": "4.5 م"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "elgato-xlr-microphone-cable-3m",
@@ -13434,9 +14793,17 @@
       "type": "Turntables",
       "tags": [],
       "stock": "on_order",
-      "kg": 3.7,
+      "kg": {
+        "Black": 3.7,
+        "Brown": 3.7,
+        "Gun-Metal": 3.7
+      },
       "kg_source": "amazon (Amazon)",
-      "cost": 179.0,
+      "cost": {
+        "Black": 179.0,
+        "Brown": 189.0,
+        "Gun-Metal": 189.0
+      },
       "media_keep": [
         1,
         2,
@@ -13445,15 +14812,52 @@
         5
       ],
       "en": {
-        "title": "Audio-Technica AT-LP60X Automatic Turntable, Black",
-        "body": "<p>A fully automatic belt-drive turntable from Audio-Technica, an easy way to start playing records at home.</p><ul><li>Fully automatic, belt drive</li><li>Two speeds: 33⅓ and 45 RPM</li><li>Die-cast aluminum platter</li><li>Built-in phono preamp you can switch on or off, so it connects to powered speakers or to an amplifier</li></ul>"
+        "title": "Audio-Technica AT-LP60X Automatic Turntable",
+        "body": "<p>A fully automatic belt-drive turntable from Audio-Technica, an easy way to start playing records at home.</p><ul><li>Fully automatic, belt drive</li><li>Two speeds: 33⅓ and 45 RPM</li><li>Die-cast aluminum platter</li><li>Built-in phono preamp you can switch on or off, so it connects to powered speakers or to an amplifier</li><li>Choose black, brown or gun-metal</li></ul>"
       },
       "ar": {
-        "title": "مشغّل أسطوانات (تيرنتيبل) أوتوماتيكي Audio-Technica AT-LP60X، أسود",
-        "body": "<p>مشغّل أسطوانات من Audio-Technica يعمل بالكامل بشكل أوتوماتيكي وبحزام، طريقة سهلة لتبدأ بالاستماع إلى الأسطوانات في البيت.</p><ul><li>أوتوماتيكي بالكامل، يدور بواسطة حزام</li><li>سرعتان: 33⅓ و45 دورة في الدقيقة</li><li>صحن دوّار من الألمنيوم المصبوب</li><li>مضخّم فونو (preamp) مدمج يمكن تشغيله أو إطفاؤه، فيتّصل بسماعات فيها مضخّم أو بمضخّم صوت</li></ul>",
+        "title": "مشغّل أسطوانات (تيرنتيبل) أوتوماتيكي Audio-Technica AT-LP60X",
+        "body": "<p>مشغّل أسطوانات من Audio-Technica يعمل بالكامل بشكل أوتوماتيكي وبحزام، طريقة سهلة لتبدأ بالاستماع إلى الأسطوانات في البيت.</p><ul><li>أوتوماتيكي بالكامل، يدور بواسطة حزام</li><li>سرعتان: 33⅓ و45 دورة في الدقيقة</li><li>صحن دوّار من الألمنيوم المصبوب</li><li>مضخّم فونو (preamp) مدمج يمكن تشغيله أو إطفاؤه، فيتّصل بسماعات فيها مضخّم أو بمضخّم صوت</li><li>اختر اللون: أسود أو بني أو رمادي معدني</li></ul>",
         "type": "مشغّلات أسطوانات"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Color",
+        "values": [
+          {
+            "asin": "B07N3XJ66N",
+            "name": "Black"
+          },
+          {
+            "asin": "B07N47JXML",
+            "name": "Brown"
+          },
+          {
+            "asin": "B07N3X7KPX",
+            "name": "Gun-Metal"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Color",
+          "ar": "اللون",
+          "values": [
+            {
+              "name": "Black",
+              "ar": "أسود"
+            },
+            {
+              "name": "Brown",
+              "ar": "بني"
+            },
+            {
+              "name": "Gun-Metal",
+              "ar": "رمادي معدني"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "audio-technica-at-lp60xbt-bluetooth-turntable-black",
@@ -13770,9 +15174,17 @@
       "type": "Sleeves",
       "tags": [],
       "stock": "on_order",
-      "kg": 1.47,
+      "kg": {
+        "Outer sleeves, 50": 0.8,
+        "Outer sleeves, 100": 1.47,
+        "Inner sleeves, 50": 0.77
+      },
       "kg_source": "amazon (Amazon)",
-      "cost": 22.95,
+      "cost": {
+        "Outer sleeves, 50": 18.97,
+        "Outer sleeves, 100": 22.95,
+        "Inner sleeves, 50": 19.97
+      },
       "media_keep": [
         1,
         2,
@@ -13781,15 +15193,52 @@
         5
       ],
       "en": {
-        "title": "EVEO Clear Outer Record Sleeves, 100 Pack",
-        "body": "<p>Clear outer sleeves that keep your 12-inch records and their album covers protected while still showing the artwork.</p><ul><li>100 sleeves for 12-inch records with their covers</li><li>3 mil thick</li><li>Anti-static</li><li>Acid-free</li></ul>"
+        "title": "EVEO Record Sleeves, Outer or Inner",
+        "body": "<p>Sleeves to protect your records: clear outer sleeves for 12-inch records with their album covers, or inner sleeves.</p><ul><li>Choose 50 outer sleeves, 100 outer sleeves or 50 inner sleeves</li><li>The outer sleeves are clear, so the album artwork still shows</li><li>The outer sleeves are 3 mil thick, anti-static and acid-free</li></ul>"
       },
       "ar": {
-        "title": "أغلفة أسطوانات خارجية شفافة EVEO، 100 غلاف",
-        "body": "<p>أغلفة خارجية شفافة تحمي أسطواناتك مقاس 12 إنش مع أغلفتها الأصلية، ويبقى غلاف الألبوم ظاهرًا.</p><ul><li>100 غلاف للأسطوانات مقاس 12 إنش مع أغلفتها</li><li>سماكة 3 mil</li><li>مضادّة للكهرباء الساكنة</li><li>خالية من الأحماض</li></ul>",
+        "title": "أغلفة أسطوانات EVEO، خارجية أو داخلية",
+        "body": "<p>أغلفة تحمي أسطواناتك: أغلفة خارجية شفافة للأسطوانات مقاس 12 إنش مع أغلفتها الأصلية، أو أغلفة داخلية.</p><ul><li>اختر النوع: 50 غلافًا خارجيًا أو 100 غلاف خارجي أو 50 غلافًا داخليًا</li><li>الأغلفة الخارجية شفافة، فيبقى غلاف الألبوم ظاهرًا</li><li>الأغلفة الخارجية بسماكة 3 mil، مضادّة للكهرباء الساكنة وخالية من الأحماض</li></ul>",
         "type": "أغلفة"
       },
-      "publish": true
+      "publish": true,
+      "merge_variants": {
+        "option": "Type",
+        "values": [
+          {
+            "asin": "B0DR93RGY4",
+            "name": "Outer sleeves, 50"
+          },
+          {
+            "asin": "B091Z335W1",
+            "name": "Outer sleeves, 100"
+          },
+          {
+            "asin": "B0C9DGV1C5",
+            "name": "Inner sleeves, 50"
+          }
+        ]
+      },
+      "options": [
+        {
+          "name": "Type",
+          "ar": "النوع",
+          "values": [
+            {
+              "name": "Outer sleeves, 50",
+              "ar": "أغلفة خارجية، 50"
+            },
+            {
+              "name": "Outer sleeves, 100",
+              "ar": "أغلفة خارجية، 100"
+            },
+            {
+              "name": "Inner sleeves, 50",
+              "ar": "أغلفة داخلية، 50"
+            }
+          ]
+        }
+      ]
     },
     {
       "handle": "big-fudge-rice-paper-inner-record-sleeves-50",

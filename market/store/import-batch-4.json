@@ -120,7 +120,30 @@
       "kg_source": "estimate",
       "our_price": 12.99,
       "rating": 4.8,
-      "reviews": "59,855"
+      "reviews": "59,855",
+      "variants": [
+        {
+          "asin": "B0002M6CVC",
+          "name": "Regular Slinky 10–46",
+          "amazon_price": 8.99,
+          "kg": 0.03,
+          "our_price": 12.99
+        },
+        {
+          "asin": "B0002PBS6S",
+          "name": "Hybrid Slinky 9–46",
+          "amazon_price": 8.99,
+          "kg": 0.03,
+          "our_price": 12.99
+        },
+        {
+          "asin": "B0002PBS6I",
+          "name": "Power Slinky 11–48",
+          "amazon_price": 8.99,
+          "kg": 0.04,
+          "our_price": 12.99
+        }
+      ]
     },
     {
       "asin": "B0002E1O3G",
@@ -132,19 +155,30 @@
       "kg_source": "amazon",
       "our_price": 24.99,
       "rating": 4.8,
-      "reviews": "8,181"
-    },
-    {
-      "asin": "B0002E1O2W",
-      "subcategory": "Guitar & bass",
-      "type": "Guitar & bass strings",
-      "name": "Elixir NANOWEB Electric Strings, 9–42",
-      "amazon_price": 17.99,
-      "kg": 0.04,
-      "kg_source": "estimate",
-      "our_price": 24.99,
-      "rating": 4.7,
-      "reviews": "3,590"
+      "reviews": "8,181",
+      "variants": [
+        {
+          "asin": "B0002E1O2W",
+          "name": "Super Light 9–42",
+          "amazon_price": 17.99,
+          "kg": 0.04,
+          "our_price": 24.99
+        },
+        {
+          "asin": "B0002E1O3G",
+          "name": "Light 10–46",
+          "amazon_price": 17.99,
+          "kg": 0.04,
+          "our_price": 24.99
+        },
+        {
+          "asin": "B0002E1O5E",
+          "name": "Medium 11–49",
+          "amazon_price": 17.97,
+          "kg": 0.04,
+          "our_price": 24.99
+        }
+      ]
     },
     {
       "asin": "B000EEJ91I",
@@ -156,7 +190,23 @@
       "kg_source": "estimate",
       "our_price": 29.99,
       "rating": 4.8,
-      "reviews": "21,127"
+      "reviews": "21,127",
+      "variants": [
+        {
+          "asin": "B000EEJ91I",
+          "name": "3 sets",
+          "amazon_price": 20.95,
+          "kg": 0.09,
+          "our_price": 29.99
+        },
+        {
+          "asin": "B000HOYICA",
+          "name": "10 sets",
+          "amazon_price": 62.99,
+          "kg": 0.25,
+          "our_price": 88.99
+        }
+      ]
     },
     {
       "asin": "B07GP5NV6J",
@@ -192,7 +242,37 @@
       "kg_source": "estimate",
       "our_price": 31.99,
       "rating": 4.8,
-      "reviews": "7,668"
+      "reviews": "7,668",
+      "variants": [
+        {
+          "asin": "B000MFL7UU",
+          "name": "Regular 50–105, 4 strings",
+          "amazon_price": 21.57,
+          "kg": 0.12,
+          "our_price": 31.99
+        },
+        {
+          "asin": "B0002M6BD6",
+          "name": "Hybrid 45–105, 4 strings",
+          "amazon_price": 21.85,
+          "kg": 0.12,
+          "our_price": 31.99
+        },
+        {
+          "asin": "B0002M6BDQ",
+          "name": "Super 45–100, 4 strings",
+          "amazon_price": 21.99,
+          "kg": 0.12,
+          "our_price": 31.99
+        },
+        {
+          "asin": "B000P5ZQ54",
+          "name": "Regular 45–130, 5 strings",
+          "amazon_price": 27.95,
+          "kg": 0.15,
+          "our_price": 40.99
+        }
+      ]
     },
     {
       "asin": "B0002H04NE",
@@ -264,7 +344,51 @@
       "kg_source": "amazon",
       "our_price": 8.99,
       "rating": 4.8,
-      "reviews": "20,825"
+      "reviews": "20,825",
+      "variants": [
+        {
+          "asin": "B0002D0CEO",
+          "name": "0.50 mm (red)",
+          "amazon_price": 5.76,
+          "kg": 0.02,
+          "our_price": 8.99
+        },
+        {
+          "asin": "B0064BCRQE",
+          "name": "0.60 mm (orange)",
+          "amazon_price": 5.76,
+          "kg": 0.02,
+          "our_price": 8.99
+        },
+        {
+          "asin": "B00HEKIKYC",
+          "name": "0.73 mm (yellow)",
+          "amazon_price": 5.76,
+          "kg": 0.02,
+          "our_price": 8.99
+        },
+        {
+          "asin": "B0002GX7XY",
+          "name": "0.88 mm (green)",
+          "amazon_price": 5.76,
+          "kg": 0.02,
+          "our_price": 8.99
+        },
+        {
+          "asin": "B0002D0CFS",
+          "name": "1.00 mm (blue)",
+          "amazon_price": 5.76,
+          "kg": 0.02,
+          "our_price": 8.99
+        },
+        {
+          "asin": "B0002GX7ZM",
+          "name": "1.14 mm (purple)",
+          "amazon_price": 5.76,
+          "kg": 0.02,
+          "our_price": 8.99
+        }
+      ]
     },
     {
       "asin": "B0752N9XTL",
@@ -348,7 +472,23 @@
       "kg_source": "estimate",
       "our_price": 16.99,
       "rating": 4.6,
-      "reviews": "323"
+      "reviews": "323",
+      "variants": [
+        {
+          "asin": "B0CJB54BD4",
+          "name": "Black",
+          "amazon_price": 10.99,
+          "kg": 0.1,
+          "our_price": 16.99
+        },
+        {
+          "asin": "B0CJB4CTSJ",
+          "name": "Cream",
+          "amazon_price": 10.99,
+          "kg": 0.1,
+          "our_price": 16.99
+        }
+      ]
     },
     {
       "asin": "B0002KZDNM",
@@ -360,7 +500,30 @@
       "kg_source": "estimate",
       "our_price": 16.99,
       "rating": 4.7,
-      "reviews": "4,245"
+      "reviews": "4,245",
+      "variants": [
+        {
+          "asin": "B0002KZDNM",
+          "name": "Black, white logo",
+          "amazon_price": 10.49,
+          "kg": 0.1,
+          "our_price": 16.99
+        },
+        {
+          "asin": "B0002KZDPK",
+          "name": "Black, gray logo",
+          "amazon_price": 11.99,
+          "kg": 0.1,
+          "our_price": 18.99
+        },
+        {
+          "asin": "B0002KZDOG",
+          "name": "Black, red logo",
+          "amazon_price": 11.99,
+          "kg": 0.1,
+          "our_price": 18.99
+        }
+      ]
     },
     {
       "asin": "B0002CZVXM",
@@ -468,7 +631,37 @@
       "kg_source": "estimate",
       "our_price": 87.99,
       "rating": 4.7,
-      "reviews": "4,905"
+      "reviews": "4,905",
+      "variants": [
+        {
+          "asin": "B000E1TJDE",
+          "name": "4/4",
+          "amazon_price": 66.98,
+          "kg": 0.03,
+          "our_price": 87.99
+        },
+        {
+          "asin": "B000E1TJDY",
+          "name": "3/4",
+          "amazon_price": 58.96,
+          "kg": 0.03,
+          "our_price": 77.99
+        },
+        {
+          "asin": "B000E1REHM",
+          "name": "1/2",
+          "amazon_price": 66.3,
+          "kg": 0.03,
+          "our_price": 86.99
+        },
+        {
+          "asin": "B000E1P9OW",
+          "name": "1/4",
+          "amazon_price": 73.34,
+          "kg": 0.03,
+          "our_price": 96.99
+        }
+      ]
     },
     {
       "asin": "B0002Y27IM",
@@ -553,7 +746,37 @@
       "kg_source": "amazon",
       "our_price": 41.99,
       "rating": 4.7,
-      "reviews": "5,304"
+      "reviews": "5,304",
+      "variants": [
+        {
+          "asin": "B000VVG836",
+          "name": "2",
+          "amazon_price": 30.99,
+          "kg": 0.05,
+          "our_price": 41.99
+        },
+        {
+          "asin": "B0002F59GI",
+          "name": "2.5",
+          "amazon_price": 30.99,
+          "kg": 0.05,
+          "our_price": 41.99
+        },
+        {
+          "asin": "B0002F59FE",
+          "name": "3",
+          "amazon_price": 30.99,
+          "kg": 0.05,
+          "our_price": 41.99
+        },
+        {
+          "asin": "B0002F59H2",
+          "name": "3.5",
+          "amazon_price": 30.99,
+          "kg": 0.05,
+          "our_price": 41.99
+        }
+      ]
     },
     {
       "asin": "B0002D0A82",
@@ -565,7 +788,37 @@
       "kg_source": "amazon",
       "our_price": 41.99,
       "rating": 4.8,
-      "reviews": "1,631"
+      "reviews": "1,631",
+      "variants": [
+        {
+          "asin": "B0002D0A7I",
+          "name": "2",
+          "amazon_price": 30.0,
+          "kg": 0.03,
+          "our_price": 39.99
+        },
+        {
+          "asin": "B0002D0A7S",
+          "name": "2.5",
+          "amazon_price": 31.0,
+          "kg": 0.03,
+          "our_price": 41.99
+        },
+        {
+          "asin": "B0002D0A82",
+          "name": "3",
+          "amazon_price": 31.0,
+          "kg": 0.03,
+          "our_price": 41.99
+        },
+        {
+          "asin": "B0002D0A8C",
+          "name": "3.5",
+          "amazon_price": 31.0,
+          "kg": 0.03,
+          "our_price": 41.99
+        }
+      ]
     },
     {
       "asin": "B000F537YG",
@@ -577,7 +830,30 @@
       "kg_source": "amazon",
       "our_price": 17.99,
       "rating": 4.7,
-      "reviews": "6,416"
+      "reviews": "6,416",
+      "variants": [
+        {
+          "asin": "B000F4GP4Q",
+          "name": "2",
+          "amazon_price": 12.99,
+          "kg": 0.02,
+          "our_price": 17.99
+        },
+        {
+          "asin": "B000F537YG",
+          "name": "2.5",
+          "amazon_price": 12.99,
+          "kg": 0.02,
+          "our_price": 17.99
+        },
+        {
+          "asin": "B000F537X2",
+          "name": "3",
+          "amazon_price": 12.99,
+          "kg": 0.02,
+          "our_price": 17.99
+        }
+      ]
     },
     {
       "asin": "B0002E2AHU",
@@ -685,7 +961,23 @@
       "kg_source": "amazon",
       "our_price": 22.99,
       "rating": 4.8,
-      "reviews": "14,842"
+      "reviews": "14,842",
+      "variants": [
+        {
+          "asin": "B0002F741Q",
+          "name": "1 pair",
+          "amazon_price": 14.99,
+          "kg": 0.1,
+          "our_price": 22.99
+        },
+        {
+          "asin": "B0GLK76F79",
+          "name": "3 pairs",
+          "amazon_price": 42.99,
+          "kg": 0.3,
+          "our_price": 63.99
+        }
+      ]
     },
     {
       "asin": "B076V8N12D",
@@ -733,7 +1025,23 @@
       "kg_source": "amazon",
       "our_price": 42.99,
       "rating": 4.8,
-      "reviews": "2,710"
+      "reviews": "2,710",
+      "variants": [
+        {
+          "asin": "B0002D0E8I",
+          "name": "13 in",
+          "amazon_price": 25.99,
+          "kg": 0.27,
+          "our_price": 40.99
+        },
+        {
+          "asin": "B0002D0E88",
+          "name": "14 in",
+          "amazon_price": 26.99,
+          "kg": 0.28,
+          "our_price": 42.99
+        }
+      ]
     },
     {
       "asin": "B000KHPJD6",
@@ -856,19 +1164,23 @@
       "kg_source": "amazon",
       "our_price": 23.99,
       "rating": 4.7,
-      "reviews": "2,261"
-    },
-    {
-      "asin": "B07PLV8MYY",
-      "subcategory": "Keyboard",
-      "type": "Covers",
-      "name": "Explore Land 88-Key Keyboard Cover",
-      "amazon_price": 15.99,
-      "kg": 0.29,
-      "kg_source": "amazon",
-      "our_price": 28.99,
-      "rating": 4.7,
-      "reviews": "2,261"
+      "reviews": "2,261",
+      "variants": [
+        {
+          "asin": "B07PLV9YL6",
+          "name": "61 keys",
+          "amazon_price": 14.69,
+          "kg": 0.18,
+          "our_price": 23.99
+        },
+        {
+          "asin": "B07PLV8MYY",
+          "name": "88 keys",
+          "amazon_price": 15.99,
+          "kg": 0.29,
+          "our_price": 28.99
+        }
+      ]
     },
     {
       "asin": "B01H74YV56",

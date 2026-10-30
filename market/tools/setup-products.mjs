@@ -137,7 +137,8 @@ for (const [n, spec] of products.entries()) {
 
   // photos: keep the chosen positions
   const media = p.media.nodes;
-  if (spec.media_keep && media.length > spec.media_keep.length) {
+  // a product combined from several (merge_variants) also holds one photo per variant: leave its photos alone
+  if (spec.media_keep && media.length > spec.media_keep.length && !(spec.merge_variants && p.variants.nodes.length > 1)) {
     const drop = media.filter((m, i) => !spec.media_keep.includes(i + 1)).map(m => m.id);
     check(gql(`mutation ($id: ID!, $m: [ID!]!) { productDeleteMedia(productId: $id, mediaIds: $m) { userErrors: mediaUserErrors { field message } } }`,
       { id, m: drop }, { mutation: true }), 'productDeleteMedia');

@@ -313,8 +313,13 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
     clip-on tuners with a coin battery allowed, anything with a built-in lithium battery left out. 10 instruments (Fender,
     Squier, Yamaha guitars and basses) show no price from Lebanon: their cost is read at import. Amazon US has few Arabic
     records; the owner may supply Arabic vinyl locally. All texts in English and Arabic in `products.json`.
-  - [ ] Next, for all 8 batches (≈ 435 products, about 1.2 credits each): buy credits, import each CSV in Spreadr
-    ("Import single product"), run `setup-products.mjs`, choose photos, then `setup-store.mjs --only menu`.
+  - [x] **Variants** (approved 2026-10-30, option B, `market/store/variants-plan.md`): 32 products sold with a choice
+    (sizes, colours, gauges, strengths, lengths…), about 100 variants in all. Each variant is imported as a single
+    product (its Amazon ID added to the batch CSV) and `market/tools/merge-variants.mjs` combines them into one product.
+    The Liquitex 48-tube set, Elixir 9–42 strings and the 88-key cover became variants instead of separate products.
+  - [ ] Next, for all 8 batches (424 Amazon IDs in the CSVs, about 1.2 credits each ≈ 510 credits): buy credits,
+    import each CSV in Spreadr ("Import single product"), then `setup-products.mjs` → `merge-variants.mjs` →
+    `setup-products.mjs`, choose photos, then `setup-store.mjs --only menu`.
 
 **Review:** prices and the catalog.
 

@@ -245,7 +245,30 @@
       "kg_source": "amazon",
       "our_price": 328.99,
       "rating": 4.5,
-      "reviews": "13,391"
+      "reviews": "13,391",
+      "variants": [
+        {
+          "asin": "B07N3XJ66N",
+          "name": "Black",
+          "amazon_price": 179.0,
+          "kg": 3.7,
+          "our_price": 328.99
+        },
+        {
+          "asin": "B07N47JXML",
+          "name": "Brown",
+          "amazon_price": 189.0,
+          "kg": 3.7,
+          "our_price": 341.99
+        },
+        {
+          "asin": "B07N3X7KPX",
+          "name": "Gun-Metal",
+          "amazon_price": 189.0,
+          "kg": 3.7,
+          "our_price": 341.99
+        }
+      ]
     },
     {
       "asin": "B07N3RFXRL",
@@ -391,7 +414,30 @@
       "kg_source": "amazon",
       "our_price": 68.99,
       "rating": 4.7,
-      "reviews": "4,686"
+      "reviews": "4,686",
+      "variants": [
+        {
+          "asin": "B0DR93RGY4",
+          "name": "Outer sleeves, 50",
+          "amazon_price": 18.97,
+          "kg": 0.8,
+          "our_price": 45.99
+        },
+        {
+          "asin": "B091Z335W1",
+          "name": "Outer sleeves, 100",
+          "amazon_price": 22.95,
+          "kg": 1.47,
+          "our_price": 68.99
+        },
+        {
+          "asin": "B0C9DGV1C5",
+          "name": "Inner sleeves, 50",
+          "amazon_price": 19.97,
+          "kg": 0.77,
+          "our_price": 45.99
+        }
+      ]
     },
     {
       "asin": "B07Z3N5S86",

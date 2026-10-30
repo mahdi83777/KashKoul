@@ -11,19 +11,44 @@
       "kg_source": "estimate",
       "our_price": 48.99,
       "rating": 4.7,
-      "reviews": "14,017"
-    },
-    {
-      "asin": "B00251I66C",
-      "subcategory": "Painting",
-      "type": "Acrylic",
-      "name": "Liquitex BASICS Acrylic Paint Set, 48 × 22ml tubes",
-      "amazon_price": 71.79,
-      "kg": 1.6,
-      "kg_source": "amazon",
-      "our_price": 134.99,
-      "rating": 4.7,
-      "reviews": "14,017"
+      "reviews": "14,017",
+      "variants": [
+        {
+          "asin": "B00251LX1C",
+          "name": "6 tubes (primary)",
+          "amazon_price": 15.91,
+          "kg": 0.2,
+          "our_price": 25.99
+        },
+        {
+          "asin": "B07VSZM41G",
+          "name": "12 tubes",
+          "amazon_price": 29.49,
+          "kg": 0.4,
+          "our_price": 48.99
+        },
+        {
+          "asin": "B075ZBN845",
+          "name": "24 tubes",
+          "amazon_price": 44.49,
+          "kg": 0.85,
+          "our_price": 79.99
+        },
+        {
+          "asin": "B07VPWQHKF",
+          "name": "36 tubes",
+          "amazon_price": 55.99,
+          "kg": 1.36,
+          "our_price": 108.99
+        },
+        {
+          "asin": "B00251I66C",
+          "name": "48 tubes",
+          "amazon_price": 71.79,
+          "kg": 1.6,
+          "our_price": 134.99
+        }
+      ]
     },
     {
       "asin": "B0829R16YG",
@@ -134,7 +159,23 @@
       "our_price": 30.99,
       "rating": 4.8,
       "reviews": "25,261",
-      "note": "water-based"
+      "note": "water-based",
+      "variants": [
+        {
+          "asin": "B07Z86PHP8",
+          "name": "8 colors",
+          "amazon_price": 19.97,
+          "kg": 0.18,
+          "our_price": 30.99
+        },
+        {
+          "asin": "B0GXCH4CZN",
+          "name": "24 colors",
+          "amazon_price": 47.06,
+          "kg": 0.5,
+          "our_price": 74.99
+        }
+      ]
     },
     {
       "asin": "B001AS6P4G",
@@ -318,7 +359,30 @@
       "kg_source": "amazon",
       "our_price": 27.99,
       "rating": 4.7,
-      "reviews": "13,314"
+      "reviews": "13,314",
+      "variants": [
+        {
+          "asin": "B0H6W9M1MJ",
+          "name": "36 pencils",
+          "amazon_price": 9.99,
+          "kg": 0.3,
+          "our_price": 20.99
+        },
+        {
+          "asin": "B0BHYGM2XG",
+          "name": "72 pencils",
+          "amazon_price": 11.99,
+          "kg": 0.47,
+          "our_price": 27.99
+        },
+        {
+          "asin": "B0BTSSJNKR",
+          "name": "120 pencils",
+          "amazon_price": 23.99,
+          "kg": 0.86,
+          "our_price": 53.99
+        }
+      ]
     },
     {
       "asin": "B01HFCDUV6",
@@ -415,7 +479,58 @@
       "kg_source": "estimate",
       "our_price": 14.99,
       "rating": 4.6,
-      "reviews": "15,599"
+      "reviews": "15,599",
+      "variants": [
+        {
+          "asin": "B000KNP96C",
+          "name": "Black Indian",
+          "amazon_price": 10.0,
+          "kg": 0.06,
+          "our_price": 14.99
+        },
+        {
+          "asin": "B003HD0A4S",
+          "name": "Brick Red",
+          "amazon_price": 15.81,
+          "kg": 0.06,
+          "our_price": 22.99
+        },
+        {
+          "asin": "B000KNL2PY",
+          "name": "Brilliant Green",
+          "amazon_price": 13.11,
+          "kg": 0.06,
+          "our_price": 18.99
+        },
+        {
+          "asin": "B003HCYOGO",
+          "name": "Burnt Sienna",
+          "amazon_price": 7.29,
+          "kg": 0.06,
+          "our_price": 11.99
+        },
+        {
+          "asin": "B000KNJ1B6",
+          "name": "Canary Yellow",
+          "amazon_price": 12.59,
+          "kg": 0.06,
+          "our_price": 17.99
+        },
+        {
+          "asin": "B005FQQHDI",
+          "name": "Violet",
+          "amazon_price": 13.37,
+          "kg": 0.06,
+          "our_price": 18.99
+        },
+        {
+          "asin": "B003HDKM8M",
+          "name": "White",
+          "amazon_price": 11.98,
+          "kg": 0.06,
+          "our_price": 17.99
+        }
+      ]
     },
     {
       "asin": "B001E6CUPC",
@@ -537,7 +652,30 @@
       "our_price": 37.99,
       "rating": 4.8,
       "reviews": "6,469",
-      "note": "professional, 100% cotton"
+      "note": "professional, 100% cotton",
+      "variants": [
+        {
+          "asin": "B01EQHJH10",
+          "name": "9 × 12 in, cold press",
+          "amazon_price": 21.84,
+          "kg": 0.34,
+          "our_price": 37.99
+        },
+        {
+          "asin": "B01AML7K9A",
+          "name": "9 × 12 in, hot press",
+          "amazon_price": 23.95,
+          "kg": 0.34,
+          "our_price": 39.99
+        },
+        {
+          "asin": "B084Z5LP56",
+          "name": "10 × 14 in, cold press",
+          "amazon_price": 27.53,
+          "kg": 0.45,
+          "our_price": 47.99
+        }
+      ]
     },
     {
       "asin": "B000KNLQIM",
@@ -561,7 +699,23 @@
       "kg_source": "amazon",
       "our_price": 22.99,
       "rating": 4.7,
-      "reviews": "2,804"
+      "reviews": "2,804",
+      "variants": [
+        {
+          "asin": "B0DF72766K",
+          "name": "5.5 × 8.5 in",
+          "amazon_price": 6.99,
+          "kg": 0.33,
+          "our_price": 17.99
+        },
+        {
+          "asin": "B0D5R7JRKZ",
+          "name": "9 × 12 in",
+          "amazon_price": 7.99,
+          "kg": 0.46,
+          "our_price": 22.99
+        }
+      ]
     },
     {
       "asin": "B0D3TWT3TX",
@@ -573,7 +727,37 @@
       "kg_source": "estimate",
       "our_price": 40.99,
       "rating": 4.7,
-      "reviews": "412"
+      "reviews": "412",
+      "variants": [
+        {
+          "asin": "B0DP4NB9CT",
+          "name": "5 × 7 in, 8 canvases",
+          "amazon_price": 12.99,
+          "kg": 0.5,
+          "our_price": 29.99
+        },
+        {
+          "asin": "B0D3TWT3TX",
+          "name": "8 × 10 in, 5 canvases",
+          "amazon_price": 12.99,
+          "kg": 0.9,
+          "our_price": 40.99
+        },
+        {
+          "asin": "B0FN7V9YYJ",
+          "name": "9 × 12 in, 5 canvases",
+          "amazon_price": 15.99,
+          "kg": 1.0,
+          "our_price": 46.99
+        },
+        {
+          "asin": "B0DKNCZC3J",
+          "name": "12 × 16 in, 3 canvases",
+          "amazon_price": 16.99,
+          "kg": 1.0,
+          "our_price": 48.99
+        }
+      ]
     },
     {
       "asin": "B09YLT8RBP",
@@ -598,7 +782,30 @@
       "kg_source": "amazon",
       "our_price": 19.99,
       "rating": 4.6,
-      "reviews": "3,066"
+      "reviews": "3,066",
+      "variants": [
+        {
+          "asin": "B0CMXFTNDC",
+          "name": "8 × 10 in, 5 boards",
+          "amazon_price": 6.99,
+          "kg": 0.41,
+          "our_price": 19.99
+        },
+        {
+          "asin": "B0DXKRBV45",
+          "name": "9 × 12 in, 5 boards",
+          "amazon_price": 9.99,
+          "kg": 0.54,
+          "our_price": 27.99
+        },
+        {
+          "asin": "B0CSCZWPGQ",
+          "name": "5 × 7 in, 18 boards",
+          "amazon_price": 11.99,
+          "kg": 0.67,
+          "our_price": 33.99
+        }
+      ]
     },
     {
       "asin": "B092HZL8ZG",
@@ -635,7 +842,37 @@
       "our_price": 16.99,
       "rating": 4.6,
       "reviews": "5,949",
-      "note": "widely used for Arabic script; only 5 left on Amazon today"
+      "note": "widely used for Arabic script; only 5 left on Amazon today",
+      "variants": [
+        {
+          "asin": "B002RJNT46",
+          "name": "1.5 mm",
+          "amazon_price": 12.77,
+          "kg": 0.05,
+          "our_price": 17.99
+        },
+        {
+          "asin": "B002RJLS0S",
+          "name": "2.4 mm",
+          "amazon_price": 12.12,
+          "kg": 0.05,
+          "our_price": 17.99
+        },
+        {
+          "asin": "B08LQT1JTP",
+          "name": "3.0 mm",
+          "amazon_price": 11.76,
+          "kg": 0.05,
+          "our_price": 16.99
+        },
+        {
+          "asin": "B002RJPPMK",
+          "name": "3.8 mm",
+          "amazon_price": 12.84,
+          "kg": 0.05,
+          "our_price": 17.99
+        }
+      ]
     },
     {
       "asin": "B0CSN3SVKB",
@@ -917,7 +1154,37 @@
       "kg_source": "estimate",
       "our_price": 57.99,
       "rating": 4.6,
-      "reviews": "73,057"
+      "reviews": "73,057",
+      "variants": [
+        {
+          "asin": "B08XVP48KQ",
+          "name": "Black",
+          "amazon_price": 17.99,
+          "kg": 1.3,
+          "our_price": 57.99
+        },
+        {
+          "asin": "B0C5HVS5RC",
+          "name": "Natural",
+          "amazon_price": 19.99,
+          "kg": 1.3,
+          "our_price": 59.99
+        },
+        {
+          "asin": "B09PQHSGHG",
+          "name": "Gold",
+          "amazon_price": 18.99,
+          "kg": 1.3,
+          "our_price": 58.99
+        },
+        {
+          "asin": "B09Y6BM77K",
+          "name": "Silver",
+          "amazon_price": 19.99,
+          "kg": 1.3,
+          "our_price": 59.99
+        }
+      ]
     },
     {
       "asin": "B079HL9YSF",

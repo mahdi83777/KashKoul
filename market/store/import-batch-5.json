@@ -25,7 +25,30 @@
       "our_price": null,
       "rating": 4.5,
       "reviews": "248",
-      "note": "no price shown from Lebanon: read at import"
+      "note": "no price shown from Lebanon: read at import",
+      "variants": [
+        {
+          "asin": "B091BGTWQ1",
+          "name": "Olympic White",
+          "amazon_price": null,
+          "kg": 5.5,
+          "our_price": null
+        },
+        {
+          "asin": "B0BF5TMGD9",
+          "name": "Surf Green",
+          "amazon_price": null,
+          "kg": 5.5,
+          "our_price": null
+        },
+        {
+          "asin": "B091BHKXMR",
+          "name": "Lake Placid Blue",
+          "amazon_price": null,
+          "kg": 5.5,
+          "our_price": null
+        }
+      ]
     },
     {
       "asin": "B00SMYGEBA",
@@ -64,7 +87,44 @@
       "our_price": null,
       "rating": 4.4,
       "reviews": "153",
-      "note": "no price shown from Lebanon: read at import"
+      "note": "no price shown from Lebanon: read at import",
+      "variants": [
+        {
+          "asin": "B0BVGSWXDY",
+          "name": "Black",
+          "amazon_price": null,
+          "kg": 4.5,
+          "our_price": null
+        },
+        {
+          "asin": "B0BVGSD36S",
+          "name": "Arctic White",
+          "amazon_price": null,
+          "kg": 4.5,
+          "our_price": null
+        },
+        {
+          "asin": "B0BVGV8PHX",
+          "name": "Flash Pink",
+          "amazon_price": null,
+          "kg": 4.5,
+          "our_price": null
+        },
+        {
+          "asin": "B0CLDM8GH7",
+          "name": "Surf Green",
+          "amazon_price": null,
+          "kg": 4.5,
+          "our_price": null
+        },
+        {
+          "asin": "B0BVGQG2HD",
+          "name": "Tahitian Coral",
+          "amazon_price": null,
+          "kg": 4.5,
+          "our_price": null
+        }
+      ]
     },
     {
       "asin": "B07T7H8P4H",
@@ -116,7 +176,30 @@
       "our_price": null,
       "rating": 4.6,
       "reviews": "569",
-      "note": "no price shown from Lebanon: read at import"
+      "note": "no price shown from Lebanon: read at import",
+      "variants": [
+        {
+          "asin": "B07N25S8KX",
+          "name": "Natural",
+          "amazon_price": null,
+          "kg": 4.5,
+          "our_price": null
+        },
+        {
+          "asin": "B07N28JHB2",
+          "name": "Black",
+          "amazon_price": null,
+          "kg": 4.5,
+          "our_price": null
+        },
+        {
+          "asin": "B07N29651Q",
+          "name": "Sunburst",
+          "amazon_price": null,
+          "kg": 4.5,
+          "our_price": null
+        }
+      ]
     },
     {
       "asin": "B01C92QHLC",
@@ -254,7 +337,30 @@
       "our_price": 467.99,
       "rating": 4.7,
       "reviews": "1,277",
-      "note": "heavy"
+      "note": "heavy",
+      "variants": [
+        {
+          "asin": "B091XRLF45",
+          "name": "Black",
+          "amazon_price": 259.99,
+          "kg": 4.5,
+          "our_price": 454.99
+        },
+        {
+          "asin": "B091XNB1J3",
+          "name": "White",
+          "amazon_price": 259.99,
+          "kg": 4.5,
+          "our_price": 454.99
+        },
+        {
+          "asin": "B091XMKKWX",
+          "name": "Red",
+          "amazon_price": 259.99,
+          "kg": 4.5,
+          "our_price": 454.99
+        }
+      ]
     },
     {
       "asin": "B0D4R6BF5K",
@@ -512,7 +618,30 @@
       "our_price": 288.99,
       "rating": 3.9,
       "reviews": "1,835",
-      "note": "rating 3.9; the only well-reviewed viola"
+      "note": "rating 3.9; the only well-reviewed viola",
+      "variants": [
+        {
+          "asin": "B0085C9UH4",
+          "name": "12 in",
+          "amazon_price": 139.99,
+          "kg": 3.0,
+          "our_price": 259.99
+        },
+        {
+          "asin": "B0085C9TWK",
+          "name": "14 in",
+          "amazon_price": 159.99,
+          "kg": 3.3,
+          "our_price": 293.99
+        },
+        {
+          "asin": "B0085C9TKM",
+          "name": "15 in",
+          "amazon_price": 151.99,
+          "kg": 3.5,
+          "our_price": 288.99
+        }
+      ]
     },
     {
       "asin": "B07V5XBJZK",
