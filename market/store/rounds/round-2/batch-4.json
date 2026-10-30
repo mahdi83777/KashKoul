@@ -1,5 +1,5 @@
 {
-  "_about": "Batch 4 (approved 2026-10-30: heavy and few-review items kept, low-stock items removed): Accessories, every sub-category of docs/market/categories.md, toward ~140 (29 in the shop before). Researched on amazon.com 2026-10-30 (in stock, mostly 4.4+ stars; nothing that can't be flown; clip-on tuners use a coin battery, allowed). Products already in the shop left out. kg = boxed shipping weight (Amazon's, or an estimate). our_price = round_up((amazon_price + kg × 20) × 1.3) − 0.01. Imported with Spreadr (in market/store/import-1.csv for batches 3–4, import-2.csv for 5–8, 'Import single product'), finished by setup-products.mjs.",
+  "_about": "Batch 4 (approved 2026-10-30: heavy and few-review items kept, low-stock items removed): Accessories, every sub-category of docs/market/categories.md, toward ~140 (29 in the shop before). Researched on amazon.com 2026-10-30 (in stock, mostly 4.4+ stars; nothing that can't be flown; clip-on tuners use a coin battery, allowed). Products already in the shop left out. kg = boxed shipping weight (Amazon's, or an estimate). our_price = round_up((amazon_price + kg × 20) × 1.3) − 0.01. Imported with Spreadr (in market/store/rounds/round-2/import-1.csv for batches 3–4, import-2.csv for 5–8, 'Import single product'), finished by setup-products.mjs.",
   "items": [
     {
       "asin": "B00TQZLRS4",

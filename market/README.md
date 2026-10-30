@@ -36,14 +36,16 @@ market/
 ├── strings.json            English + Arabic text for the Kashkoul sections (from docs/market/content.md), plus
 │                           "shopify_overrides": our wording for some of Shopify's checkout text (contact/phone labels, payment note)
 ├── store/content.json      store content: categories, pages, main menu, their Arabic, published languages
-├── store/products.json     sample products' clean-up: titles, descriptions, Arabic, options, photos to keep, stock
+├── store/                  see store/README.md: content.json (collections, pages, menu, policies), products/ (one file
+│                           per round of imports), rounds/ (the research and import files behind each round)
 ├── PHOTO-CREDITS.md        where the theme's photos come from
 ├── .theme-check.yml        Theme Check config (English + Arabic only)
 ├── tools/
 │   ├── sync-strings.mjs    strings.json → theme/locales/en.default.json + ar.json ("kashkoul" key)
 │   ├── sync-house.mjs      shared/sites.json → theme/snippets/kashkoul-house.liquid (links between the sites)
 │   ├── setup-store.mjs     store/content.json → the store, through `shopify store execute` (safe to re-run)
-│   ├── setup-products.mjs  store/products.json → the imported products (safe to re-run)
+│   ├── setup-products.mjs  store/products/ → the imported products (safe to re-run; --round N for one round)
+│   ├── merge-variants.mjs  combines products imported one per variant into one product with variants
 │   └── store-lib.mjs       shared helpers for the two store scripts
 └── theme/
     ├── snippets/kashkoul-head.liquid   fonts, colors, type scale (--kk-fs-*), spacing (--kk-sec)

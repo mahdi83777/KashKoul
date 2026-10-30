@@ -3,7 +3,7 @@
 Each variant is imported from Spreadr as a single product (its own Amazon ID in `import-1.csv` or `import-2.csv`), then
 `market/tools/merge-variants.mjs` combines them into one product with an option, and deletes the extra copies.
 Order after each import: `setup-products.mjs` → `merge-variants.mjs` → `setup-products.mjs` (prices per variant from
-`cost`/`kg`, Arabic option names). Data: `merge_variants`, `options`, `kg` and `cost` on the product in `products.json`.
+`cost`/`kg`, Arabic option names). Data: `merge_variants`, `options`, `kg` and `cost` on the product in `products/round-2.json`.
 
 Variants left out (no price from Lebanon, ≤ 3 left, or not released) and families that stay single: Liquitex gesso,
 Strathmore 400 sketch pad, Strathmore 300 watercolour pad, Fuxi sketch book, Kala ukulele, Hohner Special 20 and Blues Band,

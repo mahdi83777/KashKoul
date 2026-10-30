@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Cleans up imported products from market/store/products.json (step 4c sample products): our own English and
+// Cleans up imported products from market/store/products/round-*.json (step 4c sample products): our own English and
 // Arabic title and description, a clean handle (old one redirects), brand as vendor, product type, tags, no
 // compare-at price, an optional fixed price, option names and values (with Arabic), fewer photos, and the stock
 // state on the first run (in stock with a quantity, or on order = 0 with "continue selling"); after that the stock
@@ -12,17 +12,13 @@
 //
 //   shopify store auth --store <store> --scopes read_products,write_products,read_translations,write_translations,\
 //     read_inventory,write_inventory,read_locations,read_publications,write_publications
-//   node market/tools/setup-products.mjs [--store kashkoul-market-fhsuuq5c.myshopify.com] [--only <handle>] [--shard 1/4]
+//   node market/tools/setup-products.mjs [--store kashkoul-market-fhsuuq5c.myshopify.com] [--only <handle>] [--shard 1/4] [--round 3]
 // --shard k/n runs every n-th product starting at the k-th, so n runs side by side cover the whole list faster.
 // Without the inventory scopes, everything but the stock quantities is applied and the script says so.
 import { randomUUID } from 'node:crypto';
-import { readFileSync } from 'node:fs';
-import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { gql, check, translate } from './store-lib.mjs';
+import { gql, check, translate, loadProducts } from './store-lib.mjs';
 
-const market = join(dirname(fileURLToPath(import.meta.url)), '..');
-const { products } = JSON.parse(readFileSync(join(market, 'store', 'products.json'), 'utf8'));
+const products = loadProducts();
 const argOnly = process.argv.indexOf('--only');
 const only = argOnly > -1 ? process.argv[argOnly + 1] : null;
 const argShard = process.argv.indexOf('--shard');

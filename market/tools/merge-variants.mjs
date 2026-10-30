@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Combines products imported one by one into a single product with variants (variants plan, option B,
-// market/store/variants-plan.md). For each entry of market/store/products.json with `merge_variants`:
+// market/store/rounds/round-2/variants-plan.md). For each entry of market/store/products/round-*.json with `merge_variants`:
 //   { option: "Size", values: [{ asin, name }, …] }  — the master is the product whose SKU is the entry's `asin`.
 // The master's single variant is renamed to its own value; every other value's product (found by its SKU, the
 // Amazon ID) becomes a variant of the master: its price as a starting cost, its SKU, its weight and its first
@@ -8,14 +8,10 @@
 // from `cost`/`kg` per value, Arabic option names from `options`). Safe to re-run: values already on the master
 // are skipped.
 //
-//   node market/tools/merge-variants.mjs [--only <handle>] [--dry]
-import { readFileSync } from 'node:fs';
-import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { gql, check } from './store-lib.mjs';
+//   node market/tools/merge-variants.mjs [--only <handle>] [--round 3] [--dry]
+import { gql, check, loadProducts } from './store-lib.mjs';
 
-const market = join(dirname(fileURLToPath(import.meta.url)), '..');
-const { products } = JSON.parse(readFileSync(join(market, 'store', 'products.json'), 'utf8'));
+const products = loadProducts();
 const arg = name => { const i = process.argv.indexOf(name); return i > -1 ? process.argv[i + 1] : null; };
 const only = arg('--only');
 const dry = process.argv.includes('--dry');

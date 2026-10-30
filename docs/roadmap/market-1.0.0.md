@@ -181,7 +181,7 @@ Preview: https://kashkoul-market-fhsuuq5c.myshopify.com/?preview_theme_id=189216
 - [x] Phones: one full-width "Filter & sort" row with the product count; the drawer opens with every filter collapsed; counts in proper Arabic plurals (10 منتجات)
 - [x] Each filter choice shows how many products it has (e.g. Strings 2), on computers and phones
 
-**4c — Sample products** ✅ imported from Amazon with the Reputon app (free plan, 5 at a time), then cleaned up by `market/tools/setup-products.mjs` from `market/store/products.json`: our own English/Arabic title and description, short handle, brand, type, tag `sample`, no "compare at" price, option names and values in Arabic, 1–7 clean photos (no advert slides), and only the variants that belong to the product (the importer brings Amazon's whole family, e.g. 17 different pedals under one delay pedal).
+**4c — Sample products** ✅ imported from Amazon with the Reputon app (free plan, 5 at a time), then cleaned up by `market/tools/setup-products.mjs` from `market/store/products/` (one file per round): our own English/Arabic title and description, short handle, brand, type, tag `sample`, no "compare at" price, option names and values in Arabic, 1–7 clean photos (no advert slides), and only the variants that belong to the product (the importer brings Amazon's whole family, e.g. 17 different pedals under one delay pedal).
 - [x] Fender FA-25 guitar, Fender Venice ukulele, Eastar violin set, Akai MPK Mini MK3, D'Addario oud strings
 - [x] Hal Leonard Guitar Method Book 1, Winsor & Newton Cotman set (12/16/24 colors), Donner Yellow Fall delay, Vic Firth Freestyle 5B, D'Addario NYXL 3 sets (6 gauges)
 - [x] Stock levels: oud strings ×10, Hal Leonard ×10, Winsor & Newton ×10 each, Donner ×4; the others on order. The script only sets stock while it isn't tracked yet; after that the admin owns it
@@ -215,15 +215,15 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   2026-10-29; it was kg × $15 and × 1.2 before). The Amazon price
   is kept in "Cost per item" and the weight in "Weight", so re-runs never compound. Bundles with a clip-on tuner (coin
   battery) are fine; no lithium batteries.
-- [x] Our script `market/tools/setup-products.mjs` turns each import into a shop product from `market/store/products.json`:
+- [x] Our script `market/tools/setup-products.mjs` turns each import into a shop product from `market/store/products/` (one file per round):
   English and Arabic title, text and type, clean variants and options (with Arabic), fewer photos, price and cost,
   weight, "on order" stock, category, Active on the Online Store. Variants Amazon shows without a price are dropped.
 - [x] The first 10 sample products were re-priced by the same rule (their Amazon price as cost), stock untouched.
-- [x] **Batch 1**, 50 best sellers (`import-batch-1.json`, checklist `import-batch-1-links.md`): 47 imported (3 had
+- [x] **Batch 1**, 50 best sellers (`rounds/round-1/batch-1.json`, checklist `batch-1-links.md`): 47 imported (3 had
   more than 25 variants), 46 live. The Fender Dreadnought bundle was dropped (archived): same guitar as the FA-25.
   Decided: keep "Amazon Basics" as the brand on its products; no music stand needed.
 - [x] **Batch 2**, every instrument taught at the Academy, several choices each (starter / step-up / better / kids)
-  plus essentials (`import-batch-2.json`, checklist `import-batch-2-links.md`): 60 of 64 imported, 58 live (the
+  plus essentials (`rounds/round-1/batch-2.json`, checklist `batch-2-links.md`): 60 of 64 imported, 58 live (the
   P-145BT and P-225 came in as one product; the EJ95A oud strings were already in the shop, the duplicate is archived).
   Not imported: Sala SALA-A8 oud, qanun picks and Meinl riq (no price / out of stock), Eastar trumpet (same level as the
   Glory). Amazon US has no real buzuq (Turkish saz instead, named as such), and no starter qanun or riq.
@@ -301,26 +301,26 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
   (189216391398); the new working copy is 189736517862.
 - [ ] Spreadr import batches to reach ~500 products (Spreadr installed 2026-10-29, bulk import now that the store is on
   a paid plan).
-  - [ ] **Batch 3, Art supplies** (approved 2026-10-30, `market/store/import-batch-3*.{json,md}`): 82 products over all
+  - [ ] **Batch 3, Art supplies** (approved 2026-10-30, `market/store/rounds/round-2/batch-3*`): 82 products over all
     7 Art sub-categories and their types (the AnyMark alcohol markers removed). Spreadr test (3 products): imports as
     draft, SKU = ASIN for every variant, weight from Amazon, about 1.2 credits per variant; its price can be another
     offer's, so our list keeps the Amazon price as `cost` for `setup-products.mjs`. English and Arabic titles and texts
-    written from the Amazon facts and added to `products.json` (photos: first 5 kept until chosen).
+    written from the Amazon facts and added to `products/round-2.json` (photos: first 5 kept until chosen).
   - [ ] **Batches 4–8, the other categories** (approved 2026-10-30; mix chosen: Accessories +~110, Instruments +~50,
-    Studio & sound +~55, Vinyl & hi-fi ~45, Books & sheet music ~40), same files per batch (`import-batch-N*.{json,md}`):
+    Studio & sound +~55, Vinyl & hi-fi ~45, Books & sheet music ~40), same files per batch (`rounds/round-2/batch-N*`):
     4 Accessories 95 · 5 Instruments 49 · 6 Studio & sound 52 · 7 Vinyl & hi-fi 40 · 8 Books & sheet music 37. Rules
     decided: heavy items and few-review items kept; low-stock (≤ 3 left), out-of-stock and duplicate items left out;
     clip-on tuners with a coin battery allowed, anything with a built-in lithium battery left out. 10 instruments (Fender,
     Squier, Yamaha guitars and basses) show no price from Lebanon: their cost is read at import. Amazon US has few Arabic
-    records; the owner may supply Arabic vinyl locally. All texts in English and Arabic in `products.json`.
-  - [x] **Variants** (approved 2026-10-30, option B, `market/store/variants-plan.md`): 32 products sold with a choice
+    records; the owner may supply Arabic vinyl locally. All texts in English and Arabic in `products/round-2.json`.
+  - [x] **Variants** (approved 2026-10-30, option B, `market/store/rounds/round-2/variants-plan.md`): 32 products sold with a choice
     (sizes, colours, gauges, strengths, lengths…), about 100 variants in all. Each variant is imported as a single
     product (its Amazon ID added to the batch CSV) and `market/tools/merge-variants.mjs` combines them into one product.
     The Liquitex 48-tube set, Elixir 9–42 strings and the 88-key cover became variants instead of separate products.
   - [ ] Next, for all 8 batches (409 Amazon IDs, about 1.2 credits each ≈ 491 credits, within the $10 budget: the 13
     heaviest products were removed for it, among them the Alesis e-drums, JBL and Eris E4.5 monitors, the LP120X turntable,
     the Rumble and Acoustasonic amps, the Squier Precision Bass and Classic Vibe guitars, the trombone and the cajon): buy credits,
-    import `market/store/import-1.csv` (Art, Accessories: 228) and `import-2.csv` (Instruments, Studio, Vinyl, Books: 181) in Spreadr ("Import single product"), then `setup-products.mjs` → `merge-variants.mjs` →
+    import `market/store/rounds/round-2/import-1.csv` (Art, Accessories: 228) and `import-2.csv` (Instruments, Studio, Vinyl, Books: 181) in Spreadr ("Import single product"), then `setup-products.mjs` → `merge-variants.mjs` →
     `setup-products.mjs`, choose photos, then `setup-store.mjs --only menu`.
 
 **Review:** prices and the catalog.

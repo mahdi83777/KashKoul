@@ -2,9 +2,10 @@
 // (`shopify store execute`, using the auth from `shopify store auth`) and register translations.
 // The store is the Kashkoul Market store unless `--store <domain>` is passed.
 import { execFileSync } from 'node:child_process';
-import { mkdtempSync, readFileSync, writeFileSync, rmSync } from 'node:fs';
+import { mkdtempSync, readFileSync, readdirSync, writeFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
-import { join } from 'node:path';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const argStore = process.argv.indexOf('--store');
 export const STORE = argStore > -1 ? process.argv[argStore + 1] : 'kashkoul-market-fhsuuq5c.myshopify.com';
@@ -54,4 +55,14 @@ export function translate(resourceId, locale, values, attempt = 1) {
   if (!translations.length) return;
   check(gql(`mutation ($id: ID!, $t: [TranslationInput!]!) { translationsRegister(resourceId: $id, translations: $t) { userErrors { field message } } }`,
     { id: resourceId, t: translations }, { mutation: true }), 'translationsRegister');
+}
+
+// The shop's products, from market/store/products/round-*.json (one file per round of imports).
+// `--round round-3` (or `--round 3`) keeps only that round's file.
+export function loadProducts() {
+  const dir = join(dirname(fileURLToPath(import.meta.url)), '..', 'store', 'products');
+  const i = process.argv.indexOf('--round');
+  const round = i > -1 ? String(process.argv[i + 1]).replace(/^(round-)?/, 'round-') : null;
+  return readdirSync(dir).filter(f => /^round-\d+\.json$/.test(f) && (!round || f === `${round}.json`)).sort()
+    .flatMap(f => JSON.parse(readFileSync(join(dir, f), 'utf8')).products);
 }

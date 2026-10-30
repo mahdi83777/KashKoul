@@ -215,7 +215,7 @@ Page width: content up to 1440px, with 40px side margins on computers and 16px o
 
 **Product descriptions** are written per product in step 6: our own short text, in English and Arabic (what it is,
 who it suits, what's in the box), not copied from Amazon. The sample products' titles, descriptions and Arabic option
-names (step 4c) are in `market/store/products.json`; the pattern is one short paragraph, then 3–4 points.
+names (step 4c) are in `market/store/products/round-*.json`; the pattern is one short paragraph, then 3–4 points.
 
 ---
 
