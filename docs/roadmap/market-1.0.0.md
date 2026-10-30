@@ -322,6 +322,10 @@ With the owner. **114 products live** (on the test theme's store, all "on order"
     the Rumble and Acoustasonic amps, the Squier Precision Bass and Classic Vibe guitars, the trombone and the cajon): buy credits,
     import `market/store/rounds/round-2/import-1.csv` (Art, Accessories: 228) and `import-2.csv` (Instruments, Studio, Vinyl, Books: 181) in Spreadr ("Import single product"), then `setup-products.mjs` → `merge-variants.mjs` →
     `setup-products.mjs`, choose photos, then `setup-store.mjs --only menu`.
+- [x] **Spreadr sync** (confirmed by Spreadr support 2026-10-30): on the Basic plan nothing syncs with Amazon, even
+  though each imported product shows auto-sync "On"; our prices and stock stay as `setup-products.mjs` sets them. Auto
+  sync is a Pro-and-above feature: **don't upgrade to Pro** without first turning product-level sync off (or price sync
+  off), or Spreadr would replace our weight-based prices with Amazon's price plus its own markup.
 - [ ] **SKU standard** (decided 2026-10-30): the SKU says which Amazon to buy from, `US-<Amazon ID>` or `AE-<Amazon ID>`,
   so every order shows it; products are tagged `amazon-us` / `amazon-uae`; customers see neither. The products already in
   the store were renamed (`market/tools/fix-skus.mjs`), the round 2 and 3 import files use `US-`, round 4's will use `AE-`,

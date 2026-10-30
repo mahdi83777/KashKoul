@@ -14,6 +14,7 @@
 //   shopify store auth --store <store> --scopes read_products,write_products,read_translations,write_translations,\
 //     read_inventory,write_inventory,read_locations,read_publications,write_publications
 //   node market/tools/setup-products.mjs [--store kashkoul-market-fhsuuq5c.myshopify.com] [--only <handle>] [--shard 1/4] [--round 3]
+//     [--csv rounds/round-2/import-1.csv]   (only the products of that import file, see store-lib.mjs)
 // --shard k/n runs every n-th product starting at the k-th, so n runs side by side cover the whole list faster.
 // Without the inventory scopes, everything but the stock quantities is applied and the script says so.
 import { randomUUID } from 'node:crypto';

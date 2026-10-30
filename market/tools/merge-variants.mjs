@@ -9,7 +9,7 @@
 // from `cost`/`kg` per value, Arabic option names from `options`). Safe to re-run: values already on the master
 // are skipped.
 //
-//   node market/tools/merge-variants.mjs [--only <handle>] [--round 3] [--dry]
+//   node market/tools/merge-variants.mjs [--only <handle>] [--round 3] [--csv rounds/round-2/import-1.csv] [--dry]
 import { gql, check, loadProducts, skuFor } from './store-lib.mjs';
 
 const products = loadProducts();
@@ -47,7 +47,20 @@ for (const spec of products.filter(p => p.merge_variants)) {
 
   // 2. every other value: its product becomes a variant of the master, then goes
   for (const value of values.filter(v => v.asin !== spec.asin)) {
-    if (have.has(skuFor(spec, value.asin)) || have.has(value.asin)) continue;
+    if (have.has(skuFor(spec, value.asin)) || have.has(value.asin)) {
+      // already a variant; if a run stopped between adding it and deleting its own product, delete that product now
+      for (const sku of [skuFor(spec, value.asin), value.asin]) {
+        const left = gql(`query ($q: String!) { products(first: 5, query: $q) { nodes { id variants(first: 5) { nodes { sku } } } } }`, { q: `sku:${sku}` })
+          .products.nodes.filter(p => p.id !== master.id && p.variants.nodes.some(v => v.sku === sku));
+        for (const p of left) {
+          if (dry) { console.log(`  ${value.name}: leftover product ${p.id} would be deleted`); continue; }
+          check(gql(`mutation ($input: ProductDeleteInput!) { productDelete(input: $input) { userErrors { field message } } }`,
+            { input: { id: p.id } }, { mutation: true }), 'productDelete');
+          console.log(`  ${value.name}: leftover product deleted`);
+        }
+      }
+      continue;
+    }
     const [child, childSku] = byAsin(spec, value.asin);
     if (!child) { console.log(`  ${value.name}: ${value.asin} not imported, skipped`); continue; }
     const v = child.variants.nodes.find(x => x.sku === childSku);
